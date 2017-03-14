@@ -27,6 +27,7 @@
     * [API](chapters/RegExp/API.md)
 * [Array](chapters/Array/README.md)
     * [api](chapters/Array/api.md)
+    * [二进制数组](chapters/Array/二进制数组.md)
     * [交集、补集、并集](chapters/Array/gather.md)
     * [重复项](chapters/Array/repeat.md)
     * [错误项](chapters/Array/error.md)
