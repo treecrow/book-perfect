@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>http · GitBook</title>
+        <title>seo · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mvvm.html" />
+    <link rel="next" href="前后端分离.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="mvvm.html" />
     
 
     </head>
@@ -109,7 +109,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="http.html">
+        <li class="chapter " data-level="2.1" data-path="http.html">
             
                 <a href="http.html">
             
@@ -135,7 +135,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="seo.html">
+        <li class="chapter active" data-level="2.3" data-path="seo.html">
             
                 <a href="seo.html">
             
@@ -204,7 +204,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >http</a>
+        <a href=".." >seo</a>
     </h1>
 </div>
 
@@ -219,58 +219,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="http&#x603B;&#x7ED3;">HTTP&#x603B;&#x7ED3;</h1>
-<h2 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h2>
-<ul>
-<li>GET---&#x83B7;&#x53D6;&#x3001;&#x8BFB;&#x53D6;&#x6570;&#x636E;</li>
-<li>POST---&#x63D0;&#x4EA4;&#x6570;&#x636E;</li>
-<li>PUT---&#x66F4;&#x65B0;</li>
-<li>DELETE---&#x5220;&#x9664;</li>
-<li>HEAD---&#x7C7B;&#x4F3C;GET&#xFF0C;&#x8BF7;&#x6C42;</li>
-<li>TRACE---</li>
-<li>OPTIONS---</li>
-</ul>
-<h2 id="&#x72B6;&#x6001;">&#x72B6;&#x6001;</h2>
-<ul>
-<li>1xx---&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x63A5;&#x53D7;&#xFF0C;&#x7EE7;&#x7EED;&#x5904;&#x7406;<ul>
-<li>200&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x6210;&#x529F;</li>
-</ul>
-</li>
-<li>2xx---&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x63A5;&#x53D7;&#x5E76;&#x5904;&#x7406;</li>
-<li>3xx---&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x64CD;&#x4F5C;</li>
-<li>4xx---&#x5BA2;&#x6237;&#x7AEF;&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x6C42;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;/&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;<ul>
-<li>400&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</li>
-<li>401&#xFF1A;&#x8BF7;&#x6C42;&#x672A;&#x7ECF;&#x8FC7;&#x6388;&#x6743;</li>
-<li>403&#xFF1A;&#x670D;&#x52A1;&#x7AEF;&#x6536;&#x5230;&#x8BF7;&#x6C42;&#x4F46;&#x62D2;&#x7EDD;&#x63D0;&#x4F9B;&#x670D;&#x52A1;</li>
-<li>404&#xFF1A;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x4E0D;&#x5B58;&#x5728;</li>
-</ul>
-</li>
-<li>5xx---&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x9519;&#x8BEF;<ul>
-<li>500&#xFF1A;&#x670D;&#x52A1;&#x7AEF;&#x672A;&#x77E5;&#x9519;&#x8BEF;</li>
-<li>503&#xFF1A;&#x5F53;&#x524D;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x53EF;&#x80FD;&#x8FC7;&#x6BB5;&#x65F6;&#x95F4;&#x4F1A;&#x56DE;&#x590D;&#x6B63;&#x5E38;</li>
-</ul>
-</li>
-</ul>
-<h2 id="&#x7F51;&#x7EDC;&#x8FC7;&#x7A0B;">&#x7F51;&#x7EDC;&#x8FC7;&#x7A0B;</h2>
-<ul>
-<li>DNS&#x89E3;&#x6790;<blockquote>
-<p>&#x53EF;&#x7F13;&#x5B58;,100~200ms</p>
-</blockquote>
-</li>
-<li>&#x5EFA;&#x7ACB;TCP&#x8FDE;&#x63A5;<blockquote>
-<p>&#x4E09;&#x6B21;&#x63E1;&#x624B;,100~200ms</p>
-</blockquote>
-</li>
-<li>HTTP Request<blockquote>
-<p>&#x534A;&#x4E2A;RTT</p>
-</blockquote>
-</li>
-<li>HTTP Response<blockquote>
-<p>RTT&#x4E0D;&#x786E;&#x5B9A;,&#x4F18;&#x5316;&#x7A7A;&#x95F4;</p>
-</blockquote>
-</li>
-</ul>
-
+                                
                                 
                                 </section>
                             
@@ -297,12 +246,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="mvvm.html" class="navigation navigation-prev " aria-label="Previous page: http">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mvvm.html" class="navigation navigation-next " aria-label="Next page: http">
+                <a href="前后端分离.html" class="navigation navigation-next " aria-label="Next page: 前后端分离">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -313,7 +262,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"http","level":"2.1","depth":1,"next":{"title":"http","level":"2.2","depth":1,"path":"chapters/mvvm.md","ref":"chapters/mvvm.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/http.md","mtime":"2017-03-18T02:10:15.956Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-18T02:56:32.031Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"seo","level":"2.3","depth":1,"next":{"title":"前后端分离","level":"2.4","depth":1,"path":"chapters/前后端分离.md","ref":"chapters/前后端分离.md","articles":[]},"previous":{"title":"http","level":"2.2","depth":1,"path":"chapters/mvvm.md","ref":"chapters/mvvm.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/seo.md","mtime":"2017-03-18T01:26:37.272Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-18T02:56:32.031Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
