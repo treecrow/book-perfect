@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>wc · GitBook</title>
+        <title>cat · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="./" />
+    <link rel="next" href="curl.html" />
     
     
-    <link rel="prev" href="dirname.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -123,20 +123,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="basename.html">
-            
-                <a href="basename.html">
-            
-                    
-                    basename
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.2" data-path="cat.html">
+        <li class="chapter active" data-level="2.1.1" data-path="cat.html">
             
                 <a href="cat.html">
             
@@ -149,38 +136,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="curl.html">
+        <li class="chapter " data-level="2.1.2" data-path="curl.html">
             
                 <a href="curl.html">
             
                     
                     curl
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4" data-path="dirname.html">
-            
-                <a href="dirname.html">
-            
-                    
-                    dirname
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.1.5" data-path="wc.html">
-            
-                <a href="wc.html">
-            
-                    
-                    wc
             
                 </a>
             
@@ -236,7 +197,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >wc</a>
+        <a href="../.." >cat</a>
     </h1>
 </div>
 
@@ -251,7 +212,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="wc&#x5229;&#x7528;wc&#x6307;&#x4EE4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x7684;byte&#x6570;&#x3001;&#x5B57;&#x6570;&#x3001;&#x6216;&#x662F;&#x5217;&#x6570;">wc:&#x5229;&#x7528;wc&#x6307;&#x4EE4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x7684;Byte&#x6570;&#x3001;&#x5B57;&#x6570;&#x3001;&#x6216;&#x662F;&#x5217;&#x6570;</h2>
+                                <h2 id="cat">cat</h2>
 <h3 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h3>
 <table>
 <thead>
@@ -262,8 +223,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$ wc</td>
-<td>&#x8BA1;&#x7B97;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#x4FE1;&#x606F;  </td>
+<td>$ cat filename</td>
+<td>&#x663E;&#x793A;&#x6574;&#x4E2A;&#x6587;&#x4EF6;  </td>
+</tr>
+<tr>
+<td>$ cat &gt; filename</td>
+<td>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;  </td>
+</tr>
+<tr>
+<td>$cat file1 file2 &gt; file</td>
+<td>&#x5C06;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;  </td>
 </tr>
 </tbody>
 </table>
@@ -277,16 +246,20 @@
 </thead>
 <tbody>
 <tr>
-<td>-l&#x6216;--lines</td>
-<td>&#x53EA;&#x663E;&#x793A;&#x5217;&#x6570;  </td>
+<td>-n &#x6216; --number</td>
+<td>&#x7531; 1 &#x5F00;&#x59CB;&#x5BF9;&#x6240;&#x6709;&#x8F93;&#x51FA;&#x7684;&#x884C;&#x6570;&#x7F16;&#x53F7;  </td>
 </tr>
 <tr>
-<td>-w&#x6216;--words</td>
-<td>&#x53EA;&#x663E;&#x793A;&#x5B57;&#x6570;</td>
+<td>-b &#x6216; --number-nonblank</td>
+<td>&#x548C; -n &#x76F8;&#x4F3C;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5BF9;&#x4E8E;&#x7A7A;&#x767D;&#x884C;&#x4E0D;&#x7F16;&#x53F7;  </td>
 </tr>
 <tr>
-<td>-c&#x6216;--bytes&#x6216;--chars</td>
-<td>&#x53EA;&#x663E;&#x793A;Bytes&#x6570; </td>
+<td>-s &#x6216; --squeeze-blank</td>
+<td>&#x5F53;&#x9047;&#x5230;&#x6709;&#x8FDE;&#x7EED;&#x4E24;&#x884C;&#x4EE5;&#x4E0A;&#x7684;&#x7A7A;&#x767D;&#x884C;&#xFF0C;&#x5C31;&#x4EE3;&#x6362;&#x4E3A;&#x4E00;&#x884C;&#x7684;&#x7A7A;&#x767D;&#x884C;  </td>
+</tr>
+<tr>
+<td>-v &#x6216; --show-nonprinting</td>
+<td>&#x5C06;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;  </td>
 </tr>
 </tbody>
 </table>
@@ -317,12 +290,12 @@
 
             
                 
-                <a href="dirname.html" class="navigation navigation-prev " aria-label="Previous page: dirname">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: linux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="./" class="navigation navigation-next " aria-label="Next page: others">
+                <a href="curl.html" class="navigation navigation-next " aria-label="Next page: curl">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -333,7 +306,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"wc","level":"2.1.5","depth":2,"next":{"title":"others","level":"2.2","depth":1,"path":"chapters/linux/README.md","ref":"chapters/linux/README.md","articles":[]},"previous":{"title":"dirname","level":"2.1.4","depth":2,"path":"chapters/linux/dirname.md","ref":"chapters/linux/dirname.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/linux/wc.md","mtime":"2017-03-16T09:22:57.345Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-18T05:01:17.201Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"cat","level":"2.1.1","depth":2,"next":{"title":"curl","level":"2.1.2","depth":2,"path":"chapters/linux/curl.md","ref":"chapters/linux/curl.md","articles":[]},"previous":{"title":"linux","level":"2.1","depth":1,"path":"chapters/linux/README.md","ref":"chapters/linux/README.md","articles":[{"title":"cat","level":"2.1.1","depth":2,"path":"chapters/linux/cat.md","ref":"chapters/linux/cat.md","articles":[]},{"title":"curl","level":"2.1.2","depth":2,"path":"chapters/linux/curl.md","ref":"chapters/linux/curl.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/linux/cat.md","mtime":"2017-03-16T09:15:19.951Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-17T15:11:08.132Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
