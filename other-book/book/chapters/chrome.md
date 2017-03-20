@@ -1,6 +1,7 @@
 # chrome
 
 ## Elements
+-  Elements 里面选中某个元素，按 h 可以隐藏该元素
 ## Console
 ## Sources
 - ctrl+o---搜索文件

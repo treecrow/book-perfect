@@ -52,7 +52,6 @@
     * [API](chapters/Object/API.md)
     * [拷贝](chapters/Object/copy.md)
 * [Advanced](chapters/Advanced/README.md)
-    * [柯里化](chapters/Advanced/curry.md)
     * [只执行一次的函数](chapters/Advanced/once.md)
     * [节流函数](chapters/Advanced/throttle.md)
     * [获取函数参数名](chapters/Advanced/getFunArgs.md)
