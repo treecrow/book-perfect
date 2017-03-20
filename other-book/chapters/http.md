@@ -1,5 +1,13 @@
 # HTTP总结
 
+## 教程
+- [《图解HTTP》]()
+- [《HTTP权威指南》](https://book.douban.com/subject/10746113/)
+- [HTTP协议 处理流程](http://www.qixing318.com/article/the-http-protocol-handling-process.html)
+- [图解Http协议](https://zhuanlan.zhihu.com/p/25518072)
+- [网络基础知识之 HTTP 协议](https://zhuanlan.zhihu.com/p/24913080)
+- [爬虫入门及HTTP协议的讲解](https://zhuanlan.zhihu.com/p/25035661)
+
 ## 方法
 - GET---获取、读取数据
 - POST---提交数据
