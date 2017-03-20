@@ -18,4 +18,5 @@
     * [npm](chapters/others/npm.md)
     * [nvm](chapters/others/nvm.md)
     * [yarn](chapters/others/yarn.md)
+* [shell](chapters/shell/README.md)
 
