@@ -8,6 +8,8 @@
     * [cat](chapters/linux/cat.md)
     * [curl](chapters/linux/curl.md)
     * [dirname](chapters/linux/dirname.md)
+    * [ls](chapters/linux/ls.md)
+    * [unrar](chapters/linux/unrar.md)
     * [wc](chapters/linux/wc.md)
     * [wget](chapters/linux/wget.md)
 * [others](chapters/others/README.md)
