@@ -21,6 +21,7 @@
     * [float](chapters/tool/float.md)
     * [align](chapters/tool/align.md)
     * [overflow](chapters/tool/overflow.md)
+    * [pointer](chapters/tool/pointer.md)
     * [border](chapters/tool/border.md)
     * [wrap](chapters/tool/wrap.md)
     * [stream](chapters/tool/stream.md)
