@@ -4,7 +4,7 @@
 
 -----
 * [http](chapters/http.md)
-* [http](chapters/mvvm.md)
+* [mvvm](chapters/mvvm.md)
 * [seo](chapters/seo.md)
 * [函数式编程](chapters/函数式编程.md)
 * [前后端分离](chapters/前后端分离.md)
