@@ -32,7 +32,7 @@ propdel (pdel, pd)|-
 propedit (pedit, pe)|使用编辑器更改属性:svn propedit svn:ignore .
 propget (pget, pg)|查看属性的值，如 ：svn:ignore
 proplist (plist, pl)|查看当前目录下的 svn 属性信息
-propset(pset, ps) prop value path| prop 属性，value 值，path 路径:在 path 路径下，设置 prop 属性的值为 value:  svn propset svn:ignore -R .idea .
+propset(pset, ps) prop value path| prop 属性，value 值，path 路径:在 path 路径下，设置 prop 属性的值为 value:  svn propset svn:ignore '.idea' .
 relocate|-
 resolve|-
 resolved|-
