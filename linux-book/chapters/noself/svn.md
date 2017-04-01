@@ -29,7 +29,7 @@ mkdir|-
 move (mv, rename, ren)|-
 patch|-
 propdel (pdel, pd)|-
-propedit (pedit, pe)|-
+propedit (pedit, pe)|使用编辑器更改属性:svn propedit svn:ignore .
 propget (pget, pg)|查看属性的值，如 ：svn:ignore
 proplist (plist, pl)|查看当前目录下的 svn 属性信息
 propset(pset, ps) prop value path| prop 属性，value 值，path 路径:在 path 路径下，设置 prop 属性的值为 value:  svn propset svn:ignore -R .idea .
@@ -43,5 +43,6 @@ unlock|解锁
 update (up)|更新svn库到最新版本
 upgrade|-
 
+- [SVN中文手册](http://svndoc.iusesvn.com/)
 - [Linux SVN 命令详解](http://blog.csdn.net/zyz511919766/article/details/7289530)
 - [SVN命令行，Subversion的正确使用姿势，让版本控制更简单~](http://www.cnblogs.com/liushilin/p/6401017.html)

@@ -17,6 +17,7 @@
 * [noself](chapters/noself/README.md)
     * [git](chapters/noself/git.md)
     * [gitbook](chapters/noself/gitbook.md)
+    * [ionic](chapters/noself/ionic.md)
     * [npm](chapters/noself/npm.md)
     * [nvm](chapters/noself/nvm.md)
     * [svn](chapters/noself/svn.md)
