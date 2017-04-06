@@ -7,23 +7,7 @@
 #### 安装或更新nvm
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-```
-#### 安装tnvm
-```
-wget -O- https://raw.githubusercontent.com/aliyun-node/tnvm/master/install.sh | bash
-export METHOD=script
-source .bashrc
-```
-#### 设置多个版本的node共用一个npm的全局目录
-```
-cd
-npm set prefix ".tnvm/"
-//全局模块加载路径
-export NODE_PATH="/home/treecrow/.tnvm/lib/node_modules/"
-//命令行环境变量
-export PATH="/home/treecrow/.tnvm/bin/":$PATH
-//使环境变量生效
-source .bashrc
+source ~/.nvm/nvm.sh
 ```
 
 ## 命令
