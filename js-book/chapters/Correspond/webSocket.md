@@ -1,6 +1,6 @@
 ## WebSocket
 ```js
-var socket=new WebSocket("ws://www.example.com/server.php");
+var socket=new WebSocket(models);
 socket.send("Hello World!");
 socket.onmessage=function(event){
     var data=event.data;
