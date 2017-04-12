@@ -5,6 +5,7 @@
 -----
 * [angular](chapters/angular/README.md)
     * [doc](chapters/angular/doc.md)
+    * [summary](chapters/angular/summary.md)
 * [ionic](chapters/ionic/README.md)
     * [doc](chapters/ionic/doc.md)
 * [loopback](chapters/loopback/README.md)
