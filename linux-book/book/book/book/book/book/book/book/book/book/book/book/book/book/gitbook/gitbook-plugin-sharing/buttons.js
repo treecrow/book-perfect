@@ -29,7 +29,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-weibo',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('http://service.weibo.com/share/share.php?content=utf-8&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title));
+                window.open('http://services.weibo.com/share/share.php?content=utf-8&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title));
             }
         },
         'instapaper': {
