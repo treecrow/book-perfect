@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 
 -----
+* [模块](chapters/模块.md)
 * [Docs](chapters/Docs/README.md)
     * [assert断言](chapters/Docs/assert.md)
     * [buffer](chapters/Docs/buffer.md)
@@ -39,5 +40,4 @@
     * [V8](chapters/Docs/V8.md)
     * [vm虚拟机](chapters/Docs/vm.md)
     * [ZLIB压缩](chapters/Docs/ZLIB.md)
-* [模块](chapters/模块.md)
 
