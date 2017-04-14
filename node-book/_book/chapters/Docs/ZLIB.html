@@ -1,0 +1,765 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ZLIB压缩 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="vm.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../模块.html">
+            
+                <a href="../模块.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Docs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="assert.html">
+            
+                <a href="assert.html">
+            
+                    
+                    assert断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="buffer.html">
+            
+                <a href="buffer.html">
+            
+                    
+                    buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="c插件.html">
+            
+                <a href="c插件.html">
+            
+                    
+                    c插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="childProcesses.html">
+            
+                <a href="childProcesses.html">
+            
+                    
+                    childProcesses子进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="cluster.html">
+            
+                <a href="cluster.html">
+            
+                    
+                    cluster集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="CLI.html">
+            
+                <a href="CLI.html">
+            
+                    
+                    CLI命令行选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="console.html">
+            
+                <a href="console.html">
+            
+                    
+                    console控制台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="crypto.html">
+            
+                <a href="crypto.html">
+            
+                    
+                    crypto加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="debugger.html">
+            
+                <a href="debugger.html">
+            
+                    
+                    debugger调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="dns.html">
+            
+                <a href="dns.html">
+            
+                    
+                    dns域名服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.11" data-path="error.html">
+            
+                <a href="error.html">
+            
+                    
+                    error错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.12" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    events事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.13" data-path="fileSystem.html">
+            
+                <a href="fileSystem.html">
+            
+                    
+                    fileSystem文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.14" data-path="global.html">
+            
+                <a href="global.html">
+            
+                    
+                    global全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.15" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.16" data-path="https.html">
+            
+                <a href="https.html">
+            
+                    
+                    https
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.17" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    module模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.18" data-path="net.html">
+            
+                <a href="net.html">
+            
+                    
+                    net网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.19" data-path="os.html">
+            
+                <a href="os.html">
+            
+                    
+                    os操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.20" data-path="path.html">
+            
+                <a href="path.html">
+            
+                    
+                    path路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.21" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                    process进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.22" data-path="queryStrigs.html">
+            
+                <a href="queryStrigs.html">
+            
+                    
+                    queryStrigs查询字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.23" data-path="readline.html">
+            
+                <a href="readline.html">
+            
+                    
+                    readline逐行读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.24" data-path="REPL.html">
+            
+                <a href="REPL.html">
+            
+                    
+                    REPL交互式解释器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.25" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                    stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.26" data-path="stringDecode.html">
+            
+                <a href="stringDecode.html">
+            
+                    
+                    stringDecode字符串解码器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.27" data-path="timer.html">
+            
+                <a href="timer.html">
+            
+                    
+                    timer定时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.28" data-path="TLS&SSL.html">
+            
+                <a href="TLS&SSL.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.29" data-path="TTY.html">
+            
+                <a href="TTY.html">
+            
+                    
+                    TTY终端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.30" data-path="UDP&Datagram.html">
+            
+                <a href="UDP&Datagram.html">
+            
+                    
+                    UDP/Datagram数据报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.31" data-path="URL.html">
+            
+                <a href="URL.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.32" data-path="Util.html">
+            
+                <a href="Util.html">
+            
+                    
+                    Util实用工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.33" data-path="V8.html">
+            
+                <a href="V8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.34" data-path="vm.html">
+            
+                <a href="vm.html">
+            
+                    
+                    vm虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.35" data-path="ZLIB.html">
+            
+                <a href="ZLIB.html">
+            
+                    
+                    ZLIB压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ZLIB压缩</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="zlib-&#x538B;&#x7F29;">ZLIB &#x538B;&#x7F29;</h1>
+<h2 id="compressing-http-requests-and-responses">Compressing HTTP requests and responses</h2>
+<h2 id="memory-usage-tuning">Memory Usage Tuning</h2>
+<h2 id="flushing">Flushing</h2>
+<h2 id="constants">Constants</h2>
+<h2 id="class-options">Class Options</h2>
+<h2 id="zlibdeflate&#x7C7B;">zlib.Deflate&#x7C7B;</h2>
+<h2 id="zlibdeflateraw&#x7C7B;">zlib.DeflateRaw&#x7C7B;</h2>
+<h2 id="zlibgunzip&#x7C7B;">zlib.Gunzip&#x7C7B;</h2>
+<h2 id="zlibgzip&#x7C7B;">zlib.Gzip&#x7C7B;</h2>
+<h2 id="zlibinflate&#x7C7B;">zlib.Inflate&#x7C7B;</h2>
+<h2 id="zlibinflateraw&#x7C7B;">zlib.InflateRaw&#x7C7B;</h2>
+<h2 id="zlibunzip&#x7C7B;">zlib.Unzip&#x7C7B;</h2>
+<h2 id="zlibzlib&#x7C7B;">zlib.Zlib&#x7C7B;</h2>
+<ul>
+<li>zlib.flush([kind], callback)</li>
+<li>zlib.params(level, strategy, callback)</li>
+<li>zlib.reset()</li>
+</ul>
+<h2 id="zlib">zlib</h2>
+<ul>
+<li>zlib.constants</li>
+<li>zlib.createDeflate([options])</li>
+<li>zlib.createDeflateRaw([options])</li>
+<li>zlib.createGunzip([options])</li>
+<li>zlib.createGzip([options])</li>
+<li>zlib.createInflate([options])</li>
+<li>zlib.createInflateRaw([options])</li>
+<li>zlib.createUnzip([options])</li>
+<li>zlib.deflate(buf[, options], callback)</li>
+<li>zlib.deflateSync(buf[, options])</li>
+<li>zlib.deflateRaw(buf[, options], callback)</li>
+<li>zlib.deflateRawSync(buf[, options])</li>
+<li>zlib.gunzip(buf[, options], callback)</li>
+<li>zlib.gunzipSync(buf[, options])</li>
+<li>zlib.gzip(buf[, options], callback)</li>
+<li>zlib.gzipSync(buf[, options])</li>
+<li>zlib.inflate(buf[, options], callback)</li>
+<li>zlib.inflateSync(buf[, options])</li>
+<li>zlib.inflateRaw(buf[, options], callback)</li>
+<li>zlib.inflateRawSync(buf[, options])</li>
+<li>zlib.unzip(buf[, options], callback)</li>
+<li>zlib.unzipSync(buf[, options])</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vm.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vm虚拟机">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ZLIB压缩","level":"2.2.35","depth":2,"previous":{"title":"vm虚拟机","level":"2.2.34","depth":2,"path":"chapters/Docs/vm.md","ref":"chapters/Docs/vm.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Docs/ZLIB.md","mtime":"2017-04-04T14:01:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-13T02:12:02.328Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,33 +1,36 @@
 # userService
+- service.user
+- factory
+- userService
 
 ## 方法
-方法|对应后端方法|传入值|返回值|含义
+方法|from|传入值|返回值|含义
 ---|---|---|---|---
-save|-|传入值|返回值|与updateLocal功能重复
-updateLocal|-|传入值|返回值|-
+updateLocal|-|-|-|-
+save|-|-|-|与updateLocal功能重复
 getUserToken|-|-|user|-
-isExisted|isExisted|userInfo|bool|-
-register|register|userInfo|then|-
-createUser|-|传入值|返回值|与register功能重复
-login|login,loginByEmail,loginByPhone|userLogin|then|-
+isExisted|$UserCenter|userInfo|bool|-
+register|$UserCenter|userInfo|then|-
+createUser|-|-|-|与register功能重复
+login|$UserCenter|userLogin|then|-
 logout|-|-|-|-
-checkToken|checkToken|userInfo|bool|-
-setActiveMailCode|setActiveMailCode|userInfo|then|-
-setActivePhoneCode|setActivePhoneCode|userInfo|then|-
-activeByMail|activeByMail|userInfo|then|-
-activeByPhone|activeByPhone|userInfo|then|-
-changUserName|changUserName|userInfo|-|-
-updateCard|updateCard|userInfo|then|-
-updatePassword|updatePassword|userInfo|then|-
-updateEmail|updateEmail|userInfo|then|-
-updatePhone|updatePhone|userInfo|then|-
-findById|-|传入值|返回值|-
-findByEmail|-|传入值|返回值|-
-findByPhoneNo|-|传入值|返回值|-
-findByUserPasswd|-|传入值|返回值|-
-checkEmail|-|传入值|返回值|-
-checkPhoneNo|-|传入值|返回值|-
-getMessage|-|传入值|返回值|-
-savecomment|-|传入值|返回值|-
+checkToken|$UserCenter|userInfo|bool|-
+setActiveMailCode|$UserCenter|userInfo|then|-
+setActivePhoneCode|$UserCenter|userInfo|then|-
+activeByMail|$UserCenter|userInfo|then|-
+activeByPhone|$UserCenter|userInfo|then|-
+changUserName|$UserCenter|userInfo|-|-
+updateCard|$UserCenter|userInfo|then|-
+updatePassword|$UserCenter|userInfo|then|-
+updateEmail|$UserCenter|userInfo|then|-
+updatePhone|$UserCenter|userInfo|then|-
+findById|CjUsers|-|-|-
+findByEmail|CjUsers|-|-|-
+findByPhoneNo|CjUsers|-|-|-
+findByUserPasswd|CjUsers|-|-|-
+checkEmail|-|-|-|-
+checkPhoneNo|-|-|-|-
+getMessage|$UserCenter|-|-|-
+savecomment|-|-|-|-
 
 

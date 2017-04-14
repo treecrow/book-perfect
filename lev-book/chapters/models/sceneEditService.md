@@ -10,14 +10,15 @@ offset|-
 ## 方法
 方法|accepts|returns|含义
 ---|---|---|---
-createSceneWithPages|{scene: object, pages: array} |(scene-object)|-
+copySceneWithPages|{sceneId: number,userId: number}|(scene-object)|复制一个场景，生成新的scene,包括页面数据
+createSceneWithPages|{scene: object, pages: array} |(scene-object)|根据页面编辑后数据生成新的scene,包括页面数据
 updateSceneWithPages|{scene: object, pages: array} |(scene-object)|-
-createScene|{scene: object} |(scene-object,msg-string)|-
-updateScene|(scene: object) |(scene-object)|-
-deleteScene|(scene: object) |(scene-object)|-
-createScenePages|(pages: array) |(scene-object)|-
-updateScenePages|(scene: object, scaleX: number, scaleY: number) |(scene-object)|-
-deleteScenePages|(pages: array) |(scene-object)|-
-createScenePage|(pages: object) |(pages-object)|-
-updateScenePage|(pages: object) |(pages-object|-
-deleteScenePage|(pages: object) |(pages-object|-
+createScene|{scene: object} |(scene-object,msg-string)|根据页面编辑后数据生成新的scene
+updateScene|{scene: object} |(scene-object)|修改场景信息
+deleteScene|{scene: object} |(scene-object)|删除场景信息
+createScenePages|{pages: array} |(scene-object)|新建场景页面信息
+updateScenePages|{scene: object, scaleX: number, scaleY: number} |(scene-object)|修改场景页面信息
+deleteScenePages|{pages: object} |(scene-object)|删除多个页面信息
+createScenePage|{pages: object} |(pages-object)|新增加场景一个页面信息
+updateScenePage|{pages: object} |(pages-object|修改场景一个页面信息
+deleteScenePage|{pages: object} |(pages-object|删除场景一个页面信息
