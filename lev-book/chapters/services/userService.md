@@ -32,5 +32,3 @@ checkEmail|-|-|-|-
 checkPhoneNo|-|-|-|-
 getMessage|$UserCenter|-|-|-
 savecomment|-|-|-|-
-
-
