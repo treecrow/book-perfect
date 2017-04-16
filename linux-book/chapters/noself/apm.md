@@ -41,3 +41,8 @@ Cmd+Alt+Z／Checkout Head Revision|放弃你对文件所有的修改,直接将�
 ```
 git config --global core.editor "atom --wait"
 ```
+
+### 插件列表
+插件|作用
+---|---
+autoclose-html|-

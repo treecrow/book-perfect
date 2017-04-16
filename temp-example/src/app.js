@@ -1,1 +1,2 @@
-const aaa = '333';
+import async from 'async'
+console.log(async);
