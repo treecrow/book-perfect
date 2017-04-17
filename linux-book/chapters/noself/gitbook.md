@@ -11,6 +11,8 @@ npm install -g gitbook
 ---|---
 gitbook init|-
 gitbook serve|-
+--lrport |重启监控进程监听端口
+--port |web 服务监听端口
 gitbook build|-
 
 ## 文档

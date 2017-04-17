@@ -11,17 +11,17 @@ offset|-
 ## 方法
 方法|accepts|returns|含义
 ---|---|---|---
-getFontCssByTextAndFontName|{text:string, fontName:string}|(cssUrl-string)|将传入的字符压缩为css字体文件，并返回给前端响应链接
-setDefaultFileUrlHead|{url: string} |(url-string)|-
-getTplScenesBySceneType|{sceneTypeId: number} |(scene-object)|根据场景类型 获取模板列表
-getScenesBySceneType|{sceneType: number, isMore: boolean} |(scene-object))|与getTplScenesBySceneType方法类似，感觉像是测试用例
-getSceneInfo|{id: number} |(scene-object)|//根据ID获取一个场景
-getSceneInfoByCode|{code: string} |(scene-object)|// 根据scenecodeVarchar获取一个场景
+setDefaultFileUrlHead|{url: string} |(url-string)|修改PREFIX_FILE_HOST
+getFontCssByTextAndFontName|{text:string, fontName:string}|(cssUrl-string)|将传入的字符压缩为css字体文件，并返回给前端前端链接
+getTplScenesBySceneType|{sceneTypeId: number} |(scene-object)|根据场景类型获取模板列表
+getSceneInfoByCode|{code: string} |(scene-object)|根据scenecodeVarchar获取一个场景
+getUserScenes|{userId: number} |(scene-object)|通过useridInt获取CjScene
+getBestScenes|-|(scenes-object)|getBestScenes获取CjScene
+getNewScenes|-|(scenes-object)|getNewScenes获取CjScene
+getSceneAll|{id: number} |(scene-object)|根据ID获取CjScene（对应的pages已经处理过）
+getSceneInfo|{id: number} |(scene-object)|根据ID获取CjScene(验证场景的cssUrl是否存在，不存在就重新生成)
+getScenesBySceneType|{sceneType: number, isMore: boolean} |(scene-object))|根据不同sceneType返回不同CjScene列表
+getScenePages|{id: number, scaleX: number, scaleY: number} |(pages-object)|获取CjScenepage
 updateStat|{stat: object} |(stat-object)|更新或创建cjstat
-getScenePages|{id: number, scaleX: number, scaleY: number} |(pages-object)|根据sceneidBigint返回对应的page（包装过的）
-getSceneAll|{id: number} |(scene-object)|根据sceneId获取所有相应的scene（包含了page信息）
-getFollowScenes|{userId: number} |(scene-object)|根据userId获取相应的CjFollow
-getUserScenes|{userId: number} |(scene-object)|根据userId获取相应的CjScene
 followScene|{userId: number ,sceneId: number}|(authorInfo-object)|更新或创建cjfollow
-getBestScenes|-|(scenes-object)|这个是获取哪个场景，返回的是场景列表（非单个场景）
-getNewScenes|-|(scenes-object)|与getNewScenes方法类似，返回的场景进行了包装
+getFollowScenes|{userId: number} |(scene-object)|通过userid获取CjFollow

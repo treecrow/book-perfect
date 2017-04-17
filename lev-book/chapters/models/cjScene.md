@@ -1,5 +1,10 @@
 # cj-scene
 
+## 方法
+方法|含义
+---|---
+getCssUrl|发布后生成CSS
+
 ## 字段
 字段|含义
 ---|---
@@ -54,3 +59,4 @@ loadinglogo|-
 accesscodeVarchar|-
 loadinglogoVarchar|-
 groupidInt|-
+cssUrl|-

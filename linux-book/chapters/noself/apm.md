@@ -45,4 +45,5 @@ git config --global core.editor "atom --wait"
 ### 插件列表
 插件|作用
 ---|---
-autoclose-html|-
+autoclose-html|html自动补全
+activate-power-mode|打字烟花效果
