@@ -10,12 +10,12 @@ offset|-
 ## 方法
 方法|accepts|returns|含义
 ---|---|---|---
-isExisted|{user: object} |(user-object)|-
-register|{user: object} |(user-object,msg-string)|-
-login|{user: object} |(user-object)|-
-loginByEmail|{email: string, passwd: string} |(user-object)|-
-loginByPhone|{phone: string, passwd: string} |(user-object)|-
-checkToken|{user: object} |(user-object)|-
+isExisted|[user.email, user.phone] |(user-object)|-
+register|[ user.uname, user.email, user.phone, user.passwdmd5] |(user-object, msg-string)|-
+login|{ user.passwdmd5, user.phone, user.email} |(user-object)|-
+loginByEmail|[email, passwd] |(user-object)|-
+loginByPhone|[phone, passwd] |(user-object)|-
+checkToken|[user.userid, user.userid] |(user-object)|-
 updateCard|{user: object} |(user-object)|-
 updatePassword|{user: object} |(user-object)|-
 updateEmail|{user: object} |(user-object)|-
