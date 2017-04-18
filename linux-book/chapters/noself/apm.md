@@ -26,6 +26,8 @@ Cmd+L|选中当前行
 Ctrl+Shift+U|呼出编码选择窗口并手动选择文件的编码方式
 Cmd+Shift+F|进行工程内查找
 Cmd+Shift+B|列出所有新建的或更改过的文件
+Cmd+Alt+[|代码折叠
+Cmd+Alt+]|代码展开
 
 ### atom命令
 命令|含义
@@ -47,3 +49,5 @@ git config --global core.editor "atom --wait"
 ---|---
 autoclose-html|html自动补全
 activate-power-mode|打字烟花效果
+atom-beautify|代码格式化
+go definition|代码跳转
