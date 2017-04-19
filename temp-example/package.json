@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "dependencies": {
     "async": "^2.3.0",
+    "co": "^4.6.0",
     "htmlparser2": "^3.9.2",
     "lodash": "^4.17.4",
     "log4js": "^1.1.1"

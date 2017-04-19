@@ -20,9 +20,9 @@ setActiveMailCode|[email]|(user-object)|-
 setActivePhoneCode|[phone]|(user-object)|-
 activeByMail|[user.email, user.userActivationKey]|(user-object)|-
 activeByPhone|[user.phone, user.userActivationKey]|(user-object)|-
-updateUserName|[user.userid, user.token, user.uname] |(user-object)|-
-updateCard|[user.userid, user.token, user.uname, user.headimg] |(user-object)|-
-updatePassword|[user.userid, user.token, user.passwd] |(user-object)|-
-updateEmail|[user.userid, user.token, user.email] |(user-object)|-
-updatePhone|[user.userid, user.token, user.phone]|(user-object)|-
+updateUserName|[user.userid, user.token, user.newUname] |(user-object)|-
+updateCard|[user.userid, user.token, user.newUname, user.newHeadimg] |(user-object)|-
+updatePassword|[user.userid, user.token, user.newPasswd] |(user-object)|-
+updateEmail|[user.userid, user.token, user.newEmail] |(user-object)|-
+updatePhone|[user.userid, user.token, user.newPhone]|(user-object)|-
 getMessages|{user: object} |(msg-string)|-

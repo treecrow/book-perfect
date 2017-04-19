@@ -991,40 +991,70 @@
 </thead>
 <tbody>
 <tr>
-<td>getFontCssByTextAndFontName</td>
-<td>{text:string, fontName:string}</td>
-<td>(cssUrl-string)</td>
-<td>&#x5C06;&#x4F20;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x538B;&#x7F29;&#x4E3A;css&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED9;&#x524D;&#x7AEF;&#x54CD;&#x5E94;&#x94FE;&#x63A5;</td>
-</tr>
-<tr>
 <td>setDefaultFileUrlHead</td>
 <td>{url: string}</td>
 <td>(url-string)</td>
-<td>-</td>
+<td>&#x4FEE;&#x6539;PREFIX_FILE_HOST</td>
+</tr>
+<tr>
+<td>getFontCssByTextAndFontName</td>
+<td>{text:string, fontName:string}</td>
+<td>(cssUrl-string)</td>
+<td>&#x5C06;&#x4F20;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x538B;&#x7F29;&#x4E3A;css&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED9;&#x524D;&#x7AEF;&#x524D;&#x7AEF;&#x94FE;&#x63A5;</td>
 </tr>
 <tr>
 <td>getTplScenesBySceneType</td>
 <td>{sceneTypeId: number}</td>
 <td>(scene-object)</td>
-<td>&#x6839;&#x636E;&#x573A;&#x666F;&#x7C7B;&#x578B; &#x83B7;&#x53D6;&#x6A21;&#x677F;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>getScenesBySceneType</td>
-<td>{sceneType: number, isMore: boolean}</td>
-<td>(scene-object))</td>
-<td>&#x4E0E;getTplScenesBySceneType&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;&#xFF0C;&#x611F;&#x89C9;&#x50CF;&#x662F;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;</td>
-</tr>
-<tr>
-<td>getSceneInfo</td>
-<td>{id: number}</td>
-<td>(scene-object)</td>
-<td>//&#x6839;&#x636E;ID&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x573A;&#x666F;</td>
+<td>&#x6839;&#x636E;&#x573A;&#x666F;&#x7C7B;&#x578B;&#x83B7;&#x53D6;&#x6A21;&#x677F;&#x5217;&#x8868;</td>
 </tr>
 <tr>
 <td>getSceneInfoByCode</td>
 <td>{code: string}</td>
 <td>(scene-object)</td>
-<td>// &#x6839;&#x636E;scenecodeVarchar&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x573A;&#x666F;</td>
+<td>&#x6839;&#x636E;scenecodeVarchar&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x573A;&#x666F;</td>
+</tr>
+<tr>
+<td>getUserScenes</td>
+<td>{userId: number}</td>
+<td>(scene-object)</td>
+<td>&#x901A;&#x8FC7;useridInt&#x83B7;&#x53D6;CjScene</td>
+</tr>
+<tr>
+<td>getBestScenes</td>
+<td>-</td>
+<td>(scenes-object)</td>
+<td>getBestScenes&#x83B7;&#x53D6;CjScene</td>
+</tr>
+<tr>
+<td>getNewScenes</td>
+<td>-</td>
+<td>(scenes-object)</td>
+<td>getNewScenes&#x83B7;&#x53D6;CjScene</td>
+</tr>
+<tr>
+<td>getSceneAll</td>
+<td>{id: number}</td>
+<td>(scene-object)</td>
+<td>&#x6839;&#x636E;ID&#x83B7;&#x53D6;CjScene&#xFF08;&#x5BF9;&#x5E94;&#x7684;pages&#x5DF2;&#x7ECF;&#x5904;&#x7406;&#x8FC7;&#xFF09;</td>
+</tr>
+<tr>
+<td>getSceneInfo</td>
+<td>{id: number}</td>
+<td>(scene-object)</td>
+<td>&#x6839;&#x636E;ID&#x83B7;&#x53D6;CjScene(&#x9A8C;&#x8BC1;&#x573A;&#x666F;&#x7684;cssUrl&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x5C31;&#x91CD;&#x65B0;&#x751F;&#x6210;)</td>
+</tr>
+<tr>
+<td>getScenesBySceneType</td>
+<td>{sceneType: number, isMore: boolean}</td>
+<td>(scene-object))</td>
+<td>&#x6839;&#x636E;&#x4E0D;&#x540C;sceneType&#x8FD4;&#x56DE;&#x4E0D;&#x540C;CjScene&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>getScenePages</td>
+<td>{id: number, scaleX: number, scaleY: number}</td>
+<td>(pages-object)</td>
+<td>&#x83B7;&#x53D6;CjScenepage</td>
 </tr>
 <tr>
 <td>updateStat</td>
@@ -1033,46 +1063,16 @@
 <td>&#x66F4;&#x65B0;&#x6216;&#x521B;&#x5EFA;cjstat</td>
 </tr>
 <tr>
-<td>getScenePages</td>
-<td>{id: number, scaleX: number, scaleY: number}</td>
-<td>(pages-object)</td>
-<td>&#x6839;&#x636E;sceneidBigint&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;page&#xFF08;&#x5305;&#x88C5;&#x8FC7;&#x7684;&#xFF09;</td>
-</tr>
-<tr>
-<td>getSceneAll</td>
-<td>{id: number}</td>
-<td>(scene-object)</td>
-<td>&#x6839;&#x636E;sceneId&#x83B7;&#x53D6;&#x6240;&#x6709;&#x76F8;&#x5E94;&#x7684;scene&#xFF08;&#x5305;&#x542B;&#x4E86;page&#x4FE1;&#x606F;&#xFF09;</td>
-</tr>
-<tr>
-<td>getFollowScenes</td>
-<td>{userId: number}</td>
-<td>(scene-object)</td>
-<td>&#x6839;&#x636E;userId&#x83B7;&#x53D6;&#x76F8;&#x5E94;&#x7684;CjFollow</td>
-</tr>
-<tr>
-<td>getUserScenes</td>
-<td>{userId: number}</td>
-<td>(scene-object)</td>
-<td>&#x6839;&#x636E;userId&#x83B7;&#x53D6;&#x76F8;&#x5E94;&#x7684;CjScene</td>
-</tr>
-<tr>
 <td>followScene</td>
 <td>{userId: number ,sceneId: number}</td>
 <td>(authorInfo-object)</td>
 <td>&#x66F4;&#x65B0;&#x6216;&#x521B;&#x5EFA;cjfollow</td>
 </tr>
 <tr>
-<td>getBestScenes</td>
-<td>-</td>
-<td>(scenes-object)</td>
-<td>&#x8FD9;&#x4E2A;&#x662F;&#x83B7;&#x53D6;&#x54EA;&#x4E2A;&#x573A;&#x666F;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x573A;&#x666F;&#x5217;&#x8868;&#xFF08;&#x975E;&#x5355;&#x4E2A;&#x573A;&#x666F;&#xFF09;</td>
-</tr>
-<tr>
-<td>getNewScenes</td>
-<td>-</td>
-<td>(scenes-object)</td>
-<td>&#x4E0E;getNewScenes&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x573A;&#x666F;&#x8FDB;&#x884C;&#x4E86;&#x5305;&#x88C5;</td>
+<td>getFollowScenes</td>
+<td>{userId: number}</td>
+<td>(scene-object)</td>
+<td>&#x901A;&#x8FC7;userid&#x83B7;&#x53D6;CjFollow</td>
 </tr>
 </tbody>
 </table>
@@ -1119,7 +1119,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"sceneShowService","level":"2.3.36","depth":2,"next":{"title":"userCenter","level":"2.3.37","depth":2,"path":"chapters/models/userCenter.md","ref":"chapters/models/userCenter.md","articles":[]},"previous":{"title":"sceneShow","level":"2.3.35","depth":2,"path":"chapters/models/sceneShow.md","ref":"chapters/models/sceneShow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/sceneShowService.md","mtime":"2017-04-13T06:29:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T07:19:49.523Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"sceneShowService","level":"2.3.36","depth":2,"next":{"title":"userCenter","level":"2.3.37","depth":2,"path":"chapters/models/userCenter.md","ref":"chapters/models/userCenter.md","articles":[]},"previous":{"title":"sceneShow","level":"2.3.35","depth":2,"path":"chapters/models/sceneShow.md","ref":"chapters/models/sceneShow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/sceneShowService.md","mtime":"2017-04-17T06:39:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-17T10:34:35.452Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
