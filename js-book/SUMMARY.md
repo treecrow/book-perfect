@@ -56,6 +56,7 @@
     * [节流函数](chapters/Advanced/throttle.md)
     * [获取函数参数名](chapters/Advanced/getFunArgs.md)
     * [彻底冻结对象](chapters/Advanced/deepFreeze.md)
+    * [异步编程](chapters/Advanced/异步编程.md)
 * [Canvas](chapters/Canvas/README.md)
     * [示例](chapters/Canvas/示例.md)
     * [other](chapters/Canvas/other.md)

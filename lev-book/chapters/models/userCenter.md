@@ -20,6 +20,7 @@ setActiveMailCode|[email]|(user-object)|-
 setActivePhoneCode|[phone]|(user-object)|-
 activeByMail|[user.email, user.userActivationKey]|(user-object)|-
 activeByPhone|[user.phone, user.userActivationKey]|(user-object)|-
+updateUserName|[user.userid, user.token, user.uname] |(user-object)|-
 updateCard|[user.userid, user.token, user.uname, user.headimg] |(user-object)|-
 updatePassword|[user.userid, user.token, user.passwd] |(user-object)|-
 updateEmail|[user.userid, user.token, user.email] |(user-object)|-
