@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="curry.html" />
+    <link rel="next" href="once.html" />
     
     
     <link rel="prev" href="../Object/copy.html" />
@@ -795,20 +795,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.9.1" data-path="curry.html">
-            
-                <a href="curry.html">
-            
-                    
-                    柯里化
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.9.2" data-path="once.html">
+        <li class="chapter " data-level="2.9.1" data-path="once.html">
             
                 <a href="once.html">
             
@@ -821,7 +808,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.9.3" data-path="throttle.html">
+        <li class="chapter " data-level="2.9.2" data-path="throttle.html">
             
                 <a href="throttle.html">
             
@@ -834,7 +821,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.9.4" data-path="getFunArgs.html">
+        <li class="chapter " data-level="2.9.3" data-path="getFunArgs.html">
             
                 <a href="getFunArgs.html">
             
@@ -847,7 +834,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.9.5" data-path="deepFreeze.html">
+        <li class="chapter " data-level="2.9.4" data-path="deepFreeze.html">
             
                 <a href="deepFreeze.html">
             
@@ -1407,6 +1394,19 @@
             
         </li>
     
+        <li class="chapter " data-level="2.18" data-path="../babel.html">
+            
+                <a href="../babel.html">
+            
+                    
+                    babel
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -1485,7 +1485,7 @@
                 </a>
                 
                 
-                <a href="curry.html" class="navigation navigation-next " aria-label="Next page: 柯里化">
+                <a href="once.html" class="navigation navigation-next " aria-label="Next page: 只执行一次的函数">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1496,7 +1496,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Advanced","level":"2.9","depth":1,"next":{"title":"柯里化","level":"2.9.1","depth":2,"path":"chapters/Advanced/curry.md","ref":"chapters/Advanced/curry.md","articles":[]},"previous":{"title":"拷贝","level":"2.8.2","depth":2,"path":"chapters/Object/copy.md","ref":"chapters/Object/copy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Advanced/README.md","mtime":"2017-03-11T12:28:40.334Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-20T08:50:39.490Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Advanced","level":"2.9","depth":1,"next":{"title":"只执行一次的函数","level":"2.9.1","depth":2,"path":"chapters/Advanced/once.md","ref":"chapters/Advanced/once.md","articles":[]},"previous":{"title":"拷贝","level":"2.8.2","depth":2,"path":"chapters/Object/copy.md","ref":"chapters/Object/copy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Advanced/README.md","mtime":"2017-04-04T14:01:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-16T15:43:56.103Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1504,6 +1504,10 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
