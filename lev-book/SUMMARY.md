@@ -3,6 +3,8 @@
 * [Introduction](README.md)
 
 -----
+* [app](chapters/app.md)
+* [gulp](chapters/gulp.md)
 * [loopback](chapters/loopback/README.md)
     * [doc](chapters/loopback/doc.md)
     * [init](chapters/loopback/init.md)
@@ -62,3 +64,4 @@
     * [过滤器](chapters/angular/过滤器.md)
 * [ionic](chapters/ionic/README.md)
     * [doc](chapters/ionic/doc.md)
+    * [服务](chapters/ionic/服务.md)

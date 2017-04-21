@@ -952,7 +952,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x670D;&#x52A1;">&#x670D;&#x52A1;</h1>
-<h3 id="http">$http</h3>
+<h2 id="http">$http</h2>
 <table>
 <thead>
 <tr>
@@ -995,13 +995,47 @@
 </tr>
 </tbody>
 </table>
-<h3 id="location">$location</h3>
-<h3 id="timeout">$timeout</h3>
-<h3 id="interval">$interval</h3>
-<h3 id="window">$window</h3>
-<h3 id="q">$q</h3>
+<h2 id="location">$location</h2>
+<h2 id="timeout">$timeout</h2>
+<h2 id="interval">$interval</h2>
+<h2 id="window">$window</h2>
+<h2 id="angularjs-&#x4E2D;&#x7684;promise-----q&#x670D;&#x52A1;&#x8BE6;&#x89E3;"><a href="http://www.cnblogs.com/xing901022/p/4928147.html" target="_blank">AngularJS &#x4E2D;&#x7684;Promise --- $q&#x670D;&#x52A1;&#x8BE6;&#x89E3;</a></h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defer()</td>
+<td>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x51E0;&#x4E2A;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;resolve,reject,notify&#x7B49;</td>
+</tr>
+<tr>
+<td>all()</td>
+<td>&#x4F20;&#x5165;Promise&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6279;&#x91CF;&#x6267;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;promise&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>when()</td>
+<td>&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x7B26;&#x5408;Promise&#x6807;&#x51C6;&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;promise&#x5BF9;&#x8C61;(&#x4E0E;all()&#x4F5C;&#x7528;&#x7C7B;&#x4F3C;)</td>
+</tr>
+<tr>
+<td>deferItem.resolve()</td>
+<td>&#x5B8C;&#x6210;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>deferItem.reject()</td>
+<td>&#x62D2;&#x7EDD;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>deferItem.promise</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;promise&#x5BF9;&#x8C61;</td>
+</tr>
+</tbody>
+</table>
 <h2 id="&#x521B;&#x5EFA;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x670D;&#x52A1;">&#x521B;&#x5EFA;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x670D;&#x52A1;</h2>
-<pre><code class="lang-js">app.service(<span class="hljs-string">&apos;hexafy&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+<pre><code class="lang-javascript">app.service(<span class="hljs-string">&apos;hexafy&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">this</span>.myFunc = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) </span>{
         <span class="hljs-keyword">return</span> x.toString(<span class="hljs-number">16</span>);
     }
@@ -1053,7 +1087,7 @@ app.controller(<span class="hljs-string">&apos;myCtrl&apos;</span>, <span class=
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"服务","level":"2.4.5","depth":2,"next":{"title":"过滤器","level":"2.4.6","depth":2,"path":"chapters/angular/过滤器.md","ref":"chapters/angular/过滤器.md","articles":[]},"previous":{"title":"指令","level":"2.4.4","depth":2,"path":"chapters/angular/指令.md","ref":"chapters/angular/指令.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/angular/服务.md","mtime":"2017-04-12T05:34:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-19T07:20:57.512Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"服务","level":"2.4.5","depth":2,"next":{"title":"过滤器","level":"2.4.6","depth":2,"path":"chapters/angular/过滤器.md","ref":"chapters/angular/过滤器.md","articles":[]},"previous":{"title":"指令","level":"2.4.4","depth":2,"path":"chapters/angular/指令.md","ref":"chapters/angular/指令.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/angular/服务.md","mtime":"2017-04-19T09:35:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-19T10:49:48.093Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

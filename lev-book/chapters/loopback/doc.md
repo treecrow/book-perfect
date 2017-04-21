@@ -17,8 +17,3 @@
 
 ## 其它教程
 - [使用 loopback 快速搭建用户系统](http://www.jikexueyuan.com/course/797.html)
-
-
-## 技术栈
-- [云片：短信验证](https://www.yunpian.com/entry)
-- [phpMyAdmin](http://192.168.96.3/phpMyAdmin/tbl_structure.php?db=levxiudb&table=cj_users&token=b461419148b7770e4a3c4f8e05c3f555)
