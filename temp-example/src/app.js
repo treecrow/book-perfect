@@ -1,14 +1,8 @@
-var sleep = function () {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve('sancnalc');
-        }, 1000);
-    })
-};
+const _ = require('lodash');
 
-(async function(){
-  console.log('start');
-  let aa = await sleep(3000);
-  console.log(aa);
-})()
-console.log('4334');
+var array = [1, 2, 3, 4, 5, 6];
+
+let result = _.slice(array, 2, 4)
+
+console.log(result);
+console.log(array);
