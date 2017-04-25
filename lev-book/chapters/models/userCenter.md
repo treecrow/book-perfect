@@ -13,20 +13,16 @@ offset    | -
 方法                 | accepts                                                   | returns                   | 含义
 ------------------ | --------------------------------------------------------- | ------------------------- | --
 isExisted          | [user.email, user.phone]                                  | (user-object)             | -
-register           | [user.uname, user.email, user.phone, user.passwdmd5]      | (user-object, msg-string) | -
-registerByEmail    | [user.uname, user.email, user.passwdmd5]                  | (user-object, msg-string) | -
-registerByPhone    | [user.uname, user.phone, user.passwdmd5, user.activeCode] | (user-object, msg-string) | -
-login              | [user.passwdmd5, user.phone, user.email]                  | (user-object)             | -
-loginByEmail       | [email, passwd ]                                          | (user-object)             | -
-loginByPhone       | [phone, passwd ]                                          | (user-object)             | -
+registerByEmail    | [user.uname, user.email, user.password]                  | (user-object, msg-string) | -
+registerByPhone    | [user.uname, user.phone, user.password, user.activeCode] | (user-object, msg-string) | -
+login              | [user.password, user.phone, user.email]                  | (user-object)             | -
+loginByEmail       | [email, password ]                                          | (user-object)             | -
+loginByPhone       | [phone, password ]                                          | (user-object)             | -
 checkToken         | [user.userid, user.token]                                 | (user-object)             | -
-setActiveMailCode  | [email]                                                   | (user-object)             | -
 setActivePhoneCode | [phone]                                                   | (user-object)             | -
-activeByMail       | [user.email, user.userActivationKey]                      | (user-object)             | -
-activeByPhone      | [user.phone, user.userActivationKey]                      | (user-object)             | -
 updateUserName     | [user.userid, user.token, user.newUname]                  | (user-object)             | -
 updateCard         | [user.userid, user.token, user.newUname, user.newHeadimg] | (user-object)             | -
-updatePassword     | [user.userid, user.token, user.newPasswd]                 | (user-object)             | -
+updatePassword     | [user.userid, user.token, user.newPassword]                 | (user-object)             | -
 updateEmail        | [user.userid, user.token, user.newEmail]                  | (user-object)             | -
 updatePhone        | [user.userid, user.token, user.newPhone]                  | (user-object)             | -
 getMessages        | {user: object}                                            | (msg-string)              | -
