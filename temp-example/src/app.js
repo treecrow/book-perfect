@@ -1,11 +1,5 @@
 const _ = require('lodash');
 
-var youngest = _([1, 2, 3])
- .tap(function(array) {
-   array.pop();
- })
- .reverse()
- .value();
-// => [2, 1]
-
-console.log(youngest);
+var arr = [3,1,2,4,5];
+console.log(arr.concat([9,9]));
+console.log(arr);

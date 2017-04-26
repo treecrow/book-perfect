@@ -46,6 +46,7 @@
   - [cjScenedata](chapters/models/cjScenedata.md)
   - [cjScenedatadetail](chapters/models/cjScenedatadetail.md)
   - [cjScenedatasys](chapters/models/cjScenedatasys.md)
+  - [cjSms](chapters/models/cjSms.md)
   - [cjScenepage](chapters/models/cjScenepage.md)
   - [cjScenepagesys](chapters/models/cjScenepagesys.md)
   - [cjStat](chapters/models/cjStat.md)
