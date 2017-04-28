@@ -9,14 +9,14 @@ getCssUrl | 发布后生成CSS
 ## 字段
 
 字段                 | 含义
------------------- | --
+------------------ | -----------------------
 sceneidBigint      | id
 scenecodeVarchar   | 乱序id
 scenenameVarchar   | 场景名
 scenetypeInt       | 场景类型（886为名片）
-useridInt          | -
+useridInt          | 创建场景的用户id
 hitcountInt        | -
-createtimeTime     | -
+createtimeTime     | 创建时间
 musicurlVarchar    | -
 videocodeVarchar   | -
 showstatusInt      | -
@@ -61,4 +61,4 @@ loadinglogo        | -
 accesscodeVarchar  | -
 loadinglogoVarchar | -
 groupidInt         | -
-cssUrl             | -
+cssUrl             | 场景对应的css文件路径列表（整合为了字符串）

@@ -12,8 +12,8 @@ offset    | -
 
 方法                   | accepts                                         | returns                   | 含义
 -------------------- | ----------------------------------------------- | ------------------------- | -------------------------
-copySceneWithPages   | {sceneId: number,userId: number}                | (scene-object)            | 复制一个场景，生成新的scene,包括页面数据
-createCardScene      | {user: object}                                  | (scene-object)            | 创建用户名片场景
+copySceneWithPages   | {sceneId: number, userId: number}               | (scene-object)            | 复制一个场景，生成新的scene,包括页面数据
+createCardScene      | {sceneId: number, user: object}                 | (scene-object)            | 创建用户名片场景
 createSceneWithPages | {scene: object, pages: array}                   | (scene-object)            | 根据页面编辑后数据生成新的scene,包括页面数据
 updateSceneWithPages | {scene: object, pages: array}                   | (scene-object)            | -
 createScene          | {scene: object}                                 | (scene-object,msg-string) | 根据页面编辑后数据生成新的scene
