@@ -10,10 +10,10 @@ getCssUrl | 发布后生成CSS
 
 字段                 | 含义
 ------------------ | --
-sceneidBigint      | -
-scenecodeVarchar   | -
-scenenameVarchar   | -
-scenetypeInt       | -
+sceneidBigint      | id
+scenecodeVarchar   | 乱序id
+scenenameVarchar   | 场景名
+scenetypeInt       | 场景类型（886为名片）
 useridInt          | -
 hitcountInt        | -
 createtimeTime     | -
@@ -22,8 +22,8 @@ videocodeVarchar   | -
 showstatusInt      | -
 thumbnailVarchar   | -
 movietypeInt       | -
-descVarchar        | -
-ipVarchar          | -
+descVarchar        | 场景描述
+ipVarchar          | 创建场景的地点
 deleteInt          | -
 shenhe             | -
 tagidInt           | -

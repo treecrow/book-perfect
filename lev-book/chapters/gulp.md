@@ -43,3 +43,10 @@ gulp-live-server   | -
 gulp-shell         | -
 gulp-util          | -
 vinyl-ftp          | -
+
+## 更新服务端代码到服务器
+```
+gulp clean
+gulp release
+gulp ftp
+```
