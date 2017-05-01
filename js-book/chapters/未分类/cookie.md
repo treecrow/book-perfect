@@ -1,5 +1,6 @@
-### Cookie
-```js
+# Cookie
+
+```javascript
 var Cookie={
     //获取cookie
     get:function(name){

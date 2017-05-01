@@ -1467,80 +1467,39 @@
                                 
                                 <h1 id="&#x5F02;&#x6B65;&#x7F16;&#x7A0B;">&#x5F02;&#x6B65;&#x7F16;&#x7A0B;</h1>
 <h2 id="promises">Promises</h2>
-<h3 id="promise-&#x5305;&#x88C5;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x539F;&#x6765;&#x7684;&#x51FD;&#x6570;">Promise &#x5305;&#x88C5;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x539F;&#x6765;&#x7684;&#x51FD;&#x6570;</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> getDevices = ()=&gt; {
-  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject)=&gt; {
-    <span class="hljs-keyword">this</span>.request
-      .post(<span class="hljs-string">&apos;https://user-openapi.hekr.me/irdainfo&apos;</span>)
-      .set(<span class="hljs-string">&apos;Content-Type&apos;</span>, <span class="hljs-string">&apos;application/json&apos;</span>)
-      .set(<span class="hljs-string">&apos;Accept&apos;</span>, <span class="hljs-string">&apos;application/json&apos;</span>)
-      .set(<span class="hljs-string">&apos;Authorization&apos;</span>, <span class="hljs-string">`Bearer <span class="hljs-subst">${this.wholeCorrespond.accessToken}</span>`</span>)
-      .send({
-        <span class="hljs-string">&quot;action&quot;</span>: <span class="hljs-string">&quot;IRA0&quot;</span>,
-        <span class="hljs-string">&quot;type&quot;</span>: irType,
-        <span class="hljs-string">&quot;code&quot;</span>: irCode
-      })
-      .end((err, res)=&gt; {
-        <span class="hljs-keyword">if</span> (err || !res.ok) {
-          <span class="hljs-keyword">this</span>.$router.replace({name: <span class="hljs-string">&quot;fail&quot;</span>});
-          reject(<span class="hljs-string">&apos;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x96C6;&#x5408;&#x5931;&#x8D25;:&apos;</span> + <span class="hljs-built_in">JSON</span>.stringify(err, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));
-        } <span class="hljs-keyword">else</span> {
-          <span class="hljs-keyword">let</span> data = res.body;
-          <span class="hljs-keyword">if</span> (data.action === <span class="hljs-string">&quot;IRA1&quot;</span>) {
-            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x6210;&#x529F;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x96C6;&#x5408;&apos;</span>);
-            resolve(data.irdaInfo);
-          }
-        }
-      });
-  });
-};
-<span class="hljs-comment">//promise2 &#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x8BBE;&#x5907;&#x7684;&#x7EA2;&#x5916;&#x7801;&#x5E93;</span>
-<span class="hljs-keyword">let</span> getOrderGather = (devices)=&gt; {
-  <span class="hljs-keyword">let</span> targetDevice = devices[<span class="hljs-number">0</span>];
-  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject)=&gt; {
-    <span class="hljs-keyword">this</span>.request
-      .post(<span class="hljs-string">&apos;https://user-openapi.hekr.me/irdainfo&apos;</span>)
-      .set(<span class="hljs-string">&apos;Content-Type&apos;</span>, <span class="hljs-string">&apos;application/json&apos;</span>)
-      .set(<span class="hljs-string">&apos;Accept&apos;</span>, <span class="hljs-string">&apos;application/json&apos;</span>)
-      .set(<span class="hljs-string">&apos;Authorization&apos;</span>, <span class="hljs-string">`Bearer <span class="hljs-subst">${this.wholeCorrespond.accessToken}</span>`</span>)
-      .send({
-        <span class="hljs-string">&quot;action&quot;</span>: <span class="hljs-string">&quot;IRB0&quot;</span>,
-        <span class="hljs-string">&quot;typeId&quot;</span>: targetDevice.typeId
-      })
-      .end((err, res)=&gt; {
-        <span class="hljs-keyword">if</span> (err || !res.ok) {
-          <span class="hljs-keyword">this</span>.$router.replace({name: <span class="hljs-string">&quot;fail&quot;</span>});
-          reject(<span class="hljs-string">&quot;&#x8BF7;&#x6C42;&#x5355;&#x6761;&#x8BBE;&#x5907;&#x7EA2;&#x5916;&#x7801;&#x5E93;&#x5931;&#x8D25;&#xFF01;&quot;</span>);
-        } <span class="hljs-keyword">else</span> {
-          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x8BF7;&#x6C42;&#x5355;&#x6761;&#x8BBE;&#x5907;&#x7EA2;&#x5916;&#x7801;&#x5E93;&#x6210;&#x529F;&apos;</span>);
-
-          <span class="hljs-keyword">let</span> data = res.body;
-          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x7EA2;&#x5916;&#x7801;&#x5E93;:&apos;</span> + <span class="hljs-built_in">JSON</span>.stringify(data, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));
-          targetDevice.orderGather = data.set;
-          <span class="hljs-keyword">if</span> (targetDevice.devType === <span class="hljs-string">&quot;AC&quot;</span>) {
-            targetDevice.reckonState = <span class="hljs-keyword">this</span>.getAirParams(targetDevice.status);
-            targetDevice.area = <span class="hljs-keyword">this</span>.getAirArea(data.param);
-          }
-          <span class="hljs-keyword">this</span>.addDevice(targetDevice);
-          <span class="hljs-keyword">this</span>.$router.replace({
-            name: targetDevice.devType === <span class="hljs-string">&quot;AC&quot;</span> ? <span class="hljs-string">&quot;air&quot;</span> : <span class="hljs-string">&quot;teeve&quot;</span>,
-            params: {
-              id: targetDevice.typeId
-            }
-          });
-          resolve();
-        }
-      });
-  });
-};
-getDevices().then((devices)=&gt; {
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x83B7;&#x53D6;&#x7684;&#x6240;&#x6709;devices&#xFF1A;&apos;</span> + <span class="hljs-built_in">JSON</span>.stringify(devices, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));
-  <span class="hljs-keyword">return</span> getOrderGather(devices);
-}).catch((errMessage)=&gt; {
-  <span class="hljs-built_in">console</span>.log(errMessage);
-});
+<hr>
+<blockquote>
+<p>Promise&#x793A;&#x4F8B;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> promise((resolve, reject) =&gt; {
+  a(getResultFromA, (aResult, err) =&gt; {
+    <span class="hljs-keyword">if</span> (!err) resolve(aResult) <span class="hljs-keyword">else</span> reject(err)
+  })
+})
+.then(data =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    b(getResultFromB, (bResult, err) =&gt; {
+      <span class="hljs-keyword">if</span> (!err) resolve(bResult) <span class="hljs-keyword">else</span> reject(err)
+    })
+  }
+})
+.then(data =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    c(getResultFromC, (cResult, err) =&gt; {
+      <span class="hljs-keyword">if</span> (!err) resolve(cResult) <span class="hljs-keyword">else</span> reject(err)
+    })
+  }
+})
+.then(data =&gt; {
+  <span class="hljs-comment">// do something</span>
+})
+.catch(err =&gt; {
+  <span class="hljs-keyword">throw</span> err
+})
 </code></pre>
-<h3 id="&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x548C;-promise-&#x63A5;&#x53E3;">&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x548C; Promise &#x63A5;&#x53E3;</h3>
+<blockquote>
+<p>&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x548C; Promise &#x63A5;&#x53E3;</p>
+</blockquote>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">cb</span>) </span>{  
   <span class="hljs-keyword">if</span> (cb) {
     <span class="hljs-keyword">return</span> cb();
@@ -1548,6 +1507,21 @@ getDevices().then((devices)=&gt; {
   <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
 
   });
+}
+</code></pre>
+<h2 id="generator">generator</h2>
+<hr>
+<h2 id="asyncawait">async/await</h2>
+<hr>
+<pre><code class="lang-javascript"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> aResult = <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-comment">/* getResultFromAPromise */</span>)
+    <span class="hljs-keyword">const</span> bResult = <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-comment">/* getResultFromBProimse */</span>)
+    <span class="hljs-keyword">const</span> cResult = <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-comment">/* getResultFromCPromise */</span>)
+    <span class="hljs-comment">// do something</span>
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">throw</span> err
+  }
 }
 </code></pre>
 
@@ -1593,7 +1567,7 @@ getDevices().then((devices)=&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"异步编程","level":"2.9.5","depth":2,"next":{"title":"Canvas","level":"2.10","depth":1,"path":"chapters/Canvas/README.md","ref":"chapters/Canvas/README.md","articles":[{"title":"示例","level":"2.10.1","depth":2,"path":"chapters/Canvas/示例.md","ref":"chapters/Canvas/示例.md","articles":[]},{"title":"other","level":"2.10.2","depth":2,"path":"chapters/Canvas/other.md","ref":"chapters/Canvas/other.md","articles":[]}]},"previous":{"title":"彻底冻结对象","level":"2.9.4","depth":2,"path":"chapters/Advanced/deepFreeze.md","ref":"chapters/Advanced/deepFreeze.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Advanced/异步编程.md","mtime":"2017-04-19T00:50:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-19T10:56:01.885Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"异步编程","level":"2.9.5","depth":2,"next":{"title":"Canvas","level":"2.10","depth":1,"path":"chapters/Canvas/README.md","ref":"chapters/Canvas/README.md","articles":[{"title":"示例","level":"2.10.1","depth":2,"path":"chapters/Canvas/示例.md","ref":"chapters/Canvas/示例.md","articles":[]},{"title":"other","level":"2.10.2","depth":2,"path":"chapters/Canvas/other.md","ref":"chapters/Canvas/other.md","articles":[]}]},"previous":{"title":"彻底冻结对象","level":"2.9.4","depth":2,"path":"chapters/Advanced/deepFreeze.md","ref":"chapters/Advanced/deepFreeze.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Advanced/异步编程.md","mtime":"2017-04-20T00:30:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-20T00:36:28.527Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1601,10 +1575,6 @@ getDevices().then((devices)=&gt; {
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
