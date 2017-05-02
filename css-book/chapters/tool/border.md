@@ -1,4 +1,4 @@
-##  border
+# border
 
 ```css
 .border-rounded{border-radius:5px;}

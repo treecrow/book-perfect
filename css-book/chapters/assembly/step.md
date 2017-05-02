@@ -1,6 +1,7 @@
 # step
 
 ## step(步骤)
+
 ```css
 .step{display: table; margin:20px 0;}
 .step-title{display: table-cell; width:1%; height: auto; padding: 0 20px; text-align: center; position: relative;}

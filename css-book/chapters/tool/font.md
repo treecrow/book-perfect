@@ -1,4 +1,4 @@
-##  font(字体样式)
+# font(字体样式)
 
 ```css
 .font-bold{font-weight:700;}

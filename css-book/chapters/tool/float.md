@@ -1,4 +1,4 @@
-## float
+# float
 
 ```css
 .float-left{float:left;}
@@ -6,4 +6,3 @@
 .float-clear:after,.float-clear:before{display:table;content:" ";}
 .float-clear:after{clear:both;}
 ```
-

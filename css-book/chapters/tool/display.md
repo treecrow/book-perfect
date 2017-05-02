@@ -1,4 +1,4 @@
-## display
+# display
 
 ```css
 .display-inline{display:inline;}

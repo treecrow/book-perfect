@@ -1,4 +1,4 @@
-## align
+# align
 
 ```css
 .align-left{text-align:left;}
@@ -9,5 +9,4 @@
 .align-top{vertical-align:top;}
 .align-middle{vertical-align:middle;}
 .align-bottom{vertical-align:bottom;}
-
 ```

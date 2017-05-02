@@ -1,5 +1,8 @@
 # MVVM
 
+## 导航
+- [Vue.js](http://cn.vuejs.org/v2/api/)
+
 ## Virtual DOM && Diff 算法
 > 通过 Virtual DOM 和 Diff 算法隔离 DOM 操作
 

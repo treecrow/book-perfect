@@ -1,4 +1,4 @@
-##  stream(文本流)
+# stream(文本流)
 
 ```css
 .stream-horizontal{writing-mode:horizontal-tb;}

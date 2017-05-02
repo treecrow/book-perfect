@@ -1,4 +1,4 @@
-##  color(字体颜色)
+# color(字体颜色)
 
 ```css
 .color-default{}

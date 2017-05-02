@@ -1,8 +1,8 @@
-## reset(个人)
+# reset(个人)
 
 ```css
 /*不能忍必须个人重置的reset*/
-*{box-sizing:border-box;} 
+*{box-sizing:border-box;}
 *:before,*:after{box-sizing:border-box;}
 
 a {text-decoration: none;}

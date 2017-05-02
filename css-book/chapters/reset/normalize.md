@@ -1,4 +1,4 @@
-## [normalize.css](https://github.com/necolas/normalize.css)
+# [normalize.css](https://github.com/necolas/normalize.css)
 
 ```css
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}

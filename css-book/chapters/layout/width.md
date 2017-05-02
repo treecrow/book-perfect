@@ -1,4 +1,4 @@
-## width
+# width
 
 ```css
 .width-1-3 { width: 33.3%; }
