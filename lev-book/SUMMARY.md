@@ -4,7 +4,6 @@
 
 --------------------------------------------------------------------------------
 
-- [相关](chapters/相关.md)
 - [app](chapters/app.md)
 - [gulp](chapters/gulp.md)
 - [loopback](chapters/loopback/README.md)
