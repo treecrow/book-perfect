@@ -42,7 +42,7 @@ isadvanceduser     | -
 hideeqad           | -
 lastpageid         | -
 isTpl              | -
-isPublic           | -
+isPublic           | 是否公开
 isPayxd            | -
 property           | -
 applypromotion     | -
