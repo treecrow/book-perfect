@@ -6,6 +6,7 @@
   "dependencies": {
     "async": "^2.3.0",
     "co": "^4.6.0",
+    "fs": "0.0.1-security",
     "htmlparser2": "^3.9.2",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
