@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Canvas · GitBook</title>
+        <title>Math方法大全 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="示例.html" />
+    <link rel="next" href="../Date/" />
     
     
-    <link rel="prev" href="../Advanced/异步编程.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -335,9 +335,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="../Math/">
+        <li class="chapter " data-level="2.6" data-path="./">
             
-                <a href="../Math/">
+                <a href="./">
             
                     
                     Math
@@ -349,9 +349,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.6.1" data-path="../Math/Math方法大全.html">
+        <li class="chapter active" data-level="2.6.1" data-path="Math方法大全.html">
             
-                <a href="../Math/Math方法大全.html">
+                <a href="Math方法大全.html">
             
                     
                     Math方法大全
@@ -528,9 +528,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.10" data-path="./">
+        <li class="chapter " data-level="2.10" data-path="../Canvas/">
             
-                <a href="./">
+                <a href="../Canvas/">
             
                     
                     Canvas
@@ -542,9 +542,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.10.1" data-path="示例.html">
+        <li class="chapter " data-level="2.10.1" data-path="../Canvas/示例.html">
             
-                <a href="示例.html">
+                <a href="../Canvas/示例.html">
             
                     
                     示例
@@ -555,9 +555,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.10.2" data-path="other.html">
+        <li class="chapter " data-level="2.10.2" data-path="../Canvas/other.html">
             
-                <a href="other.html">
+                <a href="../Canvas/other.html">
             
                     
                     other
@@ -1126,7 +1126,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Canvas</a>
+        <a href="../.." >Math方法大全</a>
     </h1>
 </div>
 
@@ -1141,7 +1141,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="canvas&#x77E5;&#x8BC6;&#x70B9;&#x603B;&#x7ED3;">Canvas&#x77E5;&#x8BC6;&#x70B9;&#x603B;&#x7ED3;</h1>
+                                <h1 id="math&#x65B9;&#x6CD5;&#x5927;&#x5168;&#xFF08;&#x5927;&#x6742;&#x70E9;&#xFF09;">Math&#x65B9;&#x6CD5;&#x5927;&#x5168;&#xFF08;&#x5927;&#x6742;&#x70E9;&#xFF09;</h1>
+<h2 id="&#x83B7;&#x5F97;&#x67D0;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;">&#x83B7;&#x5F97;&#x67D0;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getRandom</span>(<span class="hljs-params">istart, iend</span>)</span>{
+  <span class="hljs-keyword">var</span> iChoice = istart - iend +<span class="hljs-number">1</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * iChoice + istart;
+}
+</code></pre>
+<h2 id="&#x6839;&#x636E;&#x5750;&#x6807;&#x70B9;&#x786E;&#x5B9A;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;x&#x8F74;&#x7684;&#x5939;&#x89D2;">&#x6839;&#x636E;&#x5750;&#x6807;&#x70B9;&#x786E;&#x5B9A;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;x&#x8F74;&#x7684;&#x5939;&#x89D2;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAngle</span>(<span class="hljs-params">dx, dy</span>) </span>{
+  <span class="hljs-keyword">var</span> angel=<span class="hljs-built_in">Math</span>.atan2(dy, dx) * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI;
+  <span class="hljs-keyword">return</span> angel&gt;<span class="hljs-number">0</span>?angel:<span class="hljs-number">360</span>+angel;
+}
+</code></pre>
+<h2 id="&#x7B80;&#x5355;&#x7684;&#x6C42;&#x9636;&#x4E58;&#x7684;&#x51FD;&#x6570;">&#x7B80;&#x5355;&#x7684;&#x6C42;&#x9636;&#x4E58;&#x7684;&#x51FD;&#x6570;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">n</span>) </span>{
+    <span class="hljs-keyword">return</span> n === <span class="hljs-number">0</span> ? <span class="hljs-number">1</span> : n * factorial(n - <span class="hljs-number">1</span>);
+}
+</code></pre>
+<h2 id="&#x7B80;&#x5316;&#x5206;&#x6570;">&#x7B80;&#x5316;&#x5206;&#x6570;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduceFraction</span>(<span class="hljs-params">a,x,y</span>)</span>{
+    <span class="hljs-keyword">if</span>(x%y==<span class="hljs-number">0</span>){a+=x/y; <span class="hljs-keyword">return</span> [a,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>];}
+    <span class="hljs-keyword">while</span>(x&gt;y){x-=y;a++;}
+    <span class="hljs-keyword">if</span>(x&gt;<span class="hljs-number">1</span>){
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">2</span>;i&lt;x;i++){<span class="hljs-keyword">while</span>(x%i==<span class="hljs-number">0</span> &amp;&amp; y%i==<span class="hljs-number">0</span>){x/=i;y/=i;}}
+    }
+    <span class="hljs-keyword">return</span> [a,x,y];
+}
+</code></pre>
 
                                 
                                 </section>
@@ -1169,12 +1196,12 @@
 
             
                 
-                <a href="../Advanced/异步编程.html" class="navigation navigation-prev " aria-label="Previous page: 异步编程">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Math">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="示例.html" class="navigation navigation-next " aria-label="Next page: 示例">
+                <a href="../Date/" class="navigation navigation-next " aria-label="Next page: Date">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1185,7 +1212,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Canvas","level":"2.10","depth":1,"next":{"title":"示例","level":"2.10.1","depth":2,"path":"chapters/Canvas/示例.md","ref":"chapters/Canvas/示例.md","articles":[]},"previous":{"title":"异步编程","level":"2.9.5","depth":2,"path":"chapters/Advanced/异步编程.md","ref":"chapters/Advanced/异步编程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Canvas/README.md","mtime":"2017-04-04T14:01:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-04T14:29:16.716Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Math方法大全","level":"2.6.1","depth":2,"next":{"title":"Date","level":"2.7","depth":1,"path":"chapters/Date/README.md","ref":"chapters/Date/README.md","articles":[{"title":"Date方法大全","level":"2.7.1","depth":2,"path":"chapters/Date/Date方法大全.md","ref":"chapters/Date/Date方法大全.md","articles":[]}]},"previous":{"title":"Math","level":"2.6","depth":1,"path":"chapters/Math/README.md","ref":"chapters/Math/README.md","articles":[{"title":"Math方法大全","level":"2.6.1","depth":2,"path":"chapters/Math/Math方法大全.md","ref":"chapters/Math/Math方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Math/Math方法大全.md","mtime":"2017-05-04T14:20:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-04T14:29:16.716Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,13 +1,16 @@
-## 深拷贝
-### JSON.parse方式
-```js
+# 深拷贝
+
+## JSON.parse方式
+
+```javascript
 function jsonCopy(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 ```
 
-### deepCopy1(空数组不会转化为空对象)
-```js
+## deepCopy1(空数组不会转化为空对象)
+
+```javascript
 function deepCopy1(obj) {
     let result = obj.constructor === Array ? [] : {};
     Object.entries(obj).forEach(([key, value])=> {
@@ -17,8 +20,9 @@ function deepCopy1(obj) {
 }
 ```
 
-### deepCopy2(使用ES6的...考虑到了数组和对象的区别)
-```js
+## deepCopy2(使用ES6的...考虑到了数组和对象的区别)
+
+```javascript
 function deepCopy2(obj) {
   if (typeof obj === "object" && !Array.isArray(obj)) {
     return {...obj};

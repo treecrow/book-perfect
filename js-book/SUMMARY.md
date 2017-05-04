@@ -5,68 +5,28 @@
 --------------------------------------------------------------------------------
 
 - [Basis](chapters/Basis/README.md)
-
-  - [new操作符](chapters/Basis/new操作符.md)
-  - [this](chapters/Basis/this.md)
-  - [严格模式](chapters/Basis/严格模式.md)
+  - [变量函数提升](chapters/Basis/变量函数提升.md)
   - [传参机制](chapters/Basis/传参机制.md)
   - [创建对象模式](chapters/Basis/创建对象模式.md)
-  - [变量函数提升](chapters/Basis/变量函数提升.md)
-  - [基本类型与引用类型](chapters/Basis/基本类型与引用类型.md)
   - [对象的继承](chapters/Basis/对象的继承.md)
-
+  - [基本类型与引用类型](chapters/Basis/基本类型与引用类型.md)
+  - [严格模式](chapters/Basis/严格模式.md)
+  - [new操作符](chapters/Basis/new操作符.md)
+  - [this](chapters/Basis/this.md)
 - [String](chapters/String/README.md)
-
-  - [API](chapters/String/API.md)
-  - [判断字符首位是否是空字符](chapters/String/判断字符首位是否是空字符.md)
-  - [去除字符串开始与结束的引号](chapters/String/去除字符串开始与结束的引号.md)
-  - [是否是手机号](chapters/String/是否是手机号.md)
-  - [检测字符串中特定的字符的个数](chapters/String/检测字符串中特定的字符的个数.md)
-  - [获得文件扩展名](chapters/String/获得文件扩展名.md)
-  - [过滤非中文](chapters/String/过滤非中文.md)
-  - [验证是不是单个字符](chapters/String/验证是不是单个字符.md)
-
+  - [字符串方法大全](chapters/String/字符串方法大全.md)
 - [Number](chapters/Number/README.md)
-
-  - [API](chapters/Number/API.md)
-
 - [RegExp](chapters/RegExp/README.md)
-
-  - [API](chapters/RegExp/API.md)
-
 - [Array](chapters/Array/README.md)
-
-  - [api](chapters/Array/api.md)
   - [二进制数组](chapters/Array/二进制数组.md)
-  - [交集、补集、并集](chapters/Array/gather.md)
-  - [重复项](chapters/Array/repeat.md)
-  - [错误项](chapters/Array/error.md)
-  - [顺序](chapters/Array/order.md)
-  - [多维数组转变为一维数组](chapters/Array/dimension.md)
-  - [反转矩阵数组](chapters/Array/matrix.md)
-
+  - [数组方法大全](chapters/Array/数组方法大全.md)
 - [Math](chapters/Math/README.md)
-
-  - [API](chapters/Math/API.md)
-  - [根据坐标点确定点相对于x轴的夹角](chapters/Math/根据坐标点确定点相对于x轴的夹角.md)
-  - [简化分数](chapters/Math/简化分数.md)
-  - [简单的求阶乘的函数](chapters/Math/简单的求阶乘的函数.md)
-  - [获得某个区间的一个随机数](chapters/Math/获得某个区间的一个随机数.md)
-
+  - [Math方法大全](chapters/Math/Math方法大全.md)
 - [Date](chapters/Date/README.md)
-
-  - [API](chapters/Date/API.md)
-  - [指定日期倒计时](chapters/Date/指定日期倒计时.md)
-  - [指定月份对应的天数](chapters/Date/指定月份对应的天数.md)
-  - [概括过去时](chapters/Date/概括过去时.md)
-  - [获取当前时间](chapters/Date/获取当前时间.md)
-  - [闰年平年判断](chapters/Date/闰年平年判断.md)
-  - [验证日期格式](chapters/Date/验证日期格式.md)
-
+  - [Date方法大全](chapters/Date/Date方法大全.md)
 - [Object](chapters/Object/README.md)
-
-  - [API](chapters/Object/API.md)
-  - [拷贝](chapters/Object/copy.md)
+  - [属性的遍历](chapters/Object/属性的遍历.md)
+  - [copy](chapters/Object/copy.md)
 
 - [Advanced](chapters/Advanced/README.md)
 
@@ -131,4 +91,5 @@
   - [cookie](chapters/未分类/cookie.md)
 
 - [babel](chapters/babel.md)
+
 - [函数式编程](chapters/函数式编程.md)
