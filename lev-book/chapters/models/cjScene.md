@@ -19,7 +19,7 @@ hitcountInt        | -
 createtimeTime     | 创建时间
 musicurlVarchar    | -
 videocodeVarchar   | -
-showstatusInt      | -
+showstatusInt      | 是否公开
 thumbnailVarchar   | -
 movietypeInt       | -
 descVarchar        | 场景描述
@@ -42,7 +42,7 @@ isadvanceduser     | -
 hideeqad           | -
 lastpageid         | -
 isTpl              | -
-isPublic           | 是否公开
+isPublic           | 与showstatusInt的区别
 isPayxd            | -
 property           | -
 applypromotion     | -
