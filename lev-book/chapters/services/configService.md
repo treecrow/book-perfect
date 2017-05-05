@@ -21,7 +21,7 @@ FONTURL           | 规定字体上传和渲染需要的路径    | "<http://m.l
 UPLOADTOURL       | 文件上传路径            | "<http://m.levmob.com/Uploads>"
 UPLOADS_FILES_URL | 文件上传成功之后的回掉拼接的url | "<http://m.levmob.com/Uploads>"
 
-### 位置
+### 位置(这几个属性不建议直接调用，最好通过相应方法获取)
 
 属性         | 含义   | 值
 ---------- | ---- | ------

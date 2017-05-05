@@ -9,6 +9,19 @@ function getRandom(istart, iend){
 }
 ```
 
+## 生成指定位数数字验证码
+
+```javascript
+function genIndentCode(len) {
+  let result = '';
+  while (len > 0) {
+    len--;
+    result += Math.floor(Math.random() * 10);
+  }
+  return result;
+}
+```
+
 ## 根据坐标点确定点相对于x轴的夹角
 
 ```javascript

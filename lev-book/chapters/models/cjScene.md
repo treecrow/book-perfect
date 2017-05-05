@@ -41,7 +41,7 @@ rank               | -
 isadvanceduser     | -
 hideeqad           | -
 lastpageid         | -
-isTpl              | -
+isTpl              | 是否为模版
 isPublic           | 与showstatusInt的区别
 isPayxd            | -
 property           | -
