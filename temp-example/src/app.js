@@ -1,6 +1,10 @@
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let arr = arr.map((num) => {
-  return num * 3;
-});
-
-console.log(arr);
+let aaa = {
+  a:1,
+  b:2
+};
+let bbb = Object.assign(aaa,{
+  a:2,
+  b:1
+})
+console.log(aaa);
+console.log(bbb);

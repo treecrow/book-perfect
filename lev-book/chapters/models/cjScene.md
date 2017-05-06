@@ -35,8 +35,8 @@ datacountInt       | -
 musictypeInt       | -
 usecountInt        | -
 fromsceneidBigint  | -
-publishtime        | -
-updatetime         | -
+publishtime        | 发布时间
+updatetime         | 更新时间
 rank               | -
 isadvanceduser     | -
 hideeqad           | -

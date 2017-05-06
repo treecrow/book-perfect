@@ -23,6 +23,4 @@ getScenePages               | {id: number, scaleX: number, scaleY: number}      
 getNearbyScenesBySceneType  | {sceneType: number, positon: object, isMore: boolean} | (scene-object))     | 根据不同sceneType返回不同CjScene列表(基于地理位置)
 getScenesBySceneType        | {sceneType: number, isMore: boolean}                  | (scene-object))     | 根据不同sceneType返回不同CjScene列表
 updateStat                  | {stat: object}                                        | (stat-object)       | 更新或创建cjstat
-followScene                 | {userId: number ,sceneId: number}                     | (authorInfo-object) | 更新或创建cjfollow
-getFollowScenes             | {userId: number}                                      | (scene-object)      | 通过userid获取CjFollow
 setDefaultFileUrlHead       | {url: string}                                         | (url-string)        | 修改Sceneshowservice.defaultFileUrlHead(感觉没有起到作用)
