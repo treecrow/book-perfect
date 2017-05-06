@@ -63,6 +63,7 @@
   - [元素的属性样式](chapters/Dom/元素的属性样式.md)
   - [节点的操作](chapters/Dom/节点的操作.md)
   - [解析html字符串](chapters/Dom/解析html字符串.md)
+  - [title变化](chapters/Dom/title变化.md)
 
 - [Event](chapters/Event/README.md)
 
