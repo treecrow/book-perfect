@@ -1043,22 +1043,10 @@
 </thead>
 <tbody>
 <tr>
-<td>setDefaultFileUrlHead</td>
-<td>{url: string}</td>
-<td>(url-string)</td>
-<td>&#x4FEE;&#x6539;Sceneshowservice.defaultFileUrlHead(&#x611F;&#x89C9;&#x6CA1;&#x6709;&#x8D77;&#x5230;&#x4F5C;&#x7528;)</td>
-</tr>
-<tr>
 <td>getFontCssByTextAndFontName</td>
 <td>{text:string, fontName:string}</td>
 <td>(cssUrl-string)</td>
 <td>&#x5C06;&#x4F20;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x538B;&#x7F29;&#x4E3A;css&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED9;&#x524D;&#x7AEF;&#x524D;&#x7AEF;&#x94FE;&#x63A5;</td>
-</tr>
-<tr>
-<td>getTplScenesBySceneType</td>
-<td>{sceneTypeId: number}</td>
-<td>(scene-object)</td>
-<td>&#x6839;&#x636E;scenetypeInt&#x83B7;&#x53D6;CjScene</td>
 </tr>
 <tr>
 <td>getSceneInfoByCode</td>
@@ -1067,34 +1055,34 @@
 <td>&#x6839;&#x636E;scenecodeVarchar&#x83B7;&#x53D6;CjScene</td>
 </tr>
 <tr>
+<td>getSceneInfo</td>
+<td>{id: number}</td>
+<td>(scene-object)</td>
+<td>&#x9A8C;&#x8BC1;&#x6307;&#x5B9A;id&#x7684;&#x573A;&#x666F;&#x7684;cssUrl&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x5C31;&#x91CD;&#x65B0;&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td>getTplScenesBySceneType</td>
+<td>{sceneTypeId: number}</td>
+<td>(scene-object)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;scenetypeInt&#x7684;&#x573A;&#x666F;&#x6A21;&#x7248;</td>
+</tr>
+<tr>
 <td>getUserScenes</td>
 <td>{userId: number}</td>
 <td>(scene-object)</td>
-<td>&#x901A;&#x8FC7;useridInt&#x83B7;&#x53D6;CjScene</td>
-</tr>
-<tr>
-<td>getNewScenes</td>
-<td>-</td>
-<td>(scenes-object)</td>
-<td>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x573A;&#x666F;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>getBestScenes</td>
-<td>-</td>
-<td>(scenes-object)</td>
-<td>&#x4E0E;getNewScenes&#x529F;&#x80FD;&#x91CD;&#x590D;&#xFF08;&#x6CA1;&#x6709;&#x7EA0;&#x6B63;&#x5C5E;&#x6027;&#xFF09;</td>
+<td>&#x5305;&#x542B;author&#x5B57;&#x6BB5;&#x7684;&#x573A;&#x666F;(include&#x5E76;&#x6CA1;&#x6709;&#x8D77;&#x4F5C;&#x7528;&#x554A;)</td>
 </tr>
 <tr>
 <td>getSceneAll</td>
 <td>{id: number}</td>
 <td>(scene-object)</td>
-<td>&#x6839;&#x636E;ID&#x83B7;&#x53D6;CjScene&#xFF08;&#x5BF9;&#x5E94;&#x7684;pages&#x5DF2;&#x7ECF;&#x5904;&#x7406;&#x8FC7;&#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x6709;__data&#x5C5E;&#x6027;&#xFF09;</td>
+<td>&#x5305;&#x542B;pages&#x5B57;&#x6BB5;&#x7684;&#x573A;&#x666F;</td>
 </tr>
 <tr>
-<td>getSceneInfo</td>
-<td>{id: number}</td>
-<td>(scene-object)</td>
-<td>&#x9A8C;&#x8BC1;&#x6307;&#x5B9A;id&#x7684;&#x573A;&#x666F;&#x7684;cssUrl&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x5C31;&#x91CD;&#x65B0;&#x751F;&#x6210;</td>
+<td>getScenePages</td>
+<td>{id: number, scaleX: number, scaleY: number}</td>
+<td>(pages-object)</td>
+<td>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x573A;&#x666F;&#x7684;pages</td>
 </tr>
 <tr>
 <td>getNearbyScenesBySceneType</td>
@@ -1107,12 +1095,6 @@
 <td>{sceneType: number, isMore: boolean}</td>
 <td>(scene-object))</td>
 <td>&#x6839;&#x636E;&#x4E0D;&#x540C;sceneType&#x8FD4;&#x56DE;&#x4E0D;&#x540C;CjScene&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>getScenePages</td>
-<td>{id: number, scaleX: number, scaleY: number}</td>
-<td>(pages-object)</td>
-<td>&#x83B7;&#x53D6;CjScenepage</td>
 </tr>
 <tr>
 <td>updateStat</td>
@@ -1132,67 +1114,14 @@
 <td>(scene-object)</td>
 <td>&#x901A;&#x8FC7;userid&#x83B7;&#x53D6;CjFollow</td>
 </tr>
+<tr>
+<td>setDefaultFileUrlHead</td>
+<td>{url: string}</td>
+<td>(url-string)</td>
+<td>&#x4FEE;&#x6539;Sceneshowservice.defaultFileUrlHead(&#x611F;&#x89C9;&#x6CA1;&#x6709;&#x8D77;&#x5230;&#x4F5C;&#x7528;)</td>
+</tr>
 </tbody>
 </table>
-<h2 id="getscenesbyscenetype&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#xFF1A;">getScenesBySceneType&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#xFF1A;</h2>
-<pre><code class="lang-javascript">{ sceneidBigint: <span class="hljs-number">8833633</span>,
-    scenecodeVarchar: <span class="hljs-string">&apos;7QUVPWIE81&apos;</span>,
-    scenenameVarchar: <span class="hljs-string">&apos;&#x6587;&#x7AE0;&#x6807;&#x9898;&apos;</span>,
-    scenetypeInt: <span class="hljs-number">885</span>,
-    useridInt: <span class="hljs-number">79</span>,
-    hitcountInt: <span class="hljs-number">0</span>,
-    createtimeTime: <span class="hljs-string">&apos;2017-04-25T11:29:42.000Z&apos;</span>,
-    musicurlVarchar: <span class="hljs-string">&apos;syspic/mp3/yq0KA1RHT4aAHL1bAAqqmzRHCqE496.mp3&apos;</span>,
-    videocodeVarchar: <span class="hljs-literal">null</span>,
-    showstatusInt: <span class="hljs-number">1</span>,
-    thumbnailVarchar: <span class="hljs-string">&apos;syspic/img/464e290046b4a13990f53f8eb8af7847.png&apos;</span>,
-    movietypeInt: <span class="hljs-number">0</span>,
-    descVarchar: <span class="hljs-string">&apos;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: inherit; background-color: initial; font-size: medium; font-family: HYLiuZiHeiJ;&quot;&gt;&#x4EBA;&#x751F;&#x5C31;&#x662F;&#x4E00;&#x573A;&#x4FEE;&#x884C;&lt;/span&gt;&lt;/div&gt;&apos;</span>,
-    ipVarchar: <span class="hljs-string">&apos;192.168.96.122&apos;</span>,
-    deleteInt: <span class="hljs-number">0</span>,
-    shenhe: <span class="hljs-number">1</span>,
-    tagidInt: <span class="hljs-number">0</span>,
-    sourceidInt: <span class="hljs-number">0</span>,
-    biztypeInt: <span class="hljs-number">1</span>,
-    eqidInt: <span class="hljs-literal">null</span>,
-    eqcode: <span class="hljs-string">&apos;&apos;</span>,
-    datacountInt: <span class="hljs-number">0</span>,
-    musictypeInt: <span class="hljs-number">3</span>,
-    usecountInt: <span class="hljs-number">0</span>,
-    fromsceneidBigint: <span class="hljs-number">0</span>,
-    publishtime: <span class="hljs-number">4294967295</span>,
-    updatetime: <span class="hljs-number">4294967295</span>,
-    rank: <span class="hljs-number">0</span>,
-    isadvanceduser: <span class="hljs-number">0</span>,
-    hideeqad: <span class="hljs-number">0</span>,
-    lastpageid: <span class="hljs-literal">null</span>,
-    isTpl: <span class="hljs-number">0</span>,
-    isPublic: <span class="hljs-number">0</span>,
-    isPayxd: <span class="hljs-number">0</span>,
-    property: <span class="hljs-string">&apos;{&quot;triggerLoop&quot;:true,&quot;slideNumber&quot;:true,&quot;autoFlipTime&quot;:3,&quot;eqAdType&quot;:1,&quot;hideEqAd&quot;:false}&apos;</span>,
-    applypromotion: <span class="hljs-number">0</span>,
-    accesscode: <span class="hljs-literal">null</span>,
-    applytemplate: <span class="hljs-number">0</span>,
-    adWzi: <span class="hljs-string">&apos;1&apos;</span>,
-    price: <span class="hljs-number">0</span>,
-    isShow: <span class="hljs-number">0</span>,
-    isPayloadlog: <span class="hljs-number">0</span>,
-    viCurrentTimes: <span class="hljs-number">6</span>,
-    viBeyondTime: <span class="hljs-number">1491533891</span>,
-    viTimeout: <span class="hljs-literal">null</span>,
-    viHittimesSet: <span class="hljs-number">0</span>,
-    viScenecode: <span class="hljs-literal">null</span>,
-    loadinglogo: <span class="hljs-literal">null</span>,
-    accesscodeVarchar: <span class="hljs-literal">null</span>,
-    loadinglogoVarchar: <span class="hljs-literal">null</span>,
-    groupidInt: <span class="hljs-number">0</span>,
-    cssUrl: <span class="hljs-string">&apos;ViewFont/8833633/ShuiYueTi.css,ViewFont/8833633/shuiYueTi.css&apos;</span>,
-    cover: <span class="hljs-string">&apos;/syspic/img/464e290046b4a13990f53f8eb8af7847.png&apos;</span>,
-    musicsrc: <span class="hljs-string">&apos;/syspic/mp3/yq0KA1RHT4aAHL1bAAqqmzRHCqE496.mp3&apos;</span>,
-    imgsrc: <span class="hljs-string">&apos;/syspic/img/464e290046b4a13990f53f8eb8af7847.png&apos;</span>,
-    name: <span class="hljs-string">&apos;&#x6587;&#x7AE0;&#x6807;&#x9898;&apos;</span>,
-    sceneid: <span class="hljs-number">8833633</span> },
-</code></pre>
 
                                 
                                 </section>
@@ -1236,7 +1165,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"sceneShowService","level":"2.5.37","depth":2,"next":{"title":"userCenter","level":"2.5.38","depth":2,"path":"chapters/models/userCenter.md","ref":"chapters/models/userCenter.md","articles":[]},"previous":{"title":"sceneShow","level":"2.5.36","depth":2,"path":"chapters/models/sceneShow.md","ref":"chapters/models/sceneShow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/sceneShowService.md","mtime":"2017-04-27T09:12:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-05T03:18:19.984Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"sceneShowService","level":"2.5.37","depth":2,"next":{"title":"userCenter","level":"2.5.38","depth":2,"path":"chapters/models/userCenter.md","ref":"chapters/models/userCenter.md","articles":[]},"previous":{"title":"sceneShow","level":"2.5.36","depth":2,"path":"chapters/models/sceneShow.md","ref":"chapters/models/sceneShow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/sceneShowService.md","mtime":"2017-05-05T11:57:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-05T12:03:21.980Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1060,12 +1060,12 @@
 <td>updateSceneWithPages</td>
 <td>{scene: object, pages: array}</td>
 <td>(scene-object)</td>
-<td>-</td>
+<td>&#x6839;&#x636E;&#x9875;&#x9762;&#x7F16;&#x8F91;&#x540E;&#x6570;&#x636E;&#x66F4;&#x65B0;scene,&#x5305;&#x62EC;&#x9875;&#x9762;&#x6570;&#x636E;</td>
 </tr>
 <tr>
 <td>createScene</td>
 <td>{scene: object}</td>
-<td>(scene-object,msg-string)</td>
+<td>(scene-object)</td>
 <td>&#x6839;&#x636E;&#x9875;&#x9762;&#x7F16;&#x8F91;&#x540E;&#x6570;&#x636E;&#x751F;&#x6210;&#x65B0;&#x7684;scene</td>
 </tr>
 <tr>
@@ -1107,14 +1107,20 @@
 <tr>
 <td>updateScenePage</td>
 <td>{pages: object}</td>
-<td>(pages-object</td>
+<td>(pages-object)</td>
 <td>&#x4FEE;&#x6539;&#x573A;&#x666F;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4FE1;&#x606F;</td>
 </tr>
 <tr>
 <td>deleteScenePage</td>
 <td>{pages: object}</td>
-<td>(pages-object</td>
+<td>(pages-object)</td>
 <td>&#x5220;&#x9664;&#x573A;&#x666F;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>publishScene</td>
+<td>{sceneId: number}</td>
+<td>(scene-object)</td>
+<td>&#x53D1;&#x5E03;&#x573A;&#x666F;</td>
 </tr>
 </tbody>
 </table>
@@ -1161,7 +1167,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"sceneEditService","level":"2.5.35","depth":2,"next":{"title":"sceneShow","level":"2.5.36","depth":2,"path":"chapters/models/sceneShow.md","ref":"chapters/models/sceneShow.md","articles":[]},"previous":{"title":"message","level":"2.5.34","depth":2,"path":"chapters/models/message.md","ref":"chapters/models/message.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/sceneEditService.md","mtime":"2017-04-28T04:18:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-05T12:03:21.980Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"sceneEditService","level":"2.5.35","depth":2,"next":{"title":"sceneShow","level":"2.5.36","depth":2,"path":"chapters/models/sceneShow.md","ref":"chapters/models/sceneShow.md","articles":[]},"previous":{"title":"message","level":"2.5.34","depth":2,"path":"chapters/models/message.md","ref":"chapters/models/message.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/sceneEditService.md","mtime":"2017-05-06T09:52:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-06T09:54:02.683Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
