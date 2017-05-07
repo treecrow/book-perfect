@@ -8,8 +8,6 @@
 
   - [变量函数提升](chapters/Basis/变量函数提升.md)
   - [传参机制](chapters/Basis/传参机制.md)
-  - [创建对象模式](chapters/Basis/创建对象模式.md)
-  - [对象的继承](chapters/Basis/对象的继承.md)
   - [基本类型与引用类型](chapters/Basis/基本类型与引用类型.md)
   - [严格模式](chapters/Basis/严格模式.md)
   - [new操作符](chapters/Basis/new操作符.md)
@@ -36,6 +34,7 @@
   - [字符串方法大全](chapters/String/字符串方法大全.md)
 
 - [RegExp](chapters/RegExp/README.md)
+
 - [Array](chapters/Array/README.md)
 
   - [遍历总结](chapters/Array/遍历总结.md)
@@ -43,6 +42,7 @@
   - [数组方法大全](chapters/Array/数组方法大全.md)
 
 - [Number](chapters/Number/README.md)
+
 - [Math](chapters/Math/README.md)
 
   - [Math方法大全](chapters/Math/Math方法大全.md)
@@ -53,8 +53,10 @@
 
 - [Object](chapters/Object/README.md)
 
-  - [属性的遍历](chapters/Object/属性的遍历.md)
-  - [copy](chapters/Object/copy.md)
+  - [创建对象模式](chapters/Object/创建对象模式.md)
+  - [对象的继承](chapters/Object/对象的继承.md)
+  - [对象方法大全](chapters/Object/对象方法大全.md)
+  - [深拷贝](chapters/Object/深拷贝.md)
 
 --------------------------------------------------------------------------------
 
