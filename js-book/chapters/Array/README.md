@@ -1,7 +1,5 @@
 # Array
 
-# API
-
 ## 位置方法
 
 - arr.indexOf()
