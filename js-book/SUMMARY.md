@@ -18,6 +18,7 @@
 - [Number](chapters/Number/README.md)
 - [RegExp](chapters/RegExp/README.md)
 - [Array](chapters/Array/README.md)
+  - [遍历总结](chapters/Array/遍历总结.md)
   - [二进制数组](chapters/Array/二进制数组.md)
   - [数组方法大全](chapters/Array/数组方法大全.md)
 - [Math](chapters/Math/README.md)

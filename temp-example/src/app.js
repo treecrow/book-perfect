@@ -1,10 +1,16 @@
-let aaa = {
-  a:1,
-  b:2
+let obj1 = {
+  a: 1,
+  b: 2,
+  c: {
+    aa:1,
+    bb:2,
+    cc:3
+  },
 };
-let bbb = Object.assign(aaa,{
-  a:2,
-  b:1
-})
-console.log(aaa);
-console.log(bbb);
+
+let result = { ...obj1};
+
+result.b = 4444;
+result.c.cc = 555;
+console.log(result);
+console.log(obj1);
