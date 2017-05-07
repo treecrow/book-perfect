@@ -1,6 +1,7 @@
-## fetch
-```js
-var options = {
+# fetch
+
+```javascript
+const options = {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
