@@ -1015,23 +1015,66 @@
 <tbody>
 <tr>
 <td>id</td>
-<td>-</td>
+<td>&#x6536;&#x85CF;id</td>
 </tr>
 <tr>
 <td>userid</td>
-<td>-</td>
+<td>&#x6536;&#x85CF;&#x8005;id</td>
 </tr>
 <tr>
 <td>sceneid</td>
-<td>-</td>
+<td>&#x88AB;&#x6536;&#x85CF;&#x7684;&#x573A;&#x666F;id</td>
 </tr>
 <tr>
 <td>followtime</td>
-<td>-</td>
+<td>&#x6536;&#x85CF;&#x65F6;&#x95F4;</td>
 </tr>
 <tr>
 <td>scenedata</td>
 <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>accepts</th>
+<th>returns</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>followScene</td>
+<td>[userId, sceneId]</td>
+<td>(follow-object)</td>
+<td>&#x8BBE;&#x7F6E;&#x6216;&#x521B;&#x5EFA;CjFollow</td>
+</tr>
+<tr>
+<td>unfollowScene</td>
+<td>[userId, sceneId]</td>
+<td>(follow-object)</td>
+<td>&#x5220;&#x9664;&#x6536;&#x85CF;&#x7684;&#x573A;&#x666F;</td>
+</tr>
+<tr>
+<td>getFollowScenes</td>
+<td>[userId]</td>
+<td>(follows-object)</td>
+<td>&#x901A;&#x8FC7;userid&#x83B7;&#x53D6;CjFollow</td>
+</tr>
+<tr>
+<td>getFollowScenesId</td>
+<td>[userId]</td>
+<td>(follows-object)</td>
+<td>&#x901A;&#x8FC7;&#x7528;&#x6237;id &#x83B7;&#x53D6;&#x7528;&#x6237;&#x6536;&#x85CF;&#x7684;&#x6240;&#x6709;&#x7684;&#x573A;&#x666F;id</td>
+</tr>
+<tr>
+<td>checkThisSceneIsFollowed</td>
+<td>[userId, sceneId]</td>
+<td>(follow-object)</td>
+<td>&#x7528;&#x6237;&#x70B9;&#x51FB;&#x5230; &#x8BE6;&#x60C5;&#x9875;&#x65F6; &#x67E5;&#x8BE2;&#x8868;&#x91CC;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6536;&#x85CF; &#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x7ED3;&#x679C;</td>
 </tr>
 </tbody>
 </table>
@@ -1078,7 +1121,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"cjFollow","level":"2.5.9","depth":2,"next":{"title":"cjFriend","level":"2.5.10","depth":2,"path":"chapters/models/cjFriend.md","ref":"chapters/models/cjFriend.md","articles":[]},"previous":{"title":"cjCustomer","level":"2.5.8","depth":2,"path":"chapters/models/cjCustomer.md","ref":"chapters/models/cjCustomer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/cjFollow.md","mtime":"2017-04-11T14:27:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-05T03:18:19.984Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"cjFollow","level":"2.5.9","depth":2,"next":{"title":"cjFriend","level":"2.5.10","depth":2,"path":"chapters/models/cjFriend.md","ref":"chapters/models/cjFriend.md","articles":[]},"previous":{"title":"cjCustomer","level":"2.5.8","depth":2,"path":"chapters/models/cjCustomer.md","ref":"chapters/models/cjCustomer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/models/cjFollow.md","mtime":"2017-05-05T11:49:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-05T12:03:21.980Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
