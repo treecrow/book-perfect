@@ -52,3 +52,6 @@
 ## Security
 
 ## Audits
+
+## 其它
+- [调试](chrome://inspect/#devices)

@@ -74,5 +74,7 @@
 
 - [ionic](chapters/ionic/README.md)
 
-  - [doc](chapters/ionic/doc.md)
   - [服务](chapters/ionic/服务.md)
+  - [cordova](chapters/ionic/cordova.md)
+  - [doc](chapters/ionic/doc.md)
+  - [ionic](chapters/ionic/ionic.md)

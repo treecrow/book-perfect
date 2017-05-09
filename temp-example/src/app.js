@@ -1,10 +1,7 @@
-let obj = {
-  a: 'a',
-  b: 'b'
-};
-console.log(JSON.stringify({
-  obj,
-  toString: obj.toString(),
-  toLocaleString: obj.toLocaleString(),
-  valueOf: obj.valueOf(),
-}, null, 2));
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let brr = Object.assign({}, arr, {
+  status: 1,
+  msg: '成功获取scene'
+})
+console.log(brr);
