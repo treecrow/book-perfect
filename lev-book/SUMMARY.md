@@ -74,4 +74,5 @@
 
 - [build](chapters/build/README.md)
   - [cordova](chapters/build/cordova.md)
-  - [ionic](chapters/build/ionic.md)
+  - [ionic命令](chapters/build/ionic命令.md)
+  - [ionic文档](chapters/build/ionic文档.md)
