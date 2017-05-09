@@ -72,9 +72,6 @@
   - [服务](chapters/angular/服务.md)
   - [过滤器](chapters/angular/过滤器.md)
 
-- [ionic](chapters/ionic/README.md)
-
-  - [服务](chapters/ionic/服务.md)
-  - [cordova](chapters/ionic/cordova.md)
-  - [doc](chapters/ionic/doc.md)
-  - [ionic](chapters/ionic/ionic.md)
+- [build](chapters/build/README.md)
+  - [cordova](chapters/build/cordova.md)
+  - [ionic](chapters/build/ionic.md)
