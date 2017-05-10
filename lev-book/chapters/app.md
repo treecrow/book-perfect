@@ -17,7 +17,7 @@ tab.nearbys    | /nearby | templates/tab-nearby.html | NearbysCtrl  | 附近
 - articles（selectEditType.js）
 
 state              | 路径                       | templateUrl                       | controller      | 注释
------------------- | ------------------------ | --------------------------------- | --------------- | -----
+------------------ | ------------------------ | --------------------------------- | --------------- | --
 tab.scenes-article | /scenes/article/:sceneid | templates/tab-article.html        | ArticleShowCtrl | -
 tab.scenes         | /scenes                  | templates/tab-selectEditType.html | selectEditType  | 创作
 
@@ -30,7 +30,7 @@ tab.msgs | /msg | templates/tab-msgs.html | MsgCtrl    | 消息
 - account (account.js)
 
 state                    | 路径                        | templateUrl                              | controller        | 注释
------------------------- | ------------------------- | ---------------------------------------- | ----------------- | ---------
+------------------------ | ------------------------- | ---------------------------------------- | ----------------- | --------
 tab.account              | /account                  | templates/tab-account.html               | AccountCtrl       | 我的主页
 -                        | -                         | server1/client/templates/view-detai.html | VerifyCtrl(没有找到)  | 邮箱激活链接页面
 tab.account-myscene      | /account/myscenes/:userid | templates/tab-myscenes.html              | MySceneCtrl       | 我的作品
@@ -43,7 +43,7 @@ tab.account-businessCard | /account/businessCard     | templates/tab-businessCar
 - showh5 （showh5.js）
 
 state                 | 路径                        | templateUrl                | controller    | 注释
---------------------- | ------------------------- | -------------------------- | ------------- | --
+--------------------- | ------------------------- | -------------------------- | ------------- | ------
 -                     | -                         | templates/page.main.html   | PageMainCtrl  | -
 tab.view-detail       | /show/:sceneid            | templates/view-detail.html | ShowH5Ctrl    | -
 show-scene-bytype     | /view/:typeid/:sceneid    | templates/view-detail.html | ShowH5Ctrl    | 场景展示页面
@@ -67,9 +67,9 @@ tab.scene-console    | /newh5/console/:sceneid | templates/tab-newh5.html   | Ed
 
 - follow (follow.js)
 
-state                 | 路径                         | templateUrl                  | controller                        | 注释
---------------------- | -------------------------- | ---------------------------- | --------------------------------- | -----
--                     | -                          | -                            | MySceneCtrl1111111111111111111111 | -
-tab.account-myfollows | /account/myfollows/:userid | templates/tab-follows.html   | FollowsCtrl                       | 我的收藏
-tab.follows           | /follow                    | templates/tab-follows.html   | FollowsCtrl                       | -
-tab.follows-detail    | /follow/:followId          | templates/follow-detail.html | FollowDetailCtrl                  | -
+state                 | 路径                         | templateUrl                  | controller       | 注释
+--------------------- | -------------------------- | ---------------------------- | ---------------- | ----
+-                     | -                          | -                            | MySceneCtrl1...  | -
+tab.account-myfollows | /account/myfollows/:userid | templates/tab-follows.html   | FollowsCtrl      | 我的收藏
+tab.follows           | /follow                    | templates/tab-follows.html   | FollowsCtrl      | -
+tab.follows-detail    | /follow/:followId          | templates/follow-detail.html | FollowDetailCtrl | -
