@@ -1,0 +1,19 @@
+{
+  "title": "乐微文档",
+  "author": "treecrow",
+  "description": "乐微开发文档",
+  "language": "zh-hans",
+  "styles": {
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+  },
+  "plugins": [
+    "-sharing",
+    "splitter",
+    "toggle-chapters",
+    "sectionx"
+  ]
+}

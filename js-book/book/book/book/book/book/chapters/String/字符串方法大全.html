@@ -149,33 +149,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="../Basis/创建对象模式.html">
-            
-                <a href="../Basis/创建对象模式.html">
-            
-                    
-                    创建对象模式
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4" data-path="../Basis/对象的继承.html">
-            
-                <a href="../Basis/对象的继承.html">
-            
-                    
-                    对象的继承
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.5" data-path="../Basis/基本类型与引用类型.html">
+        <li class="chapter " data-level="2.1.3" data-path="../Basis/基本类型与引用类型.html">
             
                 <a href="../Basis/基本类型与引用类型.html">
             
@@ -188,7 +162,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="../Basis/严格模式.html">
+        <li class="chapter " data-level="2.1.4" data-path="../Basis/严格模式.html">
             
                 <a href="../Basis/严格模式.html">
             
@@ -201,7 +175,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="../Basis/new操作符.html">
+        <li class="chapter " data-level="2.1.5" data-path="../Basis/new操作符.html">
             
                 <a href="../Basis/new操作符.html">
             
@@ -214,7 +188,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.8" data-path="../Basis/this.html">
+        <li class="chapter " data-level="2.1.6" data-path="../Basis/this.html">
             
                 <a href="../Basis/this.html">
             
@@ -594,12 +568,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.10.1" data-path="../Object/属性的遍历.html">
+        <li class="chapter " data-level="2.10.1" data-path="../Object/创建对象模式.html">
             
-                <a href="../Object/属性的遍历.html">
+                <a href="../Object/创建对象模式.html">
             
                     
-                    属性的遍历
+                    创建对象模式
             
                 </a>
             
@@ -607,12 +581,38 @@
             
         </li>
     
-        <li class="chapter " data-level="2.10.2" data-path="../Object/copy.html">
+        <li class="chapter " data-level="2.10.2" data-path="../Object/对象的继承.html">
             
-                <a href="../Object/copy.html">
+                <a href="../Object/对象的继承.html">
             
                     
-                    copy
+                    对象的继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../Object/对象方法大全.html">
+            
+                <a href="../Object/对象方法大全.html">
+            
+                    
+                    对象方法大全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../Object/深拷贝.html">
+            
+                <a href="../Object/深拷贝.html">
+            
+                    
+                    深拷贝
             
                 </a>
             
@@ -1167,6 +1167,11 @@
    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.toString.call(value) === <span class="hljs-string">&apos;[object String]&apos;</span> &amp;&amp; value.length === <span class="hljs-number">1</span>;
  }
 </code></pre>
+<h2 id="&#x662F;&#x5426;&#x662F;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x7B26;">&#x662F;&#x5426;&#x662F;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x7B26;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">is32Bit</span>(<span class="hljs-params">c</span>) </span>{
+  <span class="hljs-keyword">return</span> c.codePointAt(<span class="hljs-number">0</span>) &gt; <span class="hljs-number">0xFFFF</span>;
+}
+</code></pre>
 <h2 id="&#x662F;&#x5426;&#x662F;&#x624B;&#x673A;&#x53F7;">&#x662F;&#x5426;&#x662F;&#x624B;&#x673A;&#x53F7;</h2>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isPhoneNum</span>(<span class="hljs-params">num</span>) </span>{
    <span class="hljs-keyword">let</span> reg = <span class="hljs-regexp">/^1[3|4|5|7|8][0-9]{9}$/</span>;
@@ -1244,7 +1249,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"字符串方法大全","level":"2.4.1","depth":2,"next":{"title":"RegExp","level":"2.5","depth":1,"path":"chapters/RegExp/README.md","ref":"chapters/RegExp/README.md","articles":[]},"previous":{"title":"String","level":"2.4","depth":1,"path":"chapters/String/README.md","ref":"chapters/String/README.md","articles":[{"title":"字符串方法大全","level":"2.4.1","depth":2,"path":"chapters/String/字符串方法大全.md","ref":"chapters/String/字符串方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/String/字符串方法大全.md","mtime":"2017-05-04T13:48:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-07T04:51:58.374Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"字符串方法大全","level":"2.4.1","depth":2,"next":{"title":"RegExp","level":"2.5","depth":1,"path":"chapters/RegExp/README.md","ref":"chapters/RegExp/README.md","articles":[]},"previous":{"title":"String","level":"2.4","depth":1,"path":"chapters/String/README.md","ref":"chapters/String/README.md","articles":[{"title":"字符串方法大全","level":"2.4.1","depth":2,"path":"chapters/String/字符串方法大全.md","ref":"chapters/String/字符串方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/String/字符串方法大全.md","mtime":"2017-05-07T05:35:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-07T07:11:52.774Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
