@@ -29,16 +29,16 @@ tab.msgs | /msg | templates/tab-msgs.html | MsgCtrl    | 消息
 
 - account (account.js)
 
-state                    | 路径                        | templateUrl                              | controller        | 注释
------------------------- | ------------------------- | ---------------------------------------- | ----------------- | --------
-tab.account              | /account                  | templates/tab-account.html               | AccountCtrl       | 我的主页
--                        | -                         | server1/client/templates/view-detai.html | VerifyCtrl(没有找到)  | 邮箱激活链接页面
-tab.account-myscene      | /account/myscenes/:userid | templates/tab-myscenes.html              | MySceneCtrl       | 我的作品
--                        | -                         | templates/page.material.html             | PageMaterialCtrl  | 素材库页面
-tab.account-setting      | /account/setting          | templates/tab-setting.html               | SettingController | 我的设置
--                        | -                         | templates/register.html                  | RegisterCtrl      | 注册页面
-tab.account-businessCard | /account/businessCard     | templates/tab-businessCard.html          | BusinessCardCtrl  | 我的名片
--                        | -                         | （templates/tab-login.html）               | LoginCtrl         | 登录页面
+state                    | 路径                        | templateUrl                     | controller        | 注释
+------------------------ | ------------------------- | ------------------------------- | ----------------- | --------
+tab.account              | /account                  | templates/tab-account.html      | AccountCtrl       | 我的主页
+-                        | -                         | server1/client/view-detai.html  | VerifyCtrl(没有找到)  | 邮箱激活链接页面
+tab.account-myscene      | /account/myscenes/:userid | templates/tab-myscenes.html     | MySceneCtrl       | 我的作品
+-                        | -                         | templates/page.material.html    | PageMaterialCtrl  | 素材库页面
+tab.account-setting      | /account/setting          | templates/tab-setting.html      | SettingController | 我的设置
+-                        | -                         | templates/register.html         | RegisterCtrl      | 注册页面
+tab.account-businessCard | /account/businessCard     | templates/tab-businessCard.html | BusinessCardCtrl  | 我的名片
+-                        | -                         | （templates/tab-login.html）      | LoginCtrl         | 登录页面
 
 - showh5 （showh5.js）
 
