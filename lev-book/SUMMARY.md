@@ -17,8 +17,6 @@
   - [configService](chapters/services/configService.md)
   - [editDataService](chapters/services/editDataService.md)
   - [materialService](chapters/services/materialService.md)
-  - [sceneDataService_nouse](chapters/services/sceneDataService_nouse.md)
-  - [sceneEditorService_nouse](chapters/services/sceneEditorService_nouse.md)
   - [showDataService](chapters/services/showDataService.md)
   - [userService](chapters/services/userService.md)
 
