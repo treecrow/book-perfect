@@ -34,7 +34,7 @@ docs              | Opens up the documentation for Ionic
 ### 添加/删除/模拟/构建
 
 命令                                              | 含义
------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------
 start appName --v2                              | ionic start myApp blank（空项目） #ionic start myApp tabs（带导航条） #ionic start myApp sidemenu（带侧滑菜单） # -v---表示用ionic2
 serve                                           | 启动一个本地的server，在浏览器中打开，并可监视文件变化，随时刷新浏览器.可以在主目录下的ionic.project文件的watchPatterns中配置要监视的文件夹
 serv --address 68.52.96.10                      | 指明一个外部的ip地址，可以让外部用户查看
@@ -49,3 +49,5 @@ lib update                                      | 更新ionic库
 platform update xxx                             | 更新更新包
 info                                            | 查看关于ionic的系统消息
 setup                                           | 给项目配置一个构建工具(beta) ：ionic setup sass
+
+- [怎么用ionic命令行调试你的ionic app](http://www.tuicool.com/articles/aaiUVzi)

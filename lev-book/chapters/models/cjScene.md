@@ -20,7 +20,8 @@ createtimeTime     | 创建时间
 musicurlVarchar    | -
 videocodeVarchar   | -
 showstatusInt      | 是否公开
-thumbnailVarchar   | -
+thumbnailVarchar   | 封面
+skims              | 缩略图
 movietypeInt       | -
 descVarchar        | 场景描述
 ipVarchar          | 创建场景的地点

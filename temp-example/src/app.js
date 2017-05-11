@@ -1,7 +1,19 @@
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arrayLike = {
+  '0': 'a',
+  '1': 'b',
+  '2': 'c'
+};
 
-let brr = Object.assign({}, arr, {
-  status: 1,
-  msg: '成功获取scene'
-})
-console.log(brr);
+let arr = ['a', 'b', 'c'];
+
+function turnToArr(str) {
+  let obj = JSON.parse(str);
+  obj.length = Object.keys(obj).length;
+  return Array.from(obj);
+}
+
+function turnToStr(arr) {
+  return Object.assign({},arr)
+}
+
+console.log(turnToStr(arr));

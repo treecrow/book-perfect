@@ -8,7 +8,6 @@
 - [gulp](chapters/gulp.md)
 - [loopback](chapters/loopback/README.md)
 
-  - [doc](chapters/loopback/doc.md)
   - [init](chapters/loopback/init.md)
   - [question](chapters/loopback/question.md)
 
