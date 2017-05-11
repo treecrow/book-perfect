@@ -1,19 +1,27 @@
-let arrayLike = {
-  '0': 'a',
-  '1': 'b',
-  '2': 'c'
-};
-
-let arr = ['a', 'b', 'c'];
-
-function turnToArr(str) {
-  let obj = JSON.parse(str);
-  obj.length = Object.keys(obj).length;
-  return Array.from(obj);
+function getSyncTime() {
+  return new Promise((resolve, reject) => {
+    try {
+      let startTime = new Date().getTime()
+      setTimeout(() => {
+        let endTime = new Date().getTime()
+        let data = endTime - startTime
+        resolve( data )
+      }, 500)
+    } catch ( err ) {
+      reject( err )
+    }
+  })
 }
 
-function turnToStr(arr) {
-  return Object.assign({},arr)
+async function getSyncData() {
+  let time = await getSyncTime()
+  let data = `endTime - startTime = ${time}`
+  return data
 }
 
-console.log(turnToStr(arr));
+async function getData() {
+  let data = await getSyncData()
+  console.log( data )
+}
+
+getData()
