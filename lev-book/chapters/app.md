@@ -43,8 +43,8 @@ tab.account-businessCard | /account/businessCard     | tab-businessCard.html   |
 - showh5 （showh5.js）
 
 state                 | 路径                        | templateUrl                | controller    | 注释
---------------------- | ------------------------- | -------------------------- | ------------- | ------
--                     | -                         | templates/page.main.html   | PageMainCtrl  | -
+--------------------- | ------------------------- | -------------------------- | ------------- | -----------
+-                     | -                         | templates/page.main.html   | PageMainCtrl  | 名片相册的单个滑动页面
 tab.view-detail       | /show/:sceneid            | templates/view-detail.html | ShowH5Ctrl    | -
 show-scene-bytype     | /view/:typeid/:sceneid    | templates/view-detail.html | ShowH5Ctrl    | 场景展示页面
 tab.show-scene-bytype | /show/:typeid/:sceneid    | templates/view-detail.html | ShowH5Ctrl    | -
