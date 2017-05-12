@@ -21,8 +21,9 @@
 
 - [noself](chapters/noself/README.md)
 
-  - [brew](chapters/noself/brew.md)
   - [apm](chapters/noself/apm.md)
+  - [brew](chapters/noself/brew.md)
+  - [forever](chapters/noself/forever.md)
   - [git](chapters/noself/git.md)
   - [gitbook](chapters/noself/gitbook.md)
   - [npm](chapters/noself/npm.md)
