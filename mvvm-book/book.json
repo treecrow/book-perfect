@@ -1,7 +1,6 @@
 {
-  "title": "乐微文档",
+  "title": "mvvm",
   "author": "treecrow",
-  "description": "乐微开发文档",
   "language": "zh-hans",
   "styles": {
     "website": "styles/website.css",
