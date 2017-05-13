@@ -1252,6 +1252,67 @@ consoleNum();
 }
 consoleNum();
 </code></pre>
+<h3 id="async&#x5E76;&#x884C;&#x7684;&#x95EE;&#x9898;">async&#x5E76;&#x884C;&#x7684;&#x95EE;&#x9898;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x80FD;&#x4E0D;&#x80FD;&#x505A;&#x5230;&#x904D;&#x5386;&#x51FA;false&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4E0D;&#x518D;&#x904D;&#x5386;&#x4E86;&#xFF1F;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timeout</span>(<span class="hljs-params">ms</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    <span class="hljs-keyword">if</span>(ms === <span class="hljs-number">5000</span>) {
+      setTimeout(reject, ms);
+    } <span class="hljs-keyword">else</span> {
+      setTimeout(resolve, ms);
+    }
+  });
+}
+<span class="hljs-keyword">let</span> numList = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
+<span class="hljs-keyword">let</span> promiseList = numList.map((num) =&gt;
+  (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">await</span> timeout(num * <span class="hljs-number">1000</span>);
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    } <span class="hljs-keyword">catch</span> (err) {
+      <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x540E;&#x5C31;&#x6CA1;&#x5FC5;&#x8981;&#x518D;&#x7EE7;&#x7EED;&#x904D;&#x5386;&#x4E86;</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+  })()
+);
+(<span class="hljs-keyword">async</span>() =&gt; {
+  <span class="hljs-keyword">let</span> results = <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all(promiseList);
+  <span class="hljs-built_in">console</span>.log(results);<span class="hljs-comment">// [true, true, true, true, false, true, true, true, true]</span>
+  <span class="hljs-comment">//&#x6839;&#x636E;numList&#x7684;&#x904D;&#x5386;&#x7ED3;&#x679C;&#x51B3;&#x5B9A;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x6267;&#x884C;&#x903B;&#x8F91;......</span>
+  <span class="hljs-comment">//&#x53EA;results&#x4E2D;&#x5168;&#x4E3A;true&#x624D;&#x7EE7;&#x7EED;&#x6267;&#x884C;</span>
+})();
+</code></pre>
+<ul>
+<li>timeout&#x4E3A;&#x4F55;&#x6CA1;&#x6709;&#x5EF6;&#x65F6;&#xFF1F;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timeout</span>(<span class="hljs-params">ms</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    <span class="hljs-keyword">if</span> (ms === <span class="hljs-number">500</span>) {
+      reject(ms);
+    } <span class="hljs-keyword">else</span> {
+      setTimeout(resolve(ms), ms);
+    }
+  });
+}
+<span class="hljs-keyword">let</span> numList = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
+<span class="hljs-keyword">let</span> promiseList = numList.map((num) =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">let</span> ms = <span class="hljs-keyword">await</span> timeout(num * <span class="hljs-number">1000</span>);
+        resolve(ms);
+      } <span class="hljs-keyword">catch</span> (err) {
+        reject(err);
+      }
+    })()
+  });
+});
+<span class="hljs-built_in">Promise</span>.all(promiseList).then((data) =&gt; {
+  <span class="hljs-built_in">console</span>.log(data);
+}, (err) =&gt; {
+  <span class="hljs-built_in">console</span>.log(err);
+})
+</code></pre>
 
                                 
                                 </section>
@@ -1295,7 +1356,7 @@ consoleNum();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"异步编程","level":"2.2.2","depth":2,"next":{"title":"函数式编程","level":"2.2.3","depth":2,"path":"chapters/Advanced/函数式编程.md","ref":"chapters/Advanced/函数式编程.md","articles":[]},"previous":{"title":"特种函数大全","level":"2.2.1","depth":2,"path":"chapters/Advanced/特种函数大全.md","ref":"chapters/Advanced/特种函数大全.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Advanced/异步编程.md","mtime":"2017-05-03T01:13:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-08T15:01:20.653Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"异步编程","level":"2.2.2","depth":2,"next":{"title":"函数式编程","level":"2.2.3","depth":2,"path":"chapters/Advanced/函数式编程.md","ref":"chapters/Advanced/函数式编程.md","articles":[]},"previous":{"title":"特种函数大全","level":"2.2.1","depth":2,"path":"chapters/Advanced/特种函数大全.md","ref":"chapters/Advanced/特种函数大全.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/Advanced/异步编程.md","mtime":"2017-05-09T02:55:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-09T07:02:35.000Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

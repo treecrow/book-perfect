@@ -68,11 +68,7 @@
 
 - [Url](chapters/Url/README.md)
 
-  - [下载在线资源](chapters/Url/下载在线资源.md)
-  - [判断是否是url](chapters/Url/判断是否是url.md)
-  - [获取域名主机](chapters/Url/获取域名主机.md)
-  - [解析URL中的查询字符串](chapters/Url/解析URL中的查询字符串.md)
-  - [链接的绝对地址](chapters/Url/链接的绝对地址.md)
+  - [url方法大全](chapters/Url/url方法大全.md)
 
 - [Correspond](chapters/Correspond/README.md)
 
