@@ -14,6 +14,8 @@ ordova platform ls                   | 检查你当前平台设置状况
 cordova requirements                 | 检测是否满足构建平台的要求
 cordova build                        | 为所有添加的平台构建app
 cordova build (platform name)        | 选择限制平台构建app
+cordova plugin add xxx               | 添加某个插件
+cordova prepare                      | -
 
 ## 发布的步骤：
 

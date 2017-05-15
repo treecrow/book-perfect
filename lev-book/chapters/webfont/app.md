@@ -38,7 +38,7 @@ tab.account-myscene      | /account/myscenes/:userid | tab-myscenes.html       |
 tab.account-setting      | /account/setting          | tab-setting.html        | SettingController | 我的设置
 -                        | -                         | register.html           | RegisterCtrl      | 注册页面
 tab.account-businessCard | /account/businessCard     | tab-businessCard.html   | BusinessCardCtrl  | 我的名片
--                        | -                         | tab-login.html          | LoginCtrl         | 登录页面
+-                        | -                         | login.html              | LoginCtrl         | 登录页面
 
 - showh5 （showh5.js）
 
