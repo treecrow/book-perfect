@@ -5,7 +5,7 @@
 字段                | 含义
 ----------------- | --------------------------------
 useridInt         | 用户id(前端-userid)
-gid               | -
+gid               | 用户名片场景id
 uname             | 用户名
 email             | 邮箱
 openidQq          | -

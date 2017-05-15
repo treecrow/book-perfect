@@ -222,9 +222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../base/README.md">
+        <li class="chapter " data-level="2.2" data-path="../base/">
             
-                <span>
+                <a href="../base/">
             
                     
                     base
@@ -254,9 +254,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../webfont/README.md">
+        <li class="chapter " data-level="2.3" data-path="../webfont/">
             
-                <span>
+                <a href="../webfont/">
             
                     
                     webfont
@@ -1112,7 +1112,34 @@
                                 <h1 id="ionic">ionic</h1>
 <h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
 <pre><code>npm install -g ionic cordova
-</code></pre><h2 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h2>
+</code></pre><h2 id="&#x547D;&#x4EE4;&#x5217;&#x8868;">&#x547D;&#x4EE4;&#x5217;&#x8868;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ionic serve</td>
+<td>&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x7684;server&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#xFF0C;&#x5E76;&#x53EF;&#x76D1;&#x89C6;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#xFF0C;&#x968F;&#x65F6;&#x5237;&#x65B0;&#x6D4F;&#x89C8;&#x5668;.&#x53EF;&#x4EE5;&#x5728;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x7684;ionic.project&#x6587;&#x4EF6;&#x7684;watchPatterns&#x4E2D;&#x914D;&#x7F6E;&#x8981;&#x76D1;&#x89C6;&#x7684;&#x6587;&#x4EF6;&#x5939;</td>
+</tr>
+<tr>
+<td>ionic serve --lab</td>
+<td>&#x6D4B;&#x8BD5;app&#x5728;&#x5B89;&#x5353;&#x548C;ios&#x4E2D;&#x7684;&#x6548;&#x679C;</td>
+</tr>
+<tr>
+<td>ionic serve --address 68.54.96.105</td>
+<td>&#x6307;&#x660E;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x7684;ip&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>ionic platform add ios android</td>
+<td>&#x6DFB;&#x52A0;&#x5E73;&#x53F0;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h2>
 <table>
 <thead>
 <tr>
@@ -1166,10 +1193,6 @@
 <td>Set configuration variables for your ionic app</td>
 </tr>
 <tr>
-<td>service</td>
-<td>Add an Ionic service package and install any required plugins</td>
-</tr>
-<tr>
 <td>add</td>
 <td>Add an Ion, bower component, or addon to the project</td>
 </tr>
@@ -1217,20 +1240,12 @@
 <td>ionic start myApp blank&#xFF08;&#x7A7A;&#x9879;&#x76EE;&#xFF09; #ionic start myApp tabs&#xFF08;&#x5E26;&#x5BFC;&#x822A;&#x6761;&#xFF09; #ionic start myApp sidemenu&#xFF08;&#x5E26;&#x4FA7;&#x6ED1;&#x83DC;&#x5355;&#xFF09; # -v---&#x8868;&#x793A;&#x7528;ionic2</td>
 </tr>
 <tr>
-<td>serve</td>
-<td>&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x7684;server&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#xFF0C;&#x5E76;&#x53EF;&#x76D1;&#x89C6;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#xFF0C;&#x968F;&#x65F6;&#x5237;&#x65B0;&#x6D4F;&#x89C8;&#x5668;.&#x53EF;&#x4EE5;&#x5728;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x7684;ionic.project&#x6587;&#x4EF6;&#x7684;watchPatterns&#x4E2D;&#x914D;&#x7F6E;&#x8981;&#x76D1;&#x89C6;&#x7684;&#x6587;&#x4EF6;&#x5939;</td>
-</tr>
-<tr>
 <td>serv --address 68.52.96.10</td>
 <td>&#x6307;&#x660E;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;ip&#x5730;&#x5740;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5916;&#x90E8;&#x7528;&#x6237;&#x67E5;&#x770B;</td>
 </tr>
 <tr>
 <td>serve --lab</td>
 <td>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;ios&#x548C;andriod&#x7684;&#x663E;&#x793A;&#x754C;&#x9762;</td>
-</tr>
-<tr>
-<td>platform add/remove xxx</td>
-<td>&#x6DFB;&#x52A0;&#x5220;&#x9664;xxx&#x5E73;&#x53F0;</td>
 </tr>
 <tr>
 <td>run xxx [options]</td>
@@ -1316,7 +1331,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ionic命令","level":"2.4.2","depth":2,"next":{"title":"ionic文档","level":"2.4.3","depth":2,"path":"chapters/build/ionic文档.md","ref":"chapters/build/ionic文档.md","articles":[]},"previous":{"title":"cordova","level":"2.4.1","depth":2,"path":"chapters/build/cordova.md","ref":"chapters/build/cordova.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"乐微文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/build/ionic命令.md","mtime":"2017-05-10T16:43:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T08:42:52.868Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ionic命令","level":"2.4.2","depth":2,"next":{"title":"ionic文档","level":"2.4.3","depth":2,"path":"chapters/build/ionic文档.md","ref":"chapters/build/ionic文档.md","articles":[]},"previous":{"title":"cordova","level":"2.4.1","depth":2,"path":"chapters/build/cordova.md","ref":"chapters/build/cordova.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"乐微文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/build/ionic命令.md","mtime":"2017-05-15T09:36:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T15:05:26.166Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

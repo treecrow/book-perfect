@@ -6,6 +6,16 @@
 npm install -g ionic cordova
 ```
 
+## 命令列表
+
+命令                                 | 作用
+---------------------------------- | --------------------------------------------------------------------------------------
+ionic serve                        | 启动一个本地的server，在浏览器中打开，并可监视文件变化，随时刷新浏览器.可以在主目录下的ionic.project文件的watchPatterns中配置要监视的文件夹
+ionic serve --lab                  | 测试app在安卓和ios中的效果
+ionic serve --address 68.54.96.105 | 指明一个使用的ip地址
+ionic platform add ios android     | 添加平台
+
+
 ## 命令
 
 命令                | 含义
@@ -21,7 +31,6 @@ security          | Store your app's credentials for the Ionic Cloud
 push              | Upload APNS and GCM credentials to Ionic Push
 package           | Use Ionic Package to build your app
 config            | Set configuration variables for your ionic app
-service           | Add an Ionic service package and install any required plugins
 add               | Add an Ion, bower component, or addon to the project
 remove            | Remove an Ion, bower component, or addon from the project
 list              | List Ions, bower components, or addons in the project
@@ -34,12 +43,10 @@ docs              | Opens up the documentation for Ionic
 ### 添加/删除/模拟/构建
 
 命令                                              | 含义
------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 start appName --v2                              | ionic start myApp blank（空项目） #ionic start myApp tabs（带导航条） #ionic start myApp sidemenu（带侧滑菜单） # -v---表示用ionic2
-serve                                           | 启动一个本地的server，在浏览器中打开，并可监视文件变化，随时刷新浏览器.可以在主目录下的ionic.project文件的watchPatterns中配置要监视的文件夹
 serv --address 68.52.96.10                      | 指明一个外部的ip地址，可以让外部用户查看
 serve --lab                                     | 在浏览器中打开ios和andriod的显示界面
-platform add/remove xxx                         | 添加删除xxx平台
 run xxx [options]                               | 使用设备运行应用，如果无设备可用将自动使用模拟器： #-l(livereload)---实时刷新变化。#-c---打印app里的console #-s---打印设备的console #-p---指定设备的端口 #-i---指定livereload的重刷端口 #--debug //debug #--release //release
 emulate xxx [options]/ ionic run xxx --emulator | 模拟器中运行xxx
 build xxx                                       | 打包xxx
