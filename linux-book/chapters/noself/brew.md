@@ -12,17 +12,18 @@
 
 命令                 | 含义
 ------------------ | ------------------
+brew install xxx   | 安装xxx
+brew remove xxx    | -
+brew cleanup git   | 清除单个软件
+brew cleanup       | 清除所有软件
+brew info xxx      | 显示包信息
 brew search        | -
-brew install       | -
 brew outdated      | 查看那些已安装的程序需要更新
 brew upgrade git   | 更新指定软件
 brew update        | 更新Homebrew
 brew uninstall git | -
-brew cleanup git   | 清除单个软件
-brew cleanup       | 清除所有软件
 brew list          | 显示已安装的包
 brew home []       | 用浏览器打开相关包的页面
-brew info []       | 显示包信息
 brew deps []       | 显示包依赖
 brew server        | 启动web服务器，可以通过浏览器访问
 brew -h            | brew帮助
