@@ -3,7 +3,7 @@
 ## 插件列表
 
 插件                            | 作用
------------------------------ | ---------------
+----------------------------- | ------------------------------
 $cordova3DTouch               | -
 $cordovaActionSheet           | -
 $cordovaAdMob                 | -
@@ -29,6 +29,10 @@ $cordovaDevice                | 获取设备信息
 $cordovaDeviceMotion          | -
 $cordovaDeviceOrientation     | -
 $cordovaDialogs               | -
+$cordovaEmailComposer         | -
+$cordovaQQ                    | -
+$cordovaWechat                | -
+$cordovaWeibo                 | -
 $cordovaEmailComposer         | -
 $cordovaFacebook              | -
 $cordovaFacebookAds           | -
@@ -76,7 +80,7 @@ $cordovaSms                   | -
 $cordovaSocialSharing         | -
 $cordovaSpinnerDialog         | -
 $cordovaSplashscreen          | 显示或隐藏启动画面
-$cordovaSQLite                | -
+$cordovaSQLite                | 用于存储数据（cordova-sqlite-storage）
 $cordovaStatusbar             | 设置状态栏
 $cordovaToast                 | -
 $cordovaTouchID               | -
