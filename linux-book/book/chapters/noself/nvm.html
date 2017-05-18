@@ -489,12 +489,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.1" data-path="../others/翻墙.html">
+        <li class="chapter " data-level="2.4.1" data-path="../others/其他系统.html">
             
-                <a href="../others/翻墙.html">
+                <a href="../others/其他系统.html">
             
                     
-                    翻墙
+                    其他系统
             
                 </a>
             
@@ -502,51 +502,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.2" data-path="../others/系统安装.html">
-            
-                <a href="../others/系统安装.html">
-            
-                    
-                    系统安装
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.3" data-path="../others/mac.html">
+        <li class="chapter " data-level="2.4.2" data-path="../others/mac.html">
             
                 <a href="../others/mac.html">
             
                     
                     mac
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.4" data-path="../others/zsh.html">
-            
-                <a href="../others/zsh.html">
-            
-                    
-                    zsh
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.5" data-path="../others/其它.html">
-            
-                <a href="../others/其它.html">
-            
-                    
-                    其它
             
                 </a>
             
@@ -604,21 +565,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="nvm-node-version-manager">nvm Node Version Manager</h1>
+                                <h1 id="nvm">nvm</h1>
+<h2 id="&#x5B89;&#x88C5;&#x6B65;&#x9AA4;">&#x5B89;&#x88C5;&#x6B65;&#x9AA4;</h2>
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p/24698499" target="_blank">&#x4F7F;&#x7528;nvm&#x5B89;&#x88C5;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x7684;node.js(&#x9002;&#x7528;&#x4E8E;Mac&#x548C;Windows&#x7CFB;&#x7EDF;)</a></li>
-<li><a href="http://www.cnblogs.com/ystrdy/p/6025058.html" target="_blank">ubuntu&#x901A;&#x8FC7;tnvm&#x5B89;&#x88C5;Nodejs</a></li>
+<li>&#x5B89;&#x88C5;NVM</li>
 </ul>
-<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
-<h4 id="&#x5B89;&#x88C5;&#x6216;&#x66F4;&#x65B0;nvm">&#x5B89;&#x88C5;&#x6216;&#x66F4;&#x65B0;nvm</h4>
-<pre><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-source ~/.nvm/nvm.sh
+<pre><code>brew install nvm
+</code></pre><ul>
+<li>&#x521B;&#x5EFA;.bash_profile&#x6587;&#x4EF6;(&#x5982;&#x679C;&#x6709;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x4E86;)</li>
+</ul>
+<pre><code>touch &#xFF5E;/.bash_profile
+</code></pre><ul>
+<li>&#x5411;.bash_profile&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</li>
+</ul>
+<pre><code>export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+</code></pre><ul>
+<li>&#x4F7F;&#x751F;&#x6548;</li>
+</ul>
+<pre><code>source &#xFF5E;/.bash_profile
 </code></pre><h2 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h2>
 <table>
 <thead>
 <tr>
 <th>&#x547D;&#x4EE4;</th>
-<th>&#x542B;&#x4E49; </th>
+<th>&#x542B;&#x4E49;</th>
 </tr>
 </thead>
 <tbody>
@@ -648,18 +619,20 @@ source ~/.nvm/nvm.sh
 </tr>
 <tr>
 <td>nvm ls-remote node</td>
-<td>-</td>
-</tr>
-<tr>
-<td>nvm ls-remote iojs</td>
-<td>-</td>
+<td>&#x67E5;&#x770B; &#x6240;&#x6709;&#x7684;node&#x53EF;&#x7528;&#x7248;&#x672C;</td>
 </tr>
 <tr>
 <td>nvm alias default v5.0.0</td>
-<td>&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;node&#x7248;&#x672C;</td>
+<td>&#x6BCF;&#x6B21;&#x542F;&#x52A8;&#x7EC8;&#x7AEF;&#x90FD;&#x4F7F;&#x7528;&#x8BE5;&#x7248;&#x672C;&#x7684;node</td>
 </tr>
 </tbody>
 </table>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
+<ul>
+<li><a href="http://www.jianshu.com/p/a6044bd2ad35" target="_blank">MAC&#xFF1A;&#x901A;&#x8FC7;NVM&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684;node</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/24698499" target="_blank">&#x4F7F;&#x7528;nvm&#x5B89;&#x88C5;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x7684;node.js(&#x9002;&#x7528;&#x4E8E;Mac&#x548C;Windows&#x7CFB;&#x7EDF;)</a></li>
+<li><a href="http://www.cnblogs.com/ystrdy/p/6025058.html" target="_blank">ubuntu&#x901A;&#x8FC7;tnvm&#x5B89;&#x88C5;Nodejs</a></li>
+</ul>
 
                                 
                                 </section>
@@ -703,7 +676,7 @@ source ~/.nvm/nvm.sh
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"nvm","level":"2.2.8","depth":2,"next":{"title":"svn","level":"2.2.9","depth":2,"path":"chapters/noself/svn.md","ref":"chapters/noself/svn.md","articles":[]},"previous":{"title":"npm","level":"2.2.7","depth":2,"path":"chapters/noself/npm.md","ref":"chapters/noself/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/noself/nvm.md","mtime":"2017-05-17T17:47:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-18T01:38:07.367Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"nvm","level":"2.2.8","depth":2,"next":{"title":"svn","level":"2.2.9","depth":2,"path":"chapters/noself/svn.md","ref":"chapters/noself/svn.md","articles":[]},"previous":{"title":"npm","level":"2.2.7","depth":2,"path":"chapters/noself/npm.md","ref":"chapters/noself/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/noself/nvm.md","mtime":"2017-05-18T06:38:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-18T06:45:50.290Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
