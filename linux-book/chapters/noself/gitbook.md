@@ -3,19 +3,19 @@
 ## 安装
 
 ```
-npm install -g gitbook-cli
 npm install -g gitbook
+npm install -g gitbook-cli
 ```
 
 ## 命令
 
-命令            | 含义
-------------- | ----------
-gitbook init  | -
-gitbook serve | -
---lrport      | 重启监控进程监听端口
---port        | web 服务监听端口
-gitbook build | -
+命令                           | 含义
+---------------------------- | ----------------
+gitbook init                 | 初始化一个gitbook项目
+gitbook install              | 安装gitbook项目声明到插件
+gitbook serve --lrport 33333 | 在33333端口监控进程
+--port                       | web 服务监听端口
+gitbook build                | -
 
 ## 文档
 

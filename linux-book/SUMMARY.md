@@ -39,5 +39,6 @@
 
   - [翻墙](chapters/others/翻墙.md)
   - [系统安装](chapters/others/系统安装.md)
+  - [mac](chapters/others/mac.md)
   - [zsh](chapters/others/zsh.md)
   - [其它](chapters/others/其它.md)
