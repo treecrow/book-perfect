@@ -6,7 +6,8 @@
 ---------- | -------
 cheetsheet | 显示应用快捷键
 tickets    | 打字出声音
--          | 窗口规范化放置
+Spectacle  | 窗口规范化放置
+AppCleaner | 彻底删除应用
 
 ## 翻墙
 
