@@ -571,23 +571,9 @@
 </ul>
 <pre><code>brew install mysql
 </code></pre><ul>
-<li>&#x8BBE;&#x7F6E; MySQL &#x7528;&#x6237;&#x4EE5;&#x53CA;&#x6570;&#x636E;&#x5B58;&#x653E;&#x5730;&#x5740;</li>
+<li>&#x63D0;&#x9AD8;mysql&#x5E93;&#x7684;&#x5B89;&#x5168;</li>
 </ul>
-<pre><code>unset TMPDIR
-
-mysql_install_db --verbose --user=`whoami` --basedir=&quot;$(brew --prefix mysql)&quot; --datadir=/usr/local/var/mysql --tmpdir=/tmp
-</code></pre><ul>
-<li>&#x542F;&#x52A8;mysql</li>
-</ul>
-<pre><code>mysql.server start
-</code></pre><ul>
-<li>&#x6267;&#x884C;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;(&#x767B;&#x5F55;mysql)</li>
-</ul>
-<pre><code>mysql -uroot -p
-</code></pre><ul>
-<li>&#x8BBE;&#x7F6E;mysql&#x4E3A;&#x5F00;&#x673A;&#x542F;&#x52A8;&#x9879;&#x76EE;(&#x989D;&#x5916;)</li>
-</ul>
-<pre><code>ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+<pre><code>mysql_secure_installation
 </code></pre><h2 id="&#x547D;&#x4EE4;&#x5217;&#x8868;">&#x547D;&#x4EE4;&#x5217;&#x8868;</h2>
 <table>
 <thead>
@@ -614,11 +600,168 @@ mysql_install_db --verbose --user=`whoami` --basedir=&quot;$(brew --prefix mysql
 <td>&#x91CD;&#x65B0;&#x542F;&#x52A8;mysql</td>
 </tr>
 <tr>
-<td>mysql_secure_installation</td>
-<td>-</td>
+<td>mysql -h&#x4E3B;&#x673A;&#x5730;&#x5740; -u&#x7528;&#x6237;&#x540D; &#xFF0D;p&#x7528;&#x6237;&#x5BC6;&#x7801;</td>
+<td>&#x767B;&#x9646;</td>
+</tr>
+<tr>
+<td>mysqladmin -u&#x7528;&#x6237;&#x540D; -p&#x65E7;&#x5BC6;&#x7801; password &#x65B0;&#x5BC6;&#x7801;</td>
+<td>&#x4FEE;&#x6539;&#x5BC6;&#x7801;</td>
 </tr>
 </tbody>
 </table>
+<h2 id="mysql&#x8BED;&#x53E5;">mysql&#x8BED;&#x53E5;</h2>
+<ul>
+<li>database</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x8BED;&#x53E5;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show databases</td>
+<td>&#x663E;&#x793A;&#x6570;&#x636E;&#x5E93;</td>
+</tr>
+<tr>
+<td>create database &lt;&#x6570;&#x636E;&#x5E93;&#x540D;&gt;</td>
+<td>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;</td>
+</tr>
+<tr>
+<td>drop database &lt;&#x6570;&#x636E;&#x5E93;&#x540D;&gt;</td>
+<td>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</td>
+</tr>
+<tr>
+<td>use &lt;&#x6570;&#x636E;&#x5E93;&#x540D;&gt;</td>
+<td>&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>select</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x8BED;&#x53E5;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select version()</td>
+<td>&#x663E;&#x793A;MYSQL&#x7684;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>select now()</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>SELECT YEAR(CURRENT_DATE)</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x5E74;&#x4EFD;</td>
+</tr>
+<tr>
+<td>SELECT MONTH(CURRENT_DATE)</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x6708;&#x4EFD;</td>
+</tr>
+<tr>
+<td>SELECT DAYOFMONTH(CURRENT_DATE)</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x6708;&#x65E5;&#x671F;</td>
+</tr>
+<tr>
+<td>SELECT &quot;welecome to my blog!&quot;</td>
+<td>&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>select ((4 * 4) / 10 ) + 25</td>
+<td>&#x5F53;&#x8BA1;&#x7B97;&#x5668;&#x7528;</td>
+</tr>
+<tr>
+<td>select CONCAT(f_name, &quot; &quot;, l_name)</td>
+<td>&#x4E32;&#x63A5;&#x5B57;&#x7B26;&#x4E32;(...)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>table</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x8BED;&#x53E5;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>create table &lt;&#x8868;&#x540D;&gt; ( &lt;&#x5B57;&#x6BB5;&#x540D;1&gt; &lt;&#x7C7B;&#x578B;1&gt; [,..&lt;&#x5B57;&#x6BB5;&#x540D;n&gt; &lt;&#x7C7B;&#x578B;n&gt;])</td>
+<td>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;(...)</td>
+</tr>
+<tr>
+<td>drop table &lt;&#x8868;&#x540D;&gt;</td>
+<td>&#x5220;&#x9664;&#x6570;&#x636E;&#x8868;</td>
+</tr>
+<tr>
+<td>insert into &lt;&#x8868;&#x540D;&gt; [( &lt;&#x5B57;&#x6BB5;&#x540D;1&gt;[,..&lt;&#x5B57;&#x6BB5;&#x540D;n &gt; ])] values ( &#x503C;1 )[, ( &#x503C;n )]</td>
+<td>&#x8868;&#x63D2;&#x5165;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>select &lt;&#x5B57;&#x6BB5;1&#xFF0C;&#x5B57;&#x6BB5;2&#xFF0C;...&gt; from &lt; &#x8868;&#x540D; &gt; where &lt; &#x8868;&#x8FBE;&#x5F0F; &gt;</td>
+<td>&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x636E;(&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x884C;)</td>
+</tr>
+<tr>
+<td>select * from MyClass order by id limit 0,2</td>
+<td>&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x636E;(&#x67E5;&#x8BE2;&#x524D;&#x51E0;&#x884C;&#x6570;&#x636E;)</td>
+</tr>
+<tr>
+<td>delete from &lt;&#x8868;&#x540D;&gt; where &lt;&#x8868;&#x8FBE;&#x5F0F;&gt;</td>
+<td>&#x5220;&#x9664;&#x8868;&#x4E2D;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>update &#x8868;&#x540D; set &#x5B57;&#x6BB5;=&#x65B0;&#x503C;,... where &#x6761;&#x4EF6;</td>
+<td>&#x4FEE;&#x6539;&#x8868;&#x4E2D;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>alter table &#x8868;&#x540D; add&#x5B57;&#x6BB5; &#x7C7B;&#x578B; &#x5176;&#x4ED6;</td>
+<td>&#x589E;&#x52A0;&#x5B57;&#x6BB5;</td>
+</tr>
+<tr>
+<td>rename table &#x539F;&#x8868;&#x540D; to &#x65B0;&#x8868;&#x540D;</td>
+<td>&#x4FEE;&#x6539;&#x8868;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x5176;&#x4ED6;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x8BED;&#x53E5;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\q</td>
+<td>&#x9000;&#x51FA;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x5907;&#x4EFD;&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+<blockquote>
+<p>&#x7565;</p>
+</blockquote>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
+<ul>
+<li><a href="http://blog.csdn.net/lkxlaz/article/details/54580735" target="_blank">&#x8BB0;&#x5F55;&#x4F7F;&#x7528;Homebrew&#x5B89;&#x88C5;Mysql&#x5168;&#x8FC7;&#x7A0B;</a></li>
+<li><a href="http://www.jb51.net/article/47727.htm" target="_blank">MySQL&#x5B89;&#x5168;&#x914D;&#x7F6E;&#x5411;&#x5BFC;mysql_secure_installation&#x8BE6;&#x89E3;</a></li>
+<li><a href="http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html" target="_blank">Mysql&#x547D;&#x4EE4;&#x5927;&#x5168;</a></li>
+</ul>
 
                                 
                                 </section>
@@ -662,7 +805,7 @@ mysql_install_db --verbose --user=`whoami` --basedir=&quot;$(brew --prefix mysql
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.2.6","depth":2,"next":{"title":"npm","level":"2.2.7","depth":2,"path":"chapters/noself/npm.md","ref":"chapters/noself/npm.md","articles":[]},"previous":{"title":"gitbook","level":"2.2.5","depth":2,"path":"chapters/noself/gitbook.md","ref":"chapters/noself/gitbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/noself/mysql.md","mtime":"2017-05-17T17:47:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-19T00:35:53.684Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.2.6","depth":2,"next":{"title":"npm","level":"2.2.7","depth":2,"path":"chapters/noself/npm.md","ref":"chapters/noself/npm.md","articles":[]},"previous":{"title":"gitbook","level":"2.2.5","depth":2,"path":"chapters/noself/gitbook.md","ref":"chapters/noself/gitbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/noself/mysql.md","mtime":"2017-05-24T11:26:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-28T07:00:06.050Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

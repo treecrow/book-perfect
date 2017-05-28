@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>temp-example</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <title>网页特效代码|表单点击提交按钮后变成灰色不可再次点击</title>
 </head>
-<style>
-</style>
+
 <body>
+  <form name=form1 method="POST" action="http://www.0125.com" target=_blank>
+    <p>
+      <input type="text" name="T1" size="20">
+      <input type="button" value="提交" onclick="javascript:{this.disabled=true;document.form1.submit();}">
+      <input type="reset" value="重置" name="B2">
+    </p>
+  </form>
 </body>
+
 </html>
