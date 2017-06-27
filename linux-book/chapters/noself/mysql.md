@@ -21,7 +21,9 @@ brew services start mysql           | 带着后台服务启动mysql
 mysql.server start                  | 启动mysql
 mysql.server restart                | 重新启动mysql
 mysql -h主机地址 -u用户名 －p用户密码           | 登陆
+mysql -uroot －p                     | 登陆
 mysqladmin -u用户名 -p旧密码 password 新密码 | 修改密码
+mysqld stop                         | -
 
 ## mysql语句
 

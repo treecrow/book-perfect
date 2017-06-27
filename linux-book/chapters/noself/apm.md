@@ -12,7 +12,7 @@ apm view git-grep | 显示git-grep插件的详细信息
 快捷键             | 含义
 --------------- | --------------------
 Cmd + shift + p | 输入命令
-Cmd+\--         | 侧边栏
+Cmd+--          | 侧边栏
 Cmd+Up          | 光标移动到文件头
 Cmd+Down        | 光标移动到文件尾
 Alt+Left        | 光标向左移动一个单词
@@ -56,4 +56,5 @@ git config --global core.editor "atom --wait"
 autoclose-html      | html自动补全
 activate-power-mode | 打字烟花效果
 atom-beautify       | 代码格式化
-go definition       | 代码跳转
+js-hyperclick       | 代码跳转
+autocomplete-paths  | 路径自动提示

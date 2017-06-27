@@ -13,13 +13,15 @@
 ## 模块生态
 
 模块                  | 作用
-------------------- | --
-koa-bodyparser      | -
-koa-convert         | -
-koa-jsonp           | -
-koa-logger          | -
+------------------- | -------------------
+koa-convert         | 转化koa1的中间件为koa2的中间件
+koa-bodyparser      | 配置ctx.body解析中间件
+koa-views           | 配置项目模板和views路径
+koa-static          | 配置静态资源路径
+koa-logger          | 开发过程中的日志记录
 koa-mysql-session   | -
 koa-session-minimal | -
 koa-router          | -
-koa-static          | -
-koa-views           | -
+koa-jsonp           | -
+mysql               | 连接mysql数据库的客户端
+validator           | 验证
