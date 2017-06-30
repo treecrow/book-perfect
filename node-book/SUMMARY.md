@@ -12,7 +12,7 @@
   - [co](chapters/moudles/co.md)
   - [CodeMirror](chapters/moudles/CodeMirror.md)
   - [express](chapters/moudles/express.md)
-  - [gulp](chapters/moudles/gulp.md)
+  - [gulp](chapters/moudles/gulp.md)\
   - [highlight.js](chapters/moudles/highlight.js.md)
   - [ionic](chapters/moudles/ionic.md)
   - [is-generator-function](chapters/moudles/is-generator-function.md)
@@ -62,3 +62,9 @@
   - [V8](chapters/Docs/V8.md)
   - [vm虚拟机](chapters/Docs/vm.md)
   - [ZLIB压缩](chapters/Docs/ZLIB.md)
+
+- [Docs](chapters/relevant/README.md)
+
+  - [babel](chapters/relevant/babel.md)
+  - [gulp](chapters/relevant/gulp.md)
+  - [package](chapters/relevant/package.md)
