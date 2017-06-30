@@ -1,7 +1,5 @@
 # chai
 
-> 断言库，可以与任何测试框架配合，包括expect(), assert() 和 should三种风格
-
 ## Should
 
 ```javascript

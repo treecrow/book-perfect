@@ -1,4 +1,4 @@
-# CodeMirror模块
+# CodeMirror
 
 ## 特性汇总
 

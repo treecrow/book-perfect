@@ -8,11 +8,22 @@
 
   - [babel](chapters/moudles/babel.md)
   - [chai](chapters/moudles/chai.md)
+  - [cheerio](chapters/moudles/cheerio.md)
+  - [co](chapters/moudles/co.md)
   - [CodeMirror](chapters/moudles/CodeMirror.md)
+  - [express](chapters/moudles/express.md)
   - [gulp](chapters/moudles/gulp.md)
+  - [highlight.js](chapters/moudles/highlight.js.md)
+  - [ionic](chapters/moudles/ionic.md)
+  - [is-generator-function](chapters/moudles/is-generator-function.md)
+  - [jquery](chapters/moudles/jquery.md)
   - [koa](chapters/moudles/koa.md)
+  - [loopback](chapters/moudles/loopback.md)
   - [marked](chapters/moudles/marked.md)
   - [mocha](chapters/moudles/mocha.md)
+  - [node-geohash](chapters/moudles/node-geohash.md)
+  - [react](chapters/moudles/react.md)
+  - [vue](chapters/moudles/vue.md)
 
 - [Docs](chapters/Docs/README.md)
 

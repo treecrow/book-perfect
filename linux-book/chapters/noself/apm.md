@@ -51,6 +51,14 @@ git config --global core.editor "atom --wait"
 
 ## 插件列表
 
+### 核心插件
+
+插件 | 作用
+-- | --
+-  | -
+
+### 其他插件
+
 插件                  | 作用
 ------------------- | --------
 autoclose-html      | html自动补全

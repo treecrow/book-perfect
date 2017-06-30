@@ -1,5 +1,9 @@
 # gulp
 
+## 相关文档
+
+- [Gulp 入门指南](https://github.com/nimojs/gulp-book)
+
 ## 相关模块
 
 模块                               | 功能

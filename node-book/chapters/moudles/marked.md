@@ -1,4 +1,4 @@
-# marked模块
+# marked
 
 ## 初始设置（setOptions）
 
