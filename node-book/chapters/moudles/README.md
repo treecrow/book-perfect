@@ -21,5 +21,5 @@
 [node-geohash](https://github.com/sunng87/node-geohash)                  | geohash library for nodejs(根据ip地址获取最近的8个方向的地理位置)
 [react](https://github.com/facebook/react)                               | 前端框架
 [should.js](https://github.com/tj/should.js)                             | BDD风格的断言库（should）
-[standard](https://github.com/standard/standard)                         | javaScript Style Guide, with linter & automatic code fixer
+[standard](https://github.com/standard/standard)                         | JavaScript 代码规范，自带 linter & 代码自动修正
 [vue](https://github.com/vuejs/vue)                                      | 前端框架
