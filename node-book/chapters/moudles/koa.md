@@ -9,6 +9,43 @@
 [Koa 2实用入门](https://cnodejs.org/topic/5709959abc564eaf3c6a48c8) | -
 [「新手向」koa2从起步到填坑](http://www.jianshu.com/p/6b816c609669)        | -
 
+## 依赖的模块系统
+
+来源           | 模块                                                                       | more
+------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------
+Node         | assert                                                                   | -
+-            | events                                                                   | -
+-            | stream                                                                   | -
+-            | http                                                                     | -
+-            | url                                                                      | -
+-            | net                                                                      | -
+-            | querystring                                                              | -
+-            | path                                                                     | -
+koa          | [koa-compose](https://github.com/koajs/compose)                          | 中间件构成工具
+-            | [koa-convert](https://github.com/koajs/convert)                          | Convert koa generator-based middleware to promise-based middleware
+-            | [koa-is-json](https://github.com/koajs/is-json)                          | check if a koa body should be interpreted as JSON
+jshttp       | [accepts](https://github.com/jshttp/accepts)                             | Higher-level content negotiation
+-            | [content-disposition](https://github.com/jshttp/content-disposition)     | Create and parse HTTP Content-Disposition header
+-            | [content-type](https://github.com/jshttp/content-type)                   | Create and parse HTTP Content-Type header
+-            | [fresh](https://github.com/jshttp/fresh)                                 | HTTP request freshness testing
+-            | [http-assert](https://github.com/jshttp/http-assert)                     | assert with status codes
+-            | [http-errors](https://github.com/jshttp/http-errors)                     | Create HTTP Errors
+-            | [mime-types](https://github.com/jshttp/mime-types)                       | The ultimate javascript content-type utility
+-            | [on-finished](https://github.com/jshttp/on-finished)                     | request停止后的回调
+-            | [only](https://github.com/jshttp/only)                                   | return whitelisted properties of an object
+-            | [statuses](https://github.com/jshttp/statuses)                           | HTTP status utility
+-            | [type-is](https://github.com/jshttp/type-is)                             | Infer the content-type of a request
+-            | [vary](https://github.com/jshttp/vary)                                   | Manipulate the HTTP Vary header
+pillarjs     | [cookies](https://github.com/pillarjs/cookies)                           | Signed and unsigned cookies based on Keygrip
+-            | [parseurl](https://github.com/pillarjs/parseurl)                         | parse a url with memoization
+stream-utils | [destroy](https://github.com/stream-utils/destroy)                       | destroy a stream if possible
+-            | [error-inject](https://github.com/stream-utils/error-inject)             | inject an error listener into a stream
+其他           | [debug](https://github.com/visionmedia/debug)                            | 调试用的，相当于console
+-            | [depd](https://github.com/dougwilson/nodejs-depd)                        | Deprecate all the things
+-            | [escape-html](https://github.com/component/escape-html)                  | Escape string for use in HTML
+-            | [is-generator-function](https://github.com/ljharb/is-generator-function) | 判断函数是否是generator
+-            | [delegates](https://github.com/tj/node-delegates)                        | Nodejs method and accessor delegation utility
+
 ## 模块生态
 
 模块                  | 作用
