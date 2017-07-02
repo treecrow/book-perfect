@@ -12,7 +12,7 @@
 ## 依赖的模块系统
 
 来源           | 模块                                                                       | more
------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------
+------------ | ------------------------------------------------------------------------ | ---------------------------------------------------
 Node         | assert                                                                   | -
 -            | events                                                                   | -
 -            | stream                                                                   | -
@@ -21,8 +21,8 @@ Node         | assert                                                           
 -            | net                                                                      | -
 -            | querystring                                                              | -
 -            | path                                                                     | -
-koa          | [koa-compose](https://github.com/koajs/compose)                          | 中间件构成工具
--            | [koa-convert](https://github.com/koajs/convert)                          | Convert koa generator-based middleware to promise-based middleware
+koa          | [koa-compose](https://github.com/koajs/compose)                          | 组合多个中间件为一个中间件
+-            | [koa-convert](https://github.com/koajs/convert)                          | 转化koa1的中间件（generator-based）为koa2的中间件（promise-based）
 -            | [koa-is-json](https://github.com/koajs/is-json)                          | check if a koa body should be interpreted as JSON
 jshttp       | [accepts](https://github.com/jshttp/accepts)                             | Higher-level content negotiation
 -            | [content-disposition](https://github.com/jshttp/content-disposition)     | Create and parse HTTP Content-Disposition header

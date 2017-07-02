@@ -21,10 +21,13 @@
   - [marked](chapters/moudles/marked.md)
   - [matcha](chapters/moudles/matcha.md)
   - [mocha](chapters/moudles/mocha.md)
+  - [node-formidable](chapters/moudles/node-formidable.md)
   - [node-geohash](chapters/moudles/node-geohash.md)
   - [react](chapters/moudles/react.md)
   - [should.js](chapters/moudles/should.js.md)
   - [standard](chapters/moudles/standard.md)
+  - [superagent](chapters/moudles/superagent.md)
+  - [supertest](chapters/moudles/supertest.md)
   - [vue](chapters/moudles/vue.md)
 
 - [Docs](chapters/Docs/README.md)
