@@ -63,12 +63,7 @@ pillarjs     | [cookies](https://github.com/pillarjs/cookies)                   
 -            | [templation]()                                                           | -
 stream-utils | [destroy](https://github.com/stream-utils/destroy)                       | 尽可能的销毁一个stream
 -            | [error-inject](https://github.com/stream-utils/error-inject)             | inject an error listener into a stream
-其他           | [debug](https://github.com/visionmedia/debug)                            | 调试用的，相当于console
--            | [depd](https://github.com/dougwilson/nodejs-depd)                        | Deprecate all the things
--            | [escape-html](https://github.com/component/escape-html)                  | Escape string for use in HTML
--            | [is-generator-function](https://github.com/ljharb/is-generator-function) | 判断函数是否是generator
--            | [delegates](https://github.com/tj/node-delegates)                        | Nodejs method and accessor delegation utility
--            | [node-only](https://github.com/tj/node-only)                             | return whitelisted properties of an object
+
 
 ## 模块生态
 

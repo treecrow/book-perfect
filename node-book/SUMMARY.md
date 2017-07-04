@@ -11,28 +11,53 @@
     - [accepts](chapters/moudles/jshttp/accepts.md)
 
   - [pillarjs](chapters/moudles/pillarjs/README.md)
+
   - [chai](chapters/moudles/chai.md)
+
   - [cheerio](chapters/moudles/cheerio.md)
+
   - [co](chapters/moudles/co.md)
+
   - [CodeMirror](chapters/moudles/CodeMirror.md)
+
   - [express](chapters/moudles/express.md)
+
   - [highlight.js](chapters/moudles/highlight.js.md)
+
   - [ionic](chapters/moudles/ionic.md)
+
   - [is-generator-function](chapters/moudles/is-generator-function.md)
+
   - [istanbul](chapters/moudles/istanbul.md)
+
   - [jquery](chapters/moudles/jquery.md)
+
   - [koa](chapters/moudles/koa.md)
+
   - [loopback](chapters/moudles/loopback.md)
+
   - [marked](chapters/moudles/marked.md)
+
   - [matcha](chapters/moudles/matcha.md)
+
   - [mocha](chapters/moudles/mocha.md)
+
   - [node-formidable](chapters/moudles/node-formidable.md)
+
   - [node-geohash](chapters/moudles/node-geohash.md)
+
+  - [node-only](chapters/moudles/node-only.md)
+
   - [react](chapters/moudles/react.md)
+
   - [should.js](chapters/moudles/should.js.md)
+
   - [standard](chapters/moudles/standard.md)
+
   - [superagent](chapters/moudles/superagent.md)
+
   - [supertest](chapters/moudles/supertest.md)
+
   - [vue](chapters/moudles/vue.md)
 
 - [Docs](chapters/Docs/README.md)
@@ -87,4 +112,5 @@
   - [babel](chapters/relevant/babel.md)
 
   - [gulp](chapters/relevant/gulp.md)
+
   - [package](chapters/relevant/package.md)
