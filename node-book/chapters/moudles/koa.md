@@ -12,7 +12,7 @@
 ## 依赖的模块系统
 
 来源           | 模块                                                                       | more
------------- | ------------------------------------------------------------------------ | ---------------------------------------------------
+------------ | ------------------------------------------------------------------------ | -----------------------------------------------------------
 Node         | assert                                                                   | -
 -            | events                                                                   | -
 -            | stream                                                                   | -
@@ -23,28 +23,52 @@ Node         | assert                                                           
 -            | path                                                                     | -
 koa          | [koa-compose](https://github.com/koajs/compose)                          | 组合多个中间件为一个中间件
 -            | [koa-convert](https://github.com/koajs/convert)                          | 转化koa1的中间件（generator-based）为koa2的中间件（promise-based）
--            | [koa-is-json](https://github.com/koajs/is-json)                          | check if a koa body should be interpreted as JSON
+-            | [koa-is-json](https://github.com/koajs/is-json)                          | Check if a body is JSON
 jshttp       | [accepts](https://github.com/jshttp/accepts)                             | Higher-level content negotiation
--            | [content-disposition](https://github.com/jshttp/content-disposition)     | Create and parse HTTP Content-Disposition header
--            | [content-type](https://github.com/jshttp/content-type)                   | Create and parse HTTP Content-Type header
--            | [fresh](https://github.com/jshttp/fresh)                                 | HTTP request freshness testing
+-            | [basic-auth]()                                                           | -
+-            | [compressible]()                                                         | -
+-            | [content-disposition](https://github.com/jshttp/content-disposition)     | 创建和解析 HTTP Content-Disposition header（文件下载对话框）
+-            | [content-type](https://github.com/jshttp/content-type)                   | 创建和解析 HTTP Content-Type header
+-            | [cookie]()                                                               | -
+-            | [etag]()                                                                 | -
+-            | [forwarded]()                                                            | -
+-            | [fresh](https://github.com/jshttp/fresh)                                 | HTTP request 新鲜度测试（检测response在client's cache中是否过时，是否有内容改变 ）
 -            | [http-assert](https://github.com/jshttp/http-assert)                     | assert with status codes
 -            | [http-errors](https://github.com/jshttp/http-errors)                     | Create HTTP Errors
--            | [mime-types](https://github.com/jshttp/mime-types)                       | The ultimate javascript content-type utility
--            | [on-finished](https://github.com/jshttp/on-finished)                     | request停止后的回调
--            | [only](https://github.com/jshttp/only)                                   | return whitelisted properties of an object
+-            | [media-typer]()                                                          | -
+-            | [methods]()                                                              | -
+-            | [mime-db]()                                                              | -
+-            | [mime-types](https://github.com/jshttp/mime-types)                       | 终极 javascript content-type 工具
+-            | [negotiator]()                                                           | -
+-            | [on-finished](https://github.com/jshttp/on-finished)                     | request停止后执行一个回调
+-            | [on-headers]()                                                           | -
+-            | [proxy-addr]()                                                           | -
+-            | [range-parser]()                                                         | -
+-            | [spdy-push]()                                                            | -
 -            | [statuses](https://github.com/jshttp/statuses)                           | HTTP status utility
--            | [type-is](https://github.com/jshttp/type-is)                             | Infer the content-type of a request
+-            | [type-is](https://github.com/jshttp/type-is)                             | 判断 the content-type of a request
 -            | [vary](https://github.com/jshttp/vary)                                   | Manipulate the HTTP Vary header
 pillarjs     | [cookies](https://github.com/pillarjs/cookies)                           | Signed and unsigned cookies based on Keygrip
--            | [parseurl](https://github.com/pillarjs/parseurl)                         | parse a url with memoization
-stream-utils | [destroy](https://github.com/stream-utils/destroy)                       | destroy a stream if possible
+-            | [csrf]()                                                                 | -
+-            | [finalhandler]()                                                         | -
+-            | [parseurl](https://github.com/pillarjs/parseurl)                         | parse a url with memoization(直接根据req解析响应的url)
+-            | [parseurl]()                                                             | -
+-            | [path-match]()                                                           | -
+-            | [path-to-regexp]()                                                       | -
+-            | [resolve-path]()                                                         | -
+-            | [router]()                                                               | -
+-            | [routington]()                                                           | -
+-            | [send]()                                                                 | -
+-            | [ssl-redirect]()                                                         | -
+-            | [templation]()                                                           | -
+stream-utils | [destroy](https://github.com/stream-utils/destroy)                       | 尽可能的销毁一个stream
 -            | [error-inject](https://github.com/stream-utils/error-inject)             | inject an error listener into a stream
 其他           | [debug](https://github.com/visionmedia/debug)                            | 调试用的，相当于console
 -            | [depd](https://github.com/dougwilson/nodejs-depd)                        | Deprecate all the things
 -            | [escape-html](https://github.com/component/escape-html)                  | Escape string for use in HTML
 -            | [is-generator-function](https://github.com/ljharb/is-generator-function) | 判断函数是否是generator
 -            | [delegates](https://github.com/tj/node-delegates)                        | Nodejs method and accessor delegation utility
+-            | [node-only](https://github.com/tj/node-only)                             | return whitelisted properties of an object
 
 ## 模块生态
 

@@ -21,13 +21,13 @@ Transform | 在读写过程中可以修改和变换数据的 Duplex 流 (例如 
 
 #### 缓存相关方法
 
-方法                                  | more
------------------------------------ | -------------------------
-writable._writableState.getBuffer() | 获取内部缓存
-readable._readableState.buffer      | 获取内部缓存
-stream.push(chunk)                  | 可读流数据被放到缓存中
-stream.read()                       | 调用后，缓存中的数据因为消费而从缓存内部队列中移除
-writable.write(chunk)               | 可写流将数据放到缓存
+方法                                    | more
+------------------------------------- | -------------------------
+`writable._writableState.getBuffer()` | 获取内部缓存
+`readable._readableState.buffer`      | 获取内部缓存
+stream.push(chunk)                    | 可读流数据被放到缓存中
+stream.read()                         | 调用后，缓存中的数据因为消费而从缓存内部队列中移除
+writable.write(chunk)                 | 可写流将数据放到缓存
 
 ## 流消费者的 API
 
@@ -79,11 +79,11 @@ paused  | 必须显式调用 stream.read() 方法来从流中读取数据片段
 
 #### 三种状态
 
-状态                                      | more
---------------------------------------- | ---------------------------------
-readable._readableState.flowing = null  | 由于不存在数据消费者，可读流将不会产生数据
-readable._readableState.flowing = false | 暂停事件流，但 不会 暂停数据生成（数据可能堆积到流的内部缓存中）
-readable._readableState.flowing = true  | 随着数据生成，可读流开始频繁触发事件
+状态                                        | more
+----------------------------------------- | ---------------------------------
+`readable._readableState.flowing = null`  | 由于不存在数据消费者，可读流将不会产生数据
+`readable._readableState.flowing = false` | 暂停事件流，但 不会 暂停数据生成（数据可能堆积到流的内部缓存中）
+`readable._readableState.flowing = true`  | 随着数据生成，可读流开始频繁触发事件
 
 #### stream.Readable 类
 
@@ -138,11 +138,11 @@ class MyWritable extends Writable {
 ```
 
 Use-case                                      | Class     | Method(s) to implement
---------------------------------------------- | --------- | ------------------------------
-Reading only                                  | Readable  | _read
-Writing only                                  | Writable  | _write, _writev, _final
-Reading and writing                           | Duplex    | _read, _write, _writev, _final
-Operate on written data, then read the result | Transform | _transform, _flush, _final
+--------------------------------------------- | --------- | --------------------------------
+Reading only                                  | Readable  | `_read`
+Writing only                                  | Writable  | `_write, _writev, _final`
+Reading and writing                           | Duplex    | `_read, _write, _writev, _final`
+Operate on written data, then read the result | Transform | `_transform, _flush, _final`
 
 ### 简单的构建
 

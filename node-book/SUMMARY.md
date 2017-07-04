@@ -6,6 +6,11 @@
 
 - [moudles](chapters/moudles/README.md)
 
+  - [jshttp](chapters/moudles/jshttp/README.md)
+
+    - [accepts](chapters/moudles/jshttp/accepts.md)
+
+  - [pillarjs](chapters/moudles/pillarjs/README.md)
   - [chai](chapters/moudles/chai.md)
   - [cheerio](chapters/moudles/cheerio.md)
   - [co](chapters/moudles/co.md)
@@ -70,6 +75,16 @@
 
 - [relevant](chapters/relevant/README.md)
 
+  - [http](chapters/relevant/http/README.md)
+
+    - [请求方法](chapters/relevant/http/请求方法.md)
+    - [网络过程](chapters/relevant/http/网络过程.md)
+    - [状态码](chapters/relevant/http/状态码.md)
+    - [DNS](chapters/relevant/http/DNS.md)
+    - [Header](chapters/relevant/http/Header.md)
+    - [URL](chapters/relevant/http/URL.md)
+
   - [babel](chapters/relevant/babel.md)
+
   - [gulp](chapters/relevant/gulp.md)
   - [package](chapters/relevant/package.md)

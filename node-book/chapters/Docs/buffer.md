@@ -19,12 +19,12 @@ Buffer.allocUnsafeSlow(size)                     | -
 - Buffer类属性／方法
 
 方法                                    | 作用
-------------------------------------- | ------------------------------------
+------------------------------------- | --------------------------------------
 Buffer.poolSize                       | 这是用于决定预分配的、内部 Buffer 实例池的大小的字节数（可设置）
 Buffer.byteLength(string[, encoding]) | 返回一个字符串的实际字节长度
 Buffer.compare(buf1, buf2)            | 比较 buf1 和 buf2 ，通常用于 Buffer 实例数组的排序
 Buffer.concat(list[, totalLength])    | -
-Buffer.isBuffer(obj)                  | -
+Buffer.isBuffer(obj)                  | 如果 obj 是一个 Buffer 则返回 true ，否则返回 false
 Buffer.isEncoding(encoding)           | -
 
 ## Buffer实例(Buffer 实例也是 Uint8Array 实例)
