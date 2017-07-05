@@ -57,6 +57,7 @@
   - [对象的继承](chapters/Object/对象的继承.md)
   - [对象方法大全](chapters/Object/对象方法大全.md)
   - [深拷贝](chapters/Object/深拷贝.md)
+  - [class](chapters/Object/class.md)
 
 --------------------------------------------------------------------------------
 

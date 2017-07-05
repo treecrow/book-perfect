@@ -84,7 +84,7 @@ emitter.listenerCount(eventName)                 | 返回正在监听名为 even
 emitter.listeners(eventName)                     | 返回名为 eventName 的事件的监听器数组的副本
 emitter.on(eventName, listener)                  | 添加 listener 函数到名为 eventName 的事件的监听器数组的末尾。 不会检查 listener 是否已被添加。 多次调用并传入相同的 eventName 和 listener 会导致 listener 被添加与调用多次
 emitter.once(eventName, listener)                | 添加一个单次 listener 函数到名为 eventName 的事件。 下次触发 eventName 事件时，监听器会被移除，然后调用
-emitter.prependListener()                        | 添加 listener 函数到名为 eventName 的事件的监听器数组的开头
+emitter.prependListener(eventName, listener)     | 添加 listener 函数到名为 eventName 的事件的监听器数组的开头
 emitter.prependOnceListener(eventName, listener) | 添加一个单次 listener 函数到名为 eventName 的事件的监听器数组的开头
 emitter.removeAllListeners([eventName])          | 移除全部或指定 eventName 的监听器
 emitter.removeListener(eventName, listener)      | 从名为 eventName 的事件的监听器数组中移除指定的 listener
