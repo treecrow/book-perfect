@@ -50,10 +50,10 @@ Error.captureStackTrace(targetObject[, constructorOpt]) | 在 targetObject 上�
 
 属性                    | more
 --------------------- | ---------------------------------------------------------------------------
-Error.stackTraceLimit | 指定了堆栈跟踪收集的栈帧数量
+Error.stackTraceLimit | 指定了堆栈跟踪收集的栈帧数量(默认10)
 error.code            | The error.code property is a string label that identifies the kind of error
 error.message         | error.message 属性是错误的字符串描述，通过调用 new Error(message) 设置
-error.stack           | error.stack 属性是一个字符串，描述代码中 Error 被实例化的位置
+error.stack           | error.stack 属性是一个字符串，描述代码中 Error 被实例化的位置(堆栈)
 
 ## RangeError 类
 

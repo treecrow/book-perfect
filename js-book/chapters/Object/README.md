@@ -74,9 +74,10 @@ obj.prototypeIsEnumerable(propertyName)   | 判断propertyName属性是否时实
 ## 其它
 
 方法                                      | 功能
---------------------------------------- | -----------------------------------------------------------------
+--------------------------------------- | ------------------------------------------------------------------------------
 Object.create(proto[,propertiesObject]) | 一种对象创建方式,第一个参数是要继承的原型,如果不是一个子函数,可以传一个null,第二个参数是对象的属性描述符,这个参数是可选的
 Object.setPrototypeOf()                 | 用来设置一个对象的prototype对象，返回参数对象本身
 Object.getPrototypeOf()                 | 用于读取一个对象的原型对象
 obj.isPrototypeOf(otherObj)             | 判断obj是否存在于另一个对象otherObj的原型链中
 obj.getPrototypeOf()                    | 返回[[Prototype]]值,实际上就是对应对象的原型
+obj.inspect()                           | 字面量对象的inspect()是个特殊的方法（需要显示的声明），如果一个对象字面量声明了这个方法，则此对象console的结果为inspect()返回的结果

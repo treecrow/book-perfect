@@ -45,161 +45,179 @@ validator           | 验证
 
 # 个人阅读源码整理
 
-## app
+## koa 继承自 events
+
+> 可以自定义事件等等
+
+## app(koa的实例，由new koa()生成)
+
+### 属性列表
+
+属性                  | 默认值                                  | more
+------------------- | ------------------------------------ | ---------------------------------------------
+app.subdomainOffset | 2                                    | offset of .subdomains to ignore [2]
+app.proxy           | false                                | when true proxy header fields will be trusted
+app.env             | process.env.NODE_ENV ／ 'development' | -
+app.middleware      | []                                   | -
+app.context         | -                                    | ctx的原型,可以用来为应用添加全局的属性和方法(不能直接调用，否则会报错)
+app.request         | -                                    | 直接打印'undefined'
+app.response        | -                                    | 直接打印'undefined'
+app.silent          | false                                | 设置为true会取消默认的错误处理程序的执行
+app.keys=           | -                                    | 用于设置签名cookie密钥
 
 ### 方法列表
 
 方法                  | more
-------------------- | ----
-app.listen()        | -
-app.toJSON()        | -
-app.inspect()       | -
-app.use()           | -
-app.callback()      | -
+------------------- | -----------------------------------------------------------------------------------
+app.listen()        | http.createServer(app.callback()).listen(...) 简化封装
+app.use()           | 添加中间件函数到app.middleware中，如果中间件函数是 generator函数，会自动转化
 app.createContext() | -
-app.onerror()       | -
-
---------------------------------------------------------------------------------
-
-# 官方文档整理
-
-## app
-
-### 属性列表
-
-属性                  | more
-------------------- | ---------------------------------------------
-app.env             | NODE_ENV / "development"
-app.proxy           | when true proxy header fields will be trusted
-app.subdomainOffset | offset of .subdomains to ignore [2]
-app.keys            | 用于设置签名cookie密钥
-app.context         | ctx的原型,可以用来为应用添加全局的属性和方法（感觉更像一个可以利用的全局对象）
-
-### 方法列表
-
-方法                | more
------------------ | -------------------------------------
-app.listen(...)   | 返回一个新建的 http.Server 实例，并调用示例的listen方法
-app.callback()    | 返回一个适合http.createServer()的回调函数
-app.use(function) | 给应用添加中间件
+app.callback()      | 返回一个适合http.createServer()的回调函数
+app.onerror()       | app 的 error 事件上默认的错误处理程序（可以覆盖），忽略 404 == err.status 和 err.expose 为true到情况，其他错误会打印出来
+app.toJSON()        | 只返回包含了app的['subdomainOffset','proxy','env']等属性的一个对象
+app.inspect()       | 同 app.toJSON()
 
 ### 事件列表
 
 事件    | more
------ | ----
-error | -
+----- | ------------------------
+error | 有默认的事件处理程序 app.onerror()
+
+## Context、Request、Response的关系
+
+具柄               | 代表       | more
+---------------- | -------- | ----
+context.app      | app      | -
+context.req      | req      | -
+context.res      | res      | -
+-                | -        | -
+request.app      | app      | -
+request.req      | req      | -
+request.res      | res      | -
+request.ctx      | context  | -
+request.response | response | -
+-                | -        | -
+response.app     | app      | -
+response.req     | req      | -
+response.res     | res      | -
+response.ctx     | context  | -
+response.request | request  | -
 
 ## Context
 
 ### 属性列表
 
-属性             | more
--------------- | -------------------------------------
-ctx.req        | Node's request object
-ctx.request    | A koa Request object
-ctx.res        | Node's response object
-ctx.response   | A koa Response object
-ctx.state      | 推荐用于传递信息给中间件或者视图
-ctx.app        | 应用实例
-ctx.originalUr | -
-ctx.socket     | -
-ctx.respond    | 设置为false可以绕过koa内置的response处理方法（使用原生？）
-
-### 方法列表
+属性              | more
+--------------- | ------------------------------------------------------------------------------------------------------
+ctx.app         | 应用实例
+ctx.req         | Node's request object
+ctx.res         | Node's response object
+ctx.request     | A koa Request object
+ctx.response    | A koa Response object
+ctx.originalUrl | from req.url
+ctx.socket      | -
+ctx.state       | -
+ctx.accept      | Accepts object from req(可以通过这个对象方便的获取一些req的信息)
+ctx.respond     | 默认调用respond(ctx)方法，此方法为返回客户端内容前的最后一步。设置为false可以绕过koa内置的response处理方法，通过最后一步app.use()声明自己的respond(ctx)方法
+ctx.writable    | res是否可以改动？（默认为true）
+ctx.cookies     | cookies对象
+ctx.body        | -
+ctx.status      | 状态码
+ctx.method      | -
+ctx.length      | 返回内容字节长度
+ctx.message     | 返回内容
+ctx.type        | 返回内容的格式
 
 方法                                               | more
 ------------------------------------------------ | -------------------------------------
+ctx.toJSON()                                     | Return JSON representation
+ctx.inspect()                                    | 同ctx.toJSON()
+ctx.assert(value, [status], [msg], [properties]) | 断言，失败的话抛出状态码错误
+ctx.throw([status], [msg], [properties])         | 抛出错误，默认500
+ctx.onerror(err)                                 | 请求内部 error 事件错误处理程序
 ctx.cookies.get(name, [options])                 | Get cookie name with options
 ctx.cookies.set(name, value, [options])          | Set cookie name to value with options
-ctx.throw([status], [msg], [properties])         | 抛出错误，默认500
-ctx.assert(value, [status], [msg], [properties]) | 断言（抛出错误）
 
 ## Request
 
-### 属性列表
+属性              | more
+--------------- | ----
+req.header      | -
+req.header= val | -
+req.headers     | -
+req.headers=val | -
+req.url         | -
+req.url=val     | -
+req.origin      | -
+req.href        | -
+req.method      | -
+req.method=val  | -
+req.path        | -
+req.query       | -
+req.querystring | -
+req.search      | -
+req.host        | -
+req.hostname    | -
+req.URL         | -
+req.fresh       | -
+req.stale       | -
+req.idempotent  | -
+req.socket      | -
+req.charset     | -
+req.length      | -
+req.protocol    | -
+req.secure      | -
+req.ips         | -
+req.subdomains  | -
+req.type        | -
 
-属性                 | more
------------------- | --------------------------------------------------------------------------------------------------------------------------------
-ctx.header         | Request header object
-ctx.headers        | Request header object
-ctx.method         | Request method
-ctx.method=        | 设置请求方法，常用于实现中间件
-request.length     | Return request Content-Length as a number when present, or undefined.
-ctx.url            | Get request URL.
-ctx.url=           | Set request URL, useful for url rewrites
-ctx.originalUrl    | Get request original URL
-ctx.origin         | Get origin of URL, include protocol and host
-ctx.href           | Get full request URL, include protocol, host and url
-ctx.path           | Get request pathname
-ctx.path=          | Set request pathname and retain query-string when present
-ctx.query          | Get parsed query-string, returning an empty object when no query-string is present
-ctx.query=         | Set query-string to the given object
-ctx.querystring    | Get raw query string void of ?
-ctx.querystring=   | Set raw query string
-request.search     | Get raw query string with the ?
-request.search=    | Set raw query string
-ctx.host           | Get host (hostname:port) when present. Supports X-Forwarded-Host when app.proxy is true, otherwise Host is used.
-ctx.hostname       | Get hostname when present. Supports X-Forwarded-Host when app.proxy is true, otherwise Host is used
-request.type       | Get request Content-Type void of parameters such as "charset"
-request.charset    | Get request charset when present, or undefined:
-ctx.fresh          | Check if a request cache is "fresh", aka the contents have not changed
-ctx.stale          | Inverse of request.fresh
-ctx.socket         | Return the request socket
-ctx.protocol       | Return request protocol, "https" or "http". Supports X-Forwarded-Proto when app.proxy is true.
-ctx.secure         | Shorthand for ctx.protocol == "https" to check if a request was issued via TLS.
-ctx.ip             | Request remote address. Supports X-Forwarded-For when app.proxy is true
-ctx.ips            | When X-Forwarded-For is present and app.proxy is enabled an array of these ips is returned, ordered from upstream -> downstream.
-ctx.subdomains     | Return subdomains as an array.
-request.idempotent | Check if the request is idempotent
-
-### 方法列表
-
-方法                     | more
----------------------- | ------------------------------------------------------------------------------------------------------------------
-ctx.is()               | Check if the incoming request contains the "Content-Type" header field, and it contains any of the give mime types
-ctx.accepts()          | Check if the given type(s) is acceptable, returning the best match when true, otherwise false
-ctx.acceptsEncodings() | Check if encodings are acceptable, returning the best match when true, otherwise false
-ctx.acceptsCharsets()  | Check if charsets are acceptable, returning the best match when true, otherwise false
-ctx.acceptsLanguages() | Check if langs are acceptable, returning the best match when true, otherwise false
-ctx.get()              | Return request header
+方法                            | more
+----------------------------- | ----
+req.path(path)                | -
+req.query(obj)                | -
+req.querystring(str)          | -
+req.search(str)               | -
+req.accepts(...args)          | -
+req.acceptsEncodings(...args) | -
+req.acceptsCharsets(...args)  | -
+req.acceptsLanguages(...args) | -
+req.get(field)                | -
+req.inspect()                 | -
+req.toJSON()                  | -
 
 ## Response
 
-### 属性列表
+属性               | more
+---------------- | -----------------------------------------------------------------------------------------------------------------
+res.socket       | -
+res.header       | -
+res.headers      | -
+res.status       | Get response status. By default, response.status is set to 404 unlike node's res.statusCode which defaults to 200
+res.message      | -
+res.body         | -
+res.length       | -
+res.headerSent   | -
+res.lastModified | -
+res.etag         | -
+res.type         | -
+res.writable     | -
 
-属性                | more
------------------ | -----------------------------------------------------------------------------------------------------------------
-response.header   | Response header object
-response.headers  | Response header object
-response.socket   | Request socket
-ctx.body          | Get response body
-ctx.body=         | Set response body to one of the following
-ctx.status        | Get response status. By default, response.status is set to 404 unlike node's res.statusCode which defaults to 200
-ctx.status=       | Set response status via numeric code
-ctx.message       | Get response status message
-ctx.message=      | Set response status message to the given value
-ctx.length=       | Set response Content-Length to the given value
-ctx.length        | Return response Content-Length as a number when present, or deduce from ctx.body when possible, or undefined
-ctx.type=         | Set response Content-Type via mime string or file extension
-ctx.type          | Get response Content-Type void of parameters such as "charset"
-ctx.headerSent    | Check if a response header has already been sent
-ctx.lastModified  | Return the Last-Modified header as a Date, if it exists
-ctx.lastModified= | Set the Last-Modified header as an appropriate UTC string.
-ctx.etag=         | Set the ETag of a response including the wrapped "s
-
-### 方法列表
-
-方法                              | more
-------------------------------- | ----------------------------------------------------------------------------------------------
-ctx.redirect()                  | -
-ctx.attachment()                | -
-response.get(field)             | Get a response header field value with case-insensitive field
-response.set(field, value)      | Set response header field to value
-response.set(fields)            | Set several response header fields with an object:
-ctx.append()                    | Append additional header field with value val
-ctx.remove()                    | Remove header field.
-response.is(types...)           | Very similar to ctx.request.is(). Check whether the response type is one of the supplied types
-response.redirect(url, [alt])   | Perform a [302] redirect to url
-response.attachment([filename]) | Set Content-Disposition to "attachment" to signal the client to prompt for download
-response.vary(field)            | Vary on field
-response.flushHeaders()         | Flush any set headers, and begin the body
+方法                       | more
+------------------------ | ----
+res.status(code)         | -
+res.message(msg)         | -
+res.body(val)            | -
+res.length(n)            | -
+res.vary(field)          | -
+res.redirect(url, alt)   | -
+res.attachment(filename) | -
+res.type(type)           | -
+res.lastModified(val)    | -
+res.etag(val)            | -
+res.get(field)           | -
+res.set(field, val)      | -
+res.append(field, val)   | -
+res.remove(field)        | -
+res.inspect()            | -
+res.toJSON()             | -
+res.flushHeaders()       | -
