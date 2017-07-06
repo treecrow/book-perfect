@@ -65,7 +65,8 @@ Object.getOwnPropertySymbols(obj) | 返回一个数组，包含对象自身的�
 
 方法                                        | 功能
 ----------------------------------------- | ------------------------------------
-Object.defineProperties()                 | 为对象赋予属性,同时可以设置访问器属性
+Object.defineProperty()                   | 为对象定义或修改一个属性（可以设置访问器属性）
+Object.defineProperties()                 | 为对象赋予多个属性,同时可以设置访问器属性
 Object.getOwnPropertyDescriptor(obj, 'p') | 返回某个对象属性的描述对象
 Object.getOwnPropertyDescriptors(obj)     | 返回指定对象所有自身属性（非继承属性）的描述对象
 obj.hasOwnProperty(propertyName)          | 判断propertyName属性是实例自身的还是继承来的
