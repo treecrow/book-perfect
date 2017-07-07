@@ -6,6 +6,54 @@
 
 - [moudles](chapters/moudles/README.md)
 
+  - [测试](chapters/moudles/测试/README.md)
+
+    - [chai](chapters/moudles/测试/chai.md)
+    - [istanbul](chapters/moudles/测试/istanbul.md)
+    - [mocha](chapters/moudles/测试/mocha.md)
+    - [should.js](chapters/moudles/测试/should.js.md)
+    - [supertest](chapters/moudles/测试/supertest.md)
+
+  - [常见工具库](chapters/moudles/常见工具库/README.md)
+
+    - [cheerio](chapters/moudles/常见工具库/cheerio.md)
+    - [co](chapters/moudles/常见工具库/co.md)
+    - [CodeMirror](chapters/moudles/常见工具库/CodeMirror.md)
+    - [highlight.js](chapters/moudles/常见工具库/highlight.js.md)
+    - [jquery](chapters/moudles/常见工具库/jquery.md)
+    - [marked](chapters/moudles/常见工具库/marked.md)
+    - [superagent](chapters/moudles/常见工具库/superagent.md)
+
+  - [调试](chapters/moudles/调试/README.md)
+
+    - [debug](chapters/moudles/调试/debug.md)
+
+  - [进程](chapters/moudles/进程/README.md)
+
+    - [nodemon](chapters/moudles/进程/nodemon.md)
+
+  - [框架](chapters/moudles/框架/README.md)
+
+    - [express](chapters/moudles/框架/express.md)
+    - [ionic](chapters/moudles/框架/ionic.md)
+    - [koa](chapters/moudles/框架/koa.md)
+    - [loopback](chapters/moudles/框架/loopback.md)
+    - [react](chapters/moudles/框架/react.md)
+    - [vue](chapters/moudles/框架/vue.md)
+
+  - [未分类](chapters/moudles/未分类/README.md)
+
+    - [delegates](chapters/moudles/未分类/delegates.md)
+    - [escape-html](chapters/moudles/未分类/escape-html.md)
+    - [is-generator-function](chapters/moudles/未分类/is-generator-function.md)
+    - [matcha](chapters/moudles/未分类/matcha.md)
+    - [node-formidable](chapters/moudles/未分类/node-formidable.md)
+    - [node-geohash](chapters/moudles/未分类/node-geohash.md)
+    - [node-only](chapters/moudles/未分类/node-only.md)
+    - [nodejs-depd](chapters/moudles/未分类/nodejs-depd.md)
+    - [nodemon](chapters/moudles/未分类/nodemon.md)
+    - [standard](chapters/moudles/未分类/standard.md)
+
   - [jshttp](chapters/moudles/jshttp/README.md)
 
     - [accepts](chapters/moudles/jshttp/accepts.md)
@@ -28,32 +76,7 @@
   - [stream-utils](chapters/moudles/stream-utils/README.md)
 
     - [destroy](chapters/moudles/stream-utils/destroy.md)
-    - [parseurl](chapters/moudles/stream-utils/parseurl.md)
-
-  - [chai](chapters/moudles/chai.md)
-  - [cheerio](chapters/moudles/cheerio.md)
-  - [co](chapters/moudles/co.md)
-  - [CodeMirror](chapters/moudles/CodeMirror.md)
-  - [express](chapters/moudles/express.md)
-  - [highlight.js](chapters/moudles/highlight.js.md)
-  - [ionic](chapters/moudles/ionic.md)
-  - [is-generator-function](chapters/moudles/is-generator-function.md)
-  - [istanbul](chapters/moudles/istanbul.md)
-  - [jquery](chapters/moudles/jquery.md)
-  - [koa](chapters/moudles/koa.md)
-  - [loopback](chapters/moudles/loopback.md)
-  - [marked](chapters/moudles/marked.md)
-  - [matcha](chapters/moudles/matcha.md)
-  - [mocha](chapters/moudles/mocha.md)
-  - [node-formidable](chapters/moudles/node-formidable.md)
-  - [node-geohash](chapters/moudles/node-geohash.md)
-  - [node-only](chapters/moudles/node-only.md)
-  - [react](chapters/moudles/react.md)
-  - [should.js](chapters/moudles/should.js.md)
-  - [standard](chapters/moudles/standard.md)
-  - [superagent](chapters/moudles/superagent.md)
-  - [supertest](chapters/moudles/supertest.md)
-  - [vue](chapters/moudles/vue.md)
+    - [error-inject](chapters/moudles/stream-utils/error-inject.md)
 
 - [Docs](chapters/Docs/README.md)
 
@@ -105,7 +128,5 @@
     - [URL](chapters/relevant/http/URL.md)
 
   - [babel](chapters/relevant/babel.md)
-
   - [gulp](chapters/relevant/gulp.md)
-
   - [package](chapters/relevant/package.md)

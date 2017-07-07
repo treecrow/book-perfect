@@ -1,5 +1,0 @@
-# destroy
-
-```javascript
-destroy(stream)
-```
