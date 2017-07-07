@@ -3,7 +3,7 @@
 ## 模块体系
 
 来源     | 模块                                                                   | more
------- | -------------------------------------------------------------------- | -----------------------------------------------------------
+------ | -------------------------------------------------------------------- | ----------------------------------------------
 jshttp | [accepts](https://github.com/jshttp/accepts)                         | Higher-level content negotiation
 -      | [basic-auth]()                                                       | -
 -      | [compressible]()                                                     | -
@@ -12,7 +12,7 @@ jshttp | [accepts](https://github.com/jshttp/accepts)                         | 
 -      | [cookie]()                                                           | -
 -      | [etag]()                                                             | -
 -      | [forwarded]()                                                        | -
--      | [fresh](https://github.com/jshttp/fresh)                             | HTTP request 新鲜度测试（检测response在client's cache中是否过时，是否有内容改变 ）
+-      | [fresh](https://github.com/jshttp/fresh)                             | 检测请求的内容在服务器端有没有变化，没有变化返回true,这时可以向客户端返回304
 -      | [http-assert](https://github.com/jshttp/http-assert)                 | assert with status codes
 -      | [http-errors](https://github.com/jshttp/http-errors)                 | Create HTTP Errors
 -      | [media-typer]()                                                      | -

@@ -1290,7 +1290,7 @@
 <tr>
 <td>-</td>
 <td><a href="https://github.com/jshttp/fresh" target="_blank">fresh</a></td>
-<td>HTTP request &#x65B0;&#x9C9C;&#x5EA6;&#x6D4B;&#x8BD5;&#xFF08;&#x68C0;&#x6D4B;response&#x5728;client&apos;s cache&#x4E2D;&#x662F;&#x5426;&#x8FC7;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x6709;&#x5185;&#x5BB9;&#x6539;&#x53D8; &#xFF09;</td>
+<td>&#x68C0;&#x6D4B;&#x8BF7;&#x6C42;&#x7684;&#x5185;&#x5BB9;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6709;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#xFF0C;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#x8FD4;&#x56DE;true,&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x8FD4;&#x56DE;304</td>
 </tr>
 <tr>
 <td>-</td>
@@ -1386,6 +1386,11 @@
 <td>-</td>
 <td><a href="https://github.com/kilianc/koa-jsonp" target="_blank">koa-jsonp</a></td>
 <td>Koajs JSONP streaming friendly middleware with GET/POST support</td>
+</tr>
+<tr>
+<td>&#x5176;&#x4ED6;</td>
+<td><a href="https://github.com/component/escape-html" target="_blank">escape-html</a></td>
+<td>Escape string for use in HTML</td>
 </tr>
 </tbody>
 </table>
@@ -1837,7 +1842,7 @@
 <tr>
 <td>-</td>
 <td>ctx.originalUrl</td>
-<td>from req.url</td>
+<td><code>context.originalUrl = request.originalUrl = req.url</code></td>
 </tr>
 <tr>
 <td>-</td>
@@ -1923,42 +1928,43 @@
 </tr>
 <tr>
 <td>&#x6765;&#x81EA; response &#x7684;&#x65B9;&#x6CD5;</td>
-<td>ctx.attachment</td>
+<td>ctx.attachment()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.redirect</td>
+<td>ctx.redirect()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.remove</td>
+<td>ctx.remove()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.vary</td>
+<td>ctx.vary()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.set</td>
+<td>ctx.set()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.append</td>
+<td>ctx.append()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.flushHeaders</td>
+<td>ctx.flushHeaders()</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
 <h2 id="request">Request</h2>
+<h3 id="&#x5C5E;&#x6027;&#x5217;&#x8868;">&#x5C5E;&#x6027;&#x5217;&#x8868;</h3>
 <table>
 <thead>
 <tr>
@@ -1969,55 +1975,55 @@
 <tbody>
 <tr>
 <td>request.header</td>
-<td>Request header object</td>
+<td>req.headers</td>
 </tr>
 <tr>
 <td>request.header= val</td>
-<td>-</td>
+<td>&#xFF5E;</td>
 </tr>
 <tr>
 <td>request.headers</td>
-<td>Request header object. Alias as request.header</td>
+<td>&#xFF5E;</td>
 </tr>
 <tr>
 <td>request.headers=val</td>
-<td>-</td>
+<td>&#xFF5E;</td>
 </tr>
 <tr>
 <td>request.url</td>
-<td>Get request URL</td>
+<td>req.url</td>
 </tr>
 <tr>
 <td>request.url=</td>
-<td>Set request URL, useful for url rewrites</td>
+<td>&#xFF5E;</td>
 </tr>
 <tr>
 <td>request.origin</td>
-<td>Get origin of URL, include protocol and host</td>
+<td><code>${this.protocol}://${this.host}</code></td>
 </tr>
 <tr>
 <td>request.href</td>
-<td>Get full request URL, include protocol, host and url</td>
+<td>&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x7684;&#x8BF7;&#x6C42; url</td>
 </tr>
 <tr>
 <td>request.method</td>
-<td>Request method</td>
+<td>req.method</td>
 </tr>
 <tr>
 <td>request.method=</td>
-<td>Set request method, useful for implementing middleware such as methodOverride().</td>
+<td>&#xFF5E;</td>
 </tr>
 <tr>
 <td>request.path</td>
-<td>Get request pathname</td>
+<td>&#x901A;&#x8FC7;&#x89E3;&#x6790; req.url &#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684; pathname &#x90E8;&#x5206;</td>
 </tr>
 <tr>
 <td>request.path=</td>
-<td>Set request pathname and retain query-string when present</td>
+<td>&#x4FEE;&#x6539; request.url &#x4E2D;&#x7684; pathname &#x90E8;&#x5206;</td>
 </tr>
 <tr>
 <td>request.query</td>
-<td>Get parsed query-string, returning an empty object when no query-string is present.</td>
+<td>Get parsed query-string</td>
 </tr>
 <tr>
 <td>request.query=</td>
@@ -2025,71 +2031,71 @@
 </tr>
 <tr>
 <td>request.querystring</td>
-<td>Get raw query string void of ?.</td>
+<td>&#x901A;&#x8FC7;&#x89E3;&#x6790; req.url &#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684; query &#x90E8;&#x5206;&#xFF08;&#x4E0D;&#x5305;&#x542B;&apos;?&apos;&#xFF09;</td>
 </tr>
 <tr>
 <td>request.querystring=</td>
-<td>Set raw query string.</td>
+<td>&#x4FEE;&#x6539; request.url &#x4E2D;&#x7684; search &#x90E8;&#x5206;</td>
 </tr>
 <tr>
 <td>request.search</td>
-<td>Get raw query string with the ?.</td>
+<td>&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684; search &#x90E8;&#x5206;&#xFF08;&#x5305;&#x542B;&apos;?&apos;&#xFF09;</td>
 </tr>
 <tr>
 <td>request.search=</td>
-<td>Set raw query string.</td>
+<td>&#x540C; request.querystring=</td>
 </tr>
 <tr>
 <td>request.host</td>
-<td>Get host (hostname:port) when present. Supports X-Forwarded-Host when app.proxy is true, otherwise Host is used</td>
+<td>&#x83B7;&#x53D6; host &#x5B57;&#x6BB5;&#xFF1F;&#x901A;&#x8FC7; req.headers.X-Forwarded-Host(app.proxy &#x4E3A; true&#x65F6;) / req.headers.host &#x83B7;&#x53D6;</td>
 </tr>
 <tr>
 <td>request.hostname</td>
-<td>Get hostname when present. Supports X-Forwarded-Host when app.proxy is true, otherwise Host is used.</td>
+<td>&#x901A;&#x8FC7; request.host &#x6216;&#x8005; request.URL &#x83B7;&#x53D6; hostname</td>
 </tr>
 <tr>
 <td>request.URL</td>
-<td>-</td>
+<td>&#x7EC4;&#x5408; request.protocol&#x3001;request.host&#x3001;request.originalUrl &#x4E3A; WHATWG URL&#xFF08; &#x8FD9;&#x91CC;&#x540C;&#x65F6;&#x5C06;&#x7ED3;&#x679C;&#x8D4B;&#x7ED9;&#x4E86; request.memoizedURL &#x5C5E;&#x6027;&#xFF09;</td>
 </tr>
 <tr>
 <td>request.fresh</td>
-<td>Check if a request cache is &quot;fresh&quot;, aka the contents have not changed</td>
+<td>&#x5224;&#x65AD;&#x8BF7;&#x6C42;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x8FD4;&#x56DE; true&#xFF08;&#x5F53;&#x8BF7;&#x6C42;&#x7684; method &#x4E3A; GET&#x3001;HEAD&#xFF0C;&#x6216;&#x8005;&#x72B6;&#x6001;&#x7801;&#x4E0D;&#x5728;&#x6307;&#x5B9A;&#x533A;&#x95F4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x65E0;&#x6548;&#xFF09;</td>
 </tr>
 <tr>
 <td>request.stale</td>
-<td>Inverse of request.fresh</td>
+<td><code>!request.fresh</code></td>
 </tr>
 <tr>
 <td>request.idempotent</td>
-<td>Check if the request is idempotent</td>
+<td>&#x68C0;&#x6D4B;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x8D85;&#x51FA;&#x4E86;<code>[&apos;GET&apos;, &apos;HEAD&apos;, &apos;PUT&apos;, &apos;DELETE&apos;, &apos;OPTIONS&apos;, &apos;TRACE&apos;]</code>,&#x5982;&#x679C;&#x8D85;&#x51FA;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE;true</td>
 </tr>
 <tr>
 <td>request.socket</td>
-<td>Return the request socket</td>
+<td>req.socket</td>
 </tr>
 <tr>
 <td>request.charset</td>
-<td>Get request charset when present, or undefined:</td>
+<td>&#x83B7;&#x53D6;&#x9875;&#x9762;&#x7684;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#xFF08;&#x901A;&#x8FC7; Content-Type charset&#xFF09;</td>
 </tr>
 <tr>
 <td>request.length</td>
-<td>Return request Content-Length as a number when present, or undefined</td>
+<td>req.headers.Content-Length</td>
 </tr>
 <tr>
 <td>request.protocol</td>
-<td>Return request protocol, &quot;https&quot; or &quot;http&quot;. Supports X-Forwarded-Proto when app.proxy is true</td>
+<td>&#x8FD4;&#x56DE;&#x534F;&#x8BAE;&#x5934;&#xFF0C;https&#xFF0F;http&#xFF0F;req.headers.X-Forwarded-Proto</td>
 </tr>
 <tr>
 <td>request.secure</td>
-<td>Shorthand for ctx.protocol == &quot;https&quot; to check if a request was issued via TLS</td>
+<td>&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x7684;https&#x534F;&#x8BAE;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x8FD4;&#x56DE;true</td>
 </tr>
 <tr>
 <td>request.ips</td>
-<td>When X-Forwarded-For is present and app.proxy is enabled an array of these ips is returned, ordered from upstream -&gt; downstream</td>
+<td>req.headers.X-Forwarded-For&#xFF08;&#x53EA;&#x6709;&#x5728;app.proxy&#x4E3A;true&#x7684;&#x65F6;&#x5019;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF09;</td>
 </tr>
 <tr>
 <td>request.subdomains</td>
-<td>Return subdomains as an array</td>
+<td>&#x4ECE;&#x7EA7;&#x522B;&#x6700;&#x4F4E;&#x7684;&#x5B50;&#x57DF;&#x6570;&#x8D77;&#xFF0C;&#x83B7;&#x53D6;app.subdomainOffset&#x4E2A;&#x5B50;&#x57DF;</td>
 </tr>
 <tr>
 <td>request.type</td>
@@ -2101,7 +2107,7 @@
 </tr>
 <tr>
 <td>request.originalUrl</td>
-<td>Get request original URL(&#x6E90;&#x7801;&#x4E2D;&#x6CA1;&#x6709;)</td>
+<td>Get request original URL(&#x6E90;&#x7801;&#x4E2D;&#x6CA1;&#x6709;) <code>context.originalUrl = request.originalUrl = req.url</code></td>
 </tr>
 <tr>
 <td>request.ip</td>
@@ -2109,6 +2115,7 @@
 </tr>
 </tbody>
 </table>
+<h3 id="&#x65B9;&#x6CD5;&#x5217;&#x8868;">&#x65B9;&#x6CD5;&#x5217;&#x8868;</h3>
 <table>
 <thead>
 <tr>
@@ -2119,27 +2126,27 @@
 <tbody>
 <tr>
 <td>request.accepts(...args)</td>
-<td>from <a href="https://github.com/jshttp/accepts" target="_blank">accepts</a></td>
+<td>Check if the given type(s) is acceptable, returning the best match when true, otherwise false. &#xFF08;from <a href="https://github.com/jshttp/accepts" target="_blank">accepts</a>&#xFF09;</td>
 </tr>
 <tr>
 <td>request.acceptsEncodings(...args)</td>
-<td>~</td>
+<td>Check if encodings are acceptable, returning the best match when true, otherwise false.</td>
 </tr>
 <tr>
 <td>request.acceptsCharsets(...args)</td>
-<td>~</td>
+<td>Check if charsets are acceptable, returning the best match when true, otherwise false.</td>
 </tr>
 <tr>
 <td>request.acceptsLanguages(...args)</td>
-<td>~</td>
+<td>Check if langs are acceptable, returning the best match when true, otherwise false.</td>
 </tr>
 <tr>
 <td>request.is(types)</td>
-<td>Check if the incoming request contains the &quot;Content-Type&quot; header field, and it contains any of the give mime types</td>
+<td>&#x68C0;&#x6D4B; req.headers.content-type&#x662F;&#x5426;&#x5C5E;&#x4E8E;types&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x5C5E;&#x4E8E;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;false</td>
 </tr>
 <tr>
 <td>request.get(field)</td>
-<td>Return request header</td>
+<td>&#x8FD4;&#x56DE; req.headers[field]</td>
 </tr>
 <tr>
 <td>request.inspect()</td>
@@ -2162,35 +2169,35 @@
 <tbody>
 <tr>
 <td>response.socket</td>
-<td>Request socket.</td>
+<td>req.socket</td>
 </tr>
 <tr>
 <td>response.header</td>
-<td>Response header object.</td>
+<td>res.getHeaders()</td>
 </tr>
 <tr>
 <td>response.headers</td>
-<td>Response header object. Alias as response.header.</td>
+<td>&#x540C; response.header</td>
 </tr>
 <tr>
 <td>response.status</td>
-<td>Get response status. By default, response.status is set to 404 unlike node&apos;s res.statusCode which defaults to 200</td>
+<td>res.statusCode</td>
 </tr>
 <tr>
 <td>response.status=</td>
-<td>Set response status via numeric code</td>
+<td>&#x8BBE;&#x7F6E; res.statusCode&#xFF0C;&#x540C;&#x65F6;&#x517C;&#x987E; res.statusMessage &#x548C; response.body</td>
 </tr>
 <tr>
 <td>response.message</td>
-<td>Get response status message. By default, response.message is associated with response.status.</td>
+<td>res.statusMessage / &#x7531;response.status&#x751F;&#x6210;&#x7684;message</td>
 </tr>
 <tr>
 <td>response.message=</td>
-<td>Set response status message to the given value</td>
+<td>&#x8BBE;&#x7F6E; res.statusMessage</td>
 </tr>
 <tr>
 <td>response.body</td>
-<td>Get response body</td>
+<td><code>response._body</code></td>
 </tr>
 <tr>
 <td>response.body=</td>
@@ -2198,43 +2205,43 @@
 </tr>
 <tr>
 <td>response.length</td>
-<td>Return response Content-Length as a number when present, or deduce from ctx.body when possible, or undefined.</td>
+<td>response.header[&apos;content-length&apos;]</td>
 </tr>
 <tr>
 <td>response.length=</td>
-<td>Set response Content-Length to the given value</td>
+<td>res.setHeader(&apos;Content-Length&apos;, n)</td>
 </tr>
 <tr>
 <td>response.headerSent</td>
-<td>Check if a response header has already been sent. Useful for seeing if the client may be notified on error</td>
+<td>res.headersSent,&#x68C0;&#x67E5;&#x6D88;&#x606F;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;</td>
 </tr>
 <tr>
 <td>response.lastModified</td>
-<td>Return the Last-Modified header as a Date, if it exists.</td>
+<td>res.getHeaders()[&apos;Last-Modified&apos;]</td>
 </tr>
 <tr>
 <td>response.lastModified=</td>
-<td>Set the Last-Modified header as an appropriate UTC string</td>
+<td>res.setHeader(&apos;Last-Modified&apos;, val)</td>
 </tr>
 <tr>
 <td>response.etag</td>
-<td>-</td>
+<td>res.getHeaders()[&apos;ETag&apos;]</td>
 </tr>
 <tr>
 <td>response.etag=</td>
-<td>Set the ETag of a response including the wrapped &quot;s</td>
+<td>res.setHeader(&apos;ETag&apos;, val)</td>
 </tr>
 <tr>
 <td>response.type</td>
-<td>Get response Content-Type void of parameters such as &quot;charset&quot;</td>
+<td>res.getHeaders()[&apos;Content-Type&apos;]</td>
 </tr>
 <tr>
 <td>response.type=</td>
-<td>Set response Content-Type via mime string or file extension</td>
+<td>res.setHeader(&apos;Content-Type&apos;, getType(type))</td>
 </tr>
 <tr>
 <td>response.writable</td>
-<td>-</td>
+<td>&#x9A8C;&#x8BC1; request &#x662F;&#x5426;&#x53EF;&#x5199;</td>
 </tr>
 </tbody>
 </table>
@@ -2248,7 +2255,7 @@
 <tbody>
 <tr>
 <td>response.vary(field)</td>
-<td>Vary on field.</td>
+<td>vary(res, field)</td>
 </tr>
 <tr>
 <td>response.redirect(url, [alt])</td>
@@ -2256,31 +2263,31 @@
 </tr>
 <tr>
 <td>response.attachment(filename)</td>
-<td>Set Content-Disposition to &quot;attachment&quot; to signal the client to prompt for download.</td>
+<td>&#x5229;&#x7528;<a href="https://github.com/jshttp/content-disposition" target="_blank">content-disposition</a>&#x6A21;&#x5757;&#xFF0C;&#x5C06;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7ED1;&#x5B9A;&#x5230;&apos;Content-Disposition&apos;&#x4E0A;</td>
 </tr>
 <tr>
 <td>response.is(types...)</td>
-<td>Very similar to ctx.request.is(). Check whether the response type is one of the supplied types</td>
+<td>&#x68C0;&#x6D4B; res.getHeaders()[&apos;content-type&apos;]&#x662F;&#x5426;&#x5C5E;&#x4E8E;types&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x5C5E;&#x4E8E;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;false</td>
 </tr>
 <tr>
 <td>response.get(field)</td>
-<td>Get a response header field value with case-insensitive field.</td>
+<td>&#x8FD4;&#x56DE; res.getHeaders()[field]</td>
 </tr>
 <tr>
 <td>response.set(field, val)</td>
-<td>Set response header field to value</td>
+<td>res.setHeader(field, val)</td>
 </tr>
 <tr>
 <td>response.set(fields)</td>
-<td>Set several response header fields with an object</td>
+<td>res.setHeader(field, val)</td>
 </tr>
 <tr>
 <td>response.append(field, val)</td>
-<td>Append additional header field with value val</td>
+<td>&#x5728; resgetHeaders()[&apos;field&apos;]&#x4E0A;&#x9762;&#x6DFB;&#x52A0; val</td>
 </tr>
 <tr>
 <td>response.remove(field)</td>
-<td>Remove header field</td>
+<td>res.removeHeader(field)</td>
 </tr>
 <tr>
 <td>response.inspect()</td>
@@ -2292,7 +2299,7 @@
 </tr>
 <tr>
 <td>response.flushHeaders()</td>
-<td>Flush any set headers, and begin the body.</td>
+<td>res.flushHeaders()(&#x5237;&#x65B0;&#x8BF7;&#x6C42;&#x5934;)</td>
 </tr>
 </tbody>
 </table>
@@ -2339,7 +2346,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"koa","level":"2.1.13","depth":2,"next":{"title":"loopback","level":"2.1.14","depth":2,"path":"chapters/moudles/loopback.md","ref":"chapters/moudles/loopback.md","articles":[]},"previous":{"title":"jquery","level":"2.1.12","depth":2,"path":"chapters/moudles/jquery.md","ref":"chapters/moudles/jquery.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/koa.md","mtime":"2017-07-07T02:08:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-07T02:09:39.099Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"koa","level":"2.1.13","depth":2,"next":{"title":"loopback","level":"2.1.14","depth":2,"path":"chapters/moudles/loopback.md","ref":"chapters/moudles/loopback.md","articles":[]},"previous":{"title":"jquery","level":"2.1.12","depth":2,"path":"chapters/moudles/jquery.md","ref":"chapters/moudles/jquery.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/koa.md","mtime":"2017-07-07T08:22:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-07T08:45:28.138Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,0 +1,5 @@
+# destroy
+
+```javascript
+destroy(stream)
+```

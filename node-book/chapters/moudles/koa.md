@@ -28,7 +28,7 @@ koa             | [koa-compose](https://github.com/koajs/compose)               
 jshttp          | [accepts](https://github.com/jshttp/accepts)                            | Higher-level content negotiation
 -               | [content-disposition](https://github.com/jshttp/content-disposition)    | 创建和解析 HTTP Content-Disposition header（文件下载对话框）
 -               | [content-type](https://github.com/jshttp/content-type)                  | 创建和解析 HTTP Content-Type header
--               | [fresh](https://github.com/jshttp/fresh)                                | HTTP request 新鲜度测试（检测response在client's cache中是否过时，是否有内容改变 ）
+-               | [fresh](https://github.com/jshttp/fresh)                                | 检测请求的内容在服务器端有没有变化，没有变化返回true,这时可以向客户端返回304
 -               | [http-assert](https://github.com/jshttp/http-assert)                    | assert with status codes
 -               | [http-errors](https://github.com/jshttp/http-errors)                    | Create HTTP Errors
 -               | [mime-types](https://github.com/jshttp/mime-types)                      | 终极 javascript content-type 工具
@@ -48,6 +48,7 @@ koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koaj
 -               | [koa-session-minimal](https://github.com/longztian/koa-session-minimal) | Minimal implementation of session middleware for Koa 2
 -               | [koa-router](https://github.com/alexmingoia/koa-router)                 | Router middleware for koa.
 -               | [koa-jsonp](https://github.com/kilianc/koa-jsonp)                       | Koajs JSONP streaming friendly middleware with GET/POST support
+其他              | [escape-html](https://github.com/component/escape-html)                 | Escape string for use in HTML
 
 --------------------------------------------------------------------------------
 
@@ -164,7 +165,7 @@ response.request | request
 -               | ctx.res          | Node's response object
 -               | ctx.request      | A koa Request object
 -               | ctx.response     | A koa Response object
--               | ctx.originalUrl  | from req.url
+-               | ctx.originalUrl  | `context.originalUrl = request.originalUrl = req.url`
 -               | ctx.cookies      | cookies对象（由'cookies'模块生成，包含相应的方法）
 -               | ctx.accept       | Accepts object from req(可以通过这个对象方便的获取一些req的信息)
 -               | ctx.state        | 建议利用这个 namespace 通过中间件向客户端传递信息
@@ -184,100 +185,104 @@ response.request | request
 -               | ctx.accepts()                                    | -
 -               | ctx.get()                                        | -
 -               | ctx.is()                                         | -
-来自 response 的方法 | ctx.attachment                                   | -
--               | ctx.redirect                                     | -
--               | ctx.remove                                       | -
--               | ctx.vary                                         | -
--               | ctx.set                                          | -
--               | ctx.append                                       | -
--               | ctx.flushHeaders                                 | -
+来自 response 的方法 | ctx.attachment()                                 | -
+-               | ctx.redirect()                                   | -
+-               | ctx.remove()                                     | -
+-               | ctx.vary()                                       | -
+-               | ctx.set()                                        | -
+-               | ctx.append()                                     | -
+-               | ctx.flushHeaders()                               | -
 
 ## Request
 
+### 属性列表
+
 属性                   | more
--------------------- | -------------------------------------------------------------------------------------------------------------------------------
-request.header       | Request header object
-request.header= val  | -
-request.headers      | Request header object. Alias as request.header
-request.headers=val  | -
-request.url          | Get request URL
-request.url=         | Set request URL, useful for url rewrites
-request.origin       | Get origin of URL, include protocol and host
-request.href         | Get full request URL, include protocol, host and url
-request.method       | Request method
-request.method=      | Set request method, useful for implementing middleware such as methodOverride().
-request.path         | Get request pathname
-request.path=        | Set request pathname and retain query-string when present
-request.query        | Get parsed query-string, returning an empty object when no query-string is present.
+-------------------- | -----------------------------------------------------------------------------------------------------
+request.header       | req.headers
+request.header= val  | ～
+request.headers      | ～
+request.headers=val  | ～
+request.url          | req.url
+request.url=         | ～
+request.origin       | `${this.protocol}://${this.host}`
+request.href         | 获取完整的请求 url
+request.method       | req.method
+request.method=      | ～
+request.path         | 通过解析 req.url 获取请求的 pathname 部分
+request.path=        | 修改 request.url 中的 pathname 部分
+request.query        | Get parsed query-string
 request.query=       | Set query-string to the given object. Note that this setter does not support nested objects
-request.querystring  | Get raw query string void of ?.
-request.querystring= | Set raw query string.
-request.search       | Get raw query string with the ?.
-request.search=      | Set raw query string.
-request.host         | Get host (hostname:port) when present. Supports X-Forwarded-Host when app.proxy is true, otherwise Host is used
-request.hostname     | Get hostname when present. Supports X-Forwarded-Host when app.proxy is true, otherwise Host is used.
-request.URL          | -
-request.fresh        | Check if a request cache is "fresh", aka the contents have not changed
-request.stale        | Inverse of request.fresh
-request.idempotent   | Check if the request is idempotent
-request.socket       | Return the request socket
-request.charset      | Get request charset when present, or undefined:
-request.length       | Return request Content-Length as a number when present, or undefined
-request.protocol     | Return request protocol, "https" or "http". Supports X-Forwarded-Proto when app.proxy is true
-request.secure       | Shorthand for ctx.protocol == "https" to check if a request was issued via TLS
-request.ips          | When X-Forwarded-For is present and app.proxy is enabled an array of these ips is returned, ordered from upstream -> downstream
-request.subdomains   | Return subdomains as an array
+request.querystring  | 通过解析 req.url 获取请求的 query 部分（不包含'?'）
+request.querystring= | 修改 request.url 中的 search 部分
+request.search       | 获取请求的 search 部分（包含'?'）
+request.search=      | 同 request.querystring=
+request.host         | 获取 host 字段？通过 req.headers.X-Forwarded-Host(app.proxy 为 true时) / req.headers.host 获取
+request.hostname     | 通过 request.host 或者 request.URL 获取 hostname
+request.URL          | 组合 request.protocol、request.host、request.originalUrl 为 WHATWG URL（ 这里同时将结果赋给了 request.memoizedURL 属性）
+request.fresh        | 判断请求的内容是否需要更新，不需要更新返回 true（当请求的 method 为 GET、HEAD，或者状态码不在指定区间的时候，此方法无效）
+request.stale        | `!request.fresh`
+request.idempotent   | 检测请求方法是否超出了`['GET', 'HEAD', 'PUT', 'DELETE', 'OPTIONS', 'TRACE']`,如果超出了，返回true
+request.socket       | req.socket
+request.charset      | 获取页面的编码格式（通过 Content-Type charset）
+request.length       | req.headers.Content-Length
+request.protocol     | 返回协议头，https／http／req.headers.X-Forwarded-Proto
+request.secure       | 检测是否使用的https协议，如果是返回true
+request.ips          | req.headers.X-Forwarded-For（只有在app.proxy为true的时候有返回值）
+request.subdomains   | 从级别最低的子域数起，获取app.subdomainOffset个子域
 request.type         | Get request Content-Type void of parameters such as "charset"
 -                    | -
-request.originalUrl  | Get request original URL(源码中没有)
+request.originalUrl  | Get request original URL(源码中没有) `context.originalUrl = request.originalUrl = req.url`
 request.ip           | Request remote address. Supports X-Forwarded-For when app.proxy is true.(源码中没有)
 
+### 方法列表
+
 方法                                | more
---------------------------------- | ------------------------------------------------------------------------------------------------------------------
-request.accepts(...args)          | from [accepts](https://github.com/jshttp/accepts)
-request.acceptsEncodings(...args) | ~
-request.acceptsCharsets(...args)  | ~
-request.acceptsLanguages(...args) | ~
-request.is(types)                 | Check if the incoming request contains the "Content-Type" header field, and it contains any of the give mime types
-request.get(field)                | Return request header
+--------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------
+request.accepts(...args)          | Check if the given type(s) is acceptable, returning the best match when true, otherwise false. （from [accepts](https://github.com/jshttp/accepts)）
+request.acceptsEncodings(...args) | Check if encodings are acceptable, returning the best match when true, otherwise false.
+request.acceptsCharsets(...args)  | Check if charsets are acceptable, returning the best match when true, otherwise false.
+request.acceptsLanguages(...args) | Check if langs are acceptable, returning the best match when true, otherwise false.
+request.is(types)                 | 检测 req.headers.content-type是否属于types中的一个，如果属于，返回对应的内容，否则返回false
+request.get(field)                | 返回 req.headers[field]
 request.inspect()                 | -
 request.toJSON()                  | -
 
 ## Response
 
 属性                     | more
----------------------- | -----------------------------------------------------------------------------------------------------------------
-response.socket        | Request socket.
-response.header        | Response header object.
-response.headers       | Response header object. Alias as response.header.
-response.status        | Get response status. By default, response.status is set to 404 unlike node's res.statusCode which defaults to 200
-response.status=       | Set response status via numeric code
-response.message       | Get response status message. By default, response.message is associated with response.status.
-response.message=      | Set response status message to the given value
-response.body          | Get response body
+---------------------- | --------------------------------------------------------
+response.socket        | req.socket
+response.header        | res.getHeaders()
+response.headers       | 同 response.header
+response.status        | res.statusCode
+response.status=       | 设置 res.statusCode，同时兼顾 res.statusMessage 和 response.body
+response.message       | res.statusMessage / 由response.status生成的message
+response.message=      | 设置 res.statusMessage
+response.body          | `response._body`
 response.body=         | Set response body to one of the following:
-response.length        | Return response Content-Length as a number when present, or deduce from ctx.body when possible, or undefined.
-response.length=       | Set response Content-Length to the given value
-response.headerSent    | Check if a response header has already been sent. Useful for seeing if the client may be notified on error
-response.lastModified  | Return the Last-Modified header as a Date, if it exists.
-response.lastModified= | Set the Last-Modified header as an appropriate UTC string
-response.etag          | -
-response.etag=         | Set the ETag of a response including the wrapped "s
-response.type          | Get response Content-Type void of parameters such as "charset"
-response.type=         | Set response Content-Type via mime string or file extension
-response.writable      | -
+response.length        | response.header['content-length']
+response.length=       | res.setHeader('Content-Length', n)
+response.headerSent    | res.headersSent,检查消息是否已经发送
+response.lastModified  | res.getHeaders()['Last-Modified']
+response.lastModified= | res.setHeader('Last-Modified', val)
+response.etag          | res.getHeaders()['ETag']
+response.etag=         | res.setHeader('ETag', val)
+response.type          | res.getHeaders()['Content-Type']
+response.type=         | res.setHeader('Content-Type', getType(type))
+response.writable      | 验证 request 是否可写
 
 方法                            | more
------------------------------ | ----------------------------------------------------------------------------------------------
-response.vary(field)          | Vary on field.
+----------------------------- | -------------------------------------------------------------------------------------------------------
+response.vary(field)          | vary(res, field)
 response.redirect(url, [alt]) | Perform a [302] redirect to url
-response.attachment(filename) | Set Content-Disposition to "attachment" to signal the client to prompt for download.
-response.is(types...)         | Very similar to ctx.request.is(). Check whether the response type is one of the supplied types
-response.get(field)           | Get a response header field value with case-insensitive field.
-response.set(field, val)      | Set response header field to value
-response.set(fields)          | Set several response header fields with an object
-response.append(field, val)   | Append additional header field with value val
-response.remove(field)        | Remove header field
+response.attachment(filename) | 利用[content-disposition](https://github.com/jshttp/content-disposition)模块，将某个文件绑定到'Content-Disposition'上
+response.is(types...)         | 检测 res.getHeaders()['content-type']是否属于types中的一个，如果属于，返回对应的内容，否则返回false
+response.get(field)           | 返回 res.getHeaders()[field]
+response.set(field, val)      | res.setHeader(field, val)
+response.set(fields)          | res.setHeader(field, val)
+response.append(field, val)   | 在 resgetHeaders()['field']上面添加 val
+response.remove(field)        | res.removeHeader(field)
 response.inspect()            | -
 response.toJSON()             | -
-response.flushHeaders()       | Flush any set headers, and begin the body.
+response.flushHeaders()       | res.flushHeaders()(刷新请求头)
