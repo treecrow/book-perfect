@@ -4,6 +4,7 @@
 
 文档                                                               | 描述
 ---------------------------------------------------------------- | ------------------------------------------------------
+[koa GitHub 生态](https://github.com/koajs)                        | -
 [官方文档](http://koajs.com/)                                        | -
 [「新手向」koa2从起步到填坑](http://www.jianshu.com/p/6b816c609669)         | 通俗易懂的介绍
 [koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)           | 包含了mysql（数据库）、koa(后端)、react(前端)的完整教程和实例
@@ -11,42 +12,42 @@
 
 ## koa 依赖的模块系统
 
-来源              | 模块                                                                   | more
---------------- | -------------------------------------------------------------------- | -----------------------------------------------------------
-Node            | assert                                                               | -
--               | events                                                               | -
--               | stream                                                               | -
--               | http                                                                 | -
--               | url                                                                  | -
--               | net                                                                  | -
--               | querystring                                                          | -
--               | path                                                                 | -
-koa             | [koa-compose](https://github.com/koajs/compose)                      | 组合多个中间件为一个中间件（把多个中间件组合并结构为一个promise函数，这是这个框架的精髓之处）
--               | [koa-convert](https://github.com/koajs/convert)                      | 转化koa1的中间件（generator-based）为koa2的中间件（promise-based）
--               | [koa-is-json](https://github.com/koajs/is-json)                      | Check if a body is JSON
-jshttp          | [accepts](https://github.com/jshttp/accepts)                         | Higher-level content negotiation
--               | [content-disposition](https://github.com/jshttp/content-disposition) | 创建和解析 HTTP Content-Disposition header（文件下载对话框）
--               | [content-type](https://github.com/jshttp/content-type)               | 创建和解析 HTTP Content-Type header
--               | [fresh](https://github.com/jshttp/fresh)                             | HTTP request 新鲜度测试（检测response在client's cache中是否过时，是否有内容改变 ）
--               | [http-assert](https://github.com/jshttp/http-assert)                 | assert with status codes
--               | [http-errors](https://github.com/jshttp/http-errors)                 | Create HTTP Errors
--               | [mime-types](https://github.com/jshttp/mime-types)                   | 终极 javascript content-type 工具
--               | [on-finished](https://github.com/jshttp/on-finished)                 | request停止后执行一个回调
--               | [statuses](https://github.com/jshttp/statuses)                       | HTTP status utility
--               | [type-is](https://github.com/jshttp/type-is)                         | 判断 the content-type of a request
--               | [vary](https://github.com/jshttp/vary)                               | Manipulate the HTTP Vary header
-pillarjs        | [cookies](https://github.com/pillarjs/cookies)                       | Signed and unsigned cookies based on Keygrip
--               | [parseurl](https://github.com/pillarjs/parseurl)                     | parse a url with memoization(直接根据req解析响应的url)
-stream-utils    | [destroy](https://github.com/stream-utils/destroy)                   | 尽可能的销毁一个stream
--               | [error-inject](https://github.com/stream-utils/error-inject)         | inject an error listener into a stream
-koa 中间件（源码没有依赖） | koa-bodyparser                                                       | 配置ctx.body解析中间件
--               | koa-views                                                            | 配置项目模板和views路径
--               | koa-static                                                           | 配置静态资源路径
--               | koa-logger                                                           | 开发过程中的日志记录
--               | koa-mysql-session                                                    | -
--               | koa-session-minimal                                                  | -
--               | koa-router                                                           | -
--               | koa-jsonp                                                            | -
+来源              | 模块                                                                      | more
+--------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------
+Node            | assert                                                                  | -
+-               | events                                                                  | -
+-               | stream                                                                  | -
+-               | http                                                                    | -
+-               | url                                                                     | -
+-               | net                                                                     | -
+-               | querystring                                                             | -
+-               | path                                                                    | -
+koa             | [koa-compose](https://github.com/koajs/compose)                         | 组合多个中间件为一个中间件（把多个中间件组合并结构为一个promise函数，这是这个框架的精髓之处）
+-               | [koa-convert](https://github.com/koajs/convert)                         | 转化koa1的中间件（generator-based）为koa2的中间件（promise-based）
+-               | [koa-is-json](https://github.com/koajs/is-json)                         | Check if a body is JSON
+jshttp          | [accepts](https://github.com/jshttp/accepts)                            | Higher-level content negotiation
+-               | [content-disposition](https://github.com/jshttp/content-disposition)    | 创建和解析 HTTP Content-Disposition header（文件下载对话框）
+-               | [content-type](https://github.com/jshttp/content-type)                  | 创建和解析 HTTP Content-Type header
+-               | [fresh](https://github.com/jshttp/fresh)                                | HTTP request 新鲜度测试（检测response在client's cache中是否过时，是否有内容改变 ）
+-               | [http-assert](https://github.com/jshttp/http-assert)                    | assert with status codes
+-               | [http-errors](https://github.com/jshttp/http-errors)                    | Create HTTP Errors
+-               | [mime-types](https://github.com/jshttp/mime-types)                      | 终极 javascript content-type 工具
+-               | [on-finished](https://github.com/jshttp/on-finished)                    | request停止后执行一个回调
+-               | [statuses](https://github.com/jshttp/statuses)                          | HTTP status utility
+-               | [type-is](https://github.com/jshttp/type-is)                            | 判断 the content-type of a request
+-               | [vary](https://github.com/jshttp/vary)                                  | Manipulate the HTTP Vary header
+pillarjs        | [cookies](https://github.com/pillarjs/cookies)                          | Signed and unsigned cookies based on Keygrip
+-               | [parseurl](https://github.com/pillarjs/parseurl)                        | parse a url with memoization(直接根据req解析响应的url)
+stream-utils    | [destroy](https://github.com/stream-utils/destroy)                      | 尽可能的销毁一个stream
+-               | [error-inject](https://github.com/stream-utils/error-inject)            | inject an error listener into a stream
+koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koajs/bodyparser)                   | 配置ctx.body解析中间件
+-               | [koa-views](https://github.com/queckezz/koa-views)                      | 配置项目模板和views路径
+-               | [koa-static](https://github.com/koajs/static)                           | 配置静态资源路径
+-               | [koa-logger](https://github.com/koajs/logger)                           | 开发过程中的日志记录
+-               | [koa-mysql-session](https://github.com/tb01923/koa-mysql-session)       | this is an adpatation of the logic from the connect mysql-session-store to koa-generic-session
+-               | [koa-session-minimal](https://github.com/longztian/koa-session-minimal) | Minimal implementation of session middleware for Koa 2
+-               | [koa-router](https://github.com/alexmingoia/koa-router)                 | Router middleware for koa.
+-               | [koa-jsonp](https://github.com/kilianc/koa-jsonp)                       | Koajs JSONP streaming friendly middleware with GET/POST support
 
 --------------------------------------------------------------------------------
 
@@ -81,7 +82,7 @@ app.toJSON()        | 只返回包含了app的['subdomainOffset','proxy','env']�
 app.inspect()       | 同 app.toJSON()
 app.use(function)   | 添加中间件函数到app.middleware中（如果中间件函数是 generator函数，会自动转化）
 app.callback()      | 返回一个适合http.createServer()的回调函数
-app.createContext() | -
+app.createContext() | 初始化一个新的context（这里的request、response等新创建的对象没有返回，有什么用？）
 app.onerror()       | app 的 error 事件上默认的错误处理程序(忽略 404 == err.status 和 err.expose 为true到情况)，其他错误会打印出来,这里的错误不能返回给客户端
 
 ### 事件列表
@@ -92,23 +93,23 @@ error | 有默认的事件处理程序 app.onerror()
 
 ## Context、Request、Response的关系
 
-具柄               | 代表       | more
----------------- | -------- | ----
-context.app      | app      | -
-context.req      | req      | -
-context.res      | res      | -
--                | -        | -
-request.app      | app      | -
-request.req      | req      | -
-request.res      | res      | -
-request.ctx      | context  | -
-request.response | response | -
--                | -        | -
-response.app     | app      | -
-response.req     | req      | -
-response.res     | res      | -
-response.ctx     | context  | -
-response.request | request  | -
+具柄               | 代表
+---------------- | --------
+context.app      | app
+context.req      | req
+context.res      | res
+-                | -
+request.app      | app
+request.req      | req
+request.res      | res
+request.ctx      | context
+request.response | response
+-                | -
+response.app     | app
+response.req     | req
+response.res     | res
+response.ctx     | context
+response.request | request
 
 ## Context
 
@@ -167,6 +168,8 @@ response.request | request  | -
 -               | ctx.cookies      | cookies对象（由'cookies'模块生成，包含相应的方法）
 -               | ctx.accept       | Accepts object from req(可以通过这个对象方便的获取一些req的信息)
 -               | ctx.state        | 建议利用这个 namespace 通过中间件向客户端传递信息
+
+### 方法列表
 
 来源              | 方法                                               | more
 --------------- | ------------------------------------------------ | --------------------------
