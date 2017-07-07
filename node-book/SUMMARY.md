@@ -9,55 +9,50 @@
   - [jshttp](chapters/moudles/jshttp/README.md)
 
     - [accepts](chapters/moudles/jshttp/accepts.md)
+    - [content-disposition](chapters/moudles/jshttp/content-disposition.md)
+    - [content-type](chapters/moudles/jshttp/content-type.md)
+    - [fresh](chapters/moudles/jshttp/fresh.md)
+    - [http-assert](chapters/moudles/jshttp/http-assert.md)
+    - [http-errors](chapters/moudles/jshttp/http-errors.md)
+    - [mime-types](chapters/moudles/jshttp/mime-types.md)
+    - [on-finished](chapters/moudles/jshttp/on-finished.md)
+    - [statuses](chapters/moudles/jshttp/statuses.md)
+    - [type-is](chapters/moudles/jshttp/type-is.md)
+    - [vary](chapters/moudles/jshttp/vary.md)
 
   - [pillarjs](chapters/moudles/pillarjs/README.md)
 
+    - [cookies](chapters/moudles/pillarjs/cookies.md)
+    - [parseurl](chapters/moudles/pillarjs/parseurl.md)
+
+  - [stream-utils](chapters/moudles/stream-utils/README.md)
+
+    - [destroy](chapters/moudles/stream-utils/destroy.md)
+    - [parseurl](chapters/moudles/stream-utils/parseurl.md)
+
   - [chai](chapters/moudles/chai.md)
-
   - [cheerio](chapters/moudles/cheerio.md)
-
   - [co](chapters/moudles/co.md)
-
   - [CodeMirror](chapters/moudles/CodeMirror.md)
-
   - [express](chapters/moudles/express.md)
-
   - [highlight.js](chapters/moudles/highlight.js.md)
-
   - [ionic](chapters/moudles/ionic.md)
-
   - [is-generator-function](chapters/moudles/is-generator-function.md)
-
   - [istanbul](chapters/moudles/istanbul.md)
-
   - [jquery](chapters/moudles/jquery.md)
-
   - [koa](chapters/moudles/koa.md)
-
   - [loopback](chapters/moudles/loopback.md)
-
   - [marked](chapters/moudles/marked.md)
-
   - [matcha](chapters/moudles/matcha.md)
-
   - [mocha](chapters/moudles/mocha.md)
-
   - [node-formidable](chapters/moudles/node-formidable.md)
-
   - [node-geohash](chapters/moudles/node-geohash.md)
-
   - [node-only](chapters/moudles/node-only.md)
-
   - [react](chapters/moudles/react.md)
-
   - [should.js](chapters/moudles/should.js.md)
-
   - [standard](chapters/moudles/standard.md)
-
   - [superagent](chapters/moudles/superagent.md)
-
   - [supertest](chapters/moudles/supertest.md)
-
   - [vue](chapters/moudles/vue.md)
 
 - [Docs](chapters/Docs/README.md)
