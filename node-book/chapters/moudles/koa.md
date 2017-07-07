@@ -2,44 +2,51 @@
 
 ## 文档教程
 
-网站                                                              | 描述
---------------------------------------------------------------- | --
-[koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)          | -
-[最新Node.js框架：Koa 2 实用入门](https://sanwen8.cn/p/1feFr7y.html)     | -
-[Koa 2实用入门](https://cnodejs.org/topic/5709959abc564eaf3c6a48c8) | -
-[「新手向」koa2从起步到填坑](http://www.jianshu.com/p/6b816c609669)        | -
+文档                                                               | 描述
+---------------------------------------------------------------- | ------------------------------------------------------
+[官方文档](http://koajs.com/)                                        | -
+[「新手向」koa2从起步到填坑](http://www.jianshu.com/p/6b816c609669)         | 通俗易懂的介绍
+[koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)           | 包含了mysql（数据库）、koa(后端)、react(前端)的完整教程和实例
+[koa-middlewares](https://www.npmjs.com/package/koa-middlewares) | easy way to use some small but useful koa middlewares.
 
-## 依赖的模块系统
+## koa 依赖的模块系统
 
-来源   | 模块                                              | more
----- | ----------------------------------------------- | ---------------------------------------------------
-Node | assert                                          | -
--    | events                                          | -
--    | stream                                          | -
--    | http                                            | -
--    | url                                             | -
--    | net                                             | -
--    | querystring                                     | -
--    | path                                            | -
-koa  | [koa-compose](https://github.com/koajs/compose) | 组合多个中间件为一个中间件（把多个中间件组合并结构为一个promise函数，这是这个框架的精髓之处）
--    | [koa-convert](https://github.com/koajs/convert) | 转化koa1的中间件（generator-based）为koa2的中间件（promise-based）
--    | [koa-is-json](https://github.com/koajs/is-json) | Check if a body is JSON
-
-## 模块生态
-
-模块                  | 作用
-------------------- | -------------------
-koa-convert         | 转化koa1的中间件为koa2的中间件
-koa-bodyparser      | 配置ctx.body解析中间件
-koa-views           | 配置项目模板和views路径
-koa-static          | 配置静态资源路径
-koa-logger          | 开发过程中的日志记录
-koa-mysql-session   | -
-koa-session-minimal | -
-koa-router          | -
-koa-jsonp           | -
-mysql               | 连接mysql数据库的客户端
-validator           | 验证
+来源              | 模块                                                                   | more
+--------------- | -------------------------------------------------------------------- | -----------------------------------------------------------
+Node            | assert                                                               | -
+-               | events                                                               | -
+-               | stream                                                               | -
+-               | http                                                                 | -
+-               | url                                                                  | -
+-               | net                                                                  | -
+-               | querystring                                                          | -
+-               | path                                                                 | -
+koa             | [koa-compose](https://github.com/koajs/compose)                      | 组合多个中间件为一个中间件（把多个中间件组合并结构为一个promise函数，这是这个框架的精髓之处）
+-               | [koa-convert](https://github.com/koajs/convert)                      | 转化koa1的中间件（generator-based）为koa2的中间件（promise-based）
+-               | [koa-is-json](https://github.com/koajs/is-json)                      | Check if a body is JSON
+jshttp          | [accepts](https://github.com/jshttp/accepts)                         | Higher-level content negotiation
+-               | [content-disposition](https://github.com/jshttp/content-disposition) | 创建和解析 HTTP Content-Disposition header（文件下载对话框）
+-               | [content-type](https://github.com/jshttp/content-type)               | 创建和解析 HTTP Content-Type header
+-               | [fresh](https://github.com/jshttp/fresh)                             | HTTP request 新鲜度测试（检测response在client's cache中是否过时，是否有内容改变 ）
+-               | [http-assert](https://github.com/jshttp/http-assert)                 | assert with status codes
+-               | [http-errors](https://github.com/jshttp/http-errors)                 | Create HTTP Errors
+-               | [mime-types](https://github.com/jshttp/mime-types)                   | 终极 javascript content-type 工具
+-               | [on-finished](https://github.com/jshttp/on-finished)                 | request停止后执行一个回调
+-               | [statuses](https://github.com/jshttp/statuses)                       | HTTP status utility
+-               | [type-is](https://github.com/jshttp/type-is)                         | 判断 the content-type of a request
+-               | [vary](https://github.com/jshttp/vary)                               | Manipulate the HTTP Vary header
+pillarjs        | [cookies](https://github.com/pillarjs/cookies)                       | Signed and unsigned cookies based on Keygrip
+-               | [parseurl](https://github.com/pillarjs/parseurl)                     | parse a url with memoization(直接根据req解析响应的url)
+stream-utils    | [destroy](https://github.com/stream-utils/destroy)                   | 尽可能的销毁一个stream
+-               | [error-inject](https://github.com/stream-utils/error-inject)         | inject an error listener into a stream
+koa 中间件（源码没有依赖） | koa-bodyparser                                                       | 配置ctx.body解析中间件
+-               | koa-views                                                            | 配置项目模板和views路径
+-               | koa-static                                                           | 配置静态资源路径
+-               | koa-logger                                                           | 开发过程中的日志记录
+-               | koa-mysql-session                                                    | -
+-               | koa-session-minimal                                                  | -
+-               | koa-router                                                           | -
+-               | koa-jsonp                                                            | -
 
 --------------------------------------------------------------------------------
 
@@ -55,6 +62,8 @@ validator           | 验证
 
 来源    | 属性                  | 默认值                                  | more
 ----- | ------------------- | ------------------------------------ | ---------------------------------------------
+预设的属性 | app.silent          | false                                | 设置为true会取消默认的错误处理程序的执行
+-     | app.keys=           | -                                    | 用于设置签名cookie密钥
 自身    | app.proxy           | false                                | when true proxy header fields will be trusted
 -     | app.middleware      | []                                   | -
 -     | app.subdomainOffset | 2                                    | offset of .subdomains to ignore [2]
@@ -62,8 +71,6 @@ validator           | 验证
 -     | app.context         | -                                    | ctx的原型(不能直接调用，否则会报错),可以用来为应用添加全局的属性和方法
 -     | app.request         | -                                    | 直接打印'undefined'
 -     | app.response        | -                                    | 直接打印'undefined'
-预设的属性 | app.silent          | false                                | 设置为true会取消默认的错误处理程序的执行
--     | app.keys=           | -                                    | 用于设置签名cookie密钥
 
 ### 方法列表
 
