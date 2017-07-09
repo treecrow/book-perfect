@@ -40,6 +40,7 @@ pillarjs        | [cookies](https://github.com/pillarjs/cookies)                
 -               | [parseurl](https://github.com/pillarjs/parseurl)                        | parse a url with memoization(直接根据req解析响应的url)
 stream-utils    | [destroy](https://github.com/stream-utils/destroy)                      | 尽可能的销毁一个stream
 -               | [error-inject](https://github.com/stream-utils/error-inject)            | inject an error listener into a stream
+其他              | [escape-html](https://github.com/component/escape-html)                 | Escape string for use in HTML
 koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koajs/bodyparser)                   | 配置ctx.body解析中间件
 -               | [koa-views](https://github.com/queckezz/koa-views)                      | 配置项目模板和views路径
 -               | [koa-static](https://github.com/koajs/static)                           | 配置静态资源路径
@@ -48,7 +49,6 @@ koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koaj
 -               | [koa-session-minimal](https://github.com/longztian/koa-session-minimal) | Minimal implementation of session middleware for Koa 2
 -               | [koa-router](https://github.com/alexmingoia/koa-router)                 | Router middleware for koa.
 -               | [koa-jsonp](https://github.com/kilianc/koa-jsonp)                       | Koajs JSONP streaming friendly middleware with GET/POST support
-其他              | [escape-html](https://github.com/component/escape-html)                 | Escape string for use in HTML
 
 --------------------------------------------------------------------------------
 
