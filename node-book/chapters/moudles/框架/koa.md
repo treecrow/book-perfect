@@ -165,7 +165,7 @@ response.request | request
 -               | ctx.res          | Node's response object
 -               | ctx.request      | A koa Request object
 -               | ctx.response     | A koa Response object
--               | ctx.originalUrl  | `context.originalUrl = request.originalUrl = req.url`
+-               | ctx.originalUrl  | `context.originalUrl = request.originalUrl = req.url` : /api/users/getUser
 -               | ctx.cookies      | cookies对象（由'cookies'模块生成，包含相应的方法）
 -               | ctx.accept       | Accepts object from req(可以通过这个对象方便的获取一些req的信息)
 -               | ctx.state        | 建议利用这个 namespace 通过中间件向客户端传递信息
