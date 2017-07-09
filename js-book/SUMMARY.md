@@ -40,6 +40,7 @@
   - [遍历总结](chapters/Array/遍历总结.md)
   - [二进制数组](chapters/Array/二进制数组.md)
   - [数组方法大全](chapters/Array/数组方法大全.md)
+  - [set](chapters/Array/set.md)
 
 - [Number](chapters/Number/README.md)
 
@@ -58,6 +59,7 @@
   - [对象方法大全](chapters/Object/对象方法大全.md)
   - [深拷贝](chapters/Object/深拷贝.md)
   - [class](chapters/Object/class.md)
+  - [map](chapters/Object/map.md)
 
 --------------------------------------------------------------------------------
 
