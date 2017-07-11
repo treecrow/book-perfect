@@ -16,6 +16,7 @@
 
   - [常见工具库](chapters/moudles/常见工具库/README.md)
 
+    - [async](chapters/moudles/常见工具库/async.md)
     - [cheerio](chapters/moudles/常见工具库/cheerio.md)
     - [co](chapters/moudles/常见工具库/co.md)
     - [CodeMirror](chapters/moudles/常见工具库/CodeMirror.md)
@@ -101,7 +102,7 @@
   - [global全局变量](chapters/Docs/global.md)
   - [http](chapters/Docs/http.md)
   - [https](chapters/Docs/https.md)
-  - [module模块](chapters/Docs/module.md)
+  - [module](chapters/Docs/module.md)
   - [net网络](chapters/Docs/net.md)
   - [os操作系统](chapters/Docs/os.md)
   - [path路径](chapters/Docs/path.md)

@@ -6,6 +6,7 @@
 
 模块                                                        | more
 --------------------------------------------------------- | -------------------------------------------------------------
+[async](https://github.com/caolan/async)                  | Async utilities for node and the browser
 [cheerio](https://github.com/cheeriojs/cheerio)           | 后端的jquery,爬虫专用
 [co](https://github.com/tj/co)                            | The ultimate generator based flow-control goodness for nodejs
 [CodeMirror](https://github.com/codemirror/CodeMirror)    | 浏览器内嵌代码编辑器

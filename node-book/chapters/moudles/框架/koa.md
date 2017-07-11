@@ -3,12 +3,12 @@
 ## 文档教程
 
 文档                                                               | 描述
----------------------------------------------------------------- | ------------------------------------------------------
+---------------------------------------------------------------- | ---------------------------------------
 [koa GitHub 生态](https://github.com/koajs)                        | -
 [官方文档](http://koajs.com/)                                        | -
 [「新手向」koa2从起步到填坑](http://www.jianshu.com/p/6b816c609669)         | 通俗易懂的介绍
 [koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)           | 包含了mysql（数据库）、koa(后端)、react(前端)的完整教程和实例
-[koa-middlewares](https://www.npmjs.com/package/koa-middlewares) | easy way to use some small but useful koa middlewares.
+[koa-middlewares](https://www.npmjs.com/package/koa-middlewares) | koa多个中间件的整合
 
 ## koa 依赖的模块系统
 
