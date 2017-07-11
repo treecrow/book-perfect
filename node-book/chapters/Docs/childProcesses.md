@@ -24,25 +24,37 @@
 
 > `<Array>` 字符串参数列表
 
+- file
+
+> `<string>`要运行的可执行文件的名称或路径
+
 - options
 
-字段         | 类型               | more
----------- | ---------------- | ------------------------------------------------------------
-cwd        | string           | 子进程的当前工作目录
-env        | object           | 环境变量键值对
-encoding   | string           | 默认: 'utf8'
-execPath   | string           | 用来创建子进程的执行路径
-execArgv   | array            | 要传给执行路径的字符串参数列表
-silent     | boolean          | 如果为 true，则子进程中的 stdin、 stdout 和 stderr 会被导流到父进程中，否则它们会继承自父进程
-stdio      | array / string   | 当提供了该选项，则它会覆盖 silent
-argv0      | string           | 显式地设置要发给子进程的 argv[0] 的值。 如果未指定，则设为 command
-detached   | boolean          | 准备将子进程独立于父进程运行
-shell      | string           | 用于执行命令的 shell
-timeout    | number           | （默认: 0）
-maxBuffer  | number           | stdout 或 stderr 允许的最大字节数。 默认为 200*1024。 如果超过限制，则子进程会被终止
-killSignal | string / integer | （默认: 'SIGTERM'）
-uid        | number           | 设置该进程的用户标识
-gid        | number           | 设置该进程的组标识
+字段         | 类型                           | more
+---------- | ---------------------------- | ------------------------------------------------------------
+cwd        | string                       | 子进程的当前工作目录
+env        | object                       | 环境变量键值对
+encoding   | string                       | 默认: 'utf8'
+execPath   | string                       | 用来创建子进程的执行路径
+execArgv   | array                        | 要传给执行路径的字符串参数列表
+silent     | boolean                      | 如果为 true，则子进程中的 stdin、 stdout 和 stderr 会被导流到父进程中，否则它们会继承自父进程
+stdio      | array / string               | 当提供了该选项，则它会覆盖 silent
+argv0      | string                       | 显式地设置要发给子进程的 argv[0] 的值。 如果未指定，则设为 command
+detached   | boolean                      | 准备将子进程独立于父进程运行
+shell      | string                       | 用于执行命令的 shell
+timeout    | number                       | （默认: 0）
+maxBuffer  | number                       | stdout 或 stderr 允许的最大字节数。 默认为 200*1024。 如果超过限制，则子进程会被终止
+killSignal | string / integer             | （默认: 'SIGTERM'）
+uid        | number                       | 设置该进程的用户标识
+gid        | number                       | 设置该进程的组标识
+input      | string / Buffer / Uint8Array | 作为 stdin 传给衍生进程的值
+pid        | number                       | 子进程的 pid
+output     | array                        | stdio 输出返回的结果数组
+stdout     | Buffer / string              | output[1] 的内容
+stderr     | Buffer / string              | output[2] 的内容
+status     | number                       | 子进程的退出码
+signal     | string                       | 用于杀死子进程的信号
+error      | error                        | 如果子进程失败或超时产生的错误对象
 
 - callback
 
@@ -57,12 +69,12 @@ stderr | -
 ### 事件列表
 
 事件         | more
----------- | ----
-close      | -
-disconnect | -
-error      | -
-exit       | -
-message    | -
+---------- | -----------------------------------------------------------------------------
+close      | 当子进程的 stdio 流被关闭时会触发 'close' 事件
+disconnect | 在父进程中调用 child.disconnect() 或在子进程中调用 process.disconnect() 后会触发 'disconnect' 事件
+error      | 进程无法被衍生 / 进程无法被杀死 / 向子进程发送信息失败
+exit       | 子进程结束后会触发 'exit' 事件。 如果进程退出了，则 code 是进程的最终退出码，否则为 null
+message    | 当一个子进程使用 process.send() 发送消息时会触发 'message' 事件
 
 ### 方法列表
 
@@ -76,9 +88,10 @@ child.send(message[, sendHandle[, options]][, callback]) | 当父进程和子进
 
 属性              | more
 --------------- | ------------------------------------------------------------------
-child.pid       | 返回子进程的进程标识（PID）
+child.channel   | A pipe representing the IPC channel to the child process
 child.connected | 表明是否仍可以从一个子进程发送和接收消息
-child.stdio     | 一个到子进程的管道的稀疏数组，对应着传给 child_process.spawn() 的选项中值被设为 'pipe' 的 stdio
-child.stdin     | 一个代表子进程的 stdin 的可写流
-child.stdout    | 一个代表子进程的 stdout 的可读流
+child.pid       | 返回子进程的进程标识（PID）
 child.stderr    | 一个代表子进程的 stderr 的可读流
+child.stdin     | 一个代表子进程的 stdin 的可写流
+child.stdio     | 一个到子进程的管道的稀疏数组，对应着传给 child_process.spawn() 的选项中值被设为 'pipe' 的 stdio
+child.stdout    | 一个代表子进程的 stdout 的可读流
