@@ -27,10 +27,15 @@
   - [调试](chapters/moudles/调试/README.md)
 
     - [debug](chapters/moudles/调试/debug.md)
+    - [log4js-node](chapters/moudles/调试/log4js-node.md)
+    - [nodejs-depd](chapters/moudles/调试/nodejs-depd.md)
 
-  - [进程](chapters/moudles/进程/README.md)
+  - [全局控制](chapters/moudles/全局控制/README.md)
 
-    - [nodemon](chapters/moudles/进程/nodemon.md)
+    - [nodemon](chapters/moudles/全局控制/nodemon.md)
+    - [opener](chapters/moudles/全局控制/opener.md)
+    - [rimraf](chapters/moudles/全局控制/rimraf.md)
+    - [standard](chapters/moudles/全局控制/standard.md)
 
   - [框架](chapters/moudles/框架/README.md)
 
@@ -41,18 +46,18 @@
     - [react](chapters/moudles/框架/react.md)
     - [vue](chapters/moudles/框架/vue.md)
 
+  - [通用小工具](chapters/moudles/通用小工具/README.md)
+
+    - [delegates](chapters/moudles/通用小工具/delegates.md)
+    - [is-generator-function](chapters/moudles/通用小工具/is-generator-function.md)
+    - [node-only](chapters/moudles/通用小工具/node-only.md)
+
   - [未分类](chapters/moudles/未分类/README.md)
 
-    - [delegates](chapters/moudles/未分类/delegates.md)
     - [escape-html](chapters/moudles/未分类/escape-html.md)
-    - [is-generator-function](chapters/moudles/未分类/is-generator-function.md)
     - [matcha](chapters/moudles/未分类/matcha.md)
     - [node-formidable](chapters/moudles/未分类/node-formidable.md)
     - [node-geohash](chapters/moudles/未分类/node-geohash.md)
-    - [node-only](chapters/moudles/未分类/node-only.md)
-    - [nodejs-depd](chapters/moudles/未分类/nodejs-depd.md)
-    - [nodemon](chapters/moudles/未分类/nodemon.md)
-    - [standard](chapters/moudles/未分类/standard.md)
 
   - [jshttp](chapters/moudles/jshttp/README.md)
 
@@ -128,5 +133,6 @@
     - [URL](chapters/relevant/http/URL.md)
 
   - [babel](chapters/relevant/babel.md)
+
   - [gulp](chapters/relevant/gulp.md)
   - [package](chapters/relevant/package.md)
