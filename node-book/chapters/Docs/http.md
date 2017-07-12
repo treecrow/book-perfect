@@ -39,21 +39,6 @@ agent.getName(options)                      | 获取请求选项集合的唯一�
 --------------- | ------------------------
 request.aborted | 如果请求已被终止，则该属性的值为请求被终止的时间
 
-### 属性列表（官网没有，自己整理的，不知道是否正确）
-
-属性          | 二级属性                          | more
------------ | ----------------------------- | ----
-req.headers | -                             | -
--           | req.headers.X-Forwarded-Host  | -
--           | req.headers.host              | -
--           | req.headers.Content-Type      | -
--           | req.headers.X-Forwarded-Proto | -
--           | req.headers.X-Forwarded-For   | -
-req.url     | -                             | -
-req.method  | -                             | -
-req.socket  | -                             | -
--           | req.socket.encrypted          | -
-
 ### 方法列表
 
 方法                                                   | more

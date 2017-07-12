@@ -4,6 +4,7 @@
 
 - [koa GitHub 生态](https://github.com/koajs)
 - [官方文档](http://koajs.com/)
+- [Koa 框架---阮一峰](http://javascript.ruanyifeng.com/nodejs/koa.html#toc5)
 
 ## koa 依赖的模块系统
 
@@ -62,7 +63,7 @@ koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koaj
 预设的属性 | app.silent          | false                                | 设置为true会取消默认的错误处理程序的执行
 -     | app.keys=           | -                                    | 用于设置签名cookie密钥
 自身    | app.proxy           | false                                | when true proxy header fields will be trusted
--     | app.subdomainOffset | 2                                    | offset of .subdomains to ignore [2]
+-     | app.subdomainOffset | 2                                    | 设置忽略子域的级别
 -     | app.middleware      | []                                   | 中间件容器
 -     | app.env             | process.env.NODE_ENV ／ 'development' | 当前的环境（开发／测试...）
 -     | app.context         | -                                    | ctx的原型(不能直接调用，否则会报错),可以用来为应用添加全局的属性和方法
@@ -159,7 +160,7 @@ response.request | request
 -               | ctx.request      | A koa Request object
 -               | ctx.response     | A koa Response object
 -               | ctx.originalUrl  | `context.originalUrl = request.originalUrl = req.url` : /api/users/getUser
--               | ctx.cookies      | cookies对象（由'cookies'模块生成，包含相应的方法）
+-               | ctx.cookies      | cookies对象（由[cookies](https://github.com/pillarjs/cookies)模块生成，包含相应的方法）
 -               | ctx.accept       | Accepts object from req(可以通过这个对象方便的获取一些req的信息)
 -               | ctx.state        | 建议利用这个 namespace 通过中间件向客户端传递信息
 
@@ -167,8 +168,8 @@ response.request | request
 
 来源              | 方法                                               | more
 --------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------
-自身              | ctx.assert(value, [status], [msg], [properties]) | 断言，失败的话抛出状态码错误
--               | ctx.throw([status], [msg], [properties])         | 抛出错误，默认500
+自身              | ctx.assert(value, [status], [msg], [properties]) | 在中间件之中断言，失败的话抛出状态码错误
+-               | ctx.throw([status], [msg], [properties])         | 抛出错误，默认500(如果没有指明error.status)
 -               | ctx.onerror(err)                                 | 请求内部 error 事件错误处理程序
 来自 request 的方法  | ctx.acceptsLanguages()                           | Check if langs are acceptable, returning the best match when true, otherwise false
 -               | ctx.acceptsEncodings()                           | Check if encodings are acceptable, returning the best match when true, otherwise false.
@@ -186,6 +187,24 @@ response.request | request
 
 ## Request
 
+### url处理图
+
+```
+┌────────────────────────────────────────────────────────┐
+│                           href                         │
+├────────────────────────────┬───────────────────────────┤
+│          origin            │     url / originalurl     │
+├──────────┬─────────────────┼──────────┬────────────────┤
+│ protocol │      host       │   path   │     search     │
+├──────────├──────────┬──────┼──────────┼─┬──────────────┤
+│          │ hostname │ port │          │?│ querystring  │
+│          ├──────────┼──────┤          ├─┼──────────────┤
+│          │          │      │          │ │              │
+"  http:   │ host.com : 8080   /p/a/t/h  ?  query=string │
+│          │          │      │          │ │              │
+└──────────┴──────────┴──────┴──────────┴─┴──────────────┘
+```
+
 ### 属性列表
 
 属性                   | more
@@ -197,77 +216,77 @@ request.headers=val  | ～
 request.url          | req.url
 request.url=         | ～
 request.origin       | `${this.protocol}://${this.host}`
-request.href         | 获取完整的请求 url
+request.href         | 返回HTTP请求的完整路径，包括协议、端口和url
 request.method       | req.method
 request.method=      | ～
-request.path         | 通过解析 req.url 获取请求的 pathname 部分
-request.path=        | 修改 request.url 中的 pathname 部分
-request.query        | Get parsed query-string
+request.path         | HTTP请求的路径
+request.path=        | ~
+request.query        | 返回一个对象，包含了HTTP请求的查询字符串。如果没有查询字符串，则返回一个空对象
 request.query=       | Set query-string to the given object. Note that this setter does not support nested objects
-request.querystring  | 通过解析 req.url 获取请求的 query 部分（不包含'?'）
-request.querystring= | 修改 request.url 中的 search 部分
-request.search       | 获取请求的 search 部分（包含'?'）
-request.search=      | 同 request.querystring=
-request.host         | 获取 host 字段？通过 req.headers.X-Forwarded-Host(app.proxy 为 true时) / req.headers.host 获取
-request.hostname     | 通过 request.host 或者 request.URL 获取 hostname
+request.querystring  | HTTP请求的查询字符串，不含问号
+request.querystring= | ~
+request.search       | HTTP请求的查询字符串，含问号
+request.search=      | ~
+request.host         | 获取 host 字段(HTTP请求的主机（含端口号)),通过 req.headers.X-Forwarded-Host(app.proxy 为 true时) / req.headers.host 获取
+request.hostname     | 获取HTTP的主机名（不含端口号)
 request.URL          | 组合 request.protocol、request.host、request.originalUrl 为 WHATWG URL（ 这里同时将结果赋给了 request.memoizedURL 属性）
-request.fresh        | 判断请求的内容是否需要更新，不需要更新返回 true（当请求的 method 为 GET、HEAD，或者状态码不在指定区间的时候，此方法无效）
+request.fresh        | 返回一个布尔值，表示缓存是否代表了最新内容。通常与If-None-Match、ETag、If-Modified-Since、Last-Modified等缓存头，配合使用
 request.stale        | `!request.fresh`
 request.idempotent   | 检测请求方法是否超出了`['GET', 'HEAD', 'PUT', 'DELETE', 'OPTIONS', 'TRACE']`,如果超出了，返回true
 request.socket       | req.socket
-request.charset      | 获取页面的编码格式（通过 Content-Type charset）
+request.charset      | 获取HTTP请求的字符集（通过 Content-Type charset）
 request.length       | req.headers.Content-Length
-request.protocol     | 返回协议头，https／http／req.headers.X-Forwarded-Proto
-request.secure       | 检测是否使用的https协议，如果是返回true
+request.protocol     | HTTP请求的协议，https或者http
+request.secure       | 返回一个布尔值，表示当前协议是否为https
 request.ips          | req.headers.X-Forwarded-For（只有在app.proxy为true的时候有返回值）
-request.subdomains   | 从级别最低的子域数起，获取app.subdomainOffset个子域
-request.type         | Get request Content-Type void of parameters such as "charset"
+request.subdomains   | 返回一个数组，表示HTTP请求的子域名。该属性必须与app.subdomainOffset属性搭配使用
+request.type         | HTTP请求的Content-Type属性
 -                    | -
 request.originalUrl  | Get request original URL(源码中没有) `context.originalUrl = request.originalUrl = req.url`
-request.ip           | Request remote address. Supports X-Forwarded-For when app.proxy is true.(源码中没有)
+request.ip           | 返回发出HTTP请求的IP地址
 
 ### 方法列表
 
-方法                                | more
---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------
-request.accepts(...args)          | Check if the given type(s) is acceptable, returning the best match when true, otherwise false. （from [accepts](https://github.com/jshttp/accepts)）
-request.acceptsEncodings(...args) | Check if encodings are acceptable, returning the best match when true, otherwise false.
-request.acceptsCharsets(...args)  | Check if charsets are acceptable, returning the best match when true, otherwise false.
-request.acceptsLanguages(...args) | Check if langs are acceptable, returning the best match when true, otherwise false.
-request.is(types)                 | 检测 req.headers.content-type是否属于types中的一个，如果属于，返回对应的内容，否则返回false
-request.get(field)                | 返回 req.headers[field]
+方法                                  | more
+----------------------------------- | ----------------------------------------------------------------------------------------------------
+request.accepts(types)              | 检查HTTP请求的Accept属性是否可接受，如果可接受，则返回指定的媒体类型，否则返回false（from [accepts](https://github.com/jshttp/accepts)）
+request.acceptsEncodings(encodings) | 根据HTTP请求的Accept-Encoding字段，返回最佳匹配，如果没有合适的匹配，则返回false
+request.acceptsCharsets(charsets)   | 根据HTTP请求的Accept-Charset字段，返回最佳匹配，如果没有合适的匹配，则返回false
+request.acceptsLanguages(...args)   | 根据HTTP请求的Accept-Language字段，返回最佳匹配，如果没有合适的匹配，则返回false
+request.is(types)                   | 检测 req.headers.content-type是否属于types中的一个，如果属于，返回对应的内容，否则返回false
+request.get(field)                  | 返回 req.headers[field]
 
 ## Response
 
 属性                     | more
----------------------- | --------------------------------------------------------
+---------------------- | -------------------------------------------------------------
 response.socket        | req.socket
 response.header        | res.getHeaders()
 response.headers       | ~
-response.status        | res.statusCode
+response.status        | res.statusCode（返回HTTP回应的状态码。默认情况下，该属性没有值）
 response.status=       | 设置 res.statusCode，同时兼顾 res.statusMessage 和 response.body
-response.message       | res.statusMessage / 由response.status生成的message
+response.message       | res.statusMessage / 由response.status生成的message（HTTP回应的状态信息）
 response.message=      | 设置 res.statusMessage
-response.body          | `response._body`
+response.body          | `response._body`（HTTP回应的信息体：字符串／二进制Buffer／Stream／JSON对象／null）
 response.body=         | Set response body to one of the following:
 response.length        | res.getHeaders()['content-length']
 response.length=       | res.setHeader('Content-Length', n)
-response.headerSent    | res.headersSent,检查消息是否已经发送
+response.headerSent    | res.headersSent（返回一个布尔值，检查是否HTTP回应已经发出）
 response.lastModified  | res.getHeaders()['Last-Modified']
 response.lastModified= | res.setHeader('Last-Modified', val)
 response.etag          | res.getHeaders()['ETag']
 response.etag=         | res.setHeader('ETag', val)
-response.type          | res.getHeaders()['Content-Type']
+response.type          | res.getHeaders()['Content-Type'] (不包括"charset"参数的部分)
 response.type=         | res.setHeader('Content-Type', getType(type))
 response.writable      | 验证 request 是否可写
 
 方法                            | more
------------------------------ | -------------------------------------------------------------------------------------------------------
-response.vary(field)          | vary(res, field),向header添加字段？
-response.redirect(url, [alt]) | Perform a [302] redirect to url
-response.attachment(filename) | 利用[content-disposition](https://github.com/jshttp/content-disposition)模块，将某个文件绑定到'Content-Disposition'上
+----------------------------- | ------------------------------------------------------------------------------------------------------------------
+response.vary(field)          | vary(res, field)，将参数添加到HTTP回应的Vary字段
+response.redirect(url, [alt]) | 执行302跳转到指定网址
+response.attachment(filename) | 利用[content-disposition](https://github.com/jshttp/content-disposition)模块，将某个文件绑定到'Content-Disposition'上,提示浏览器下载该文件
 response.is(types...)         | 检测 res.getHeaders()['content-type']是否属于types中的一个，如果属于，返回对应的内容，否则返回false
-response.get(field)           | 返回 res.getHeaders()[field]
+response.get(field)           | 返回 res.getHeaders()[field] (区分大小写)
 response.set(field, val)      | res.setHeader(field, val)
 response.set(fields)          | res.setHeader(field, val)
 response.append(field, val)   | 在 resgetHeaders()['field']上面添加 val

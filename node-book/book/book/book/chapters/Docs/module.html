@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>module模块 · NodeJs开发文档</title>
+        <title>module · NodeJs开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -237,7 +237,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.2.1" data-path="../moudles/常见工具库/cheerio.html">
+        <li class="chapter " data-level="2.1.2.1" data-path="../moudles/常见工具库/async.html">
+            
+                <a href="../moudles/常见工具库/async.html">
+            
+                    
+                    async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../moudles/常见工具库/cheerio.html">
             
                 <a href="../moudles/常见工具库/cheerio.html">
             
@@ -250,7 +263,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.2" data-path="../moudles/常见工具库/co.html">
+        <li class="chapter " data-level="2.1.2.3" data-path="../moudles/常见工具库/co.html">
             
                 <a href="../moudles/常见工具库/co.html">
             
@@ -263,7 +276,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.3" data-path="../moudles/常见工具库/CodeMirror.html">
+        <li class="chapter " data-level="2.1.2.4" data-path="../moudles/常见工具库/CodeMirror.html">
             
                 <a href="../moudles/常见工具库/CodeMirror.html">
             
@@ -276,7 +289,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.4" data-path="../moudles/常见工具库/highlight.js.html">
+        <li class="chapter " data-level="2.1.2.5" data-path="../moudles/常见工具库/highlight.js.html">
             
                 <a href="../moudles/常见工具库/highlight.js.html">
             
@@ -289,7 +302,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.5" data-path="../moudles/常见工具库/jquery.html">
+        <li class="chapter " data-level="2.1.2.6" data-path="../moudles/常见工具库/jquery.html">
             
                 <a href="../moudles/常见工具库/jquery.html">
             
@@ -302,7 +315,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.6" data-path="../moudles/常见工具库/marked.html">
+        <li class="chapter " data-level="2.1.2.7" data-path="../moudles/常见工具库/marked.html">
             
                 <a href="../moudles/常见工具库/marked.html">
             
@@ -315,7 +328,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.7" data-path="../moudles/常见工具库/superagent.html">
+        <li class="chapter " data-level="2.1.2.8" data-path="../moudles/常见工具库/superagent.html">
             
                 <a href="../moudles/常见工具库/superagent.html">
             
@@ -1172,7 +1185,7 @@
                 <a href="module.html">
             
                     
-                    module模块
+                    module
             
                 </a>
             
@@ -1604,7 +1617,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >module模块</a>
+        <a href="../.." >module</a>
     </h1>
 </div>
 
@@ -1620,24 +1633,87 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="module&#x6A21;&#x5757;">module&#x6A21;&#x5757;</h1>
-<ul>
-<li>module.children---&#x88AB;&#x8BE5;&#x6A21;&#x5757;&#x5F15;&#x7528;&#x7684;&#x6A21;&#x5757;&#x5BF9;&#x8C61;</li>
-<li>module.exports---module.exports &#x5BF9;&#x8C61;&#x662F;&#x7531;&#x6A21;&#x5757;&#x7CFB;&#x7EDF;&#x521B;&#x5EFA;&#x7684;<blockquote>
-<p>exports &#x5FEB;&#x6377;&#x65B9;&#x5F0F;:exports &#x53D8;&#x91CF;&#x662F;&#x5728;&#x6A21;&#x5757;&#x7684;&#x6587;&#x4EF6;&#x7EA7;&#x522B;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x5B83;&#x5728;&#x6A21;&#x5757;&#x88AB;&#x6267;&#x884C;&#x524D;&#x88AB;&#x8D4B;&#x4E8E; module.exports &#x7684;&#x503C;</p>
-</blockquote>
-</li>
-<li>module.filename---&#x6A21;&#x5757;&#x7684;&#x5B8C;&#x5168;&#x89E3;&#x6790;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x540D;</li>
-<li>module.id---&#x6A21;&#x5757;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x901A;&#x5E38;&#x662F;&#x5B8C;&#x5168;&#x89E3;&#x6790;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x540D;</li>
-<li>module.loaded---&#x6A21;&#x5757;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x6216;&#x6B63;&#x5728;&#x52A0;&#x8F7D;&#x4E2D;</li>
-<li>module.parent---&#x6700;&#x5148;&#x5F15;&#x7528;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x6A21;&#x5757;</li>
-<li>module.require(id)---module.require &#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C; require() &#x4ECE;&#x539F;&#x59CB;&#x6A21;&#x5757;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x7684;&#x65B9;&#x5F0F;</li>
-</ul>
-<h2 id="&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x6A21;&#x5757;">&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x6A21;&#x5757;</h2>
-<ul>
-<li>&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; package.json &#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x6307;&#x5B9A;&#x4E00;&#x4E2A; main &#x6A21;&#x5757;</li>
-<li>&#x4ECE; node_modules &#x76EE;&#x5F55;&#x52A0;&#x8F7D;</li>
-<li>&#x4ECE;&#x5168;&#x5C40;&#x76EE;&#x5F55;&#x52A0;&#x8F7D;</li>
-</ul>
+<h2 id="&#x6A21;&#x5757;&#x7CFB;&#x7EDF;">&#x6A21;&#x5757;&#x7CFB;&#x7EDF;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x8BED;&#x53E5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>require(&apos;src/lib.js&apos;)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>exports.name1</td>
+<td>&#x5355;&#x4E2A;&#x5BFC;&#x51FA;&#xFF08;name1&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5C5E;&#x6027;&#x5217;&#x8868;">&#x5C5E;&#x6027;&#x5217;&#x8868;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>require.main</td>
+<td>node&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x7684;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>module</td>
+<td>&#x5F53;&#x524D;&#x6240;&#x5728;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>module.children</td>
+<td>&#x88AB;&#x8BE5;&#x6A21;&#x5757;&#x5F15;&#x7528;&#x7684;&#x6A21;&#x5757;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>moudle.exports =</td>
+<td>&#x5B9A;&#x4E49;&#x5728;&#x6574;&#x4E2A;&#x6A21;&#x5757;&#x4E0A;&#x7684;&#x5BFC;&#x51FA;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</td>
+</tr>
+<tr>
+<td>module.filename</td>
+<td>&#x6A21;&#x5757;&#x7684;&#x5B8C;&#x5168;&#x89E3;&#x6790;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td>module.id</td>
+<td>&#x6A21;&#x5757;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x901A;&#x5E38;&#x662F;&#x5B8C;&#x5168;&#x89E3;&#x6790;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td>module.loaded</td>
+<td>&#x6A21;&#x5757;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x6216;&#x6B63;&#x5728;&#x52A0;&#x8F7D;&#x4E2D;</td>
+</tr>
+<tr>
+<td>module.parent</td>
+<td>&#x6700;&#x5148;&#x5F15;&#x7528;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>module.require(id)</td>
+<td>module.require &#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C; require() &#x4ECE;&#x539F;&#x59CB;&#x6A21;&#x5757;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x7684;&#x65B9;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x65B9;&#x6CD5;&#x5217;&#x8868;">&#x65B9;&#x6CD5;&#x5217;&#x8868;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>require.resolve()</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1681,7 +1757,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"module模块","level":"2.2.17","depth":2,"next":{"title":"net网络","level":"2.2.18","depth":2,"path":"chapters/Docs/net.md","ref":"chapters/Docs/net.md","articles":[]},"previous":{"title":"https","level":"2.2.16","depth":2,"path":"chapters/Docs/https.md","ref":"chapters/Docs/https.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Docs/module.md","mtime":"2017-05-17T17:47:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-11T03:35:26.437Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"module","level":"2.2.17","depth":2,"next":{"title":"net网络","level":"2.2.18","depth":2,"path":"chapters/Docs/net.md","ref":"chapters/Docs/net.md","articles":[]},"previous":{"title":"https","level":"2.2.16","depth":2,"path":"chapters/Docs/https.md","ref":"chapters/Docs/https.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Docs/module.md","mtime":"2017-07-11T08:24:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-11T08:30:20.932Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
