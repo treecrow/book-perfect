@@ -23,19 +23,10 @@
 
   - [apm](chapters/noself/apm.md)
   - [brew](chapters/noself/brew.md)
-  - [forever](chapters/noself/forever.md)
   - [git](chapters/noself/git.md)
-  - [gitbook](chapters/noself/gitbook.md)
   - [mysql](chapters/noself/mysql.md)
-  - [npm](chapters/noself/npm.md)
   - [nvm](chapters/noself/nvm.md)
   - [svn](chapters/noself/svn.md)
-  - [yarn](chapters/noself/yarn.md)
   - [yum](chapters/noself/yum.md)
 
 - [shell](chapters/shell/README.md)
-
-- [others](chapters/others/README.md)
-
-  - [其他系统](chapters/others/其他系统.md)
-  - [mac](chapters/others/mac.md)

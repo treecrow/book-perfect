@@ -1,0 +1,553 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>cookie & session · basis</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="treecrow">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mac.html" />
+    
+    
+    <link rel="prev" href="其他系统.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="relevant/http/README.md">
+            
+                <span>
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="relevant/http/请求方法.md">
+            
+                <span>
+            
+                    
+                    请求方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="relevant/http/网络过程.md">
+            
+                <span>
+            
+                    
+                    网络过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="relevant/http/状态码.md">
+            
+                <span>
+            
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="relevant/http/DNS.md">
+            
+                <span>
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="relevant/http/Header.md">
+            
+                <span>
+            
+                    
+                    Header
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="relevant/http/URL.md">
+            
+                <span>
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="反向代理服务器.html">
+            
+                <a href="反向代理服务器.html">
+            
+                    
+                    反向代理服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chrome.html">
+            
+                <a href="chrome.html">
+            
+                    
+                    chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="其他系统.html">
+            
+                <a href="其他系统.html">
+            
+                    
+                    其他系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="cookie & session.html">
+            
+                <a href="cookie & session.html">
+            
+                    
+                    cookie & session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="mac.html">
+            
+                <a href="mac.html">
+            
+                    
+                    mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >cookie & session</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="session--cookie">Session &amp; Cookie</h1>
+<h2 id="session">Session</h2>
+<ul>
+<li><p>&#x7531;&#x4E8E;HTTP&#x534F;&#x8BAE;&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x6240;&#x4EE5;&#x670D;&#x52A1;&#x7AEF;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x7528;&#x6237;&#x7684;&#x72B6;&#x6001;&#x65F6;&#xFF08;&#x5982;&#x6839;&#x636E;&#x7528;&#x6237;&#x7EA7;&#x522B;&#x7981;&#x6B62;&#x5F00;&#x53D1;&#x67D0;&#x4E9B;&#x9875;&#x9762;&#xFF09;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x7528;&#x67D0;&#x79CD;&#x673A;&#x5236;&#x6765;&#x8BC6;&#x5177;&#x4F53;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x5C31;&#x662F;Session&#x3002;</p>
+</li>
+<li><p>session&#x673A;&#x5236;&#x91C7;&#x7528;&#x7684;&#x662F;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4FDD;&#x6301;&#x72B6;&#x6001;&#x7684;&#x65B9;&#x6848;</p>
+</li>
+<li><p>session &#x4E0E; user &#x4E0D;&#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#xFF0C;&#x901A;&#x8FC7;session&#x53EF;&#x4EE5;&#x8BB0;&#x5F55;&#x6E38;&#x5BA2;&#x7528;&#x6237;&#x4E34;&#x65F6;&#x7684;&#x72B6;&#x6001;</p>
+</li>
+<li><p>session id&#x7684;&#x503C;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x65E2;&#x4E0D;&#x4F1A;&#x91CD;&#x590D;&#xFF0C;&#x53C8;&#x4E0D;&#x5BB9;&#x6613;&#x88AB;&#x627E;&#x5230;&#x89C4;&#x5F8B;&#x4EE5;&#x4EFF;&#x9020;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+</li>
+</ul>
+<h3 id="&#x4FDD;&#x5B58;session&#x7684;&#x65B9;&#x6CD5;">&#x4FDD;&#x5B58;Session&#x7684;&#x65B9;&#x6CD5;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6587;&#x4EF6;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x96C6;&#x7FA4;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x5185;&#x5B58;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x5E93;</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cookie">Cookie</h2>
+<ul>
+<li><p>&#x6BCF;&#x6B21;HTTP&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x90FD;&#x4F1A;&#x53D1;&#x9001;&#x76F8;&#x5E94;&#x7684;Cookie&#x4FE1;&#x606F;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#xFF08;&#x6CA1;&#x6709;&#x8FC7;&#x671F;&#x624D;&#x53D1;&#x9001;&#x5427;&#xFF09;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x67D0;&#x4E2A;cookie&#x6240;&#x58F0;&#x660E;&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x5C06;&#x8981;&#x8BF7;&#x6C42;&#x7684;&#x8D44;&#x6E90;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5219;&#x628A;&#x8BE5;cookie&#x9644;&#x5728;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x7684;HTTP&#x8BF7;&#x6C42;&#x5934;&#x4E0A;&#x53D1;&#x9001;&#x7ED9;&#x670D;&#x52A1;&#x5668;</p>
+</li>
+<li><p>cookie&#x673A;&#x5236;&#x91C7;&#x7528;&#x7684;&#x662F;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4FDD;&#x6301;&#x72B6;&#x6001;&#x7684;&#x65B9;&#x6848;</p>
+</li>
+</ul>
+<h3 id="&#x7528;-cookie-&#x6765;&#x5B9E;&#x73B0;session&#x8DDF;&#x8E2A;">&#x7528; Cookie &#x6765;&#x5B9E;&#x73B0;Session&#x8DDF;&#x8E2A;</h3>
+<blockquote>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x5927;&#x591A;&#x6570;&#x7684;&#x5E94;&#x7528;&#x90FD;&#x662F;&#x7528; Cookie &#x6765;&#x5B9E;&#x73B0;Session&#x8DDF;&#x8E2A;&#x7684;</p>
+</blockquote>
+<ul>
+<li><p>&#x7B2C;&#x4E00;&#x6B21;&#x521B;&#x5EFA;Session&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x4F1A;&#x5728;HTTP&#x534F;&#x8BAE;&#x4E2D;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x9700;&#x8981;&#x5728; Cookie &#x91CC;&#x9762;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;Session ID&#xFF0C;&#x4EE5;&#x540E;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x628A;&#x8FD9;&#x4E2A;&#x4F1A;&#x8BDD;ID&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6211;&#x5C31;&#x77E5;&#x9053;&#x4F60;&#x662F;&#x8C01;&#x4E86;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7981;&#x7528;&#x4E86; Cookie ,&#x901A;&#x8FC7;URL&#x91CD;&#x5199;&#x6280;&#x672F;&#x6765;&#x8FDB;&#x884C;&#x4F1A;&#x8BDD;&#x8DDF;&#x8E2A;&#xFF08;&#x6BCF;&#x6B21;HTTP&#x4EA4;&#x4E92;&#xFF0C;URL&#x540E;&#x9762;&#x90FD;&#x4F1A;&#x88AB;&#x9644;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x8BF8;&#x5982; sid=xxxxx &#x8FD9;&#x6837;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x636E;&#x6B64;&#x6765;&#x8BC6;&#x522B;&#x7528;&#x6237;&#xFF09;</p>
+</li>
+</ul>
+<h3 id="&#x7528;-cookie-&#x6765;&#x5B9E;&#x73B0;&#x514D;&#x767B;&#x5F55;">&#x7528; Cookie &#x6765;&#x5B9E;&#x73B0;&#x514D;&#x767B;&#x5F55;</h3>
+<ul>
+<li>&#x8D26;&#x53F7;&#x4FE1;&#x606F;&#x5199;&#x5728; cookie &#x91CC;&#x9762;</li>
+<li>&#x7F51;&#x7AD9;&#x9875;&#x9762;&#x7684;&#x811A;&#x672C;&#x8BFB;&#x53D6; cookie &#x4E2D;&#x7684;&#x8D26;&#x53F7;&#x4FE1;&#x606F;&#xFF0C;&#x81EA;&#x52A8;&#x63D0;&#x7528;&#x6237;&#x521B;&#x5EFA;&#x9700;&#x8981;&#x8F93;&#x5165;&#x7684;&#x4FE1;&#x606F;</li>
+</ul>
+<h3 id="cookie&#x7684;&#x5185;&#x5BB9;">cookie&#x7684;&#x5185;&#x5BB9;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x540D;&#x5B57;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x503C;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x8FC7;&#x671F;&#x65F6;&#x95F4;</td>
+<td>&#x82E5;&#x4E0D;&#x8BBE;&#x7F6E;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x8FD9;&#x4E2A;cookie&#x7684;&#x751F;&#x547D;&#x671F;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x8BDD;&#x671F;&#x95F4;&#xFF0C;&#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#xFF0C;cookie&#x5C31;&#x6D88;&#x5931;</td>
+</tr>
+<tr>
+<td>&#x8DEF;&#x5F84;&#x548C;&#x57DF;</td>
+<td>&#x4E00;&#x8D77;&#x6784;&#x6210;cookie&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="session--cookie-&#x533A;&#x522B;">Session &amp; Cookie &#x533A;&#x522B;</h2>
+<table>
+<thead>
+<tr>
+<th>-</th>
+<th>Session</th>
+<th>Cookie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B58;&#x653E;&#x5730;&#x70B9;</td>
+<td>&#x670D;&#x52A1;&#x5668;</td>
+<td>&#x6D4F;&#x89C8;&#x5668;</td>
+</tr>
+<tr>
+<td>&#x5B89;&#x5168;&#x6027;</td>
+<td>&#x5B89;&#x5168;</td>
+<td>&#x53EF;&#x4EE5;&#x5206;&#x6790;&#x5B58;&#x653E;&#x5728;&#x672C;&#x5730;&#x7684;COOKIE&#x5E76;&#x8FDB;&#x884C;COOKIE&#x6B3A;&#x9A97;</td>
+</tr>
+<tr>
+<td>&#x6027;&#x80FD;</td>
+<td>&#x4F1A;&#x5360;&#x7528;&#x670D;&#x52A1;&#x5668;&#x5185;&#x5B58;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x589E;&#x591A;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6027;&#x80FD;&#x6D88;&#x8017;&#x5927;</td>
+<td>&#x4E0D;&#x4F1A;&#x5360;&#x7528;&#x670D;&#x52A1;&#x5668;&#x5185;&#x5B58;</td>
+</tr>
+<tr>
+<td>&#x5927;&#x5C0F;&#x9650;&#x5236;</td>
+<td>&#x65E0;&#x9650;&#x5236;</td>
+<td>&#x5355;&#x4E2A;cookie&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;4K&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4E2D; cookie &#x7684;&#x6570;&#x91CF;&#x4E5F;&#x6709;&#x9650;&#x5236;</td>
+</tr>
+<tr>
+<td>&#x6982;&#x5FF5;</td>
+<td>session &#x662F;&#x62BD;&#x8C61;&#x51FA;&#x6765;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6CA1;&#x6709;&#x5177;&#x4F53;&#x7684;&#x6307;&#x4EE3;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x8BBE;&#x8BA1;&#x521B;&#x5EFA;</td>
+<td>&#x5177;&#x4F53;&#x7684;&#x4E1C;&#x897F;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="其他系统.html" class="navigation navigation-prev " aria-label="Previous page: 其他系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mac.html" class="navigation navigation-next " aria-label="Next page: mac">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"cookie & session","level":"2.5","depth":1,"next":{"title":"mac","level":"2.6","depth":1,"path":"chapters/mac.md","ref":"chapters/mac.md","articles":[]},"previous":{"title":"其他系统","level":"2.4","depth":1,"path":"chapters/其他系统.md","ref":"chapters/其他系统.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/cookie & session.md","mtime":"2017-07-12T07:24:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-12T13:43:29.414Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
