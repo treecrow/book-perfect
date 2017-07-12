@@ -1575,6 +1575,9 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="supertest">supertest</h1>
+<blockquote>
+<p>supertest &#x4E0A;&#x6709; superagent &#x6240;&#x6709;&#x7684;&#x529F;&#x80FD;</p>
+</blockquote>
 <h2 id="&#x65B9;&#x6CD5;&#x5217;&#x8868;">&#x65B9;&#x6CD5;&#x5217;&#x8868;</h2>
 <table>
 <thead>
@@ -1585,39 +1588,57 @@
 </thead>
 <tbody>
 <tr>
-<td>supertest(app)</td>
-<td>-</td>
+<td>request(app/app.listen())</td>
+<td>koa&#x9700;&#x8981;&#x8C03;&#x7528;listen()</td>
 </tr>
 <tr>
-<td>supertest.agent(app)</td>
-<td>-</td>
-</tr>
-<tr>
-<td>.expect(status[, fn])</td>
-<td>Assert response status code.</td>
-</tr>
-<tr>
-<td>.expect(status, body[, fn])</td>
-<td>Assert response status code and body.</td>
-</tr>
-<tr>
-<td>.expect(body[, fn])</td>
-<td>Assert response body text with a string, regular expression, or parsed body object.</td>
-</tr>
-<tr>
-<td>.expect(field, value[, fn])</td>
-<td>Assert header field value with a string or regular expression.</td>
+<td>request.agent(app/app.listen())</td>
+<td>&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x7AEF;&#x4EE3;&#x7406;&#xFF08;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x6B21;&#x90FD;&#x8C03;&#x7528;request(app)&#xFF09;</td>
 </tr>
 <tr>
 <td>.expect(function(res) {})</td>
-<td>Pass a custom assertion function. It&apos;ll be given the response object to check. If the check fails, throw an error</td>
+<td>&#x81EA;&#x5B9A;&#x4E49;&#x65AD;&#x8A00;&#xFF0C;&#x65AD;&#x8A00;&#x5931;&#x8D25;&#x629B;&#x51FA;&#x9519;&#x8BEF; &#xFF0F; &#x5728;&#x65AD;&#x8A00;&#x4E4B;&#x524D;&#x4FEE;&#x6539; response body or headers</td>
 </tr>
 <tr>
-<td>.end(fn)</td>
-<td>Perform the request and invoke fn(err, res)</td>
+<td>.expect(field, value[, fn])</td>
+<td>&#x65AD;&#x8A00;&#x5934;&#x90E8;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td>.expect(status[, fn])</td>
+<td>&#x65AD;&#x8A00; response &#x72B6;&#x6001;&#x7801;</td>
+</tr>
+<tr>
+<td>.expect(body[, fn])</td>
+<td>&#x65AD;&#x8A00; response body</td>
+</tr>
+<tr>
+<td>.expect(status, body[, fn])</td>
+<td>&#x65AD;&#x8A00; response &#x72B6;&#x6001;&#x7801; &#x548C; body</td>
+</tr>
+<tr>
+<td>.end(fn(err, res))</td>
+<td>&#x4E0D;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x9519;&#x8BEF;&#x4F1A;&#x88AB;&#x629B;&#x51FA;&#xFF0C;&#x4F7F;&#x7528;&#x540E;&#x9519;&#x8BEF;&#x4F1A;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>.then(fn(res),fn(err))</td>
+<td>promise&#x5F62;&#x5F0F;&#x7684;end()</td>
 </tr>
 </tbody>
 </table>
+<h3 id="expect--done">.expect() &amp;&amp; done</h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5C06;done&#x4F20;&#x7ED9;&#x4EFB;&#x4F55;.expect()&#x8BED;&#x53E5;</p>
+</blockquote>
+<pre><code class="lang-javascript">describe(<span class="hljs-string">&apos;GET /user&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  it(<span class="hljs-string">&apos;respond with json&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    request(app)
+      .get(<span class="hljs-string">&apos;/user&apos;</span>)
+      .set(<span class="hljs-string">&apos;Accept&apos;</span>, <span class="hljs-string">&apos;application/json&apos;</span>)
+      .expect(<span class="hljs-string">&apos;Content-Type&apos;</span>, <span class="hljs-regexp">/json/</span>)
+      .expect(<span class="hljs-number">200</span>, done);
+  });
+});
+</code></pre>
 
                                 
                                 </section>
@@ -1661,7 +1682,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"supertest","level":"2.1.1.5","depth":3,"next":{"title":"常见工具库","level":"2.1.2","depth":2,"path":"chapters/moudles/常见工具库/README.md","ref":"chapters/moudles/常见工具库/README.md","articles":[{"title":"cheerio","level":"2.1.2.1","depth":3,"path":"chapters/moudles/常见工具库/cheerio.md","ref":"chapters/moudles/常见工具库/cheerio.md","articles":[]},{"title":"co","level":"2.1.2.2","depth":3,"path":"chapters/moudles/常见工具库/co.md","ref":"chapters/moudles/常见工具库/co.md","articles":[]},{"title":"CodeMirror","level":"2.1.2.3","depth":3,"path":"chapters/moudles/常见工具库/CodeMirror.md","ref":"chapters/moudles/常见工具库/CodeMirror.md","articles":[]},{"title":"highlight.js","level":"2.1.2.4","depth":3,"path":"chapters/moudles/常见工具库/highlight.js.md","ref":"chapters/moudles/常见工具库/highlight.js.md","articles":[]},{"title":"jquery","level":"2.1.2.5","depth":3,"path":"chapters/moudles/常见工具库/jquery.md","ref":"chapters/moudles/常见工具库/jquery.md","articles":[]},{"title":"marked","level":"2.1.2.6","depth":3,"path":"chapters/moudles/常见工具库/marked.md","ref":"chapters/moudles/常见工具库/marked.md","articles":[]},{"title":"superagent","level":"2.1.2.7","depth":3,"path":"chapters/moudles/常见工具库/superagent.md","ref":"chapters/moudles/常见工具库/superagent.md","articles":[]}]},"previous":{"title":"should.js","level":"2.1.1.4","depth":3,"path":"chapters/moudles/测试/should.js.md","ref":"chapters/moudles/测试/should.js.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/测试/supertest.md","mtime":"2017-07-02T03:20:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-09T04:55:16.599Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"supertest","level":"2.1.1.5","depth":3,"next":{"title":"常见工具库","level":"2.1.2","depth":2,"path":"chapters/moudles/常见工具库/README.md","ref":"chapters/moudles/常见工具库/README.md","articles":[{"title":"cheerio","level":"2.1.2.1","depth":3,"path":"chapters/moudles/常见工具库/cheerio.md","ref":"chapters/moudles/常见工具库/cheerio.md","articles":[]},{"title":"co","level":"2.1.2.2","depth":3,"path":"chapters/moudles/常见工具库/co.md","ref":"chapters/moudles/常见工具库/co.md","articles":[]},{"title":"CodeMirror","level":"2.1.2.3","depth":3,"path":"chapters/moudles/常见工具库/CodeMirror.md","ref":"chapters/moudles/常见工具库/CodeMirror.md","articles":[]},{"title":"highlight.js","level":"2.1.2.4","depth":3,"path":"chapters/moudles/常见工具库/highlight.js.md","ref":"chapters/moudles/常见工具库/highlight.js.md","articles":[]},{"title":"jquery","level":"2.1.2.5","depth":3,"path":"chapters/moudles/常见工具库/jquery.md","ref":"chapters/moudles/常见工具库/jquery.md","articles":[]},{"title":"marked","level":"2.1.2.6","depth":3,"path":"chapters/moudles/常见工具库/marked.md","ref":"chapters/moudles/常见工具库/marked.md","articles":[]},{"title":"superagent","level":"2.1.2.7","depth":3,"path":"chapters/moudles/常见工具库/superagent.md","ref":"chapters/moudles/常见工具库/superagent.md","articles":[]}]},"previous":{"title":"should.js","level":"2.1.1.4","depth":3,"path":"chapters/moudles/测试/should.js.md","ref":"chapters/moudles/测试/should.js.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/测试/supertest.md","mtime":"2017-07-10T07:04:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-10T10:10:23.600Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1634,36 +1634,10 @@
                                 
                                 <h1 id="koa">koa</h1>
 <h2 id="&#x6587;&#x6863;&#x6559;&#x7A0B;">&#x6587;&#x6863;&#x6559;&#x7A0B;</h2>
-<table>
-<thead>
-<tr>
-<th>&#x6587;&#x6863;</th>
-<th>&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/koajs" target="_blank">koa GitHub &#x751F;&#x6001;</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="http://koajs.com/" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="http://www.jianshu.com/p/6b816c609669" target="_blank">&#x300C;&#x65B0;&#x624B;&#x5411;&#x300D;koa2&#x4ECE;&#x8D77;&#x6B65;&#x5230;&#x586B;&#x5751;</a></td>
-<td>&#x901A;&#x4FD7;&#x6613;&#x61C2;&#x7684;&#x4ECB;&#x7ECD;</td>
-</tr>
-<tr>
-<td><a href="https://chenshenhai.github.io/koa2-note/" target="_blank">koa2&#x8FDB;&#x9636;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</a></td>
-<td>&#x5305;&#x542B;&#x4E86;mysql&#xFF08;&#x6570;&#x636E;&#x5E93;&#xFF09;&#x3001;koa(&#x540E;&#x7AEF;)&#x3001;react(&#x524D;&#x7AEF;)&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#x548C;&#x5B9E;&#x4F8B;</td>
-</tr>
-<tr>
-<td><a href="https://www.npmjs.com/package/koa-middlewares" target="_blank">koa-middlewares</a></td>
-<td>koa&#x591A;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x6574;&#x5408;</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li><a href="https://github.com/koajs" target="_blank">koa GitHub &#x751F;&#x6001;</a></li>
+<li><a href="http://koajs.com/" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></li>
+</ul>
 <h2 id="koa-&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#x7CFB;&#x7EDF;">koa &#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#x7CFB;&#x7EDF;</h2>
 <table>
 <thead>
@@ -1889,21 +1863,21 @@
 </tr>
 <tr>
 <td>-</td>
-<td>app.middleware</td>
-<td>[]</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
 <td>app.subdomainOffset</td>
 <td>2</td>
 <td>offset of .subdomains to ignore [2]</td>
 </tr>
 <tr>
 <td>-</td>
+<td>app.middleware</td>
+<td>[]</td>
+<td>&#x4E2D;&#x95F4;&#x4EF6;&#x5BB9;&#x5668;</td>
+</tr>
+<tr>
+<td>-</td>
 <td>app.env</td>
 <td>process.env.NODE_ENV &#xFF0F; &apos;development&apos;</td>
-<td>-</td>
+<td>&#x5F53;&#x524D;&#x7684;&#x73AF;&#x5883;&#xFF08;&#x5F00;&#x53D1;&#xFF0F;&#x6D4B;&#x8BD5;...&#xFF09;</td>
 </tr>
 <tr>
 <td>-</td>
@@ -1935,32 +1909,24 @@
 </thead>
 <tbody>
 <tr>
-<td>app.listen()</td>
-<td>http.createServer(app.callback()).listen(...) &#x7B80;&#x5316;&#x5C01;&#x88C5;</td>
-</tr>
-<tr>
-<td>app.toJSON()</td>
-<td>&#x53EA;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x4E86;app&#x7684;[&apos;subdomainOffset&apos;,&apos;proxy&apos;,&apos;env&apos;]&#x7B49;&#x5C5E;&#x6027;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</td>
-</tr>
-<tr>
-<td>app.inspect()</td>
-<td>&#x540C; app.toJSON()</td>
-</tr>
-<tr>
-<td>app.use(function)</td>
-<td>&#x6DFB;&#x52A0;&#x4E2D;&#x95F4;&#x4EF6;&#x51FD;&#x6570;&#x5230;app.middleware&#x4E2D;&#xFF08;&#x5982;&#x679C;&#x4E2D;&#x95F4;&#x4EF6;&#x51FD;&#x6570;&#x662F; generator&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x5316;&#xFF09;</td>
-</tr>
-<tr>
-<td>app.callback()</td>
-<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9002;&#x5408;http.createServer()&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
-</tr>
-<tr>
 <td>app.createContext()</td>
 <td>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x65B0;&#x7684;context&#xFF08;&#x8FD9;&#x91CC;&#x7684;request&#x3001;response&#x7B49;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#xFF0C;&#x6709;&#x4EC0;&#x4E48;&#x7528;&#xFF1F;&#xFF09;</td>
 </tr>
 <tr>
 <td>app.onerror()</td>
 <td>app &#x7684; error &#x4E8B;&#x4EF6;&#x4E0A;&#x9ED8;&#x8BA4;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x7A0B;&#x5E8F;(&#x5FFD;&#x7565; 404 == err.status &#x548C; err.expose &#x4E3A;true&#x5230;&#x60C5;&#x51B5;)&#xFF0C;&#x5176;&#x4ED6;&#x9519;&#x8BEF;&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x6765;,&#x8FD9;&#x91CC;&#x7684;&#x9519;&#x8BEF;&#x4E0D;&#x80FD;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;</td>
+</tr>
+<tr>
+<td>app.callback()</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9002;&#x5408;http.createServer()&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>app.use(function)</td>
+<td>&#x6DFB;&#x52A0;&#x4E2D;&#x95F4;&#x4EF6;&#x51FD;&#x6570;&#x5230;app.middleware&#x4E2D;&#xFF08;&#x5982;&#x679C;&#x4E2D;&#x95F4;&#x4EF6;&#x51FD;&#x6570;&#x662F; generator&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x5316;&#xFF09;</td>
+</tr>
+<tr>
+<td>app.listen()</td>
+<td>http.createServer(app.callback()).listen(...) &#x7B80;&#x5316;&#x5C01;&#x88C5;</td>
 </tr>
 </tbody>
 </table>
@@ -2068,203 +2034,203 @@
 </tr>
 <tr>
 <td>&#x6765;&#x81EA; request &#x7684;&#x5C5E;&#x6027;</td>
-<td>ctx.querystring</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.querystring=</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.idempotent</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.socket</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.search</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.method</td>
-<td>Request method</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.method=</td>
-<td>&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x4E2D;&#x95F4;&#x4EF6;</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.query</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.query=</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.path</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.path=</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.url</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.origin</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.href</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.subdomains</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.protocol</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.host</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.hostname</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.URL</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
 <td>ctx.header</td>
-<td>Request header object</td>
+<td>req.headers</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.headers</td>
-<td>Request header object</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.secure</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.stale</td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.fresh</td>
-<td>-</td>
+<td>&#xFF5E;</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.ips</td>
-<td>-</td>
+<td>req.headers.X-Forwarded-For&#xFF08;&#x53EA;&#x6709;&#x5728;app.proxy&#x4E3A;true&#x7684;&#x65F6;&#x5019;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF09;</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.ip</td>
+<td>Request remote address. Supports X-Forwarded-For when app.proxy is true.(&#x6E90;&#x7801;&#x4E2D;&#x6CA1;&#x6709;)</td>
+</tr>
+<tr>
 <td>-</td>
+<td>ctx.method</td>
+<td>req.method</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.method=</td>
+<td>&#xFF5E;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.idempotent</td>
+<td>&#x68C0;&#x6D4B;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x8D85;&#x51FA;&#x4E86;[&apos;GET&apos;, &apos;HEAD&apos;, &apos;PUT&apos;, &apos;DELETE&apos;, &apos;OPTIONS&apos;, &apos;TRACE&apos;],&#x5982;&#x679C;&#x8D85;&#x51FA;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE;true</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.secure</td>
+<td>&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x7684;https&#x534F;&#x8BAE;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x8FD4;&#x56DE;true</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.fresh</td>
+<td>&#x5224;&#x65AD;&#x8BF7;&#x6C42;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x8FD4;&#x56DE; true&#xFF08;&#x5F53;&#x8BF7;&#x6C42;&#x7684; method &#x4E3A; GET&#x3001;HEAD&#xFF0C;&#x6216;&#x8005;&#x72B6;&#x6001;&#x7801;&#x4E0D;&#x5728;&#x6307;&#x5B9A;&#x533A;&#x95F4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x65E0;&#x6548;&#xFF09;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.stale</td>
+<td>!request.fresh</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.socket</td>
+<td>req.socket</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.url</td>
+<td>req.url</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.href</td>
+<td>&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x7684;&#x8BF7;&#x6C42; url</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.querystring</td>
+<td>&#x901A;&#x8FC7;&#x89E3;&#x6790; req.url &#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684; query &#x90E8;&#x5206;&#xFF08;&#x4E0D;&#x5305;&#x542B;&apos;?&apos;&#xFF09;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.querystring=</td>
+<td>&#x4FEE;&#x6539; request.url &#x4E2D;&#x7684; search &#x90E8;&#x5206;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.query</td>
+<td>Get parsed query-string</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.query=</td>
+<td>Set query-string to the given object. Note that this setter does not support nested objects</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.search</td>
+<td>&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684; search &#x90E8;&#x5206;&#xFF08;&#x5305;&#x542B;&apos;?&apos;&#xFF09;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.path</td>
+<td>&#x901A;&#x8FC7;&#x89E3;&#x6790; req.url &#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684; pathname &#x90E8;&#x5206;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.path=</td>
+<td>&#x4FEE;&#x6539; request.url &#x4E2D;&#x7684; pathname &#x90E8;&#x5206;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.protocol</td>
+<td>&#x8FD4;&#x56DE;&#x534F;&#x8BAE;&#x5934;&#xFF0C;https&#xFF0F;http&#xFF0F;req.headers.X-Forwarded-Proto</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.host</td>
+<td>&#x83B7;&#x53D6; host &#x5B57;&#x6BB5;&#xFF1F;&#x901A;&#x8FC7; req.headers.X-Forwarded-Host(app.proxy &#x4E3A; true&#x65F6;) / req.headers.host &#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.hostname</td>
+<td>&#x901A;&#x8FC7; request.host &#x6216;&#x8005; request.URL &#x83B7;&#x53D6; hostname</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.origin</td>
+<td>${this.protocol}://${this.host}</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.URL</td>
+<td>&#x7EC4;&#x5408; request.protocol&#x3001;request.host&#x3001;request.originalUrl &#x4E3A; WHATWG URL&#xFF08; &#x8FD9;&#x91CC;&#x540C;&#x65F6;&#x5C06;&#x7ED3;&#x679C;&#x8D4B;&#x7ED9;&#x4E86; request.memoizedURL &#x5C5E;&#x6027;&#xFF09;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ctx.subdomains</td>
+<td>&#x4ECE;&#x7EA7;&#x522B;&#x6700;&#x4F4E;&#x7684;&#x5B50;&#x57DF;&#x6570;&#x8D77;&#xFF0C;&#x83B7;&#x53D6;app.subdomainOffset&#x4E2A;&#x5B50;&#x57DF;</td>
 </tr>
 <tr>
 <td>&#x6765;&#x81EA; response &#x7684;&#x5C5E;&#x6027;</td>
 <td>ctx.status</td>
-<td>&#x72B6;&#x6001;&#x7801;</td>
+<td>res.statusCode</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.status=</td>
-<td>&#x72B6;&#x6001;&#x7801;</td>
+<td>&#x8BBE;&#x7F6E; res.statusCode&#xFF0C;&#x540C;&#x65F6;&#x517C;&#x987E; res.statusMessage &#x548C; response.body</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.message</td>
-<td>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;</td>
+<td>res.statusMessage / &#x7531;response.status&#x751F;&#x6210;&#x7684;message</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.message=</td>
-<td>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;</td>
+<td>~</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.body</td>
-<td>-</td>
+<td><code>response._body</code></td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.body=</td>
-<td>-</td>
+<td>~</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.length</td>
-<td>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;&#x5B57;&#x8282;&#x957F;&#x5EA6;</td>
+<td>res.getHeaders()[&apos;content-length&apos;]</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.length=</td>
-<td>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;&#x5B57;&#x8282;&#x957F;&#x5EA6;</td>
+<td>res.setHeader(&apos;Content-Length&apos;, n)</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.type</td>
-<td>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;&#x7684;&#x683C;&#x5F0F;</td>
+<td>res.getHeaders()[&apos;Content-Type&apos;]</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.type=</td>
-<td>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;&#x7684;&#x683C;&#x5F0F;</td>
+<td>res.setHeader(&apos;Content-Type&apos;, getType(type))</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.lastModified</td>
-<td>-</td>
+<td>res.getHeaders()[&apos;Last-Modified&apos;]</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.etag=</td>
-<td>-</td>
+<td>res.getHeaders()[&apos;ETag&apos;]</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.headerSent=</td>
-<td>-</td>
+<td>res.headersSent,&#x68C0;&#x67E5;&#x6D88;&#x606F;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.writable</td>
-<td>-</td>
+<td>&#x9A8C;&#x8BC1; request &#x662F;&#x5426;&#x53EF;&#x5199;</td>
 </tr>
 <tr>
 <td>&#x540E;&#x6765;&#x6DFB;&#x52A0;</td>
@@ -2330,16 +2296,6 @@
 <tbody>
 <tr>
 <td>&#x81EA;&#x8EAB;</td>
-<td>ctx.inspect()</td>
-<td>&#x540C;ctx.toJSON()</td>
-</tr>
-<tr>
-<td>-</td>
-<td>ctx.toJSON()</td>
-<td>Return JSON representation</td>
-</tr>
-<tr>
-<td>-</td>
 <td>ctx.assert(value, [status], [msg], [properties])</td>
 <td>&#x65AD;&#x8A00;&#xFF0C;&#x5931;&#x8D25;&#x7684;&#x8BDD;&#x629B;&#x51FA;&#x72B6;&#x6001;&#x7801;&#x9519;&#x8BEF;</td>
 </tr>
@@ -2356,67 +2312,67 @@
 <tr>
 <td>&#x6765;&#x81EA; request &#x7684;&#x65B9;&#x6CD5;</td>
 <td>ctx.acceptsLanguages()</td>
-<td>-</td>
+<td>Check if langs are acceptable, returning the best match when true, otherwise false</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.acceptsEncodings()</td>
-<td>-</td>
+<td>Check if encodings are acceptable, returning the best match when true, otherwise false.</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.acceptsCharsets()</td>
-<td>-</td>
+<td>Check if charsets are acceptable, returning the best match when true, otherwise false</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.accepts()</td>
-<td>-</td>
+<td>Check if the given type(s) is acceptable, returning the best match when true, otherwise false</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.get()</td>
-<td>-</td>
+<td>&#x8FD4;&#x56DE; req.headers[field]</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.is()</td>
-<td>-</td>
+<td>&#x68C0;&#x6D4B; req.headers.content-type&#x662F;&#x5426;&#x5C5E;&#x4E8E;types&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x5C5E;&#x4E8E;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;false</td>
 </tr>
 <tr>
 <td>&#x6765;&#x81EA; response &#x7684;&#x65B9;&#x6CD5;</td>
 <td>ctx.attachment()</td>
-<td>-</td>
+<td>&#x5229;&#x7528;<a href="https://github.com/jshttp/content-disposition" target="_blank">content-disposition</a>&#x6A21;&#x5757;&#xFF0C;&#x5C06;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7ED1;&#x5B9A;&#x5230;&apos;Content-Disposition&apos;&#x4E0A;</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.redirect()</td>
-<td>-</td>
+<td>Perform a [302] redirect to url</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.remove()</td>
-<td>-</td>
+<td>ctx.remove(field)</td>
+<td>res.removeHeader(field)</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.vary()</td>
-<td>-</td>
+<td>ctx.vary(field)</td>
+<td>vary(res, field),&#x5411;header&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1F;</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.set()</td>
-<td>-</td>
+<td>ctx.set(field, val)</td>
+<td>res.setHeader(field, val)</td>
 </tr>
 <tr>
 <td>-</td>
-<td>ctx.append()</td>
-<td>-</td>
+<td>ctx.append(field, val)</td>
+<td>&#x5728; resgetHeaders()[&apos;field&apos;]&#x4E0A;&#x9762;&#x6DFB;&#x52A0; val</td>
 </tr>
 <tr>
 <td>-</td>
 <td>ctx.flushHeaders()</td>
-<td>-</td>
+<td>res.flushHeaders()(&#x5237;&#x65B0;&#x8BF7;&#x6C42;&#x5934;)</td>
 </tr>
 </tbody>
 </table>
@@ -2605,14 +2561,6 @@
 <td>request.get(field)</td>
 <td>&#x8FD4;&#x56DE; req.headers[field]</td>
 </tr>
-<tr>
-<td>request.inspect()</td>
-<td>-</td>
-</tr>
-<tr>
-<td>request.toJSON()</td>
-<td>-</td>
-</tr>
 </tbody>
 </table>
 <h2 id="response">Response</h2>
@@ -2634,7 +2582,7 @@
 </tr>
 <tr>
 <td>response.headers</td>
-<td>&#x540C; response.header</td>
+<td>~</td>
 </tr>
 <tr>
 <td>response.status</td>
@@ -2662,7 +2610,7 @@
 </tr>
 <tr>
 <td>response.length</td>
-<td>response.header[&apos;content-length&apos;]</td>
+<td>res.getHeaders()[&apos;content-length&apos;]</td>
 </tr>
 <tr>
 <td>response.length=</td>
@@ -2712,7 +2660,7 @@
 <tbody>
 <tr>
 <td>response.vary(field)</td>
-<td>vary(res, field)</td>
+<td>vary(res, field),&#x5411;header&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1F;</td>
 </tr>
 <tr>
 <td>response.redirect(url, [alt])</td>
@@ -2803,7 +2751,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"koa","level":"2.1.5.3","depth":3,"next":{"title":"loopback","level":"2.1.5.4","depth":3,"path":"chapters/moudles/框架/loopback.md","ref":"chapters/moudles/框架/loopback.md","articles":[]},"previous":{"title":"ionic","level":"2.1.5.2","depth":3,"path":"chapters/moudles/框架/ionic.md","ref":"chapters/moudles/框架/ionic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/框架/koa.md","mtime":"2017-07-11T06:28:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-11T08:30:20.932Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"koa","level":"2.1.5.3","depth":3,"next":{"title":"loopback","level":"2.1.5.4","depth":3,"path":"chapters/moudles/框架/loopback.md","ref":"chapters/moudles/框架/loopback.md","articles":[]},"previous":{"title":"ionic","level":"2.1.5.2","depth":3,"path":"chapters/moudles/框架/ionic.md","ref":"chapters/moudles/框架/ionic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/框架/koa.md","mtime":"2017-07-12T02:29:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-12T02:30:49.379Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

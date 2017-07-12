@@ -2,13 +2,8 @@
 
 ## 文档教程
 
-文档                                                               | 描述
----------------------------------------------------------------- | ---------------------------------------
-[koa GitHub 生态](https://github.com/koajs)                        | -
-[官方文档](http://koajs.com/)                                        | -
-[「新手向」koa2从起步到填坑](http://www.jianshu.com/p/6b816c609669)         | 通俗易懂的介绍
-[koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)           | 包含了mysql（数据库）、koa(后端)、react(前端)的完整教程和实例
-[koa-middlewares](https://www.npmjs.com/package/koa-middlewares) | koa多个中间件的整合
+- [koa GitHub 生态](https://github.com/koajs)
+- [官方文档](http://koajs.com/)
 
 ## koa 依赖的模块系统
 
@@ -67,9 +62,9 @@ koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koaj
 预设的属性 | app.silent          | false                                | 设置为true会取消默认的错误处理程序的执行
 -     | app.keys=           | -                                    | 用于设置签名cookie密钥
 自身    | app.proxy           | false                                | when true proxy header fields will be trusted
--     | app.middleware      | []                                   | -
 -     | app.subdomainOffset | 2                                    | offset of .subdomains to ignore [2]
--     | app.env             | process.env.NODE_ENV ／ 'development' | -
+-     | app.middleware      | []                                   | 中间件容器
+-     | app.env             | process.env.NODE_ENV ／ 'development' | 当前的环境（开发／测试...）
 -     | app.context         | -                                    | ctx的原型(不能直接调用，否则会报错),可以用来为应用添加全局的属性和方法
 -     | app.request         | -                                    | 直接打印'undefined'
 -     | app.response        | -                                    | 直接打印'undefined'
@@ -78,13 +73,11 @@ koa 中间件（源码没有依赖） | [koa-bodyparser](https://github.com/koaj
 
 方法                  | more
 ------------------- | --------------------------------------------------------------------------------------------
-app.listen()        | http.createServer(app.callback()).listen(...) 简化封装
-app.toJSON()        | 只返回包含了app的['subdomainOffset','proxy','env']等属性的一个对象
-app.inspect()       | 同 app.toJSON()
-app.use(function)   | 添加中间件函数到app.middleware中（如果中间件函数是 generator函数，会自动转化）
-app.callback()      | 返回一个适合http.createServer()的回调函数
 app.createContext() | 初始化一个新的context（这里的request、response等新创建的对象没有返回，有什么用？）
 app.onerror()       | app 的 error 事件上默认的错误处理程序(忽略 404 == err.status 和 err.expose 为true到情况)，其他错误会打印出来,这里的错误不能返回给客户端
+app.callback()      | 返回一个适合http.createServer()的回调函数
+app.use(function)   | 添加中间件函数到app.middleware中（如果中间件函数是 generator函数，会自动转化）
+app.listen()        | http.createServer(app.callback()).listen(...) 简化封装
 
 ### 事件列表
 
@@ -119,46 +112,46 @@ response.request | request
 来源              | 属性               | more
 --------------- | ---------------- | ------------------------------------------------------------------------------------------------------
 预设的属性           | ctx.respond      | 默认调用respond(ctx)方法，此方法为返回客户端内容前的最后一步。设置为false可以绕过koa内置的response处理方法，通过最后一步app.use()声明自己的respond(ctx)方法
-来自 request 的属性  | ctx.querystring  | -
--               | ctx.querystring= | -
--               | ctx.idempotent   | -
--               | ctx.socket       | -
--               | ctx.search       | -
--               | ctx.method       | Request method
--               | ctx.method=      | 设置请求方法，常用于实现中间件
--               | ctx.query        | -
--               | ctx.query=       | -
--               | ctx.path         | -
--               | ctx.path=        | -
--               | ctx.url          | -
--               | ctx.origin       | -
--               | ctx.href         | -
--               | ctx.subdomains   | -
--               | ctx.protocol     | -
--               | ctx.host         | -
--               | ctx.hostname     | -
--               | ctx.URL          | -
--               | ctx.header       | Request header object
--               | ctx.headers      | Request header object
--               | ctx.secure       | -
--               | ctx.stale        | -
--               | ctx.fresh        | -
--               | ctx.ips          | -
--               | ctx.ip           | -
-来自 response 的属性 | ctx.status       | 状态码
--               | ctx.status=      | 状态码
--               | ctx.message      | 返回内容
--               | ctx.message=     | 返回内容
--               | ctx.body         | -
--               | ctx.body=        | -
--               | ctx.length       | 返回内容字节长度
--               | ctx.length=      | 返回内容字节长度
--               | ctx.type         | 返回内容的格式
--               | ctx.type=        | 返回内容的格式
--               | ctx.lastModified | -
--               | ctx.etag=        | -
--               | ctx.headerSent=  | -
--               | ctx.writable     | -
+来自 request 的属性  | ctx.header       | req.headers
+-               | ctx.headers      | ～
+-               | ctx.ips          | req.headers.X-Forwarded-For（只有在app.proxy为true的时候有返回值）
+-               | ctx.ip           | Request remote address. Supports X-Forwarded-For when app.proxy is true.(源码中没有)
+-               | ctx.method       | req.method
+-               | ctx.method=      | ～
+-               | ctx.idempotent   | 检测请求方法是否超出了['GET', 'HEAD', 'PUT', 'DELETE', 'OPTIONS', 'TRACE'],如果超出了，返回true
+-               | ctx.secure       | 检测是否使用的https协议，如果是返回true
+-               | ctx.fresh        | 判断请求的内容是否需要更新，不需要更新返回 true（当请求的 method 为 GET、HEAD，或者状态码不在指定区间的时候，此方法无效）
+-               | ctx.stale        | !request.fresh
+-               | ctx.socket       | req.socket
+-               | ctx.url          | req.url
+-               | ctx.href         | 获取完整的请求 url
+-               | ctx.querystring  | 通过解析 req.url 获取请求的 query 部分（不包含'?'）
+-               | ctx.querystring= | 修改 request.url 中的 search 部分
+-               | ctx.query        | Get parsed query-string
+-               | ctx.query=       | Set query-string to the given object. Note that this setter does not support nested objects
+-               | ctx.search       | 获取请求的 search 部分（包含'?'）
+-               | ctx.path         | 通过解析 req.url 获取请求的 pathname 部分
+-               | ctx.path=        | 修改 request.url 中的 pathname 部分
+-               | ctx.protocol     | 返回协议头，https／http／req.headers.X-Forwarded-Proto
+-               | ctx.host         | 获取 host 字段？通过 req.headers.X-Forwarded-Host(app.proxy 为 true时) / req.headers.host 获取
+-               | ctx.hostname     | 通过 request.host 或者 request.URL 获取 hostname
+-               | ctx.origin       | ${this.protocol}://${this.host}
+-               | ctx.URL          | 组合 request.protocol、request.host、request.originalUrl 为 WHATWG URL（ 这里同时将结果赋给了 request.memoizedURL 属性）
+-               | ctx.subdomains   | 从级别最低的子域数起，获取app.subdomainOffset个子域
+来自 response 的属性 | ctx.status       | res.statusCode
+-               | ctx.status=      | 设置 res.statusCode，同时兼顾 res.statusMessage 和 response.body
+-               | ctx.message      | res.statusMessage / 由response.status生成的message
+-               | ctx.message=     | ~
+-               | ctx.body         | `response._body`
+-               | ctx.body=        | ~
+-               | ctx.length       | res.getHeaders()['content-length']
+-               | ctx.length=      | res.setHeader('Content-Length', n)
+-               | ctx.type         | res.getHeaders()['Content-Type']
+-               | ctx.type=        | res.setHeader('Content-Type', getType(type))
+-               | ctx.lastModified | res.getHeaders()['Last-Modified']
+-               | ctx.etag=        | res.getHeaders()['ETag']
+-               | ctx.headerSent=  | res.headersSent,检查消息是否已经发送
+-               | ctx.writable     | 验证 request 是否可写
 后来添加            | -                | -
 -               | ctx.app          | 应用实例
 -               | ctx.req          | Node's request object
@@ -173,25 +166,23 @@ response.request | request
 ### 方法列表
 
 来源              | 方法                                               | more
---------------- | ------------------------------------------------ | --------------------------
-自身              | ctx.inspect()                                    | 同ctx.toJSON()
--               | ctx.toJSON()                                     | Return JSON representation
--               | ctx.assert(value, [status], [msg], [properties]) | 断言，失败的话抛出状态码错误
+--------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------
+自身              | ctx.assert(value, [status], [msg], [properties]) | 断言，失败的话抛出状态码错误
 -               | ctx.throw([status], [msg], [properties])         | 抛出错误，默认500
 -               | ctx.onerror(err)                                 | 请求内部 error 事件错误处理程序
-来自 request 的方法  | ctx.acceptsLanguages()                           | -
--               | ctx.acceptsEncodings()                           | -
--               | ctx.acceptsCharsets()                            | -
--               | ctx.accepts()                                    | -
--               | ctx.get()                                        | -
--               | ctx.is()                                         | -
-来自 response 的方法 | ctx.attachment()                                 | -
--               | ctx.redirect()                                   | -
--               | ctx.remove()                                     | -
--               | ctx.vary()                                       | -
--               | ctx.set()                                        | -
--               | ctx.append()                                     | -
--               | ctx.flushHeaders()                               | -
+来自 request 的方法  | ctx.acceptsLanguages()                           | Check if langs are acceptable, returning the best match when true, otherwise false
+-               | ctx.acceptsEncodings()                           | Check if encodings are acceptable, returning the best match when true, otherwise false.
+-               | ctx.acceptsCharsets()                            | Check if charsets are acceptable, returning the best match when true, otherwise false
+-               | ctx.accepts()                                    | Check if the given type(s) is acceptable, returning the best match when true, otherwise false
+-               | ctx.get()                                        | 返回 req.headers[field]
+-               | ctx.is()                                         | 检测 req.headers.content-type是否属于types中的一个，如果属于，返回对应的内容，否则返回false
+来自 response 的方法 | ctx.attachment()                                 | 利用[content-disposition](https://github.com/jshttp/content-disposition)模块，将某个文件绑定到'Content-Disposition'上
+-               | ctx.redirect()                                   | Perform a [302] redirect to url
+-               | ctx.remove(field)                                | res.removeHeader(field)
+-               | ctx.vary(field)                                  | vary(res, field),向header添加字段？
+-               | ctx.set(field, val)                              | res.setHeader(field, val)
+-               | ctx.append(field, val)                           | 在 resgetHeaders()['field']上面添加 val
+-               | ctx.flushHeaders()                               | res.flushHeaders()(刷新请求头)
 
 ## Request
 
@@ -245,8 +236,6 @@ request.acceptsCharsets(...args)  | Check if charsets are acceptable, returning 
 request.acceptsLanguages(...args) | Check if langs are acceptable, returning the best match when true, otherwise false.
 request.is(types)                 | 检测 req.headers.content-type是否属于types中的一个，如果属于，返回对应的内容，否则返回false
 request.get(field)                | 返回 req.headers[field]
-request.inspect()                 | -
-request.toJSON()                  | -
 
 ## Response
 
@@ -254,14 +243,14 @@ request.toJSON()                  | -
 ---------------------- | --------------------------------------------------------
 response.socket        | req.socket
 response.header        | res.getHeaders()
-response.headers       | 同 response.header
+response.headers       | ~
 response.status        | res.statusCode
 response.status=       | 设置 res.statusCode，同时兼顾 res.statusMessage 和 response.body
 response.message       | res.statusMessage / 由response.status生成的message
 response.message=      | 设置 res.statusMessage
 response.body          | `response._body`
 response.body=         | Set response body to one of the following:
-response.length        | response.header['content-length']
+response.length        | res.getHeaders()['content-length']
 response.length=       | res.setHeader('Content-Length', n)
 response.headerSent    | res.headersSent,检查消息是否已经发送
 response.lastModified  | res.getHeaders()['Last-Modified']
@@ -274,7 +263,7 @@ response.writable      | 验证 request 是否可写
 
 方法                            | more
 ----------------------------- | -------------------------------------------------------------------------------------------------------
-response.vary(field)          | vary(res, field)
+response.vary(field)          | vary(res, field),向header添加字段？
 response.redirect(url, [alt]) | Perform a [302] redirect to url
 response.attachment(filename) | 利用[content-disposition](https://github.com/jshttp/content-disposition)模块，将某个文件绑定到'Content-Disposition'上
 response.is(types...)         | 检测 res.getHeaders()['content-type']是否属于types中的一个，如果属于，返回对应的内容，否则返回false
