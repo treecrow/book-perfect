@@ -19,10 +19,7 @@
     - [async](chapters/moudles/常见工具库/async.md)
     - [cheerio](chapters/moudles/常见工具库/cheerio.md)
     - [co](chapters/moudles/常见工具库/co.md)
-    - [CodeMirror](chapters/moudles/常见工具库/CodeMirror.md)
-    - [highlight.js](chapters/moudles/常见工具库/highlight.js.md)
     - [jquery](chapters/moudles/常见工具库/jquery.md)
-    - [marked](chapters/moudles/常见工具库/marked.md)
     - [superagent](chapters/moudles/常见工具库/superagent.md)
 
   - [调试](chapters/moudles/调试/README.md)
@@ -47,6 +44,23 @@
     - [react](chapters/moudles/框架/react.md)
     - [vue](chapters/moudles/框架/vue.md)
 
+  - [模版渲染](chapters/moudles/模版渲染/README.md)
+
+    - [CodeMirror](chapters/moudles/模版渲染/CodeMirror.md)
+    - [consolidate](chapters/moudles/模版渲染/consolidate.md)
+    - [escape-html](chapters/moudles/模版渲染/escape-html.md)
+    - [gitbook](chapters/moudles/模版渲染/gitbook.md)
+    - [highlight.js](chapters/moudles/模版渲染/highlight.js.md)
+    - [marked](chapters/moudles/模版渲染/marked.md)
+
+  - [全局控制](chapters/moudles/全局控制/README.md)
+
+    - [forever](chapters/moudles/全局控制/forever.md)
+    - [nodemon](chapters/moudles/全局控制/nodemon.md)
+    - [opener](chapters/moudles/全局控制/opener.md)
+    - [rimraf](chapters/moudles/全局控制/rimraf.md)
+    - [standard](chapters/moudles/全局控制/standard.md)
+
   - [通用小工具](chapters/moudles/通用小工具/README.md)
 
     - [delegates](chapters/moudles/通用小工具/delegates.md)
@@ -55,7 +69,6 @@
 
   - [未分类](chapters/moudles/未分类/README.md)
 
-    - [escape-html](chapters/moudles/未分类/escape-html.md)
     - [matcha](chapters/moudles/未分类/matcha.md)
     - [node-formidable](chapters/moudles/未分类/node-formidable.md)
     - [node-geohash](chapters/moudles/未分类/node-geohash.md)

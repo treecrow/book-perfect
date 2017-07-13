@@ -3,24 +3,24 @@
 ## [package.json字段全解](http://blog.csdn.net/woxueliuyun/article/details/39294375)
 
 字段                   | more
--------------------- | ---------------------------------------------------------------------------
-name                 | 模块名
-version              | 模块版本号
-repository           | 可选字段。用于指示代码存放的位置
-description          | 模块描述
-keywords             | 模块关键字
-dependencies         | 可选字段，指示当前包所依赖的其他包
+-------------------- | ----------------------------------------------------------------------------------
+name                 | 包名
+version              | 包的版本号
+description          | 包的描述
+homepage             | 包的官网 url
+author               | 包的作者姓名
+contributors         | 包的其他贡献者姓名
+dependencies         | 可选字段，依赖包列表
+repository           | 可选字段。包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上
+main                 | 可选字段。 main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js
+keywords             | 关键字
 devDependencies      | 可选字段。如果只需要下载使用某些模块，而不下载这些模块的测试和文档框架，放在这个下面比较不错
 peerDependencies     | 可选字段。兼容性依赖。如果你的包是插件，适合这种方式
 bundledDependencies  | 可选字段。发布包时同时打包的其他依赖
 optionalDependencies | 可选字段。如果你想在某些依赖即使没有找到，或则安装失败的情况下，npm都继续执行。那么这些依赖适合放在这里
 license              | 可选字段
-homepage             | 模块的主页
 bugs                 | 可选字段，问题追踪系统的URL或邮箱地址
-author               | 模块作者
-contributors         | 模块的贡献者
 files                | 可选字段，项目包含的一组文件。如果是文件夹，文件夹下的文件也会被包含
-main                 | 可选字段。这个字段的值是你程序主入口模块的ID。如果其他用户需要你的包，当用户调用require()方法时，返回的就是这个模块的导出（exports）
 bin                  | 可选字段。很多的包都会有执行文件需要安装到PATH中去
 directories          | 用于指示包的目录结构
 directories.lib      | 指示库文件的位置
