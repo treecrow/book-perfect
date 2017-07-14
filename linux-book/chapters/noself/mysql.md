@@ -1,12 +1,18 @@
 # mysql
 
-- 安装
+## 相关文档
+
+- [记录使用Homebrew安装Mysql全过程](http://blog.csdn.net/lkxlaz/article/details/54580735)
+- [MySQL安全配置向导mysql_secure_installation详解](http://www.jb51.net/article/47727.htm)
+- [Mysql命令大全](http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html)
+
+## 安装
 
 ```
 brew install mysql
 ```
 
-- 提高mysql库的安全
+## 提高mysql库的安全
 
 ```
 mysql_secure_installation
@@ -72,9 +78,3 @@ rename table 原表名 to 新表名                                           | 
 - 备份数据库
 
 > 略
-
-## 相关文档
-
-- [记录使用Homebrew安装Mysql全过程](http://blog.csdn.net/lkxlaz/article/details/54580735)
-- [MySQL安全配置向导mysql_secure_installation详解](http://www.jb51.net/article/47727.htm)
-- [Mysql命令大全](http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html)
