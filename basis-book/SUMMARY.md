@@ -4,6 +4,15 @@
 
 --------------------------------------------------------------------------------
 
+- [图解http](chapters/图解http/README.md)
+
+  - [Cookie](chapters/图解http/Cookie.md)
+  - [HTTP 报文](chapters/图解http/HTTP 报文.md)
+  - [HTTP 方法](chapters/图解http/HTTP 方法.md)
+  - [HTTP 状态码](chapters/图解http/HTTP 状态码.md)
+  - [TCP.IP](chapters/图解http/TCP.IP.md)
+  - [URI](chapters/图解http/URI.md)
+
 - [http](chapters/http/README.md)
 
   - [请求方法](chapters/http/请求方法.md)

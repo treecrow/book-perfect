@@ -4,10 +4,6 @@
 
 字段                  | 解释                                                 | 示例
 ------------------- | -------------------------------------------------- | -------------------------------------------------------
-Accept              | 指定客户端能够接收的内容类型                                     | Accept: text/plain, text/html
-Accept-Charset      | 浏览器可以接受的字符编码集。                                     | Accept-Charset: iso-8859-5
-Accept-Encoding     | -                                                  | -
-Accept-Language     | -                                                  | -
 DontTrackMeHere     | 指定浏览器可以支持的web服务器返回内容压缩编码类型。                        | DontTrackMeHere: compress, gzip
 Accept-Language     | 浏览器可接受的语言                                          | Accept-Language: en,zh
 Accept-Ranges       | 可以请求网页实体的一个或者多个子范围字段                               | Accept-Ranges: bytes
@@ -29,7 +25,6 @@ If-Unmodified-Since | 只在实体在指定时间之后未被修改才请求成�
 Max-Forwards        | 限制信息通过代理和网关传送的时间                                   | Max-Forwards: 10
 Pragma              | 用来包含实现特定的指令                                        | Pragma: no-cache
 Proxy-Authorization | 连接到代理的授权证书                                         | Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
-Range               | 只请求实体的一部分，指定范围                                     | Range: bytes=500-999
 Referer             | 先前网页的地址，当前请求网页紧随其后,即来路                             | Referer: www.leixuesong.cn
 TE                  | 客户端愿意接受的传输编码，并通知服务器接受接受尾加头信息                       | TE: trailers,deflate;q=0.5
 Upgrade             | 向服务器指定某种传输协议以便服务器进行转换（如果支持）                        | Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11
@@ -53,7 +48,6 @@ Content-Language      | 响应体的语言                                      
 Content-Length        | 响应体的长度                                         | Content-Length: 348
 Content-Location      | 请求资源可替代的备用的另一地址                                | Content-Location: /index.htm
 Content-MD5           | 返回资源的MD5校验值                                    | Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==
-Content-Range         | 在整个返回体中本部分的字节位置                                | Content-Range: bytes 21010-47021/47022
 Content-Type          | 返回内容的MIME类型                                    | Content-Type: text/html; charset=utf-8
 Date                  | 原始服务器消息发出的时间                                   | Date: Tue, 15 Nov 2010 08:12:31 GMT
 ETag                  | 请求变量的实体标签的当前值(用于检测内容是否改变)                      | ETag: "737060cd8c284d8af7ad3082f209582d"
