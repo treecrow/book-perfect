@@ -4,15 +4,6 @@
 
 --------------------------------------------------------------------------------
 
-- [http](chapters/http/README.md)
-
-  - [请求方法](chapters/http/请求方法.md)
-  - [网络过程](chapters/http/网络过程.md)
-  - [状态码](chapters/http/状态码.md)
-  - [DNS](chapters/http/DNS.md)
-  - [Header](chapters/http/Header.md)
-  - [URL](chapters/http/URL.md)
-
 - [图解http](chapters/图解http/README.md)
 
   - [Cookie](chapters/图解http/Cookie.md)
@@ -21,6 +12,14 @@
   - [HTTP 状态码](chapters/图解http/HTTP 状态码.md)
   - [TCP.IP](chapters/图解http/TCP.IP.md)
   - [URI](chapters/图解http/URI.md)
+
+- [http](chapters/http/README.md)
+
+  - [请求方法](chapters/http/请求方法.md)
+  - [网络过程](chapters/http/网络过程.md)
+  - [状态码](chapters/http/状态码.md)
+  - [DNS](chapters/http/DNS.md)
+  - [URL](chapters/http/URL.md)
 
 - [mac](chapters/mac/README.md)
 
@@ -33,6 +32,9 @@
 - [其他系统](chapters/其他系统.md)
 
 - [chrome](chapters/chrome.md)
+
 - [cookie & session](chapters/cookie & session.md)
+
 - [mongodb](chapters/mongodb.md)
+
 - [mysql](chapters/mysql.md)
