@@ -6,20 +6,14 @@
 
 - [图解http](chapters/图解http/README.md)
 
+  - [通信数据转发设备](chapters/图解http/通信数据转发设备.md)
   - [Cookie](chapters/图解http/Cookie.md)
   - [HTTP 报文](chapters/图解http/HTTP 报文.md)
   - [HTTP 方法](chapters/图解http/HTTP 方法.md)
   - [HTTP 状态码](chapters/图解http/HTTP 状态码.md)
+  - [HTTP 请求过程完整解读](chapters/图解http/HTTP 请求过程完整解读.md)
   - [TCP.IP](chapters/图解http/TCP.IP.md)
   - [URI](chapters/图解http/URI.md)
-
-- [http](chapters/http/README.md)
-
-  - [请求方法](chapters/http/请求方法.md)
-  - [网络过程](chapters/http/网络过程.md)
-  - [状态码](chapters/http/状态码.md)
-  - [DNS](chapters/http/DNS.md)
-  - [URL](chapters/http/URL.md)
 
 - [mac](chapters/mac/README.md)
 
