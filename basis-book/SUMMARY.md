@@ -6,14 +6,17 @@
 
 - [图解http](chapters/图解http/README.md)
 
+  - [访问用户身份的认证](chapters/图解http/访问用户身份的认证.md)
   - [通信数据转发设备](chapters/图解http/通信数据转发设备.md)
-  - [Cookie](chapters/图解http/Cookie.md)
   - [HTTP 报文](chapters/图解http/HTTP 报文.md)
   - [HTTP 方法](chapters/图解http/HTTP 方法.md)
-  - [HTTP 状态码](chapters/图解http/HTTP 状态码.md)
   - [HTTP 请求过程完整解读](chapters/图解http/HTTP 请求过程完整解读.md)
+  - [HTTP 状态码](chapters/图解http/HTTP 状态码.md)
+  - [HTTPS](chapters/图解http/HTTPS.md)
   - [TCP.IP](chapters/图解http/TCP.IP.md)
+  - [token混账东西](chapters/图解http/token混账东西.md)
   - [URI](chapters/图解http/URI.md)
+  - [WebSocket](chapters/图解http/WebSocket.md)
 
 - [mac](chapters/mac/README.md)
 
@@ -26,9 +29,5 @@
 - [其他系统](chapters/其他系统.md)
 
 - [chrome](chapters/chrome.md)
-
-- [cookie & session](chapters/cookie & session.md)
-
-- [mongodb](chapters/mongodb.md)
 
 - [mysql](chapters/mysql.md)

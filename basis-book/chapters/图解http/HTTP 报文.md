@@ -82,13 +82,17 @@ Upgrade             | -
 
 ## 其他首部字段
 
-分类     | 字段                  | more
------- | ------------------- | ------------------------------------------
-请求首部字段 | Cookie              | HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器
-响应首部字段 | Set-Cookie          | 通知客户端保存 cookie
-实体首部字段 | Content-Disposition | 激活文件下载对话框
-未分类    | Keep-Alive          | 控制 TCP 断开时间
--      | X-Frame-Options     | -
--      | X-XSS-Protection    | -
--      | DNT                 | -
--      | P3P                 | -
+分类          | 字段                     | more
+----------- | ---------------------- | ------------------------------------------
+请求首部字段      | Cookie                 | HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器
+响应首部字段      | Set-Cookie             | 通知客户端保存 cookie
+实体首部字段      | Content-Disposition    | 激活文件下载对话框
+WebSocket通信 | Sec-WebSocket-Key      | 记录着握手过程中必不可少的健值
+-           | Sec-WebSocket-Protocol | 记录使用的子协议
+-           | Sec-WebSocket-Version  | -
+-           | Sec-WebSocket-Accept   | 由握手请求中的 Sec-WebSocket-Key 的字段值生成
+未分类         | Keep-Alive             | 控制 TCP 断开时间
+-           | X-Frame-Options        | -
+-           | X-XSS-Protection       | -
+-           | DNT                    | -
+-           | P3P                    | -
