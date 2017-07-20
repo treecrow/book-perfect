@@ -43,7 +43,37 @@ brew install mysql
 mysql_secure_installation
 ```
 
-## Mysql 基本了解
+### 使用安装包安装
+
+1. 安装过程中保存弹出框中的密码（它是你mysql root账号的密码）
+2. 安装成功->进入系统偏好设置->点击mysql->开启mysql服务
+3. 进入"/usr/local/mysql/bin",查看此目录下是否有mysql
+4. 在 "~/.bash_profile" 文件中添加 `PATH=/usr/local/mysql/bin:$PATH`
+5. 命令行执行 `source ~/.bash_profile`,之后就可以在终端使用mysql系列命令了
+
+## 命令列表
+
+命令                                            | 含义
+--------------------------------------------- | -------------------------
+mysql --version                               | 显示版本号
+mysql -h 主机地址 -u 用户名 －p                       | 登陆
+mysql -D 所选择的数据库名 -h 主机名 -u 用户名 -p            | 在登录数据库时指定要操作的数据库
+mysql -D 所选择的数据库名 -u 用户名 -p < createtable.sql | 执行 createtable.sql 文件内的语句
+mysql -u root －p                              | 登陆
+mysqladmin -u用户名 -p旧密码 password 新密码           | 修改密码(测试无效)
+brew services start mysql                     | 带着后台服务启动mysql
+mysql.server start                            | 启动mysql
+mysql.server restart                          | 重新启动mysql
+mysqld stop                                   | -
+
+## Mysql 知识点
+
+### 参考的相关文档
+
+文档                                                                           | more
+---------------------------------------------------------------------------- | -------
+[21 分钟 MySQL 入门教程](http://wiki.jikexueyuan.com/project/mysql-21-minutes/)    | 精简，通俗易懂
+[Mysql命令大全](http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html) | -
 
 ### MySQL 脚本的基本组成
 
@@ -77,9 +107,9 @@ mysql_secure_installation
 -     | -   | blob        | -
 -     | -   | mediumblob  | -
 -     | -   | longblob    | -
-日期／时间 | -   | date        | 年-月-日（3个字节）
+日期／时间 | -   | date        | 年-月-日（3个字节）,精确到天
 -     | -   | time        | 时分秒（3个字节）
--     | -   | datetime    | 年月日时分秒（8个字节）
+-     | -   | datetime    | 年月日时分秒（8个字节）(适合设置创建的值)
 -     | -   | timestamp   | 4个字节
 -     | -   | year        | 年（1个字节）
 
@@ -124,40 +154,17 @@ sum(字段名)                    | 求和
 avg(字段名)                    | 平均数
 max(字段名)                    | 最大值
 min(字段名)                    | 最小值
-
-## mysql 命令 && 语句
-
-### 参考的相关文档
-
-文档                                                                           | more
----------------------------------------------------------------------------- | -------
-[21 分钟 MySQL 入门教程](http://wiki.jikexueyuan.com/project/mysql-21-minutes/)    | 精简，通俗易懂
-[Mysql命令大全](http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html) | -
-
-### 命令列表
-
-命令                                            | 含义
---------------------------------------------- | -------------------------
-mysql --version                               | 显示版本号
-mysql -h 主机地址 -u 用户名 －p                       | 登陆
-mysql -D 所选择的数据库名 -h 主机名 -u 用户名 -p            | 在登录数据库时指定要操作的数据库
-mysql -D 所选择的数据库名 -u 用户名 -p < createtable.sql | 执行 createtable.sql 文件内的语句
-mysql -u root －p                              | 登陆
-mysqladmin -u 用户名 -p 旧密码 新密码                  | 修改密码
-brew services start mysql                     | 带着后台服务启动mysql
-mysql.server start                            | 启动mysql
-mysql.server restart                          | 重新启动mysql
-mysqld stop                                   | -
+inet_aton(ip)               | 将ip转化为数字
+inet_ntoa(num)              | 将数字转化为ip
 
 ### 语句列表
 
 - database
 
 语句                           | 作用
----------------------------- | --------------------------
+---------------------------- | -------------------
 show databases;              | 显示数据库
 create database 数据库名 [其他选项]; | 创建数据库
-show create database 数据库名;   | 查看真实的命令（创建数据库时有一些默认的命令隐藏了）
 drop database 数据库名;          | 删除整个数据库
 use 数据库名;                    | 选择要操作的数据库（操作之前必须选择）
 
@@ -206,14 +213,14 @@ select ((4 * 4) / 10 ) + 25     | 当计算器用
 
 - 其他
 
-语句              | 作用
---------------- | ----------------------------------------------------------
-\s;             | 查看服务器的基本信息
-set names utf8; | 设置mysql客户端连接到数据库时的字符集
-desc sql语句;     | 检测sql语句执行过程（可用于优化表结构）(示例：select 列名称 from 表名称 where id=3\G)
-？ sql命令         | 查看对应sql命令的用法
-exit;           | 退出
-\q              | 退出
+语句                                                | 作用
+------------------------------------------------- | ----------------------------------------------------------
+set names utf8;                                   | 设置mysql客户端连接到数据库时的字符集
+set password for 用户名@localhost = password('新密码'); | 修改密码
+desc sql语句;                                       | 检测sql语句执行过程（可用于优化表结构）(示例：select 列名称 from 表名称 where id=3\G)
+？ sql命令                                           | 查看对应sql命令的用法
+\s;                                               | 查看服务器的基本信息
+\q                                                | 退出
 
 ## Node操作数据库流程
 
