@@ -929,12 +929,8 @@ mysql_secure_installation
 </thead>
 <tbody>
 <tr>
-<td>concat(f_name, &quot; &quot;, l_name)</td>
-<td>&#x4E32;&#x63A5;&#x5B57;&#x7B26;&#x4E32;(...)</td>
-</tr>
-<tr>
-<td>rand()</td>
-<td>&#x968F;&#x673A;&#x6570;</td>
+<td>version()</td>
+<td>&#x663E;&#x793A;MYSQL&#x7684;&#x7248;&#x672C;</td>
 </tr>
 <tr>
 <td><code>count(*)</code> / count(&#x5B57;&#x6BB5;&#x540D;)</td>
@@ -957,12 +953,48 @@ mysql_secure_installation
 <td>&#x6700;&#x5C0F;&#x503C;</td>
 </tr>
 <tr>
+<td>rand()</td>
+<td>&#x968F;&#x673A;&#x6570;</td>
+</tr>
+<tr>
+<td>now()</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x65F6;&#x95F4;(&#x5E74;&#x6708;&#x65E5;&#x65F6;&#x5206;&#x79D2;)</td>
+</tr>
+<tr>
+<td>current_date</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#xFF08;&#x5E74;&#x6708;&#x65E5;&#xFF09;</td>
+</tr>
+<tr>
+<td>year(current_date)</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x5E74;&#x4EFD;(&#x5E74;)</td>
+</tr>
+<tr>
+<td>month(current_date)</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x6708;&#x4EFD;(&#x6708;)</td>
+</tr>
+<tr>
+<td>dayofmonth(current_date)</td>
+<td>&#x663E;&#x793A;&#x5F53;&#x6708;&#x65E5;&#x671F;(&#x65E5;)</td>
+</tr>
+<tr>
+<td>&quot;welecome to my blog!&quot;</td>
+<td>&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>concat(f_name, &quot; &quot;, l_name)</td>
+<td>&#x4E32;&#x63A5;&#x5B57;&#x7B26;&#x4E32;(...)</td>
+</tr>
+<tr>
 <td>inet_aton(ip)</td>
 <td>&#x5C06;ip&#x8F6C;&#x5316;&#x4E3A;&#x6570;&#x5B57;</td>
 </tr>
 <tr>
 <td>inet_ntoa(num)</td>
 <td>&#x5C06;&#x6570;&#x5B57;&#x8F6C;&#x5316;&#x4E3A;ip</td>
+</tr>
+<tr>
+<td>((4 * 4) / 10 ) + 25</td>
+<td>&#x5F53;&#x8BA1;&#x7B97;&#x5668;&#x7528;</td>
 </tr>
 </tbody>
 </table>
@@ -1024,20 +1056,20 @@ mysql_secure_installation
 <td>&#x67E5;&#x770B;&#x8868;&#x7ED3;&#x6784;</td>
 </tr>
 <tr>
-<td>show index from &#x8868;&#x540D;</td>
-<td>&#x67E5;&#x770B;&#x8868;&#x7684;&#x7D22;&#x5F15;</td>
+<td>rename table &#x8868;&#x540D; to &#x65B0;&#x8868;&#x540D;;</td>
+<td>&#x91CD;&#x547D;&#x540D;&#x8868;</td>
 </tr>
 <tr>
 <td>alter table &#x8868;&#x540D; rename &#x65B0;&#x8868;&#x540D;;</td>
 <td>&#x91CD;&#x547D;&#x540D;&#x8868;</td>
 </tr>
 <tr>
-<td>rename table &#x8868;&#x540D; to &#x65B0;&#x8868;&#x540D;;</td>
-<td>&#x91CD;&#x547D;&#x540D;&#x8868;</td>
-</tr>
-<tr>
 <td>alter table &#x8868;&#x540D; add &#x5217;&#x540D; &#x5217;&#x6570;&#x636E;&#x7C7B;&#x578B; [after &#x63D2;&#x5165;&#x4F4D;&#x7F6E;];</td>
 <td>&#x589E;&#x52A0;&#x5B57;&#x6BB5;</td>
+</tr>
+<tr>
+<td>alter table &#x8868;&#x540D; drop &#x5217;&#x540D;&#x79F0;;</td>
+<td>&#x5220;&#x9664;&#x5B57;&#x6BB5;</td>
 </tr>
 <tr>
 <td>alter table &#x8868;&#x540D; change &#x5217;&#x540D;&#x79F0; &#x65B0;&#x5217;&#x540D; &#x65B0;&#x6570;&#x636E;&#x7C7B;&#x578B;;</td>
@@ -1048,16 +1080,16 @@ mysql_secure_installation
 <td>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;</td>
 </tr>
 <tr>
-<td>alter table &#x8868;&#x540D; drop &#x5217;&#x540D;&#x79F0;;</td>
-<td>&#x5220;&#x9664;&#x5B57;&#x6BB5;</td>
-</tr>
-<tr>
-<td>alter table &#x8868;&#x540D; drop index &#x7D22;&#x5F15;&#x540D;;</td>
-<td>&#x5220;&#x9664;&#x7D22;&#x5F15;</td>
+<td>show index from &#x8868;&#x540D;</td>
+<td>&#x67E5;&#x770B;&#x8868;&#x7684;&#x7D22;&#x5F15;</td>
 </tr>
 <tr>
 <td>alter table &#x8868;&#x540D; add index &#x7D22;&#x5F15;&#x540D;(&#x5BF9;&#x5E94;&#x5B57;&#x6BB5;);</td>
 <td>&#x6DFB;&#x52A0;&#x7D22;&#x5F15;</td>
+</tr>
+<tr>
+<td>alter table &#x8868;&#x540D; drop index &#x7D22;&#x5F15;&#x540D;;</td>
+<td>&#x5220;&#x9664;&#x7D22;&#x5F15;</td>
 </tr>
 <tr>
 <td>insert into &#x8868;&#x540D; [(&#x5217;&#x540D;1, &#x5217;&#x540D;2, &#x5217;&#x540D;3, ...)] values (&#x503C;1, &#x503C;2, &#x503C;3, ...);</td>
@@ -1102,55 +1134,6 @@ mysql_secure_installation
 <tr>
 <td>select * from MyClass order by id limit 0,2;</td>
 <td>&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x636E;(&#x67E5;&#x8BE2;&#x524D;&#x51E0;&#x884C;&#x6570;&#x636E;)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>select</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>&#x8BED;&#x53E5;</th>
-<th>&#x4F5C;&#x7528;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>select version()</td>
-<td>&#x663E;&#x793A;MYSQL&#x7684;&#x7248;&#x672C;</td>
-</tr>
-<tr>
-<td>select now()</td>
-<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x65F6;&#x95F4;</td>
-</tr>
-<tr>
-<td>select data()</td>
-<td>&#x663E;&#x793A;&#x5BF9;&#x5E94;&#x7684;&#x65E5;&#x671F;&#xFF08;&#x5E74;-&#x6708;-&#x65E5;&#xFF09;</td>
-</tr>
-<tr>
-<td>select year()</td>
-<td>&#x663E;&#x793A;&#x5BF9;&#x5E94;&#x7684;&#x5E74;&#x4EFD;&#xFF08;&#x5E74;&#xFF09;</td>
-</tr>
-<tr>
-<td>SELECT YEAR(CURRENT_DATE)</td>
-<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x5E74;&#x4EFD;</td>
-</tr>
-<tr>
-<td>SELECT MONTH(CURRENT_DATE)</td>
-<td>&#x663E;&#x793A;&#x5F53;&#x524D;&#x6708;&#x4EFD;</td>
-</tr>
-<tr>
-<td>SELECT DAYOFMONTH(CURRENT_DATE)</td>
-<td>&#x663E;&#x793A;&#x5F53;&#x6708;&#x65E5;&#x671F;</td>
-</tr>
-<tr>
-<td>SELECT &quot;welecome to my blog!&quot;</td>
-<td>&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;</td>
-</tr>
-<tr>
-<td>select ((4 * 4) / 10 ) + 25</td>
-<td>&#x5F53;&#x8BA1;&#x7B97;&#x5668;&#x7528;</td>
 </tr>
 </tbody>
 </table>
@@ -1277,7 +1260,7 @@ mysql_secure_installation
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.6","depth":1,"previous":{"title":"chrome","level":"2.5","depth":1,"path":"chapters/chrome.md","ref":"chapters/chrome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/mysql.md","mtime":"2017-07-20T06:46:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-20T09:37:42.737Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.6","depth":1,"previous":{"title":"chrome","level":"2.5","depth":1,"path":"chapters/chrome.md","ref":"chapters/chrome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/mysql.md","mtime":"2017-07-21T01:44:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-21T01:54:26.298Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

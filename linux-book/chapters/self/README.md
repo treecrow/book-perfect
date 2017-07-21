@@ -12,39 +12,39 @@
 
 > 通常只有管理员才可以运行
 
-命令               | more | 命令            | more
----------------- | ---- | ------------- | ----
-apfs_hfs_convert | -    | fsck          | -
-fstyp            | -    | kextload      | -
-mount_afp        | -    | mount_ftp     | -
-mount_webdav     | -    | quotacheck    | -
-nfsd             | -    | reboot        | -
-autodiskmount    | -    | fsck_apfs     | -
-fstyp_hfs        | -    | kextunload    | -
-mount_apfs       | -    | mount_hfs     | -
-mpioutil         | -    | nfsiod        | -
-route            | -    | disklabel     | -
-fsck_cs          | -    | fstyp_msdos   | -
-launchd          | -    | mount_cd9660  | -
-mount_msdos      | -    | newfs_apfs    | -
-nologin          | -    | rtsol         | -
-dmesg            | -    | fsck_exfat    | -
-fstyp_ntfs       | -    | md5           | -
-mount_cddafs     | -    | mount_nfs     | -
-newfs_exfat      | -    | pfctl         | -
-shutdown         | -    | dynamic_pager | -
-fsck_hfs         | -    | fstyp_udf     | -
-mknod            | -    | mount_devfs   | -
-mount_ntfs       | -    | newfs_hfs     | -
-ping             | -    | umount        | -
-emond            | -    | fsck_msdos    | -
-halt             | -    | mount         | -
-mount_exfat      | -    | mount_smbfs   | -
-newfs_msdos      | -    | ping6         | -
-fibreconfig      | -    | fsck_udf      | -
-ifconfig         | -    | mount_acfs    | -
-mount_fdesc      | -    | mount_udf     | -
-newfs_udf        | -
+命令                                          | more | 命令            | more
+------------------------------------------- | ---- | ------------- | ----
+apfs_hfs_convert                            | -    | fsck          | -
+fstyp                                       | -    | kextload      | -
+mount_afp                                   | -    | mount_ftp     | -
+mount_webdav                                | -    | quotacheck    | -
+nfsd                                        | -    | reboot        | -
+autodiskmount                               | -    | fsck_apfs     | -
+fstyp_hfs                                   | -    | kextunload    | -
+mount_apfs                                  | -    | mount_hfs     | -
+mpioutil                                    | -    | nfsiod        | -
+route                                       | -    | disklabel     | -
+fsck_cs                                     | -    | fstyp_msdos   | -
+launchd                                     | -    | mount_cd9660  | -
+mount_msdos                                 | -    | newfs_apfs    | -
+nologin                                     | -    | rtsol         | -
+dmesg                                       | -    | fsck_exfat    | -
+fstyp_ntfs                                  | -    | md5           | -
+mount_cddafs                                | -    | mount_nfs     | -
+newfs_exfat                                 | -    | pfctl         | -
+shutdown                                    | -    | dynamic_pager | -
+fsck_hfs                                    | -    | fstyp_udf     | -
+mknod                                       | -    | mount_devfs   | -
+mount_ntfs                                  | -    | newfs_hfs     | -
+ping                                        | -    | umount        | -
+emond                                       | -    | fsck_msdos    | -
+halt                                        | -    | mount         | -
+mount_exfat                                 | -    | mount_smbfs   | -
+newfs_msdos                                 | -    | ping6         | -
+fibreconfig                                 | -    | fsck_udf      | -
+[ifconfig](http://man.linuxde.net/ifconfig) | -    | mount_acfs    | -
+mount_fdesc                                 | -    | mount_udf     | -
+newfs_udf                                   | -
 
 ## 普通命令列表('/bin')
 
