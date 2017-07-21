@@ -8,7 +8,6 @@
 
 文档                                                                                      | more
 --------------------------------------------------------------------------------------- | ------------------------
-[MySQL 教程](http://wiki.jikexueyuan.com/project/mysql/)                                  | 系统的学习MySQL数据库
 [MySQL 教程 - 菜鸟](http://www.runoob.com/mysql/mysql-tutorial.html)                        | -
 [MySQL数据库操作 - 网易云课堂](http://study.163.com/course/introduction/706085.htm#/courseDetail) | 比较粗略的学习，章节1: MySQL基础(视频)
 [MySQL数据库 - 网易云课堂](http://study.163.com/course/introduction/247003.htm#/courseDetail)   | 比较系统的学习，与php配合(视频)
@@ -126,23 +125,6 @@ null           | 值允许为null
 default        | 默认值
 index          | 创建普通索引（eg:index 普通索引名 （对应字段））
 
-### where 条件语句
-
-条件语句                | more
-------------------- | -------------------------
-between             | -
-and                 | -
-in                  | id in(1,3,5)
-or                  | -
-is null             | -
-is not null         | -
-like                | like '%s%'(没有regexp强大)
-regexp              | 正则匹配
-order by 字段名 [desc] | 排序（desc 降序）
-limit a [,b]        | 限定输出个数(从0截取a个／从a截取b个)
-group by 字段名        | 分组聚合
-having              | 分组之后不能用 where，用 having 替换
-
 ### 函数
 
 函数                          | more
@@ -165,45 +147,67 @@ inet_aton(ip)               | 将ip转化为数字
 inet_ntoa(num)              | 将数字转化为ip
 ((4 * 4) / 10 ) + 25        | 当计算器用
 
+### where 条件语句
+
+条件语句                      | more
+------------------------- | -------------------------
+between                   | -
+and                       | -
+in                        | id in(1,3,5)
+or                        | -
+is null                   | -
+is not null               | -
+like                      | like '%s%'(没有regexp强大)
+regexp                    | 正则匹配
+order by 字段名 [desc / asc] | 排序（desc-降序，asc-升序）
+limit a [,b]              | 限定输出个数(从0截取a个／从a截取b个)
+group by 字段名              | 分组聚合
+having                    | 分组之后不能用 where，用 having 替换
+
 ### 语句列表
 
-- database
+- database && table基本操作
 
-语句                           | 作用
----------------------------- | -------------------
-show databases;              | 显示数据库
-create database 数据库名 [其他选项]; | 创建数据库
-drop database 数据库名;          | 删除整个数据库
-use 数据库名;                    | 选择要操作的数据库（操作之前必须选择）
+分类       | 语句
+-------- | ---------------------------------------------------------------
+database | show databases;
+~        | create database 数据库名 [其他选项];
+~        | drop database 数据库名;
+~        | use 数据库名;
+table    | show tables;
+~        | desc 表名;
+~        | show columns from 表名;
+~        | create table <表名> ( <字段名1> <类型1> [,..<字段名n> <类型n>]);
+~        | drop table 表名;
+~        | rename table 表名 to 新表名;
+~        | alter table 表名 rename 新表名;
+修改表字段    | alter table 表名 add 列名 列数据类型 [after 插入位置];
+~        | alter table 表名 drop 列名称;
+~        | alter table 表名 change 列名称 新列名 新数据类型;
+~        | alter table 表名 modify 列名称 新数据类型;
+表索引      | show index from 表名
+~        | alter table 表名 add index 索引名(对应字段);
+~        | alter table 表名 drop index 索引名;
+CRUD     | insert into 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);
+~        | delete from 表名称 where 删除条件;
+~        | update 表名称 set 列名称=新值 where 更新条件;
+~        | select 列名称 from 表名称 where [查询条件];
 
-- table
+- 更多table查询用法
 
-语句                                                              | 作用
---------------------------------------------------------------- | ------------------------------------------
-show tables;                                                    | 显示数据库中的表
-create table <表名> ( <字段名1> <类型1> [,..<字段名n> <类型n>]);            | 创建数据表(...)
-drop table 表名;                                                  | 删除整张表
-desc 表名;                                                        | 查看表结构
-rename table 表名 to 新表名;                                         | 重命名表
-alter table 表名 rename 新表名;                                      | 重命名表
-alter table 表名 add 列名 列数据类型 [after 插入位置];                       | 增加字段
-alter table 表名 drop 列名称;                                        | 删除字段
-alter table 表名 change 列名称 新列名 新数据类型;                            | 修改字段名（必须加类型？）
-alter table 表名 modify 列名称 新数据类型;                                | 修改字段
-show index from 表名                                              | 查看表的索引
-alter table 表名 add index 索引名(对应字段);                             | 添加索引
-alter table 表名 drop index 索引名;                                  | 删除索引
-insert into 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...); | 向表中插入数据
-delete from 表名称 where 删除条件;                                     | 删除表中的数据
-update 表名称 set 列名称=新值 where 更新条件;                               | 修改表中数据
-select 列名称 from 表名称 where [查询条件];                               | 查询表中的数据
-select * from 表名称;                                              | 查找表中所有数据
-select 表名称1.字段名,表名称2.字段名 from 表名称1，表名称2 where [查询条件];           | 普通多表查询
-select 表名称1.字段名,表名称2.字段名 from 表名称1 left join 表名称2 on [查询条件];    | 左链接多表查询（那个表想显示全就在左边，这种查询方式主要作用就是保证一个表是完全的）
-select 字段名 from 表名称1 where id in (select uid from 表名称2)         | 多表嵌套查询（只能获取一个表的数据 && 索引失效，不建议用）
-select id [as] i, name [as] n from user                         | 为字段取别名
-select distinct 列名称 from 表名称                                    | 查找表中对应字段（不重复）
-select * from MyClass order by id limit 0,2;                    | 查询表中的数据(查询前几行数据)
+分类           | 语句
+------------ | -------------------------------------------------------------------------
+多表字段组合（去重）   | select 字段名 from 表名称1 union select 字段名 from 表名称2;
+多表字段组合（不去重）  | select 字段名 from 表名称1 union all select 字段名 from 表名称2;
+分组查询         | `select 字段名,count(*) from 表名称 group by 字段名;`
+分组查询（增加总数行）  | select 字段名1, sum(字段名2) from 表名称 group by 字段名1 with rollup;
+分组查询 （总数行命名） | `select coalesce(字段名1,'总数'),count(*) from 表名称 group by 字段名1 with rollup;`
+普通多表查询       | select 表名称1.字段名,表名称2.字段名 from 表名称1，表名称2 where [查询条件];
+左链接多表查询      | select 表名称1.字段名,表名称2.字段名 from 表名称1 left join 表名称2 on [查询条件];
+多表嵌套查询       | select 字段名 from 表名称1 where id in (select uid from 表名称2)
+其它           | select id [as] i, name [as] n from user
+～            | select distinct 列名称 from 表名称
+～            | select * from MyClass order by id limit 0,2;
 
 - 其他
 
@@ -214,7 +218,7 @@ set password for 用户名@localhost = password('新密码'); | 修改密码
 desc sql语句;                                       | 检测sql语句执行过程（可用于优化表结构）(示例：select 列名称 from 表名称 where id=3\G)
 ？ sql命令                                           | 查看对应sql命令的用法
 \s;                                               | 查看服务器的基本信息
-\q                                                | 退出
+\q; / exit;                                       | 退出
 
 ## Node操作数据库流程
 
