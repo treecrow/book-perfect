@@ -992,6 +992,10 @@ mysql_secure_installation
 <td>having</td>
 <td>&#x5206;&#x7EC4;&#x4E4B;&#x540E;&#x4E0D;&#x80FD;&#x7528; where&#xFF0C;&#x7528; having &#x66FF;&#x6362;</td>
 </tr>
+<tr>
+<td>on</td>
+<td>&#x5DE6;&#x94FE;&#x63A5;&#x540E;&#x4E0D;&#x80FD;&#x7528;where,&#x7528; on &#x66FF;&#x6362;</td>
+</tr>
 </tbody>
 </table>
 <h3 id="&#x8BED;&#x53E5;&#x5217;&#x8868;">&#x8BED;&#x53E5;&#x5217;&#x8868;</h3>
@@ -1128,11 +1132,11 @@ mysql_secure_installation
 <td><code>select coalesce(&#x5B57;&#x6BB5;&#x540D;1,&apos;&#x603B;&#x6570;&apos;),count(*) from &#x8868;&#x540D;&#x79F0; group by &#x5B57;&#x6BB5;&#x540D;1 with rollup;</code></td>
 </tr>
 <tr>
-<td>&#x666E;&#x901A;&#x591A;&#x8868;&#x67E5;&#x8BE2;</td>
+<td>&#x666E;&#x901A;&#x591A;&#x8868;&#x67E5;&#x8BE2;(&#x4E24;&#x4E2A;&#x8868;&#x7684;&#x6570;&#x636E;&#x6574;&#x5408;&#x8D77;&#x6765;&#x53D1;&#x7ED9;&#x524D;&#x7AEF;)</td>
 <td>select &#x8868;&#x540D;&#x79F0;1.&#x5B57;&#x6BB5;&#x540D;,&#x8868;&#x540D;&#x79F0;2.&#x5B57;&#x6BB5;&#x540D; from &#x8868;&#x540D;&#x79F0;1&#xFF0C;&#x8868;&#x540D;&#x79F0;2 where [&#x67E5;&#x8BE2;&#x6761;&#x4EF6;];</td>
 </tr>
 <tr>
-<td>&#x5DE6;&#x94FE;&#x63A5;&#x591A;&#x8868;&#x67E5;&#x8BE2;</td>
+<td>&#x5DE6;&#x94FE;&#x63A5;&#x591A;&#x8868;&#x67E5;&#x8BE2;&#xFF08;&#x53F3;&#x8868;&#x4E2D;&#x6CA1;&#x6709;&#x5DE6;&#x8868;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E5F;&#x5B8C;&#x6574;&#x663E;&#x793A;&#x5DE6;&#x8868;&#xFF09;</td>
 <td>select &#x8868;&#x540D;&#x79F0;1.&#x5B57;&#x6BB5;&#x540D;,&#x8868;&#x540D;&#x79F0;2.&#x5B57;&#x6BB5;&#x540D; from &#x8868;&#x540D;&#x79F0;1 left join &#x8868;&#x540D;&#x79F0;2 on [&#x67E5;&#x8BE2;&#x6761;&#x4EF6;];</td>
 </tr>
 <tr>
@@ -1276,7 +1280,7 @@ mysql_secure_installation
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.6","depth":1,"previous":{"title":"chrome","level":"2.5","depth":1,"path":"chapters/chrome.md","ref":"chapters/chrome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/mysql.md","mtime":"2017-07-21T10:46:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-21T10:46:23.895Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.6","depth":1,"previous":{"title":"chrome","level":"2.5","depth":1,"path":"chapters/chrome.md","ref":"chapters/chrome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/mysql.md","mtime":"2017-07-24T08:44:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-24T09:10:10.684Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
