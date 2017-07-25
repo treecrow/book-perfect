@@ -190,6 +190,7 @@ table    | show tables;
 ~        | alter table 表名 add index 索引名(对应字段);
 ~        | alter table 表名 drop index 索引名;
 CRUD     | insert into 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);
+~        | insert into 表名 key=value;
 ~        | delete from 表名称 where 删除条件;
 ~        | update 表名称 set 列名称=新值 where 更新条件;
 ~        | select 列名称 from 表名称 where [查询条件];
@@ -218,6 +219,7 @@ set names utf8;                                   | 设置mysql客户端连接�
 set password for 用户名@localhost = password('新密码'); | 修改密码
 desc sql语句;                                       | 检测sql语句执行过程（可用于优化表结构）(示例：select 列名称 from 表名称 where id=3\G)
 ？ sql命令                                           | 查看对应sql命令的用法
+show variables;                                   | 展示mysql中的各种变量
 \s;                                               | 查看服务器的基本信息
 \q; / exit;                                       | 退出
 

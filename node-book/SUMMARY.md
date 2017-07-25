@@ -35,6 +35,10 @@
     - [rimraf](chapters/moudles/全局控制/rimraf.md)
     - [standard](chapters/moudles/全局控制/standard.md)
 
+  - [数据库](chapters/moudles/数据库/README.md)
+
+    - [mysql](chapters/moudles/数据库/mysql.md)
+
   - [框架](chapters/moudles/框架/README.md)
 
     - [express](chapters/moudles/框架/express.md)

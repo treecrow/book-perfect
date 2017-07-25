@@ -1575,33 +1575,792 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="chai">chai</h1>
-<h2 id="should">Should</h2>
-<pre><code class="lang-javascript">chai.should();
-
-foo.should.be.a(<span class="hljs-string">&apos;string&apos;</span>);
-foo.should.equal(<span class="hljs-string">&apos;bar&apos;</span>);
-foo.should.have.lengthOf(<span class="hljs-number">3</span>);
-tea.should.have.property(<span class="hljs-string">&apos;flavors&apos;</span>)
-  .with.lengthOf(<span class="hljs-number">3</span>);
-</code></pre>
-<h2 id="expect">Expect</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> expect = chai.expect;
-
-expect(foo).to.be.a(<span class="hljs-string">&apos;string&apos;</span>);
-expect(foo).to.equal(<span class="hljs-string">&apos;bar&apos;</span>);
-expect(foo).to.have.lengthOf(<span class="hljs-number">3</span>);
-expect(tea).to.have.property(<span class="hljs-string">&apos;flavors&apos;</span>)
-  .with.lengthOf(<span class="hljs-number">3</span>);
-</code></pre>
+<h2 id="expect-&#xFF0F;-should">Expect &#xFF0F; Should</h2>
+<h3 id="&#x89E3;&#x91CA;&#x6027;&#x5B57;&#x6BB5;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4F5C;&#x7528;&#xFF0C;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x6613;&#x8BFB;">&#x89E3;&#x91CA;&#x6027;&#x5B57;&#x6BB5;(&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4F5C;&#x7528;&#xFF0C;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x6613;&#x8BFB;)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.to</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.be</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.been</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.is</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.that</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.which</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.and</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.has</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.have</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.with</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.at</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.of</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.same</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.but</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.does</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5B57;&#x6BB5;&#x5217;&#x8868;">&#x5B57;&#x6BB5;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.not</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deep</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.nested</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.own</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.ordered</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.any</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.all</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.a(type[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.include(val[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.ok</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.true</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.false</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.null</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.undefined</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.NaN</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.exist</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.empty</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.arguments</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.equal(val[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.eql(obj[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.above(n[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.least(n[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.below(n[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.most(n[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.within(start, finish[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.instanceof(constructor[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.property(name[, val[, msg]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.ownPropertyDescriptor(name[, descriptor[, msg]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.lengthOf(n[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.match(re[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.string(str[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.keys(key1[, key2[, ...]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.throw([errorLike], [errMsgMatcher], [msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.respondTo(method[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.itself</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.satisfy(matcher[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.closeTo(expected, delta[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.members(set[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.oneOf(list[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.change(subject[, prop[, msg]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.increase(subject[, prop[, msg]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.decrease(subject[, prop[, msg]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.by(delta[, msg])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.extensible</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.sealed</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.frozen</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.finite</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.fail(actual, expected, [message], [operator])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>fail(actual, expected, [message], [operator])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <h2 id="assert">Assert</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> assert = chai.assert;
-
-assert.typeOf(foo, <span class="hljs-string">&apos;string&apos;</span>);
-assert.equal(foo, <span class="hljs-string">&apos;bar&apos;</span>);
-assert.lengthOf(foo, <span class="hljs-number">3</span>)
-assert.property(tea, <span class="hljs-string">&apos;flavors&apos;</span>);
-assert.lengthOf(tea.flavors, <span class="hljs-number">3</span>);
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>assert(expression, message)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.fail(actual, expected, [message], [operator])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isOk(object, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotOk(object, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>equal(actual, expected, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notEqual(actual, expected, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.strictEqual(actual, expected, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notStrictEqual(actual, expected, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deepEqual(actual, expected, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notDeepEqual(actual, expected, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isAbove(valueToCheck, valueToBeAbove, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isAtLeast(valueToCheck, valueToBeAtLeast, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isBelow(valueToCheck, valueToBeBelow, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isAtMost(valueToCheck, valueToBeAtMost, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isTrue(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotTrue(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isFalse(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotFalse(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNull(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotNull(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNaN</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotNaN</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.exists</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notExists</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isUndefined(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isDefined(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isFunction(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotFunction(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isObject(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotObject(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isArray(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotArray(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isString(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotString(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNumber(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotNumber(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isFinite(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isBoolean(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotBoolean(value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.typeOf(value, name, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notTypeOf(value, name, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.instanceOf(object, constructor, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notInstanceOf(object, constructor, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.include(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deepInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notDeepInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.nestedInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notNestedInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deepNestedInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notDeepNestedInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.ownInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notOwnInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deepOwnInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notDeepOwnInclude(haystack, needle, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.match(value, regexp, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notMatch(value, regexp, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.property(object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notProperty(object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.propertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deepPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notDeepPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.nestedProperty(object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notNestedProperty(object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.nestedPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notNestedPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.deepNestedPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notDeepNestedPropertyVal(object, property, value, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.lengthOf(object, length, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.hasAnyKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.hasAllKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.containsAllKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotHaveAnyKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotHaveAllKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.hasAnyDeepKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.hasAllDeepKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.containsAllDeepKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotHaveAnyDeepKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotHaveAllDeepKeys(object, [keys], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.throws(fn, [errorLike/string/regexp], [string/regexp], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.operator(val1, operator, val2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.closeTo(actual, expected, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.approximately(actual, expected, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.sameMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notSameMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.sameDeepMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notSameDeepMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.sameOrderedMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notSameOrderedMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.sameDeepOrderedMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notSameDeepOrderedMembers(set1, set2, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.includeMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notIncludeMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.includeDeepMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notIncludeDeepMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.includeOrderedMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notIncludeOrderedMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.includeDeepOrderedMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.notIncludeDeepOrderedMembers(superset, subset, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.oneOf(inList, list, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.changes(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.changesBy(function, object, property, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotChange(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.changesButNotBy(function, object, property, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.increases(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.increasesBy(function, object, property, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotIncrease(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.increasesButNotBy(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.decreases(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.decreasesBy(function, object, property, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotDecrease(function, object, property, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.doesNotDecreaseBy(function, object, property, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.decreasesButNotBy(function, object, property, delta, [message])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.ifError(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isExtensible(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotExtensible(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isSealed(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotSealed(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isFrozen(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotFrozen(object)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isEmpty(target)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>.isNotEmpty(target)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1645,7 +2404,7 @@ assert.lengthOf(tea.flavors, <span class="hljs-number">3</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"chai","level":"2.1.1.1","depth":3,"next":{"title":"istanbul","level":"2.1.1.2","depth":3,"path":"chapters/moudles/测试/istanbul.md","ref":"chapters/moudles/测试/istanbul.md","articles":[]},"previous":{"title":"测试","level":"2.1.1","depth":2,"path":"chapters/moudles/测试/README.md","ref":"chapters/moudles/测试/README.md","articles":[{"title":"chai","level":"2.1.1.1","depth":3,"path":"chapters/moudles/测试/chai.md","ref":"chapters/moudles/测试/chai.md","articles":[]},{"title":"istanbul","level":"2.1.1.2","depth":3,"path":"chapters/moudles/测试/istanbul.md","ref":"chapters/moudles/测试/istanbul.md","articles":[]},{"title":"mocha","level":"2.1.1.3","depth":3,"path":"chapters/moudles/测试/mocha.md","ref":"chapters/moudles/测试/mocha.md","articles":[]},{"title":"should.js","level":"2.1.1.4","depth":3,"path":"chapters/moudles/测试/should.js.md","ref":"chapters/moudles/测试/should.js.md","articles":[]},{"title":"supertest","level":"2.1.1.5","depth":3,"path":"chapters/moudles/测试/supertest.md","ref":"chapters/moudles/测试/supertest.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/测试/chai.md","mtime":"2017-06-30T04:21:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-09T04:55:16.599Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"chai","level":"2.1.1.1","depth":3,"next":{"title":"istanbul","level":"2.1.1.2","depth":3,"path":"chapters/moudles/测试/istanbul.md","ref":"chapters/moudles/测试/istanbul.md","articles":[]},"previous":{"title":"测试","level":"2.1.1","depth":2,"path":"chapters/moudles/测试/README.md","ref":"chapters/moudles/测试/README.md","articles":[{"title":"chai","level":"2.1.1.1","depth":3,"path":"chapters/moudles/测试/chai.md","ref":"chapters/moudles/测试/chai.md","articles":[]},{"title":"istanbul","level":"2.1.1.2","depth":3,"path":"chapters/moudles/测试/istanbul.md","ref":"chapters/moudles/测试/istanbul.md","articles":[]},{"title":"mocha","level":"2.1.1.3","depth":3,"path":"chapters/moudles/测试/mocha.md","ref":"chapters/moudles/测试/mocha.md","articles":[]},{"title":"should.js","level":"2.1.1.4","depth":3,"path":"chapters/moudles/测试/should.js.md","ref":"chapters/moudles/测试/should.js.md","articles":[]},{"title":"supertest","level":"2.1.1.5","depth":3,"path":"chapters/moudles/测试/supertest.md","ref":"chapters/moudles/测试/supertest.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/moudles/测试/chai.md","mtime":"2017-07-10T07:54:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-10T10:10:23.600Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
