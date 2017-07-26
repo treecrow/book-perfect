@@ -24,10 +24,10 @@ level | more
 ----- | ----
 ALL   | -
 TRACE | -
-DEBUG | -
-INFO  | -
-WARN  | -
-ERROR | -
+DEBUG | v
+INFO  | v
+WARN  | v
+ERROR | v
 FATAL | -
 MARK  | -
 OFF   | -

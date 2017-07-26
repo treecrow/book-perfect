@@ -1,6 +1,6 @@
 # mysql
 
-> mysql模块是node操作MySQL的引擎，可以在node.js环境下对MySQL数据库进行建表，增、删、改、查等操作。
+> mysql模块是node操作MySQL的引擎，可以在 node.js 环境下对MySQL数据库进行建表，增、删、改、查等操作。
 
 ## 连接配置
 
@@ -32,7 +32,7 @@ ssl                | 使用ssl参数（与crypto.createCredenitals参数格式�
 ## api 列表
 
 分组   | api                                                              | more
----- | ---------------------------------------------------------------- | --------------
+---- | ---------------------------------------------------------------- | ------------------
 通用   | mysql.createConnection(config)                                   | -
 ～    | connection.connect((error)=>{})                                  | -
 ～    | connection.query(sqlString,(err, results, fields)=>{]})          | -
@@ -45,8 +45,8 @@ ssl                | 使用ssl参数（与crypto.createCredenitals参数格式�
 ～    | connection.rollback()                                            | -
 ～    | connection.commit()                                              | -
 ～    | connection.ping()                                                | -
-～    | connection.end()                                                 | 数据库操作完成后的执行
-～    | connection.destroy()                                             | 中止数据库所有操作，断开连接
+～    | connection.end()                                                 | 在queries都结束后执行
+～    | connection.destroy()                                             | 即刻执行，不管queries是否完成
 ～    | connection.changeUser(config,(err)=>{})                          | 改变用户
 ～    | mysql.escape()                                                   | 防止sql语句注入
 ～    | connection.escape()                                              | 防止sql语句注入
@@ -54,9 +54,9 @@ ssl                | 使用ssl参数（与crypto.createCredenitals参数格式�
 ~    | connection.escapeId(identifier)                                  | -
 ~    | mysql.format(sql, inserts)                                       | -
 连接池  | mysql.createPool(config)                                         | -
-～    | pool.query()                                                     | -
-～    | pool.getConnection((err, connection)=>{})                        | -
-～    | connection.release()                                             | -
+～    | pool.query()                                                     | 直接使用
+～    | pool.getConnection((err, connection)=>{})                        | 共享一个连接或管理多个连接
+～    | connection.release()                                             | 把连接放回连接池，等待其它使用者使用
 ～    | pool.end((err)=>{})                                              | 关闭池
 ～    | pool.escape()                                                    | 防止sql语句注入
 ~    | pool.escapeId(identifier)                                        | -
@@ -80,11 +80,11 @@ nestTables | Joins with overlapping column names???
 ### mysql.createPool() 配置
 
 字段                 | more
------------------- | ----------------------------------------------------------------------------------------------------------
+------------------ | --------------------------------------------------------------------------
 acquireTimeout     | The milliseconds before a timeout occurs during the connection acquisition
-waitForConnections | Determines the pool's action when no connections are available and the limit has been reached
-connectionLimit    | The maximum number of connections to create at once. (Default: 10)
-queueLimit         | The maximum number of connection requests the pool will queue before returning an error from getConnection
+waitForConnections | 当连接池没有连接或超出最大限制时，设置为true且会把连接放入队列，设置为false会返回error
+connectionLimit    | 连接数限制，默认：10
+queueLimit         | 最大连接请求队列限制，设置为0表示不限制，默认：0
 
 ### mysql.createPoolCluster() 配置
 

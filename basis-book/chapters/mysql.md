@@ -178,6 +178,7 @@ database | show databases;
 table    | show tables;
 ~        | desc 表名;
 ~        | show columns from 表名;
+~        | show full columns from 表名;
 ~        | create table <表名> ( <字段名1> <类型1> [,..<字段名n> <类型n>]);
 ~        | drop table 表名;
 ~        | rename table 表名 to 新表名;
