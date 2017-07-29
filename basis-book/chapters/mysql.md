@@ -223,17 +223,3 @@ desc sql语句;                                       | 检测sql语句执行过
 show variables;                                   | 展示mysql中的各种变量
 \s;                                               | 查看服务器的基本信息
 \q; / exit;                                       | 退出
-
-## Node操作数据库流程
-
-流程              | more
---------------- | ---------------------------------------------------------------------------
-连接上mysql数据库（服务） | mysql_connect("localhost","root","123")
-选择具体的数据库        | mysql_select_db("test")
-执行sql语句的函数      | mysql_query()
-设置客户端连接字符集      | mysql_query("set names utf8")
-insert 操作       | $sql = `insert into t1(username, password) values(${userName},${passWord})`
-delete 操作       | -
-update 操作       | $sql = `update t1 set username='user2',password='321' where id=8`
-select 操作       | $sql = `select * from t1`
-获取查看结果(关联数组最合适) | mysql_fetch_assoc($result)

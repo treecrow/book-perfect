@@ -30,4 +30,8 @@
 
 - [chrome](chapters/chrome.md)
 
+- [GraphQL](chapters/GraphQL.md)
+
 - [mysql](chapters/mysql.md)
+
+- [Restful](chapters/Restful.md)

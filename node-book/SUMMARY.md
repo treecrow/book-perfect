@@ -35,9 +35,9 @@
     - [rimraf](chapters/moudles/全局控制/rimraf.md)
     - [standard](chapters/moudles/全局控制/standard.md)
 
-  - [数据库](chapters/moudles/数据库/README.md)
+  - [数据接口](chapters/moudles/数据接口/README.md)
 
-    - [mysql](chapters/moudles/数据库/mysql.md)
+    - [mysql](chapters/moudles/数据接口/mysql.md)
 
   - [框架](chapters/moudles/框架/README.md)
 

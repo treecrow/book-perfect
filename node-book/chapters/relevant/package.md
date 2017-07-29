@@ -33,6 +33,7 @@ cpu                  | 可选字段。指定CPU型号
 preferGlobal         | 可选字段，布尔值。如果你的包是个命令行应用程序，需要全局安装，就可以设为true
 private              | 可选字段，布尔值。如果private为true，npm会拒绝发布。这可以防止私有repositories不小心被发布出去
 publishConfig        | 可选字段。发布时使用的配置值放这
+options              | 可选字段。定义一些字段，可以在 scripts 中通过 $npm_package_options_someFail 的方式饮用
 
 ## npm scripts
 
