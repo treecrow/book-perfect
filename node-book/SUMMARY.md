@@ -52,6 +52,7 @@
 
     - [CodeMirror](chapters/moudles/模版渲染/CodeMirror.md)
     - [consolidate](chapters/moudles/模版渲染/consolidate.md)
+    - [ejs](chapters/moudles/模版渲染/ejs.md)
     - [escape-html](chapters/moudles/模版渲染/escape-html.md)
     - [gitbook](chapters/moudles/模版渲染/gitbook.md)
     - [highlight.js](chapters/moudles/模版渲染/highlight.js.md)

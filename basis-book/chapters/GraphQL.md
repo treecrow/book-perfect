@@ -4,6 +4,7 @@
 
 文档                                                                                                      | more
 ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------
+[graphql中文网](http://graphql.org.cn/)                                                                    | -
 [graphql](http://facebook.github.io/graphql/)                                                           | Facebook 官方文档
 [awesome-graphql](https://github.com/chentsulin/awesome-graphql)                                        | 系列的关于GraphQL相关的资源的搜集
 [从REST到GraphQL，更完善的数据查询定义](https://segmentfault.com/a/1190000005766732)                                 | -
