@@ -8,23 +8,28 @@
 
 ## API列表
 
-分类     | api                                                | more
------- | -------------------------------------------------- | --------------------
-类型     | new GraphQLEnumType()                              | -
-～      | new GraphQLInterfaceType()                         | -
-～      | new GraphQLObjectType()                            | -
-～      | new GraphQLNonNull(otherType)                      | -
-～      | new GraphQLList()                                  | -
-～      | GraphQLString                                      | -
-schema | new GraphQLSchema()                                | 引入各个类型，构建 schema
-请求     | graphql(schema, query).then((result)=>{})          | 根据 schema、query 请求数据
-～      | graphql({schema: StarWarsSchema,source: query})    | -
-~      | graphql(StarWarsSchema, query, null, null, params) | params为插入query的变量
+分类     | api                                        | more
+------ | ------------------------------------------ | ------------------------------------------------------
+类型     | new GraphQLEnumType()                      | -
+～      | new GraphQLInterfaceType()                 | -
+～      | new GraphQLObjectType()                    | -
+～      | new GraphQLNonNull(otherType)              | -
+～      | new GraphQLList()                          | -
+～      | GraphQLString                              | -
+schema | new GraphQLSchema()                        | 引入各个类型，构建 schema
+~      | buildSchema()                              | 构建 schema
+请求     | graphql(schema, query).then((result)=>{})  | 根据 schema、query 请求数据
+～      | graphql({schema, source: query})           | -
+～      | graphql(schema, query, root)               | root 提供 resolver function，引擎根据 schema和query从 root中获取数据
+~      | graphql(schema, query, root, null, params) | params为插入query的变量
 
 ## 类型列表
 
 类型                    | more
 --------------------- | ----
+Int                   | -
+Float                 | -
+Boolean               | -
 String                | -
 `Boolean`             | -
 `__Schema`            | -

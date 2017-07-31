@@ -16,7 +16,10 @@
   - [TCP.IP](chapters/图解http/TCP.IP.md)
   - [token混账东西](chapters/图解http/token混账东西.md)
   - [URI](chapters/图解http/URI.md)
-  - [WebSocket](chapters/图解http/WebSocket.md)
+
+- [GraphQL](chapters/GraphQL/README.md)
+
+  - [查询和修改](chapters/GraphQL/查询和修改.md)
 
 - [mac](chapters/mac/README.md)
 
@@ -29,8 +32,6 @@
 - [其他系统](chapters/其他系统.md)
 
 - [chrome](chapters/chrome.md)
-
-- [GraphQL](chapters/GraphQL.md)
 
 - [mysql](chapters/mysql.md)
 

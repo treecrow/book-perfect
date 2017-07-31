@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Restful.html" />
     
-    <link rel="prev" href="chrome.html" />
+    
+    <link rel="prev" href="GraphQL.html" />
     
 
     </head>
@@ -382,12 +384,38 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.6" data-path="mysql.html">
+        <li class="chapter " data-level="2.6" data-path="GraphQL.html">
+            
+                <a href="GraphQL.html">
+            
+                    
+                    GraphQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="mysql.html">
             
                 <a href="mysql.html">
             
                     
                     mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="Restful.html">
+            
+                <a href="Restful.html">
+            
+                    
+                    Restful
             
                 </a>
             
@@ -1206,53 +1234,6 @@ mysql_secure_installation
 </tr>
 </tbody>
 </table>
-<h2 id="node&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x6D41;&#x7A0B;">Node&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x6D41;&#x7A0B;</h2>
-<table>
-<thead>
-<tr>
-<th>&#x6D41;&#x7A0B;</th>
-<th>more</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#x8FDE;&#x63A5;&#x4E0A;mysql&#x6570;&#x636E;&#x5E93;&#xFF08;&#x670D;&#x52A1;&#xFF09;</td>
-<td>mysql_connect(&quot;localhost&quot;,&quot;root&quot;,&quot;123&quot;)</td>
-</tr>
-<tr>
-<td>&#x9009;&#x62E9;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x5E93;</td>
-<td>mysql_select_db(&quot;test&quot;)</td>
-</tr>
-<tr>
-<td>&#x6267;&#x884C;sql&#x8BED;&#x53E5;&#x7684;&#x51FD;&#x6570;</td>
-<td>mysql_query()</td>
-</tr>
-<tr>
-<td>&#x8BBE;&#x7F6E;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5B57;&#x7B26;&#x96C6;</td>
-<td>mysql_query(&quot;set names utf8&quot;)</td>
-</tr>
-<tr>
-<td>insert &#x64CD;&#x4F5C;</td>
-<td>$sql = <code>insert into t1(username, password) values(${userName},${passWord})</code></td>
-</tr>
-<tr>
-<td>delete &#x64CD;&#x4F5C;</td>
-<td>-</td>
-</tr>
-<tr>
-<td>update &#x64CD;&#x4F5C;</td>
-<td>$sql = <code>update t1 set username=&apos;user2&apos;,password=&apos;321&apos; where id=8</code></td>
-</tr>
-<tr>
-<td>select &#x64CD;&#x4F5C;</td>
-<td>$sql = <code>select * from t1</code></td>
-</tr>
-<tr>
-<td>&#x83B7;&#x53D6;&#x67E5;&#x770B;&#x7ED3;&#x679C;(&#x5173;&#x8054;&#x6570;&#x7EC4;&#x6700;&#x5408;&#x9002;)</td>
-<td>mysql_fetch_assoc($result)</td>
-</tr>
-</tbody>
-</table>
 
                                 
                                 </section>
@@ -1280,10 +1261,14 @@ mysql_secure_installation
 
             
                 
-                <a href="chrome.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: chrome">
+                <a href="GraphQL.html" class="navigation navigation-prev " aria-label="Previous page: GraphQL">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Restful.html" class="navigation navigation-next " aria-label="Next page: Restful">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1292,7 +1277,7 @@ mysql_secure_installation
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.6","depth":1,"previous":{"title":"chrome","level":"2.5","depth":1,"path":"chapters/chrome.md","ref":"chapters/chrome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/mysql.md","mtime":"2017-07-25T07:02:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T14:48:32.484Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mysql","level":"2.7","depth":1,"next":{"title":"Restful","level":"2.8","depth":1,"path":"chapters/Restful.md","ref":"chapters/Restful.md","articles":[]},"previous":{"title":"GraphQL","level":"2.6","depth":1,"path":"chapters/GraphQL.md","ref":"chapters/GraphQL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/mysql.md","mtime":"2017-07-27T22:31:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-29T06:23:36.557Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
