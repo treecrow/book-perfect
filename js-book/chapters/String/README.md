@@ -30,14 +30,16 @@ str.at()          | 返回字符串给定位置的字符
 
 ## 转化方法
 
-方法                      | 功能
------------------------ | ----------------------------------
-otherType.toString()    | 不能将null和undefined转换为字符串，但是可以转进制字符串
-String()                | 可以将null和undefined转换为字符串，但是没法转进制字符串
-str.toLowerCase()       | 把字符串转换为小写
-str.toLocaleLowerCase() | -
-str.toUpperCase()       | 把字符串转换为大写
-str.toLocaleUpperCase() | -
+方法                                          | 功能
+------------------------------------------- | ----------------------------------
+otherType.toString()                        | 不能将null和undefined转换为字符串，但是可以转进制字符串
+numType.toString(2/8/16)                    | 将数字转换为 2/8/16 进制，默认十进制
+buffer.toString([encoding], [start], [end]) | 转换成字符串后的字符编码，默认为 ‘utf8′(我还知道有'hex')
+String()                                    | 可以将null和undefined转换为字符串，但是没法转进制字符串
+str.toLowerCase()                           | 把字符串转换为小写
+str.toLocaleLowerCase()                     | -
+str.toUpperCase()                           | 把字符串转换为大写
+str.toLocaleUpperCase()                     | -
 
 ## 操作方法(所有操作方法返回新字符串，不会改变原来的字符串)
 
@@ -71,4 +73,5 @@ str.search()  | 用于检索字符串中指定的子字符串，或检索与正�
 str.replace() | 用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串
 
 ## 字符串的遍历
+
 > 字符串的遍历就用for...of，可以识别大于0xFFFF的码点

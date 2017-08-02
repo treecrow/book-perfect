@@ -17,10 +17,6 @@
   - [token混账东西](chapters/图解http/token混账东西.md)
   - [URI](chapters/图解http/URI.md)
 
-- [GraphQL](chapters/GraphQL/README.md)
-
-  - [查询和修改](chapters/GraphQL/查询和修改.md)
-
 - [mac](chapters/mac/README.md)
 
   - [mac环境变量](chapters/mac/mac环境变量.md)
