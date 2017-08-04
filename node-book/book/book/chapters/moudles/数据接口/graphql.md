@@ -5,7 +5,6 @@
 文档                                                                                                      | more
 ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------
 [graphql-js](http://graphql.org.cn/graphql-js.html)                                                     | graphql 中文网
-[graphql中文网](http://graphql.org.cn/)                                                                    | -
 [graphql](http://facebook.github.io/graphql/)                                                           | Facebook 官方文档
 [awesome-graphql](https://github.com/chentsulin/awesome-graphql)                                        | 系列的关于GraphQL相关的资源的搜集
 [从REST到GraphQL，更完善的数据查询定义](https://segmentfault.com/a/1190000005766732)                                 | -
@@ -35,7 +34,6 @@
 ～            | GraphQLString                                                                            | 字符串
 ～            | GraphQLBoolean                                                                           | 布尔类型
 ～            | GraphQLID                                                                                | 代表 IDs
-schema       | new GraphQLSchema({query: GraphQLObjectType, mutation?: ?GraphQLObjectType})             | 引入各个类型，构建 schema
 断言           | isInputType()                                                                            | -
 ～            | isOutputType()                                                                           | -
 ～            | isLeafType()                                                                             | -
@@ -45,7 +43,8 @@ Un-modifiers | getNullableType                                                  
 ～            | getNamedType                                                                             | -
 自省工具         | introspectionQuery                                                                       | 字符串，
 ～            | buildClientSchema                                                                        | Build a GraphQLSchema for use by client tools（功能阉割？）
-Schema语言工具   | buildSchema                                                                              | 使用默认语法构建 schema
+Schema语言工具   | new GraphQLSchema({query: GraphQLObjectType, mutation?: ?GraphQLObjectType})             | 引入各个类型，构建 schema
+～            | buildSchema                                                                              | 使用默认语法构建 schema
 ～            | printSchema                                                                              | 接受一个 schema,打印出对应的字符串内容
 ～            | printIntrospectionSchema                                                                 | 接受一个 schema，打印出所有的字符串内容（脑阔 graphql 内部的）
 ～            | buildASTSchema                                                                           | （功能阉割？）

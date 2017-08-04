@@ -2,19 +2,16 @@
 
 ## 相关文档
 
-文档                                                                                                      | more
-------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------
-[graphql-js](http://graphql.org.cn/graphql-js.html)                                                     | graphql 中文网
-[graphql](http://facebook.github.io/graphql/)                                                           | Facebook 官方文档
-[awesome-graphql](https://github.com/chentsulin/awesome-graphql)                                        | 系列的关于GraphQL相关的资源的搜集
-[从REST到GraphQL，更完善的数据查询定义](https://segmentfault.com/a/1190000005766732)                                 | -
-[apollo](https://dev-blog.apollodata.com/)                                                              | Building Apollo Client and other tools for GraphQL developers
-[从REST到GraphQL的思维变迁](https://0x2a.sh/from-rest-to-graphql-b4e95e94c26b)                                 | -
-[GraphQL简单的原理介绍](https://dev-blog.apollodata.com/graphql-explained-5844742f195e)                        | 有助于理解GraphQL的设计理念与作用
-[How do I GraphQL?](https://dev-blog.apollodata.com/how-do-i-graphql-2fcabfc94a01)                      | -
-[GraphQL and Authentication](https://medium.com/the-graphqlhub/graphql-and-authentication-b73aed34bbeb) | -
-[GraphQL vs. Falcor](https://dev-blog.apollodata.com/graphql-vs-falcor-4f1e9cbf7504)                    | -
-[GraphQL入门](https://zhuanlan.zhihu.com/p/25042518?refer=deep-signts)                                    | -
+文档                                                                                                                                                      | more
+------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------
+[graphql](http://facebook.github.io/graphql/)                                                                                                           | Facebook 官方文档
+[awesome-graphql](https://github.com/chentsulin/awesome-graphql)                                                                                        | 系列的关于GraphQL相关的资源的搜集
+[graphql-js](http://graphql.org.cn/graphql-js.html)                                                                                                     | graphql 中文网
+[learning-graphql](https://github.com/mugli/learning-graphql)                                                                                           | -
+[GraphQL入门](https://zhuanlan.zhihu.com/p/25042518?refer=deep-signts)                                                                                    | Fragments／
+[GraphQL初探:从REST到GraphQL，更完善的数据查询定义](https://segmentfault.com/a/1190000005766732)                                                                       | 没什么内容
+[解读GraphQL(一): WHAT & WHY](https://zhuanlan.zhihu.com/p/26522359)                                                                                       | GraphQL是什么，它的优缺点有哪些？
+[GraphQLInterfaceType 与 GraphQLUnionType](https://stackoverflow.com/questions/34726666/real-world-example-of-graphqlinterfacetype-and-graphqluniontype) | GraphQLInterfaceType 与 GraphQLUnionType 的区别
 
 ## API列表
 
@@ -23,8 +20,8 @@
 运行           | graphql (schema, requestString, rootValue?,contextValue?,variableValues?,operationName?) | lexes, parses, validates and executes a GraphQL request
 定义类型         | new GraphQLScalarType()                                                                  | scalar 类型
 ～            | new GraphQLObjectType()                                                                  | object 类型（包含字段）
-～            | new GraphQLInterfaceType()                                                               | interface 类型（可以包含自身类型的类型，递归？）
-～            | new GraphQLUnionType()                                                                   | union 类型(声明一个 inplementations 列表)
+～            | new GraphQLInterfaceType()                                                               | interface 类型（多个类型共有的部分定义在这里）
+～            | new GraphQLUnionType()                                                                   | union 类型(用"或"的方式合并多个类型)
 ～            | new GraphQLEnumType()                                                                    | enum 类型（声明一个有效值列表）
 ～            | new GraphQLInputObjectType()                                                             | input object 类型（代表结构体的输入／参数）
 ～            | new GraphQLList()                                                                        | 包裹起其它类型，代表某个类型的列表
