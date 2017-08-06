@@ -12,6 +12,8 @@
 [GraphQL初探:从REST到GraphQL，更完善的数据查询定义](https://segmentfault.com/a/1190000005766732)                                                                       | 没什么内容
 [解读GraphQL(一): WHAT & WHY](https://zhuanlan.zhihu.com/p/26522359)                                                                                       | GraphQL是什么，它的优缺点有哪些？
 [GraphQLInterfaceType 与 GraphQLUnionType](https://stackoverflow.com/questions/34726666/real-world-example-of-graphqlinterfacetype-and-graphqluniontype) | GraphQLInterfaceType 与 GraphQLUnionType 的区别
+[GraphQL与认证](http://www.jianshu.com/p/a0c4dd624048)                                                                                                     | -
+[what](http://graphql.org/learn/validation/)                                                                                                            | -
 
 ## API列表
 

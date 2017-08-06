@@ -1749,95 +1749,380 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="crypto&#x52A0;&#x5BC6;">crypto&#x52A0;&#x5BC6;</h1>
-<h2 id="determining-if-crypto-support-is-unavailable">Determining if crypto support is unavailable</h2>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> crypto;
-<span class="hljs-keyword">try</span> {
-  crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>);
-} <span class="hljs-keyword">catch</span> (err) {
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;crypto support is disabled!&apos;</span>);
-}
-</code></pre>
+<blockquote>
+<p>crypto &#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x52A0;&#x5BC6;&#x529F;&#x80FD;&#xFF0C;&#x5305;&#x542B;&#x5BF9; OpenSSL &#x7684;&#x54C8;&#x5E0C;&#x3001;HMAC&#x3001;&#x52A0;&#x5BC6;&#x3001;&#x89E3;&#x5BC6;&#x3001;&#x7B7E;&#x540D;&#x3001;&#x4EE5;&#x53CA;&#x9A8C;&#x8BC1;&#x529F;&#x80FD;&#x7684;&#x4E00;&#x6574;&#x5957;&#x5C01;&#x88C5;</p>
+</blockquote>
 <h2 id="certificate&#x7C7B;">Certificate&#x7C7B;</h2>
-<h4 id="&#x521B;&#x5EFA;certificate&#x7C7B;">&#x521B;&#x5EFA;Certificate&#x7C7B;</h4>
-<pre><code class="lang-js"><span class="hljs-keyword">new</span> crypto.Certificate()
-</code></pre>
-<ul>
-<li>certificate.exportChallenge(spkac)</li>
-<li>certificate.exportPublicKey(spkac)</li>
-<li>certificate.verifySpkac(spkac)<h2 id="cipher&#x7C7B;">Cipher&#x7C7B;</h2>
-</li>
-<li>cipher.final([output_encoding])</li>
-<li>cipher.setAAD(buffer)</li>
-<li>cipher.getAuthTag()</li>
-<li>cipher.setAutoPadding(auto_padding=true)</li>
-<li>cipher.update(data[, input_encoding][, output_encoding])<h2 id="decipher&#x7C7B;">Decipher&#x7C7B;</h2>
-</li>
-<li>decipher.final([output_encoding])</li>
-<li>decipher.setAAD(buffer)</li>
-<li>decipher.setAuthTag(buffer)</li>
-<li>decipher.setAutoPadding(auto_padding=true)</li>
-<li>decipher.update(data[, input_encoding][, output_encoding])<h2 id="diffiehellman&#x7C7B;">DiffieHellman&#x7C7B;</h2>
-</li>
-<li>diffieHellman.computeSecret(other_public_key[, input_encoding][, output_encoding])</li>
-<li>diffieHellman.generateKeys([encoding])</li>
-<li>diffieHellman.getGenerator([encoding])</li>
-<li>diffieHellman.getPrime([encoding])</li>
-<li>diffieHellman.getPrivateKey([encoding])</li>
-<li>diffieHellman.getPublicKey([encoding])</li>
-<li>diffieHellman.setPrivateKey(private_key[, encoding])</li>
-<li>diffieHellman.setPublicKey(public_key[, encoding])</li>
-<li>diffieHellman.verifyError<h2 id="ecdh&#x7C7B;">ECDH&#x7C7B;</h2>
-</li>
-<li>ecdh.computeSecret(other_public_key[, input_encoding][, output_encoding])</li>
-<li>ecdh.generateKeys([encoding[, format]])</li>
-<li>ecdh.getPrivateKey([encoding])</li>
-<li>ecdh.getPublicKey([encoding[, format]])</li>
-<li>ecdh.setPrivateKey(private_key[, encoding])<h2 id="hash&#x7C7B;">Hash&#x7C7B;</h2>
-</li>
-<li>hash.digest([encoding])</li>
-<li>hash.update(data[, input_encoding])<h2 id="hmac&#x7C7B;">Hmac&#x7C7B;</h2>
-</li>
-<li>hmac.digest([encoding])</li>
-<li>hmac.update(data[, input_encoding])<h2 id="sign&#x7C7B;">Sign&#x7C7B;</h2>
-</li>
-<li>sign.sign(private_key[, output_format])</li>
-<li>sign.update(data[, input_encoding])<h2 id="verify&#x7C7B;">Verify&#x7C7B;</h2>
-</li>
-<li>verifier.update(data[, input_encoding])</li>
-<li>verifier.verify(object, signature[, signature_format])</li>
-</ul>
+<h3 id="&#x65B9;&#x6CD5;&#x5217;&#x8868;">&#x65B9;&#x6CD5;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>certificate.exportChallenge(spkac)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>certificate.exportPublicKey(spkac)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>certificate.verifySpkac(spkac)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cipher&#x7C7B;">Cipher&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cipher.final([output_encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cipher.setAAD(buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cipher.getAuthTag()</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cipher.setAutoPadding(auto_padding=true)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cipher.update(data[, input_encoding][, output_encoding])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="decipher&#x7C7B;">Decipher&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>decipher.final([output_encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>decipher.setAAD(buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>decipher.setAuthTag(buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>decipher.setAutoPadding(auto_padding=true)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>decipher.update(data[, input_encoding][, output_encoding])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diffiehellman&#x7C7B;">DiffieHellman&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diffieHellman.computeSecret(other_public_key[, input_encoding][, output_encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.generateKeys([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.getGenerator([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.getPrime([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.getPrivateKey([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.getPublicKey([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.setPrivateKey(private_key[, encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.setPublicKey(public_key[, encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>diffieHellman.verifyError</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ecdh&#x7C7B;">ECDH&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ecdh.computeSecret(other_public_key[, input_encoding][, output_encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ecdh.generateKeys([encoding[, format]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ecdh.getPrivateKey([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ecdh.getPublicKey([encoding[, format]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ecdh.setPrivateKey(private_key[, encoding])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hash&#x7C7B;">Hash&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hash.digest([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>hash.update(data[, input_encoding])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hmac&#x7C7B;">Hmac&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hmac.digest([encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>hmac.update(data[, input_encoding])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sign&#x7C7B;">Sign&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sign.sign(private_key[, output_format])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>sign.update(data[, input_encoding])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="verify&#x7C7B;">Verify&#x7C7B;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>verifier.update(data[, input_encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>verifier.verify(object, signature[, signature_format])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <h2 id="crypto&#x81EA;&#x8EAB;">crypto&#x81EA;&#x8EAB;</h2>
-<h4 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h4>
-<ul>
-<li>crypto.createCipher(algorithm, password)</li>
-<li>crypto.createCipheriv(algorithm, key, iv)</li>
-<li>crypto.createDecipher(algorithm, password)</li>
-<li>crypto.createDecipheriv(algorithm, key, iv)</li>
-<li>crypto.createDiffieHellman(prime[, prime_encoding][, generator][, generator_encoding])</li>
-<li>crypto.createDiffieHellman(prime_length[, generator])</li>
-<li>crypto.createECDH(curve_name)</li>
-<li>crypto.createHash(algorithm)</li>
-<li>crypto.createHmac(algorithm, key)</li>
-<li>crypto.createSign(algorithm)</li>
-<li>crypto.createVerify(algorithm)</li>
-<li>crypto.getCiphers()</li>
-<li>crypto.getCurves()</li>
-<li>crypto.getDiffieHellman(group_name)</li>
-<li>crypto.getHashes()</li>
-<li>crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)</li>
-<li>crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)</li>
-<li>crypto.privateDecrypt(private_key, buffer)</li>
-<li>crypto.timingSafeEqual(a, b)</li>
-<li>crypto.privateEncrypt(private_key, buffer)</li>
-<li>crypto.publicDecrypt(public_key, buffer)</li>
-<li>crypto.publicEncrypt(public_key, buffer)</li>
-<li>crypto.randomBytes(size[, callback])</li>
-<li>crypto.setEngine(engine[, flags])<h4 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h4>
-</li>
-<li>crypto.constants</li>
-<li>crypto.DEFAULT_ENCODING</li>
-<li>crypto.fips</li>
-</ul>
+<h3 id="&#x65B9;&#x6CD5;&#x5217;&#x8868;">&#x65B9;&#x6CD5;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>crypto.createCipher(algorithm, password)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createCipheriv(algorithm, key, iv)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createDecipher(algorithm, password)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createDecipheriv(algorithm, key, iv)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createDiffieHellman(prime[, prime_encoding][, generator][, generator_encoding])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createDiffieHellman(prime_length[, generator])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createECDH(curve_name)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createHash(algorithm)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createHmac(algorithm, key)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createSign(algorithm)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.createVerify(algorithm)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.getCiphers()</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.getCurves()</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.getDiffieHellman(group_name)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.getHashes()</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.privateDecrypt(private_key, buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.timingSafeEqual(a, b)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.privateEncrypt(private_key, buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.publicDecrypt(public_key, buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.publicEncrypt(public_key, buffer)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.randomBytes(size[, callback])</td>
+<td>&#x751F;&#x6210;&#x6307;&#x5B9A;&#x4F4D;&#x6570;&#x7684;&#x968F;&#x673A;buffer</td>
+</tr>
+<tr>
+<td>crypto.setEngine(engine[, flags])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5C5E;&#x6027;&#x5217;&#x8868;">&#x5C5E;&#x6027;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>crypto.constants</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.DEFAULT_ENCODING</td>
+<td>-</td>
+</tr>
+<tr>
+<td>crypto.fips</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1881,7 +2166,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"crypto加密","level":"2.2.8","depth":2,"next":{"title":"debugger调试器","level":"2.2.9","depth":2,"path":"chapters/Docs/debugger.md","ref":"chapters/Docs/debugger.md","articles":[]},"previous":{"title":"console控制台","level":"2.2.7","depth":2,"path":"chapters/Docs/console.md","ref":"chapters/Docs/console.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Docs/crypto.md","mtime":"2017-05-17T17:47:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-30T02:58:50.294Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"crypto加密","level":"2.2.8","depth":2,"next":{"title":"debugger调试器","level":"2.2.9","depth":2,"path":"chapters/Docs/debugger.md","ref":"chapters/Docs/debugger.md","articles":[]},"previous":{"title":"console控制台","level":"2.2.7","depth":2,"path":"chapters/Docs/console.md","ref":"chapters/Docs/console.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Docs/crypto.md","mtime":"2017-08-01T04:49:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T02:32:17.912Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
