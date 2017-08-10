@@ -141,6 +141,7 @@ current_date                | 显示当前时间（年月日）
 year(current_date)          | 显示当前年份(年)
 month(current_date)         | 显示当前月份(月)
 dayofmonth(current_date)    | 显示当月日期(日)
+unix_timestamp(now())       | 获取当前时间戳(秒)
 "welecome to my blog!"      | 显示字符串
 concat(f_name, " ", l_name) | 串接字符串(...)
 inet_aton(ip)               | 将ip转化为数字

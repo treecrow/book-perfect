@@ -14,6 +14,8 @@
 [GraphQLInterfaceType 与 GraphQLUnionType](https://stackoverflow.com/questions/34726666/real-world-example-of-graphqlinterfacetype-and-graphqluniontype) | GraphQLInterfaceType 与 GraphQLUnionType 的区别
 [GraphQL与认证](http://www.jianshu.com/p/a0c4dd624048)                                                                                                     | -
 [what](http://graphql.org/learn/validation/)                                                                                                            | -
+[Validation and User Errors in GraphQL Mutations](https://medium.com/@tarkus/validation-and-user-errors-in-graphql-mutations-39ca79cd00bf)              | 整合 error信息，返回给前端
+[GraphQL 服务开发指南](https://www.v2ex.com/t/355632)                                                                                                         | GraphQLScalarType / GraphQLEnumType
 
 ## API列表
 

@@ -1175,15 +1175,19 @@
 </thead>
 <tbody>
 <tr>
+<td>&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x662F;&#x624B;&#x673A;&#x53F7;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x662F;&#x90AE;&#x7BB1;</td>
+<td>-</td>
+</tr>
+<tr>
 <td>&#x9A8C;&#x8BC1;&#x662F;&#x4E0D;&#x662F;&#x5355;&#x4E2A;&#x5B57;&#x7B26;</td>
 <td>-</td>
 </tr>
 <tr>
 <td>&#x662F;&#x5426;&#x662F;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x7B26;</td>
-<td>-</td>
-</tr>
-<tr>
-<td>&#x662F;&#x5426;&#x662F;&#x624B;&#x673A;&#x53F7;</td>
 <td>-</td>
 </tr>
 <tr>
@@ -1218,6 +1222,22 @@
 </table>
 <h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
 <ul>
+<li>&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x662F;&#x624B;&#x673A;&#x53F7;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isPhoneNum</span>(<span class="hljs-params">num</span>) </span>{
+   <span class="hljs-keyword">let</span> reg = <span class="hljs-regexp">/^1[3|4|5|7|8][0-9]{9}$/</span>;
+   <span class="hljs-keyword">return</span> reg.test(num);
+ }
+</code></pre>
+<ul>
+<li>&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x662F;&#x90AE;&#x7BB1;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEmail</span>(<span class="hljs-params">str</span>) </span>{
+  <span class="hljs-keyword">let</span> pattern = <span class="hljs-regexp">/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/</span>;
+  <span class="hljs-keyword">return</span> pattern.test(str)
+}
+</code></pre>
+<ul>
 <li>&#x9A8C;&#x8BC1;&#x662F;&#x4E0D;&#x662F;&#x5355;&#x4E2A;&#x5B57;&#x7B26;</li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isSingleChar</span>(<span class="hljs-params">value</span>) </span>{
@@ -1230,14 +1250,6 @@
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">is32Bit</span>(<span class="hljs-params">c</span>) </span>{
   <span class="hljs-keyword">return</span> c.codePointAt(<span class="hljs-number">0</span>) &gt; <span class="hljs-number">0xFFFF</span>;
 }
-</code></pre>
-<ul>
-<li>&#x662F;&#x5426;&#x662F;&#x624B;&#x673A;&#x53F7;</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isPhoneNum</span>(<span class="hljs-params">num</span>) </span>{
-   <span class="hljs-keyword">let</span> reg = <span class="hljs-regexp">/^1[3|4|5|7|8][0-9]{9}$/</span>;
-   <span class="hljs-keyword">return</span> reg.test(num);
- }
 </code></pre>
 <ul>
 <li>&#x53BB;&#x9664;&#x5B57;&#x7B26;&#x4E32;&#x5F00;&#x59CB;&#x4E0E;&#x7ED3;&#x675F;&#x7684;&#x5F15;&#x53F7;</li>
@@ -1344,7 +1356,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"字符串方法大全","level":"2.4.1","depth":2,"next":{"title":"RegExp","level":"2.5","depth":1,"path":"chapters/RegExp/README.md","ref":"chapters/RegExp/README.md","articles":[]},"previous":{"title":"String","level":"2.4","depth":1,"path":"chapters/String/README.md","ref":"chapters/String/README.md","articles":[{"title":"字符串方法大全","level":"2.4.1","depth":2,"path":"chapters/String/字符串方法大全.md","ref":"chapters/String/字符串方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/String/字符串方法大全.md","mtime":"2017-07-26T06:53:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T02:31:38.790Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"字符串方法大全","level":"2.4.1","depth":2,"next":{"title":"RegExp","level":"2.5","depth":1,"path":"chapters/RegExp/README.md","ref":"chapters/RegExp/README.md","articles":[]},"previous":{"title":"String","level":"2.4","depth":1,"path":"chapters/String/README.md","ref":"chapters/String/README.md","articles":[{"title":"字符串方法大全","level":"2.4.1","depth":2,"path":"chapters/String/字符串方法大全.md","ref":"chapters/String/字符串方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/String/字符串方法大全.md","mtime":"2017-08-08T03:59:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-10T03:09:30.969Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
