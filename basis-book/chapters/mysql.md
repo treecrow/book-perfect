@@ -224,3 +224,31 @@ desc sql语句;                                       | 检测sql语句执行过
 show variables;                                   | 展示mysql中的各种变量
 \s;                                               | 查看服务器的基本信息
 \q; / exit;                                       | 退出
+
+## [my.cnf](http://zhujiangtao.blog.51cto.com/6387416/1296931)
+
+字段                     | 默认值             | 含义
+---------------------- | --------------- | -------------------------------------------------------------------
+port                   | 3306            | mysqld服务运行时的端口号，默认为3306
+socket                 | /tmp/mysql.sock | socket文件是linux/unix系统特有的，用户在该环境下的客户端连接可以不通过tcp/ip网络，而直接使用socket文件连接
+back_log               | 300             | 该值为设定档mysql暂时停止响应新的请求前，短时间内有多少个请求可以存在堆栈内
+skip-networking        | -               | -
+skip-locking           | -               | -
+skip-name-resolve      | -               | -
+max_connections        | -               | -
+max_connect_errors     | -               | -
+table_cache            | -               | -
+max_allowed_packet     | -               | -
+sort_buffer_size       | -               | -
+join_buffer_size       | -               | -
+thread_cache_size      | -               | -
+query_cache_size       | -               | -
+query_cache_limit      | -               | -
+tmp_table_size         | -               | -
+default_storage_engine | -               | -
+log-bin                | -               | -
+key_buffer_size        | -               | -
+read_buffer_size       | -               | -
+expire_logs_days       | -               | -
+
+## [ MySQL事件调度器 CREATE EVENT](http://blog.csdn.net/abandonship/article/details/7050285)

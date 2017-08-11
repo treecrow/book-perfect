@@ -77,6 +77,7 @@
     - [matcha](chapters/moudles/未分类/matcha.md)
     - [node-formidable](chapters/moudles/未分类/node-formidable.md)
     - [node-geohash](chapters/moudles/未分类/node-geohash.md)
+    - [nodemailer](chapters/moudles/未分类/nodemailer.md)
 
   - [jshttp](chapters/moudles/jshttp/README.md)
 
