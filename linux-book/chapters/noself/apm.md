@@ -6,6 +6,7 @@
 ----------------- | -----------------
 apm search        | -
 apm view git-grep | 显示git-grep插件的详细信息
+apm install xxx   | 安装 xxx 插件
 
 ## 快捷键
 
@@ -60,9 +61,11 @@ git config --global core.editor "atom --wait"
 ### 其他插件
 
 插件                  | 作用
-------------------- | --------
+------------------- | -----------
 autoclose-html      | html自动补全
 activate-power-mode | 打字烟花效果
 atom-beautify       | 代码格式化
 js-hyperclick       | 代码跳转
 autocomplete-paths  | 路径自动提示
+language-vue        | 识别 .vue 文件
+Stylus              | 识别 .styl 文件
