@@ -12,3 +12,4 @@
 [loopback](https://github.com/strongloop/loopback) | 基于express的后台框架
 [react](https://github.com/facebook/react)         | 前端框架
 [vue](https://github.com/vuejs/vue)                | 前端框架
+[webpack](https://github.com/webpack/webpack)      | 打包框架

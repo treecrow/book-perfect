@@ -47,6 +47,7 @@
     - [loopback](chapters/moudles/框架/loopback.md)
     - [react](chapters/moudles/框架/react.md)
     - [vue](chapters/moudles/框架/vue.md)
+    - [webpack](chapters/moudles/框架/webpack.md)
 
   - [模版渲染](chapters/moudles/模版渲染/README.md)
 
