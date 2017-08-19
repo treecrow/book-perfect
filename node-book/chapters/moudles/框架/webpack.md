@@ -111,13 +111,33 @@ cachePredicate         | -
 
 > 给编译器添加额外的插件
 
-插件                                                                                                                        | more
-------------------------------------------------------------------------------------------------------------------------- | ----
-[webpack.DefinePlugin]()                                                                                                  | -
-[webpack.optimize.UglifyJsPlugin]()                                                                                       | -
-[webpack.LoaderOptionsPlugin]()                                                                                           | -
-[webpack.optimize.CommonsChunkPlugin]()                                                                                   | 代码分割
-[extract-text-webpack-plugin](https://webpack.js.org/plugins/extract-text-webpack-plugin/#components/sidebar/sidebar.jsx) | -
+插件                                                                                                   | more
+---------------------------------------------------------------------------------------------------- | -----------
+[webpack.DefinePlugin]()                                                                             | -
+[webpack.optimize.UglifyJsPlugin]()                                                                  | -
+[webpack.LoaderOptionsPlugin]()                                                                      | -
+[webpack.optimize.CommonsChunkPlugin]()                                                              | 代码分割
+[extract-text-webpack-plugin](https://webpack.js.org/plugins/extract-text-webpack-plugin)            | 提取代码
+[html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)                           | 生成入口 html文件
+[clean-webpack-plugin](https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder) | 清空文件夹
+
+#### html-webpack-plugin
+
+配置项            | more
+-------------- | --------------------------------------------------------------
+title          | html文件的title
+filename       | html文件名
+template       | html文件的模板
+inject         | bundle 出来的文件 插入到 html 文件到哪里
+favicon        | favicon 图标路径
+minify         | html 文件如何压缩
+hash           | 是否向插入 html 文件中的js和css文件添加hash后缀(此处添加后，bundle出来的文件就不需要添加了)
+cache          | if true (default) try to emit the file only if it was changed.
+showErrors     | errors 的细节是否展示到 html 文件中
+chunks         | 可以只添加部分 chunks
+chunksSortMode | 控制 chunks 插入的顺序
+excludeChunks  | 跳过某些 chunks
+xhtml          | 是否为xhtml形式
 
 ### devtool
 
