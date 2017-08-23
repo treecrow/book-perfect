@@ -52,7 +52,7 @@ request.timeout()                 | Set timeouts to avoid requests waiting forev
 request.auth()                    | 用户认证
 request.attach()                  | 绑定多个文件
 request.field()                   | 绑定多个字段
-request.withCredentials()         | enables the ability to send cookies from the origin
+request.withCredentials()         | 允许传递 cookie
 request.ok(callback)              | -
 request.on('progress',fn)         | 进程跟踪
 request.end(function(err, res){}) | decide whether a response is an error or not
