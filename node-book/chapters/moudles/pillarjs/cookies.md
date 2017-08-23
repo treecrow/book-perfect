@@ -21,7 +21,7 @@ secure | cookie是否只有https请求下才发送
 ## cookies.set 的 options 选项
 
 opt       | more
---------- | ----------------------------------------------------------------------------------------------------
+--------- | -------------------------------------------------------------------------
 maxAge    | 过期的毫秒数
 expires   | cookie何时过期
 path      | cookie的路径，默认是"/"
@@ -30,4 +30,4 @@ secure    | cookie是否只有https请求下才发送
 httpOnly  | 是否只有服务器可以取到cookie，默认为true
 sameSite  | a boolean or string indicating whether the cookie is a "same site" cookie
 signed    | 指定cookie是否加密。如果指定加密的话，必须用app.keys指定加密短语(koa框架中)
-overwrite | a boolean indicating whether to overwrite previously set cookies of the same name (false by default)
+overwrite | 是否重写之前设置的重名的 cookie(false by default)

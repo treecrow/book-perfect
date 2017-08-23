@@ -20,6 +20,7 @@
     - [cheerio](chapters/moudles/常见工具库/cheerio.md)
     - [co](chapters/moudles/常见工具库/co.md)
     - [jquery](chapters/moudles/常见工具库/jquery.md)
+    - [lodash](chapters/moudles/常见工具库/lodash.md)
     - [superagent](chapters/moudles/常见工具库/superagent.md)
 
   - [调试](chapters/moudles/调试/README.md)
