@@ -234,55 +234,51 @@ api         | more
 
 ## Object
 
-api                            | more
------------------------------- | ----
-`_.assign`                     | -
-`_.assignIn`                   | -
-`_.assignInWith`               | -
-`_.assignWith`                 | -
-`_.at`                         | -
-`_.create`                     | -
-`_.defaults`                   | -
-`_.defaultsDeep`               | -
-`_.entries -> toPairs`         | -
-`_.entriesIn -> toPairsIn`     | -
-`_.extend -> assignIn`         | -
-`_.extendWith -> assignInWith` | -
-`_.findKey`                    | -
-`_.findLastKey`                | -
-`_.forIn`                      | -
-`_.forInRight`                 | -
-`_.forOwn`                     | -
-`_.forOwnRight`                | -
-`_.functions`                  | -
-`_.functionsIn`                | -
-`_.get`                        | -
-`_.has`                        | -
-`_.hasIn`                      | -
-`_.invert`                     | -
-`_.invertBy`                   | -
-`_.invoke`                     | -
-`_.keys`                       | -
-`_.keysIn`                     | -
-`_.mapKeys`                    | -
-`_.mapValues`                  | -
-`_.merge`                      | -
-`_.mergeWith`                  | -
-`_.omit`                       | -
-`_.omitBy`                     | -
-`_.pick`                       | -
-`_.pickBy`                     | -
-`_.result`                     | -
-`_.set`                        | -
-`_.setWith`                    | -
-`_.toPairs`                    | -
-`_.toPairsIn`                  | -
-`_.transform`                  | -
-`_.unset`                      | -
-`_.update`                     | -
-`_.updateWith`                 | -
-`_.values`                     | -
-`_.valuesIn`                   | -
+分类          | api              | more
+----------- | ---------------- | ---------------------------------------------------------
+归并          | `_.assign`       | 只归并自身可枚举的属性
+~           | `_.assignIn`     | 归并自身以及继承来的可枚举的属性
+~           | `_.assignInWith` | 与`_.assignIn` 类似，可以添加 customizer
+~           | `_.assignWith`   | 与`_.assign` 类似，可以添加 customizer
+~           | `_.at`           | 安全的读取对象的属性到数组中
+~           | `_.create`       | Creates an object that inherits from the prototype object
+~           | `_.defaults`     | 归并自身以及继承来的可枚举的属性,如果原对象已经有值，不再修改原对象的值
+~           | `_.defaultsDeep` | 与`_.defaults`类似，并且可以深度归并
+~           | `_.merge`        | 与`_.defaults`类似，并且可以深度归并
+~           | `_.mergeWith`    | 与`_.merge`类似，可以添加 customizer
+健值对         | `_.toPairs`      | 对象(字面量)转化为健值对(二维数组形式),只转化自身可枚举的属性
+~           | `_.toPairsIn`    | 对象(字面量)转化为健值对(二维数组形式),转化自身和继承来的可枚举属性
+查找第一个符合条件的  | `_.findKey`      | 找到对象中第一个复合条件的属性，返回对应的 key
+~           | `_.findLastKey`  | 找到对象中最后一个复合条件的属性，返回对应的 key
+遍历          | `_.forIn`        | 遍历对象中自身以及继承来的可枚举的属性(先遍历自身属性，再遍历继承属性)
+~           | `_.forInRight`   | 与`_.forIn`类似，但遍历顺序相反
+~           | `_.forOwn`       | 遍历对象中自身可枚举的属性
+~           | `_.forOwnRight`  | `_.forOwn`类似，但遍历顺序相反
+~           | `_.mapKeys`      | 遍历对象,返回值用于更新对象的 key 值
+~           | `_.mapValues`    | 遍历对象,返回值用于更新对象的 value 值
+~           | `_.transform`    | -
+key/value数组 | `_.functions`    | 将对象中自身可枚举的属性放到一个数组里
+~           | `_.functionsIn`  | 将对象中自身以及继承来的可枚举的属性放到一个数组里
+~           | `_.keys`         | 将对象中自身可枚举的属性放到一个数组里
+~           | `_.keysIn`       | 将对象中自身以及继承来的可枚举的属性放到一个数组里
+~           | `_.values`       | -
+~           | `_.valuesIn`     | -
+path        | `_.get`          | 安全的获取对象的某个属性，如果属性值为false，可以设置一个默认值
+~           | `_.result`       | 与`_.get`类似，如果属性值为 function,返回运行后的结果
+~           | `_.has`          | 验证某个对象自身是否有指定的属性
+~           | `_.hasIn`        | 验证某个对象自身或原型上是否有指定的属性
+~           | `_.invoke`       | 在对象的指定属性上执行方法
+~           | `_.set`          | 设置对象的指定属性
+~           | `_.setWith`      | -
+~           | `_.unset`        | -
+~           | `_.update`       | -
+~           | `_.updateWith`   | -
+倒置          | `_.invert`       | 倒置对象的 key, value，如果倒置后key相同，后面的覆盖前面的
+~           | `_.invertBy`     | 倒置对象的 key, value，如果倒置后key相同，对应的value整合为数组
+选择部分属性      | `_.omit`         | 对象中指定的属性不会被返回
+~           | `_.omitBy`       | 对象中符合条件的属性不会被返回
+~           | `_.pick`         | 对象中指定的属性会被返回
+~           | `_.pickBy`       | 对象中符合条件的属性会被返回
 
 ## Seq
 
