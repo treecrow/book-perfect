@@ -240,7 +240,6 @@ api         | more
 ~           | `_.assignIn`     | 归并自身以及继承来的可枚举的属性
 ~           | `_.assignInWith` | 与`_.assignIn` 类似，可以添加 customizer
 ~           | `_.assignWith`   | 与`_.assign` 类似，可以添加 customizer
-~           | `_.at`           | 安全的读取对象的属性到数组中
 ~           | `_.create`       | Creates an object that inherits from the prototype object
 ~           | `_.defaults`     | 归并自身以及继承来的可枚举的属性,如果原对象已经有值，不再修改原对象的值
 ~           | `_.defaultsDeep` | 与`_.defaults`类似，并且可以深度归并
@@ -263,6 +262,7 @@ key/value数组 | `_.functions`    | 将对象中自身可枚举的属性放到�
 ~           | `_.keysIn`       | 将对象中自身以及继承来的可枚举的属性放到一个数组里
 ~           | `_.values`       | -
 ~           | `_.valuesIn`     | -
+~           | `_.at`           | 安全的读取对象的属性到数组中
 path        | `_.get`          | 安全的获取对象的某个属性，如果属性值为false，可以设置一个默认值
 ~           | `_.result`       | 与`_.get`类似，如果属性值为 function,返回运行后的结果
 ~           | `_.has`          | 验证某个对象自身是否有指定的属性
