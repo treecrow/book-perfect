@@ -6,15 +6,15 @@
 
 ## 相关文档
 
-文档                                                                                      | more
---------------------------------------------------------------------------------------- | ------------------------
-[MySQL 教程 - 菜鸟](http://www.runoob.com/mysql/mysql-tutorial.html)                        | -
-[MySQL数据库操作 - 网易云课堂](http://study.163.com/course/introduction/706085.htm#/courseDetail) | 比较粗略的学习，章节1: MySQL基础(视频)
-[MySQL数据库 - 网易云课堂](http://study.163.com/course/introduction/247003.htm#/courseDetail)   | 比较系统的学习，与php配合(视频)
-[bilibili Mysql 视频教程](http://www.bilibili.com/video/av9529688/index_2.html#page=1)      | -
-[MAC MYSQL使用问题记录](https://zhuanlan.zhihu.com/p/27488543)                                | -
-[CentOS 7.0下使用yum安装MySQL](http://www.linuxidc.com/Linux/2016-09/134940.htm)             | -
-[Access denied for user 'root'@'localhost']()                                           | -
+文档                                                                                                    | more
+----------------------------------------------------------------------------------------------------- | ------------------------
+[MySQL 教程 - 菜鸟](http://www.runoob.com/mysql/mysql-tutorial.html)                                      | -
+[MySQL数据库操作 - 网易云课堂](http://study.163.com/course/introduction/706085.htm#/courseDetail)               | 比较粗略的学习，章节1: MySQL基础(视频)
+[MySQL数据库 - 网易云课堂](http://study.163.com/course/introduction/247003.htm#/courseDetail)                 | 比较系统的学习，与php配合(视频)
+[bilibili Mysql 视频教程](http://www.bilibili.com/video/av9529688/index_2.html#page=1)                    | -
+[MAC MYSQL使用问题记录](https://zhuanlan.zhihu.com/p/27488543)                                              | -
+[CentOS 7.0下使用yum安装MySQL](http://www.linuxidc.com/Linux/2016-09/134940.htm)                           | -
+[Access denied for user 'root'@'localhost'](http://blog.csdn.net/u012730299/article/details/51840416) | -
 
 ## 安装
 
