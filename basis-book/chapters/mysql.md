@@ -6,33 +6,32 @@
 
 ## 相关文档
 
-文档                                                                                                    | more
------------------------------------------------------------------------------------------------------ | ------------------------
-[MySQL 教程 - 菜鸟](http://www.runoob.com/mysql/mysql-tutorial.html)                                      | -
-[MySQL数据库操作 - 网易云课堂](http://study.163.com/course/introduction/706085.htm#/courseDetail)               | 比较粗略的学习，章节1: MySQL基础(视频)
-[MySQL数据库 - 网易云课堂](http://study.163.com/course/introduction/247003.htm#/courseDetail)                 | 比较系统的学习，与php配合(视频)
-[bilibili Mysql 视频教程](http://www.bilibili.com/video/av9529688/index_2.html#page=1)                    | -
-[MAC MYSQL使用问题记录](https://zhuanlan.zhihu.com/p/27488543)                                              | -
-[CentOS 7.0下使用yum安装MySQL](http://www.linuxidc.com/Linux/2016-09/134940.htm)                           | -
-[Access denied for user 'root'@'localhost'](http://blog.csdn.net/u012730299/article/details/51840416) | -
+文档                                                                                      | more
+--------------------------------------------------------------------------------------- | ------------------------
+[MySQL 教程 - 菜鸟](http://www.runoob.com/mysql/mysql-tutorial.html)                        | -
+[MySQL数据库操作 - 网易云课堂](http://study.163.com/course/introduction/706085.htm#/courseDetail) | 比较粗略的学习，章节1: MySQL基础(视频)
+[MAC MYSQL使用问题记录](https://zhuanlan.zhihu.com/p/27488543)                                | -
 
 ## 安装
 
 ### 参考文档
 
-安装方式       | 文档                                                                                       | more
----------- | ---------------------------------------------------------------------------------------- | ----------
-通用         | -                                                                                        | -
--          | [mac安装mysql的两种方法（含配置）](https://zhuanlan.zhihu.com/p/23898598)                            | -
-Homebrew方式 | -                                                                                        | -
--          | [记录使用Homebrew安装Mysql全过程](http://blog.csdn.net/lkxlaz/article/details/54580735)           | -
--          | [MySQL安全配置向导mysql_secure_installation详解](http://www.jb51.net/article/47727.htm)          | -
--          | [Mac Pro下卸载安装Mysql](http://blog.csdn.net/sarahhuangzht/article/details/51508112)         | -
-安装包方式      | -                                                                                        | -
--          | [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)                         | 数据库官方安装包
--          | [MySQL Workbench on OS X](https://dev.mysql.com/doc/workbench/en/wb-installing-mac.html) | 官方mysql客户端
--          | [Mac OS X 平台上有哪些好用且免费的MySQL客户端工具？](https://www.zhihu.com/question/21792734)              | mysql客户端
--          | [mac安装配置mysql，以及卸载5.7.＊](https://zhuanlan.zhihu.com/p/25809129)                          | -
+安装方式       | 文档                                                                                                    | more
+---------- | ----------------------------------------------------------------------------------------------------- | ----------
+通用         | -                                                                                                     | -
+-          | [mac安装mysql的两种方法（含配置）](https://zhuanlan.zhihu.com/p/23898598)                                         | -
+Homebrew方式 | -                                                                                                     | -
+-          | [记录使用Homebrew安装Mysql全过程](http://blog.csdn.net/lkxlaz/article/details/54580735)                        | -
+-          | [MySQL安全配置向导mysql_secure_installation详解](http://www.jb51.net/article/47727.htm)                       | -
+-          | [Mac Pro下卸载安装Mysql](http://blog.csdn.net/sarahhuangzht/article/details/51508112)                      | -
+安装包方式      | -                                                                                                     | -
+-          | [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)                                      | 数据库官方安装包
+-          | [MySQL Workbench on OS X](https://dev.mysql.com/doc/workbench/en/wb-installing-mac.html)              | 官方mysql客户端
+-          | [Mac OS X 平台上有哪些好用且免费的MySQL客户端工具？](https://www.zhihu.com/question/21792734)                           | mysql客户端
+-          | [mac安装配置mysql，以及卸载5.7.＊](https://zhuanlan.zhihu.com/p/25809129)                                       | -
+其它         | [CentOS 7.0下使用yum安装MySQL](http://www.linuxidc.com/Linux/2016-09/134940.htm)                           | -
+-          | [Access denied for user 'root'@'localhost'](http://blog.csdn.net/u012730299/article/details/51840416) | -
+-          | [Linux下彻底卸载mysql详解](http://www.jb51.net/article/97516.htm)                                            | -
 
 ### 使用Homebrew安装Mysql
 

@@ -406,7 +406,7 @@ usbkdp                                                               | -        
 filtercalltree                                                       | -                               | [killall](http://man.linuxde.net/killall)   | 使用进程的名称来杀死进程(杀死一组同名进程)
 parldyn                                                              | -                               | scp                                         | -
 users                                                                | -                               | bzfgrep                                     | -
-find                                                                 | -                               | kinit                                       | -
+[find](http://man.linuxde.net/find)                                  | 在指定目录下查找文件                      | kinit                                       | -
 screen                                                               | -                               | uucp                                        | -
 bzgrep                                                               | -                               | find2perl                                   | -
 klist                                                                | -                               | script                                      | -
@@ -630,3 +630,9 @@ iconutil                                                             | -        
 productsign                                                          | -                               | symbolscache                                | -
 dapptrace                                                            | -                               | iconv                                       | -
 mdls                                                                 | -                               | profiles                                    | -
+
+## 其它
+
+命令                                | more
+--------------------------------- | -----------
+[rpm](http://man.linuxde.net/rpm) | RPM软件包的管理工具
