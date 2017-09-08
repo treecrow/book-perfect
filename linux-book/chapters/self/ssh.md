@@ -4,6 +4,7 @@
 
 - [如何使用SSH登录远程服务器](http://blog.csdn.net/u011054333/article/details/52443061)
 - [SSH登陆阿里云服务器出现Permission denied (publickey)错误解决方案](http://www.cnblogs.com/wangchaowei/p/6914180.html)
+- [SSH免密登录是怎么玩儿的?](https://zhuanlan.zhihu.com/p/28423720)
 
 ## 命令列表
 
