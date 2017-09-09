@@ -1,5 +1,14 @@
 # mac
 
+## 重置步骤
+
+1. 下载安装软件
+2. 设置系统
+3. 安装 brew
+4. 安装 nvm 、node
+5. 安装 zsh
+6. 设置 github ssh
+
 ## 软件列表
 
 软件            | 功能
@@ -9,6 +18,7 @@ tickets       | 打字出声音
 Spectacle     | 窗口规范化放置
 小米云服务         | -
 atom          | -
+Visual Studio Code|-
 qq            | -
 wechat        | -
 网易云音乐         | -
@@ -16,42 +26,93 @@ lantern       | -
 Dr.Unarchiver | -
 Dr.Cleaner    | -
 
---------------------------------------------------------------------------------
-
-## 重装系统后高效配置Mac
+## 设置系统列表
 
 作用            | 步骤
 ------------- | -----------------------------------------
 设置轻触单击        | setting-触控板- 轻点来点按
 将Dock停靠在屏幕左边  | setting-Dock
-全键盘控制模式       | setting-键盘-快捷键-所有控制
 快速锁定屏幕（触发角功能） | setting-桌面与屏幕保护程序-屏幕保护程序-触发角-将显示器置入睡眠状态
 设置睡眠就需要密码     | setting-安全性与隐私-通用-进入睡眠或开始屏幕保护程序 立即 要求输入密码
+Finder 设置用户文件 | Finder->偏好设置->边栏
+全键盘控制模式       | setting-键盘-快捷键-所有控制
+设置 safari 主页|-
 
---------------------------------------------------------------------------------
+## 安装 brew
 
-## zsh
+``` javascript
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-### 安装步骤
+## 安装  nvm 、node
 
-程序                                                                 | 作用
------------------------------------------------------------------- | --------------------
-brew install zsh                                                   | 安裝 zsh（这一步可以不执行？）
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh | 下载一个 .oh-my-zsh 配置
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc              | 创建新配置
-chsh -s /bin/zsh                                                   | 把 zsh 设置成默认的 shell
-open -e ~/.zshrc,然后添加 source ~/.bash_profile                       | 解决重启terminal后命令无效的问题
+- nvm
 
-### 参考文档
+```bash
+// 安装NVM
+brew install nvm
+// 创建.bash_profile文件
+touch ~/.bash_profile
+// 向.bash_profile添加如下内容
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+// 生效
+source ～/.bash_profile
+```
 
-- [mac修改了$path但是每次打开terminal都需要source](https://segmentfault.com/q/1010000002719737)
-- [把 Mac 上的 bash 换成 zsh](http://www.cnblogs.com/heiniuhaha/archive/2011/10/18/2216357.html)
-- [bash 轉移 zsh (oh-my-zsh) 設定心得](http://icarus4.logdown.com/)
-- [zsh 全程指南](http://wdxtub.com/2016/02/18/oh-my-zsh/)
-- [zsh 快捷键](http://www.cnblogs.com/zrui513/p/5668610.html)
-- [终极 Shell----ZSH](https://zhuanlan.zhihu.com/p/19556676?columnSlug=mactalk)
+- node && npm 
 
---------------------------------------------------------------------------------
+```bash
+// 查看 Node 版本
+nvm ls-remote node
+// 选择Node 版本安装
+nvm install v6.9.1
+// 使用制定版本 Node
+nvm use v5.0.0
+nvm alias default v5.0.0
+```
+
+## 安装 zsh
+
+1. 安裝 zsh
+
+```bash
+// 安装
+brew install zsh
+// 将預設的 shell 修改为 zsh
+chsh -s /bin/zsh
+```
+
+2. 安裝 oh-my-zsh
+
+```bash
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
+
+3. 修改 .zshrc
+
+```bash
+// 打开.zshrc
+open -e ~/.zshrc
+// 添加下面内容
+source ~/.bash_profile
+```
+
+## 设置 github ssh
+
+```bash
+// 设置git的user.name和email
+git config --global user.name "treecrow"
+git config --global user.email "drytreecrow@gmail.com" 
+// 生成私钥和公钥
+ssh-keygen -t rsa -C "drytreecrow@gmail.com"
+ssh-add -K id_rsa
+// 添加 私密钥 到ssh(一般不需要做这一步)
+id_rsa.pub
+// 拷贝 id_rsa.pub 中的公钥到github
+// ...
+```
 
 ## 其它
 

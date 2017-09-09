@@ -56,7 +56,6 @@
     - [consolidate](chapters/moudles/模版渲染/consolidate.md)
     - [ejs](chapters/moudles/模版渲染/ejs.md)
     - [escape-html](chapters/moudles/模版渲染/escape-html.md)
-    - [gitbook](chapters/moudles/模版渲染/gitbook.md)
     - [highlight.js](chapters/moudles/模版渲染/highlight.js.md)
     - [marked](chapters/moudles/模版渲染/marked.md)
 
@@ -149,6 +148,4 @@
   - [模块化](chapters/relevant/模块化.md)
   - [babel](chapters/relevant/babel.md)
   - [gulp](chapters/relevant/gulp.md)
-  - [npm](chapters/relevant/npm.md)
   - [package](chapters/relevant/package.md)
-  - [yarn](chapters/relevant/yarn.md)
