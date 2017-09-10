@@ -31,6 +31,8 @@
 
   - [全局控制](chapters/moudles/全局控制/README.md)
 
+    - [eslint](chapters/moudles/全局控制/eslint.md)
+    - [forever](chapters/moudles/全局控制/forever.md)
     - [nodemon](chapters/moudles/全局控制/nodemon.md)
     - [opener](chapters/moudles/全局控制/opener.md)
     - [rimraf](chapters/moudles/全局控制/rimraf.md)
