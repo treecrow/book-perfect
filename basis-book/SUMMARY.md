@@ -25,11 +25,9 @@
 
 - [chrome](chapters/chrome.md)
 
-- [mysql](chapters/mysql.md)
+- [linux系统](chapters/linux系统.md)
 
 - [vsCode](chapters/vsCode.md)
-
-- [其他系统](chapters/其他系统.md)
 
 - [反向代理服务器](chapters/反向代理服务器.md)
 

@@ -1,0 +1,658 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>TCP.IP · basis</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="treecrow">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="token混账东西.md" />
+    
+    
+    <link rel="prev" href="HTTPS.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../mac/">
+            
+                <a href="../mac/">
+            
+                    
+                    mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../mac/mac环境变量.html">
+            
+                <a href="../mac/mac环境变量.html">
+            
+                    
+                    mac环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../mac/mac目录结构.html">
+            
+                <a href="../mac/mac目录结构.html">
+            
+                    
+                    mac目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../mac/mac系统.html">
+            
+                <a href="../mac/mac系统.html">
+            
+                    
+                    mac系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    图解http
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="访问用户身份的认证.html">
+            
+                <a href="访问用户身份的认证.html">
+            
+                    
+                    访问用户身份的认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="通信数据转发设备.html">
+            
+                <a href="通信数据转发设备.html">
+            
+                    
+                    通信数据转发设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="HTTP 报文.html">
+            
+                <a href="HTTP 报文.html">
+            
+                    
+                    HTTP 报文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="HTTP 方法.html">
+            
+                <a href="HTTP 方法.html">
+            
+                    
+                    HTTP 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="HTTP 请求过程完整解读.html">
+            
+                <a href="HTTP 请求过程完整解读.html">
+            
+                    
+                    HTTP 请求过程完整解读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="HTTP 状态码.html">
+            
+                <a href="HTTP 状态码.html">
+            
+                    
+                    HTTP 状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="HTTPS.html">
+            
+                <a href="HTTPS.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.8" data-path="TCP.IP.html">
+            
+                <a href="TCP.IP.html">
+            
+                    
+                    TCP.IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="token混账东西.md">
+            
+                <span>
+            
+                    
+                    token混账东西
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="URI.html">
+            
+                <a href="URI.html">
+            
+                    
+                    URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chrome.html">
+            
+                <a href="../chrome.html">
+            
+                    
+                    chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../linux系统.html">
+            
+                <a href="../linux系统.html">
+            
+                    
+                    linux系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../vsCode.html">
+            
+                <a href="../vsCode.html">
+            
+                    
+                    vsCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../反向代理服务器.html">
+            
+                <a href="../反向代理服务器.html">
+            
+                    
+                    反向代理服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../跨域.html">
+            
+                <a href="../跨域.html">
+            
+                    
+                    跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >TCP.IP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tcp--ip">TCP / IP</h1>
+<blockquote>
+<p>TCP / IP &#x662F;&#x4E92;&#x8054;&#x7F51;&#x76F8;&#x5173;&#x7684;&#x5404;&#x7C7B;&#x534F;&#x8BAE;&#x65CF;&#x7684;&#x603B;&#x79F0;</p>
+</blockquote>
+<h2 id="tcp--ip&#x7684;&#x5206;&#x5C42;&#x7BA1;&#x7406;">TCP / IP&#x7684;&#x5206;&#x5C42;&#x7BA1;&#x7406;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5C42;&#x6B21;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5E94;&#x7528;&#x5C42;</td>
+<td>&#x51B3;&#x5B9A;&#x4E86;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x65F6;&#x901A;&#x4FE1;&#x7684;&#x6D3B;&#x52A8;</td>
+</tr>
+<tr>
+<td>&#x4F20;&#x8F93;&#x5C42;</td>
+<td>&#x5BF9;&#x4E0A;&#x5C42;&#x5E94;&#x7528;&#x5C42;&#xFF0C;&#x63D0;&#x4F9B;&#x5904;&#x4E8E;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x4E2D;&#x7684;&#x4E24;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x4F20;&#x8F93;</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;&#xFF08;&#x6709;&#x540D;&#x7F51;&#x7EDC;&#x4E92;&#x8FDE;&#x5C42;&#xFF09;</td>
+<td>&#x7528;&#x6765;&#x5904;&#x7406;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x6D41;&#x52A8;&#x7684;&#x6570;&#x636E;&#x5305;&#x3002;&#x8BE5;&#x5C42;&#x89C4;&#x5B9A;&#x4E86;&#x901A;&#x8FC7;&#x600E;&#x6837;&#x7684;&#x8DEF;&#x5F84;&#x5230;&#x8FBE;&#x5BF9;&#x65B9;&#x8BA1;&#x7B97;&#x673A;&#xFF0C;&#x5E76;&#x5C06;&#x6570;&#x636E;&#x5305;&#x53D1;&#x9001;&#x7ED9;&#x5BF9;&#x65B9;</td>
+</tr>
+<tr>
+<td>&#x94FE;&#x8DEF;&#x5C42;&#xFF08;&#x53C8;&#x540D;&#x7F51;&#x7EDC;&#x94FE;&#x8DEF;&#x5C42;&#xFF0C;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x5C42;&#xFF09;</td>
+<td>&#x7528;&#x6765;&#x5904;&#x7406;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;&#x7684;&#x786C;&#x4EF6;&#x90E8;&#x5206;&#xFF0C;&#x5305;&#x62EC;&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x786C;&#x4EF6;&#x7684;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x3001;NIC&#x53CA;&#x5149;&#x7EA4;&#x7B49;&#x7269;&#x7406;&#x53EF;&#x89C1;&#x90E8;&#x5206;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tcp--ip-&#x5305;&#x542B;&#x7684;&#x76F8;&#x5173;&#x534F;&#x8BAE;">TCP / IP &#x5305;&#x542B;&#x7684;&#x76F8;&#x5173;&#x534F;&#x8BAE;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5C42;&#x6B21;</th>
+<th>&#x534F;&#x8BAE;</th>
+<th>&#x5168;&#x540D;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5E94;&#x7528;&#x5C42;</td>
+<td>FTP</td>
+<td>File Transfer Protocol</td>
+<td>&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>DNS</td>
+<td>Domain Name System</td>
+<td>&#x57DF;&#x540D;&#x7CFB;&#x7EDF;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>HTTP</td>
+<td>HyperText Transfer Protocol</td>
+<td>&#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#xFF08;&#x8F6C;&#x79FB;&#xFF09;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>&#x4F20;&#x8F93;&#x5C42;</td>
+<td>TCP</td>
+<td>Transmission Control Protocol</td>
+<td>&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>UDP</td>
+<td>User Data Protocol</td>
+<td>&#x7528;&#x6237;&#x6570;&#x636E;&#x62A5;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;</td>
+<td>IP</td>
+<td>Internet Protocol</td>
+<td>&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ARP</td>
+<td>Address Resolution Protocol</td>
+<td>&#x5730;&#x5740;&#x89E3;&#x6790;&#x534F;&#x8BAE;&#xFF08;&#x6839;&#x636E;&#x901A;&#x4FE1;&#x65B9;&#x7684; IP &#x5730;&#x5740;&#x5C31;&#x53EF;&#x4EE5;&#x53CD;&#x67E5;&#x51FA;&#x5BF9;&#x5E94;&#x7684;MAC&#x5730;&#x5740;&#xFF09;</td>
+</tr>
+<tr>
+<td>&#x94FE;&#x8DEF;&#x5C42;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x672A;&#x5206;&#x7C7B;</td>
+<td>IEEE 802.3</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>FDDI</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>ICMP</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>PPPoE</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>SNMP</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="HTTPS.html" class="navigation navigation-prev " aria-label="Previous page: HTTPS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="token混账东西.md" class="navigation navigation-next " aria-label="Next page: token混账东西">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TCP.IP","level":"2.2.8","depth":2,"next":{"title":"token混账东西","level":"2.2.9","depth":2,"path":"chapters/图解http/token混账东西.md","ref":"chapters/图解http/token混账东西.md","articles":[]},"previous":{"title":"HTTPS","level":"2.2.7","depth":2,"path":"chapters/图解http/HTTPS.md","ref":"chapters/图解http/HTTPS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"basis","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/图解http/TCP.IP.md","mtime":"2017-09-10T03:46:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-10T11:16:03.512Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -8,8 +8,10 @@
 
 - [命令详情](chapters/detail/README.md)
   - [cat](chapters/detail/cat.md)
+  - [code](chapters/detail/code.md)
   - [git](chapters/detail/git.md)
   - [gitbook](chapters/detail/gitbook.md)
+  - [mysql](chapters/detail/mysql.md)
   - [npm](chapters/detail/npm.md)
   - [nvm](chapters/detail/nvm.md)
   - [ssh](chapters/detail/ssh.md)
