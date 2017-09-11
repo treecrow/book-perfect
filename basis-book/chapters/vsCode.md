@@ -4,6 +4,7 @@
 
 - [Microsoft Visual Studio Code 中文手册](https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/)
 - [VS Code extensions](https://marketplace.visualstudio.com/VSCode)
+- [mermaid](https://mermaidjs.github.io)
 
 ## 快捷键列表
 
@@ -37,9 +38,14 @@
 
 | 扩展                       | more                    |
 |--------------------------|-------------------------|
-| markdownlint             | markdown 语法错误检查提示       |
+| ESLint                   | js 代码风格检查               |
+| Markdown PDF             | markdown 转化为 PDF        |
 | markdown-table-formatter | markdown table 表格代码格式化  |
+| Markdown Theme Kit       | -                       |
+| Markdown Math            | markdown 支持数学公式         |
+| markdownlint             | markdown 语法错误检查提示       |
 | Table Formatter          | markdown table 等多种代码格式化 |
+| Vue 2 Snippets           | *.vue 文件代码支持            |
 
 ## 命令行工具
 
