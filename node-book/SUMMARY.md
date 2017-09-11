@@ -40,6 +40,7 @@
 
   - [数据接口](chapters/moudles/数据接口/README.md)
 
+    - [graphql](chapters/moudles/数据接口/graphql.md)
     - [mysql](chapters/moudles/数据接口/mysql.md)
 
   - [框架](chapters/moudles/框架/README.md)
