@@ -31,4 +31,6 @@
 
 - [反向代理服务器](chapters/反向代理服务器.md)
 
+- [性能优化](chapters/性能优化.md)
+
 - [跨域](chapters/跨域.md)

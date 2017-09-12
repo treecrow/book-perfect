@@ -15,19 +15,10 @@
 
 - [Advanced](chapters/Advanced/README.md)
 
-  - [特种函数大全](chapters/Advanced/特种函数大全.md)
-  - [异步编程](chapters/Advanced/异步编程.md)
   - [函数式编程](chapters/Advanced/函数式编程.md)
-
-- [Capability](chapters/Capability/README.md)
-
-  - [减少HTTP请求数](chapters/Capability/减少HTTP请求数.md)
-  - [尽可能的利用缓存](chapters/Capability/尽可能的利用缓存.md)
-  - [减小传输体积](chapters/Capability/减小传输体积.md)
-  - [合理安排请求顺序](chapters/Capability/合理安排请求顺序.md)
-  - [减少DOM渲染](chapters/Capability/减少DOM渲染.md)
-  - [内存泄漏](chapters/Capability/内存泄漏.md)
-  - [意外的全局变量](chapters/Capability/意外的全局变量.md)
+  - [双向绑定](chapters/Advanced/双向绑定.md)
+  - [异步编程](chapters/Advanced/异步编程.md)
+  - [特种函数大全](chapters/Advanced/特种函数大全.md)
 
 - [String](chapters/String/README.md)
 
