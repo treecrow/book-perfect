@@ -8,6 +8,7 @@
 4. 安装 nvm 、node
 5. 安装 zsh
 6. 设置 github ssh
+7. .DS_Store
 
 ## 软件列表
 
@@ -113,6 +114,21 @@ ssh-add -K id_rsa
 id_rsa.pub
 // 拷贝 id_rsa.pub 中的公钥到github
 // ...
+```
+
+## .DS_Store
+
+### 禁止.DS_store生成
+
+```bash
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+// 重启Mac
+```
+
+### 恢复.DS_store生成
+
+```bash
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 ```
 
 ## 其它
