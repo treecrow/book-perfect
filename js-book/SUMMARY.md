@@ -6,8 +6,10 @@
 
 - [Basis](chapters/Basis/README.md)
 
+  - [JavaScript 运行机制](chapters/Basis/JavaScript 运行机制.md)
   - [new操作符](chapters/Basis/new操作符.md)
   - [this](chapters/Basis/this.md)
+  - [typeof](chapters/Basis/typeof.md)
   - [var、let、const区别](chapters/Basis/var、let、const区别.md)
   - [严格模式](chapters/Basis/严格模式.md)
   - [传参机制](chapters/Basis/传参机制.md)
