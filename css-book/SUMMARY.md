@@ -11,6 +11,7 @@
 
 - [layout](chapters/layout/README.md)
 
+  - [BFC](chapters/layout/BFC.md)
   - [flex布局](chapters/layout/flex布局.md)
   - [width](chapters/layout/width.md)
   - [margin](chapters/layout/margin.md)
