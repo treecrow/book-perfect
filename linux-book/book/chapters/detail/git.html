@@ -365,14 +365,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="git&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;">git&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;</h1>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
 <ul>
 <li>github ssh&#x6DFB;&#x52A0;:<a href="http://www.bkjia.com/Androidjc/837965.html" target="_blank">&#x591A;&#x4E2A;ssh&#x7684;&#x95EE;&#x9898;</a></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank">Git&#x6559;&#x7A0B;</a></li>
 </ul>
-<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
-<pre><code>apt-get update
-apt-get install git
-git --version
-</code></pre><h2 id="&#x521B;&#x5EFA;&#x6DFB;&#x52A0;&#x5220;&#x9664;&#x63D0;&#x4EA4;&#x5173;&#x8054;&#x63A8;&#x9001;&#x514B;&#x9686;">&#x521B;&#x5EFA;/&#x6DFB;&#x52A0;/&#x5220;&#x9664;/&#x63D0;&#x4EA4;/&#x5173;&#x8054;/&#x63A8;&#x9001;/&#x514B;&#x9686;</h2>
+<h2 id="&#x521B;&#x5EFA;&#x6DFB;&#x52A0;&#x5220;&#x9664;&#x63D0;&#x4EA4;&#x5173;&#x8054;&#x63A8;&#x9001;&#x514B;&#x9686;">&#x521B;&#x5EFA;/&#x6DFB;&#x52A0;/&#x5220;&#x9664;/&#x63D0;&#x4EA4;/&#x5173;&#x8054;/&#x63A8;&#x9001;/&#x514B;&#x9686;</h2>
 <table>
 <thead>
 <tr>
@@ -381,6 +379,14 @@ git --version
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>git config --global user.name</td>
+<td>-</td>
+</tr>
+<tr>
+<td>git config --global user.email</td>
+<td>-</td>
+</tr>
 <tr>
 <td>git init</td>
 <td>&#x521B;&#x5EFA;&#x7248;&#x672C;&#x5E93;&#xFF08;&#x628A;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x53D8;&#x6210;Git&#x53EF;&#x4EE5;&#x7BA1;&#x7406;&#x7684;&#x4ED3;&#x5E93;&#xFF09;</td>
@@ -475,12 +481,12 @@ git --version
 </thead>
 <tbody>
 <tr>
-<td>git reset HEAD readme.txt</td>
-<td>&#x628A;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x64A4;&#x9500;&#x6389;&#xFF08;unstage&#xFF09;&#xFF0C;&#x91CD;&#x65B0;&#x653E;&#x56DE;&#x5DE5;&#x4F5C;&#x533A;</td>
-</tr>
-<tr>
 <td>git checkout -- file</td>
 <td>&#x628A;readme.txt&#x6587;&#x4EF6;&#x5728;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x5168;&#x90E8;&#x64A4;&#x9500;</td>
+</tr>
+<tr>
+<td>git reset HEAD readme.txt</td>
+<td>&#x628A;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x64A4;&#x9500;&#x6389;&#xFF08;unstage&#xFF09;&#xFF0C;&#x91CD;&#x65B0;&#x653E;&#x56DE;&#x5DE5;&#x4F5C;&#x533A;</td>
 </tr>
 </tbody>
 </table>
@@ -691,7 +697,7 @@ Host github.com
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.5.3","depth":2,"next":{"title":"gitbook","level":"1.5.4","depth":2,"path":"chapters/detail/gitbook.md","ref":"chapters/detail/gitbook.md","articles":[]},"previous":{"title":"code","level":"1.5.2","depth":2,"path":"chapters/detail/code.md","ref":"chapters/detail/code.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/detail/git.md","mtime":"2017-09-10T03:46:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-16T15:52:23.805Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git","level":"1.5.3","depth":2,"next":{"title":"gitbook","level":"1.5.4","depth":2,"path":"chapters/detail/gitbook.md","ref":"chapters/detail/gitbook.md","articles":[]},"previous":{"title":"code","level":"1.5.2","depth":2,"path":"chapters/detail/code.md","ref":"chapters/detail/code.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/detail/git.md","mtime":"2017-09-19T07:55:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-19T14:52:01.313Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
