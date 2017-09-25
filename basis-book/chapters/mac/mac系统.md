@@ -26,6 +26,7 @@
 | lantern            | -       |
 | Dr.Unarchiver      | -       |
 | Dr.Cleaner         | -       |
+| appcleaner         | 卸载软件    |
 
 ## 设置系统列表
 

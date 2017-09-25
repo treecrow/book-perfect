@@ -15,6 +15,7 @@
   - [npm](chapters/detail/npm.md)
   - [nvm](chapters/detail/nvm.md)
   - [ssh](chapters/detail/ssh.md)
+  - [svn](chapters/detail/svn.md)
   - [vim](chapters/detail/vim.md)
   - [wget](chapters/detail/wget.md)
   - [yarn](chapters/detail/yarn.md)
