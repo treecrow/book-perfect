@@ -7,6 +7,7 @@
 - [shell](chapters/shell.md)
 
 - [命令详情](chapters/detail/README.md)
+  - [brew](chapters/detail/brew.md)
   - [cat](chapters/detail/cat.md)
   - [code](chapters/detail/code.md)
   - [git](chapters/detail/git.md)
