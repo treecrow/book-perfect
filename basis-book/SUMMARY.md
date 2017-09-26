@@ -27,7 +27,6 @@
 - [linux系统](chapters/linux系统.md)
 - [markdown](chapters/markdown.md)
 - [MVC，MVP 和 MVVM](chapters/MVC，MVP 和 MVVM.md)
-- [ngnix](chapters/ngnix.md)
 - [vsCode](chapters/vsCode.md)
 - [vue](chapters/vue.md)
 - [前后端分离](chapters/前后端分离.md)

@@ -13,6 +13,7 @@
   - [git](chapters/detail/git.md)
   - [gitbook](chapters/detail/gitbook.md)
   - [mysql](chapters/detail/mysql.md)
+  - [nginx](chapters/detail/nginx.md)
   - [npm](chapters/detail/npm.md)
   - [nvm](chapters/detail/nvm.md)
   - [ssh](chapters/detail/ssh.md)
