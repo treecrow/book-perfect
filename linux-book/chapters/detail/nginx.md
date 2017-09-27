@@ -2,6 +2,8 @@
 
 ## 相关文档
 
+- [Nginx中文文档](http://www.nginx.cn/doc/)
+- [Nginx开发从入门到精通](http://tengine.taobao.org/book/)
 - [在Mac上安装nginx](http://www.jianshu.com/p/46b083bfd5e0)
 - [nginx在MAC上的安装、启动、重启和关闭](http://blog.csdn.net/yqh19880321/article/details/70478827)
 - [nginx 基本入门](https://zhuanlan.zhihu.com/p/24382606)
@@ -14,7 +16,10 @@
 | brew services stop nginx    | 关闭 ngnix               |
 | brew services restart nginx | 重启 ngnix               |
 | nginx                       | -                      |
-| nginx -c xxx                | -                      |
+| nginx -V                    | 查看版本，以及配置文件地址          |
+| nginx -v                    | 查看版本                   |
+| nginx -c filename           | 指定配置文件                 |
+| nginx -h                    | 帮助                     |
 | nginx -s reload             | 重新加载配置文件，相当于重启         |
 | nginx -s stop               | 直接关闭 nginx             |
 | nginx -s quit               | 会在处理完当前正在的请求后退出，也叫优雅关闭 |

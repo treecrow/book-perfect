@@ -48,6 +48,8 @@
 | markdownlint             | markdown 语法错误检查提示       |
 | Table Formatter          | markdown table 等多种代码格式化 |
 | Vue 2 Snippets           | *.vue 文件代码支持            |
+| CSS Formatter            | css代码格式化                |
+
 
 ## 命令行工具
 

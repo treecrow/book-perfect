@@ -16,6 +16,7 @@
   - [nginx](chapters/detail/nginx.md)
   - [npm](chapters/detail/npm.md)
   - [nvm](chapters/detail/nvm.md)
+  - [ps](chapters/detail/ps.md)
   - [ssh](chapters/detail/ssh.md)
   - [svn](chapters/detail/svn.md)
   - [vim](chapters/detail/vim.md)

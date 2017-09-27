@@ -40,6 +40,8 @@
 | 全键盘控制模式       | setting-键盘-快捷键-所有控制                       |
 | 自动隐藏菜单栏       | setting->通用                               |
 | 设置 safari 主页  | -                                         |
+| 关闭Dashboard   | setting->Mission Control ->               |
+| 禁止多个桌面自动调制位置  | setting->Mission Control ->               |
 
 ## 安装 brew
 
