@@ -30,7 +30,6 @@
 - [vsCode](chapters/vsCode.md)
 - [vue](chapters/vue.md)
 - [前后端分离](chapters/前后端分离.md)
-- [反向代理服务器](chapters/反向代理服务器.md)
 - [性能优化](chapters/性能优化.md)
 - [浏览器缓存](chapters/浏览器缓存.md)
 - [跨域](chapters/跨域.md)
