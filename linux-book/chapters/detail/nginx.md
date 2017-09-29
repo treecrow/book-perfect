@@ -53,29 +53,30 @@
 
 > 用于控制Nginx如何处理连接，该模块的指令的一些参数会对应用系统的性能产生重要的影响
 
-| 名字                 | more |
-|--------------------|------|
-| worker_connections | -    |
+| 名字                 | more         |
+|--------------------|--------------|
+| worker_connections | 每个进程支持的最大连接数 |
 
 ## HTTP内核模块(HttpCoreModule-http)
 
 > 提供HTTP访问Nginx服务器，该模块是不能缺少的
 
-| 名字                | 名字                   | more |
-|-------------------|----------------------|------|
-| include           | -                    | -    |
-| default_type      | -                    | -    |
-| sendfile          | -                    | -    |
-| keepalive_timeout | -                    | -    |
-| server            | -                    | -    |
-| ~                 | listen               | -    |
-| ~                 | server_name          | -    |
-| ~                 | access_log           | -    |
-| ~                 | root                 | -    |
-| ~                 | location             | -    |
-| ~                 | autoindex            | -    |
-| ~                 | autoindex_exact_size | -    |
-| ~                 | error_page           | -    |
+| 名字                | 名字                   | 名字         | more |
+|-------------------|----------------------|------------|------|
+| include           | -                    | -          | -    |
+| default_type      | -                    | -          | -    |
+| sendfile          | -                    | -          | -    |
+| keepalive_timeout | -                    | -          | -    |
+| server            | -                    | -          | -    |
+| ~                 | listen               | -          | -    |
+| ~                 | server_name          | -          | -    |
+| ~                 | access_log           | -          | -    |
+| ~                 | root                 | -          | -    |
+| ~                 | location             | -          | -    |
+| ~                 | ~                    | proxy_pass | 跳转网址 |
+| ~                 | autoindex            | -          | -    |
+| ~                 | autoindex_exact_size | -          | -    |
+| ~                 | error_page           | -          | -    |
 
 ## 期望将端口去掉，绑定域名提供测试
 
