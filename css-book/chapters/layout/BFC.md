@@ -23,13 +23,12 @@
 ## 左边固定宽度，右边随浏览器宽度适应
 
 ```css
-.bfc-left {
-  float: left;
-  width: 200px;
-  height: 100vh;
-  background-color: #0f0;
+.bfc::before, .bfc::after {
+  display: table;
+  content: '';
+  clear: both;
 }
-.bfc-right {
+.bfc .bfc-content {
   overflow: hidden;
 }
 ```

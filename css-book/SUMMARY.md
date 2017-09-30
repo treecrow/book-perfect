@@ -4,24 +4,25 @@
 
 --------------------------------------------------------------------------------
 
-- [assembly](chapters/assembly/README.md)
+- [reset](chapters/reset/README.md)
 
-  - [step](chapters/assembly/step.md)
-  - [paper](chapters/assembly/paper.md)
+  - [reset](chapters/reset/reset.md)
+  - [页面字体大小](chapters/reset/页面字体大小.md)
 
 - [layout](chapters/layout/README.md)
 
-  - [BFC](chapters/layout/BFC.md)
-  - [flex布局](chapters/layout/flex布局.md)
-  - [width](chapters/layout/width.md)
+  - [bfc](chapters/layout/bfc.md)
+  - [flex](chapters/layout/flex.md)
+  - [inlineBlock](chapters/layout/inlineBlock.md)
   - [margin](chapters/layout/margin.md)
+  - [width](chapters/layout/width.md)
   - [居中](chapters/layout/居中.md)
 
-- [reset](chapters/reset/README.md)
+- [assembly](chapters/assembly/README.md)
 
-  - [normalize](chapters/reset/normalize.md)
-  - [个人reset](chapters/reset/reset.md)
-  - [页面字体大小](chapters/reset/页面字体大小.md)
+  - [imgBox](chapters/assembly/imgBox.md)
+  - [paper](chapters/assembly/paper.md)
+  - [step](chapters/assembly/step.md)
 
 - [tool](chapters/tool/README.md)
 
