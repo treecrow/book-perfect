@@ -18,7 +18,6 @@
   - [brew](chapters/other/brew.md)
   - [code](chapters/other/code.md)
   - [gitbook](chapters/other/gitbook.md)
-  - [lessc](chapters/other/lessc.md)
   - [mysql](chapters/other/mysql.md)
   - [nginx](chapters/other/nginx.md)
   - [npm](chapters/other/npm.md)
