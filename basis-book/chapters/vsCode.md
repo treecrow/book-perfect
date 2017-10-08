@@ -60,41 +60,14 @@
 
 ## 设置列表
 
-| 分类                         | 字段                | more                |
-|----------------------------|-------------------|---------------------|
-| 常用配置                       | editor.fontFamily | 控制字体系列              |
-| ~                          | editor.fontSize   | 以像素为单位控制字号          |
-| 编辑器                        | -                 | -                   |
-| 工作台                        | -                 | -                   |
-| 窗口                         | -                 | -                   |
-| Zen 模式                     | -                 | -                   |
-| 文件                         | files.encoding    | 读取和编写文件时将使用的默认字符集编码 |
-| 文件资源管理器                    | -                 | -                   |
-| 搜索                         | search.exclude    | 搜索时忽略的文件夹           |
-| HTTP                       | -                 | -                   |
-| 更新                         | -                 | -                   |
-| 键盘                         | -                 | -                   |
-| CSS                        | -                 | -                   |
-| SCSS                       | -                 | -                   |
-| LESS                       | -                 | -                   |
-| HTML                       | -                 | -                   |
-| JSON                       | -                 | -                   |
-| Markdown                   | -                 | -                   |
-| PHP                        | -                 | -                   |
-| TypeScript                 | -                 | -                   |
-| 调试                         | -                 | -                   |
-| 扩展                         | -                 | -                   |
-| 外部终端                       | -                 | -                   |
-| 集成终端                       | -                 | -                   |
-| 问题预览                       | -                 | -                   |
-| 遥测文件                       | -                 | -                   |
-| Emmet                      | -                 | -                   |
-| 默认配置替代                     | -                 | -                   |
-| ESLint                     | -                 | -                   |
-| markdownlint configuration | -                 | -                   |
-| git                        | -                 | -                   |
-| grunt                      | -                 | -                   |
-| npm                        | -                 | -                   |
-| 合并冲突                       | -                 | -                   |
-| gulp                       | -                 | -                   |
-| jack                       | -                 | -                   |
+| 字段                               | more                     |
+|----------------------------------|--------------------------|
+| editor.detectIndentation         | 不让编辑器根据文本类型自动分配tab对应的空格数 |
+| editor.tabSize                   | tab长度                    |
+| editor.fontFamily                | 字体样式                     |
+| editor.fontSize                  | 字体大小                     |
+| workbench.activityBar.visible    | 显示动态条(最边上的切换图标区域)        |
+| workbench.statusBar.visible      | 显示状态条                    |
+| window.openFilesInNewWindow      | 在新窗口打开文件夹                |
+| workbench.startupEditor          | 打开编辑器的初始状态               |
+| extensions.ignoreRecommendations | 忽略推荐的扩展                  |
