@@ -12,9 +12,13 @@
 
 - [nginx](chapters/nginx/README.md)
 
+  - [http核心模块](chapters/nginx/http核心模块.md)
+  - [server](chapters/nginx/server.md)
   - [主模块](chapters/nginx/主模块.md)
   - [事件模块](chapters/nginx/事件模块.md)
-  - [http核心模块](chapters/nginx/http核心模块.md)
+  - [基本数据结构](chapters/nginx/基本数据结构.md)
+  - [指令上下文](chapters/nginx/指令上下文.md)
+  - [模块的分类](chapters/nginx/模块的分类.md)
 
 - [图解http](chapters/图解http/README.md)
 

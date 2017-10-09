@@ -366,7 +366,7 @@
 | rview                                                                | -                               | ul                                                | -                                        |
 | bc                                                                   | -                               | etags                                             | -                                        |
 | jps                                                                  | -                               | osacompile                                        | -                                        |
-| rvim                                                                 | -                               | ulimit                                            | -                                        |
+| rvim                                                                 | -                               | [ulimit](http://man.linuxde.net/ulimit)           | 用来限制系统用户对shell资源的访问                      |
 | bg                                                                   | -                               | ex                                                | -                                        |
 | jrunscript                                                           | -                               | osadecompile                                      | -                                        |
 | umask                                                                | -                               | biff                                              | -                                        |
