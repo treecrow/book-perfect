@@ -10,6 +10,12 @@
   - [mac目录结构](chapters/mac/mac目录结构.md)
   - [mac系统](chapters/mac/mac系统.md)
 
+- [nginx](chapters/nginx/README.md)
+
+  - [主模块](chapters/nginx/主模块.md)
+  - [事件模块](chapters/nginx/事件模块.md)
+  - [http核心模块](chapters/nginx/http核心模块.md)
+
 - [图解http](chapters/图解http/README.md)
 
   - [访问用户身份的认证](chapters/图解http/访问用户身份的认证.md)
