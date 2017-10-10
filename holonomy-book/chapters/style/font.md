@@ -14,3 +14,7 @@
 | ~    | text-white   | -                |
 | 字体图标 | fa           | font-awesome.css |
 | ~    | fa-          | -                |
+| ~    | fa-4x        | 4em              |
+| ~    | fa-5x        | 5em              |
+| 位置   | text-center  | -                |
+| ~    | text-right   | -                |
