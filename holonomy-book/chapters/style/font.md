@@ -4,6 +4,7 @@
 |------|--------------|------------------|
 | 字体样式 | font-bold    | -                |
 | 字体大小 | text-xs      | -                |
+| ~    | small        | -                |
 | 字体颜色 | text-navy    | -                |
 | ~    | text-primary | -                |
 | ~    | text-success | -                |
@@ -16,5 +17,6 @@
 | ~    | fa-          | -                |
 | ~    | fa-4x        | 4em              |
 | ~    | fa-5x        | 5em              |
+| ~    | big-icon     | -                |
 | 位置   | text-center  | -                |
 | ~    | text-right   | -                |

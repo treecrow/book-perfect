@@ -15,6 +15,7 @@
 | ~   | btn-warning   | -          |
 | ~   | btn-danger    | -          |
 | ~   | btn-link      | -          |
+| ~   | btn-white     | -          |
 | 样式  | btn-outline   | 镂空         |
 | ~   | btn-circle    | 圆按钮        |
 | ~   | btn-rounded   | 椭圆按钮       |

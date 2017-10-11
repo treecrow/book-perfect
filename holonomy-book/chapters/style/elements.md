@@ -23,3 +23,15 @@
 | todo-list      | -    |
 | small-list     | -    |
 | todo-completed | -    |
+
+## Timeline
+
+| class                     | more |
+|---------------------------|------|
+| vertical-container        | -    |
+| \#vertical-timeline       | -    |
+| light-timeline            | -    |
+| dark-timeline             | -    |
+| vertical-timeline-block   | -    |
+| vertical-timeline-icon    | -    |
+| vertical-timeline-content | -    |
