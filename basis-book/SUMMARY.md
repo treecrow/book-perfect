@@ -34,6 +34,7 @@
   - [URI](chapters/图解http/URI.md)
 
 - [chrome](chapters/chrome.md)
+- [jwt](chapters/jwt.md)
 - [linux系统](chapters/linux系统.md)
 - [markdown](chapters/markdown.md)
 - [MVC，MVP 和 MVVM](chapters/MVC，MVP 和 MVVM.md)
