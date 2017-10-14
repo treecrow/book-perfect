@@ -8,6 +8,7 @@
 
 - [self](chapters/self/README.md)
   - [cat](chapters/self/cat.md)
+  - [chmod](chapters/self/chmod.md)
   - [git](chapters/self/git.md)
   - [kill](chapters/self/kill.md)
   - [ps](chapters/self/ps.md)
