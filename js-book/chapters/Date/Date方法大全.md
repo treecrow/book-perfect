@@ -101,3 +101,15 @@ function verifyDate(vDate){
 }
 verifyDate("2021-02-19 16:21:51");//布尔值
 ```
+
+## 根据年月获取当月天数和第一天的星期
+
+```javascript
+function getMonthMsg(date) {
+  if (typeof date === 'string' || !isNaN(date)) date = new Date(date);
+  return {
+    startWeek: new Date(date.getFullYear(), date.getMonth(), 1).getDay(),
+    dayCount: new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate()
+  }
+}
+```

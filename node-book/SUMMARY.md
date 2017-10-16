@@ -59,6 +59,7 @@
     - [consolidate](chapters/moudles/模版渲染/consolidate.md)
     - [ejs](chapters/moudles/模版渲染/ejs.md)
     - [escape-html](chapters/moudles/模版渲染/escape-html.md)
+    - [Handlebars](chapters/moudles/模版渲染/Handlebars.md)
     - [highlight.js](chapters/moudles/模版渲染/highlight.js.md)
     - [marked](chapters/moudles/模版渲染/marked.md)
 

@@ -9,13 +9,13 @@
   - [JavaScript 运行机制](chapters/Basis/JavaScript 运行机制.md)
   - [new操作符](chapters/Basis/new操作符.md)
   - [this](chapters/Basis/this.md)
-  - [typeof](chapters/Basis/typeof.md)
   - [var、let、const区别](chapters/Basis/var、let、const区别.md)
   - [严格模式](chapters/Basis/严格模式.md)
   - [传参机制](chapters/Basis/传参机制.md)
   - [变量函数提升](chapters/Basis/变量函数提升.md)
   - [基本类型与引用类型](chapters/Basis/基本类型与引用类型.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
+  - [类型](chapters/Basis/类型.md)
 
 - [Advanced](chapters/Advanced/README.md)
 
@@ -26,6 +26,7 @@
 
 - [String](chapters/String/README.md)
 
+  - [字符串截取](chapters/String/字符串截取.md)
   - [字符串方法大全](chapters/String/字符串方法大全.md)
 
 - [RegExp](chapters/RegExp/README.md)
