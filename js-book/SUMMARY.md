@@ -41,7 +41,7 @@
 - [Number && Math](chapters/Number && Math/README.md)
 
   - [Math方法大全](chapters/Number && Math/Math方法大全.md)
-  - [Number()、parseInt()、parseFloat()的区别](chapters/Number && Math/Number()、parseInt()、parseFloat()的区别.md)
+  - [Number、parseInt、parseFloat的区别](chapters/Number && Math/Number、parseInt、parseFloat的区别.md)
 
 - [Date](chapters/Date/README.md)
 

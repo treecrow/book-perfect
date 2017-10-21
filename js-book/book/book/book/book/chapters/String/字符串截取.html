@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Math方法大全 · javascript</title>
+        <title>字符串截取 · javascript</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,7 +73,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Date/" />
+    <link rel="next" href="字符串方法大全.html" />
     
     
     <link rel="prev" href="./" />
@@ -345,9 +345,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../String/">
+        <li class="chapter " data-level="2.3" data-path="./">
             
-                <a href="../String/">
+                <a href="./">
             
                     
                     String
@@ -359,9 +359,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../String/字符串截取.html">
+        <li class="chapter active" data-level="2.3.1" data-path="字符串截取.html">
             
-                <a href="../String/字符串截取.html">
+                <a href="字符串截取.html">
             
                     
                     字符串截取
@@ -372,9 +372,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="../String/字符串方法大全.html">
+        <li class="chapter " data-level="2.3.2" data-path="字符串方法大全.html">
             
-                <a href="../String/字符串方法大全.html">
+                <a href="字符串方法大全.html">
             
                     
                     字符串方法大全
@@ -487,9 +487,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="./">
+        <li class="chapter " data-level="2.7" data-path="../Math/">
             
-                <a href="./">
+                <a href="../Math/">
             
                     
                     Math
@@ -501,9 +501,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.7.1" data-path="Math方法大全.html">
+        <li class="chapter " data-level="2.7.1" data-path="../Math/Math方法大全.html">
             
-                <a href="Math方法大全.html">
+                <a href="../Math/Math方法大全.html">
             
                     
                     Math方法大全
@@ -1117,7 +1117,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Math方法大全</a>
+        <a href="../.." >字符串截取</a>
     </h1>
 </div>
 
@@ -1132,44 +1132,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="math&#x65B9;&#x6CD5;&#x5927;&#x5168;&#xFF08;&#x5927;&#x6742;&#x70E9;&#xFF09;">Math&#x65B9;&#x6CD5;&#x5927;&#x5168;&#xFF08;&#x5927;&#x6742;&#x70E9;&#xFF09;</h1>
-<h2 id="&#x83B7;&#x5F97;&#x67D0;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;">&#x83B7;&#x5F97;&#x67D0;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;</h2>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getRandom</span>(<span class="hljs-params">istart, iend</span>)</span>{
-  <span class="hljs-keyword">var</span> iChoice = istart - iend +<span class="hljs-number">1</span>;
-  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * iChoice + istart;
-}
-</code></pre>
-<h2 id="&#x751F;&#x6210;&#x6307;&#x5B9A;&#x4F4D;&#x6570;&#x6570;&#x5B57;&#x9A8C;&#x8BC1;&#x7801;">&#x751F;&#x6210;&#x6307;&#x5B9A;&#x4F4D;&#x6570;&#x6570;&#x5B57;&#x9A8C;&#x8BC1;&#x7801;</h2>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genIndentCode</span>(<span class="hljs-params">len</span>) </span>{
-  <span class="hljs-keyword">let</span> result = <span class="hljs-string">&apos;&apos;</span>;
-  <span class="hljs-keyword">while</span> (len &gt; <span class="hljs-number">0</span>) {
-    len--;
-    result += <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">10</span>);
-  }
-  <span class="hljs-keyword">return</span> result;
-}
-</code></pre>
-<h2 id="&#x6839;&#x636E;&#x5750;&#x6807;&#x70B9;&#x786E;&#x5B9A;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;x&#x8F74;&#x7684;&#x5939;&#x89D2;">&#x6839;&#x636E;&#x5750;&#x6807;&#x70B9;&#x786E;&#x5B9A;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;x&#x8F74;&#x7684;&#x5939;&#x89D2;</h2>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAngle</span>(<span class="hljs-params">dx, dy</span>) </span>{
-  <span class="hljs-keyword">var</span> angel=<span class="hljs-built_in">Math</span>.atan2(dy, dx) * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI;
-  <span class="hljs-keyword">return</span> angel&gt;<span class="hljs-number">0</span>?angel:<span class="hljs-number">360</span>+angel;
-}
-</code></pre>
-<h2 id="&#x7B80;&#x5355;&#x7684;&#x6C42;&#x9636;&#x4E58;&#x7684;&#x51FD;&#x6570;">&#x7B80;&#x5355;&#x7684;&#x6C42;&#x9636;&#x4E58;&#x7684;&#x51FD;&#x6570;</h2>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">n</span>) </span>{
-    <span class="hljs-keyword">return</span> n === <span class="hljs-number">0</span> ? <span class="hljs-number">1</span> : n * factorial(n - <span class="hljs-number">1</span>);
-}
-</code></pre>
-<h2 id="&#x7B80;&#x5316;&#x5206;&#x6570;">&#x7B80;&#x5316;&#x5206;&#x6570;</h2>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduceFraction</span>(<span class="hljs-params">a,x,y</span>)</span>{
-    <span class="hljs-keyword">if</span>(x%y==<span class="hljs-number">0</span>){a+=x/y; <span class="hljs-keyword">return</span> [a,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>];}
-    <span class="hljs-keyword">while</span>(x&gt;y){x-=y;a++;}
-    <span class="hljs-keyword">if</span>(x&gt;<span class="hljs-number">1</span>){
-        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">2</span>;i&lt;x;i++){<span class="hljs-keyword">while</span>(x%i==<span class="hljs-number">0</span> &amp;&amp; y%i==<span class="hljs-number">0</span>){x/=i;y/=i;}}
-    }
-    <span class="hljs-keyword">return</span> [a,x,y];
-}
-</code></pre>
+                                <h1 id="&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;">&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;</h1>
+<h2 id="strsubstringstart-stop">str.substring(start [,stop])</h2>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x63D0;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x4ECB;&#x4E8E;&#x4E24;&#x4E2A;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x4E4B;&#x95F4;&#x7684;&#x5B57;&#x7B26;</p>
+</blockquote>
+<h2 id="strsubstrstart--length-">str.substr(start [, length ])</h2>
+<blockquote>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4ECE;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x7684;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x5B50;&#x5B57;&#x7B26;&#x4E32;</p>
+</blockquote>
 
                                 
                                 </section>
@@ -1197,12 +1168,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Math">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: String">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Date/" class="navigation navigation-next " aria-label="Next page: Date">
+                <a href="字符串方法大全.html" class="navigation navigation-next " aria-label="Next page: 字符串方法大全">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1213,7 +1184,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Math方法大全","level":"2.7.1","depth":2,"next":{"title":"Date","level":"2.8","depth":1,"path":"chapters/Date/README.md","ref":"chapters/Date/README.md","articles":[{"title":"Date方法大全","level":"2.8.1","depth":2,"path":"chapters/Date/Date方法大全.md","ref":"chapters/Date/Date方法大全.md","articles":[]}]},"previous":{"title":"Math","level":"2.7","depth":1,"path":"chapters/Math/README.md","ref":"chapters/Math/README.md","articles":[{"title":"Math方法大全","level":"2.7.1","depth":2,"path":"chapters/Math/Math方法大全.md","ref":"chapters/Math/Math方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Math/Math方法大全.md","mtime":"2017-09-10T03:46:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-19T01:42:41.096Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"字符串截取","level":"2.3.1","depth":2,"next":{"title":"字符串方法大全","level":"2.3.2","depth":2,"path":"chapters/String/字符串方法大全.md","ref":"chapters/String/字符串方法大全.md","articles":[]},"previous":{"title":"String","level":"2.3","depth":1,"path":"chapters/String/README.md","ref":"chapters/String/README.md","articles":[{"title":"字符串截取","level":"2.3.1","depth":2,"path":"chapters/String/字符串截取.md","ref":"chapters/String/字符串截取.md","articles":[]},{"title":"字符串方法大全","level":"2.3.2","depth":2,"path":"chapters/String/字符串方法大全.md","ref":"chapters/String/字符串方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/String/字符串截取.md","mtime":"2017-10-16T06:56:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-16T14:31:35.750Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

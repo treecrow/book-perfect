@@ -1,4 +1,4 @@
-# Number()、parseInt()、parseFloat()的区别
+# Number、parseInt、parseFloat的区别
 
 ## Number()
 
