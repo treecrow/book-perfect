@@ -38,11 +38,10 @@
   - [数组方法大全](chapters/Array/数组方法大全.md)
   - [set](chapters/Array/set.md)
 
-- [Number](chapters/Number/README.md)
+- [Number && Math](chapters/Number && Math/README.md)
 
-- [Math](chapters/Math/README.md)
-
-  - [Math方法大全](chapters/Math/Math方法大全.md)
+  - [Math方法大全](chapters/Number && Math/Math方法大全.md)
+  - [Number()、parseInt()、parseFloat()的区别](chapters/Number && Math/Number()、parseInt()、parseFloat()的区别.md)
 
 - [Date](chapters/Date/README.md)
 
