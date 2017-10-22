@@ -7,7 +7,6 @@
 - [Basis](chapters/Basis/README.md)
 
   - [JavaScript 运行机制](chapters/Basis/JavaScript 运行机制.md)
-  - [new操作符](chapters/Basis/new操作符.md)
   - [this](chapters/Basis/this.md)
   - [var、let、const区别](chapters/Basis/var、let、const区别.md)
   - [严格模式](chapters/Basis/严格模式.md)
@@ -49,12 +48,16 @@
 
 - [Object](chapters/Object/README.md)
 
-  - [创建对象模式](chapters/Object/创建对象模式.md)
-  - [对象的继承](chapters/Object/对象的继承.md)
   - [对象方法大全](chapters/Object/对象方法大全.md)
   - [深拷贝](chapters/Object/深拷贝.md)
   - [class](chapters/Object/class.md)
   - [map](chapters/Object/map.md)
+
+- [OO](chapters/OO/README.md)
+
+  - [new操作符](chapters/Basis/new操作符.md)
+  - [创建对象模式](chapters/Object/创建对象模式.md)
+  - [对象的继承](chapters/Object/对象的继承.md)
 
 --------------------------------------------------------------------------------
 
