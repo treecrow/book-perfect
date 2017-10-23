@@ -50,14 +50,16 @@
 
   - [对象方法大全](chapters/Object/对象方法大全.md)
   - [深拷贝](chapters/Object/深拷贝.md)
-  - [class](chapters/Object/class.md)
   - [map](chapters/Object/map.md)
 
 - [OO](chapters/OO/README.md)
 
-  - [new操作符](chapters/Basis/new操作符.md)
-  - [创建对象模式](chapters/Object/创建对象模式.md)
-  - [对象的继承](chapters/Object/对象的继承.md)
+  - [class](chapters/OO/class.md)
+  - [new操作符](chapters/OO/new操作符.md)
+  - [创建对象模式](chapters/OO/创建对象模式.md)
+  - [对象的继承](chapters/OO/对象的继承.md)
+  - [属性、方法概念梳理](chapters/OO/属性、方法概念梳理.md)
+  - [检察长模式](chapters/OO/检察长模式.md)
 
 --------------------------------------------------------------------------------
 

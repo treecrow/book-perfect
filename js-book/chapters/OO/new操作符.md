@@ -21,7 +21,7 @@ function newObj(Fun,arguments) {
 
 ## new操作符返回机制
 
-### 无return
+- 无return
 
 ```javascript
 function Thing() {
@@ -33,7 +33,7 @@ console.log(myThing.one); // 1
 console.log(myThing.two); // 2
 ```
 
-### return 基本类型
+- return 基本类型
 
 ```javascript
 function Thing() {
@@ -47,7 +47,7 @@ console.log(myThing.two); // 2
 console.log(myThing); // Thing {one: 1, two: 2}
 ```
 
-### return 引用类型
+- return 引用类型
 
 ```javascript
 function Thing() {
