@@ -38,6 +38,10 @@
     - [rimraf](chapters/moudles/全局控制/rimraf.md)
     - [standard](chapters/moudles/全局控制/standard.md)
 
+  - [可视化](chapters/moudles/可视化/README.md)
+
+    - [echarts](chapters/moudles/可视化/echarts.md)
+
   - [数据接口](chapters/moudles/数据接口/README.md)
 
     - [graphql](chapters/moudles/数据接口/graphql.md)
