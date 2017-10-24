@@ -8,3 +8,4 @@
 - [api](http://echarts.baidu.com/api.html)
 - [配置项](http://echarts.baidu.com/option.html)
 - [GL](http://echarts.baidu.com/option-gl.html)
+- [全国地图示例](http://gallery.echartsjs.com/editor.html?c=xH14AUvnUW)
