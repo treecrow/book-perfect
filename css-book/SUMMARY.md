@@ -20,6 +20,7 @@
 
 - [assembly](chapters/assembly/README.md)
 
+  - [button](chapters/assembly/button.md)
   - [imgBox](chapters/assembly/imgBox.md)
   - [paper](chapters/assembly/paper.md)
   - [step](chapters/assembly/step.md)

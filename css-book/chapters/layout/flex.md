@@ -43,3 +43,14 @@
 .flex-cell.col-11{flex:0 0 91.66667%;}
 .flex-cell.col-12{flex:0 0 100%;}
 ```
+
+## flex 属性
+
+| 属性              | more                             |
+|-----------------|----------------------------------|
+| flex-flow       | flex-direction 和 flex-wrap 的简写形式 |
+| flex-wrap       | 决定容器内项目是否可换行                     |
+| flex-direction  | 决定主轴的方向(即项目的排列方向)                |
+| justify-content | 定义了项目在主轴的对齐方式                    |
+| align-items     | 定义了项目在交叉轴上的对齐方式                  |
+| align-content   | -                                |
