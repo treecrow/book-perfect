@@ -12,22 +12,22 @@
 
 ## 软件列表
 
-| 软件                 | 功能       |
-|--------------------|----------|
-| cheetsheet         | 显示应用快捷键  |
-| tickets            | 打字出声音    |
-| Spectacle          | 窗口规范化放置  |
-| 小米云服务              | -        |
-| atom               | -        |
-| Visual Studio Code | -        |
-| qq                 | -        |
-| wechat             | -        |
-| 网易云音乐              | -        |
-| lantern            | -        |
-| Dr.Unarchiver      | -        |
-| Dr.Cleaner         | -        |
-| appcleaner         | 卸载软件     |
-| iHosts             | 修改 hosts |
+| 软件            | 功能       |
+|---------------|----------|
+| wechat        | -        |
+| qq            | -        |
+| 网易云音乐         | -        |
+| 小米云服务         | -        |
+| chrome        | -        |
+| vsCode        | -        |
+| lantern       | 科学上网     |
+| Dr.Unarchiver | 压缩解压     |
+| appcleaner    | 卸载软件     |
+| iHosts        | 修改 hosts |
+| cheetsheet    | 显示应用快捷键  |
+| tickets       | 打字出声音    |
+| Spectacle     | 窗口规范化放置  |
+| Pap.er        | 修改桌面壁纸   |
 
 ## 设置系统列表
 
