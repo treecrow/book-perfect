@@ -16,7 +16,7 @@
   - [inlineBlock](chapters/layout/inlineBlock.md)
   - [margin](chapters/layout/margin.md)
   - [width](chapters/layout/width.md)
-  - [居中](chapters/layout/居中.md)
+  - [水平垂直居中](chapters/layout/水平垂直居中.md)
 
 - [assembly](chapters/assembly/README.md)
 

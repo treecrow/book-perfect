@@ -1,5 +1,8 @@
 # margin
 
 ```css
-.margin-auto{ margin-left: auto; margin-right: auto; }
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 ```
