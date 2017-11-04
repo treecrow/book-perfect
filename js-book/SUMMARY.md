@@ -4,6 +4,10 @@
 
 --------------------------------------------------------------------------------
 
+- [类型](chapters/类型/README.md)
+
+  - [类型方法大全](chapters/类型/类型方法大全.md)
+
 - [Basis](chapters/Basis/README.md)
 
   - [JavaScript 运行机制](chapters/Basis/JavaScript 运行机制.md)
@@ -12,9 +16,7 @@
   - [严格模式](chapters/Basis/严格模式.md)
   - [传参机制](chapters/Basis/传参机制.md)
   - [变量函数提升](chapters/Basis/变量函数提升.md)
-  - [基本类型与引用类型](chapters/Basis/基本类型与引用类型.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
-  - [类型](chapters/Basis/类型.md)
 
 - [Advanced](chapters/Advanced/README.md)
 
@@ -65,7 +67,6 @@
 
 - [Judge](chapters/Judge/README.md)
 
-  - [判断变量是否空值](chapters/Judge/判断变量是否空值.md)
   - [判断环境设备状态](chapters/Judge/判断环境设备状态.md)
   - [是否为原生函数](chapters/Judge/是否为原生函数.md)
 
@@ -106,3 +107,4 @@
 
   - [cookie](chapters/未分类/cookie.md)
   - [babel](chapters/未分类/babel.md)
+  - [异步加载js](chapters/未分类/异步加载js.md)
