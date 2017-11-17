@@ -6,24 +6,21 @@
 
 - [类型](chapters/类型/README.md)
 
+  - [isNaN](chapters/类型/isNaN.md)
+  - [typeof](chapters/类型/typeof.md)
+  - [基本类型与引用类型](chapters/类型/基本类型与引用类型.md)
   - [类型方法大全](chapters/类型/类型方法大全.md)
 
 - [Basis](chapters/Basis/README.md)
 
-  - [JavaScript 运行机制](chapters/Basis/JavaScript 运行机制.md)
   - [this](chapters/Basis/this.md)
   - [var、let、const区别](chapters/Basis/var、let、const区别.md)
   - [严格模式](chapters/Basis/严格模式.md)
-  - [传参机制](chapters/Basis/传参机制.md)
+  - [双向绑定](chapters/Basis/双向绑定.md)
   - [变量函数提升](chapters/Basis/变量函数提升.md)
+  - [异步编程](chapters/Basis/异步编程.md)
+  - [特种函数大全](chapters/Basis/特种函数大全.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
-
-- [Advanced](chapters/Advanced/README.md)
-
-  - [函数式编程](chapters/Advanced/函数式编程.md)
-  - [双向绑定](chapters/Advanced/双向绑定.md)
-  - [异步编程](chapters/Advanced/异步编程.md)
-  - [特种函数大全](chapters/Advanced/特种函数大全.md)
 
 - [String](chapters/String/README.md)
 
