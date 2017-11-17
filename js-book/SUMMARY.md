@@ -60,25 +60,6 @@
   - [属性、方法概念梳理](chapters/OO/属性、方法概念梳理.md)
   - [检察长模式](chapters/OO/检察长模式.md)
 
---------------------------------------------------------------------------------
-
-- [Judge](chapters/Judge/README.md)
-
-  - [判断环境设备状态](chapters/Judge/判断环境设备状态.md)
-  - [是否为原生函数](chapters/Judge/是否为原生函数.md)
-
-- [Url](chapters/Url/README.md)
-
-  - [url方法大全](chapters/Url/url方法大全.md)
-
-- [Correspond](chapters/Correspond/README.md)
-
-  - [fetch](chapters/Correspond/fetch.md)
-  - [FormData](chapters/Correspond/FormData.md)
-  - [webSocket](chapters/Correspond/webSocket.md)
-  - [XMLHttpRequest](chapters/Correspond/XMLHttpRequest.md)
-  - [跨域](chapters/Correspond/跨域.md)
-
 - [Dom](chapters/Dom/README.md)
 
   - [元素位置](chapters/Dom/元素位置.md)
@@ -96,12 +77,13 @@
   - [键盘](chapters/Event/键盘.md)
   - [鼠标](chapters/Event/鼠标.md)
 
-- [Canvas](chapters/Canvas/README.md)
+- [Correspond](chapters/Correspond/README.md)
 
-  - [示例](chapters/Canvas/示例.md)
+  - [fetch](chapters/Correspond/fetch.md)
+  - [FormData](chapters/Correspond/FormData.md)
+  - [webSocket](chapters/Correspond/webSocket.md)
+  - [XMLHttpRequest](chapters/Correspond/XMLHttpRequest.md)
+
+--------------------------------------------------------------------------------
 
 - [未分类](chapters/未分类/README.md)
-
-  - [cookie](chapters/未分类/cookie.md)
-  - [babel](chapters/未分类/babel.md)
-  - [异步加载js](chapters/未分类/异步加载js.md)
