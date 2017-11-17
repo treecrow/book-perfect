@@ -33,6 +33,7 @@
   - [token混账东西](chapters/图解http/token混账东西.md)
   - [URI](chapters/图解http/URI.md)
 
+- [CDN技术详解](chapters/CDN技术详解.md)
 - [chrome](chapters/chrome.md)
 - [jwt](chapters/jwt.md)
 - [linux系统](chapters/linux系统.md)
