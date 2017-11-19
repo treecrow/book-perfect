@@ -4,6 +4,11 @@
 
 --------------------------------------------------------------------------------
 
+- [Git](chapters/Git/README.md)
+
+  - [gitignore](chapters/Git/gitignore.md)
+  - [git命令](chapters/Git/git命令.md)
+
 - [mac](chapters/mac/README.md)
 
   - [mac环境变量](chapters/mac/mac环境变量.md)

@@ -5,6 +5,7 @@
 - [github配置和ssh免密登录](https://zhuanlan.zhihu.com/p/27086828)
 - [SSH免密登录是怎么玩儿的?](https://zhuanlan.zhihu.com/p/28423720)
 - [SSH登陆阿里云服务器出现Permission denied (publickey)错误解决方案](http://www.cnblogs.com/wangchaowei/p/6914180.html)
+- [github ssh添加:多个ssh的问题](http://www.bkjia.com/Androidjc/837965.html)
 
 ## 命令列表
 
