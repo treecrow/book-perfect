@@ -154,6 +154,5 @@
 - [relevant](chapters/relevant/README.md)
 
   - [模块化](chapters/relevant/模块化.md)
-  - [babel](chapters/relevant/babel.md)
   - [gulp](chapters/relevant/gulp.md)
   - [package](chapters/relevant/package.md)
