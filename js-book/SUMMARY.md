@@ -9,7 +9,6 @@
   - [isNaN](chapters/类型/isNaN.md)
   - [typeof](chapters/类型/typeof.md)
   - [基本类型与引用类型](chapters/类型/基本类型与引用类型.md)
-  - [类型方法大全](chapters/类型/类型方法大全.md)
 
 - [Basis](chapters/Basis/README.md)
 
@@ -19,7 +18,6 @@
   - [双向绑定](chapters/Basis/双向绑定.md)
   - [变量函数提升](chapters/Basis/变量函数提升.md)
   - [异步编程](chapters/Basis/异步编程.md)
-  - [特种函数大全](chapters/Basis/特种函数大全.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
 
 - [String](chapters/String/README.md)
@@ -33,22 +31,16 @@
 
   - [遍历总结](chapters/Array/遍历总结.md)
   - [二进制数组](chapters/Array/二进制数组.md)
-  - [数组方法大全](chapters/Array/数组方法大全.md)
   - [set](chapters/Array/set.md)
 
 - [Number && Math](chapters/Number && Math/README.md)
 
-  - [Math方法大全](chapters/Number && Math/Math方法大全.md)
   - [Number、parseInt、parseFloat的区别](chapters/Number && Math/Number、parseInt、parseFloat的区别.md)
 
 - [Date](chapters/Date/README.md)
 
-  - [Date方法大全](chapters/Date/Date方法大全.md)
-
 - [Object](chapters/Object/README.md)
 
-  - [对象方法大全](chapters/Object/对象方法大全.md)
-  - [深拷贝](chapters/Object/深拷贝.md)
   - [map](chapters/Object/map.md)
 
 - [OO](chapters/OO/README.md)
