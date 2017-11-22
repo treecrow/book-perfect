@@ -20,12 +20,8 @@
   - [异步编程](chapters/Basis/异步编程.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
 
-- [String](chapters/String/README.md)
-
-  - [字符串截取](chapters/String/字符串截取.md)
-  - [字符串方法大全](chapters/String/字符串方法大全.md)
-
-- [RegExp](chapters/RegExp/README.md)
+- [String](chapters/String.md)
+- [RegExp](chapters/RegExp.md)
 
 - [Array](chapters/Array/README.md)
 

@@ -1178,6 +1178,16 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x6570;&#x7EC4;&#x65B9;&#x6CD5;&#x5927;&#x5168;&#xFF08;&#x5927;&#x6742;&#x70E9;&#xFF09;">&#x6570;&#x7EC4;&#x65B9;&#x6CD5;&#x5927;&#x5168;&#xFF08;&#x5927;&#x6742;&#x70E9;&#xFF09;</h1>
+<h2 id="&#x6839;&#x636E;&#x5065;&#x503C;&#x5BF9;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x4E2D;&#x5BF9;&#x5E94;&#x5143;&#x7D20;">&#x6839;&#x636E;&#x5065;&#x503C;&#x5BF9;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x4E2D;&#x5BF9;&#x5E94;&#x5143;&#x7D20;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getItem</span>(<span class="hljs-params">arr, obj</span>) </span>{
+  <span class="hljs-keyword">var</span> key = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i <span class="hljs-keyword">in</span> obj) {
+    key = i
+    <span class="hljs-keyword">break</span>
+  }
+  <span class="hljs-keyword">return</span> arr.filter((item) =&gt; item[key] === obj[key])[<span class="hljs-number">0</span>]
+}
+</code></pre>
 <h2 id="&#x53BB;&#x9664;&#x6570;&#x7EC4;&#x91CD;&#x590D;&#x9879;">&#x53BB;&#x9664;&#x6570;&#x7EC4;&#x91CD;&#x590D;&#x9879;</h2>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unique</span>(<span class="hljs-params">arr</span>)</span>{
   <span class="hljs-keyword">return</span> arr.filter((item, index, arr) =&gt; {
@@ -1302,7 +1312,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数组方法大全","level":"2.5.3","depth":2,"next":{"title":"set","level":"2.5.4","depth":2,"path":"chapters/Array/set.md","ref":"chapters/Array/set.md","articles":[]},"previous":{"title":"二进制数组","level":"2.5.2","depth":2,"path":"chapters/Array/二进制数组.md","ref":"chapters/Array/二进制数组.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Array/数组方法大全.md","mtime":"2017-09-10T03:46:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T01:17:19.704Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数组方法大全","level":"2.5.3","depth":2,"next":{"title":"set","level":"2.5.4","depth":2,"path":"chapters/Array/set.md","ref":"chapters/Array/set.md","articles":[]},"previous":{"title":"二进制数组","level":"2.5.2","depth":2,"path":"chapters/Array/二进制数组.md","ref":"chapters/Array/二进制数组.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Array/数组方法大全.md","mtime":"2017-11-02T14:50:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-02T14:50:57.746Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
