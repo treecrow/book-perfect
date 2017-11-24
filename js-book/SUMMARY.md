@@ -29,9 +29,9 @@
   - [二进制数组](chapters/Array/二进制数组.md)
   - [set](chapters/Array/set.md)
 
-- [Number && Math](chapters/Number && Math/README.md)
+- [数字](chapters/数字/README.md)
 
-  - [Number、parseInt、parseFloat的区别](chapters/Number && Math/Number、parseInt、parseFloat的区别.md)
+  - [数字](chapters/数字/Number、parseInt、parseFloat的区别.md)
 
 - [Date](chapters/Date/README.md)
 
