@@ -178,20 +178,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="../Basis/typeof.html">
-            
-                <a href="../Basis/typeof.html">
-            
-                    
-                    typeof
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.5" data-path="../Basis/var、let、const区别.html">
+        <li class="chapter " data-level="2.1.4" data-path="../Basis/var、let、const区别.html">
             
                 <a href="../Basis/var、let、const区别.html">
             
@@ -204,7 +191,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="../Basis/严格模式.html">
+        <li class="chapter " data-level="2.1.5" data-path="../Basis/严格模式.html">
             
                 <a href="../Basis/严格模式.html">
             
@@ -217,7 +204,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="../Basis/传参机制.html">
+        <li class="chapter " data-level="2.1.6" data-path="../Basis/传参机制.html">
             
                 <a href="../Basis/传参机制.html">
             
@@ -230,7 +217,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.8" data-path="../Basis/变量函数提升.html">
+        <li class="chapter " data-level="2.1.7" data-path="../Basis/变量函数提升.html">
             
                 <a href="../Basis/变量函数提升.html">
             
@@ -243,7 +230,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.9" data-path="../Basis/基本类型与引用类型.html">
+        <li class="chapter " data-level="2.1.8" data-path="../Basis/基本类型与引用类型.html">
             
                 <a href="../Basis/基本类型与引用类型.html">
             
@@ -256,12 +243,25 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.10" data-path="../Basis/箭头函数.html">
+        <li class="chapter " data-level="2.1.9" data-path="../Basis/箭头函数.html">
             
                 <a href="../Basis/箭头函数.html">
             
                     
                     箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../Basis/类型.html">
+            
+                <a href="../Basis/类型.html">
+            
+                    
+                    类型
             
                 </a>
             
@@ -359,7 +359,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../String/字符串方法大全.html">
+        <li class="chapter " data-level="2.3.1" data-path="../String/字符串截取.html">
+            
+                <a href="../String/字符串截取.html">
+            
+                    
+                    字符串截取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../String/字符串方法大全.html">
             
                 <a href="../String/字符串方法大全.html">
             
@@ -1204,6 +1217,15 @@ getYearType(<span class="hljs-string">&quot;2014&quot;</span>);
 }
 verifyDate(<span class="hljs-string">&quot;2021-02-19 16:21:51&quot;</span>);<span class="hljs-comment">//&#x5E03;&#x5C14;&#x503C;</span>
 </code></pre>
+<h2 id="&#x6839;&#x636E;&#x5E74;&#x6708;&#x83B7;&#x53D6;&#x5F53;&#x6708;&#x5929;&#x6570;&#x548C;&#x7B2C;&#x4E00;&#x5929;&#x7684;&#x661F;&#x671F;">&#x6839;&#x636E;&#x5E74;&#x6708;&#x83B7;&#x53D6;&#x5F53;&#x6708;&#x5929;&#x6570;&#x548C;&#x7B2C;&#x4E00;&#x5929;&#x7684;&#x661F;&#x671F;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getMonthMsg</span>(<span class="hljs-params">date</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> date === <span class="hljs-string">&apos;string&apos;</span> || !<span class="hljs-built_in">isNaN</span>(date)) date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(date);
+  <span class="hljs-keyword">return</span> {
+    startWeek: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(date.getFullYear(), date.getMonth(), <span class="hljs-number">1</span>).getDay(),
+    dayCount: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(date.getFullYear(), date.getMonth() + <span class="hljs-number">1</span>, <span class="hljs-number">0</span>).getDate()
+  }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -1247,7 +1269,7 @@ verifyDate(<span class="hljs-string">&quot;2021-02-19 16:21:51&quot;</span>);<sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Date方法大全","level":"2.8.1","depth":2,"next":{"title":"Object","level":"2.9","depth":1,"path":"chapters/Object/README.md","ref":"chapters/Object/README.md","articles":[{"title":"创建对象模式","level":"2.9.1","depth":2,"path":"chapters/Object/创建对象模式.md","ref":"chapters/Object/创建对象模式.md","articles":[]},{"title":"对象的继承","level":"2.9.2","depth":2,"path":"chapters/Object/对象的继承.md","ref":"chapters/Object/对象的继承.md","articles":[]},{"title":"对象方法大全","level":"2.9.3","depth":2,"path":"chapters/Object/对象方法大全.md","ref":"chapters/Object/对象方法大全.md","articles":[]},{"title":"深拷贝","level":"2.9.4","depth":2,"path":"chapters/Object/深拷贝.md","ref":"chapters/Object/深拷贝.md","articles":[]},{"title":"class","level":"2.9.5","depth":2,"path":"chapters/Object/class.md","ref":"chapters/Object/class.md","articles":[]},{"title":"map","level":"2.9.6","depth":2,"path":"chapters/Object/map.md","ref":"chapters/Object/map.md","articles":[]}]},"previous":{"title":"Date","level":"2.8","depth":1,"path":"chapters/Date/README.md","ref":"chapters/Date/README.md","articles":[{"title":"Date方法大全","level":"2.8.1","depth":2,"path":"chapters/Date/Date方法大全.md","ref":"chapters/Date/Date方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Date/Date方法大全.md","mtime":"2017-09-10T03:46:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-19T15:50:20.999Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Date方法大全","level":"2.8.1","depth":2,"next":{"title":"Object","level":"2.9","depth":1,"path":"chapters/Object/README.md","ref":"chapters/Object/README.md","articles":[{"title":"创建对象模式","level":"2.9.1","depth":2,"path":"chapters/Object/创建对象模式.md","ref":"chapters/Object/创建对象模式.md","articles":[]},{"title":"对象的继承","level":"2.9.2","depth":2,"path":"chapters/Object/对象的继承.md","ref":"chapters/Object/对象的继承.md","articles":[]},{"title":"对象方法大全","level":"2.9.3","depth":2,"path":"chapters/Object/对象方法大全.md","ref":"chapters/Object/对象方法大全.md","articles":[]},{"title":"深拷贝","level":"2.9.4","depth":2,"path":"chapters/Object/深拷贝.md","ref":"chapters/Object/深拷贝.md","articles":[]},{"title":"class","level":"2.9.5","depth":2,"path":"chapters/Object/class.md","ref":"chapters/Object/class.md","articles":[]},{"title":"map","level":"2.9.6","depth":2,"path":"chapters/Object/map.md","ref":"chapters/Object/map.md","articles":[]}]},"previous":{"title":"Date","level":"2.8","depth":1,"path":"chapters/Date/README.md","ref":"chapters/Date/README.md","articles":[{"title":"Date方法大全","level":"2.8.1","depth":2,"path":"chapters/Date/Date方法大全.md","ref":"chapters/Date/Date方法大全.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/Date/Date方法大全.md","mtime":"2017-10-14T12:40:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-19T01:42:41.096Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

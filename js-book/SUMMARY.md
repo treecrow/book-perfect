@@ -4,11 +4,17 @@
 
 --------------------------------------------------------------------------------
 
-- [类型](chapters/类型/README.md)
+- [基本类型](chapters/基础知识/README.md)
 
-  - [isNaN](chapters/类型/isNaN.md)
-  - [typeof](chapters/类型/typeof.md)
-  - [基本类型与引用类型](chapters/类型/基本类型与引用类型.md)
+  - [数字](chapters/基础知识/数字.md)
+  - [Number、parseInt、parseFloat的区别](chapters/基础知识/Number、parseInt、parseFloat的区别.md)
+  - [日期和时间](chapters/基础知识/日期和时间.md)
+  - [String](chapters/基础知识/String.md)
+  - [typeof](chapters/基础知识/typeof.md)
+  - [转义字符](chapters/基础知识/转义字符.md)
+  - [RegExp](chapters/基础知识/RegExp.md)
+  - [布尔值](chapters/基础知识/布尔值.md)
+  - [运算符](chapters/基础知识/运算符.md)
 
 - [Basis](chapters/Basis/README.md)
 
@@ -20,20 +26,11 @@
   - [异步编程](chapters/Basis/异步编程.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
 
-- [String](chapters/String.md)
-- [RegExp](chapters/RegExp.md)
-
 - [Array](chapters/Array/README.md)
 
   - [遍历总结](chapters/Array/遍历总结.md)
   - [二进制数组](chapters/Array/二进制数组.md)
   - [set](chapters/Array/set.md)
-
-- [数字](chapters/数字/README.md)
-
-  - [数字](chapters/数字/Number、parseInt、parseFloat的区别.md)
-
-- [Date](chapters/Date/README.md)
 
 - [Object](chapters/Object/README.md)
 
