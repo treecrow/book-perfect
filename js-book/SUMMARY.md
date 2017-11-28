@@ -4,13 +4,14 @@
 
 --------------------------------------------------------------------------------
 
-- [基本类型](chapters/基础知识/README.md)
+- [基础知识](chapters/基础知识/README.md)
 
   - [数字](chapters/基础知识/数字.md)
   - [Number、parseInt、parseFloat的区别](chapters/基础知识/Number、parseInt、parseFloat的区别.md)
   - [日期和时间](chapters/基础知识/日期和时间.md)
   - [String](chapters/基础知识/String.md)
   - [typeof](chapters/基础知识/typeof.md)
+  - [对象](chapters/基础知识/对象.md)
   - [转义字符](chapters/基础知识/转义字符.md)
   - [RegExp](chapters/基础知识/RegExp.md)
   - [布尔值](chapters/基础知识/布尔值.md)
@@ -32,9 +33,7 @@
   - [二进制数组](chapters/Array/二进制数组.md)
   - [set](chapters/Array/set.md)
 
-- [Object](chapters/Object/README.md)
-
-  - [map](chapters/Object/map.md)
+- [map](chapters/map.md)
 
 - [OO](chapters/OO/README.md)
 
