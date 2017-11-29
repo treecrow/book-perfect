@@ -6,16 +6,20 @@
 
 - [基础知识](chapters/基础知识/README.md)
 
-  - [数字](chapters/基础知识/数字.md)
   - [Number、parseInt、parseFloat的区别](chapters/基础知识/Number、parseInt、parseFloat的区别.md)
-  - [日期和时间](chapters/基础知识/日期和时间.md)
+  - [RegExp](chapters/基础知识/RegExp.md)
+  - [set](chapters/基础知识/set.md)
   - [String](chapters/基础知识/String.md)
   - [typeof](chapters/基础知识/typeof.md)
+  - [二进制数组](chapters/基础知识/二进制数组.md)
   - [对象](chapters/基础知识/对象.md)
-  - [转义字符](chapters/基础知识/转义字符.md)
-  - [RegExp](chapters/基础知识/RegExp.md)
   - [布尔值](chapters/基础知识/布尔值.md)
+  - [数字](chapters/基础知识/数字.md)
+  - [数组](chapters/基础知识/数组.md)
+  - [日期和时间](chapters/基础知识/日期和时间.md)
+  - [转义字符](chapters/基础知识/转义字符.md)
   - [运算符](chapters/基础知识/运算符.md)
+  - [遍历总结](chapters/基础知识/遍历总结.md)
 
 - [Basis](chapters/Basis/README.md)
 
@@ -26,12 +30,6 @@
   - [变量函数提升](chapters/Basis/变量函数提升.md)
   - [异步编程](chapters/Basis/异步编程.md)
   - [箭头函数](chapters/Basis/箭头函数.md)
-
-- [Array](chapters/Array/README.md)
-
-  - [遍历总结](chapters/Array/遍历总结.md)
-  - [二进制数组](chapters/Array/二进制数组.md)
-  - [set](chapters/Array/set.md)
 
 - [map](chapters/map.md)
 
