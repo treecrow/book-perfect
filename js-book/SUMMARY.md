@@ -11,7 +11,9 @@
   - [set](chapters/基础知识/set.md)
   - [String](chapters/基础知识/String.md)
   - [typeof](chapters/基础知识/typeof.md)
+  - [严格模式](chapters/基础知识/严格模式.md)
   - [二进制数组](chapters/基础知识/二进制数组.md)
+  - [函数](chapters/基础知识/函数.md)
   - [对象](chapters/基础知识/对象.md)
   - [布尔值](chapters/基础知识/布尔值.md)
   - [数字](chapters/基础知识/数字.md)
@@ -23,9 +25,7 @@
 
 - [Basis](chapters/Basis/README.md)
 
-  - [this](chapters/Basis/this.md)
   - [var、let、const区别](chapters/Basis/var、let、const区别.md)
-  - [严格模式](chapters/Basis/严格模式.md)
   - [双向绑定](chapters/Basis/双向绑定.md)
   - [变量函数提升](chapters/Basis/变量函数提升.md)
   - [异步编程](chapters/Basis/异步编程.md)
