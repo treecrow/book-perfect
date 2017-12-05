@@ -19,6 +19,7 @@
   - [数字](chapters/基础知识/数字.md)
   - [数组](chapters/基础知识/数组.md)
   - [日期和时间](chapters/基础知识/日期和时间.md)
+  - [类和模块](chapters/基础知识/类和模块.md)
   - [转义字符](chapters/基础知识/转义字符.md)
   - [运算符](chapters/基础知识/运算符.md)
   - [遍历总结](chapters/基础知识/遍历总结.md)
