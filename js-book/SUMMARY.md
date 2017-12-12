@@ -24,6 +24,15 @@
   - [运算符](chapters/基础知识/运算符.md)
   - [遍历总结](chapters/基础知识/遍历总结.md)
 
+- [浏览器中的javascript](chapters/浏览器中的javascript/README.md)
+
+  - [document对象](chapters/浏览器中的javascript/document对象.md)
+  - [history对象](chapters/浏览器中的javascript/history对象.md)
+  - [location对象](chapters/浏览器中的javascript/location对象.md)
+  - [navigator对象](chapters/浏览器中的javascript/navigator对象.md)
+  - [screen对象](chapters/浏览器中的javascript/screen对象.md)
+  - [window对象](chapters/浏览器中的javascript/window对象.md)
+
 - [Basis](chapters/Basis/README.md)
 
   - [var、let、const区别](chapters/Basis/var、let、const区别.md)

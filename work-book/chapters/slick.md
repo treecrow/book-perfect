@@ -18,56 +18,56 @@ if (!whole.localeSlick) {
 
 ## settings
 
-| option           | more                                     |
-|------------------|------------------------------------------|
-| accessibility    | Enables tabbing and arrow key navigation |
-| adaptiveHeight   | -                                        |
-| autoplay         | -                                        |
-| autoplaySpeed    | -                                        |
-| arrows           | -                                        |
-| asNavFor         | -                                        |
-| appendArrows     | -                                        |
-| appendDots       | -                                        |
-| prevArrow        | -                                        |
-| nextArrow        | -                                        |
-| centerMode       | -                                        |
-| centerPadding    | -                                        |
-| cssEase          | -                                        |
-| customPaging     | -                                        |
-| dots             | -                                        |
-| dotsClass        | -                                        |
-| draggable        | -                                        |
-| fade             | -                                        |
-| focusOnSelect    | -                                        |
-| easing           | -                                        |
-| edgeFriction     | -                                        |
-| infinite         | -                                        |
-| initialSlide     | -                                        |
-| lazyLoad         | -                                        |
-| mobileFirst      | -                                        |
-| pauseOnFocus     | -                                        |
-| pauseOnHover     | -                                        |
-| pauseOnDotsHover | -                                        |
-| respondTo        | -                                        |
-| responsive       | -                                        |
-| rows             | -                                        |
-| slide            | -                                        |
-| slidesPerRow     | -                                        |
-| slidesToShow     | -                                        |
-| slidesToScroll   | -                                        |
-| speed            | -                                        |
-| swipe            | -                                        |
-| swipeToSlide     | -                                        |
-| touchMove        | -                                        |
-| touchThreshold   | -                                        |
-| useCSS           | -                                        |
-| useTransform     | -                                        |
-| variableWidth    | -                                        |
-| vertical         | -                                        |
-| verticalSwiping  | -                                        |
-| rtl              | -                                        |
-| waitForAnimate   | -                                        |
-| zIndex           | -                                        |
+| option           | more                           |
+|------------------|--------------------------------|
+| accessibility    | -                              |
+| adaptiveHeight   | -                              |
+| autoplay         | Enables Autoplay               |
+| autoplaySpeed    | Autoplay Speed in milliseconds |
+| arrows           | Prev/Next Arrows               |
+| asNavFor         | -                              |
+| appendArrows     | -                              |
+| appendDots       | -                              |
+| prevArrow        | -                              |
+| nextArrow        | -                              |
+| centerMode       | -                              |
+| centerPadding    | -                              |
+| cssEase          | -                              |
+| customPaging     | -                              |
+| dots             | -                              |
+| dotsClass        | -                              |
+| draggable        | -                              |
+| fade             | -                              |
+| focusOnSelect    | -                              |
+| easing           | -                              |
+| edgeFriction     | -                              |
+| infinite         | -                              |
+| initialSlide     | -                              |
+| lazyLoad         | -                              |
+| mobileFirst      | -                              |
+| pauseOnFocus     | Pause Autoplay On Focus        |
+| pauseOnHover     | Pause Autoplay On Hover        |
+| pauseOnDotsHover | -                              |
+| respondTo        | -                              |
+| responsive       | -                              |
+| rows             | -                              |
+| slide            | -                              |
+| slidesPerRow     | -                              |
+| slidesToShow     | -                              |
+| slidesToScroll   | -                              |
+| speed            | -                              |
+| swipe            | -                              |
+| swipeToSlide     | -                              |
+| touchMove        | -                              |
+| touchThreshold   | -                              |
+| useCSS           | -                              |
+| useTransform     | -                              |
+| variableWidth    | -                              |
+| vertical         | -                              |
+| verticalSwiping  | -                              |
+| rtl              | -                              |
+| waitForAnimate   | -                              |
+| zIndex           | -                              |
 
 ## Events
 
