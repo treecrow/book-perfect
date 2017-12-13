@@ -27,9 +27,11 @@
 - [浏览器中的javascript](chapters/浏览器中的javascript/README.md)
 
   - [document对象](chapters/浏览器中的javascript/document对象.md)
+  - [element对象](chapters/浏览器中的javascript/element对象.md)
   - [history对象](chapters/浏览器中的javascript/history对象.md)
   - [location对象](chapters/浏览器中的javascript/location对象.md)
   - [navigator对象](chapters/浏览器中的javascript/navigator对象.md)
+  - [node对象](chapters/浏览器中的javascript/node对象.md)
   - [screen对象](chapters/浏览器中的javascript/screen对象.md)
   - [window对象](chapters/浏览器中的javascript/window对象.md)
 
