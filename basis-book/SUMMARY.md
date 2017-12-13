@@ -48,5 +48,5 @@
 - [vue](chapters/vue.md)
 - [前后端分离](chapters/前后端分离.md)
 - [性能优化](chapters/性能优化.md)
-- [浏览器缓存](chapters/浏览器缓存.md)
+- [浏览器缓存详解](chapters/浏览器缓存详解.md)
 - [跨域](chapters/跨域.md)
