@@ -10,8 +10,12 @@
 | ~       | someEle.nextElementSibling     | 只包含 Element 对象                                                          |
 | ~       | someEle.previousElementSibling | 只包含 Element 对象                                                          |
 | ~       | someEle.childElementCount      | 子元素的数量                                                                  |
+| 父元素     | someEle.offsetParent           | 已经定位的离自己最近的父元素（如果没有则为body）                                              |
 | 属性      | someEle.dataSet                | 指代一个对象，它的各个属性对应于去掉前缀的data-属性（-变驼峰 && 设置或删除其中的一个属性就等同于设置或移除对应元素的data-属性） |
 | ~       | someEle.attributes             | 只读的类数组对象（每一项是Attr对象，一种特殊的Node节点），它代表元素的所有属性                             |
+| 样式      | style                          | 返回一个CssStyleDeclaration对象                                               |
+| ~       | className                      | 获取或设置元素 class                                                           |
+| ~       | classList                      | DOMTokenList对象，一个只读的类数组对象，包含元素的单独类名（实时的）                                |
 | 内容      | someEle.innerHTML              | 返回 / 设置元素的内容                                                            |
 | ~       | someEle.outerHTML              | 返回 / 设置元素本身                                                             |
 | ~       | someEle.textContent            | 返回元素解析后的纯文本内容                                                           |
@@ -27,7 +31,6 @@
 | ~       | someEle.offsetTop              | ~                                                                       |
 | ~       | someEle.scrollLeft             | 元素的滚动条的位置（可设置）                                                          |
 | ~       | someEle.scrollTop              | ~                                                                       |
-| 父元素     | someEle.offsetParent           | 已经定位的离自己最近的父元素（如果没有则为body）                                              |
 
 ## 方法列表
 

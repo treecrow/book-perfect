@@ -6,6 +6,7 @@
 |--------|-----------------|-------------------------------------------------|
 | 文档元素相关 | documentElement | -                                               |
 | ~      | head            | -                                               |
+| ~      | styleSheets     | 只读的类数组对象，包含CSSStyleSheet对象，表示与文档关联到一起的样式表       |
 | ~      | scripts         | 页面中 HTMLCollection类型的`<script>`元素的集合            |
 | ~      | forms           | 页面中 HTMLCollection类型的`<form>`元素的集合              |
 | ~      | title           | 文档`<title>`标签的内容                                |
