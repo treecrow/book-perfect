@@ -1,5 +1,9 @@
 # [slick](http://kenwheeler.github.io/slick/)
 
+## 使用示例
+
+- 更新 slick
+
 ```javascript
 if (!whole.localeSlick) {
   whole.localeSlick = $('#localeSlick').slick({
@@ -16,20 +20,33 @@ if (!whole.localeSlick) {
 }
 ```
 
+- 设置自定义箭头按钮
+
+```javascript
+$('.slider').slick({
+  appendArrows: $('.slider-container'),
+  prevArrow: '<span class="prev">prev</span>',
+  nextArrow: '<span class="next">next</span>',
+  infinite: false,
+  slidesToShow: 8,
+  slidesToScroll: 8,
+});
+```
+
 ## settings
 
 | option           | more                           |
 |------------------|--------------------------------|
-| accessibility    | -                              |
-| adaptiveHeight   | -                              |
+| accessibility    | 使用方向按键和tab按键滚动                 |
+| adaptiveHeight   | 根据 slide 内容自适应高度               |
 | autoplay         | Enables Autoplay               |
 | autoplaySpeed    | Autoplay Speed in milliseconds |
 | arrows           | Prev/Next Arrows               |
-| asNavFor         | -                              |
-| appendArrows     | -                              |
+| asNavFor         | 把两个slider关联起来                  |
+| appendArrows     | 定义包裹左右箭头和slider列表的外层区域         |
 | appendDots       | -                              |
-| prevArrow        | -                              |
-| nextArrow        | -                              |
+| prevArrow        | 前一个按钮                          |
+| nextArrow        | 后一个按钮                          |
 | centerMode       | -                              |
 | centerPadding    | -                              |
 | cssEase          | -                              |
@@ -41,7 +58,7 @@ if (!whole.localeSlick) {
 | focusOnSelect    | -                              |
 | easing           | -                              |
 | edgeFriction     | -                              |
-| infinite         | -                              |
+| infinite         | 是否无限循环（默认 true）                |
 | initialSlide     | -                              |
 | lazyLoad         | -                              |
 | mobileFirst      | -                              |

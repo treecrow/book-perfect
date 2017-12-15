@@ -28,6 +28,7 @@
 
   - [document对象](chapters/浏览器中的javascript/document对象.md)
   - [element对象](chapters/浏览器中的javascript/element对象.md)
+  - [form对象](chapters/浏览器中的javascript/form对象.md)
   - [history对象](chapters/浏览器中的javascript/history对象.md)
   - [location对象](chapters/浏览器中的javascript/location对象.md)
   - [navigator对象](chapters/浏览器中的javascript/navigator对象.md)
