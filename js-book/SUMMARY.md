@@ -26,16 +26,20 @@
 
 - [浏览器中的javascript](chapters/浏览器中的javascript/README.md)
 
+  - [cookie](chapters/浏览器中的javascript/cookie.md)
   - [document对象](chapters/浏览器中的javascript/document对象.md)
   - [element对象](chapters/浏览器中的javascript/element对象.md)
+  - [EventSource对象](chapters/浏览器中的javascript/EventSource对象.md)
   - [form对象](chapters/浏览器中的javascript/form对象.md)
   - [history对象](chapters/浏览器中的javascript/history对象.md)
   - [location对象](chapters/浏览器中的javascript/location对象.md)
   - [navigator对象](chapters/浏览器中的javascript/navigator对象.md)
   - [node对象](chapters/浏览器中的javascript/node对象.md)
   - [screen对象](chapters/浏览器中的javascript/screen对象.md)
+  - [Storage对象](chapters/浏览器中的javascript/Storage对象.md)
   - [window对象](chapters/浏览器中的javascript/window对象.md)
   - [事件](chapters/浏览器中的javascript/事件.md)
+  - [应用程序存储](chapters/浏览器中的javascript/应用程序存储.md)
   - [样式相关对象](chapters/浏览器中的javascript/样式相关对象.md)
 
 - [Basis](chapters/Basis/README.md)
