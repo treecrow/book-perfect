@@ -2,21 +2,23 @@
 
 ## 属性列表
 
-| class  | attr            | more                                            |
-|--------|-----------------|-------------------------------------------------|
-| 文档元素相关 | documentElement | -                                               |
-| ~      | head            | -                                               |
-| ~      | styleSheets     | 只读的类数组对象，包含CSSStyleSheet对象，表示与文档关联到一起的样式表       |
-| ~      | scripts         | 页面中 HTMLCollection类型的`<script>`元素的集合            |
-| ~      | forms           | 页面中 HTMLCollection类型的`<form>`元素的集合              |
-| ~      | title           | 文档`<title>`标签的内容                                |
-| url相关  | URL             | 文档的URL，只读字符串                                    |
-| ~      | referrer        | 浏览器导航到当前链接的上一个文档，该属性和HTTP的Referer头信息的内容相同       |
-| http相关 | cookie          | 设置/读取 HTTP cookie                               |
-| ~      | domain          | 该属性允许当web页面之间交互时，相同域名下互相信任的web服务器之间协作放宽同源策略安全限制 |
-| ~      | lastModified    | 包含文档修改时间的字符串                                    |
-| 未分类    | designMode      | 设置为'on'使得整个文档可以编辑                               |
-| ~      | readyState      | -                                               |
+| class  | attr                                | more                                            |
+|--------|-------------------------------------|-------------------------------------------------|
+| 文档元素相关 | -                                   | -                                               |
+| ~      | implementation.createHTMLDocument() | 创建一个不影响当前document的document                      |
+| ~      | documentElement                     | -                                               |
+| ~      | head                                | -                                               |
+| ~      | styleSheets                         | 只读的类数组对象，包含CSSStyleSheet对象，表示与文档关联到一起的样式表       |
+| ~      | scripts                             | 页面中 HTMLCollection类型的`<script>`元素的集合            |
+| ~      | forms                               | 页面中 HTMLCollection类型的`<form>`元素的集合              |
+| ~      | title                               | 文档`<title>`标签的内容                                |
+| url相关  | URL                                 | 文档的URL，只读字符串                                    |
+| ~      | referrer                            | 浏览器导航到当前链接的上一个文档，该属性和HTTP的Referer头信息的内容相同       |
+| http相关 | cookie                              | 设置/读取 HTTP cookie                               |
+| ~      | domain                              | 该属性允许当web页面之间交互时，相同域名下互相信任的web服务器之间协作放宽同源策略安全限制 |
+| ~      | lastModified                        | 包含文档修改时间的字符串                                    |
+| 未分类    | designMode                          | 设置为'on'使得整个文档可以编辑                               |
+| ~      | readyState                          | -                                               |
 
 ## 方法列表
 

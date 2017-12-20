@@ -47,3 +47,8 @@
 | 内容操作   | someEle.insertAdjacentHTML(position, text) | 在元素的某个位置插入内容                                                                      |
 | 位置尺寸   | someEle.getBoundingClientRect()            | 返回一个包含 left,right,top,bottom,width,height[,x,y]等属性的对象（宽高包含元素border）。返回元素在视口坐标中的位置 |
 | ~      | someEle.scrollIntoView()                   | 通过滚动页面使元素在视口中可见（默认元素尽量靠近视口的上边缘，传入false元素尽量靠近视口的下边缘）                               |
+| 事件     | -                                          | -                                                                                 |
+| ~      | someEle.addEventListener()                 | 注册事件处理程序                                                                          |
+| ~      | someEle.removeEventListener()              | 移除事件处理程序                                                                          |
+| 文本框    | -                                          | -                                                                                 |
+| ~      | someEle.select()                           | 选取文本域中的内容                                                                         |
