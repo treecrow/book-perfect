@@ -405,7 +405,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="history对象.html">
+        <li class="chapter " data-level="2.2.3" data-path="form对象.html">
+            
+                <a href="form对象.html">
+            
+                    
+                    form对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="history对象.html">
             
                 <a href="history对象.html">
             
@@ -418,7 +431,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="location对象.html">
+        <li class="chapter " data-level="2.2.5" data-path="location对象.html">
             
                 <a href="location对象.html">
             
@@ -431,7 +444,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="navigator对象.html">
+        <li class="chapter " data-level="2.2.6" data-path="navigator对象.html">
             
                 <a href="navigator对象.html">
             
@@ -444,7 +457,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.6" data-path="node对象.html">
+        <li class="chapter " data-level="2.2.7" data-path="node对象.html">
             
                 <a href="node对象.html">
             
@@ -457,7 +470,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.7" data-path="screen对象.html">
+        <li class="chapter " data-level="2.2.8" data-path="screen对象.html">
             
                 <a href="screen对象.html">
             
@@ -470,7 +483,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.8" data-path="window对象.html">
+        <li class="chapter active" data-level="2.2.9" data-path="window对象.html">
             
                 <a href="window对象.html">
             
@@ -1004,14 +1017,41 @@
 <table>
 <thead>
 <tr>
+<th>class</th>
 <th>attr</th>
 <th>more</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>-</td>
-<td>-</td>
+<td>&#x6EDA;&#x52A8;&#x6761;</td>
+<td>window.pageXOffset</td>
+<td>&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x6EDA;&#x52A8;&#x6761;&#x7684;&#x4F4D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>window.pageYOffset</td>
+<td>~</td>
+</tr>
+<tr>
+<td>~</td>
+<td>window.scrollX</td>
+<td>&#x83B7;&#x53D6;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x6EDA;&#x52A8;&#x7684;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>window.scrollY</td>
+<td>~</td>
+</tr>
+<tr>
+<td>&#x89C6;&#x53E3;</td>
+<td>window.innerWidth</td>
+<td>&#x6D4F;&#x89C8;&#x5668;&#x89C6;&#x53E3;&#x7684;&#x5C3A;&#x5BF8;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>window.innerHeight</td>
+<td>~</td>
 </tr>
 </tbody>
 </table>
@@ -1026,39 +1066,59 @@
 </thead>
 <tbody>
 <tr>
-<td>~</td>
-<td>setTimeout()</td>
+<td>&#x5EF6;&#x65F6;&#x51FD;&#x6570;</td>
+<td>window.setTimeout()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>~</td>
-<td>setInterval()</td>
+<td>window.setInterval()</td>
 <td>-</td>
 </tr>
 <tr>
 <td>&#x5BF9;&#x8BDD;&#x6846;</td>
-<td>alert()</td>
+<td>window.alert()</td>
 <td>&#x5411;&#x7528;&#x6237;&#x5C55;&#x793A;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5E76;&#x7B49;&#x5F85;&#x7528;&#x6237;&#x5173;&#x95ED;&#x5BF9;&#x8BDD;&#x6846;</td>
 </tr>
 <tr>
 <td>~</td>
-<td>confirm()</td>
+<td>window.confirm()</td>
 <td>&#x663E;&#x793A;&#x4E00;&#x6761;&#x6D88;&#x606F;&#xFF0C;&#x8981;&#x6C42;&#x7528;&#x6237;&#x5355;&#x51FB;&quot;&#x786E;&#x5B9A;&quot;&#x6216;&quot;&#x53D6;&#x6D88;&quot;&#x6309;&#x94AE;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;bool&#x503C;</td>
 </tr>
 <tr>
 <td>~</td>
-<td>prompt()</td>
+<td>window.prompt()</td>
 <td>&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#xFF0C;&#x7B49;&#x5F85;&#x7528;&#x6237;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x90A3;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</td>
 </tr>
 <tr>
 <td>&#x6253;&#x5F00;&#x5173;&#x95ED;&#x7A97;&#x53E3;</td>
-<td>open(url,name)</td>
+<td>window.open(url,name)</td>
 <td>&#x5728;&#x65B0;&#x6807;&#x7B7E;&#x9875;&#x6253;&#x5F00;url&#x6587;&#x6863;</td>
 </tr>
 <tr>
 <td>~</td>
-<td>close()</td>
+<td>window.close()</td>
 <td>&#x5173;&#x95ED;&#x76F8;&#x5E94;&#x7A97;&#x53E3;</td>
+</tr>
+<tr>
+<td>&#x6EDA;&#x52A8;</td>
+<td>window.scroll(x,y)</td>
+<td>&#x6EDA;&#x52A8;&#x5230;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>window.scrollTo(x,y)</td>
+<td>~</td>
+</tr>
+<tr>
+<td>~</td>
+<td>window.scrollBy(x,y)</td>
+<td>&#x53C2;&#x6570;&#x662F;&#x76F8;&#x5BF9;&#x7684;&#xFF0C;&#x5728;&#x5F53;&#x524D;&#x6EDA;&#x52A8;&#x6761;&#x7684;&#x504F;&#x79FB;&#x91CF;&#x4E0A;&#x589E;&#x52A0;</td>
+</tr>
+<tr>
+<td>&#x6587;&#x672C;&#x9009;&#x62E9;</td>
+<td>window.getSelection()</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5BF9;&#x8C61;</td>
 </tr>
 </tbody>
 </table>
@@ -1072,7 +1132,7 @@
 </thead>
 <tbody>
 <tr>
-<td>error=function(){}</td>
+<td>window.error=function(){}</td>
 <td>-</td>
 </tr>
 </tbody>
@@ -1120,7 +1180,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"window对象","level":"2.2.8","depth":2,"next":{"title":"Basis","level":"2.3","depth":1,"path":"chapters/Basis/README.md","ref":"chapters/Basis/README.md","articles":[{"title":"var、let、const区别","level":"2.3.1","depth":2,"path":"chapters/Basis/var、let、const区别.md","ref":"chapters/Basis/var、let、const区别.md","articles":[]},{"title":"双向绑定","level":"2.3.2","depth":2,"path":"chapters/Basis/双向绑定.md","ref":"chapters/Basis/双向绑定.md","articles":[]},{"title":"变量函数提升","level":"2.3.3","depth":2,"path":"chapters/Basis/变量函数提升.md","ref":"chapters/Basis/变量函数提升.md","articles":[]},{"title":"异步编程","level":"2.3.4","depth":2,"path":"chapters/Basis/异步编程.md","ref":"chapters/Basis/异步编程.md","articles":[]},{"title":"箭头函数","level":"2.3.5","depth":2,"path":"chapters/Basis/箭头函数.md","ref":"chapters/Basis/箭头函数.md","articles":[]}]},"previous":{"title":"screen对象","level":"2.2.7","depth":2,"path":"chapters/浏览器中的javascript/screen对象.md","ref":"chapters/浏览器中的javascript/screen对象.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/浏览器中的javascript/window对象.md","mtime":"2017-12-12T14:20:23.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-13T15:48:57.714Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"window对象","level":"2.2.9","depth":2,"next":{"title":"Basis","level":"2.3","depth":1,"path":"chapters/Basis/README.md","ref":"chapters/Basis/README.md","articles":[{"title":"var、let、const区别","level":"2.3.1","depth":2,"path":"chapters/Basis/var、let、const区别.md","ref":"chapters/Basis/var、let、const区别.md","articles":[]},{"title":"双向绑定","level":"2.3.2","depth":2,"path":"chapters/Basis/双向绑定.md","ref":"chapters/Basis/双向绑定.md","articles":[]},{"title":"变量函数提升","level":"2.3.3","depth":2,"path":"chapters/Basis/变量函数提升.md","ref":"chapters/Basis/变量函数提升.md","articles":[]},{"title":"异步编程","level":"2.3.4","depth":2,"path":"chapters/Basis/异步编程.md","ref":"chapters/Basis/异步编程.md","articles":[]},{"title":"箭头函数","level":"2.3.5","depth":2,"path":"chapters/Basis/箭头函数.md","ref":"chapters/Basis/箭头函数.md","articles":[]}]},"previous":{"title":"screen对象","level":"2.2.8","depth":2,"path":"chapters/浏览器中的javascript/screen对象.md","ref":"chapters/浏览器中的javascript/screen对象.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/浏览器中的javascript/window对象.md","mtime":"2017-12-14T11:24:33.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-15T02:13:42.903Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
