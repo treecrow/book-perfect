@@ -52,6 +52,7 @@
   - [window对象](chapters/浏览器中的javascript/window对象.md)
   - [事件](chapters/浏览器中的javascript/事件.md)
   - [其它前后端交互方式](chapters/浏览器中的javascript/其它前后端交互方式.md)
+  - [媒体元素](chapters/浏览器中的javascript/媒体元素.md)
   - [应用程序存储](chapters/浏览器中的javascript/应用程序存储.md)
   - [样式相关对象](chapters/浏览器中的javascript/样式相关对象.md)
 
