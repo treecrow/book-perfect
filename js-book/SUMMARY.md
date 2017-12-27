@@ -38,6 +38,7 @@
 
 - [浏览器中的javascript](chapters/浏览器中的javascript/README.md)
 
+  - [Canvas](chapters/浏览器中的javascript/Canvas.md)
   - [cookie](chapters/浏览器中的javascript/cookie.md)
   - [document对象](chapters/浏览器中的javascript/document对象.md)
   - [element对象](chapters/浏览器中的javascript/element对象.md)
@@ -49,6 +50,8 @@
   - [node对象](chapters/浏览器中的javascript/node对象.md)
   - [screen对象](chapters/浏览器中的javascript/screen对象.md)
   - [Storage对象](chapters/浏览器中的javascript/Storage对象.md)
+  - [SVG](chapters/浏览器中的javascript/SVG.md)
+  - [WebGL](chapters/浏览器中的javascript/WebGL.md)
   - [window对象](chapters/浏览器中的javascript/window对象.md)
   - [事件](chapters/浏览器中的javascript/事件.md)
   - [其它前后端交互方式](chapters/浏览器中的javascript/其它前后端交互方式.md)
