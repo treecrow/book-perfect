@@ -12,6 +12,7 @@
 - [Handlebars](chapters/Handlebars.md)
 - [icheck](chapters/icheck.md)
 - [jqueryAutocomplete](chapters/jqueryAutocomplete.md)
+- [label](chapters/label.md)
 - [laydate](chapters/laydate.md)
 - [metisMenu](chapters/metisMenu.md)
 - [slick](chapters/slick.md)
