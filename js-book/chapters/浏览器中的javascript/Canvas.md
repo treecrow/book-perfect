@@ -40,9 +40,13 @@ var ctx = canvasEle.getContext("2d");
 | ~         | ctx.createLinearGradient()          | 创建CanvasGradient对象，用于设置fillStyle属性。                                  |
 | ~         | ctx.createRadialGradient()          | 创建CanvasGradient对象，用于设置fillStyle属性。                                  |
 | ~         | bgfade.addColorStop()               | CanvasGradient对象接口，定义渐变色                                             |
+| 图片        | -                                   | -                                                                    |
+| ~         | ctx.drawImage()                     | 将源图片的像素内容复制到画布上                                                      |
+| ~         | ctx.getImageData()                  | 返回一个ImageData对象，该对象表示画布矩形区域中的原始像素信息                                  |
+| ~         | ctx.putImageData()                  | 将像素复制回画布中                                                            |
 | 其它        | -                                   | -                                                                    |
 | ~         | ctx.clip()                          | 定义一个裁剪区域                                                             |
-| ~         | ctx.drawImage()                     | 将源图片的像素内容复制到画布上                                                      |
+| ~         | ctx.isPointInPath()                 | 确定一个指定的点是否落在当前路径中                                                    |
 
 ## 图形属性
 
@@ -77,3 +81,9 @@ var ctx = canvasEle.getContext("2d");
 |--------|-----------------------------------------|
 | width  | 对应画布对象的宽度以及高度属性决定了画布的尺寸(重置画布的尺寸会清空整个画布) |
 | height | ~                                       |
+
+### 方法列表
+
+| method      | more          |
+|-------------|---------------|
+| toDataURL() | 将画布中内容抽取成一张图片 |
