@@ -26,6 +26,7 @@
   - [基本数据结构](chapters/nginx/基本数据结构.md)
   - [指令上下文](chapters/nginx/指令上下文.md)
   - [模块的分类](chapters/nginx/模块的分类.md)
+  - [配置示例](chapters/nginx/配置示例.md)
 
 - [Git](chapters/Git/README.md)
 
