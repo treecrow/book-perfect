@@ -4,27 +4,6 @@
 
 --------------------------------------------------------------------------------
 
-- [Git](chapters/Git/README.md)
-
-  - [gitignore](chapters/Git/gitignore.md)
-  - [git命令](chapters/Git/git命令.md)
-
-- [mac](chapters/mac/README.md)
-
-  - [mac环境变量](chapters/mac/mac环境变量.md)
-  - [mac目录结构](chapters/mac/mac目录结构.md)
-  - [mac系统](chapters/mac/mac系统.md)
-
-- [nginx](chapters/nginx/README.md)
-
-  - [http核心模块](chapters/nginx/http核心模块.md)
-  - [server](chapters/nginx/server.md)
-  - [主模块](chapters/nginx/主模块.md)
-  - [事件模块](chapters/nginx/事件模块.md)
-  - [基本数据结构](chapters/nginx/基本数据结构.md)
-  - [指令上下文](chapters/nginx/指令上下文.md)
-  - [模块的分类](chapters/nginx/模块的分类.md)
-
 - [图解http](chapters/图解http/README.md)
 
   - [访问用户身份的认证](chapters/图解http/访问用户身份的认证.md)
@@ -38,15 +17,34 @@
   - [token混账东西](chapters/图解http/token混账东西.md)
   - [URI](chapters/图解http/URI.md)
 
-- [CDN技术详解](chapters/CDN技术详解.md)
-- [chrome](chapters/chrome.md)
-- [jwt](chapters/jwt.md)
-- [linux系统](chapters/linux系统.md)
-- [markdown](chapters/markdown.md)
-- [MVC，MVP 和 MVVM](chapters/MVC，MVP 和 MVVM.md)
-- [vsCode](chapters/vsCode.md)
-- [vue](chapters/vue.md)
-- [前后端分离](chapters/前后端分离.md)
+- [nginx](chapters/nginx/README.md)
+
+  - [http核心模块](chapters/nginx/http核心模块.md)
+  - [server](chapters/nginx/server.md)
+  - [主模块](chapters/nginx/主模块.md)
+  - [事件模块](chapters/nginx/事件模块.md)
+  - [基本数据结构](chapters/nginx/基本数据结构.md)
+  - [指令上下文](chapters/nginx/指令上下文.md)
+  - [模块的分类](chapters/nginx/模块的分类.md)
+
+- [Git](chapters/Git/README.md)
+
+  - [gitignore](chapters/Git/gitignore.md)
+  - [git命令](chapters/Git/git命令.md)
+
 - [性能优化](chapters/性能优化.md)
+- [服务器类型](chapters/服务器类型.md)
 - [浏览器缓存详解](chapters/浏览器缓存详解.md)
 - [跨域](chapters/跨域.md)
+
+--------------------------------------------------------------------------------
+
+- [mac](chapters/mac/README.md)
+
+  - [mac环境变量](chapters/mac/mac环境变量.md)
+  - [mac目录结构](chapters/mac/mac目录结构.md)
+  - [mac系统](chapters/mac/mac系统.md)
+
+- [linux系统](chapters/linux系统.md)
+- [markdown](chapters/markdown.md)
+- [vsCode](chapters/vsCode.md)
