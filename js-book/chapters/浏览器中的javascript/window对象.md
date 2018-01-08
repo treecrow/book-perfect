@@ -15,21 +15,23 @@
 
 | class  | method                                   | more                                                         |
 |--------|------------------------------------------|--------------------------------------------------------------|
-| 延时函数   | window.setTimeout()                      | -                                                            |
+| 延时函数   | -                                        | -                                                            |
+| ~      | window.setTimeout()                      | -                                                            |
 | ~      | window.setInterval()                     | -                                                            |
-| 对话框    | window.alert()                           | 向用户展示一条消息并等待用户关闭对话框                                          |
+| 对话框    | -                                        | -                                                            |
+| ~      | window.alert()                           | 向用户展示一条消息并等待用户关闭对话框                                          |
 | ~      | window.confirm()                         | 显示一条消息，要求用户单击"确定"或"取消"按钮，并返回一个bool值                          |
 | ~      | window.prompt()                          | 显示一个消息，等待用户输入字符串，并返回那个字符串                                    |
-| 打开关闭窗口 | window.open(url,name)                    | 在新标签页打开url文档                                                 |
+| 打开关闭窗口 | -                                        | -                                                            |
+| ~      | window.open(url,name)                    | 在新标签页打开url文档                                                 |
 | ~      | window.close()                           | 关闭相应窗口                                                       |
-| 滚动     | window.scroll(x,y)                       | 滚动到指定位置                                                      |
+| 滚动     | -                                        | -                                                            |
+| ~      | window.scroll(x,y)                       | 滚动到指定位置                                                      |
 | ~      | window.scrollTo(x,y)                     | ~                                                            |
 | ~      | window.scrollBy(x,y)                     | 参数是相对的，在当前滚动条的偏移量上增加                                         |
-| 文本选择   | window.getSelection()                    | 返回一个选择对象                                                     |
-| 样式     | window.getComputedStyle(ele,pseudoClass) | 获取一个元素的计算样式(只读),第一个参数为元素本身，第二个参数通常为null或空字符串，但也可以为css伪对象的字符串 |
-
-## 事件
-
-| event                     | more |
-|---------------------------|------|
-| window.error=function(){} | -    |
+| 文本选择   | -                                        | -                                                            |
+| ~      | window.getSelection()                    | 返回一个选择对象                                                     |
+| 样式     | -                                        | -                                                            |
+| ~      | window.getComputedStyle(ele,pseudoClass) | 获取一个元素的计算样式(只读),第一个参数为元素本身，第二个参数通常为null或空字符串，但也可以为css伪对象的字符串 |
+| 跨域消息传递 | -                                        | -                                                            |
+| ~      | window.postMessage()                     | -                                                            |
