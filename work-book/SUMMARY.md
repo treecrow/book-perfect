@@ -4,17 +4,16 @@
 
 --------------------------------------------------------------------------------
 
-- [artTemplate](chapters/artTemplate.md)
-- [bootbox](chapters/bootbox.md)
-- [common](chapters/common.md)
-- [fancybox](chapters/fancybox.md)
-- [footable](chapters/footable.md)
-- [Handlebars](chapters/Handlebars.md)
-- [icheck](chapters/icheck.md)
-- [jqueryAutocomplete](chapters/jqueryAutocomplete.md)
-- [label](chapters/label.md)
-- [laydate](chapters/laydate.md)
-- [metisMenu](chapters/metisMenu.md)
-- [slick](chapters/slick.md)
-- [sweetalert](chapters/sweetalert.md)
-- [twbsPagination](chapters/twbsPagination.md)
+- [plugins](chapters/plugins/README.md)
+
+  - [artTemplate](chapters/plugins/artTemplate.md)
+  - [bootbox](chapters/plugins/bootbox.md)
+  - [fancybox](chapters/plugins/fancybox.md)
+  - [Handlebars](chapters/plugins/Handlebars.md)
+  - [laydate](chapters/plugins/laydate.md)
+  - [slick](chapters/plugins/slick.md)
+  - [sweetalert](chapters/plugins/sweetalert.md)
+  - [twbsPagination](chapters/plugins/twbsPagination.md)
+
+- [others](chapters/others/README.md)
+  - [label](chapters/others/label.md)
