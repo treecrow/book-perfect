@@ -1,7 +1,8 @@
-# [slick](http://kenwheeler.github.io/slick/)
+# slick
 
 ## 相关文档
 
+- [官方文档](http://kenwheeler.github.io/slick/)
 - [どこよりも詳しい万能スライダーjQueryプラグインslick.jsの使い方](http://ithat.me/2016/10/17/how-to-use-slick-jquery-plugin)
 
 ## 使用示例
@@ -39,56 +40,56 @@ $('.slider').slick({
 
 ## settings
 
-| option           | more                           |
-|------------------|--------------------------------|
-| accessibility    | 使用方向按键和tab按键滚动                 |
-| adaptiveHeight   | 根据 slide 内容自适应高度               |
-| autoplay         | Enables Autoplay               |
-| autoplaySpeed    | Autoplay Speed in milliseconds |
-| arrows           | Prev/Next Arrows               |
-| asNavFor         | 把两个slider关联起来                  |
-| appendArrows     | 定义包裹左右箭头和slider列表的外层区域         |
-| appendDots       | -                              |
-| prevArrow        | 前一个按钮                          |
-| nextArrow        | 后一个按钮                          |
-| centerMode       | -                              |
-| centerPadding    | -                              |
-| cssEase          | -                              |
-| customPaging     | -                              |
-| dots             | -                              |
-| dotsClass        | -                              |
-| draggable        | -                              |
-| fade             | 是否渐变                           |
-| focusOnSelect    | -                              |
-| easing           | -                              |
-| edgeFriction     | -                              |
-| infinite         | 是否无限循环（默认 true）                |
-| initialSlide     | -                              |
-| lazyLoad         | -                              |
-| mobileFirst      | -                              |
-| pauseOnFocus     | Pause Autoplay On Focus        |
-| pauseOnHover     | Pause Autoplay On Hover        |
-| pauseOnDotsHover | -                              |
-| respondTo        | -                              |
-| responsive       | -                              |
-| rows             | -                              |
-| slide            | -                              |
-| slidesPerRow     | -                              |
-| slidesToShow     | -                              |
-| slidesToScroll   | -                              |
-| speed            | -                              |
-| swipe            | -                              |
-| swipeToSlide     | -                              |
-| touchMove        | -                              |
-| touchThreshold   | -                              |
-| useCSS           | -                              |
-| useTransform     | -                              |
-| variableWidth    | -                              |
-| vertical         | -                              |
-| verticalSwiping  | -                              |
-| rtl              | -                              |
-| waitForAnimate   | -                              |
-| zIndex           | -                              |
+| option           | more                    |
+|------------------|-------------------------|
+| accessibility    | 使用方向按键和tab按键滚动          |
+| adaptiveHeight   | 根据 slide 内容自适应高度        |
+| autoplay         | 自动播放                    |
+| autoplaySpeed    | 自动播放速度                  |
+| arrows           | 是否显示前进/后退按钮             |
+| asNavFor         | 把两个slider关联起来           |
+| appendArrows     | 设置包裹左右箭头和slider列表的外层区域  |
+| appendDots       | -                       |
+| prevArrow        | 前一个按钮                   |
+| nextArrow        | 后一个按钮                   |
+| centerMode       | 居中模式（当前slider居中展示）      |
+| centerPadding    | -                       |
+| cssEase          | -                       |
+| customPaging     | -                       |
+| dots             | -                       |
+| dotsClass        | -                       |
+| draggable        | -                       |
+| fade             | 是否渐变                    |
+| focusOnSelect    | -                       |
+| easing           | -                       |
+| edgeFriction     | -                       |
+| infinite         | 是否无限循环（默认 true）         |
+| initialSlide     | -                       |
+| lazyLoad         | -                       |
+| mobileFirst      | -                       |
+| pauseOnFocus     | Pause Autoplay On Focus |
+| pauseOnHover     | Pause Autoplay On Hover |
+| pauseOnDotsHover | -                       |
+| respondTo        | -                       |
+| responsive       | -                       |
+| rows             | -                       |
+| slide            | -                       |
+| slidesPerRow     | -                       |
+| slidesToShow     | 展示图片个数                  |
+| slidesToScroll   | 滚动图片个数                  |
+| speed            | -                       |
+| swipe            | -                       |
+| swipeToSlide     | -                       |
+| touchMove        | -                       |
+| touchThreshold   | -                       |
+| useCSS           | -                       |
+| useTransform     | -                       |
+| variableWidth    | -                       |
+| vertical         | -                       |
+| verticalSwiping  | -                       |
+| rtl              | -                       |
+| waitForAnimate   | -                       |
+| zIndex           | -                       |
 
 ## Events
 
