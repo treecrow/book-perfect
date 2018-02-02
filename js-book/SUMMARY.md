@@ -60,13 +60,15 @@
   - [事件](chapters/浏览器中的javascript/事件.md)
   - [其它前后端交互方式](chapters/浏览器中的javascript/其它前后端交互方式.md)
   - [媒体元素](chapters/浏览器中的javascript/媒体元素.md)
+  - [客户端数据库](chapters/浏览器中的javascript/客户端数据库.md)
   - [应用程序存储](chapters/浏览器中的javascript/应用程序存储.md)
+  - [文件系统](chapters/浏览器中的javascript/文件系统.md)
   - [样式相关对象](chapters/浏览器中的javascript/样式相关对象.md)
 
 - [杂项](chapters/杂项/README.md)
 
   - [Blob](chapters/杂项/Blob.md)
   - [双向绑定](chapters/杂项/双向绑定.md)
-  - [文件系统](chapters/杂项/文件系统.md)
   - [未分类的代码](chapters/杂项/未分类的代码.md)
   - [类型化数组和ArrayBuffer](chapters/杂项/类型化数组和ArrayBuffer.md)
+  - [面试题](chapters/杂项/面试题.md)
