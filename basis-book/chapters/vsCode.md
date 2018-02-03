@@ -50,7 +50,6 @@
 | Vue 2 Snippets           | *.vue 文件代码支持            |
 | CSS Formatter            | css代码格式化                |
 
-
 ## 命令行工具
 
 | 工具                | more                         |
@@ -71,3 +70,21 @@
 | window.openFilesInNewWindow      | 在新窗口打开文件夹                |
 | workbench.startupEditor          | 打开编辑器的初始状态               |
 | extensions.ignoreRecommendations | 忽略推荐的扩展                  |
+
+## 个人设置
+
+```text
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "workbench.sideBar.location": "right",
+  "editor.fontFamily":"Consolas, 'Courier New', monospace,'宋体'",
+  "editor.fontSize": 14,
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
+  "window.openFilesInNewWindow": "on",
+  "workbench.startupEditor": "newUntitledFile",
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 0
+}
+```

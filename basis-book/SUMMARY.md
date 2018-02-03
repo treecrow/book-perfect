@@ -19,6 +19,7 @@
 
 - [nginx](chapters/nginx/README.md)
 
+  - [个人配置](chapters/nginx/个人配置.md)
   - [http核心模块](chapters/nginx/http核心模块.md)
   - [server](chapters/nginx/server.md)
   - [主模块](chapters/nginx/主模块.md)
@@ -43,9 +44,16 @@
 
 - [mac](chapters/mac/README.md)
 
+  - [DS_Store](chapters/mac/DS_Store.md)
   - [mac环境变量](chapters/mac/mac环境变量.md)
   - [mac目录结构](chapters/mac/mac目录结构.md)
-  - [mac系统](chapters/mac/mac系统.md)
+  - [mac重置步骤](chapters/mac/mac重置步骤.md)
+  - [安装brew](chapters/mac/安装brew.md)
+  - [安装nvm&&node](chapters/mac/安装nvm&&node.md)
+  - [安装zsh](chapters/mac/安装zsh.md)
+  - [设置 github ssh](chapters/mac/设置 github ssh.md)
+  - [设置系统](chapters/mac/设置系统.md)
+  - [软件列表](chapters/mac/软件列表.md)
 
 - [linux系统](chapters/linux系统.md)
 - [markdown](chapters/markdown.md)
