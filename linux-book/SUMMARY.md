@@ -11,6 +11,7 @@
   - [chmod](chapters/self/chmod.md)
   - [git](chapters/self/git.md)
   - [kill](chapters/self/kill.md)
+  - [kinit](chapters/self/kinit.md)
   - [ps](chapters/self/ps.md)
   - [ssh](chapters/self/ssh.md)
   - [vim](chapters/self/vim.md)
