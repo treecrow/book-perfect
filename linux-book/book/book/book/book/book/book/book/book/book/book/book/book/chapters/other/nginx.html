@@ -1,0 +1,843 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>nginx · linux</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="treecrow">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="npm.html" />
+    
+    
+    <link rel="prev" href="mysql.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../mac自带命令.html">
+            
+                <a href="../mac自带命令.html">
+            
+                    
+                    mac自带命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../其它命令.html">
+            
+                <a href="../其它命令.html">
+            
+                    
+                    其它命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../shell.html">
+            
+                <a href="../shell.html">
+            
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../self/README.md">
+            
+                <span>
+            
+                    
+                    self
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../self/cat.html">
+            
+                <a href="../self/cat.html">
+            
+                    
+                    cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../self/git.html">
+            
+                <a href="../self/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../self/kill.html">
+            
+                <a href="../self/kill.html">
+            
+                    
+                    kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../self/ps.html">
+            
+                <a href="../self/ps.html">
+            
+                    
+                    ps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../self/ssh.html">
+            
+                <a href="../self/ssh.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../self/vim.html">
+            
+                <a href="../self/vim.html">
+            
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    other
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="brew.html">
+            
+                <a href="brew.html">
+            
+                    
+                    brew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="lessc.html">
+            
+                <a href="lessc.html">
+            
+                    
+                    lessc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.6" data-path="nginx.html">
+            
+                <a href="nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="npm.html">
+            
+                <a href="npm.html">
+            
+                    
+                    npm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="nvm.html">
+            
+                <a href="nvm.html">
+            
+                    
+                    nvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="svn.html">
+            
+                <a href="svn.html">
+            
+                    
+                    svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="wget.html">
+            
+                <a href="wget.html">
+            
+                    
+                    wget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="yarn.html">
+            
+                <a href="yarn.html">
+            
+                    
+                    yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >nginx</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nginx">nginx</h1>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x6587;&#x6863;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.nginx.cn/doc/" target="_blank">Nginx&#x4E2D;&#x6587;&#x6587;&#x6863;</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="http://tengine.taobao.org/book/" target="_blank">Nginx&#x5F00;&#x53D1;&#x4ECE;&#x5165;&#x95E8;&#x5230;&#x7CBE;&#x901A;</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="http://blog.csdn.net/xlgen157387/article/details/49781487" target="_blank">Nginx&#x521D;&#x63A2;</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="http://www.jianshu.com/p/46b083bfd5e0" target="_blank">&#x5728;Mac&#x4E0A;&#x5B89;&#x88C5;nginx</a></td>
+<td>&#x7ED1;&#x5B9A;&#x57DF;&#x540D;&#x63D0;&#x4F9B;&#x6D4B;&#x8BD5;</td>
+</tr>
+<tr>
+<td><a href="http://blog.csdn.net/yqh19880321/article/details/70478827" target="_blank">nginx&#x5728;MAC&#x4E0A;&#x7684;&#x5B89;&#x88C5;&#x3001;&#x542F;&#x52A8;&#x3001;&#x91CD;&#x542F;&#x548C;&#x5173;&#x95ED;</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="https://zhuanlan.zhihu.com/p/24382606" target="_blank">nginx &#x57FA;&#x672C;&#x5165;&#x95E8;</a></td>
+<td>&#x6709;&#x793A;&#x4F8B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x4EF6;&#xFF0F;&#x8DEF;&#x5F84;">&#x76F8;&#x5173;&#x6587;&#x4EF6;&#xFF0F;&#x8DEF;&#x5F84;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x6587;&#x4EF6;&#xFF0F;&#x8DEF;&#x5F84;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/usr/local/Cellar/nginx/1.12.1</td>
+<td>&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>/usr/local/etc/nginx/nginx.conf</td>
+<td>conf&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>/usr/local/var/log/nginx/*.log</td>
+<td>ngnix &#x65E5;&#x5FD7;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ngnix-&#x76F8;&#x5173;&#x547D;&#x4EE4;">ngnix &#x76F8;&#x5173;&#x547D;&#x4EE4;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brew services start nginx</td>
+<td>&#x542F;&#x52A8; ngnix</td>
+</tr>
+<tr>
+<td>brew services stop nginx</td>
+<td>&#x5173;&#x95ED; ngnix</td>
+</tr>
+<tr>
+<td>brew services restart nginx</td>
+<td>&#x91CD;&#x542F; ngnix</td>
+</tr>
+<tr>
+<td>nginx</td>
+<td>-</td>
+</tr>
+<tr>
+<td>nginx -t</td>
+<td>&#x9A8C;&#x8BC1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6B63;&#x786E;</td>
+</tr>
+<tr>
+<td>nginx -V</td>
+<td>&#x67E5;&#x770B;&#x7248;&#x672C;&#xFF0C;&#x4EE5;&#x53CA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>nginx -v</td>
+<td>&#x67E5;&#x770B;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>nginx -c filename</td>
+<td>&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>nginx -h</td>
+<td>&#x5E2E;&#x52A9;</td>
+</tr>
+<tr>
+<td>nginx -s reload</td>
+<td>&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x91CD;&#x542F;</td>
+</tr>
+<tr>
+<td>nginx -s stop</td>
+<td>&#x76F4;&#x63A5;&#x5173;&#x95ED; nginx</td>
+</tr>
+<tr>
+<td>nginx -s quit</td>
+<td>&#x4F1A;&#x5728;&#x5904;&#x7406;&#x5B8C;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x7684;&#x8BF7;&#x6C42;&#x540E;&#x9000;&#x51FA;&#xFF0C;&#x4E5F;&#x53EB;&#x4F18;&#x96C5;&#x5173;&#x95ED;</td>
+</tr>
+<tr>
+<td>nginx -s reopen</td>
+<td>&#x91CD;&#x65B0;&#x6253;&#x5F00;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>ps -ax / grep nginx</td>
+<td>&#x5F97;&#x5230;&#x6240;&#x6709;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684; nginx &#x8FDB;&#x7A0B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5185;&#x6838;&#x6A21;&#x5757;coremodule-&#x4E3B;&#x4E0A;&#x4E0B;&#x6587;">&#x5185;&#x6838;&#x6A21;&#x5757;(CoreModule-&#x4E3B;&#x4E0A;&#x4E0B;&#x6587;)</h2>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x63A7;&#x5236;Nginx&#x670D;&#x52A1;&#x5668;&#x7684;&#x57FA;&#x672C;&#x529F;&#x80FD;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x5B57;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user</td>
+<td>-</td>
+</tr>
+<tr>
+<td>worker_processes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>events</td>
+<td>-</td>
+</tr>
+<tr>
+<td>http</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x5757;eventsmodule-events">&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x5757;(EventsModule-events)</h2>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x63A7;&#x5236;Nginx&#x5982;&#x4F55;&#x5904;&#x7406;&#x8FDE;&#x63A5;&#xFF0C;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x6307;&#x4EE4;&#x7684;&#x4E00;&#x4E9B;&#x53C2;&#x6570;&#x4F1A;&#x5BF9;&#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x6027;&#x80FD;&#x4EA7;&#x751F;&#x91CD;&#x8981;&#x7684;&#x5F71;&#x54CD;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x5B57;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>worker_connections</td>
+<td>&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x652F;&#x6301;&#x7684;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="http&#x5185;&#x6838;&#x6A21;&#x5757;httpcoremodule-http">HTTP&#x5185;&#x6838;&#x6A21;&#x5757;(HttpCoreModule-http)</h2>
+<blockquote>
+<p>&#x63D0;&#x4F9B;HTTP&#x8BBF;&#x95EE;Nginx&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8BE5;&#x6A21;&#x5757;&#x662F;&#x4E0D;&#x80FD;&#x7F3A;&#x5C11;&#x7684;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x5B57;</th>
+<th>&#x540D;&#x5B57;</th>
+<th>&#x540D;&#x5B57;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>default_type</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>sendfile</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>keepalive_timeout</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>server</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>listen</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>server_name</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>access_log</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>root</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>location</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>proxy_pass</td>
+<td>&#x8DF3;&#x8F6C;&#x7F51;&#x5740;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>autoindex</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>autoindex_exact_size</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>error_page</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x671F;&#x671B;&#x5C06;&#x7AEF;&#x53E3;&#x53BB;&#x6389;&#xFF0C;&#x7ED1;&#x5B9A;&#x57DF;&#x540D;&#x63D0;&#x4F9B;&#x6D4B;&#x8BD5;">&#x671F;&#x671B;&#x5C06;&#x7AEF;&#x53E3;&#x53BB;&#x6389;&#xFF0C;&#x7ED1;&#x5B9A;&#x57DF;&#x540D;&#x63D0;&#x4F9B;&#x6D4B;&#x8BD5;</h2>
+<ul>
+<li>&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x76EE;&#x5F55;conf.d</li>
+</ul>
+<pre><code class="lang-bash">mkdir /usr/<span class="hljs-built_in">local</span>/etc/nginx/conf.d
+</code></pre>
+<ul>
+<li>&#x521B;&#x5EFA;&#x5355;&#x4E2A;&#x670D;&#x52A1;&#x6240;&#x9700;&#x7684;conf&#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-bash">touch /usr/<span class="hljs-built_in">local</span>/etc/nginx/conf.d/default.conf
+</code></pre>
+<ul>
+<li>&#x5C06;nginx&#x7684;&#x4E3B;&#x6587;&#x4EF6;nginx.conf&#x4E2D;&#x7684;server{}&#x5220;&#x9664;&#xFF0C;&#x66FF;&#x6362;&#x6210; include /usr/local/etc/nginx/conf.d/*.conf &#xFF0C;nginx&#x5C06;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x5B58;&#x653E;&#x5728;conf.d&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;conf&#x6587;&#x4EF6;&#x4E86;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql.html" class="navigation navigation-prev " aria-label="Previous page: mysql">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="npm.html" class="navigation navigation-next " aria-label="Next page: npm">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"nginx","level":"1.6.6","depth":2,"next":{"title":"npm","level":"1.6.7","depth":2,"path":"chapters/other/npm.md","ref":"chapters/other/npm.md","articles":[]},"previous":{"title":"mysql","level":"1.6.5","depth":2,"path":"chapters/other/mysql.md","ref":"chapters/other/mysql.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/other/nginx.md","mtime":"2017-09-29T04:58:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-29T05:13:55.912Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

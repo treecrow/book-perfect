@@ -29,11 +29,6 @@
   - [模块的分类](chapters/nginx/模块的分类.md)
   - [配置示例](chapters/nginx/配置示例.md)
 
-- [Git](chapters/Git/README.md)
-
-  - [gitignore](chapters/Git/gitignore.md)
-  - [git命令](chapters/Git/git命令.md)
-
 - [前后端交互](chapters/前后端交互/README.md)
 
   - [性能优化](chapters/前后端交互/性能优化.md)

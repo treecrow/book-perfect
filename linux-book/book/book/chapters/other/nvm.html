@@ -157,9 +157,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../self/README.md">
+        <li class="chapter " data-level="1.5" data-path="../self/">
             
-                <span>
+                <a href="../self/">
             
                     
                     self
@@ -449,24 +449,22 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="nvm">nvm</h1>
-<h2 id="&#x5B89;&#x88C5;&#x6B65;&#x9AA4;">&#x5B89;&#x88C5;&#x6B65;&#x9AA4;</h2>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
 <ul>
-<li>&#x5B89;&#x88C5;NVM</li>
+<li><a href="http://www.jianshu.com/p/a6044bd2ad35" target="_blank">MAC&#xFF1A;&#x901A;&#x8FC7;NVM&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684;node</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/24698499" target="_blank">&#x4F7F;&#x7528;nvm&#x5B89;&#x88C5;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x7684;node.js(&#x9002;&#x7528;&#x4E8E;Mac&#x548C;Windows&#x7CFB;&#x7EDF;)</a></li>
+<li><a href="http://www.cnblogs.com/ystrdy/p/6025058.html" target="_blank">ubuntu&#x901A;&#x8FC7;tnvm&#x5B89;&#x88C5;Nodejs</a></li>
 </ul>
-<pre><code>brew install nvm
-</code></pre><ul>
-<li>&#x521B;&#x5EFA;.bash_profile&#x6587;&#x4EF6;(&#x5982;&#x679C;&#x6709;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x4E86;)</li>
-</ul>
-<pre><code>touch &#xFF5E;/.bash_profile
-</code></pre><ul>
-<li>&#x5411;.bash_profile&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</li>
-</ul>
-<pre><code>export NVM_DIR=~/.nvm
+<h2 id="&#x5B89;&#x88C5;&#x6B65;&#x9AA4;">&#x5B89;&#x88C5;&#x6B65;&#x9AA4;</h2>
+<pre><code>// &#x5B89;&#x88C5;NVM
+brew install nvm
+// &#x521B;&#x5EFA;.bash_profile&#x6587;&#x4EF6;(&#x5982;&#x679C;&#x6709;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x4E86;)
+touch ~/.bash_profile
+// &#x5411;.bash_profile&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;
+export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-</code></pre><ul>
-<li>&#x4F7F;&#x751F;&#x6548;</li>
-</ul>
-<pre><code>source &#xFF5E;/.bash_profile
+// &#x4F7F;&#x751F;&#x6548;
+source &#xFF5E;/.bash_profile
 </code></pre><h2 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h2>
 <table>
 <thead>
@@ -477,12 +475,8 @@ source $(brew --prefix nvm)/nvm.sh
 </thead>
 <tbody>
 <tr>
-<td>nvm install v6.9.1</td>
-<td>&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; Node.js</td>
-</tr>
-<tr>
-<td>nvm uninstall [nodeversion]</td>
-<td>&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; Node.js</td>
+<td>nvm ls-remote node</td>
+<td>&#x67E5;&#x770B; &#x6240;&#x6709;&#x7684;node&#x53EF;&#x7528;&#x7248;&#x672C;</td>
 </tr>
 <tr>
 <td>nvm current</td>
@@ -493,16 +487,28 @@ source $(brew --prefix nvm)/nvm.sh
 <td>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5B89;&#x88C5;&#x7684; Node.js &#x7248;&#x672C;&#x5217;&#x8868;</td>
 </tr>
 <tr>
+<td>nvm install v6.9.1</td>
+<td>&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; Node.js</td>
+</tr>
+<tr>
+<td>nvm install node</td>
+<td>&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;Node</td>
+</tr>
+<tr>
+<td>nvm uninstall [nodeversion]</td>
+<td>&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; Node.js</td>
+</tr>
+<tr>
 <td>nvm use v6.9.1</td>
 <td>&#x6307;&#x5B9A;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684; Node.js &#x7248;&#x672C;</td>
 </tr>
 <tr>
-<td>nvm reinstall-packages [npmversion]</td>
-<td>&#x5728;&#x5F53;&#x524D;&#x7684; Node.js &#x7248;&#x672C;&#x4E0B;&#xFF0C;&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; npm &#x5305;&#x7BA1;&#x7406;&#x5668;</td>
+<td>nvm use node</td>
+<td>&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x5B89;&#x88C5;&#x7684;node&#x7248;&#x672C;</td>
 </tr>
 <tr>
-<td>nvm ls-remote node</td>
-<td>&#x67E5;&#x770B; &#x6240;&#x6709;&#x7684;node&#x53EF;&#x7528;&#x7248;&#x672C;</td>
+<td>nvm reinstall-packages [npmversion]</td>
+<td>&#x5728;&#x5F53;&#x524D;&#x7684; Node.js &#x7248;&#x672C;&#x4E0B;&#xFF0C;&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; npm &#x5305;&#x7BA1;&#x7406;&#x5668;</td>
 </tr>
 <tr>
 <td>nvm alias default v5.0.0</td>
@@ -510,12 +516,6 @@ source $(brew --prefix nvm)/nvm.sh
 </tr>
 </tbody>
 </table>
-<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
-<ul>
-<li><a href="http://www.jianshu.com/p/a6044bd2ad35" target="_blank">MAC&#xFF1A;&#x901A;&#x8FC7;NVM&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684;node</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/24698499" target="_blank">&#x4F7F;&#x7528;nvm&#x5B89;&#x88C5;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x7684;node.js(&#x9002;&#x7528;&#x4E8E;Mac&#x548C;Windows&#x7CFB;&#x7EDF;)</a></li>
-<li><a href="http://www.cnblogs.com/ystrdy/p/6025058.html" target="_blank">ubuntu&#x901A;&#x8FC7;tnvm&#x5B89;&#x88C5;Nodejs</a></li>
-</ul>
 
                                 
                                 </section>
@@ -559,7 +559,7 @@ source $(brew --prefix nvm)/nvm.sh
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"nvm","level":"1.6.6","depth":2,"next":{"title":"svn","level":"1.6.7","depth":2,"path":"chapters/other/svn.md","ref":"chapters/other/svn.md","articles":[]},"previous":{"title":"npm","level":"1.6.5","depth":2,"path":"chapters/other/npm.md","ref":"chapters/other/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/other/nvm.md","mtime":"2017-09-29T04:58:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-30T14:03:25.698Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"nvm","level":"1.6.6","depth":2,"next":{"title":"svn","level":"1.6.7","depth":2,"path":"chapters/other/svn.md","ref":"chapters/other/svn.md","articles":[]},"previous":{"title":"npm","level":"1.6.5","depth":2,"path":"chapters/other/npm.md","ref":"chapters/other/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/other/nvm.md","mtime":"2018-02-03T17:21:07.058Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-03T17:57:44.930Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
