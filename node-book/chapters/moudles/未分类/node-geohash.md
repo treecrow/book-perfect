@@ -1,3 +1,0 @@
-# node-geohash
-
-- [LBS地理位置距离计算方法之geohash算法](http://blog.csdn.net/z69183787/article/details/52858051)
