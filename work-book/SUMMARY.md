@@ -10,6 +10,7 @@
   - [bootbox](chapters/plugins/bootbox.md)
   - [fancybox](chapters/plugins/fancybox.md)
   - [Handlebars](chapters/plugins/Handlebars.md)
+  - [jqueryvalidation](chapters/plugins/jqueryvalidation.md)
   - [laydate](chapters/plugins/laydate.md)
   - [slick](chapters/plugins/slick.md)
   - [sweetalert](chapters/plugins/sweetalert.md)
