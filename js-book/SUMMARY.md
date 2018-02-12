@@ -11,6 +11,7 @@
   - [map](chapters/ES6/map.md)
   - [var、let、const区别](chapters/ES6/var、let、const区别.md)
   - [异步编程](chapters/ES6/异步编程.md)
+  - [模块化](chapters/ES6/模块化.md)
   - [箭头函数](chapters/ES6/箭头函数.md)
 
 - [基础知识](chapters/基础知识/README.md)

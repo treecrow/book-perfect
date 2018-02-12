@@ -62,6 +62,5 @@
 
 - [relevant](chapters/relevant/README.md)
 
-  - [模块化](chapters/relevant/模块化.md)
-  - [gulp](chapters/relevant/gulp.md)
+  - [npm scripts](chapters/relevant/npm scripts.md)
   - [package](chapters/relevant/package.md)
