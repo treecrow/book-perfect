@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>未分类的代码 · javascript</title>
+        <title>JSDoc · javascript</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="类型化数组和ArrayBuffer.html" />
+    <link rel="next" href="双向绑定.html" />
     
     
-    <link rel="prev" href="双向绑定.html" />
+    <link rel="prev" href="Blob.html" />
     
 
     </head>
@@ -885,7 +885,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.2" data-path="JSDoc.html">
+        <li class="chapter active" data-level="2.4.2" data-path="JSDoc.html">
             
                 <a href="JSDoc.html">
             
@@ -911,7 +911,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.4.4" data-path="未分类的代码.html">
+        <li class="chapter " data-level="2.4.4" data-path="未分类的代码.html">
             
                 <a href="未分类的代码.html">
             
@@ -985,7 +985,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >未分类的代码</a>
+        <a href="../.." >JSDoc</a>
     </h1>
 </div>
 
@@ -1000,135 +1000,411 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x672A;&#x5206;&#x7C7B;&#x7684;&#x4EE3;&#x7801;">&#x672A;&#x5206;&#x7C7B;&#x7684;&#x4EE3;&#x7801;</h1>
-<h2 id="&#x6D4F;&#x89C8;&#x5668;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;">&#x6D4F;&#x89C8;&#x5668;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;</h2>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> browser = {
-    ua:navigator.userAgent.toLowerCase(),
-    chrome:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/chrome/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    webkit:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/webkit/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    opera:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/opera/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    msie: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/msie/</span>.test(<span class="hljs-keyword">this</span>.ua) &amp;&amp; !<span class="hljs-keyword">this</span>.opera;},
-    ie6: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.msie() &amp;&amp; <span class="hljs-regexp">/msie 6./</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    ie7: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.msie() &amp;&amp; <span class="hljs-regexp">/msie 7.0/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    ie9_: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.msie() &amp;&amp; <span class="hljs-regexp">/msie [1-9]]/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    safari: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> !<span class="hljs-keyword">this</span>.chrome() &amp;&amp; <span class="hljs-regexp">/safari/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    safari3: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> !<span class="hljs-keyword">this</span>.safari() &amp;&amp; <span class="hljs-regexp">/version3/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    safari4: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> !<span class="hljs-keyword">this</span>.safari() &amp;&amp; <span class="hljs-regexp">/version3/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    <span class="hljs-comment">//&#x7CFB;&#x7EDF;</span>
-    windows:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/windows|win32/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    mac:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/macintosh|mac os x/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    air:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/adobeair/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    linux:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/linux/</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    wechat:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.ua.indexOf(<span class="hljs-string">&apos;micromessenger&apos;</span>) &gt; <span class="hljs-number">0</span>;},
-    android:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.ua.indexOf(<span class="hljs-string">&apos;android&apos;</span>) &gt; <span class="hljs-number">0</span>;},
-    ios:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/(iphone|ipad|ipod|ios)/i</span>.test(<span class="hljs-keyword">this</span>.ua);},
-    <span class="hljs-comment">//&#x5176;&#x4ED6;</span>
-    gecko:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/gecko/</span>.test(<span class="hljs-keyword">this</span>.ua) &amp;&amp; <span class="hljs-keyword">this</span>.webkit();},
-    gecko3:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-regexp">/rv:1.9/</span>.test(<span class="hljs-keyword">this</span>.ua) &amp;&amp; <span class="hljs-keyword">this</span>.gecko();}
-};
-</code></pre>
-<h2 id="&#x662F;&#x5426;&#x652F;&#x6301;webgl">&#x662F;&#x5426;&#x652F;&#x6301;WebGL</h2>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">IsWebGLEnabled</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">window</span>.WebGLRenderingContext) {<span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;}
-    <span class="hljs-keyword">try</span> {
-        <span class="hljs-keyword">var</span> canvas = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;canvas&apos;</span>);
-        <span class="hljs-keyword">if</span> (!canvas.getContext(<span class="hljs-string">&apos;experimental-webgl&apos;</span>) &amp;&amp; !canvas.getContext(<span class="hljs-string">&apos;webgl&apos;</span>)) { <span class="hljs-comment">//experimental-webgl &#x5B9E;&#x9A8C;&#x9636;&#x6BB5; &#x6807;&#x51C6;&#x672A;&#x786E;&#x5B9A;&#x7684;&#x65F6;&#x5019;</span>
-            <span class="hljs-keyword">this</span>.GetWebGLErrorMessage();
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-        }
-    } <span class="hljs-keyword">catch</span> (exception) {
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    }
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-}
-</code></pre>
-<h2 id="&#x5224;&#x65AD;&#x624B;&#x673A;&#x6A2A;&#x7AD6;&#x5C4F;&#x72B6;&#x6001;">&#x5224;&#x65AD;&#x624B;&#x673A;&#x6A2A;&#x7AD6;&#x5C4F;&#x72B6;&#x6001;</h2>
-<pre><code class="lang-js"><span class="hljs-comment">/* &#x5224;&#x65AD;&#x624B;&#x673A;&#x6A2A;&#x7AD6;&#x5C4F;&#x72B6;&#x6001;&#xFF1A;&#x79FB;&#x52A8;&#x7AEF;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E00;&#x822C;&#x90FD;&#x652F;&#x6301;window.orientation&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x51FA;&#x624B;&#x673A;&#x662F;&#x5904;&#x5728;&#x6A2A;&#x5C4F;&#x8FD8;&#x662F;&#x7AD6;&#x5C4F;&#x72B6;&#x6001;&#x3002;*/</span>
-<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&quot;onorientationchange&quot;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span> ? <span class="hljs-string">&quot;orientationchange&quot;</span> : <span class="hljs-string">&quot;resize&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.orientation === <span class="hljs-number">180</span> || <span class="hljs-built_in">window</span>.orientation === <span class="hljs-number">0</span>) {
-        alert(<span class="hljs-string">&apos;&#x7AD6;&#x5C4F;&#x72B6;&#x6001;&#xFF01;&apos;</span>);
-    }
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.orientation === <span class="hljs-number">90</span> || <span class="hljs-built_in">window</span>.orientation === <span class="hljs-number">-90</span> ){
-        alert(<span class="hljs-string">&apos;&#x6A2A;&#x5C4F;&#x72B6;&#x6001;&#xFF01;&apos;</span>);
-    }
-    <span class="hljs-comment">//var str=window.innerWidth &gt; window.innerHeight ? &quot;Horizontal&quot; : &quot;vertical&quot;;</span>
-}, <span class="hljs-literal">false</span>);
-</code></pre>
-<h2 id="&#x662F;&#x5426;&#x4E3A;&#x79FB;&#x52A8;&#x7AEF;">&#x662F;&#x5426;&#x4E3A;&#x79FB;&#x52A8;&#x7AEF;</h2>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span>(navigator.userAgent.match(<span class="hljs-regexp">/(iPhone|iPod|Android|ios)/i</span>)){}
-</code></pre>
-<h2 id="&#x662F;&#x5426;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;">&#x662F;&#x5426;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;</h2>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> inBrowser = <span class="hljs-keyword">typeof</span> <span class="hljs-built_in">window</span> !== <span class="hljs-string">&apos;undefined&apos;</span> &amp;&amp; <span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-built_in">window</span>) !== <span class="hljs-string">&apos;[object Object]&apos;</span>;
-</code></pre>
-<h2 id="&#x662F;&#x5426;&#x4E3A;&#x539F;&#x751F;&#x51FD;&#x6570;">&#x662F;&#x5426;&#x4E3A;&#x539F;&#x751F;&#x51FD;&#x6570;</h2>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> toString = <span class="hljs-built_in">Object</span>.prototype.toString;
-    <span class="hljs-keyword">var</span> fnToString = <span class="hljs-built_in">Function</span>.prototype.toString;
-    <span class="hljs-keyword">var</span> reHostCtor = <span class="hljs-regexp">/^\[object .+?Constructor\]$/</span>;
-    <span class="hljs-keyword">var</span> reNative = <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&apos;^&apos;</span> +
-        <span class="hljs-built_in">String</span>(toString)
-            .replace(<span class="hljs-regexp">/[.*+?^${}()|[\]\/\\]/g</span>, <span class="hljs-string">&apos;\\$&amp;&apos;</span>)
-            .replace(<span class="hljs-regexp">/toString|(function).*?(?=\\\()| for .+?(?=\\\])/g</span>, <span class="hljs-string">&apos;$1.*?&apos;</span>) + <span class="hljs-string">&apos;$&apos;</span>
-    );
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isNative</span>(<span class="hljs-params">value</span>) </span>{
-        <span class="hljs-keyword">var</span> type = <span class="hljs-keyword">typeof</span> value;
-        <span class="hljs-keyword">return</span> type == <span class="hljs-string">&apos;function&apos;</span>
-            ? reNative.test(fnToString.call(value))
-            : (value &amp;&amp; type == <span class="hljs-string">&apos;object&apos;</span> &amp;&amp; reHostCtor.test(toString.call(value))) || <span class="hljs-literal">false</span>;
-    }
-    <span class="hljs-built_in">module</span>.exports = isNative;
-}());
-</code></pre>
-<h2 id="cookie">Cookie</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> Cookie={
-    <span class="hljs-comment">//&#x83B7;&#x53D6;cookie</span>
-    get:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name</span>)</span>{
-        <span class="hljs-keyword">var</span> cookieName=<span class="hljs-built_in">encodeURIComponent</span>(name)+<span class="hljs-string">&quot;=&quot;</span>;<span class="hljs-comment">//&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x7F16;&#x7801;&#x540E;&#x52A0;&#x4E0A;&#x201C;=&#x201D;</span>
-        <span class="hljs-keyword">var</span> cookieStart=<span class="hljs-built_in">document</span>.cookie.indexOf(cookieName);<span class="hljs-comment">//&#x627E;&#x5230;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x5728;cookie&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x4F4D;&#x7F6E;</span>
-        <span class="hljs-keyword">var</span> cookieValue=<span class="hljs-literal">null</span>;
-        <span class="hljs-keyword">if</span>(cookieStart&gt;<span class="hljs-number">-1</span>){<span class="hljs-comment">//&#x5982;&#x679C;cookie&#x4E2D;&#x5B58;&#x5728;name</span>
-            <span class="hljs-keyword">var</span> cookieEnd=<span class="hljs-built_in">document</span>.cookie.indexOf(<span class="hljs-string">&quot;;&quot;</span>,cookieStart);<span class="hljs-comment">//&#x5F97;&#x5230;name&#x7684;&#x503C;&#x5728;cookie&#x4E2D;&#x7ED3;&#x675F;&#x7684;&#x4F4D;&#x7F6E;</span>
-            <span class="hljs-keyword">if</span>(cookieEnd==<span class="hljs-number">-1</span>){cookieEnd=<span class="hljs-built_in">document</span>.cookie.length;}<span class="hljs-comment">//&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&quot;;&quot;(cookie&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;)&#xFF0C;&#x5219;name&#x5728;cookie&#x4E2D;&#x7ED3;&#x675F;&#x7684;&#x4F4D;&#x7F6E;&#x5C31;&#x662F;&#x6574;&#x4E2A;cookie&#x7ED3;&#x675F;&#x7684;&#x4F4D;&#x7F6E;</span>
-            cookieValue=<span class="hljs-built_in">decodeURIComponent</span>(<span class="hljs-built_in">document</span>.cookie.substring(cookieStart+cookieName.length,cookieEnd));<span class="hljs-comment">//substring&#x622A;&#x53D6;&#x7684;&#x662F;name&#x5728;cookie&#x4E2D;&#x5BF9;&#x5E94;&#x503C;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x8FD4;&#x56DE;name&#x7684;cookie&#x503C;</span>
-        }
-        <span class="hljs-keyword">return</span> cookieValue;
-    },
-    <span class="hljs-comment">//&#x6DFB;&#x52A0;cookie</span>
-    set:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name,value,expires,path,domain,secure</span>)</span>{
-        <span class="hljs-keyword">var</span> cookieText=<span class="hljs-built_in">encodeURIComponent</span>(name)+<span class="hljs-string">&quot;=&quot;</span>+<span class="hljs-built_in">encodeURIComponent</span>(value);
-        <span class="hljs-keyword">if</span>(expires <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Date</span>){cookieText+=<span class="hljs-string">&quot;; expires=&quot;</span>+expires.toGMTString();}
-        <span class="hljs-keyword">if</span>(path){cookieText+=<span class="hljs-string">&quot;; path&quot;</span>+path;}
-        <span class="hljs-keyword">if</span>(domain){cookieText+=<span class="hljs-string">&quot;; domain=&quot;</span>+domain;}
-        <span class="hljs-keyword">if</span>(secure){cookieText+=<span class="hljs-string">&quot;; secure&quot;</span>;}
-        <span class="hljs-built_in">document</span>.cookie=cookieText;
-    },
-    <span class="hljs-comment">//&#x5220;&#x9664;cookie</span>
-    del:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name</span>)</span>{
-        <span class="hljs-keyword">this</span>.set(name,<span class="hljs-string">&quot;&quot;</span>,<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">0</span>));
-    }
-};
-</code></pre>
-<h2 id="&#x5F02;&#x6B65;&#x52A0;&#x8F7D;js">&#x5F02;&#x6B65;&#x52A0;&#x8F7D;js</h2>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadScript</span>(<span class="hljs-params">url, callback</span>) </span>{
-  <span class="hljs-keyword">var</span> script = <span class="hljs-built_in">document</span>.createElement_x(<span class="hljs-string">&quot;script&quot;</span>)
-  script.type = <span class="hljs-string">&quot;text/javascript&quot;</span>;
-  <span class="hljs-keyword">if</span> (script.readyState) { <span class="hljs-comment">//IE</span>
-    script.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-      <span class="hljs-keyword">if</span> (script.readyState == <span class="hljs-string">&quot;loaded&quot;</span> ||
-        script.readyState == <span class="hljs-string">&quot;complete&quot;</span>) {
-        script.onreadystatechange = <span class="hljs-literal">null</span>;
-        callback();
-      }
-    };
-  } <span class="hljs-keyword">else</span> { <span class="hljs-comment">//Others: Firefox, Safari, Chrome, and Opera </span>
-    script.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-      callback();
-    };
-  }
-  script.src = url;
-  <span class="hljs-built_in">document</span>.body.appendChild(script);
-}
-</code></pre>
+                                <h1 id="jsdoc">JSDoc</h1>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
+<ul>
+<li><a href="http://www.css88.com/doc/jsdoc/index.html" target="_blank">JSDoc</a></li>
+</ul>
+<h2 id="&#x5757;&#x6807;&#x7B7E;">&#x5757;&#x6807;&#x7B7E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x6807;&#x7B7E;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@abstract / @virtual</td>
+<td>&#x8BE5;&#x6210;&#x5458;&#xFF08;&#x4E00;&#x822C;&#x6307;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF09;&#x5FC5;&#x987B;&#x5728;&#x7EE7;&#x627F;&#x7684;&#x5B50;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0;&#xFF08;&#x6216;&#x91CD;&#x5199;&#xFF09;</td>
+</tr>
+<tr>
+<td>@access</td>
+<td>&#x6307;&#x5B9A;&#x8BE5;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#xFF08;&#x79C1;&#x6709; private&#xFF0C;&#x516C;&#x5171; public&#xFF0C;&#x6216;&#x4FDD;&#x62A4; protected&#xFF09;</td>
+</tr>
+<tr>
+<td>@alias</td>
+<td>&#x6807;&#x8BB0;&#x6210;&#x5458;&#x6709;&#x4E00;&#x4E2A;&#x522B;&#x540D;</td>
+</tr>
+<tr>
+<td>@augments</td>
+<td>&#x6307;&#x540D;&#x8FD9;&#x4E2A;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x81F3;&#x54EA;&#x4E2A;&#x7236;&#x7C7B;&#xFF0C;&#x540E;&#x9762;&#x9700;&#x8981;&#x52A0;&#x7236;&#x7C7B;&#x540D;</td>
+</tr>
+<tr>
+<td>@author</td>
+<td>&#x6307;&#x5B9A;&#x9879;&#x76EE;&#x7684;&#x4F5C;&#x8005;</td>
+</tr>
+<tr>
+<td>@borrows</td>
+<td>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E9B;&#x4E1C;&#x897F;</td>
+</tr>
+<tr>
+<td>@callback</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>@class / @constructor</td>
+<td>&#x6B64;&#x51FD;&#x6570;&#x65E8;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&quot;new&quot;&#x5173;&#x952E;&#x5B57;&#x8C03;&#x7528;&#xFF0C;&#x5373;&#x6784;&#x9020;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>@classdesc</td>
+<td>&#x4F7F;&#x7528;&#x540E;&#x9762;&#x7684;&#x6587;&#x5B57;&#x6765;&#x63CF;&#x8FF0;&#x6574;&#x4E2A;&#x7C7B;</td>
+</tr>
+<tr>
+<td>@constant</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;</td>
+</tr>
+<tr>
+<td>@constructs</td>
+<td>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6210;&#x5458;&#x5C06;&#x6210;&#x4E3A;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>@copyright</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E9B;&#x7248;&#x6743;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>@default</td>
+<td>&#x8BB0;&#x5F55;&#x9ED8;&#x8BA4;&#x503C;</td>
+</tr>
+<tr>
+<td>@deprecated</td>
+<td>&#x8BF4;&#x660E;&#x8FD9;&#x5DF2;&#x4E0D;&#x518D;&#x662F;&#x9996;&#x9009;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>@description</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;</td>
+</tr>
+<tr>
+<td>@enum</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#x7684;&#x96C6;&#x5408;</td>
+</tr>
+<tr>
+<td>@event</td>
+<td>&#x4E8B;&#x4EF6;</td>
+</tr>
+<tr>
+<td>@example</td>
+<td>&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x63CF;&#x8FF0;&#x9879;&#x7684;&#x4F8B;&#x5B50;</td>
+</tr>
+<tr>
+<td>@exports</td>
+<td>&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x7531; JavaScript &#x6A21;&#x5757;&#x5BFC;&#x51FA;&#x7684;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td>@external</td>
+<td>&#x5916;&#x90E8;&#x7EC4;&#x4EF6;</td>
+</tr>
+<tr>
+<td>@file / @fileoverview / @overview</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>@fires / @emits</td>
+<td>&#x63CF;&#x8FF0;&#x4E8B;&#x4EF6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4F1A;&#x89E6;&#x53D1;</td>
+</tr>
+<tr>
+<td>@function / @func / @method</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>@global</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>@ignore</td>
+<td>&#x5FFD;&#x7565;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;</td>
+</tr>
+<tr>
+<td>@implements</td>
+<td>&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>@inheritdoc</td>
+<td>&#x6307;&#x660E;&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#x5E94;&#x7EE7;&#x627F;&#x5176;&#x7236;&#x7C7B;&#x7684;&#x6587;&#x6863;</td>
+</tr>
+<tr>
+<td>@inner</td>
+<td>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>@instance</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td>@interface</td>
+<td>&#x8FD9;&#x662F;&#x522B;&#x4EBA;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>@kind</td>
+<td>&#x6807;&#x8BC6;&#x7684;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>@lends</td>
+<td>&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x9762;&#x91CF;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x6807;&#x8BB0;&#x4E3A;&#x67D0;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x7C7B;&#x6216;&#x6A21;&#x5757;&#xFF09;&#x7684;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td>@license</td>
+<td>&#x6807;&#x8BC6;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x91C7;&#x7528;&#x4F55;&#x79CD;&#x8F6F;&#x4EF6;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</td>
+</tr>
+<tr>
+<td>@listens</td>
+<td>&#x5217;&#x51FA;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7684;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;</td>
+</tr>
+<tr>
+<td>@member / @var</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td>@memberof</td>
+<td>&#x6807;&#x660E;&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#x5C5E;&#x4E8E;&#x54EA;&#x4E2A;&#x7236;&#x7EA7;&#x6807;&#x8BC6;</td>
+</tr>
+<tr>
+<td>@mixes</td>
+<td>&#x6B64;&#x5BF9;&#x8C61;&#x6DF7;&#x5165;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td>@mixin</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A; mixin&#xFF08;&#x6DF7;&#x5165;&#xFF09;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>@module</td>
+<td>&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>@name</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>@namespace</td>
+<td>&#x547D;&#x540D;&#x7A7A;&#x95F4;</td>
+</tr>
+<tr>
+<td>@override</td>
+<td>&#x6307;&#x660E;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x8986;&#x76D6;&#x5176;&#x7236;&#x7C7B;&#x540C;&#x540D;&#x7684;&#x6807;&#x8BC6;&#x7B26;</td>
+</tr>
+<tr>
+<td>@param / @arg / @argument</td>
+<td>&#x8BB0;&#x5F55;&#x4F20;&#x9012;&#x7ED9;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>@private</td>
+<td>&#x6807;&#x8BB0;&#x4E3A;&#x79C1;&#x6709;</td>
+</tr>
+<tr>
+<td>@property</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td>@protected</td>
+<td>&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#x662F;&#x53D7;&#x4FDD;&#x62A4;&#x7684;</td>
+</tr>
+<tr>
+<td>@public</td>
+<td>&#x6807;&#x8BB0;&#x4E3A;&#x516C;&#x5F00;&#x7684;</td>
+</tr>
+<tr>
+<td>@readonly</td>
+<td>&#x6807;&#x8BB0;&#x4E3A;&#x53EA;&#x8BFB;&#x7684;</td>
+</tr>
+<tr>
+<td>@requires</td>
+<td>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x4E00;&#x4E2A; JavaScript &#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>@returns</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;</td>
+</tr>
+<tr>
+<td>@see</td>
+<td>&#x66F4;&#x591A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x9605;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x6587;&#x6863;</td>
+</tr>
+<tr>
+<td>@since</td>
+<td>&#x6B64;&#x529F;&#x80FD;&#x4F55;&#x65F6;&#x88AB;&#x6DFB;&#x52A0;&#x8FDB;&#x6765;&#x7684;</td>
+</tr>
+<tr>
+<td>@static</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td>@summary</td>
+<td>&#x5B8C;&#x6574;&#x63CF;&#x8FF0;&#x7684;&#x4E00;&#x4E2A;&#x7B80;&#x5199;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>@this</td>
+<td>this &#x5173;&#x952E;&#x5B57;&#x7684;&#x6307;&#x5411;</td>
+</tr>
+<tr>
+<td>@throws</td>
+<td>&#x8BF4;&#x660E;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x629B;&#x51FA;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x9519;&#x8BEF;</td>
+</tr>
+<tr>
+<td>@todo</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5C06;&#x8981;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;</td>
+</tr>
+<tr>
+<td>@tutorial</td>
+<td>&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x5230;&#x5305;&#x542B;&#x6559;&#x7A0B;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>@type</td>
+<td>&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>@typedef</td>
+<td>&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>@variation</td>
+<td>&#x533A;&#x5206;&#x5177;&#x6709;&#x76F8;&#x540C;&#x540D;&#x79F0;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>@version</td>
+<td>&#x63CF;&#x8FF0;&#x7248;&#x672C;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5185;&#x8054;&#x6807;&#x7B7E;">&#x5185;&#x8054;&#x6807;&#x7B7E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x6807;&#x7B7E;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@link</td>
+<td>&#x94FE;&#x63A5;&#x5230;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x9879;&#x76EE;</td>
+</tr>
+<tr>
+<td>@tutorial</td>
+<td>&#x94FE;&#x63A5;&#x5230;&#x4E00;&#x4E2A;&#x6559;&#x7A0B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jsdoc-&#x547D;&#x4EE4;&#x884C;">jsdoc &#x547D;&#x4EE4;&#x884C;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x9009;&#x9879;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a <value>, --access <value></value></value></td>
+<td>&#x53EA;&#x663E;&#x793A;&#x7279;&#x5B9A; access &#x65B9;&#x6CD5;&#x5C5E;&#x6027;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF1A; private, protected, public, or undefined, &#x6216;&#x8005; all&#xFF08;&#x8868;&#x793A;&#x6240;&#x6709;&#x7684;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#xFF09;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C; &#x663E;&#x793A;&#x9664; private &#x6807;&#x8BC6;&#x7B26;&#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709;&#x6807;&#x8BC6;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td>-c <value>, --configure <value></value></value></td>
+<td>JSDoc &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x5B89;&#x88C5; JSDoc &#x76EE;&#x5F55;&#x4E0B;&#x7684; conf.json &#x6216; conf.json.EXAMPLE&#x3002;</td>
+</tr>
+<tr>
+<td>-d <value>, --destination <value></value></value></td>
+<td>&#x8F93;&#x51FA;&#x751F;&#x6210;&#x6587;&#x6863;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#x3002;JSDoc &#x5185;&#x7F6E;&#x7684; Haruki &#x6A21;&#x677F;&#xFF0C;&#x4F7F;&#x7528; console &#x5C06;&#x6570;&#x636E;&#x8F6C;&#x50A8;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;./out&#x3002;</td>
+</tr>
+<tr>
+<td>--debug</td>
+<td>&#x6253;&#x5370;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x8C03;&#x8BD5; JSDoc &#x672C;&#x8EAB;&#x7684;&#x95EE;&#x9898;&#x3002;</td>
+</tr>
+<tr>
+<td>-e <value>, --encoding <value></value></value></td>
+<td>&#x5F53; JSDoc &#x9605;&#x8BFB;&#x6E90;&#x4EE3;&#x7801;&#x65F6;&#x5047;&#x5B9A;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7F16;&#x7801;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; utf8&#x3002;</td>
+</tr>
+<tr>
+<td>-h, --help</td>
+<td>&#x663E;&#x793A; JSDoc &#x7684;&#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x9000;&#x51FA;&#x3002;</td>
+</tr>
+<tr>
+<td>--match <value></value></td>
+<td>&#x53EA;&#x6709;&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x5176;&#x540D;&#x79F0;&#x4E2D;&#x5305;&#x542B; value&#x3002;</td>
+</tr>
+<tr>
+<td>--nocolor</td>
+<td>&#x5F53;&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#x65F6;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x989C;&#x8272;&#x3002;&#x5728; Windows &#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x662F;&#x9ED8;&#x8BA4;&#x542F;&#x7528;&#x7684;&#x3002;</td>
+</tr>
+<tr>
+<td>-p, --private</td>
+<td>&#x5C06;&#x6807;&#x8BB0;&#x6709;[@private &#x6807;&#x7B7E;][tags-private.md]&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x4E5F;&#x751F;&#x6210;&#x5230;&#x6587;&#x6863;&#x4E2D;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x79C1;&#x6709;&#x6807;&#x8BC6;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td>-P, --package</td>
+<td>&#x5305;&#x542B;&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF0C;&#x7248;&#x672C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x7EC6;&#x8282;&#x7684; package.json &#x6587;&#x4EF6;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x5728;&#x6E90;&#x8DEF;&#x5F84;&#x4E2D;&#x627E;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; package.json &#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>--pedantic</td>
+<td>&#x5C06;&#x9519;&#x8BEF;&#x89C6;&#x4E3A;&#x81F4;&#x547D;&#x9519;&#x8BEF;&#xFF0C;&#x5C06;&#x8B66;&#x544A;&#x89C6;&#x4E3A;&#x9519;&#x8BEF;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; false&#x3002;</td>
+</tr>
+<tr>
+<td>-q <value>, --query <value></value></value></td>
+<td>&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x7528;&#x6765;&#x89E3;&#x6790;&#x548C;&#x5B58;&#x50A8;&#x5230;&#x5168;&#x5C40;&#x53D8;&#x91CF; env.opts.query &#x4E2D;&#x3002;&#x793A;&#x4F8B;&#xFF1A;foo=bar&amp;baz=true&#x3002;</td>
+</tr>
+<tr>
+<td>-r, --recurse</td>
+<td>&#x626B;&#x63CF;&#x6E90;&#x6587;&#x4EF6;&#x548C;&#x5BFC;&#x89C8;&#x65F6;&#x9012;&#x5F52;&#x5230;&#x5B50;&#x76EE;&#x5F55;&#x3002;</td>
+</tr>
+<tr>
+<td>-R, --readme</td>
+<td>&#x7528;&#x6765;&#x5305;&#x542B;&#x5230;&#x751F;&#x6210;&#x6587;&#x6863;&#x7684; README.md &#x6587;&#x4EF6;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x5728;&#x6E90;&#x8DEF;&#x5F84;&#x4E2D;&#x627E;&#x5230;&#x7684;&#x7B2C;&#x4E00; README.md &#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>-t <value>, --template <value></value></value></td>
+<td>&#x7528;&#x4E8E;&#x751F;&#x6210;&#x8F93;&#x51FA;&#x6587;&#x6863;&#x7684;&#x6A21;&#x677F;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; templates/default&#xFF0C;JSDoc &#x5185;&#x7F6E;&#x7684;&#x9ED8;&#x8BA4;&#x6A21;&#x677F;&#x3002;</td>
+</tr>
+<tr>
+<td>-T, --test</td>
+<td>&#x8FD0;&#x884C; JSDoc &#x7684;&#x6D4B;&#x8BD5;&#x5957;&#x4EF6;&#xFF0C;&#x5E76;&#x628A;&#x7ED3;&#x679C;&#x6253;&#x5370;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x3002;</td>
+</tr>
+<tr>
+<td>-u <value>, --tutorials <value></value></value></td>
+<td>&#x5BFC;&#x89C8;&#x8DEF;&#x5F84;&#xFF0C;JSDoc &#x8981;&#x641C;&#x7D22;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565;&#xFF0C;&#x5C06;&#x4E0D;&#x751F;&#x6210;&#x5BFC;&#x89C8;&#x9875;&#x3002;&#x67E5;&#x770B;&#x5BFC;&#x89C8;&#x8BF4;&#x660E;&#xFF0C;&#x4EE5;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+<tr>
+<td>-v, --version</td>
+<td>&#x663E;&#x793A; JSDoc &#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x9000;&#x51FA;&#x3002;</td>
+</tr>
+<tr>
+<td>--verbose</td>
+<td>&#x65E5;&#x5FD7;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x5230;&#x63A7;&#x5236;&#x53F0; JSDoc &#x8FD0;&#x884C;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; false&#x3002;</td>
+</tr>
+<tr>
+<td>-X, --explain</td>
+<td>&#x4EE5; JSON &#x683C;&#x5F0F;&#x8F6C;&#x50A8;&#x6240;&#x6709;&#x7684; doclet &#x5230;&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x7136;&#x540E;&#x9000;&#x51FA;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x540D;&#x79F0;&#x8DEF;&#x5F84;">&#x540D;&#x79F0;&#x8DEF;&#x5F84;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>myFunction</td>
+<td>-</td>
+</tr>
+<tr>
+<td>MyConstructor</td>
+<td>-</td>
+</tr>
+<tr>
+<td>MyConstructor#instanceMember</td>
+<td>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>MyConstructor.staticMember</td>
+<td>&#x9759;&#x6001;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>MyConstructor~innerMember</td>
+<td>&#x5185;&#x90E8;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1156,12 +1432,12 @@
 
             
                 
-                <a href="双向绑定.html" class="navigation navigation-prev " aria-label="Previous page: 双向绑定">
+                <a href="Blob.html" class="navigation navigation-prev " aria-label="Previous page: Blob">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="类型化数组和ArrayBuffer.html" class="navigation navigation-next " aria-label="Next page: 类型化数组和ArrayBuffer">
+                <a href="双向绑定.html" class="navigation navigation-next " aria-label="Next page: 双向绑定">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1172,7 +1448,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"未分类的代码","level":"2.4.4","depth":2,"next":{"title":"类型化数组和ArrayBuffer","level":"2.4.5","depth":2,"path":"chapters/杂项/类型化数组和ArrayBuffer.md","ref":"chapters/杂项/类型化数组和ArrayBuffer.md","articles":[]},"previous":{"title":"双向绑定","level":"2.4.3","depth":2,"path":"chapters/杂项/双向绑定.md","ref":"chapters/杂项/双向绑定.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/杂项/未分类的代码.md","mtime":"2018-02-03T16:52:35.026Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-12T02:39:34.961Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSDoc","level":"2.4.2","depth":2,"next":{"title":"双向绑定","level":"2.4.3","depth":2,"path":"chapters/杂项/双向绑定.md","ref":"chapters/杂项/双向绑定.md","articles":[]},"previous":{"title":"Blob","level":"2.4.1","depth":2,"path":"chapters/杂项/Blob.md","ref":"chapters/杂项/Blob.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/杂项/JSDoc.md","mtime":"2018-02-12T00:42:46.702Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-12T02:39:34.961Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

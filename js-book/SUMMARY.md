@@ -68,6 +68,7 @@
 - [杂项](chapters/杂项/README.md)
 
   - [Blob](chapters/杂项/Blob.md)
+  - [JSDoc](chapters/杂项/JSDoc.md)
   - [双向绑定](chapters/杂项/双向绑定.md)
   - [未分类的代码](chapters/杂项/未分类的代码.md)
   - [类型化数组和ArrayBuffer](chapters/杂项/类型化数组和ArrayBuffer.md)
