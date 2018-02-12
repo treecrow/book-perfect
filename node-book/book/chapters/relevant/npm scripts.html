@@ -889,37 +889,6 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="npm-scripts">npm scripts</h1>
-<h2 id="&#x7B80;&#x5199;">&#x7B80;&#x5199;</h2>
-<table>
-<thead>
-<tr>
-<th>&#x547D;&#x4EE4;</th>
-<th>more</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>npm start</td>
-<td>&#x76F8;&#x5F53;&#x4E8E; <code>npm run start</code></td>
-</tr>
-<tr>
-<td>npm stop</td>
-<td>&#x76F8;&#x5F53;&#x4E8E; <code>npm run stop</code></td>
-</tr>
-<tr>
-<td>npm test</td>
-<td>&#x76F8;&#x5F53;&#x4E8E; <code>npm run test</code></td>
-</tr>
-<tr>
-<td>npm restart</td>
-<td>&#x76F8;&#x5F53;&#x4E8E; <code>npm run stop &amp;&amp; npm run restart &amp;&amp; npm run start</code></td>
-</tr>
-<tr>
-<td>npm run xxx</td>
-<td>&#x5176;&#x4ED6;&#x7684;&#x90FD;&#x4E0D;&#x80FD;&#x5FFD;&#x7565;run</td>
-</tr>
-</tbody>
-</table>
 <h2 id="&#x6267;&#x884C;&#x987A;&#x5E8F;">&#x6267;&#x884C;&#x987A;&#x5E8F;</h2>
 <table>
 <thead>
@@ -930,12 +899,24 @@
 </thead>
 <tbody>
 <tr>
-<td>npm run script1.js &amp; npm run script2.js</td>
+<td>&amp;</td>
 <td>&#x5E76;&#x884C;&#x6267;&#x884C;</td>
 </tr>
 <tr>
-<td>npm run script1.js &amp;&amp; npm run script2.js</td>
-<td>&#x7EE7;&#x53D1;&#x6267;&#x884C;&#xFF08;&#x5373;&#x53EA;&#x6709;&#x524D;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x6210;&#x529F;&#xFF0C;&#x624D;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#xFF09;</td>
+<td>&amp;&amp;</td>
+<td>&#x94FE;&#x5F0F;&#x4EFB;&#x52A1;&#xFF08;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x63A5;&#x7740;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x8FD0;&#x884C;&#xFF09;</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&#x5C06;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x8F93;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&#x5C06;&#x547D;&#x4EE4;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>\</td>
+<td>&#x5C06;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;</td>
 </tr>
 </tbody>
 </table>
@@ -950,7 +931,7 @@
 <tbody>
 <tr>
 <td>npm run build</td>
-<td>&#x76F8;&#x5F53;&#x4E8E; <code>npm run prebuild &amp;&amp; npm run build &amp;&amp; npm run postbuild</code>(&#x5982;&#x679C; build &#x6709;pre&#x548C;post&#x4E24;&#x4E2A;&#x94A9;&#x5B50;)</td>
+<td>&#x76F8;&#x5F53;&#x4E8E; <code>npm run prebuild &amp;&amp; npm run build &amp;&amp; npm run postbuild</code>(&#x5982;&#x679C; build &#x6709; pre &#x548C; post &#x4E24;&#x4E2A;&#x94A9;&#x5B50;)</td>
 </tr>
 </tbody>
 </table>
@@ -965,6 +946,22 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>prestart&#xFF0C;start, poststart(npm start)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>prestop&#xFF0C;stop, poststop(npm stop)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>prerestart&#xFF0C;restart, postrestart(npm restart)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pretest&#xFF0C;test, posttest(npm test)</td>
+<td>-</td>
+</tr>
 <tr>
 <td>prepublish&#xFF0C;postpublish</td>
 <td>-</td>
@@ -982,20 +979,12 @@
 <td>-</td>
 </tr>
 <tr>
-<td>pretest&#xFF0C;posttest</td>
-<td>-</td>
+<td>npm run</td>
+<td>&#x67E5;&#x770B;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7684; npm &#x547D;&#x4EE4;</td>
 </tr>
 <tr>
-<td>prestop&#xFF0C;poststop</td>
-<td>-</td>
-</tr>
-<tr>
-<td>prestart&#xFF0C;poststart</td>
-<td>-</td>
-</tr>
-<tr>
-<td>prerestart&#xFF0C;postrestart</td>
-<td>-</td>
+<td>npm run env</td>
+<td>&#x5217;&#x51FA;&#x6240;&#x6709;&#x73AF;&#x5883;&#x53D8;&#x91CF;</td>
 </tr>
 </tbody>
 </table>
@@ -1022,6 +1011,18 @@
 <tr>
 <td>process.env.npm_package_version</td>
 <td>-</td>
+</tr>
+<tr>
+<td>process.env.npm_lifecycle_event</td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td><code>process.env.npm_package_</code></td>
+<td>&#x901A;&#x8FC7;<code>npm_package_</code>&#x524D;&#x7F00;&#xFF0C;npm &#x811A;&#x672C;&#x53EF;&#x4EE5;&#x62FF;&#x5230; package.json &#x91CC;&#x9762;&#x7684;&#x5B57;&#x6BB5;</td>
+</tr>
+<tr>
+<td><code>npm_config_</code></td>
+<td>npm &#x811A;&#x672C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>npm_config_</code>&#x524D;&#x7F00;&#xFF0C;&#x62FF;&#x5230; npm &#x7684;&#x914D;&#x7F6E;&#x53D8;&#x91CF;</td>
 </tr>
 </tbody>
 </table>
@@ -1068,7 +1069,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"npm scripts","level":"2.3.1","depth":2,"next":{"title":"package","level":"2.3.2","depth":2,"path":"chapters/relevant/package.md","ref":"chapters/relevant/package.md","articles":[]},"previous":{"title":"relevant","level":"2.3","depth":1,"path":"chapters/relevant/README.md","ref":"chapters/relevant/README.md","articles":[{"title":"npm scripts","level":"2.3.1","depth":2,"path":"chapters/relevant/npm scripts.md","ref":"chapters/relevant/npm scripts.md","articles":[]},{"title":"package","level":"2.3.2","depth":2,"path":"chapters/relevant/package.md","ref":"chapters/relevant/package.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/relevant/npm scripts.md","mtime":"2018-02-12T09:25:21.085Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-12T09:26:19.563Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"npm scripts","level":"2.3.1","depth":2,"next":{"title":"package","level":"2.3.2","depth":2,"path":"chapters/relevant/package.md","ref":"chapters/relevant/package.md","articles":[]},"previous":{"title":"relevant","level":"2.3","depth":1,"path":"chapters/relevant/README.md","ref":"chapters/relevant/README.md","articles":[{"title":"npm scripts","level":"2.3.1","depth":2,"path":"chapters/relevant/npm scripts.md","ref":"chapters/relevant/npm scripts.md","articles":[]},{"title":"package","level":"2.3.2","depth":2,"path":"chapters/relevant/package.md","ref":"chapters/relevant/package.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/relevant/npm scripts.md","mtime":"2018-02-12T10:31:37.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-12T12:12:00.146Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
