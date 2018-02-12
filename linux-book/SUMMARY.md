@@ -3,7 +3,6 @@
 > linux 命令行工具 和 shell 总结
 
 - [mac自带命令](chapters/mac自带命令.md)
-- [其它命令](chapters/其它命令.md)
 - [shell](chapters/shell.md)
 
 - [self](chapters/self/README.md)
