@@ -1,36 +1,52 @@
 # package
 
-## [package.json 字段全解](http://blog.csdn.net/woxueliuyun/article/details/39294375)
+## 相关文档
 
-| 字段                 | more                                                                                                                            |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| name                 | 包名                                                                                                                            |
-| version              | 包的版本号                                                                                                                      |
-| description          | 包的描述                                                                                                                        |
-| homepage             | 包的官网 url                                                                                                                    |
-| author               | 包的作者姓名                                                                                                                    |
-| contributors         | 包的其他贡献者姓名                                                                                                              |
-| dependencies         | 可选字段，依赖包列表                                                                                                            |
-| repository           | 可选字段。包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上                                                         |
-| main                 | 可选字段。 main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js |
-| keywords             | 关键字                                                                                                                          |
-| devDependencies      | 可选字段。如果只需要下载使用某些模块，而不下载这些模块的测试和文档框架，放在这个下面比较不错                                    |
-| peerDependencies     | 可选字段。兼容性依赖。如果你的包是插件，适合这种方式                                                                            |
-| bundledDependencies  | 可选字段。发布包时同时打包的其他依赖                                                                                            |
-| optionalDependencies | 可选字段。如果你想在某些依赖即使没有找到，或则安装失败的情况下，npm 都继续执行。那么这些依赖适合放在这里                        |
-| license              | 可选字段                                                                                                                        |
-| bugs                 | 可选字段，问题追踪系统的 URL 或邮箱地址                                                                                         |
-| files                | 可选字段，项目包含的一组文件。如果是文件夹，文件夹下的文件也会被包含                                                            |
-| bin                  | 可选字段。很多的包都会有执行文件需要安装到 PATH 中去                                                                            |
-| directories          | 用于指示包的目录结构                                                                                                            |
-| directories.lib      | 指示库文件的位置                                                                                                                |
-| scripts              | 可选字段，object。Key 是生命周期事件名，value 是在事件点要跑的命令                                                              |
-| config               | 可选字段，object。Config 对象中的值在 Scripts 的整个周期中皆可用，专门用于给 Scripts 提供配置参数                               |
-| engines              | 可选字段。既可以指定 node 版本,也可以指定 npm 版本                                                                              |
-| engineStrick         | 可选字段，布尔值。如果你肯定你的程序只能在制定的 engine 上运行，设置为 true                                                     |
-| os                   | 可选字段。指定模块可以在什么操作系统上运行                                                                                      |
-| cpu                  | 可选字段。指定 CPU 型号                                                                                                         |
-| preferGlobal         | 可选字段，布尔值。如果你的包是个命令行应用程序，需要全局安装，就可以设为 true                                                   |
-| private              | 可选字段，布尔值。如果 private 为 true，npm 会拒绝发布。这可以防止私有 repositories 不小心被发布出去                            |
-| publishConfig        | 可选字段。发布时使用的配置值放这                                                                                                |
-| options              | 可选字段。定义一些字段，可以在 scripts 中通过 $npm_package_options_someFail 的方式饮用                                          |
+* [package.json](https://docs.npmjs.com/files/package.json)
+* [package.json 详解](https://www.cnblogs.com/nullcc/p/5829218.html)
+
+## 字段列表
+
+| 分类        | 字段                 | more                                                                                                            |
+| ----------- | -------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 项目本身    | -                    | -                                                                                                               |
+| ~           | name                 | 模块名字                                                                                                        |
+| ~           | version              | 模块版本号                                                                                                      |
+| ~           | description          | 模块描述                                                                                                        |
+| ~           | keywords             | 模块关键字                                                                                                      |
+| ~           | license              | 项目许可证                                                                                                      |
+| ~           | homepage             | 项目主页                                                                                                        |
+| ~           | bugs                 | 项目 bug 提交的页面                                                                                             |
+| ~           | repository           | 指明你的代码被托管在何处，这对那些想要参与到这个项目中的人来说很有帮助                                          |
+| 人员相关    | -                    | -                                                                                                               |
+| ~           | author               | name、email、url                                                                                                |
+| ~           | contributors         | -                                                                                                               |
+| 项目文件    | -                    | -                                                                                                               |
+| ~           | files                | 可选字段，项目包含的一组文件                                                                                    |
+| ~           | main                 | 可选字段，建议必填。这个字段的值是你程序主入口模块的 ID                                                         |
+| ~           | bin                  | 可选字段。很多的包都会有执行文件需要安装到 PATH 中去                                                            |
+| ~           | man                  | 指定一个单一的文件名或一个文件名数组来让 man 程序使用                                                           |
+| ~           | directories          | CommonJS Packages 规范说明了几种你可以用 directories 对象来标示你的包结构的方法                                 |
+| ~           | directories.lib      | 告诉你库文件夹的位置，目前没有什么地方需要用到 lib 文件夹，但是这是重要的元信息                                 |
+| ~           | directories.bin      | 如果你在 directories.bin 中指定一个 bin 目录，在这个目录中的所有文件都会被当做在 bin 来使用                     |
+| ~           | directories.man      | directories.man 指定的文件夹里都是 man 文件，系统通过遍历这个文件夹来生成一个 man 的数组                        |
+| ~           | directories.doc      | 把 markdown 文件放在这。也许某一天这些文件将被漂亮地展示出来，不过这仅仅是也许                                  |
+| ~           | directories.example  | 把示例脚本放在这。也许某一天会被用到                                                                            |
+| ~           | directories.test     | -                                                                                                               |
+| npm.scripts | -                    | -                                                                                                               |
+| ~           | scripts              | scripts 字段是一个由脚本命令组成的字典，这些命令运行在包的各个生命周期中                                        |
+| ~           | config               | config 字段是一个对象，可以用来配置包脚本中的跨版本参数                                                         |
+| 依赖        | -                    | -                                                                                                               |
+| ~           | dependencies         | 指定了依赖的包名和其版本范围的映射                                                                              |
+| ~           | devDependencies      | 可选字段，开发环境下的依赖包，格式同 dependencies 属性                                                          |
+| ~           | peerDependencies     | 可选字段。兼容性依赖。如果你的包是插件，适合这种方式                                                            |
+| ~           | bundledDependencies  | 可选字段。发布包时同时打包的其他依赖                                                                            |
+| ~           | optionalDependencies | 可选字段。如果你想在某些依赖即使没有找到，或则安装失败的情况下，npm 都继续执行。那么这些依赖适合放在这里        |
+| 运行环境    | -                    | -                                                                                                               |
+| ~           | engines              | 可选字段。既可以指定 node 版本，也可以指定 npm 版本                                                             |
+| ~           | os                   | 指定模块运行的操作系统                                                                                          |
+| ~           | cpu                  | 如果你的代码只能运行在特定的 cpu 架构上，你可以指明                                                             |
+| 发布        | -                    | -                                                                                                               |
+| ~           | preferGlobal         | 如果你的包是一个需要进行全局安装的命令行应用，需要设置 preferGlobal 为 true，如果这个包被本地安装会报出一个警告 |
+| ~           | private              | 如果你在包的 package.json 中设置"private": true，则 npm 会拒绝发布它                                            |
+| ~           | publishConfig        | 这是一个在 publish-time 时会用到的配置集合                                                                      |

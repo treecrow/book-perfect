@@ -15,10 +15,12 @@
 | ---------------- | ------------------------------------------ | --------------------------------------------------------------- |
 | 其他             | -                                          | -                                                               |
 | ~                | sudo npm install npm -g                    | 升级 npm                                                        |
-| -                | npm -v                                     | 查看版本号                                                      |
-| -                | npm init                                   | 创建模块                                                        |
-| -                | npm help                                   | -                                                               |
-| -                | npm cache clear                            | 清空 NPM 本地缓存，用于对付使用相同版本号发布新版本代码的人     |
+| ~                | npm -v                                     | 查看版本号                                                      |
+| ~                | npm init                                   | 创建模块                                                        |
+| ~                | npm init --yes                             | 根据当前项目创建默认的 package.json                             |
+| ~                | npm help                                   | -                                                               |
+| ~                | npm cache clear                            | 清空 NPM 本地缓存，用于对付使用相同版本号发布新版本代码的人     |
+| ~                | npm docs                                   | 打开代码托管的页面                                              |
 | 安装／卸载／更新 | -                                          | -                                                               |
 | ~                | `npm install <Module Name>`                | 本地安装模块,将安装包放在 ./node_modules 下                     |
 | -                | `npm install <Module Name> -g`             | 全局安装模块,将安装包放在 /usr/local 下或者你 node 的安装目     |
