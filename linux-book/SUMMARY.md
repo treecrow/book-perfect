@@ -20,6 +20,7 @@
   - [code](chapters/other/code.md)
   - [gitbook](chapters/other/gitbook.md)
   - [mysql](chapters/other/mysql.md)
+  - [node](chapters/other/node.md)
   - [npm](chapters/other/npm.md)
   - [nvm](chapters/other/nvm.md)
   - [svn](chapters/other/svn.md)
