@@ -14,9 +14,12 @@
 
 * [基础知识](chapters/基础知识/README.md)
 
-  * [map](chapters/基础知识/map.md)
+  * [Map](chapters/基础知识/Map.md)
   * [new 操作符](chapters/基础知识/new操作符.md)
-  * [set](chapters/基础知识/set.md)
+  * [Proxy](chapters/基础知识/Proxy.md)
+  * [Promise](chapters/基础知识/Promise.md)
+  * [Reflect](chapters/基础知识/Reflect.md)
+  * [Set](chapters/基础知识/Set.md)
   * [Symbol](chapters/基础知识/Symbol.md)
   * [typeof](chapters/基础知识/typeof.md)
   * [严格模式](chapters/基础知识/严格模式.md)
