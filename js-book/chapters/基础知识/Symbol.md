@@ -24,7 +24,7 @@
 | Symbol.replace            | 对象的 Symbol.replace 属性，指向一个方法，当该对象被 String.prototype.replace 方法调用时，会返回该方法的返回值                                      |
 | Symbol.search             | 指向一个方法，当该对象被 String.prototype.search 方法调用时，会返回该方法的返回值                                                                   |
 | Symbol.split              | 指向一个方法，当该对象被 String.prototype.split 方法调用时，会返回该方法的返回值                                                                    |
-| Symbol.iterator           | 指向该对象的默认遍历器方法                                                                                                                          |
+| Symbol.iterator           | 指向该对象的默认遍历器方法(只要对象有这个属性，就表明该对象是可遍历的)                                                                              |
 | Symbol.toPrimitive        | 指向一个方法。该对象被转为原始类型的值时，会调用这个方法，返回该对象对应的原始类型值                                                                |
 | Symbol.toStringTag        | 指向一个方法。在该对象上面调用 Object.prototype.toString 方法时，如果这个属性存在，它的返回值会出现在 toString 方法返回的字符串之中，表示对象的类型 |
 | Symbol.unscopables        | 指向一个对象。该对象指定了使用 with 关键字时，哪些属性会被 with 环境排除                                                                            |

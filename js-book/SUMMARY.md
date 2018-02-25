@@ -4,17 +4,13 @@
 
 ---
 
-* [ES6](chapters/ES6/bebel.md)
-
-  * [bebel](chapters/ES6/bebel.md)
-  * [class](chapters/ES6/class.md)
-  * [异步编程](chapters/ES6/异步编程.md)
-  * [模块化](chapters/ES6/模块化.md)
-  * [箭头函数](chapters/ES6/箭头函数.md)
-
 * [基础知识](chapters/基础知识/README.md)
 
+  * [async](chapters/基础知识/async.md)
+  * [Class](chapters/基础知识/Class.md)
+  * [Iterator](chapters/基础知识/Iterator.md)
   * [Map](chapters/基础知识/Map.md)
+  * [Module](chapters/基础知识/Module.md)
   * [new 操作符](chapters/基础知识/new操作符.md)
   * [Proxy](chapters/基础知识/Proxy.md)
   * [Promise](chapters/基础知识/Promise.md)
@@ -35,7 +31,9 @@
   * [数组](chapters/基础知识/数组.md)
   * [日期和时间](chapters/基础知识/日期和时间.md)
   * [正则表达式](chapters/基础知识/正则表达式.md)
+  * [箭头函数](chapters/基础知识/箭头函数.md)
   * [类和模块](chapters/基础知识/类和模块.md)
+  * [类型化数组和 ArrayBuffer](chapters/基础知识/类型化数组和ArrayBuffer.md)
   * [解构赋值](chapters/基础知识/解构赋值.md)
   * [转义字符](chapters/基础知识/转义字符.md)
   * [运算符](chapters/基础知识/运算符.md)
@@ -77,5 +75,4 @@
   * [JSDoc](chapters/杂项/JSDoc.md)
   * [双向绑定](chapters/杂项/双向绑定.md)
   * [未分类的代码](chapters/杂项/未分类的代码.md)
-  * [类型化数组和 ArrayBuffer](chapters/杂项/类型化数组和ArrayBuffer.md)
   * [面试题](chapters/杂项/面试题.md)

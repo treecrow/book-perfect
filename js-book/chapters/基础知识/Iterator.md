@@ -14,3 +14,24 @@
 2. 第一次调用指针对象的 next 方法，可以将指针指向数据结构的第一个成员。
 3. 第二次调用指针对象的 next 方法，指针就指向数据结构的第二个成员。
 4. 不断调用指针对象的 next 方法，直到它指向数据结构的结束位置。
+
+## 原生具备 Iterator 接口的数据结构(普通对象没有 Iterator 接口!!!)
+
+* Array
+* Map
+* Set
+* String
+* TypedArray
+* 函数的 arguments 对象
+* NodeList 对象
+
+## 调用 Iterator 接口的场合
+
+* 解构赋值
+* 扩展运算符
+* yield\*
+* for...of
+* Array.from()
+* Map(), Set(), WeakMap(), WeakSet()（比如 new Map([['a',1],['b',2]])）
+* Promise.all()
+* Promise.race()
