@@ -15,6 +15,3 @@
   - [slick](chapters/plugins/slick.md)
   - [sweetalert](chapters/plugins/sweetalert.md)
   - [twbsPagination](chapters/plugins/twbsPagination.md)
-
-- [others](chapters/others/README.md)
-  - [label](chapters/others/label.md)
