@@ -72,9 +72,9 @@ $(".slider").slick({
 | pauseOnDotsHover | -                                        |
 | respondTo        | -                                        |
 | responsive       | -                                        |
-| rows             | -                                        |
-| slide            | -                                        |
-| slidesPerRow     | -                                        |
+| rows             | 行数                                     |
+| slidesPerRow     | 每行组合的 img 数量                      |
+| slide            | element 选择，用作 slide                 |
 | slidesToShow     | 展示图片个数                             |
 | slidesToScroll   | 滚动图片个数                             |
 | speed            | -                                        |
@@ -132,203 +132,214 @@ $(".slider").slick({
 
 ### initials
 
-| key               | more                   |
-| ----------------- | ---------------------- |
-| animating         | -                      |
-| dragging          | -                      |
-| autoPlayTimer     | -                      |
-| currentDirection  | -                      |
-| currentLeft       | -                      |
-| currentSlide      | 当前显示的图片是第几个 |
-| direction         | -                      |
-| $dots             | -                      |
-| listWidth         | -                      |
-| listHeight        | -                      |
-| loadIndex         | -                      |
-| $nextArrow        | -                      |
-| $prevArrow        | -                      |
-| scrolling         | -                      |
-| slideCount        | -                      |
-| slideWidth        | -                      |
-| $slideTrack       | -                      |
-| $slides           | -                      |
-| sliding           | -                      |
-| slideOffset       | -                      |
-| swipeLeft         | -                      |
-| swiping           | -                      |
-| $list             | -                      |
-| touchObject       | -                      |
-| transformsEnabled | -                      |
-| unslicked         | -                      |
+| key               | more                                   |
+| ----------------- | -------------------------------------- |
+| animating         | -                                      |
+| dragging          | -                                      |
+| autoPlayTimer     | -                                      |
+| currentDirection  | -                                      |
+| currentLeft       | -                                      |
+| currentSlide      | 当前显示的图片是第几个                 |
+| direction         | -                                      |
+| $dots             | -                                      |
+| listWidth         | -                                      |
+| listHeight        | -                                      |
+| loadIndex         | -                                      |
+| $nextArrow        | -                                      |
+| $prevArrow        | -                                      |
+| scrolling         | -                                      |
+| slideCount        | slide 的真实数量                       |
+| slideWidth        | -                                      |
+| $slideTrack       | slide 的包裹元素(.slick-track)         |
+| $list             | slide 的包裹元素(.slick-list)          |
+| $slides           | slide 列表(默认为目标元素子元素的列表) |
+| sliding           | -                                      |
+| slideOffset       | -                                      |
+| swipeLeft         | -                                      |
+| swiping           | -                                      |
+| touchObject       | -                                      |
+| transformsEnabled | -                                      |
+| unslicked         | -                                      |
 
 ### this
 
-| key                | more                       |
-| ------------------ | -------------------------- |
-| activeBreakpoint   | -                          |
-| animType           | -                          |
-| animProp           | -                          |
-| breakpoints        | -                          |
-| breakpointSettings | -                          |
-| cssTransitions     | -                          |
-| focussed           | -                          |
-| interrupted        | -                          |
-| hidden             | -                          |
-| paused             | -                          |
-| positionProp       | -                          |
-| respondTo          | -                          |
-| rowCount           | -                          |
-| shouldClick        | -                          |
-| $slider            | -                          |
-| $slidesCache       | -                          |
-| transformType      | -                          |
-| transitionType     | -                          |
-| visibilityChange   | -                          |
-| windowWidth        | -                          |
-| windowTimer        | -                          |
-| currentSlide       | 当前显示的图片是第几个     |
-| options            | 设置                       |
-| originalSettings   | 初始设置                   |
-| instanceUid        | 实例个数                   |
-| htmlExpr           | 匹配 html 标签的正则表达式 |
+| key                | more                           |
+| ------------------ | ------------------------------ |
+| activeBreakpoint   | -                              |
+| animType           | -                              |
+| animProp           | -                              |
+| breakpoints        | 断点数组（number）（已经排序） |
+| breakpointSettings | 断点设置(number:setting)       |
+| cssTransitions     | -                              |
+| focussed           | -                              |
+| interrupted        | -                              |
+| hidden             | -                              |
+| paused             | 是否暂停                       |
+| positionProp       | -                              |
+| respondTo          | -                              |
+| rowCount           | -                              |
+| shouldClick        | -                              |
+| $slider            | 目标元素                       |
+| $slidesCache       | -                              |
+| transformType      | -                              |
+| transitionType     | -                              |
+| visibilityChange   | -                              |
+| windowWidth        | -                              |
+| windowTimer        | -                              |
+| currentSlide       | 当前显示的图片是第几个         |
+| options            | 设置                           |
+| originalSettings   | 初始设置                       |
+| instanceUid        | 实例个数                       |
+| htmlExpr           | 匹配 html 标签的正则表达式     |
 
 ### this.options / this.originalSettings
 
-| option           | more                   |
-| ---------------- | ---------------------- |
-| accessibility    | -                      |
-| adaptiveHeight   | -                      |
-| appendArrows     | -                      |
-| appendDots       | -                      |
-| arrows           | -                      |
-| asNavFor         | -                      |
-| prevArrow        | -                      |
-| nextArrow        | -                      |
-| autoplay         | -                      |
-| autoplaySpeed    | -                      |
-| centerMode       | -                      |
-| centerPadding    | -                      |
-| cssEase          | -                      |
-| customPaging     | -                      |
-| dots             | -                      |
-| dotsClass        | -                      |
-| draggable        | -                      |
-| easing           | -                      |
-| edgeFriction     | -                      |
-| fade             | -                      |
-| focusOnSelect    | -                      |
-| focusOnChange    | -                      |
-| infinite         | -                      |
-| initialSlide     | 首次展示的图片是第几个 |
-| lazyLoad         | -                      |
-| mobileFirst      | -                      |
-| pauseOnHover     | -                      |
-| pauseOnFocus     | -                      |
-| pauseOnDotsHover | -                      |
-| respondTo        | -                      |
-| responsive       | -                      |
-| rows             | -                      |
-| rtl              | -                      |
-| slide            | -                      |
-| slidesPerRow     | -                      |
-| slidesToShow     | -                      |
-| slidesToScroll   | -                      |
-| speed            | -                      |
-| swipe            | -                      |
-| swipeToSlide     | -                      |
-| touchMove        | -                      |
-| touchThreshold   | -                      |
-| useCSS           | -                      |
-| useTransform     | -                      |
-| variableWidth    | -                      |
-| vertical         | -                      |
-| verticalSwiping  | -                      |
-| waitForAnimate   | -                      |
-| zIndex           | -                      |
+| option           | more                                                        |
+| ---------------- | ----------------------------------------------------------- |
+| accessibility    | -                                                           |
+| adaptiveHeight   | -                                                           |
+| appendArrows     | -                                                           |
+| appendDots       | -                                                           |
+| arrows           | -                                                           |
+| asNavFor         | -                                                           |
+| prevArrow        | -                                                           |
+| nextArrow        | -                                                           |
+| autoplay         | -                                                           |
+| autoplaySpeed    | -                                                           |
+| centerMode       | 居中显示当前 slide (为 true 时 slidesToScroll 强制设置为 1) |
+| centerPadding    | -                                                           |
+| cssEase          | -                                                           |
+| customPaging     | -                                                           |
+| dots             | -                                                           |
+| dotsClass        | -                                                           |
+| draggable        | -                                                           |
+| easing           | -                                                           |
+| edgeFriction     | -                                                           |
+| fade             | 是否透明度渐变(为 true 时 centerMode 强制设置为 false)      |
+| focusOnSelect    | -                                                           |
+| focusOnChange    | -                                                           |
+| infinite         | 无限循环                                                    |
+| initialSlide     | 首次展示的图片是第几个                                      |
+| lazyLoad         | -                                                           |
+| mobileFirst      | 响应计算优先使用移动端                                      |
+| pauseOnHover     | -                                                           |
+| pauseOnFocus     | -                                                           |
+| pauseOnDotsHover | -                                                           |
+| respondTo        | -                                                           |
+| responsive       | -                                                           |
+| rows             | -                                                           |
+| rtl              | -                                                           |
+| slide            | -                                                           |
+| slidesPerRow     | -                                                           |
+| slidesToShow     | slide 展示的数量                                            |
+| slidesToScroll   | 滚动的 slide 的数量                                         |
+| speed            | -                                                           |
+| swipe            | -                                                           |
+| swipeToSlide     | 可以拖拽完成滚动 (为 true 时 slidesToScroll 强制设置为 1)   |
+| touchMove        | -                                                           |
+| touchThreshold   | -                                                           |
+| useCSS           | -                                                           |
+| useTransform     | -                                                           |
+| variableWidth    | -                                                           |
+| vertical         | -                                                           |
+| verticalSwiping  | -                                                           |
+| waitForAnimate   | -                                                           |
+| zIndex           | -                                                           |
 
 ## prototype
 
-| prototype                      | more |
-| ------------------------------ | ---- |
-| activateADA                    | -    |
-| addSlide / slickAdd            | -    |
-| animateHeight                  | -    |
-| animateSlide                   | -    |
-| getNavTarget                   | -    |
-| asNavFor                       | -    |
-| applyTransition                | -    |
-| autoPlay                       | -    |
-| autoPlayClear                  | -    |
-| autoPlayIterator               | -    |
-| buildArrows                    | -    |
-| buildDots                      | -    |
-| buildOut                       | -    |
-| buildRows                      | -    |
-| checkResponsive                | -    |
-| changeSlide                    | -    |
-| checkNavigable                 | -    |
-| cleanUpEvents                  | -    |
-| cleanUpSlideEvents             | -    |
-| cleanUpRows                    | -    |
-| clickHandler                   | -    |
-| destroy                        | -    |
-| disableTransition              | -    |
-| fadeSlide                      | -    |
-| fadeSlideOut                   | -    |
-| filterSlides / slickFilter     | -    |
-| focusHandler                   | -    |
-| getCurrent / slickCurrentSlide | -    |
-| getDotCount                    | -    |
-| getLeft                        | -    |
-| getOption / slickGetOption     | -    |
-| getNavigableIndexes            | -    |
-| getSlick                       | -    |
-| getSlideCount                  | -    |
-| goTo / slickGoTo               | -    |
-| init                           | -    |
-| initADA                        | -    |
-| initArrowEvents                | -    |
-| initDotEvents                  | -    |
-| initSlideEvents                | -    |
-| initializeEvents               | -    |
-| initUI                         | -    |
-| keyHandler                     | -    |
-| lazyLoad                       | -    |
-| loadSlider                     | -    |
-| next / slickNext               | -    |
-| orientationChange              | -    |
-| pause / slickPause             | -    |
-| play / slickPlay               | -    |
-| postSlide                      | -    |
-| prev / slickPrev               | -    |
-| preventDefault                 | -    |
-| progressiveLazyLoad            | -    |
-| refresh                        | -    |
-| registerBreakpoints            | -    |
-| reinit                         | -    |
-| resize                         | -    |
-| removeSlide / slickRemove      | -    |
-| setCSS                         | -    |
-| setDimensions                  | -    |
-| setFade                        | -    |
-| setHeight                      | -    |
-| setOption / slickSetOption     | -    |
-| setPosition                    | -    |
-| setProps                       | -    |
-| setSlideClasses                | -    |
-| setupInfinite                  | -    |
-| interrupt                      | -    |
-| selectHandler                  | -    |
-| slideHandler                   | -    |
-| startLoad                      | -    |
-| swipeDirection                 | -    |
-| swipeEnd                       | -    |
-| swipeHandler                   | -    |
-| swipeMove                      | -    |
-| swipeStart                     | -    |
-| unfilterSlides / slickUnfilter | -    |
-| unload                         | -    |
-| unslick                        | -    |
-| updateArrows                   | -    |
-| updateDots                     | -    |
-| visibility                     | -    |
+| prototype                      | more                                                               |
+| ------------------------------ | ------------------------------------------------------------------ |
+| activateADA                    | -                                                                  |
+| addSlide / slickAdd            | -                                                                  |
+| animateHeight                  | -                                                                  |
+| animateSlide                   | -                                                                  |
+| getNavTarget                   | -                                                                  |
+| asNavFor                       | -                                                                  |
+| applyTransition                | -                                                                  |
+| autoPlay                       | -                                                                  |
+| autoPlayClear                  | -                                                                  |
+| autoPlayIterator               | -                                                                  |
+| buildArrows                    | -                                                                  |
+| buildDots                      | -                                                                  |
+| buildOut                       | 处理 slide 元素，使用 .slick-track 和 .slick-list 包裹 slides 元素 |
+| buildRows                      | 根据 options.rows、options.slidesPerRow（如果设置了）构建元素结构  |
+| checkResponsive                | -                                                                  |
+| changeSlide                    | -                                                                  |
+| checkNavigable                 | -                                                                  |
+| cleanUpEvents                  | -                                                                  |
+| cleanUpSlideEvents             | -                                                                  |
+| cleanUpRows                    | -                                                                  |
+| clickHandler                   | -                                                                  |
+| destroy                        | -                                                                  |
+| disableTransition              | -                                                                  |
+| fadeSlide                      | -                                                                  |
+| fadeSlideOut                   | -                                                                  |
+| filterSlides / slickFilter     | -                                                                  |
+| focusHandler                   | -                                                                  |
+| getCurrent / slickCurrentSlide | -                                                                  |
+| getDotCount                    | -                                                                  |
+| getLeft                        | -                                                                  |
+| getOption / slickGetOption     | -                                                                  |
+| getNavigableIndexes            | -                                                                  |
+| getSlick                       | -                                                                  |
+| getSlideCount                  | -                                                                  |
+| goTo / slickGoTo               | -                                                                  |
+| init                           | -                                                                  |
+| initADA                        | -                                                                  |
+| initArrowEvents                | -                                                                  |
+| initDotEvents                  | -                                                                  |
+| initSlideEvents                | -                                                                  |
+| initializeEvents               | -                                                                  |
+| initUI                         | -                                                                  |
+| keyHandler                     | -                                                                  |
+| lazyLoad                       | -                                                                  |
+| loadSlider                     | -                                                                  |
+| next / slickNext               | -                                                                  |
+| orientationChange              | -                                                                  |
+| pause / slickPause             | -                                                                  |
+| play / slickPlay               | -                                                                  |
+| postSlide                      | -                                                                  |
+| prev / slickPrev               | -                                                                  |
+| preventDefault                 | -                                                                  |
+| progressiveLazyLoad            | -                                                                  |
+| refresh                        | -                                                                  |
+| registerBreakpoints            | -                                                                  |
+| reinit                         | -                                                                  |
+| resize                         | -                                                                  |
+| removeSlide / slickRemove      | -                                                                  |
+| setCSS                         | -                                                                  |
+| setDimensions                  | -                                                                  |
+| setFade                        | -                                                                  |
+| setHeight                      | -                                                                  |
+| setOption / slickSetOption     | -                                                                  |
+| setPosition                    | -                                                                  |
+| setProps                       | -                                                                  |
+| setSlideClasses                | -                                                                  |
+| setupInfinite                  | -                                                                  |
+| interrupt                      | -                                                                  |
+| selectHandler                  | -                                                                  |
+| slideHandler                   | -                                                                  |
+| startLoad                      | -                                                                  |
+| swipeDirection                 | -                                                                  |
+| swipeEnd                       | -                                                                  |
+| swipeHandler                   | -                                                                  |
+| swipeMove                      | -                                                                  |
+| swipeStart                     | -                                                                  |
+| unfilterSlides / slickUnfilter | -                                                                  |
+| unload                         | -                                                                  |
+| unslick                        | -                                                                  |
+| updateArrows                   | -                                                                  |
+| updateDots                     | -                                                                  |
+| visibility                     | -                                                                  |
+
+## element
+
+| element | attr/data        | more             |
+| ------- | ---------------- | ---------------- |
+| slider  | -                | -                |
+| ~       | -                | -                |
+| ~       | -                | -                |
+| slide   | -                | -                |
+| ~       | data-slick-index | slide 的排列序号 |
+| ~       | originalStyling  | slide 初始样式   |
