@@ -4,6 +4,8 @@
 
 ---
 
+* [typeScript](chapters/typeScript/README.md)
+
 * [基础知识](chapters/基础知识/README.md)
 
   * [async](chapters/基础知识/async.md)
