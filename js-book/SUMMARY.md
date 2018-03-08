@@ -6,6 +6,9 @@
 
 * [typeScript](chapters/typeScript/README.md)
 
+  * [tsconfig.json](chapters/typeScript/tsconfig.md)
+  * [tsc 命令行](chapters/typeScript/tsc命令行.md)
+
 * [基础知识](chapters/基础知识/README.md)
 
   * [async](chapters/基础知识/async.md)
