@@ -14,3 +14,14 @@
 | files           | 指定一个包含相对或绝对文件路径的列表                                  |
 | include         | -                                                                     |
 | exclude         | -                                                                     |
+
+### compilerOptions 字段列表
+
+| key           | more                                          |
+| ------------- | --------------------------------------------- |
+| outDir        | 重定向输出目录                                |
+| sourceMap     | 生成相应的 .map 文件                          |
+| noImplicitAny | 在表达式和声明上有隐含的 any 类型时报错       |
+| module        | 指定生成哪个模块系统代码                      |
+| target        | 指定 ECMAScript 目标版本                      |
+| jsx           | 在 .tsx 文件里支持 JSX： "React"或 "Preserve" |
