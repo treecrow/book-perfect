@@ -8,7 +8,9 @@
 
   * [tsconfig.json](chapters/typeScript/tsconfig.md)
   * [tsc 命令行](chapters/typeScript/tsc命令行.md)
+  * [变量声明](chapters/typeScript/变量声明.md)
   * [基础类型](chapters/typeScript/基础类型.md)
+  * [接口](chapters/typeScript/接口.md)
 
 * [基础知识](chapters/基础知识/README.md)
 
