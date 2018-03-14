@@ -5,7 +5,7 @@
 | 分类 | 网站/文档                                                                                          | more |
 | ---- | -------------------------------------------------------------------------------------------------- | ---- |
 | es6  | -                                                                                                  | -    |
-| ~    | [ECMAScript 6 入门（阮一峰）](http://es6.ruanyifeng.com/#docs/intro)                               | -    |
+| ~    | [ECMAScript 6 入门（阮一峰）](http://es6.ruanyifeng.com/)                                          | -    |
 | ~    | [ES6 支持情况一览](https://kangax.github.io/compat-table/es6/)                                     | -    |
 | ~    | [ES-Checker](https://ruanyf.github.io/es-checker/)                                                 | -    |
 | ~    | [REPL 在线编译器](https://babeljs.io/repl/)                                                        | -    |
