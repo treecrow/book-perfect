@@ -15,13 +15,14 @@
 | include         | -                                                                     |
 | exclude         | -                                                                     |
 
-### compilerOptions 字段列表
+### [compilerOptions 字段列表](https://www.tslang.cn/docs/handbook/compiler-options.html)
 
-| key           | more                                          |
-| ------------- | --------------------------------------------- |
-| outDir        | 重定向输出目录                                |
-| sourceMap     | 生成相应的 .map 文件                          |
-| noImplicitAny | 在表达式和声明上有隐含的 any 类型时报错       |
-| module        | 指定生成哪个模块系统代码                      |
-| target        | 指定 ECMAScript 目标版本                      |
-| jsx           | 在 .tsx 文件里支持 JSX： "React"或 "Preserve" |
+| key            | more                                              |
+| -------------- | ------------------------------------------------- |
+| outDir         | 重定向输出目录                                    |
+| sourceMap      | 生成相应的 .map 文件                              |
+| noImplicitAny  | 在表达式和声明上有隐含的 any 类型时报错           |
+| noImplicitThis | 当 this 表达式的值为 any 类型的时候，生成一个错误 |
+| module         | 指定生成哪个模块系统代码                          |
+| target         | 指定 ECMAScript 目标版本                          |
+| jsx            | 在 .tsx 文件里支持 JSX： "React"或 "Preserve"     |
