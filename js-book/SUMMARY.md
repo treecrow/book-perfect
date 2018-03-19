@@ -12,7 +12,9 @@
   * [变量声明](chapters/typeScript/变量声明.md)
   * [基础类型](chapters/typeScript/基础类型.md)
   * [接口](chapters/typeScript/接口.md)
+  * [枚举](chapters/typeScript/枚举.md)
   * [类](chapters/typeScript/类.md)
+  * [范型](chapters/typeScript/范型.md)
 
 * [基础知识](chapters/基础知识/README.md)
 
