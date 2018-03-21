@@ -13,6 +13,7 @@
   * [基础类型](chapters/typeScript/基础类型.md)
   * [接口](chapters/typeScript/接口.md)
   * [枚举](chapters/typeScript/枚举.md)
+  * [模块](chapters/typeScript/模块.md)
   * [类](chapters/typeScript/类.md)
   * [类型兼容性](chapters/typeScript/类型兼容性.md)
   * [类型推论](chapters/typeScript/类型推论.md)
