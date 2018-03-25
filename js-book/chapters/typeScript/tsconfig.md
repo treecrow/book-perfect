@@ -17,13 +17,16 @@
 
 ### [compilerOptions 字段列表](https://www.tslang.cn/docs/handbook/compiler-options.html)
 
-| key              | more                                                                                                                                     |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| outDir           | 重定向输出目录                                                                                                                           |
-| sourceMap        | 生成相应的 .map 文件                                                                                                                     |
-| noImplicitAny    | 在表达式和声明上有隐含的 any 类型时报错                                                                                                  |
-| noImplicitThis   | 当 this 表达式的值为 any 类型的时候，生成一个错误                                                                                        |
-| strictNullChecks | 在严格的 null 检查模式下， null 和 undefined 值不包含在任何类型里，只允许用它们自己和 any 来赋值（有个例外， undefined 可以赋值到 void） |
-| module           | 指定生成哪个模块系统代码                                                                                                                 |
-| target           | 指定 ECMAScript 目标版本                                                                                                                 |
-| jsx              | 在 .tsx 文件里支持 JSX： "React"或 "Preserve"                                                                                            |
+| key                    | more                                                                                                                                     |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| outDir                 | 重定向输出目录                                                                                                                           |
+| sourceMap              | 生成相应的 .map 文件                                                                                                                     |
+| noImplicitAny          | 在表达式和声明上有隐含的 any 类型时报错                                                                                                  |
+| noImplicitThis         | 当 this 表达式的值为 any 类型的时候，生成一个错误                                                                                        |
+| strictNullChecks       | 在严格的 null 检查模式下， null 和 undefined 值不包含在任何类型里，只允许用它们自己和 any 来赋值（有个例外， undefined 可以赋值到 void） |
+| module                 | 指定生成哪个模块系统代码                                                                                                                 |
+| target                 | 指定 ECMAScript 目标版本                                                                                                                 |
+| jsx                    | 在 .tsx 文件里支持 JSX： "React"或 "Preserve"                                                                                            |
+| outFile                | 将输出文件合并为一个文件。合并的顺序是根据传入编译器的文件顺序和 ///<reference``>和 import 的文件顺序决定的                              |
+| moduleResolution       | 决定如何处理模块。或者是 "Node"对于 Node.js/io.js，或者是 "Classic"（默认）                                                              |
+| experimentalDecorators | 启用实验性的 ES 装饰器                                                                                                                   |
