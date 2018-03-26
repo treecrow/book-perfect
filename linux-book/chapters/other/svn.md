@@ -1,5 +1,10 @@
 # svn
 
+## 相关文档
+
+- [svn的merge使用例子](https://blog.csdn.net/keda8997110/article/details/21813035)
+- [前端svn分支开发步骤](http://wiki.fenqi.d.xiaonei.com/pages/viewpage.action?pageId=34155548)
+
 ## 常用命令
 
 | 命令                                      | more                       |
