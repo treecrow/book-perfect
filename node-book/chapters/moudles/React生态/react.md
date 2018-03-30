@@ -12,10 +12,10 @@
 | Rendering Elements         | 渲染元素（元素是 react 最基本的单元） |
 | Components and Props       | 组件和 props                          |
 | State and Lifecycle        | 状态和生命周期                        |
-| Handling Events            | -                                     |
-| Conditional Rendering      | -                                     |
-| Lists and Keys             | -                                     |
-| Forms                      | -                                     |
+| Handling Events            | 处理事件                              |
+| Conditional Rendering      | 条件渲染                              |
+| Lists and Keys             | 列表和 keys                           |
+| Forms                      | 表单                                  |
 | Lifting State Up           | -                                     |
 | Composition vs Inheritance | -                                     |
 | Thinking In React          | -                                     |
