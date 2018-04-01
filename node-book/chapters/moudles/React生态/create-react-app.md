@@ -15,7 +15,7 @@
 
 | 命令          | more |
 | ------------- | ---- |
-| npm run start | -    |
+| npm run start | -  |
 | npm run build | -    |
 | npm run test  | -    |
 | npm run eject | -    |
