@@ -8,6 +8,7 @@
 
   * [React生态](chapters/moudles/React生态/README.md)
 
+    * [create-react-app.md](chapters/moudles/React生态/create-react-app.md.md)
     * [react](chapters/moudles/React生态/react.md)
 
   * [Vue 生态](chapters/moudles/Vue生态/README.md)
