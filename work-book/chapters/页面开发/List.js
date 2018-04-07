@@ -1,5 +1,6 @@
 function List(config) {
   this.config = config;
+  this.ajaxConfig = config.ajaxConfig;
   this.listQueryUrl = config.listQueryUrl;
   this.$listVessel = $(config.listVessel);
   this.listTpl = config.listTpl;
@@ -14,13 +15,7 @@ List.prototype.getListParams = function(params) {
   var _this = this;
   var params = params || {};
   !params.pageNum && _this.$pagination.data("pagenum", 1);
-  return $.extend(
-    {
-      pageNum: 1,
-      pageSize: 10
-    },
-    params
-  );
+  return $.extend(_this.ajaxConfig.initParams, params);
 };
 
 // 更新分页
@@ -54,7 +49,7 @@ List.prototype.updateList = function(params) {
   var _this = this;
   $.ajax({
     url: _this.listQueryUrl,
-    type: "get",
+    type: _this.ajaxConfig.method || "get",
     dataType: "json",
     data: params,
     success: function(data) {
@@ -64,7 +59,6 @@ List.prototype.updateList = function(params) {
       }
       var data = data.data;
       var html = template(_this.listTpl, data.content);
-      console.log(data.content);
       // console.log(html);
       _this.$listVessel.html(html);
       _this.updatePagination(data.totalPages);
