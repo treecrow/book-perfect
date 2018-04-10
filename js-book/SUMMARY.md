@@ -90,6 +90,7 @@
 
   * [bebel](chapters/杂项/bebel.md)
   * [Blob](chapters/杂项/Blob.md)
+  * [JavaScript 模块开发](chapters/杂项/JavaScript 模块开发.md)
   * [JSDoc](chapters/杂项/JSDoc.md)
   * [双向绑定](chapters/杂项/双向绑定.md)
   * [未分类的代码](chapters/杂项/未分类的代码.md)

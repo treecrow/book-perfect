@@ -54,18 +54,18 @@
 | 更新到新版本                                 | 修改 package.json 中的 react-scripts 版本号，`npm install` |
 | 编辑器语法高亮                               | -                                                          |
 | 代码检测输出(编辑器)                         | -                                                          |
-| Formatting Code Automatically                | 代码格式化                                                 |
-| Debugging in the Editor                      | 在浏览器中调试                                             |
-| Changing the Page <title>                    | 修改页面 title                                             |
-| Installing a Dependency                      | 安装依赖                                                   |
-| Importing a Component                        | 导入组件                                                   |
-| Code Splitting                               | 代码分割                                                   |
-| Adding a Stylesheet                          | 添加样式                                                   |
-| Post-Processing CSS                          | css 预处理器                                               |
-| Adding a CSS Preprocessor (Sass, Less etc.)  | 添加 css 预处理器                                          |
-| Adding Images, Fonts, and Files              | 添加 Images、Fonts、 Files                                 |
-| Using the public Folder                      | 使用 public 文件夹                                         |
-| Using Global Variables                       | 使用全局变量                                               |
+| 在浏览器中调试                               |                                                            |
+| 代码格式化                                   | Prettier                                                   |
+| 修改页面 title                               | -                                                          |
+| 安装依赖                                     | -                                                          |
+| 导入组件                                     | -                                                          |
+| 代码分割                                     | -                                                          |
+| 添加样式                                     | -                                                          |
+| css 预处理器(自带的)                         | Post-Processing CSS(自动添加 css 前缀)                     |
+| 添加 css 预处理器                            | sass 示例                                                  |
+| 添加 Images、Fonts、 Files                   | -                                                          |
+| 使用 public 文件夹                           | -                                                          |
+| 使用全局变量                                 | -                                                          |
 | Adding Bootstrap                             | 添加 bootstrap                                             |
 | Adding Flow                                  | 添加 Flow                                                  |
 | Adding a Router                              | 添加路由                                                   |
