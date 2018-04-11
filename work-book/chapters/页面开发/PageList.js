@@ -1,4 +1,4 @@
-function List(config) {
+function PageList(config) {
   this.config = config;
   this.ajaxConfig = config.ajaxConfig;
   this.listQueryUrl = config.listQueryUrl;
@@ -11,7 +11,7 @@ function List(config) {
 }
 
 // 获取请求参数
-List.prototype.getListParams = function(params) {
+PageList.prototype.getListParams = function(params) {
   var _this = this;
   var params = params || {};
   !params.pageNum && _this.$pagination.data("pagenum", 1);
@@ -19,7 +19,7 @@ List.prototype.getListParams = function(params) {
 };
 
 // 更新分页
-List.prototype.updatePagination = function(totalPages) {
+PageList.prototype.updatePagination = function(totalPages) {
   var _this = this;
   totalPages = totalPages || 1;
   _this.$pagination.twbsPagination("destroy");
@@ -45,7 +45,7 @@ List.prototype.updatePagination = function(totalPages) {
 };
 
 // 更新列表
-List.prototype.updateList = function(params) {
+PageList.prototype.updateList = function(params) {
   var _this = this;
   $.ajax({
     url: _this.listQueryUrl,
@@ -67,7 +67,7 @@ List.prototype.updateList = function(params) {
 };
 
 // 列表初始化
-List.prototype.init = function() {
+PageList.prototype.init = function() {
   this.updateList(this.getListParams());
   this.bindEvent();
 };

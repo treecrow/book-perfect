@@ -6,7 +6,7 @@
 
 * [moudles](chapters/moudles/README.md)
 
-  * [React生态](chapters/moudles/React生态/README.md)
+  * [React 生态](chapters/moudles/React生态/README.md)
 
     * [create-react-app.md](chapters/moudles/React生态/create-react-app.md.md)
     * [react](chapters/moudles/React生态/react.md)
@@ -56,6 +56,7 @@
   * [queryStrigs 查询字符串](chapters/Docs/queryStrigs.md)
   * [readline 逐行读取](chapters/Docs/readline.md)
   * [REPL 交互式解释器](chapters/Docs/REPL.md)
+  * [require](chapters/Docs/require.md)
   * [stream 流](chapters/Docs/stream.md)
   * [stringDecode 字符串解码器](chapters/Docs/stringDecode.md)
   * [timer 定时器](chapters/Docs/timer.md)
