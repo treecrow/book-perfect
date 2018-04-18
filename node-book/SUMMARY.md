@@ -56,7 +56,6 @@
   * [queryStrigs 查询字符串](chapters/Docs/queryStrigs.md)
   * [readline 逐行读取](chapters/Docs/readline.md)
   * [REPL 交互式解释器](chapters/Docs/REPL.md)
-  * [require](chapters/Docs/require.md)
   * [stream 流](chapters/Docs/stream.md)
   * [stringDecode 字符串解码器](chapters/Docs/stringDecode.md)
   * [timer 定时器](chapters/Docs/timer.md)
