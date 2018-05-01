@@ -1,9 +1,0 @@
-# mac重置步骤
-
-1. 下载安装软件
-2. 设置系统
-3. 安装 brew
-4. 安装 zsh
-5. 安装 nvm 、node
-6. 设置 github ssh
-7. .DS_Store
