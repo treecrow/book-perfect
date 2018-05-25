@@ -26,6 +26,7 @@
 
   * [async](chapters/基础知识/async.md)
   * [Class](chapters/基础知识/Class.md)
+  * [Decorator](chapters/基础知识/Decorator.md)
   * [Iterator](chapters/基础知识/Iterator.md)
   * [Map](chapters/基础知识/Map.md)
   * [Module](chapters/基础知识/Module.md)
