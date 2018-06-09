@@ -89,13 +89,20 @@
 
 - [面试题](chapters/面试题/README.md)
 
+  - [html](chapters/面试题/html/README.md)
+    - [img](chapters/面试题/html/img.md)
+    - [web 语义化](chapters/面试题/html/web语义化.md)
   - [css](chapters/面试题/css/README.md)
+    - [display](chapters/面试题/css/display.md)
+    - [visibility && display](chapters/面试题/css/visibility && display.md)
   - [js](chapters/面试题/js/README.md)
-    - [es5创建类的方式](chapters/面试题/js/es5创建类的方式.md)
+    - [es5 创建类的方式](chapters/面试题/js/es5创建类的方式.md)
     - [处理 url](chapters/面试题/js/处理 url.md)
     - [数组操作](chapters/面试题/js/数组操作.md)
   - [工程](chapters/面试题/工程/README.md)
+    - [SEO](chapters/面试题/工程/SEO.md)
     - [前后端开发协作模式](chapters/面试题/工程/前后端开发协作模式.md)
+    - [性能优化](chapters/面试题/工程/性能优化.md)
 
 - [杂项](chapters/杂项/README.md)
 
