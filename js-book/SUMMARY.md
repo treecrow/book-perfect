@@ -104,6 +104,7 @@
     - [浅拷贝深拷贝](chapters/面试题/js/浅拷贝深拷贝.md)
     - [算法](chapters/面试题/js/算法.md)
     - [闭包](chapters/面试题/js/闭包.md)
+  - [vue](chapters/面试题/vue/README.md)
   - [工程](chapters/面试题/工程/README.md)
     - [SEO](chapters/面试题/工程/SEO.md)
     - [前后端开发协作模式](chapters/面试题/工程/前后端开发协作模式.md)
