@@ -20,23 +20,26 @@
 | 推送                 | git push -u origin master                                | 把本地库的所有内容推送到远程库上(初次推送)                                       |
 | ~                    | git push -u origin master -f                             | 强制推送（强制使用本地版本替代云端版本）                                         |
 | ~                    | git push origin master                                   | 正常推送（把本地master分支的最新修改推送至GitHub）                               |
-| ~                    | git push origin xxx                                      | 推送xxx分支                                                                      |
+| ~                    | git push origin newIview                                 | 推送xxx分支                                                                      |
 | 分支                 | git branch                                               | 查看本地所有分支                                                                 |
 | ~                    | git branch -r                                            | 查看远程所有分支                                                                 |
 | ~                    | git branch -a                                            | 查看本地和远程所有分支                                                           |
+| ~                    | git branch -vv                                           | 查看本地分支跟踪的远程分支                                                       |
 | ~                    | git branch xxx                                           | 创建分枝但不切换到对应分支上                                                     |
 | ~                    | git branch -d/-D xxx                                     | 删除/强制删除分枝（只能删除那些已经被当前分支合并的分支）                        |
 | ~                    | git branch -d -r xxx                                     | 删除远程分支（删除后需要 git push origin xxx 推送到远程服务器）                  |
 | ~                    | git branch -m/-M xxx xxx                                 | 修改/强制修改分支名（先删除远程待修改分支）                                      |
-| ~                    | git branch --set-upstream master origin/next             | 指定本地 master 分支追踪 origin/next 分支                                        |
+| ~                    | git branch --set-upstream-to=iview/master newIview       | 指定本地 master 分支追踪 origin/next 分支                                        |
 | 切换分支             | git checkout -- someFile                                 | 把 someFile 文件在工作区的修改全部撤销                                           | ❌ |
 | ~                    | git checkout xxx                                         | 切换分支                                                                         |
 | ~                    | git checkout -b xxx                                      | 创建+切换分支                                                                    |
 | ~                    | git checkout -b xxx origin/master                        | 基于远程分支 origin/master 创建分支,并切换到对应分支上                           |
 | 取回更新             | git fetch                                                | 将远程所有分支的更新，全部取回本地                                               |
 | ~                    | git fetch origin master                                  | 取回origin主机的master分支的更新                                                 |
+| ~                    | git fetch iview master:newIview                          | -                                                                                |
 | 合并分支             | git merge xxx                                            | 将 xxx 分支合并到当前分支                                                        |
 | ~                    | git merge origin/master                                  | 在当前分支上，合并origin/master                                                  |
+| ~                    | git merge iview/master ----allow-unrelated-histories     | -                                                                                |
 | ~                    | git merge --abort                                        | 冲突时取消合并                                                                   |
 | 重新应用（类似合并） | git rebase origin/master                                 | 在 origin/master  分支基础之上重新应用，用于把一个分支的修改合并到当前分支       |
 | ~                    | git rebase --continue                                    | 让git继续应用(apply)余下的补丁                                                   |
