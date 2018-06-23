@@ -534,7 +534,7 @@
 </tr>
 <tr>
 <td>~</td>
-<td>git push origin xxx</td>
+<td>git push origin newIview</td>
 <td>&#x63A8;&#x9001;xxx&#x5206;&#x652F;</td>
 </tr>
 <tr>
@@ -551,6 +551,11 @@
 <td>~</td>
 <td>git branch -a</td>
 <td>&#x67E5;&#x770B;&#x672C;&#x5730;&#x548C;&#x8FDC;&#x7A0B;&#x6240;&#x6709;&#x5206;&#x652F;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>git branch -vv</td>
+<td>&#x67E5;&#x770B;&#x672C;&#x5730;&#x5206;&#x652F;&#x8DDF;&#x8E2A;&#x7684;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</td>
 </tr>
 <tr>
 <td>~</td>
@@ -574,7 +579,7 @@
 </tr>
 <tr>
 <td>~</td>
-<td>git branch --set-upstream master origin/next</td>
+<td>git branch --set-upstream-to=iview/master newIview</td>
 <td>&#x6307;&#x5B9A;&#x672C;&#x5730; master &#x5206;&#x652F;&#x8FFD;&#x8E2A; origin/next &#x5206;&#x652F;</td>
 </tr>
 <tr>
@@ -609,6 +614,11 @@
 <td>&#x53D6;&#x56DE;origin&#x4E3B;&#x673A;&#x7684;master&#x5206;&#x652F;&#x7684;&#x66F4;&#x65B0;</td>
 </tr>
 <tr>
+<td>~</td>
+<td>git fetch iview master:newIview</td>
+<td>-</td>
+</tr>
+<tr>
 <td>&#x5408;&#x5E76;&#x5206;&#x652F;</td>
 <td>git merge xxx</td>
 <td>&#x5C06; xxx &#x5206;&#x652F;&#x5408;&#x5E76;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;</td>
@@ -617,6 +627,11 @@
 <td>~</td>
 <td>git merge origin/master</td>
 <td>&#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4E0A;&#xFF0C;&#x5408;&#x5E76;origin/master</td>
+</tr>
+<tr>
+<td>~</td>
+<td>git merge iview/master ----allow-unrelated-histories</td>
+<td>-</td>
 </tr>
 <tr>
 <td>~</td>
@@ -917,7 +932,7 @@ Host github.com
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.4.3","depth":2,"next":{"title":"kill","level":"1.4.4","depth":2,"path":"chapters/self/kill.md","ref":"chapters/self/kill.md","articles":[]},"previous":{"title":"chmod","level":"1.4.2","depth":2,"path":"chapters/self/chmod.md","ref":"chapters/self/chmod.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/self/git.md","mtime":"2018-06-21T00:31:17.634Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-21T06:36:50.247Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git","level":"1.4.3","depth":2,"next":{"title":"kill","level":"1.4.4","depth":2,"path":"chapters/self/kill.md","ref":"chapters/self/kill.md","articles":[]},"previous":{"title":"chmod","level":"1.4.2","depth":2,"path":"chapters/self/chmod.md","ref":"chapters/self/chmod.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"linux","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/self/git.md","mtime":"2018-06-21T09:52:02.274Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-22T03:12:28.579Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

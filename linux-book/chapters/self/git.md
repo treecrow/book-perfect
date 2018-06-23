@@ -7,66 +7,63 @@
 
 ## git命令(已熟悉)
 
-| 分类                 | 命令                                                     | 含义                                                                             |
-| -------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| 项目初始化           | git clone xxx                                            | 克隆远程库xxx                                                                    |
-| ~                    | git init                                                 | 初始化一个新仓库                                                                 |
-| 代码状态             | git status                                               | 查看所有分支的改动                                                               |
-| ~                    | git status master                                        | 查看 master 分支上的改动                                                         |
-| 添加文件             | git add file1 file2 file3                                | 将多个文件添加到暂存区                                                           |
-| ~                    | git add .                                                | 将所有文件添加到暂存区                                                           |
-| 删除文件             | git rm xxx                                               | 删除文件                                                                         |
-| 提交                 | git commit -m 'some remark'                              | 暂存区中大内容提交到当前分支（commit可以一次提交很多文件）                       |
-| 推送                 | git push -u origin master                                | 把本地库的所有内容推送到远程库上(初次推送)                                       |
-| ~                    | git push -u origin master -f                             | 强制推送（强制使用本地版本替代云端版本）                                         |
-| ~                    | git push origin master                                   | 正常推送（把本地master分支的最新修改推送至GitHub）                               |
-| ~                    | git push origin newIview                                 | 推送xxx分支                                                                      |
-| 分支                 | git branch                                               | 查看本地所有分支                                                                 |
-| ~                    | git branch -r                                            | 查看远程所有分支                                                                 |
-| ~                    | git branch -a                                            | 查看本地和远程所有分支                                                           |
-| ~                    | git branch -vv                                           | 查看本地分支跟踪的远程分支                                                       |
-| ~                    | git branch xxx                                           | 创建分枝但不切换到对应分支上                                                     |
-| ~                    | git branch -d/-D xxx                                     | 删除/强制删除分枝（只能删除那些已经被当前分支合并的分支）                        |
-| ~                    | git branch -d -r xxx                                     | 删除远程分支（删除后需要 git push origin xxx 推送到远程服务器）                  |
-| ~                    | git branch -m/-M xxx xxx                                 | 修改/强制修改分支名（先删除远程待修改分支）                                      |
-| ~                    | git branch --set-upstream-to=iview/master newIview       | 指定本地 master 分支追踪 origin/next 分支                                        |
-| 切换分支             | git checkout -- someFile                                 | 把 someFile 文件在工作区的修改全部撤销                                           | ❌ |
-| ~                    | git checkout xxx                                         | 切换分支                                                                         |
-| ~                    | git checkout -b xxx                                      | 创建+切换分支                                                                    |
-| ~                    | git checkout -b xxx origin/master                        | 基于远程分支 origin/master 创建分支,并切换到对应分支上                           |
-| 取回更新             | git fetch                                                | 将远程所有分支的更新，全部取回本地                                               |
-| ~                    | git fetch origin master                                  | 取回origin主机的master分支的更新                                                 |
-| ~                    | git fetch iview master:newIview                          | -                                                                                |
-| 合并分支             | git merge xxx                                            | 将 xxx 分支合并到当前分支                                                        |
-| ~                    | git merge origin/master                                  | 在当前分支上，合并origin/master                                                  |
-| ~                    | git merge iview/master ----allow-unrelated-histories     | -                                                                                |
-| ~                    | git merge --abort                                        | 冲突时取消合并                                                                   |
-| 重新应用（类似合并） | git rebase origin/master                                 | 在 origin/master  分支基础之上重新应用，用于把一个分支的修改合并到当前分支       |
-| ~                    | git rebase --continue                                    | 让git继续应用(apply)余下的补丁                                                   |
-| ~                    | git rebase --abort                                       | 用--abort参数来终止rebase的操作，并且”mywork“ 分支会回到rebase开始前的状态     |
-| 拉取+合并            | git pull <远程主机名> <远程分支名>:<本地分支名>          | 把远程分支的代码拉取下来并合并到本地分支                                         |
-| ~                    | git pull origin next                                     | 远程分支(next)要与当前分支合并                                                   |
-| ~                    | git pull origin                                          | 本地的当前分支自动与对应的origin主机”追踪分支”(remote-tracking branch)进行合并 |
-| ~                    | git pull                                                 | 如果当前分支只有一个追踪分支，连远程主机名都可以省略                             |
-| ~                    | git pull --rebase <远程主机名> <远程分支名>:<本地分支名> | 合并使用 rebase 模式                                                             |
-| 远程库               | git remote                                               | 查看远程库的信息                                                                 |
-| ~                    | git remote -v                                            | 查看远程库的更详细的信息                                                         |
-| ~                    | git remote add iview url                                 | 添加到远程库（关联一个远程库）并命名远程库为 iview                               |
-
-
-
-
-
+| 分类                 | 命令                                                     | 含义                                                                                                   |
+| -------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 项目初始化           | git clone xxx                                            | 克隆远程库xxx                                                                                          |
+| ~                    | git init                                                 | 初始化一个新仓库                                                                                       |
+| 代码状态             | git status                                               | 查看所有分支的改动                                                                                     |
+| ~                    | git status master                                        | 查看 master 分支上的改动                                                                               |
+| 添加文件             | git add file1 file2 file3                                | 将多个文件添加到暂存区                                                                                 |
+| ~                    | git add .                                                | 将所有文件添加到暂存区                                                                                 |
+| 删除文件             | git rm xxx                                               | 删除文件                                                                                               |
+| 提交                 | git commit -m 'some remark'                              | 暂存区中大内容提交到当前分支（commit可以一次提交很多文件）                                             |
+| 推送                 | git push -u origin master                                | 把本地库的所有内容推送到远程库上(初次推送)                                                             |
+| ~                    | git push -u origin master -f                             | 强制推送（强制使用本地版本替代云端版本）                                                               |
+| ~                    | git push origin master                                   | 正常推送（把本地master分支的最新修改推送至GitHub）                                                     |
+| ~                    | git push origin newIview                                 | 推送xxx分支                                                                                            |
+| ~                    | git push --set-upstream origin zhihui                    | 首次创建 zhihui 分支并推送分支到远程库 origin，建立本地分支 zhihui 与远程分支 origin/zhihui 的追踪关系 |
+| 分支                 | git branch                                               | 查看本地所有分支                                                                                       |
+| ~                    | git branch -r                                            | 查看远程所有分支                                                                                       |
+| ~                    | git branch -a                                            | 查看本地和远程所有分支                                                                                 |
+| ~                    | git branch -vv                                           | 查看本地分支跟踪的远程分支                                                                             |
+| ~                    | git branch xxx                                           | 创建分枝但不切换到对应分支上                                                                           |
+| ~                    | git branch -d/-D xxx                                     | 删除/强制删除分枝（只能删除那些已经被当前分支合并的分支）                                              |
+| ~                    | git branch -d -r xxx                                     | 删除远程分支（删除后需要 git push origin xxx 推送到远程服务器）                                        |
+| ~                    | git branch -m/-M xxx xxx                                 | 修改/强制修改分支名（先删除远程待修改分支）                                                            |
+| ~                    | git branch --set-upstream-to=iview/2.0 develop           | 指定本地 develop 分支追踪 iview/2.0 分支                                                               |
+| 切换分支             | git checkout -- someFile                                 | 把 someFile 文件在工作区的修改全部撤销                                                                 | ❌ |
+| ~                    | git checkout xxx                                         | 切换分支                                                                                               |
+| ~                    | git checkout -b xxx                                      | 创建+切换分支                                                                                          |
+| ~                    | git checkout -b xxx origin/master                        | 基于远程分支 origin/master 创建分支,并切换到对应分支上                                                 |
+| 取回更新             | git fetch                                                | 将远程所有分支的更新，全部取回本地                                                                     |
+| ~                    | git fetch origin master                                  | 取回origin主机的master分支的更新                                                                       |
+| ~                    | git fetch iview master:newIview                          | -                                                                                                      |
+| 合并分支             | git merge xxx                                            | 将 xxx 分支合并到当前分支                                                                              |
+| ~                    | git merge origin/master                                  | 在当前分支上，合并origin/master                                                                        |
+| ~                    | git merge iview/2.0 ----allow-unrelated-histories        | -                                                                                                      |
+| ~                    | git merge --abort                                        | 冲突时取消合并                                                                                         |
+| 重新应用（类似合并） | git rebase origin/master                                 | 在 origin/master  分支基础之上重新应用，用于把一个分支的修改合并到当前分支                             |
+| ~                    | git rebase --continue                                    | 让git继续应用(apply)余下的补丁                                                                         |
+| ~                    | git rebase --abort                                       | 用--abort参数来终止rebase的操作，并且”mywork“ 分支会回到rebase开始前的状态                           |
+| 拉取+合并            | git pull <远程主机名> <远程分支名>:<本地分支名>          | 把远程分支的代码拉取下来并合并到本地分支                                                               |
+| ~                    | git pull origin next                                     | 远程分支(next)要与当前分支合并                                                                         |
+| ~                    | git pull origin                                          | 本地的当前分支自动与对应的origin主机”追踪分支”(remote-tracking branch)进行合并                       |
+| ~                    | git pull                                                 | 如果当前分支只有一个追踪分支，连远程主机名都可以省略                                                   |
+| ~                    | git pull --rebase <远程主机名> <远程分支名>:<本地分支名> | 合并使用 rebase 模式                                                                                   |
+| 远程库               | git remote                                               | 查看远程库的信息                                                                                       |
+| ~                    | git remote -v                                            | 查看远程库的更详细的信息                                                                               |
+| ~                    | git remote add iview url                                 | 添加到远程库（关联一个远程库）并命名远程库为 iview                                                     |
+| git 配置             | git config --global user.name xxx                        | 全局中设置名字和邮箱                                                                                   |
+| ~                    | git config --global user.email xxx                       | ~                                                                                                      |
+| ~                    | git config user.name xxx                                 | 项目中设置名字和邮箱                                                                                   |
+| ~                    | git config user.email xxx                                | ~                                                                                                      |
 
 ## git命令(待熟悉)
 
-| 命令                                                      | 含义                                                                                                             |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| git config --global user.name xxx                         | 全局中设置名字和邮箱                                                                                             |
-| git config --global user.email xxx                        | ~                                                                                                                |
-| git config user.name xxx                                  | 项目中设置名字和邮箱                                                                                             |
-| git config user.email xxx                                 | ~                                                                                                                |
+| 命令 | 含义 |
+| ---- | ---- | undefined |undefined |undefined |undefined |undefined |undefined |undefined |
 | git diff                                                  | 显示当前你所有已做的但没有加入到索引里的修改                                                                     |
+| git diff master develop --stat                            | 显示出两个分支所有有差异的文件列表                                                                               |
 | git diff --cached                                         | 显示你当前的索引和上次提交间的差异                                                                               |
 | git diff HEAD                                             | 显示你工作目录与上次提交时之间的所有差别                                                                         |
 | git diff xxx                                              | 查看xxx分支与当前分支的区别                                                                                      |
@@ -98,32 +95,3 @@
 | git show tagName                                          | -                                                                                                                |
 | git tag -d v0.1                                           | -                                                                                                                |
 | git tag -d v0.9                                           | -                                                                                                                |
-
-
-## [多个ssh的问题](http://www.bkjia.com/Androidjc/837965.html)
-
-```
-//通过指定不同的文件名来生成不同的私钥文
-ssh-keygen -t rsa -f ~/.ssh/id_rsa.work -C "Key for Work"
-ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C "Key for GitHub"
-
-//新增ssh的配置文件，并修改权限
-touch ~/.ssh/config
-chmod 600 ~/.ssh/config
-
-//修改config文件的内容
-Host *.workdomain.com
-    IdentityFile ~/.ssh/id_rsa.work
-    User lee
-Host github.com
-    IdentityFile ~/.ssh/id_rsa.github
-    User git
-```
-
-## gitignore
-
-| 规则      | more             |
-| --------- | ---------------- |
-| /mtk/     | 过滤整个文件夹   |
-| *.zip     | 过滤所有.zip文件 |
-| /mtk/do.c | 过滤某个具体文件 |

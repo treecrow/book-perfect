@@ -49,7 +49,6 @@
   * [mac 环境变量](chapters/mac/mac环境变量.md)
   * [mac 目录结构](chapters/mac/mac目录结构.md)
   * [安装 zsh](chapters/mac/安装zsh.md)
-  * [设置 github ssh](chapters/mac/设置 github ssh.md)
   * [设置系统](chapters/mac/设置系统.md)
   * [软件列表](chapters/mac/软件列表.md)
 
