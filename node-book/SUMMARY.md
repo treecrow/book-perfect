@@ -64,3 +64,6 @@
 
   - [npm scripts](chapters/npm/npm scripts.md)
   - [package](chapters/npm/package.md)
+  - [发布模块](chapters/npm/发布模块.md)
+  - [发布私有模块](chapters/npm/发布私有模块.md)
+  - [语义化版本](chapters/npm/语义化版本.md)

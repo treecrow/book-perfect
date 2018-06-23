@@ -19,7 +19,7 @@
 | ~           | bugs                 | 项目 bug 提交的页面                                                                                             |
 | ~           | repository           | 指明你的代码被托管在何处，这对那些想要参与到这个项目中的人来说很有帮助                                          |
 | 人员相关    | -                    | -                                                                                                               |
-| ~           | author               | name、email、url                                                                                                |
+| ~           | author               | Your Name <email@example.com> (http://example.com)                                                              |
 | ~           | contributors         | -                                                                                                               |
 | 项目文件    | -                    | -                                                                                                               |
 | ~           | files                | 可选字段，项目包含的一组文件                                                                                    |
