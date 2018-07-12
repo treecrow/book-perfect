@@ -1,0 +1,828 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>组件整理 · NodeJs开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="treecrow">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../API.html" />
+    
+    
+    <link rel="prev" href="样式设计.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    iView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="样式设计.html">
+            
+                <a href="样式设计.html">
+            
+                    
+                    样式设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="组件整理.html">
+            
+                <a href="组件整理.html">
+            
+                    
+                    组件整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../API.html">
+            
+                <a href="../API.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../axios.html">
+            
+                <a href="../axios.html">
+            
+                    
+                    axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ui框架对比.html">
+            
+                <a href="../ui框架对比.html">
+            
+                    
+                    ui 框架对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../vue-loader.html">
+            
+                <a href="../vue-loader.html">
+            
+                    
+                    vue-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../vue-router.html">
+            
+                <a href="../vue-router.html">
+            
+                    
+                    vue-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../vueCli.html">
+            
+                <a href="../vueCli.html">
+            
+                    
+                    vueCli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../vuex.html">
+            
+                <a href="../vuex.html">
+            
+                    
+                    vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../webpack.html">
+            
+                <a href="../webpack.html">
+            
+                    
+                    webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >组件整理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7EC4;&#x4EF6;&#x6574;&#x7406;">&#x7EC4;&#x4EF6;&#x6574;&#x7406;</h1>
+<table>
+<thead>
+<tr>
+<th>&#x7EC4;&#x4EF6;</th>
+<th>alien</th>
+<th>&#x6765;&#x6E90;</th>
+<th>&#x89E3;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Affix</td>
+<td>-</td>
+<td>-</td>
+<td>&#x56FE;&#x9489;</td>
+</tr>
+<tr>
+<td>Alert</td>
+<td>-</td>
+<td>-</td>
+<td>&#x8B66;&#x544A;&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td>AutoComplete</td>
+<td>-</td>
+<td>-</td>
+<td>&#x81EA;&#x52A8;&#x5B8C;&#x6210;</td>
+</tr>
+<tr>
+<td>Avatar</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5934;&#x50CF;</td>
+</tr>
+<tr>
+<td>BackTop</td>
+<td>-</td>
+<td>-</td>
+<td>&#x8FD4;&#x56DE;&#x9876;&#x90E8;</td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5FBD;&#x6807;&#x6570;</td>
+</tr>
+<tr>
+<td>Breadcrumb</td>
+<td>-</td>
+<td>-</td>
+<td>&#x9762;&#x5305;&#x5C51;</td>
+</tr>
+<tr>
+<td>BreadcrumbItem</td>
+<td>-</td>
+<td>Breadcrumb</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Button</td>
+<td>iButton</td>
+<td>-</td>
+<td>&#x6309;&#x94AE;</td>
+</tr>
+<tr>
+<td>ButtonGroup</td>
+<td>-</td>
+<td>Button.Group</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Card</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5361;&#x7247;</td>
+</tr>
+<tr>
+<td>Carousel</td>
+<td>-</td>
+<td>-</td>
+<td>&#x8F6E;&#x64AD;&#x56FE;</td>
+</tr>
+<tr>
+<td>CarouselItem</td>
+<td>-</td>
+<td>Carousel.Item</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Cascader</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7EA7;&#x8054;&#x9009;&#x62E9;</td>
+</tr>
+<tr>
+<td>Checkbox</td>
+<td>-</td>
+<td>-</td>
+<td>&#x591A;&#x9009;&#x6846;</td>
+</tr>
+<tr>
+<td>CheckboxGroup</td>
+<td>-</td>
+<td>Checkbox.Group</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Circle</td>
+<td>iCircle</td>
+<td>-</td>
+<td>&#x8FDB;&#x5EA6;&#x73AF;</td>
+</tr>
+<tr>
+<td>Collapse</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6298;&#x53E0;&#x9762;&#x677F;</td>
+</tr>
+<tr>
+<td>Panel</td>
+<td>-</td>
+<td>Collapse.Panel</td>
+<td>~</td>
+</tr>
+<tr>
+<td>ColorPicker</td>
+<td>-</td>
+<td>-</td>
+<td>&#x989C;&#x8272;&#x9009;&#x62E9;&#x5668;</td>
+</tr>
+<tr>
+<td>DatePicker</td>
+<td>-</td>
+<td>-</td>
+<td>&#x65E5;&#x671F;&#x9009;&#x62E9;&#x5668;</td>
+</tr>
+<tr>
+<td>Dropdown</td>
+<td>-</td>
+<td>-</td>
+<td>&#x4E0B;&#x62C9;&#x83DC;&#x5355;</td>
+</tr>
+<tr>
+<td>DropdownItem</td>
+<td>-</td>
+<td>Dropdown.Item</td>
+<td>~</td>
+</tr>
+<tr>
+<td>DropdownMenu</td>
+<td>-</td>
+<td>Dropdown.Menu</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Form</td>
+<td>iForm</td>
+<td>-</td>
+<td>&#x8868;&#x5355;</td>
+</tr>
+<tr>
+<td>FormItem</td>
+<td>-</td>
+<td>Form.Item</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>-</td>
+<td>-</td>
+<td>&#x56FE;&#x6807;</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>iInput</td>
+<td>-</td>
+<td>&#x8F93;&#x5165;&#x6846;</td>
+</tr>
+<tr>
+<td>InputNumber</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6570;&#x5B57;&#x8F93;&#x5165;&#x6846;</td>
+</tr>
+<tr>
+<td>Scroll</td>
+<td>-</td>
+<td>-</td>
+<td>&#x65E0;&#x9650;&#x6EDA;&#x52A8;</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>-</td>
+<td>-</td>
+<td>Layout &#x5E03;&#x5C40;</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>iHeader</td>
+<td>-</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Sider</td>
+<td>-</td>
+<td>-</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>iContent</td>
+<td>-</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>iFooter</td>
+<td>-</td>
+<td>~</td>
+</tr>
+<tr>
+<td>LoadingBar</td>
+<td>-</td>
+<td>-</td>
+<td>&#x52A0;&#x8F7D;&#x8FDB;&#x5EA6;&#x6761;</td>
+</tr>
+<tr>
+<td>Menu</td>
+<td>iMenu</td>
+<td>-</td>
+<td>&#x5BFC;&#x822A;&#x83DC;&#x5355;</td>
+</tr>
+<tr>
+<td>MenuGroup</td>
+<td>-</td>
+<td>Menu.Group</td>
+<td>~</td>
+</tr>
+<tr>
+<td>MenuItem</td>
+<td>-</td>
+<td>Menu.Item</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5168;&#x5C40;&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td>Modal</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5BF9;&#x8BDD;&#x6846;</td>
+</tr>
+<tr>
+<td>Notice</td>
+<td>-</td>
+<td>-</td>
+<td>&#x901A;&#x77E5;&#x63D0;&#x9192;</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5206;&#x9875;</td>
+</tr>
+<tr>
+<td>Poptip</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6C14;&#x6CE1;&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td>Progress</td>
+<td>iProgress</td>
+<td>-</td>
+<td>&#x8FDB;&#x5EA6;&#x6761;</td>
+</tr>
+<tr>
+<td>Radio</td>
+<td>-</td>
+<td>-</td>
+<td>&#x5355;&#x9009;&#x6846;</td>
+</tr>
+<tr>
+<td>RadioGroup</td>
+<td>-</td>
+<td>Radio.Group</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Rate</td>
+<td>-</td>
+<td>-</td>
+<td>&#x8BC4;&#x5206;</td>
+</tr>
+<tr>
+<td>Slider</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6ED1;&#x5757;</td>
+</tr>
+<tr>
+<td>Spin</td>
+<td>-</td>
+<td>-</td>
+<td>&#x52A0;&#x8F7D;&#x4E2D;</td>
+</tr>
+<tr>
+<td>Steps</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6B65;&#x9AA4;&#x6761;</td>
+</tr>
+<tr>
+<td>Step</td>
+<td>-</td>
+<td>Steps.Step</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Switch</td>
+<td>iSwitch(&#x53EA;&#x6709;&#x5F02;&#x540D;)</td>
+<td>-</td>
+<td>&#x5F00;&#x5173;</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>iTable(&#x53EA;&#x6709;&#x5F02;&#x540D;)</td>
+<td>-</td>
+<td>&#x8868;&#x683C;</td>
+</tr>
+<tr>
+<td>Tabs</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6807;&#x7B7E;&#x9875;</td>
+</tr>
+<tr>
+<td>TabPane</td>
+<td>-</td>
+<td>Tabs.Pane</td>
+<td>~</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6807;&#x7B7E;</td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>-</td>
+<td>-</td>
+<td>&#x65F6;&#x95F4;&#x8F74;</td>
+</tr>
+<tr>
+<td>TimelineItem</td>
+<td>-</td>
+<td>Timeline.Item</td>
+<td>~</td>
+</tr>
+<tr>
+<td>TimePicker</td>
+<td>-</td>
+<td>-</td>
+<td>&#x65F6;&#x95F4;&#x9009;&#x62E9;&#x5668;</td>
+</tr>
+<tr>
+<td>Tooltip</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6587;&#x5B57;&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td>Transfer</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7A7F;&#x68AD;&#x6846;</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td>-</td>
+<td>-</td>
+<td>&#x6811;&#x5F62;&#x63A7;&#x4EF6;</td>
+</tr>
+<tr>
+<td>Upload</td>
+<td>-</td>
+<td>-</td>
+<td>&#x4E0A;&#x4F20;</td>
+</tr>
+<tr>
+<td>{Row, Col}</td>
+<td>iCol</td>
+<td>grid</td>
+<td>Grid &#x6805;&#x683C;</td>
+</tr>
+<tr>
+<td>{Select, Option, OptionGroup}</td>
+<td>iSelect,iOption</td>
+<td>select</td>
+<td>&#x9009;&#x62E9;&#x5668;</td>
+</tr>
+<tr>
+<td>locale</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="样式设计.html" class="navigation navigation-prev " aria-label="Previous page: 样式设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../API.html" class="navigation navigation-next " aria-label="Next page: API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"组件整理","level":"2.1.2","depth":2,"next":{"title":"API","level":"2.2","depth":1,"path":"chapters/API.md","ref":"chapters/API.md","articles":[]},"previous":{"title":"样式设计","level":"2.1.1","depth":2,"path":"chapters/iView/样式设计.md","ref":"chapters/iView/样式设计.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/iView/组件整理.md","mtime":"2018-07-10T08:26:13.092Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-12T02:52:50.325Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,4 +1,4 @@
-# vueCli
+# [vueCli](https://cli.vuejs.org/)
 
 ## 文件
 
@@ -10,7 +10,7 @@
 | 命令                                 | more                                                                           |
 | ------------------------------------ | ------------------------------------------------------------------------------ |
 | create [options] <app-name>          | 使用 vue-cli-service 创建一个新项目                                            |
-| add <plugin> [pluginOptions]         | vue add专门用于安装和调用Vue CLI插件（已创建的项目中的）s                       |
+| add <plugin> [pluginOptions]         | vue add专门用于安装和调用Vue CLI插件（已创建的项目中的）                       |
 | invoke <plugin> [pluginOptions]      | invoke the generator of a plugin in an already created project                 |
 | inspect [options] [paths...]         | inspect the webpack config in a project with vue-cli-service                   |
 | serve [options] [entry]              | serve a .js or .vue file in development mode with zero config                  |

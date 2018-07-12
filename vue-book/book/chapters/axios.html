@@ -73,7 +73,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="vue-loader.html" />
+    <link rel="next" href="ui框架对比.html" />
     
     
     <link rel="prev" href="API.html" />
@@ -125,7 +125,52 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="API.html">
+        <li class="chapter " data-level="2.1" data-path="iView/">
+            
+                <a href="iView/">
+            
+                    
+                    iView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="iView/样式设计.html">
+            
+                <a href="iView/样式设计.html">
+            
+                    
+                    样式设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="iView/组件整理.html">
+            
+                <a href="iView/组件整理.html">
+            
+                    
+                    组件整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="API.html">
             
                 <a href="API.html">
             
@@ -138,7 +183,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="axios.html">
+        <li class="chapter active" data-level="2.3" data-path="axios.html">
             
                 <a href="axios.html">
             
@@ -151,7 +196,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="vue-loader.html">
+        <li class="chapter " data-level="2.4" data-path="ui框架对比.html">
+            
+                <a href="ui框架对比.html">
+            
+                    
+                    ui 框架对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="vue-loader.html">
             
                 <a href="vue-loader.html">
             
@@ -164,7 +222,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="vue-router.html">
+        <li class="chapter " data-level="2.6" data-path="vue-router.html">
             
                 <a href="vue-router.html">
             
@@ -177,7 +235,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="vuex.html">
+        <li class="chapter " data-level="2.7" data-path="vueCli.html">
+            
+                <a href="vueCli.html">
+            
+                    
+                    vueCli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="vuex.html">
             
                 <a href="vuex.html">
             
@@ -190,7 +261,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="webpack.html">
+        <li class="chapter " data-level="2.9" data-path="webpack.html">
             
                 <a href="webpack.html">
             
@@ -248,7 +319,229 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="axios"><a href="https://github.com/axios/axios" target="_blank">axios</a></h1>
+<h2 id="api">api</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5206;&#x7C7B;</th>
+<th>method</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Request method aliases</td>
+<td>axios.request(config)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.get(url[, config])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.delete(url[, config])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.head(url[, config])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.options(url[, config])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.post(url[, data[, config]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.put(url[, data[, config]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.patch(url[, data[, config]])</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Concurrency</td>
+<td>axios.all(iterable)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>axios.spread(callback)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Creating an instance</td>
+<td>axios.create([config])</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-config">Request Config</h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>-</td>
+</tr>
+<tr>
+<td>method</td>
+<td>-</td>
+</tr>
+<tr>
+<td>baseURL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>transformRequest</td>
+<td>-</td>
+</tr>
+<tr>
+<td>transformResponse</td>
+<td>-</td>
+</tr>
+<tr>
+<td>headers</td>
+<td>-</td>
+</tr>
+<tr>
+<td>params</td>
+<td>-</td>
+</tr>
+<tr>
+<td>paramsSerializer</td>
+<td>-</td>
+</tr>
+<tr>
+<td>data</td>
+<td>-</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>-</td>
+</tr>
+<tr>
+<td>withCredentials</td>
+<td>-</td>
+</tr>
+<tr>
+<td>adapter</td>
+<td>-</td>
+</tr>
+<tr>
+<td>auth</td>
+<td>-</td>
+</tr>
+<tr>
+<td>responseType</td>
+<td>-</td>
+</tr>
+<tr>
+<td>responseEncoding</td>
+<td>-</td>
+</tr>
+<tr>
+<td>xsrfCookieName</td>
+<td>-</td>
+</tr>
+<tr>
+<td>xsrfHeaderName</td>
+<td>-</td>
+</tr>
+<tr>
+<td>onUploadProgress</td>
+<td>-</td>
+</tr>
+<tr>
+<td>onDownloadProgress</td>
+<td>-</td>
+</tr>
+<tr>
+<td>maxContentLength</td>
+<td>-</td>
+</tr>
+<tr>
+<td>validateStatus</td>
+<td>&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;&#x89E6;&#x53D1;&#x9519;&#x8BEF;&#x7684;&#x8303;&#x56F4;</td>
+</tr>
+<tr>
+<td>maxRedirects</td>
+<td>-</td>
+</tr>
+<tr>
+<td>socketPath</td>
+<td>-</td>
+</tr>
+<tr>
+<td>httpAgent</td>
+<td>-</td>
+</tr>
+<tr>
+<td>httpsAgent</td>
+<td>-</td>
+</tr>
+<tr>
+<td>proxy</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cancelToken</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="response-schema">Response Schema</h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>-</td>
+</tr>
+<tr>
+<td>status</td>
+<td>-</td>
+</tr>
+<tr>
+<td>statusText</td>
+<td>-</td>
+</tr>
+<tr>
+<td>headers</td>
+<td>-</td>
+</tr>
+<tr>
+<td>config</td>
+<td>-</td>
+</tr>
+<tr>
+<td>request</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
                                 
                                 </section>
                             
@@ -280,7 +573,7 @@
                 </a>
                 
                 
-                <a href="vue-loader.html" class="navigation navigation-next " aria-label="Next page: vue-loader">
+                <a href="ui框架对比.html" class="navigation navigation-next " aria-label="Next page: ui 框架对比">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -291,7 +584,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"axios","level":"2.2","depth":1,"next":{"title":"vue-loader","level":"2.3","depth":1,"path":"chapters/vue-loader.md","ref":"chapters/vue-loader.md","articles":[]},"previous":{"title":"API","level":"2.1","depth":1,"path":"chapters/API.md","ref":"chapters/API.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/axios.md","mtime":"2018-06-16T16:46:38.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-21T06:36:32.966Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"axios","level":"2.3","depth":1,"next":{"title":"ui 框架对比","level":"2.4","depth":1,"path":"chapters/ui框架对比.md","ref":"chapters/ui框架对比.md","articles":[]},"previous":{"title":"API","level":"2.2","depth":1,"path":"chapters/API.md","ref":"chapters/API.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/axios.md","mtime":"2018-07-01T09:33:37.722Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-12T02:52:50.325Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
