@@ -1,0 +1,18 @@
+{
+  "title": "NodeJs开发文档",
+  "author": "treecrow",
+  "language": "zh-hans",
+  "styles": {
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+  },
+  "plugins": [
+    "-sharing",
+    "splitter",
+    "toggle-chapters",
+    "sectionx"
+  ]
+}

@@ -12,6 +12,7 @@
 | ~        | npm config set prefix ‘~/.npm-global‘                         | 配置npm使用新路径                                               |
 | ~        | npm config set proxy null                                       | 解决错误：`npm err! Error: connect ECONNREFUSED 127.0.0.1:8087` |
 | ~        | npm config set registry https://registry.npm.taobao.org/        | 设置镜像源                                                      |
+| ~        | npm config set registry http://registry.npmjs.org/              | 设置镜像源                                                      |
 | ~        | npm config get registry                                         | 获取镜像源                                                      |
 | ~        | npm config set disturl xxx                                      | ?                                                               |
 | ~        | npm config delete registry                                      | -                                                               |
