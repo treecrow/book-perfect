@@ -1,5 +1,7 @@
 # kinit
 
+- [Kerberos更换密码](https://blog.csdn.net/xyznol/article/details/61915462)
+
 > for Kerberos
 
 ```bash
