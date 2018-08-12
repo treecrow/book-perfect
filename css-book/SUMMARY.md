@@ -2,20 +2,15 @@
 
 - [Introduction](README.md)
 
---------------------------------------------------------------------------------
+---
 
-- [reset](chapters/reset/README.md)
-
-  - [reset](chapters/reset/reset.md)
-  - [页面字体大小](chapters/reset/页面字体大小.md)
+- [reset](chapters/reset.md)
 
 - [layout](chapters/layout/README.md)
 
   - [bfc](chapters/layout/bfc.md)
   - [flex](chapters/layout/flex.md)
   - [inlineBlock](chapters/layout/inlineBlock.md)
-  - [margin](chapters/layout/margin.md)
-  - [width](chapters/layout/width.md)
   - [水平垂直居中](chapters/layout/水平垂直居中.md)
 
 - [assembly](chapters/assembly/README.md)
