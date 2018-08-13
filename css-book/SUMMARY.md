@@ -5,6 +5,7 @@
 ---
 
 - [reset](chapters/reset.md)
+- [选择器](chapters/选择器.md)
 
 - [layout](chapters/layout/README.md)
 

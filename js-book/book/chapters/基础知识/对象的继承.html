@@ -1642,41 +1642,24 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5BF9;&#x8C61;&#x7684;&#x7EE7;&#x627F;">&#x5BF9;&#x8C61;&#x7684;&#x7EE7;&#x627F;</h1>
-<h2 id="&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x603B;&#x7ED3;">&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x603B;&#x7ED3;</h2>
-<table>
-<thead>
-<tr>
-<th>&#x70B9;</th>
-<th>&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;</th>
-<th>&#x901A;&#x8FC7;&#x539F;&#x578B;</th>
-<th>&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;</th>
-<th>&#x501F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#x793A;&#x4F8B;</td>
-<td><code>SubType.prototype = new SuperType()</code></td>
-<td><code>SubType.prototype = SuperType.prototype</code></td>
-<td><code>SubType.prototype = Object.create(SuperType.prototype)</code></td>
-<td><code>function SubType(){SuperType.call(this);}</code></td>
-</tr>
-<tr>
-<td>&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x4E3A;&#x5F15;&#x7528;&#x7C7B;&#x578B;</td>
-<td>&#x4E0D;&#x6070;&#x5F53;&#x5730;&#x4FEE;&#x6539;&#x4F1A;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x5B50;&#x7C7B;&#x88AB;&#x4FEE;&#x6539;</td>
-<td>&#x65E0;&#x95EE;&#x9898;</td>
-<td>&#x65E0;&#x95EE;&#x9898;</td>
-<td>-</td>
-</tr>
-<tr>
-<td>&#x7236;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x539F;&#x578B;&#x4E0E;&#x5B50;&#x7C7B;&#x76F8;&#x540C;</td>
-<td>&#x65E0;&#x95EE;&#x9898;</td>
-<td>&#x4FEE;&#x6539;&#x5B50;&#x7C7B;&#x539F;&#x578B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x4F1A;&#x4FEE;&#x6539;&#x7236;&#x7C7B;</td>
-<td>&#x65E0;&#x95EE;&#x9898;</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+<h2 id="&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x4F20;&#x627F;">&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x4F20;&#x627F;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5F53;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x4E3A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x4E0D;&#x6070;&#x5F53;&#x5730;&#x4FEE;&#x6539;&#x4F1A;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x5B50;&#x7C7B;&#x88AB;&#x4FEE;&#x6539;</span>
+SubType.prototype = <span class="hljs-keyword">new</span> SuperType();
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;&#x539F;&#x578B;&#x7EE7;&#x627F;">&#x901A;&#x8FC7;&#x539F;&#x578B;&#x7EE7;&#x627F;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x4FEE;&#x6539;&#x5B50;&#x7C7B;&#x539F;&#x578B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x4F1A;&#x4FEE;&#x6539;&#x7236;&#x7C7B;</span>
+SubType.prototype = SuperType.prototype;
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x7EE7;&#x627F;">&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x7EE7;&#x627F;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x65E0;&#x95EE;&#x9898;</span>
+SubType.prototype = <span class="hljs-built_in">Object</span>.create(SuperType.prototype);
+</code></pre>
+<h2 id="&#x501F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7EE7;&#x627F;">&#x501F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7EE7;&#x627F;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x65E0;&#x95EE;&#x9898;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SubType</span>(<span class="hljs-params"></span>) </span>{
+  SuperType.call(<span class="hljs-keyword">this</span>);
+}
+</code></pre>
 
                                 
                                 </section>
@@ -1720,7 +1703,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"对象的继承","level":"2.2.21","depth":2,"next":{"title":"布尔值","level":"2.2.22","depth":2,"path":"chapters/基础知识/布尔值.md","ref":"chapters/基础知识/布尔值.md","articles":[]},"previous":{"title":"对象","level":"2.2.20","depth":2,"path":"chapters/基础知识/对象.md","ref":"chapters/基础知识/对象.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/基础知识/对象的继承.md","mtime":"2018-06-09T05:03:55.574Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-12T18:22:01.119Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"对象的继承","level":"2.2.21","depth":2,"next":{"title":"布尔值","level":"2.2.22","depth":2,"path":"chapters/基础知识/布尔值.md","ref":"chapters/基础知识/布尔值.md","articles":[]},"previous":{"title":"对象","level":"2.2.20","depth":2,"path":"chapters/基础知识/对象.md","ref":"chapters/基础知识/对象.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"javascript","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/基础知识/对象的继承.md","mtime":"2018-08-13T00:22:44.755Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-13T00:36:29.449Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
