@@ -833,6 +833,45 @@
             
         </li>
     
+        <li class="chapter " data-level="2.4.3" data-path="发布模块.html">
+            
+                <a href="发布模块.html">
+            
+                    
+                    发布模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="发布私有模块.html">
+            
+                <a href="发布私有模块.html">
+            
+                    
+                    发布私有模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="语义化版本.html">
+            
+                <a href="语义化版本.html">
+            
+                    
+                    语义化版本
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -884,20 +923,9 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="npm">npm</h1>
-<h2 id="npm-&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;">npm &#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<h2 id="&#x76F8;&#x5173;&#x6587;&#x6863;">&#x76F8;&#x5173;&#x6587;&#x6863;</h2>
 <ul>
-<li>&#x9650;&#x5236;&#x4EE3;&#x7801;&#x7ED9;&#x6307;&#x5B9A;&#x7684;&#x5F00;&#x53D1;&#x8005;</li>
-<li>&#x4F7F;&#x7528; npm &#x8FD0;&#x884C;&#x672A;&#x4E0B;&#x8F7D;&#x7684;&#x5305;</li>
-<li>&#x7BA1;&#x7406;&#x4EE3;&#x7801;&#x7248;&#x672C;&#x548C;&#x4EE3;&#x7801;&#x4F9D;&#x8D56;</li>
-<li>Update applications easily when underlying code is updated.</li>
-<li>Discover multiple ways to solve the same puzzle.</li>
-<li>Find other developers who are working on similar problems.</li>
-</ul>
-<h2 id="npm-&#x6DD8;&#x5B9D;&#x955C;&#x50CF;&#x67E5;&#x770B;&#x4F7F;&#x7528;-npm-config-list&#xFF09;">npm &#x6DD8;&#x5B9D;&#x955C;&#x50CF;(&#x67E5;&#x770B;&#x4F7F;&#x7528; npm config list&#xFF09;</h2>
-<pre><code>  npm config set registry &quot; https://registry.npm.taobao.org &quot;
-  npm config set registry http://registry.hz:4873
-</code></pre><ul>
-<li><a href="https://segmentfault.com/q/1010000004596263" target="_blank">&#x5982;&#x4F55;&#x6E05;&#x9664;&#x5DF2;&#x8BBE;&#x7F6E;&#x7684; npm &#x6DD8;&#x5B9D;&#x955C;&#x50CF;&#xFF1F;</a></li>
+<li><a href="https://www.npmjs.com.cn/" target="_blank">npm &#x4E2D;&#x6587;&#x6587;&#x6863;</a></li>
 </ul>
 <h2 id="&#x547D;&#x4EE4;&#x5217;&#x8868;">&#x547D;&#x4EE4;&#x5217;&#x8868;</h2>
 <table>
@@ -910,22 +938,147 @@
 </thead>
 <tbody>
 <tr>
-<td>&#x5176;&#x4ED6;</td>
+<td>npm &#x914D;&#x7F6E;</td>
+<td>npm config edit</td>
+<td>&#x7F16;&#x8F91; npm &#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config set prefix &#x2018;~/.npm-global&#x2018;</td>
+<td>&#x914D;&#x7F6E;npm&#x4F7F;&#x7528;&#x65B0;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config set proxy null</td>
+<td>&#x89E3;&#x51B3;&#x9519;&#x8BEF;&#xFF1A;<code>npm err! Error: connect ECONNREFUSED 127.0.0.1:8087</code></td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config set registry <a href="https://registry.npm.taobao.org/" target="_blank">https://registry.npm.taobao.org/</a></td>
+<td>&#x8BBE;&#x7F6E;&#x955C;&#x50CF;&#x6E90;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config get registry</td>
+<td>&#x83B7;&#x53D6;&#x955C;&#x50CF;&#x6E90;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config set disturl xxx</td>
+<td>?</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config delete registry</td>
 <td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm config delete disturl</td>
 <td>-</td>
 </tr>
 <tr>
-<td>~</td>
-<td>sudo npm install npm -g</td>
-<td>&#x5347;&#x7EA7; npm</td>
+<td>&#x5B89;&#x88C5;&#x6A21;&#x5757;</td>
+<td>npm install <package_name></package_name></td>
+<td>package.json&#x6709;&#x5BF9;&#x5E94;&#x7248;&#x672C;&#x5C31;&#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x6CA1;&#x6709;&#x5C31;&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>npm install <package_name> -g</package_name></td>
+<td>&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>npm i -D <package_name> &#xFF0F;npm install --save-dev <package_name></package_name></package_name></td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>npm install --save <package_name>&#xFF0F; npm i -S <package_name></package_name></package_name></td>
+<td>-</td>
+</tr>
+<tr>
+<td>&#x5378;&#x8F7D;&#x6A21;&#x5757;</td>
+<td>npm uninstall <package_name></package_name></td>
+<td>&#x5378;&#x8F7D;&#x6A21;&#x5757;</td>
 </tr>
 <tr>
 <td>~</td>
-<td>npm -v</td>
-<td>&#x67E5;&#x770B;&#x7248;&#x672C;&#x53F7;</td>
+<td>npm uninstall -g <package_name></package_name></td>
+<td>&#x5378;&#x8F7D;&#x5168;&#x5C40;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>&#x66F4;&#x65B0;&#x6A21;&#x5757;</td>
+<td>npm outdated</td>
+<td>&#x68C0;&#x6D4B;&#x6A21;&#x5757;&#x662F;&#x5426;&#x6709;&#x8FC7;&#x671F;&#x7684;</td>
 </tr>
 <tr>
 <td>~</td>
+<td>npm update</td>
+<td>&#x5C06;&#x672C;&#x5730;&#x6240;&#x6709;&#x6A21;&#x5757;&#x66F4;&#x65B0;&#x4E3A;&#x6700;&#x65B0;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm update <package_name></package_name></td>
+<td>&#x628A;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B; node_modules &#x5B50;&#x76EE;&#x5F55;&#x91CC;&#x8FB9;&#x7684;&#x5BF9;&#x5E94;&#x6A21;&#x5757;&#x66F4;&#x65B0;&#x81F3;&#x6700;&#x65B0;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm outdated -g --depth=0</td>
+<td>&#x68C0;&#x6D4B;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x662F;&#x5426;&#x6709;&#x8FC7;&#x671F;&#x7684;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm update -g</td>
+<td>&#x5C06;&#x5168;&#x5C40;&#x6240;&#x6709;&#x6A21;&#x5757;&#x66F4;&#x65B0;&#x4E3A;&#x6700;&#x65B0;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm update <package_name> -g</package_name></td>
+<td>&#x628A;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684;&#x5BF9;&#x5E94;&#x547D;&#x4EE4;&#x884C;&#x7A0B;&#x5E8F;&#x66F4;&#x65B0;&#x81F3;&#x6700;&#x65B0;&#x7248;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm install npm@latest -g</td>
+<td>&#x66F4;&#x65B0; npm &#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>&#x516C;&#x5F00;&#x6A21;&#x5757;</td>
+<td>npm adduser</td>
+<td>&#x6CE8;&#x518C;&#x7528;&#x6237;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm login</td>
+<td>&#x767B;&#x5F55; npm</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm whoami</td>
+<td>&#x68C0;&#x6D4B;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7684; npm &#x8D26;&#x53F7;&#x662F;&#x54EA;&#x4E2A;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm publish</td>
+<td>&#x53D1;&#x5E03;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm unpublish &lt;package&gt;@<version></version></td>
+<td>&#x64A4;&#x9500;&#x53D1;&#x5E03;&#x81EA;&#x5DF1;&#x53D1;&#x5E03;&#x8FC7;&#x7684;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#x4EE3;&#x7801;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>npm version someVersion</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>npm cache clear</td>
+<td>&#x6E05;&#x7A7A; NPM &#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x4ED8;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7248;&#x672C;&#x53F7;&#x53D1;&#x5E03;&#x65B0;&#x7248;&#x672C;&#x4EE3;&#x7801;&#x7684;</td>
+</tr>
+<tr>
+<td>&#x521B;&#x5EFA;&#x6A21;&#x5757;</td>
 <td>npm init</td>
 <td>&#x521B;&#x5EFA;&#x6A21;&#x5757;</td>
 </tr>
@@ -933,61 +1086,6 @@
 <td>~</td>
 <td>npm init --yes</td>
 <td>&#x6839;&#x636E;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x9ED8;&#x8BA4;&#x7684; package.json</td>
-</tr>
-<tr>
-<td>~</td>
-<td>npm help</td>
-<td>-</td>
-</tr>
-<tr>
-<td>~</td>
-<td>npm cache clear</td>
-<td>&#x6E05;&#x7A7A; NPM &#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x4ED8;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7248;&#x672C;&#x53F7;&#x53D1;&#x5E03;&#x65B0;&#x7248;&#x672C;&#x4EE3;&#x7801;&#x7684;&#x4EBA;</td>
-</tr>
-<tr>
-<td>~</td>
-<td>npm docs</td>
-<td>&#x6253;&#x5F00;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x7684;&#x9875;&#x9762;</td>
-</tr>
-<tr>
-<td>&#x5B89;&#x88C5;&#xFF0F;&#x5378;&#x8F7D;&#xFF0F;&#x66F4;&#x65B0;</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>~</td>
-<td><code>npm install &lt;Module Name&gt;</code></td>
-<td>&#x672C;&#x5730;&#x5B89;&#x88C5;&#x6A21;&#x5757;,&#x5C06;&#x5B89;&#x88C5;&#x5305;&#x653E;&#x5728; ./node_modules &#x4E0B;</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm install &lt;Module Name&gt; -g</code></td>
-<td>&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x6A21;&#x5757;,&#x5C06;&#x5B89;&#x88C5;&#x5305;&#x653E;&#x5728; /usr/local &#x4E0B;&#x6216;&#x8005;&#x4F60; node &#x7684;&#x5B89;&#x88C5;&#x76EE;</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm install &lt;Module Name&gt; -D&#xFF0F;--save-dev</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm install &lt;Module Name&gt; -S&#xFF0F;--save</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm uninstall &lt;Module Name&gt;</code></td>
-<td>&#x5378;&#x8F7D;&#x6A21;&#x5757;</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm update &lt;Module Name&gt;</code></td>
-<td>&#x628A;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B; node_modules &#x5B50;&#x76EE;&#x5F55;&#x91CC;&#x8FB9;&#x7684;&#x5BF9;&#x5E94;&#x6A21;&#x5757;&#x66F4;&#x65B0;&#x81F3;&#x6700;&#x65B0;&#x7248;&#x672C;</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm update &lt;Module Name&gt; -g</code></td>
-<td>&#x628A;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684;&#x5BF9;&#x5E94;&#x547D;&#x4EE4;&#x884C;&#x7A0B;&#x5E8F;&#x66F4;&#x65B0;&#x81F3;&#x6700;&#x65B0;&#x7248;</td>
 </tr>
 <tr>
 <td>&#x67E5;&#x770B;</td>
@@ -1015,70 +1113,39 @@
 <td>&#x641C;&#x7D22;&#x6A21;&#x5757;</td>
 </tr>
 <tr>
-<td>&#x516C;&#x5F00;&#x6A21;&#x5757;</td>
+<td>&#x5176;&#x4ED6;</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>~</td>
-<td>npm adduser</td>
-<td>&#x6CE8;&#x518C;&#x7528;&#x6237;</td>
+<td>sudo npm install npm -g</td>
+<td>&#x5347;&#x7EA7; npm</td>
 </tr>
 <tr>
-<td>-</td>
-<td>npm publish</td>
-<td>&#x53D1;&#x5E03;&#x6A21;&#x5757;</td>
+<td>~</td>
+<td>npm -v</td>
+<td>&#x67E5;&#x770B;&#x7248;&#x672C;&#x53F7;</td>
 </tr>
 <tr>
+<td>~</td>
+<td>npm help</td>
 <td>-</td>
+</tr>
+<tr>
+<td>~</td>
 <td>npm cache clear</td>
-<td>&#x6E05;&#x7A7A; NPM &#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x4ED8;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7248;&#x672C;&#x53F7;&#x53D1;&#x5E03;&#x65B0;&#x7248;&#x672C;&#x4EE3;&#x7801;&#x7684;</td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>npm unpublish &lt;package&gt;@&lt;version&gt;</code></td>
-<td>&#x64A4;&#x9500;&#x53D1;&#x5E03;&#x81EA;&#x5DF1;&#x53D1;&#x5E03;&#x8FC7;&#x7684;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#x4EE3;&#x7801;</td>
-</tr>
-<tr>
-<td>npm config</td>
-<td>-</td>
-<td>-</td>
+<td>&#x6E05;&#x7A7A; NPM &#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x4ED8;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7248;&#x672C;&#x53F7;&#x53D1;&#x5E03;&#x65B0;&#x7248;&#x672C;&#x4EE3;&#x7801;&#x7684;&#x4EBA;</td>
 </tr>
 <tr>
 <td>~</td>
-<td>npm config set proxy null</td>
-<td>&#x89E3;&#x51B3;&#x9519;&#x8BEF;&#xFF1A;<code>npm err! Error: connect ECONNREFUSED 127.0.0.1:8087</code></td>
+<td>npm docs</td>
+<td>&#x6253;&#x5F00;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x7684;&#x9875;&#x9762;</td>
 </tr>
 <tr>
-<td>-</td>
-<td><code>npm config set registry &lt;Registry Url&gt;</code></td>
-<td>&#x8BBE;&#x7F6E;&#x955C;&#x50CF;&#x6E90;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x7248;&#x672C;&#x53F7;">&#x7248;&#x672C;&#x53F7;</h2>
-<blockquote>
-<p>&#x8BED;&#x4E49;&#x7248;&#x672C;&#x53F7;&#x5206;&#x4E3A; X.Y.Z &#x4E09;&#x4F4D;&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x4E3B;&#x7248;&#x672C;&#x53F7;&#x3001;&#x6B21;&#x7248;&#x672C;&#x53F7;&#x548C;&#x8865;&#x4E01;&#x7248;&#x672C;&#x53F7;&#x3002;&#x5F53;&#x4EE3;&#x7801;&#x53D8;&#x66F4;&#x65F6;&#xFF0C;&#x7248;&#x672C;&#x53F7;&#x6309;&#x4EE5;&#x4E0B;&#x539F;&#x5219;&#x66F4;&#x65B0;</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>&#x539F;&#x5219;</th>
-<th>more</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-</td>
-<td>&#x5982;&#x679C;&#x53EA;&#x662F;&#x4FEE;&#x590D; bug&#xFF0C;&#x9700;&#x8981;&#x66F4;&#x65B0; Z &#x4F4D;&#x3002;</td>
-</tr>
-<tr>
-<td>-</td>
-<td>&#x5982;&#x679C;&#x662F;&#x65B0;&#x589E;&#x4E86;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x662F;&#x5411;&#x4E0B;&#x517C;&#x5BB9;&#xFF0C;&#x9700;&#x8981;&#x66F4;&#x65B0; Y &#x4F4D;&#x3002;</td>
-</tr>
-<tr>
-<td>-</td>
-<td>&#x5982;&#x679C;&#x6709;&#x5927;&#x53D8;&#x52A8;&#xFF0C;&#x5411;&#x4E0B;&#x4E0D;&#x517C;&#x5BB9;&#xFF0C;&#x9700;&#x8981;&#x66F4;&#x65B0; X &#x4F4D;</td>
+<td>~</td>
+<td>npm info</td>
+<td>&#x67E5;&#x770B;&#x6A21;&#x5757;&#x4FE1;&#x606F;</td>
 </tr>
 </tbody>
 </table>
@@ -1125,7 +1192,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"npm","level":"2.4","depth":1,"next":{"title":"npm scripts","level":"2.4.1","depth":2,"path":"chapters/npm/npm scripts.md","ref":"chapters/npm/npm scripts.md","articles":[]},"previous":{"title":"配置示例","level":"2.3.9","depth":2,"path":"chapters/nginx/配置示例.md","ref":"chapters/nginx/配置示例.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/npm/README.md","mtime":"2018-06-23T06:31:06.141Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-23T07:09:09.026Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"npm","level":"2.4","depth":1,"next":{"title":"npm scripts","level":"2.4.1","depth":2,"path":"chapters/npm/npm scripts.md","ref":"chapters/npm/npm scripts.md","articles":[]},"previous":{"title":"配置示例","level":"2.3.9","depth":2,"path":"chapters/nginx/配置示例.md","ref":"chapters/nginx/配置示例.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/npm/README.md","mtime":"2018-06-23T11:57:15.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-23T11:58:01.205Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

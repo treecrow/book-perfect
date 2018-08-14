@@ -1,5 +1,7 @@
 # this 指向
 
+## 题目一
+
 ```js
 var num = 20;
 var obj = {
@@ -35,3 +37,5 @@ let obj = {
 };
 obj.method(); // 0 5
 ```
+
+## 实现 call
