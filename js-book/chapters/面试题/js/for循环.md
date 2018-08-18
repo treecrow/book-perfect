@@ -1,5 +1,26 @@
 # for 循环
 
+## 下面结果如何打印
+
+```js
+// for 循环迅速运营完，i 值没有中间存储，全部变为 5
+for (var i = 0; i < 5; i++) {
+  setTimeout(function() {
+    console.log(new Date(), i);
+    // date2 5
+    // date2 5
+    // date2 5
+    // date2 5
+    // date2 5
+  }, 1000);
+}
+
+// 外层的 console 先运行
+console.log(new Date(), i); // date1 5
+
+// data1 + 1s = data2
+```
+
 ## 下面这段代码想要循环延时输出结果 0 1 2 3 4,请问输出结果是否正确,如果不正确,请说明为什么,并修改循环内的代码使其输出正确结果
 
 ```js
