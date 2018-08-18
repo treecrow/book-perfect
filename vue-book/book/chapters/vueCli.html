@@ -320,102 +320,324 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="vuecli"><a href="https://cli.vuejs.org/" target="_blank">vueCli</a></h1>
-<h2 id="&#x6587;&#x4EF6;">&#x6587;&#x4EF6;</h2>
+<h2 id="&#x547D;&#x4EE4;&#x884C;">&#x547D;&#x4EE4;&#x884C;</h2>
 <ul>
-<li>@vue/cli</li>
-<li>@vue/cli-service</li>
+<li>@vue/cli---&#x5168;&#x5C40;</li>
+<li>@vue/cli-service---&#x9879;&#x76EE;</li>
 </ul>
-<h2 id="vue-&#x547D;&#x4EE4;&#x884C;">vue &#x547D;&#x4EE4;&#x884C;</h2>
+<h3 id="vue-&#x547D;&#x4EE4;&#x884C;">vue &#x547D;&#x4EE4;&#x884C;</h3>
 <table>
 <thead>
 <tr>
 <th>&#x547D;&#x4EE4;</th>
-<th>more</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>create [options] <app-name></app-name></td>
-<td>&#x4F7F;&#x7528; vue-cli-service &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;</td>
-</tr>
-<tr>
-<td>add <plugin> [pluginOptions]</plugin></td>
-<td>vue add&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x548C;&#x8C03;&#x7528;Vue CLI&#x63D2;&#x4EF6;&#xFF08;&#x5DF2;&#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#xFF09;</td>
-</tr>
-<tr>
-<td>invoke <plugin> [pluginOptions]</plugin></td>
-<td>invoke the generator of a plugin in an already created project</td>
-</tr>
-<tr>
-<td>inspect [options] [paths...]</td>
-<td>inspect the webpack config in a project with vue-cli-service</td>
-</tr>
-<tr>
-<td>serve [options] [entry]</td>
-<td>serve a .js or .vue file in development mode with zero config</td>
-</tr>
-<tr>
-<td>build [options] [entry]</td>
-<td>build a .js or .vue file in production mode with zero config</td>
-</tr>
-<tr>
-<td>ui [options]</td>
-<td>start and open the vue-cli ui</td>
-</tr>
-<tr>
-<td>init [options] <template> <app-name></app-name></template></td>
-<td>generate a project from a remote template (legacy API, requires @vue/cli-init)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="vue-create">vue create</h3>
-<table>
-<thead>
-<tr>
 <th>option</th>
 <th>more</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>create [options] <app-name></app-name></td>
+<td>-</td>
+<td>&#x4F7F;&#x7528; vue-cli-service &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;</td>
+</tr>
+<tr>
+<td>~</td>
 <td>-p, --preset <presetname></presetname></td>
 <td>Skip prompts and use saved or remote preset</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-d, --default</td>
 <td>Skip prompts and use default preset</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-i, --inlinePreset <json></json></td>
 <td>Skip prompts and use inline JSON string as preset</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-m, --packageManager <command></td>
 <td>Use specified npm client when installing dependencies</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-r, --registry <url></url></td>
 <td>Use specified npm registry when installing dependencies (only for npm)</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-g, --git [message]</td>
 <td>Force / skip git intialization, optionally specify initial commit message</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-f, --force</td>
 <td>Overwrite target directory if it exists</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-c, --clone</td>
 <td>Use git clone when fetching remote preset</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-x, --proxy</td>
 <td>Use specified proxy when creating project</td>
 </tr>
 <tr>
+<td>~</td>
 <td>-h, --help</td>
 <td>output usage information</td>
+</tr>
+<tr>
+<td>add <plugin> [pluginOptions]</plugin></td>
+<td>-</td>
+<td>vue add&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x548C;&#x8C03;&#x7528;Vue CLI&#x63D2;&#x4EF6;&#xFF08;&#x5DF2;&#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#xFF09;</td>
+</tr>
+<tr>
+<td>invoke <plugin> [pluginOptions]</plugin></td>
+<td>-</td>
+<td>invoke the generator of a plugin in an already created project</td>
+</tr>
+<tr>
+<td>inspect [options] [paths...]</td>
+<td>-</td>
+<td>inspect the webpack config in a project with vue-cli-service</td>
+</tr>
+<tr>
+<td>serve [options] [entry]</td>
+<td>-</td>
+<td>serve a .js or .vue file in development mode with zero config</td>
+</tr>
+<tr>
+<td>build [options] [entry]</td>
+<td>-</td>
+<td>build a .js or .vue file in production mode with zero config</td>
+</tr>
+<tr>
+<td>ui [options]</td>
+<td>-</td>
+<td>start and open the vue-cli ui</td>
+</tr>
+<tr>
+<td>init [options] <template> <app-name></app-name></template></td>
+<td>-</td>
+<td>generate a project from a remote template (legacy API, requires @vue/cli-init)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vue-cli-service-&#x547D;&#x4EE4;&#x884C;">vue-cli-service &#x547D;&#x4EE4;&#x884C;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>options</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>serve</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--open</td>
+<td>open browser on server start</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--copy</td>
+<td>copy url to clipboard on server start</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--mode</td>
+<td>specify env mode (default: development)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--host</td>
+<td>specify host (default: 0.0.0.0)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--port</td>
+<td>specify port (default: 8080)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--https</td>
+<td>use https (default: false)</td>
+</tr>
+<tr>
+<td>build</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--mode</td>
+<td>specify env mode (default: production)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--dest</td>
+<td>specify output directory (default: dist)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--modern</td>
+<td>build app targeting modern browsers with auto fallback</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--target</td>
+<td>app / lib / wc / wc-async (default: app)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--name</td>
+<td>name for lib or web-component mode (default: &quot;name&quot; in package.json or entry filename)</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--no-clean</td>
+<td>do not remove the dist directory before building the project</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--report</td>
+<td>generate report.html to help analyze bundle content</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--report-json</td>
+<td>generate report.json to help analyze bundle content</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--watch</td>
+<td>watch for changes</td>
+</tr>
+<tr>
+<td>inspect</td>
+<td>-</td>
+<td>&#x6253;&#x5370; webpack config</td>
+</tr>
+<tr>
+<td>~</td>
+<td>--mode</td>
+<td>specify env mode (default: development)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vueconfigjs-config">vue.config.js config</h2>
+<table>
+<thead>
+<tr>
+<th>config</th>
+<th>Default</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baseUrl</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>outputDir</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>assetsDir</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>lintOnSave</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>runtimeCompiler</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>transpileDependencies</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>productionSourceMap</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>configureWebpack</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>chainWebpack</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>css.modules</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>css.extract</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>css.sourceMap</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>css.loaderOptions</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>devServer</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>devServer.proxy</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>parallel</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pwa</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pluginOptions</td>
+<td>-</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -462,7 +684,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vueCli","level":"2.7","depth":1,"next":{"title":"vuex","level":"2.8","depth":1,"path":"chapters/vuex.md","ref":"chapters/vuex.md","articles":[]},"previous":{"title":"vue-router","level":"2.6","depth":1,"path":"chapters/vue-router.md","ref":"chapters/vue-router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/vueCli.md","mtime":"2018-07-12T02:48:47.992Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-12T02:52:50.325Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vueCli","level":"2.7","depth":1,"next":{"title":"vuex","level":"2.8","depth":1,"path":"chapters/vuex.md","ref":"chapters/vuex.md","articles":[]},"previous":{"title":"vue-router","level":"2.6","depth":1,"path":"chapters/vue-router.md","ref":"chapters/vue-router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","toggle-chapters","sectionx"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"sectionx":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"treecrow","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NodeJs开发文档","language":"zh-hans","gitbook":"*"},"file":{"path":"chapters/vueCli.md","mtime":"2018-07-30T07:26:36.664Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-18T15:00:15.570Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
