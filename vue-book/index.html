@@ -8,6 +8,11 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <style>
+    .markdown-section {
+      max-width: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,10 +27,16 @@
       coverpage: "coverpage.md", // 设置封面
       name: 'vue 生态', // 文档标题
       nameLink: '/', // 文档标题点击链接
-      themeColor: '#b5633f', // 修改主题色
+      // themeColor: '#b5633f', // 修改主题色
+      mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
+      formatUpdated: '{MM}/{DD} {HH}:{mm}', // 显示文档更新日期
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- 图片放大查看 -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- 复制代码 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 
 </html>
