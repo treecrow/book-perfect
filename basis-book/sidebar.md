@@ -33,6 +33,7 @@
   - [mac 目录结构](chapters/mac/mac目录结构.md)
   - [pages](chapters/mac/pages.md)
   - [安装 zsh](chapters/mac/安装zsh.md)
+  - [系统快捷键](chapters/mac/系统快捷键.md)
   - [设置系统](chapters/mac/设置系统.md)
   - [软件列表](chapters/mac/软件列表.md)
 
