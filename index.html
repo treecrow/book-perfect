@@ -4,55 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <title>docsify-books</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
-<style>
-  .book-container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .book-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-
-  .book-item {
-    flex: 0 0 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #2aa198;
-    text-decoration: none;
-    color: #fff;
-    font-size: 3em;
-  }
-
-  .book-item:hover {
-    background-color: #145f59;
-  }
-</style>
 
 <body>
-  <div class="book-container">
-    <div class="book-list">
-      <a class="book-item" href="css-book">css-book</a>
-      <a class="book-item" href="js-book">js-book</a>
-      <a class="book-item" href="vue-book">vue-book</a>
-      <a class="book-item" href="node-book">node-book</a>
-      <a class="book-item" href="linux-book">linux-book</a>
-      <a class="book-item" href="basis-book">basis-book</a>
-    </div>
-    <hr>
-    <div class="book-list">
-      <a class="book-item" href="newMedia-book">newMedia-book</a>
-      <a class="book-item" href="state-book">state-book</a>
-    </div>
+
+  <h2 class="area-title">技术</h2>
+  <div id="bookVessel1">
+    <!-- todo -->
   </div>
 
+  <h2 class="area-title">扩展</h2>
+  <div id="bookVessel2">
+    <!-- todo -->
+  </div>
+
+  <!-- book 模板 -->
+  <script type="text/template" id="bookTpl">
+    <ul class="unstyle-list flex">
+      {{ each $data as book index}}
+        <li class="flex-cell padding">
+          <a href="{{book.href}}">
+            <div class="book-wrap">
+              <div class="book-cover">
+                {{book.name}}
+              </div>
+            </div>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </script>
+  <!-- template -->
+  <script src="./template-web.js"></script>
+  <script>
+    document.getElementById('bookVessel1').innerHTML = template("bookTpl", [
+      { href: "css-book", name: "css" },
+      { href: "js-book", name: "javascript" },
+      { href: "vue-book", name: "vue" },
+      { href: "node-book", name: "nodeJs" },
+      { href: "linux-book", name: "linux" },
+      { href: "basis-book", name: "基础" },
+    ]);
+    document.getElementById('bookVessel2').innerHTML = template("bookTpl", [
+      { href: "newMedia-book", name: "newMedia" },
+      { href: "state-book", name: "state" },
+    ]);
+  </script>
 </body>
 
 </html>
