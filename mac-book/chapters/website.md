@@ -32,14 +32,15 @@
 
 ## 工具
 
-| web                                          | more     |
-| -------------------------------------------- | -------- |
-| [placeholder](https://placeholder.com/)      | -        |
-| [jsbin](http://jsbin.com/?js,console,output) | -        |
-| [bootcdn](http://www.bootcdn.cn/)            | -        |
-| [在线工具](https://tool.lu/)                 | -        |
-| [asciinema](https://asciinema.org/)          | -        |
-| [tinypng](https://tinypng.com/)              | 压缩图片 |
+| web                                                      | more       |
+| -------------------------------------------------------- | ---------- |
+| [placeholder](https://placeholder.com/)                  | -          |
+| [jsbin](http://jsbin.com/?js,console,output)             | -          |
+| [bootcdn](http://www.bootcdn.cn/)                        | -          |
+| [在线工具](https://tool.lu/)                             | -          |
+| [asciinema](https://asciinema.org/)                      | -          |
+| [tinypng](https://tinypng.com/)                          | 压缩图片   |
+| [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片 |
 
 ## 网站论坛
 
@@ -54,6 +55,12 @@
 
 ## 生活
 
-| web                                   | more                     |
-| ------------------------------------- | ------------------------ |
-| [喵喵折](http://www.miaomiaozhe.com/) | 淘宝购物，历史比价，折扣 |
+| web                                                                     | more                     |
+| ----------------------------------------------------------------------- | ------------------------ |
+| [喵喵折](http://www.miaomiaozhe.com/)                                   | 淘宝购物，历史比价，折扣 |
+| [cracked](http://www.cracked.com/)                                      | 世界上最搞笑的网站之一   |
+| [wikipedia](https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5) | 在线百科全书             |
+| [古腾堡计划](http://www.gutenberg.org/)                                 | 免费书籍                 |
+| [onlinebooks](http://onlinebooks.library.upenn.edu/)                    | 免费书籍                 |
+| [soogif](http://www.soogif.com/)                                        | 中文动图搜索网站         |
+| [ebookee](https://ebookee.org/)                                         | 免费电子书搜索引擎       |
