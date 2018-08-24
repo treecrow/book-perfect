@@ -9,13 +9,21 @@
 
 <body>
 
-  <h2 class="area-title">技术</h2>
-  <div id="bookVessel1">
+  <!-- 前端技术 -->
+  <h2 class="area-title">前端技术</h2>
+  <div id="fontEndVessel">
     <!-- todo -->
   </div>
 
+  <!-- 计算机技术 -->
+  <h2 class="area-title">计算机技术</h2>
+  <div id="computerVessel">
+    <!-- todo -->
+  </div>
+
+  <!-- 扩展 -->
   <h2 class="area-title">扩展</h2>
-  <div id="bookVessel2">
+  <div id="expandVessel">
     <!-- todo -->
   </div>
 
@@ -38,17 +46,22 @@
   <!-- template -->
   <script src="./template-web.js"></script>
   <script>
-    document.getElementById('bookVessel1').innerHTML = template("bookTpl", [
+    // 前端技术
+    document.getElementById('fontEndVessel').innerHTML = template("bookTpl", [
       { href: "css-book", name: "css" },
       { href: "js-book", name: "javascript" },
       { href: "vue-book", name: "vue" },
       { href: "node-book", name: "nodeJs" },
-      { href: "linux-book", name: "linux" },
-      { href: "basis-book", name: "基础" },
     ]);
-    document.getElementById('bookVessel2').innerHTML = template("bookTpl", [
-      { href: "newMedia-book", name: "newMedia" },
+    // 计算机技术
+    document.getElementById('computerVessel').innerHTML = template("bookTpl", [
+      { href: "mac-book", name: "macbook" },
+      { href: "network-book", name: "网络" },
+    ]);
+    // 扩展
+    document.getElementById('expandVessel').innerHTML = template("bookTpl", [
       { href: "state-book", name: "state" },
+      { href: "newMedia-book", name: "newMedia" },
     ]);
   </script>
 </body>
