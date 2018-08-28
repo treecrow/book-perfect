@@ -3,6 +3,7 @@
 - [vsCode](chapters/vsCode/README.md)
 
   - [code](chapters/vsCode/code.md)
+  - [setting](chapters/vsCode/setting.md)
   - [任务](chapters/vsCode/任务.md)
   - [命令面板](chapters/vsCode/命令面板.md)
   - [快捷键](chapters/vsCode/快捷键.md)
