@@ -48,3 +48,12 @@ cat -n ~/.ssh/rsa.pub ~/.ssh/authorized_keys
 ```bash
 ssh-copy-id username@remote-server
 ```
+
+## https 连接 github
+
+```bash
+git credential-osxkeychain
+git credential-osxkeychain erase
+host=github.com
+protocol=https
+```
