@@ -11,6 +11,7 @@
 
 - [命令行工具](chapters/命令行工具/README.md)
 
+  - [asciinema](chapters/命令行工具/asciinema.md)
   - [brew](chapters/命令行工具/brew.md)
   - [cat](chapters/命令行工具/cat.md)
   - [chmod](chapters/命令行工具/chmod.md)
