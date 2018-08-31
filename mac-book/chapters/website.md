@@ -2,11 +2,13 @@
 
 ## css
 
-| web                                                                     | more |
-| ----------------------------------------------------------------------- | ---- |
-| [CSS in JS 简介](http://www.ruanyifeng.com/blog/2017/04/css_in_js.html) | -    |
-| [可视化 CSS 效果的指南](https://cssreference.io/)                       | -    |
-| [CSS 参考手册](http://css.doyoe.com/)                                   | -    |
+| web                                               | more |
+| ------------------------------------------------- | ---- |
+| [检查css问题](http://csslint.net/)                | -    |
+| [css参考手册](http://css.doyoe.com/)              | -    |
+| [可视化 CSS 效果的指南](https://cssreference.io/) | -    |
+| [CSS 参考手册](http://css.doyoe.com/)             | -    |
+| [可视化 CSS 效果的指南](https://cssreference.io/) | -    |
 
 ## javascript
 
@@ -30,17 +32,17 @@
 | [编程随想的博客](https://program-think.blogspot.com/) | -    |
 | [阮一峰](http://www.ruanyifeng.com/blog/)             | -    |
 
-## 工具
+## 通用
 
-| web                                                      | more       |
-| -------------------------------------------------------- | ---------- |
-| [placeholder](https://placeholder.com/)                  | -          |
-| [jsbin](http://jsbin.com/?js,console,output)             | -          |
-| [bootcdn](http://www.bootcdn.cn/)                        | -          |
-| [在线工具](https://tool.lu/)                             | -          |
-| [asciinema](https://asciinema.org/)                      | -          |
-| [tinypng](https://tinypng.com/)                          | 压缩图片   |
-| [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片 |
+| web                                                      | more           |
+| -------------------------------------------------------- | -------------- |
+| [在线工具](https://tool.lu/)                             | 在线运行代码、 |
+| [placeholder](https://placeholder.com/)                  | -              |
+| [jsbin](http://jsbin.com/?js,console,output)             | -              |
+| [bootcdn](http://www.bootcdn.cn/)                        | -              |
+| [asciinema](https://asciinema.org/)                      | -              |
+| [tinypng](https://tinypng.com/)                          | 压缩图片       |
+| [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片     |
 
 ## 网站论坛
 
