@@ -2,13 +2,12 @@
 
 ## css
 
-| web                                               | more |
-| ------------------------------------------------- | ---- |
-| [检查css问题](http://csslint.net/)                | -    |
-| [css参考手册](http://css.doyoe.com/)              | -    |
-| [可视化 CSS 效果的指南](https://cssreference.io/) | -    |
-| [CSS 参考手册](http://css.doyoe.com/)             | -    |
-| [可视化 CSS 效果的指南](https://cssreference.io/) | -    |
+| 分类     | web                                                                  | more |
+| -------- | -------------------------------------------------------------------- | ---- |
+| -        | [css参考手册](http://css.doyoe.com/)                                 | -    |
+| -        | [可视化 CSS 效果的指南](https://cssreference.io/)                    | -    |
+| 预处理器 | [less中文文档](https://less.bootcss.com/)                            | -    |
+| ~        | [stylus中文文档](https://www.zhangxinxu.com/jq/stylus/selectors.php) | -    |
 
 ## javascript
 

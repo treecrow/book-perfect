@@ -2,11 +2,22 @@
 
 ```css
 /*不能忍必须个人重置的reset*/
-*{box-sizing:border-box;}
-*:before,*:after{box-sizing:border-box;}
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 /*列表*/
-.unstyle-list{margin:0; padding:0; list-style:none;}
+.unstyle-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 ```
