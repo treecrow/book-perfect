@@ -1,7 +1,0 @@
-- [首页](README.md)
-- [哲学](chapters/哲学/README.md)
-- [小说](chapters/小说/README.md)
-- [心理学](chapters/心理学/README.md)
-- [法律](chapters/法律/README.md)
-- [社会学](chapters/社会学/README.md)
-- [经济学](chapters/经济学/README.md)

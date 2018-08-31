@@ -30,16 +30,17 @@
 | [阮一峰](http://www.ruanyifeng.com/blog/)             | -    |
 | [编程随想的博客](https://program-think.blogspot.com/) | -    |
 
-## 通用
+## 通用工具
 
-| web                                                      | more             |
-| -------------------------------------------------------- | ---------------- |
-| [在线工具](https://tool.lu/)                             | 在线运行代码、   |
-| [jsbin](http://jsbin.com/?js,console,output)             | 在线运行前端代码 |
-| [bootcdn](http://www.bootcdn.cn/)                        | cdn 库           |
-| [placeholder](https://placeholder.com/)                  | 自定义占位图     |
-| [tinypng](https://tinypng.com/)                          | 压缩图片         |
-| [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片       |
+| 分类 | web                                                      | more             |
+| ---- | -------------------------------------------------------- | ---------------- |
+| ~    | [在线工具](https://tool.lu/)                             | 在线运行代码、   |
+| ~    | [jsbin](http://jsbin.com/?js,console,output)             | 在线运行前端代码 |
+| ~    | [bootcdn](http://www.bootcdn.cn/)                        | cdn 库           |
+| 图片 | [placeholder](https://placeholder.com/)                  | 自定义占位图     |
+| ~    | [tinypng](https://tinypng.com/)                          | 压缩图片         |
+| ~    | [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片       |
+| ~    | [soogif](http://www.soogif.com/)                         | 中文动图搜索网站 |
 
 ## 网站论坛
 
@@ -48,15 +49,3 @@
 | [MDN](http://developer.mozilla.org/)        | -    |
 | [stackoverflow](https://stackoverflow.com/) | -    |
 | [掘金](https://juejin.im/timeline)          | -    |
-
-## 生活
-
-| web                                                                     | more                     |
-| ----------------------------------------------------------------------- | ------------------------ |
-| [喵喵折](http://www.miaomiaozhe.com/)                                   | 淘宝购物，历史比价，折扣 |
-| [cracked](http://www.cracked.com/)                                      | 世界上最搞笑的网站之一   |
-| [wikipedia](https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5) | 在线百科全书             |
-| [古腾堡计划](http://www.gutenberg.org/)                                 | 免费书籍                 |
-| [onlinebooks](http://onlinebooks.library.upenn.edu/)                    | 免费书籍                 |
-| [soogif](http://www.soogif.com/)                                        | 中文动图搜索网站         |
-| [ebookee](https://ebookee.org/)                                         | 免费电子书搜索引擎       |
