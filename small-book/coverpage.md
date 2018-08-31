@@ -1,8 +1,8 @@
 ![logo](logo.png)
 
-# 基本知识🤔
+# 小程序🤔
 
-> 计算机基本知识
+> 小程序知识整理
 
 [GitHub](https://github.com/treecrow/docsify-books)
 [开始](README.md)
