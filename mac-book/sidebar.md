@@ -1,5 +1,12 @@
 - [首页](README.md)
 
+- [mac 自带命令](chapters/mac自带命令/README.md)
+
+  - [超级用户指令](chapters/mac自带命令/超级用户指令.md)
+  - [普通命令](chapters/mac自带命令/普通命令.md)
+  - [后期安装的超级用户指令](chapters/mac自带命令/后期安装的超级用户指令.md)
+  - [后期安装的普通命令](chapters/mac自带命令/后期安装的普通命令.md)
+
 - [vsCode](chapters/vsCode/README.md)
 
   - [code](chapters/vsCode/code.md)
@@ -27,7 +34,6 @@
 - [linux 系统](chapters/linux系统.md)
 - [mac 环境变量](chapters/mac环境变量.md)
 - [mac 目录结构](chapters/mac目录结构.md)
-- [mac 自带命令](chapters/mac自带命令.md)
 - [markdown](chapters/markdown.md)
 - [pages](chapters/pages.md)
 - [shell](chapters/shell.md)
