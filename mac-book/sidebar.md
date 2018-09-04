@@ -2,6 +2,7 @@
 
 - [mac 自带命令](chapters/mac自带命令/README.md)
 
+  - [node 命令](chapters/mac自带命令/node命令.md)
   - [超级用户指令](chapters/mac自带命令/超级用户指令.md)
   - [普通命令](chapters/mac自带命令/普通命令.md)
   - [后期安装的超级用户指令](chapters/mac自带命令/后期安装的超级用户指令.md)
