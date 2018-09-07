@@ -4,5 +4,5 @@
 | --------- | ----------------- |
 | $SHELL    | 使用的 Shell 类型 |
 | $HOME     | -                 |
-| $PATH     | -                 |
+| $PATH     | bin/sbin 查找规则 |
 | $HOSTNAME | 当前的主机名      |

@@ -24,6 +24,7 @@
   - [git](chapters/命令行工具/git.md)
   - [ssh](chapters/命令行工具/ssh.md)
   - [svn](chapters/命令行工具/svn.md)
+  - [vim](chapters/命令行工具/vim.md)
 
 * [chrome](chapters/chrome.md)
 * [linux 系统](chapters/linux系统.md)
@@ -32,7 +33,6 @@
 * [markdown](chapters/markdown.md)
 * [pages](chapters/pages.md)
 * [shell](chapters/shell.md)
-* [vim](chapters/vim.md)
 * [website](chapters/website.md)
 * [zsh](chapters/zsh.md)
 * [系统快捷键](chapters/系统快捷键.md)
