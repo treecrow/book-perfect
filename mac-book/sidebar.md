@@ -10,6 +10,17 @@
   - [个人安装的超级用户指令](chapters/mac自带命令/个人安装的超级用户指令.md)
   - [个人安装的普通命令](chapters/mac自带命令/个人安装的普通命令.md)
 
+- [shell](chapters/shell/README.md)
+
+  - [变量](chapters/shell/变量.md)
+  - [输入输出重定向](chapters/shell/输入输出重定向.md)
+  - [数组](chapters/shell/数组.md)
+  - [条件表达式](chapters/shell/条件表达式.md)
+  - [头文件](chapters/shell/头文件.md)
+  - [循环表达式](chapters/shell/循环表达式.md)
+  - [运行 shell 脚本](chapters/shell/运行shell脚本.md)
+  - [字符串](chapters/shell/字符串.md)
+
 - [vsCode](chapters/vsCode/README.md)
 
   - [code](chapters/vsCode/code.md)
@@ -32,7 +43,6 @@
 * [mac 目录结构](chapters/mac目录结构.md)
 * [markdown](chapters/markdown.md)
 * [pages](chapters/pages.md)
-* [shell](chapters/shell.md)
 * [website](chapters/website.md)
 * [zsh](chapters/zsh.md)
 * [系统快捷键](chapters/系统快捷键.md)
