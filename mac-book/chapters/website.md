@@ -32,15 +32,16 @@
 
 ## 通用工具
 
-| 分类 | web                                                      | more             |
-| ---- | -------------------------------------------------------- | ---------------- |
-| ~    | [在线工具](https://tool.lu/)                             | 在线运行代码、   |
-| ~    | [jsbin](http://jsbin.com/?js,console,output)             | 在线运行前端代码 |
-| ~    | [bootcdn](http://www.bootcdn.cn/)                        | cdn 库           |
-| 图片 | [placeholder](https://placeholder.com/)                  | 自定义占位图     |
-| ~    | [tinypng](https://tinypng.com/)                          | 压缩图片         |
-| ~    | [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片       |
-| ~    | [soogif](http://www.soogif.com/)                         | 中文动图搜索网站 |
+| 分类 | web                                                      | more                          |
+| ---- | -------------------------------------------------------- | ----------------------------- |
+| ~    | [在线工具](https://tool.lu/)                             | 在线运行代码、                |
+| ~    | [jsbin](http://jsbin.com/?js,console,output)             | 在线运行前端代码              |
+| ~    | [bootcdn](http://www.bootcdn.cn/)                        | cdn 库                        |
+| ~    | [httptest](http://www.atool.org/httptest.php)            | 在线HTTP POST/GET接口测试工具 |
+| 图片 | [placeholder](https://placeholder.com/)                  | 自定义占位图                  |
+| ~    | [tinypng](https://tinypng.com/)                          | 压缩图片                      |
+| ~    | [creativecommons](https://ccsearch.creativecommons.org/) | 无水印图片                    |
+| ~    | [soogif](http://www.soogif.com/)                         | 中文动图搜索网站              |
 
 ## 网站论坛
 
