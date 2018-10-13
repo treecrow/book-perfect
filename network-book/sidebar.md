@@ -1,5 +1,11 @@
 - [首页](README.md)
 
+- [http](chapters/http/README.md)
+
+  - [HTTP 方法](chapters/http/HTTP方法.md)
+  - [HTTP 状态码](chapters/http/HTTP状态码.md)
+  - [首部字段](chapters/http/首部字段.md)
+
 - [nginx](chapters/nginx/README.md)
 
   - [个人配置](chapters/nginx/个人配置.md)
@@ -8,10 +14,8 @@
 
   - [访问用户身份的认证](chapters/图解http/访问用户身份的认证.md)
   - [通信数据转发设备](chapters/图解http/通信数据转发设备.md)
-  - [HTTP报文](chapters/图解http/HTTP报文.md)
-  - [HTTP方法](chapters/图解http/HTTP方法.md)
-  - [HTTP请求过程完整解读](chapters/图解http/HTTP请求过程完整解读.md)
-  - [HTTP状态码](chapters/图解http/HTTP状态码.md)
+  - [HTTP 方法](chapters/图解http/HTTP方法.md)
+  - [HTTP 请求过程完整解读](chapters/图解http/HTTP请求过程完整解读.md)
   - [HTTPS](chapters/图解http/HTTPS.md)
   - [TCP.IP](chapters/图解http/TCP.IP.md)
   - [token 混账东西](chapters/图解http/token混账东西.md)
