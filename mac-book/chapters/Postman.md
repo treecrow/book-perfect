@@ -82,16 +82,18 @@
 
 ## pm
 
-| api                                                                                                        | more         |
-| ---------------------------------------------------------------------------------------------------------- | ------------ |
-| `pm.environment.get("variable_key")`                                                                       | 获取环境变量 |
-| `pm.globals.get("variable_key")`                                                                           | 获取全局变量 |
-| `pm.variables.get("variable_key")`                                                                         | 获取变量     |
-| `pm.environment.set("variable_key", "variable_value")`                                                     | 设置环境变量 |
-| `pm.globals.set("variable_key", "variable_value")`                                                         | 设置全局变量 |
-| `pm.environment.unset("variable_key")`                                                                     | 清除环境变量 |
-| `pm.globals.unset("variable_key")`                                                                         | 清除全局变量 |
-| `pm.sendRequest("https://postman-echo.com/get", function (err, response) {console.log(response.json());})` | 发送一个请求 |
+| api                                                                                                        | more               |
+| ---------------------------------------------------------------------------------------------------------- | ------------------ |
+| `pm.globals.set("variable_key", "variable_value")`                                                         | 设置全局变量       |
+| `pm.globals.get("variable_key")`                                                                           | 获取全局变量       |
+| `pm.globals.unset("variable_key")`                                                                         | 清除全局变量       |
+| `pm.environment.set("variable_key", "variable_value")`                                                     | 设置环境变量       |
+| `pm.environment.get("variable_key")`                                                                       | 获取环境变量       |
+| `pm.environment.unset("variable_key")`                                                                     | 清除环境变量       |
+| `pm.variables.set("privateKey", "privateKey")`                                                             | 设置变量（集合？） |
+| `pm.variables.get("variable_key")`                                                                         | 获取变量（集合？） |
+| `pm.variables.unset("variable_key")`                                                                       | 清除变量（集合？） |
+| `pm.sendRequest("https://postman-echo.com/get", function (err, response) {console.log(response.json());})` | 发送一个请求       |
 
 ## postman
 
