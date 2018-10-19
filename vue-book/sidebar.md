@@ -1,4 +1,3 @@
-
 - [首页](README.md)
 - [API](chapters/API.md)
 - [axios](chapters/axios.md)
@@ -7,7 +6,3 @@
 - [vueCli](chapters/vueCli.md)
 - [vuex](chapters/vuex.md)
 - [webpack](chapters/webpack.md)
-- [iView](chapters/iView/README.md)
-  - [定制](chapters/iView/定制.md)
-  - [样式设计](chapters/iView/样式设计.md)
-  - [组件整理](chapters/iView/组件整理.md)
