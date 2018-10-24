@@ -8,6 +8,8 @@
 - [配置](chapters/配置.md)
 
 - [功能点](chapters/功能点/README.md)
+  - [request](chapters/功能点/request.md)
+  - [utils](chapters/功能点/utils.md)
   - [小程序支付](chapters/功能点/小程序支付.md)
   - [小程序登录鉴权](chapters/功能点/小程序登录鉴权.md)
   - [状态管理](chapters/功能点/状态管理.md)
