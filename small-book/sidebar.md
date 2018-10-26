@@ -4,6 +4,7 @@
 - [Component](chapters/Component.md)
 - [Page](chapters/Page.md)
 - [wx](chapters/wx.md)
+- [场景值](chapters/场景值.md)
 - [开发者工具](chapters/开发者工具.md)
 - [配置](chapters/配置.md)
 
