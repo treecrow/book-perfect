@@ -6,6 +6,7 @@
 - [wx](chapters/wx.md)
 - [场景值](chapters/场景值.md)
 - [开发者工具](chapters/开发者工具.md)
+- [支付宝小程序](chapters/支付宝小程序.md)
 - [配置](chapters/配置.md)
 
 - [功能点](chapters/功能点/README.md)
