@@ -4,8 +4,8 @@
 
 ## 容器的属性
 
-| 属性 | options | more |
-| ---- | ------- | ---- ||
+| 属性            | options                                                                 | more                                                           |
+| --------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------- |
 | flex-direction  | row / row-reverse / column / column-reverse                             | 决定主轴的方向(即项目的排列方向)                               |
 | flex-wrap       | nowrap / wrap / wrap-reverse                                            | 决定容器内项目是否可换行                                       |
 | flex-flow       | `flex-flow: <flex-direction> // <flex-wrap>`                            | flex-direction 和 flex-wrap 的简写形式                         |
