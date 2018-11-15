@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <web-view src="https://mp.weixin.qq.com/"></web-view>
     <script src="./aliyun-sdk.min.js"></script>
   </head>
   <body>
     dadian
     <script>
-      var app = getApp();
-      app.ALY = window.ALY;
+      wx.miniProgram.postMessage({
+        aly: window.ALY
+      });
     </script>
   </body>
 </html>
-
