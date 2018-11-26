@@ -47,6 +47,7 @@
 * [Postman](chapters/Postman.md)
 * [website](chapters/website.md)
 * [zsh](chapters/zsh.md)
+* [安装黑苹果](chapters/安装黑苹果.md)
 * [系统快捷键](chapters/系统快捷键.md)
 * [设置系统](chapters/设置系统.md)
 * [软件列表](chapters/软件列表.md)
