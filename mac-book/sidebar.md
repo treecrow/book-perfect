@@ -39,7 +39,6 @@
 
 * [Charles](chapters/Charles.md)
 * [chrome](chapters/chrome.md)
-* [linux 系统](chapters/linux系统.md)
 * [mac 环境变量](chapters/mac环境变量.md)
 * [mac 目录结构](chapters/mac目录结构.md)
 * [markdown](chapters/markdown.md)
