@@ -3,6 +3,7 @@
 - [api](chapters/api.md)
 - [App](chapters/App.md)
 - [Component](chapters/Component.md)
+- [mpvue](chapters/mpvue.md)
 - [Page](chapters/Page.md)
 - [场景值](chapters/场景值.md)
 - [开发者工具](chapters/开发者工具.md)
