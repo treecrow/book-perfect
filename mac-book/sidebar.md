@@ -38,13 +38,11 @@
   - [vim](chapters/命令行工具/vim.md)
 
 * [Charles](chapters/Charles.md)
-* [chrome](chapters/chrome.md)
 * [mac 环境变量](chapters/mac环境变量.md)
 * [mac 目录结构](chapters/mac目录结构.md)
 * [markdown](chapters/markdown.md)
 * [pages](chapters/pages.md)
 * [Postman](chapters/Postman.md)
-* [website](chapters/website.md)
 * [zsh](chapters/zsh.md)
 * [安装黑苹果](chapters/安装黑苹果.md)
 * [系统快捷键](chapters/系统快捷键.md)
