@@ -22,6 +22,7 @@
 | ~                    | git push origin master                                   | 正常推送（把本地master分支的最新修改推送至GitHub）                                                               |
 | ~                    | git push origin newIview                                 | 推送xxx分支                                                                                                      |
 | ~                    | git push origin :dev                                     | 删除远程分支后使用                                                                                               |
+| ~                    | git push --set-upstream origin dev2.1                    | 创建本地分支后首次推送                                                                                           |
 | 分支                 | git branch                                               | 查看本地所有分支                                                                                                 |
 | ~                    | git branch -r                                            | 查看远程所有分支                                                                                                 |
 | ~                    | git branch -a                                            | 查看本地和远程所有分支                                                                                           |
