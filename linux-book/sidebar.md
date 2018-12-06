@@ -21,10 +21,11 @@
   - [运行 shell 脚本](chapters/shell/运行shell脚本.md)
   - [字符串](chapters/shell/字符串.md)
 
-- [命令](chapters/命令/README.md)
+- [命令整理](chapters/命令整理/README.md)
 
-  - [文件](chapters/命令/文件.md)
-  - [目录](chapters/命令/目录.md)
+  - [命令](chapters/命令整理/命令.md)
+  - [文件](chapters/命令整理/文件.md)
+  - [目录](chapters/命令整理/目录.md)
 
 - [命令行工具](chapters/命令行工具/README.md)
 
@@ -33,4 +34,5 @@
   - [svn](chapters/命令行工具/svn.md)
   - [vim](chapters/命令行工具/vim.md)
 
-- [linux 系统](chapters/linux系统.md)
+- [命令目录](chapters/命令目录.md)
+- [阿里云重置](chapters/阿里云重置.md)
