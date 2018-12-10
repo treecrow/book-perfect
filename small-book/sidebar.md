@@ -1,6 +1,5 @@
 - [首页](README.md)
 
-
 * [微信小程序](chapters/微信小程序/README.md)
   - [api](chapters/微信小程序/api.md)
   - [App](chapters/微信小程序/App.md)
@@ -16,7 +15,8 @@
   - [获取用户信息](chapters/微信小程序/获取用户信息.md)
   - [配置](chapters/微信小程序/配置.md)
 
+- [百度小程序](chapters/百度小程序/README.md)
+
 * [其它小程序](chapters/其它小程序/README.md)
 
   - [支付宝小程序](chapters/其它小程序/支付宝小程序.md)
-  - [百度小程序](chapters/其它小程序/百度小程序.md)
