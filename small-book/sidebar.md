@@ -16,6 +16,7 @@
   - [配置](chapters/微信小程序/配置.md)
 
 - [百度小程序](chapters/百度小程序/README.md)
+  - [api](chapters/百度小程序/api.md)
 
 * [其它小程序](chapters/其它小程序/README.md)
 
