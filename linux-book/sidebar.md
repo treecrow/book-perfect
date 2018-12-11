@@ -26,6 +26,7 @@
   - [命令](chapters/命令整理/命令.md)
   - [文件](chapters/命令整理/文件.md)
   - [目录](chapters/命令整理/目录.md)
+  - [系统](chapters/命令整理/系统.md)
 
 - [命令行工具](chapters/命令行工具/README.md)
 
