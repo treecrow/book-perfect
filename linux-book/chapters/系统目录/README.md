@@ -9,8 +9,6 @@
 通用目录 | ／             | 设备
 -    | ／bin          | 传统unix命令的存放目录，如ls，rm，mv等
 -    | ／sbin         | 传统unix管理类命令存放目录，如fdisk，ifconfig等等
--    | ／usr          | 第三方程序安装目录
--    | ／dev          | 设备文件存放目录，如何代表硬盘的/dev/disk0
 -    | ／etc          | 标准unix系统配置文件存放目录，如用户密码文件/etc/passwd。此目录实际为指向/private/etc的链接
 -    | ／tmp          | 临时文件存放目录，其权限为所有人任意读写。此目录实际为指向/private/tmp的链接
 -    | ／var          | 存放经常变化的文件，如日志文件。此目录实际为指向/private/var的链接

@@ -23,6 +23,7 @@
 
 - [命令整理](chapters/命令整理/README.md)
 
+  - [IO重定向](chapters/命令整理/IO重定向.md)
   - [命令](chapters/命令整理/命令.md)
   - [文件](chapters/命令整理/文件.md)
   - [目录](chapters/命令整理/目录.md)
