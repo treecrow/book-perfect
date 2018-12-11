@@ -34,5 +34,6 @@
   - [svn](chapters/命令行工具/svn.md)
   - [vim](chapters/命令行工具/vim.md)
 
-- [命令目录](chapters/命令目录.md)
-- [阿里云重置](chapters/阿里云重置.md)
+- [阿里云](chapters/阿里云/README.md)
+  - [阿里云重置](chapters/阿里云/阿里云重置.md)
+

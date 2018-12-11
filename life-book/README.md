@@ -29,3 +29,4 @@
 | bit      | [btkitty](http://btkitty.kim/)                                                      | -                                                                                  |
 | 其它     | [cracked](http://www.cracked.com/)                                                  | 世界上最搞笑的网站之一                                                             |
 | ~        | [wikiHow](http://zh.wikihow.com/)                                                   | 学习做任何事                                                                       |
+| ~        | [好维持](http://www.haoweichi.com/)                                                 | 外国人身份随机生成                                                                 |
