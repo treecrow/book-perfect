@@ -19,10 +19,10 @@
 
 | 命令来源                   | path                                             |
 | -------------------------- | ------------------------------------------------ |
-| node命令                   | /Users/wangzhihui/.nvm/versions/node/v10.9.0/bin |
-| 个人安装的普通命令         | /usr/local/bin                                   |
-| 个人安装的超级用户指令     | /usr/local/sbin                                  |
-| 后期安装的普通命令列表     | /usr/bin                                         |
+| 超级用户指令               | /sbin                                            |
 | 后期安装的超级用户指令列表 | /usr/sbin                                        |
 | 普通命令                   | /bin                                             |
-| 超级用户指令               | /sbin                                            |
+| 后期安装的普通命令列表     | /usr/bin                                         |
+| 个人安装的超级用户指令     | /usr/local/sbin                                  |
+| 个人安装的普通命令         | /usr/local/bin                                   |
+| node命令                   | /Users/wangzhihui/.nvm/versions/node/v10.9.0/bin |
