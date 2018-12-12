@@ -10,7 +10,6 @@
   - [扩展](chapters/vsCode/扩展.md)
 
 * [Charles](chapters/Charles.md)
-* [mac 环境变量](chapters/mac环境变量.md)
 * [markdown](chapters/markdown.md)
 * [pages](chapters/pages.md)
 * [Postman](chapters/Postman.md)
