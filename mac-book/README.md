@@ -16,3 +16,12 @@
 5.  安装 nvm 、node
 6.  设置 github ssh
 7.  .DS_Store
+
+## 问题按键
+
+| key | more   |
+| --- | ------ |
+| e   | 重复   |
+| d   | ~      |
+| v   | ~      |
+| a   | 未打印 |
