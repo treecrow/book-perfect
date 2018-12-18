@@ -7,3 +7,4 @@
 | [bash](http://man.linuxde.net/sh)     | ~                                     |
 | [echo](http://man.linuxde.net/echo)   | 打印 shell 变量值                     |
 | [test](http://man.linuxde.net/test)   | 是shell环境中测试条件表达式的实用工具 |
+| [chsh](http://man.linuxde.net/chsh)   | 用来更换登录系统时使用的shell         |

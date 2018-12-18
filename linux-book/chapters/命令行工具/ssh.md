@@ -8,6 +8,7 @@
 - [SSH登陆阿里云服务器出现Permission denied (publickey)错误解决方案](http://www.cnblogs.com/wangchaowei/p/6914180.html)
 - [github ssh添加:多个ssh的问题](http://www.bkjia.com/Androidjc/837965.html)
 - [access token 连接 github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
+- [MAC通过SSH使用PEM文件登录](http://www.cnblogs.com/Jason-Born/p/6566503.html)
 
 ## 命令列表
 
