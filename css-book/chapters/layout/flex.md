@@ -24,36 +24,65 @@
 | flex        | `<'flex-grow'> <'flex-shrink'>? // <'flex-basis'> / auto (1 1 auto) / none (0 0 auto)` | flex属性是flex-grow, flex-shrink 和 flex-basis的简写                                      |
 | align-self  | auto / flex-start / flex-end / center / baseline / stretch                             | align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性             |
 
-## flex上中下弹性布局
+## flex 常见工具类
 
 ```css
+/* 上中下弹性布局 */
 .flex-page {
-  position:absolute;
-  display:flex;
-  overflow:hidden;
-  width:100%;
-  height:100%;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;  
 }
 .flex-main {
-  overflow-x:hidden;
-  overflow-y:auto;
-  width:100%;
-  flex:1;
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-```
 
-## flex上下左右居中
-
-```css
-.flex-center{
-  display:flex;
+/* 水平垂直居中 */
+.flex-center {
+  display: flex;
   justify-content:center;
   align-items:center;
 }
+
+/* 垂直居中 */
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* 行平均分布 */
+.flex-between {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* 列平均分布 */
+.flex-column-between {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+/* 水平排列 */
+.flex-nowrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* 垂直排列 */
+.flex-column-nowrap {
+  display: flex;
+  flex-flow: column nowrap;
+}
 ```
 
-## flex栅格系统: [Flexbox 打造栅格系统](http://stephenzhao.github.io/2016/08/04/css-flexbox-grid-layout)
+## [Flexbox 打造栅格系统](http://stephenzhao.github.io/2016/08/04/css-flexbox-grid-layout)
 
 ```css
 .flex{
