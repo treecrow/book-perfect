@@ -11,12 +11,6 @@ const win  = new electron.remote.BrowserWindow(); // 渲染进程
 
 | api                                              | more                                                                                                               |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| win.webContents.on(evenr,callback)               | crashed、context-menu、did-finish-load                                                                             |
-| win.webContents.printToPDF(options,callback)     | -                                                                                                                  |
-| win.on(event,callback)                           | close、resize、move、focus、blur、unresponsive,responsive                                                          |
-| win.once(event,callback)                         |                                                                                                                    |
-| win.toggleDevTools()                             | -                                                                                                                  |
-| -                                                | -                                                                                                                  |
 | BrowserWindow.getallwindows()                    | 返回 BrowserWindow[] - 所有打开的窗口的数组                                                                        |
 | BrowserWindow.getfocusedwindow()                 | Returns BrowserWindow / null - The window that is focused in this application, otherwise returns null              |
 | BrowserWindow.fromwebcontents(webcontents)       | 返回 BrowserWindow - 拥有给定 webContents 的窗口                                                                   |
@@ -144,6 +138,8 @@ const win  = new electron.remote.BrowserWindow(); // 渲染进程
 | win.settouchbar(touchbar)                        | 设置窗口的触摸条布局 设置为 null 或undefined将清除触摸条                                                           |
 | win.setbrowserview(browserview)                  | -                                                                                                                  |
 | win.getbrowserview()                             | 返回 BrowserView / null - 一个附加的 BrowserView. 如果没有被附加的窗口，则返回 null                                |
+| win.on(event,callback)                           | 监听事件                                                                                                           |
+| win.once(event,callback)                         | ~                                                                                                                  |
 
 ## 事件列表
 
