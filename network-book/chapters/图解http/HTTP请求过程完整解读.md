@@ -4,7 +4,7 @@
 
 ![请求页面流程](../../imgs/请求页面流程.png)
 
-![HTTP 请求过程概览](../../imgs/HTTP 请求过程概览.png)
+![HTTP 请求过程概览](../../imgs/HTTP请求过程概览.png)
 
 ## TCP/IP与 HTTP 的联系（概括）
 
@@ -20,7 +20,7 @@
 
 ### 负责域名解析的 DNS 服务
 
-![DNS 服务](../../imgs/DNS 服务.png)
+![DNS 服务](../../imgs/DNS服务.png)
 
 ![DNS解析](../../imgs/DNS解析.png)
 
@@ -48,16 +48,16 @@ MAC 地址 | Media Access Control Address | 网卡所属的固定地址（基本
 
 #### 可靠的传输服务（三次握手）
 
-![通过 TCP 的三次握手](../../imgs/通过 TCP 的三次握手.png)
+![通过 TCP 的三次握手](../../imgs/通过TCP的三次握手.png)
 
 #### TCP 不持续连接的问题
 
-![TCP 不持续连接的问题](../../imgs/TCP 不持续连接的问题.png)
+![TCP 不持续连接的问题](../../imgs/TCP不持续连接的问题.png)
 
 #### TCP 的持久连接
 
-![TCP 的持久连接](../../imgs/TCP 的持久连接.png)
+![TCP 的持久连接](../../imgs/TCP的持久连接.png)
 
 #### TCP 管线化
 
-![TCP 管线化](../../imgs/TCP 管线化.png)
+![TCP 管线化](../../imgs/TCP管线化.png)

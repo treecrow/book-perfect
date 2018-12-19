@@ -14,11 +14,10 @@
 
   - [访问用户身份的认证](chapters/图解http/访问用户身份的认证.md)
   - [通信数据转发设备](chapters/图解http/通信数据转发设备.md)
-  - [HTTP 方法](chapters/图解http/HTTP方法.md)
   - [HTTP 请求过程完整解读](chapters/图解http/HTTP请求过程完整解读.md)
   - [HTTPS](chapters/图解http/HTTPS.md)
   - [TCP.IP](chapters/图解http/TCP.IP.md)
-  - [token 混账东西](chapters/图解http/token混账东西.md)
+  - [token](chapters/图解http/token.md)
   - [URI](chapters/图解http/URI.md)
 
 - [XSS 与 CSRF](chapters/XSS与CSRF.md)
