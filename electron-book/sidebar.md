@@ -4,6 +4,13 @@
 - [autoUpdater](chapters/electronApi/autoUpdater.md)
 - [BrowserView](chapters/electronApi/BrowserView.md)
 - [BrowserWindow](chapters/electronApi/BrowserWindow.md)
+- [browserwindowproxy](chapters/electronApi/browserwindowproxy.md)
+- [clientRequest](chapters/electronApi/clientRequest.md)
+- [clipboard](chapters/electronApi/clipboard.md)
 - [webContents](chapters/electronApi/webContents.md)
+- [支持的Chrome命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
+  
+---
+
 - [process](chapters/process.md)
 - [sqlite](chapters/sqlite.md)
