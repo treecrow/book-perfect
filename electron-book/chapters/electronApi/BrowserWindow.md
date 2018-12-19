@@ -22,6 +22,7 @@ const win  = new electron.remote.BrowserWindow(); // 渲染进程
 | BrowserWindow.adddevtoolsextension(path)         | 添加位于 path的 DevTools 扩展，并且返回扩展名                                                                      |
 | BrowserWindow.removedevtoolsextension(name)      | 根据名字删除一个 DevTools 的扩展。                                                                                 |
 | BrowserWindow.getdevtoolsextensions()            | 返回 Object - 键是扩展名, 每个值都是一个包含 name 和 version 属性的对象.                                           |
+| BrowserWindow.getCurrentWindow()                 | -                                                                                                                  |
 | win.webcontents                                  | 窗口拥有的 WebContents 对象. 所有与网页相关的事件和操作都将通过它完成.                                             |
 | win.id                                           | Integer 窗口的唯一ID                                                                                               |
 | win.destroy()                                    | 强制关闭窗口, 除了closed之外，close，unload 和 beforeunload 都不会被触发                                           |
