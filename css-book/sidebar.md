@@ -13,6 +13,7 @@
   - [paper](chapters/组件/paper.md)
   - [step](chapters/组件/step.md)
 
+- [display](chapters/display.md)
 - [reset](chapters/reset.md)
 - [tool](chapters/tool.md)
 - [级别](chapters/级别.md)
