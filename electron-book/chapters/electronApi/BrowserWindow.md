@@ -15,13 +15,6 @@ const win  = new electron.remote.BrowserWindow(); // 渲染进程
 | win.webContents.printToPDF(options,callback)     | -                                                                                                                  |
 | win.on(event,callback)                           | close、resize、move、focus、blur、unresponsive,responsive                                                          |
 | win.once(event,callback)                         |                                                                                                                    |
-| win.loadURL()                                    | -                                                                                                                  |
-| win.show()                                       | -                                                                                                                  |
-| win.reload()                                     | -                                                                                                                  |
-| win.close()                                      | -                                                                                                                  |
-| win.id                                           | 当前窗口序号，主窗口为1                                                                                            |
-| win.setFullScreen()                              | -                                                                                                                  |
-| win.isFullScreen()                               | -                                                                                                                  |
 | win.toggleDevTools()                             | -                                                                                                                  |
 | -                                                | -                                                                                                                  |
 | BrowserWindow.getallwindows()                    | 返回 BrowserWindow[] - 所有打开的窗口的数组                                                                        |
