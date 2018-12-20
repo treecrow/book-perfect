@@ -19,6 +19,7 @@
   - [File](chapters/electronApi/File.md)
   - [globalShortcut](chapters/electronApi/globalShortcut.md)
   - [inAppPurchase](chapters/electronApi/inAppPurchase.md)
+  - [IncomingMessage](chapters/electronApi/IncomingMessage.md)
   - [session](chapters/electronApi/session.md)
   - [webContents](chapters/electronApi/webContents.md)
   - [支持的Chrome命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
