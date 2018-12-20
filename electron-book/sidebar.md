@@ -30,6 +30,7 @@
   - [Notification](chapters/electronApi/Notification.md)
   - [powerMonitor](chapters/electronApi/powerMonitor.md)
   - [powerSaveBlocker](chapters/electronApi/powerSaveBlocker.md)
+  - [process](chapters/electronApi/process.md)
   - [session](chapters/electronApi/session.md)
   - [webContents](chapters/electronApi/webContents.md)
   - [支持的Chrome命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
@@ -37,5 +38,4 @@
   
 ---
 
-- [process](chapters/process.md)
 - [sqlite](chapters/sqlite.md)
