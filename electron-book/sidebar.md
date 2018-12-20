@@ -37,6 +37,7 @@
   - [session](chapters/electronApi/session.md)
   - [shell](chapters/electronApi/shell.md)
   - [systemPreferences](chapters/electronApi/systemPreferences.md)
+  - [Tray](chapters/electronApi/Tray.md)
   - [webContents](chapters/electronApi/webContents.md)
   - [支持的Chrome命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
   - [环境变量](chapters/electronApi/环境变量.md)
