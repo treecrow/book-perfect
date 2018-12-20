@@ -22,6 +22,7 @@
   - [IncomingMessage](chapters/electronApi/IncomingMessage.md)
   - [ipcMain](chapters/electronApi/ipcMain.md)
   - [ipcRenderer](chapters/electronApi/ipcRenderer.md)
+  - [Menu](chapters/electronApi/Menu.md)
   - [session](chapters/electronApi/session.md)
   - [webContents](chapters/electronApi/webContents.md)
   - [支持的Chrome命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
