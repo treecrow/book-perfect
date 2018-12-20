@@ -47,7 +47,6 @@
   - [docsify](chapters/moudles/docsify.md)
   - [gitbook](chapters/moudles/gitbook.md)
   - [koa](chapters/moudles/koa.md)
-  - [nrm](chapters/moudles/nrm.md)
   - [nvm](chapters/moudles/nvm.md)
 
 ---
