@@ -13,33 +13,7 @@
 | [demo](https://electron.org.cn/demo.html)                                            | -                                                                                     |
 | [electron-forge](https://github.com/electron-userland/electron-forge)                | A complete tool for creating, publishing, and installing modern Electron applications |
 
-| key             | api                                          | more                 |
-| --------------- | -------------------------------------------- | -------------------- |
-| globalShortcut  | globalShortcut.register(shortKey,callBack)   | 注册快捷键           |
-| ~               | globalShortcut.unregisterAll()               |
-| remote.dialog   | dialog.showMessageBox(options,callback)      |
-| ~               | dialog.showOpenDialog(options,callback)      |
-| ~               | dialog.showErrorBox()                        |
-| Menu            | -                                            |
-| ~               | Menu.getApplicationMenu()                    |
-| ~               | Menu.buildFromTemplate(template)             |
-| ~               | Menu.setApplicationMenu(menu)                |
-| ~               | menu.append()                                |
-| ~               | menu.popup()                                 |
-| MenuItem        | -                                            |
-| shell           | shell.openExternal(url)                      |
-| ~               | shell.showItemInFolder()                     |
-| autoUpdater     | autoUpdater.checkForUpdates()                |
-| ~               | autoUpdater.quitAndInstall()                 |
-| ipcMain         | -                                            |
-| ~               | ipc.on(event,callback)                       | show-context-menu、  |
-| ipcRenderer     | -                                            |
-| ~               | ipc.send(msg)                                |
-| ~               | ipc.on(event)                                | selected-directory、 |
-| Tray            | -                                            |
-| screen          | screen.getPrimaryDisplay().size              |
-| ~               | screen.getPrimaryDisplay().workAreaSize      |
-| ~               | screen.getPrimaryDisplay().workArea          |
-| clipboard       | clipboard.writeText()                        |
-| ~               | clipboard.readText()                         |
-| desktopCapturer | desktopCapturer.getSources(options,callback) |
+| key   | api                      |
+| ----- | ------------------------ |
+| shell | shell.openExternal(url)  |
+| ~     | shell.showItemInFolder() |
