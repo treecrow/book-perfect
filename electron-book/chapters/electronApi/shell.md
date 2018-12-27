@@ -1,4 +1,4 @@
-# shell
+# [shell](https://www.electronjs.cn/docs/api/shell)
 
 > 使用默认应用程序管理文件和 url。
 

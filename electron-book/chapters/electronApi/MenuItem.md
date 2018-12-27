@@ -1,4 +1,4 @@
-# MenuItem
+# [MenuItem](https://www.electronjs.cn/docs/api/menu-item)
 
 > 添加菜单项到应用程序菜单和上下文菜单中
 

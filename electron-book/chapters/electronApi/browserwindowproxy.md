@@ -1,4 +1,4 @@
-# browserwindowproxy
+# [browserwindowproxy](https://www.electronjs.cn/docs/api/browser-window-proxy)
 
 > 操纵子浏览器窗口
 

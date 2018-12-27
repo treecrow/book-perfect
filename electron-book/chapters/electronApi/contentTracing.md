@@ -1,4 +1,4 @@
-# contentTracing
+# [contentTracing](https://www.electronjs.cn/docs/api/content-tracing)
 
 > 从Chromium的内容模块收集跟踪数据，以查找性能瓶颈和缓慢的操作
 

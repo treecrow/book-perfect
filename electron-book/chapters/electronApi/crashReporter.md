@@ -1,4 +1,4 @@
-# crashReporter
+# [crashReporter](https://www.electronjs.cn/docs/api/crash-reporter)
 
 > 将崩溃日志提交给远程服务器
 

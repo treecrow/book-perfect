@@ -1,4 +1,4 @@
-# netLog
+# [netLog](https://www.electronjs.cn/docs/api/net-log)
 
 > Logging network events.
 
