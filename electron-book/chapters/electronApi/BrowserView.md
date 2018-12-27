@@ -1,4 +1,4 @@
-# BrowserView(类)
+# [BrowserView(类)](https://www.electronjs.cn/docs/api/browser-view)
 
 > 创建和控制视图
 

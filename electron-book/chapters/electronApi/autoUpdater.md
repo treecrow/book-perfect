@@ -1,4 +1,4 @@
-# autoUpdater
+# [autoUpdater](https://www.electronjs.cn/docs/api/auto-updater)
 
 > 使应用程序能够自动更新
 
