@@ -26,6 +26,7 @@
   - [echo](chapters/命令整理/echo.md)
   - [IO 重定向](chapters/命令整理/IO重定向.md)
   - [shell 工具](chapters/命令整理/shell工具.md)
+  - [包管理](chapters/命令整理/包管理.md)
   - [命令](chapters/命令整理/命令.md)
   - [安全连接](chapters/命令整理/安全连接.md)
   - [文件](chapters/命令整理/文件.md)
@@ -46,4 +47,6 @@
   - [vim](chapters/命令行工具/vim.md)
 
 - [阿里云](chapters/阿里云/README.md)
+  - [翻墙](chapters/阿里云/翻墙.md)
+  - [远程连接](chapters/阿里云/远程连接.md)
   - [阿里云重置](chapters/阿里云/阿里云重置.md)
