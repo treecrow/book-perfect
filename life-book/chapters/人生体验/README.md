@@ -9,7 +9,7 @@ presentation:
   # Loop the presentation
   loop: true
   # 自动播放
-  # autoSlide: 500
+  autoSlide: 2000
   # Transition speed
   transitionSpeed: 'slow'
 
