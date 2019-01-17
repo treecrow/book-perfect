@@ -1,4 +1,8 @@
-# 软件列表
+# software
+
+> 计算机软件整理
+
+## 软件列表
 
 - [appked(破解软件))](https://www.macbed.com/)
 - [MacX](http://soft.macx.cn/index.htm)
