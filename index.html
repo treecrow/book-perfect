@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>docsify-books</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>docsify-books</title>
-  <link rel="stylesheet" href="./index.css">
-</head>
+  <body>
+    <!-- 前端技术 -->
+    <h2 class="area-title">前端技术</h2>
+    <div id="fontEndVessel"><!-- todo --></div>
 
-<body>
+    <!-- 计算机技术 -->
+    <h2 class="area-title">计算机技术</h2>
+    <div id="computerVessel"><!-- todo --></div>
 
-  <!-- 前端技术 -->
-  <h2 class="area-title">前端技术</h2>
-  <div id="fontEndVessel">
-    <!-- todo -->
-  </div>
+    <!-- 扩展 -->
+    <h2 class="area-title">扩展</h2>
+    <div id="expandVessel"><!-- todo --></div>
 
-  <!-- 计算机技术 -->
-  <h2 class="area-title">计算机技术</h2>
-  <div id="computerVessel">
-    <!-- todo -->
-  </div>
-
-  <!-- 扩展 -->
-  <h2 class="area-title">扩展</h2>
-  <div id="expandVessel">
-    <!-- todo -->
-  </div>
-
-  <!-- book 模板 -->
-  <script type="text/template" id="bookTpl">
-    <ul class="unstyle-list flex">
-      {{ each $data as book index}}
-        <li class="flex-cell padding">
-          <a href="{{book.href}}">
-            <div class="book-wrap">
-              <div class="book-cover">
-                {{book.name}}
+    <!-- book 模板 -->
+    <script type="text/template" id="bookTpl">
+      <ul class="unstyle-list flex">
+        {{ each $data as book index}}
+          <li class="flex-cell padding">
+            <a href="{{book.href}}">
+              <div class="book-wrap">
+                <div class="book-cover">
+                  {{book.name}}
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-      {{/each}}
-    </ul>
-  </script>
-  
-  <!-- template -->
-  <script src="./template-web.js"></script>
-  <script>
-    // 前端技术
-    document.getElementById('fontEndVessel').innerHTML = template("bookTpl", [
-      { href: "css-book", name: "css" },
-      { href: "js-book", name: "javascript" },
-      { href: "vue-book", name: "vue" },
-      { href: "small-book", name: "小程序" },
-      { href: "electron-book", name: "electron" },
-      { href: "node-book", name: "nodeJs" },
-      { href: "python-book", name: "python" },
-    ]);
-    // 计算机基础
-    document.getElementById('computerVessel').innerHTML = template("bookTpl", [
-      { href: "google-book", name: "google" },
-      { href: "mac-book", name: "mac" },
-      { href: "linux-book", name: "linux" },
-      { href: "windows-book", name: "windows" },
-      { href: "network-book", name: "网络" },
-    ]);
-    // 更多
-    document.getElementById('expandVessel').innerHTML = template("bookTpl", [
-      { href: "life-book", name: "life" },
-      { href: "codeWord-book", name: "码字" },
-    ]);
-  </script>
-</body>
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </script>
 
+    <!-- template -->
+    <script src="./template-web.js"></script>
+    <script>
+      // 前端技术
+      document.getElementById("fontEndVessel").innerHTML = template("bookTpl", [
+        { href: "css-book", name: "css" },
+        { href: "js-book", name: "javascript" },
+        { href: "vue-book", name: "vue" },
+        { href: "small-book", name: "小程序" },
+        { href: "electron-book", name: "electron" },
+        { href: "node-book", name: "nodeJs" },
+        { href: "python-book", name: "python" }
+      ]);
+      // 计算机基础
+      document.getElementById("computerVessel").innerHTML = template(
+        "bookTpl",
+        [
+          { href: "google-book", name: "google" },
+          { href: "mac-book", name: "mac" },
+          { href: "linux-book", name: "linux" },
+          { href: "windows-book", name: "windows" },
+          { href: "network-book", name: "网络" }
+        ]
+      );
+      // 更多
+      document.getElementById("expandVessel").innerHTML = template("bookTpl", [
+        { href: "life-book", name: "life" }
+      ]);
+    </script>
+  </body>
 </html>
