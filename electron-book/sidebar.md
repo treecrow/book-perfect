@@ -1,5 +1,14 @@
 - [首页](README.md)
 
+- [dep-moudles](chapters/dep-moudles/README.md)
+  - [vuex-electron](chapters/dep-moudles/vuex-electron.md)
+
+- [dev-moudles](chapters/dev-moudles/README.md)
+  - [electron-builder](chapters/dev-moudles/electron-builder.md)
+  - [electron-compile](chapters/dev-moudles/electron-compile.md)
+  - [electron-forge](chapters/dev-moudles/electron-forge.md)
+  - [electron-packager](chapters/dev-moudles/electron-packager.md)
+
 - [electronApi](chapters/electronApi/README.md)
 
   - [app](chapters/electronApi/app.md)
