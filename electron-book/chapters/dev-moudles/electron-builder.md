@@ -74,6 +74,10 @@
 | generateUpdatesFilesForAllChannels | -    |
 | releaseInfo                        | -    |
 
+## publish
+
+> The publish key contains a set of options instructing electron-builder on how it should publish artifacts and build update info files for auto update
+
 ## nsis
 
 | 分类   | key                                | more                                                                                                                                              |
