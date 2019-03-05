@@ -26,6 +26,7 @@
   - [echo](chapters/命令整理/echo.md)
   - [IO 重定向](chapters/命令整理/IO重定向.md)
   - [shell 工具](chapters/命令整理/shell工具.md)
+  - [加密解密](chapters/命令整理/加密解密.md)
   - [包管理](chapters/命令整理/包管理.md)
   - [命令](chapters/命令整理/命令.md)
   - [安全连接](chapters/命令整理/安全连接.md)
