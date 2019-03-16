@@ -1,4 +1,4 @@
-# [downloaditem](https://www.electronjs.cn/docs/api/download-item)
+# [downloaditem](https://electronjs.org/docs/api/download-item)
 
 > 控制来自于远程资源的文件下载
 

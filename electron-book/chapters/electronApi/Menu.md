@@ -1,4 +1,4 @@
-# [Menu](https://www.electronjs.cn/docs/api/menu)
+# [Menu](https://electronjs.org/docs/api/menu)
 
 > 创建原生应用菜单和上下文菜单。
 

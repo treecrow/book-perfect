@@ -1,4 +1,4 @@
-# [Tray](https://www.electronjs.cn/docs/api/tray)
+# [Tray](https://electronjs.org/docs/api/tray)
 
 > 添加图标和上下文菜单到系统通知区
 

@@ -1,4 +1,4 @@
-# [Debugger](https://www.electronjs.cn/docs/api/debugger)
+# [Debugger](https://electronjs.org/docs/api/debugger)
 
 > 用于 Chrome 远程调试协议的备用传输。
 

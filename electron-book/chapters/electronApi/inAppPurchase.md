@@ -1,4 +1,4 @@
-# [inAppPurchase](https://www.electronjs.cn/docs/api/in-app-purchase)
+# [inAppPurchase](https://electronjs.org/docs/api/in-app-purchase)
 
 > Mac App Store中的应用内购买
 

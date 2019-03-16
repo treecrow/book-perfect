@@ -1,4 +1,4 @@
-# [ipcRenderer](https://www.electronjs.cn/docs/api/ipc-renderer)
+# [ipcRenderer](https://electronjs.org/docs/api/ipc-renderer)
 
 > 从渲染器进程到主进程的异步通信
 

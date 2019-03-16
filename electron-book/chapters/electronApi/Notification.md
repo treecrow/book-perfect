@@ -1,4 +1,4 @@
-# [Notification](https://www.electronjs.cn/docs/api/notification)
+# [Notification](https://electronjs.org/docs/api/notification)
 
 > 创建OS(操作系统)桌面通知
 

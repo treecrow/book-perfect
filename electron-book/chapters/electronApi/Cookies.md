@@ -1,4 +1,4 @@
-# [Cookies](https://www.electronjs.cn/docs/api/cookies)
+# [Cookies](https://electronjs.org/docs/api/cookies)
 
 > 查询和修改一个会话的cookies
 

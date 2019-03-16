@@ -1,4 +1,4 @@
-# [session](https://www.electronjs.cn/docs/api/session)
+# [session](https://electronjs.org/docs/api/session)
 
 > 管理浏览器会话、cookie、缓存、代理设置等
 

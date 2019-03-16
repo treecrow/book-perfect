@@ -1,4 +1,4 @@
-# [process](https://www.electronjs.cn/docs/api/process)
+# [process](https://electronjs.org/docs/api/process)
 
 > 处理对象的扩展
 

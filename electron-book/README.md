@@ -7,8 +7,8 @@
 | 文档                                                                                 | more                                                                                                     |
 | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | [Electron gitbook](https://wizardforcel.gitbooks.io/electron-doc/content/index.html) | -                                                                                                        |
-| [electron 中文网](https://electron.org.cn/)                                          | -                                                                                                        |
-| [Electron 文档](https://www.electronjs.cn/docs)                                      | -                                                                                                        |
+| [electron 中文网](https://electron.org/)                                          | -                                                                                                        |
+| [Electron 文档](https://electronjs.org/docs)                                      | -                                                                                                        |
 | Electron API Demos app                                                               | 交互式展示 Electron 的大多数重要的 API                                                                   |
 | [demo](https://electron.org.cn/demo.html)                                            | -                                                                                                        |
 | [electron-packager](https://github.com/electron-userland/electron-packager)          | Package your Electron app into OS-specific bundles (.app, .exe, etc.) via JavaScript or the command line |

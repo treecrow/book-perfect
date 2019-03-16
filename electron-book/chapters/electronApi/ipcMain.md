@@ -1,4 +1,4 @@
-# [ipcMain](https://www.electronjs.cn/docs/api/ipc-main)
+# [ipcMain](https://electronjs.org/docs/api/ipc-main)
 
 > 从主进程到渲染进程的异步通信
 

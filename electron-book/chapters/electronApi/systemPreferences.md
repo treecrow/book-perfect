@@ -1,4 +1,4 @@
-# [systemPreferences](https://www.electronjs.cn/docs/api/system-preferences)
+# [systemPreferences](https://electronjs.org/docs/api/system-preferences)
 
 > 获取system preferences.
 

@@ -1,4 +1,4 @@
-# [IncomingMessage](https://www.electronjs.cn/docs/api/incoming-message)
+# [IncomingMessage](https://electronjs.org/docs/api/incoming-message)
 
 > 处理 HTTP/HTTPS 请求的响应。
 

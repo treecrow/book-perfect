@@ -1,4 +1,4 @@
-# [protocol](https://www.electronjs.cn/docs/api/protocol)
+# [protocol](https://electronjs.org/docs/api/protocol)
 
 > 注册自定义协议并拦截基于现有协议的请求
 

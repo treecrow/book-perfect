@@ -1,4 +1,4 @@
-# [app](https://www.electronjs.cn/docs/api/app)
+# [app](https://electronjs.org/docs/api/app)
 
 > 控制你的应用程序的事件生命周期
 

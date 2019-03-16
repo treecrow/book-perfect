@@ -1,4 +1,4 @@
-# [WebRequest](https://www.electronjs.cn/docs/api/web-request)
+# [WebRequest](https://electronjs.org/docs/api/web-request)
 
 > 在一个请求生命周期的不同阶段，截取和修改其内容。
 

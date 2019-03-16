@@ -1,4 +1,4 @@
-# [支持的Chrome命令行开关](https://www.electronjs.cn/docs/api/chrome-command-line-switches)
+# [支持的Chrome命令行开关](https://electronjs.org/docs/api/chrome-command-line-switches)
 
 > 您可以在app 模块的ready事件生效之前，使用app.commandLine.appendSwitch将它们附加到您的应用程序的主要脚本中
 

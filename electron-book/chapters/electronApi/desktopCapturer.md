@@ -1,4 +1,4 @@
-# [desktopCapturer](https://www.electronjs.cn/docs/api/desktop-capturer)
+# [desktopCapturer](https://electronjs.org/docs/api/desktop-capturer)
 
 > ...
 

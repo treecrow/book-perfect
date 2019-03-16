@@ -1,4 +1,4 @@
-# [BrowserWindow(类)](https://www.electronjs.cn/docs/api/browser-window)
+# [BrowserWindow(类)](https://electronjs.org/docs/api/browser-window)
 
 > 创建和控制浏览器窗口
 

@@ -1,4 +1,4 @@
-# [powerSaveBlocker](https://www.electronjs.cn/docs/api/power-save-blocker)
+# [powerSaveBlocker](https://electronjs.org/docs/api/power-save-blocker)
 
 > 阻止系统进入低功耗 (休眠) 模式
 

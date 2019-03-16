@@ -1,4 +1,4 @@
-# [globalShortcut](https://www.electronjs.cn/docs/api/global-shortcut)
+# [globalShortcut](https://electronjs.org/docs/api/global-shortcut)
 
 > 当应用程序没有键盘焦点时监听全局键盘事件
 

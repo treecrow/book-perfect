@@ -1,4 +1,4 @@
-# [powerMonitor](https://www.electronjs.cn/docs/api/power-monitor)
+# [powerMonitor](https://electronjs.org/docs/api/power-monitor)
 
 > 监视电源状态的改变
 

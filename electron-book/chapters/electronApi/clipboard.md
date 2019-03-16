@@ -1,4 +1,4 @@
-# [clipboard](https://www.electronjs.cn/docs/api/clipboard)
+# [clipboard](https://electronjs.org/docs/api/clipboard)
 
 > 在系统剪贴板上执行复制和粘贴操作
 

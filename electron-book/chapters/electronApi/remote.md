@@ -1,4 +1,4 @@
-# [remote](https://www.electronjs.cn/docs/api/remote)
+# [remote](https://electronjs.org/docs/api/remote)
 
 > 在渲染进程中使用主进程模块
 

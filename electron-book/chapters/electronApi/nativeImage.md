@@ -1,4 +1,4 @@
-# [nativeImage](https://www.electronjs.cn/docs/api/native-image)
+# [nativeImage](https://electronjs.org/docs/api/native-image)
 
 ## api 列表
 

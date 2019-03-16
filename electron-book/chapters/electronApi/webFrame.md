@@ -1,4 +1,4 @@
-# [webFrame](https://www.electronjs.cn/docs/api/web-frame)
+# [webFrame](https://electronjs.org/docs/api/web-frame)
 
 > 自定义渲染当前网页
 

@@ -1,4 +1,4 @@
-# [dialog](https://www.electronjs.cn/docs/api/dialog)
+# [dialog](https://electronjs.org/docs/api/dialog)
 
 > 显示用于打开和保存文件、警报等的本机系统对话框
 

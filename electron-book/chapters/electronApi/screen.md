@@ -1,4 +1,4 @@
-# [screen](https://www.electronjs.cn/docs/api/screen)
+# [screen](https://electronjs.org/docs/api/screen)
 
 > 检索有关屏幕大小、显示器、光标位置等的信息
 
