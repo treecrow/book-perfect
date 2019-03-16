@@ -1,3 +1,0 @@
-# [vuex-electron](https://github.com/vue-electron/vuex-electron)
-
-> ...

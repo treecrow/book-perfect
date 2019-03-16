@@ -1,9 +1,7 @@
 - [首页](README.md)
 
-- [dep-moudles](chapters/dep-moudles/README.md)
-  - [vuex-electron](chapters/dep-moudles/vuex-electron.md)
-
 - [dev-moudles](chapters/dev-moudles/README.md)
+
   - [electron-builder](chapters/dev-moudles/electron-builder.md)
   - [electron-compile](chapters/dev-moudles/electron-compile.md)
   - [electron-forge](chapters/dev-moudles/electron-forge.md)
@@ -50,9 +48,5 @@
   - [webContents](chapters/electronApi/webContents.md)
   - [webFrame](chapters/electronApi/webFrame.md)
   - [WebRequest](chapters/electronApi/WebRequest.md)
-  - [支持的Chrome命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
+  - [支持的 Chrome 命令行开关](chapters/electronApi/支持的Chrome命令行开关.md)
   - [环境变量](chapters/electronApi/环境变量.md)
-  
----
-
-- [sqlite](chapters/sqlite.md)
