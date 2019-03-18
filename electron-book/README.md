@@ -4,6 +4,6 @@
 
 ## 相关文档
 
-- [Electron gitbook](https://wizardforcel.gitbooks.io/electron-doc/content/index.html)
 - [Electron 文档](https://electronjs.org/docs)
+- [awesome-electron](https://github.com/sindresorhus/awesome-electron)
 - [electron-vue gitbook](https://simulatedgreg.gitbooks.io/electron-vue/content/cn/)
