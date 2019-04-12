@@ -107,10 +107,6 @@
     - [递归](chapters/面试题/js/递归.md)
     - [闭包](chapters/面试题/js/闭包.md)
   - [vue](chapters/面试题/vue/README.md)
-  - [工程](chapters/面试题/工程/README.md)
-    - [SEO](chapters/面试题/工程/SEO.md)
-    - [前后端开发协作模式](chapters/面试题/工程/前后端开发协作模式.md)
-    - [性能优化](chapters/面试题/工程/性能优化.md)
 
 ---
 

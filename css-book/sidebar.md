@@ -18,3 +18,10 @@
 - [tool](chapters/tool.md)
 - [级别](chapters/级别.md)
 - [选择器](chapters/选择器.md)
+
+---
+
+- [组件](chapters/组件/README.md)
+  - [seo](chapters/组件/seo.md)
+  - [性能优化](chapters/组件/性能优化.md)
+  - [渐进增强](chapters/组件/渐进增强.md)
