@@ -5,6 +5,7 @@
 - [Docs](chapters/Docs/README.md)
 
   - [assert 断言](chapters/Docs/assert.md)
+  - [async_hooks](chapters/Docs/async_hooks.md)
   - [buffer](chapters/Docs/buffer.md)
   - [c 插件](chapters/Docs/c插件.md)
   - [childProcesses 子进程](chapters/Docs/childProcesses.md)
