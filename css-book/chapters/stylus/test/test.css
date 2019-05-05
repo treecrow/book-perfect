@@ -1,0 +1,15 @@
+.btn {
+  font-size: 16px;
+}
+[data-theme = 'light'] .btn {
+  color: #f0b310;
+}
+[data-theme = 'dark'] .btn {
+  color: #dac087;
+}
+[data-theme = 'light'] .btn {
+  color: #fff;
+}
+[data-theme = 'dark'] .btn {
+  color: #4f3a19;
+}

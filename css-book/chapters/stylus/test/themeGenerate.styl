@@ -1,0 +1,23 @@
+// ========== themeGenerate ==========
+themeGenerate(attr, value) {
+  [data-theme = 'light'] & {
+    {attr}: value[0];
+  }
+
+  [data-theme = 'dark'] & {
+    {attr}: value[1];
+  }
+}
+
+btnBgColor() {
+  themeGenerate('background-color', #F0B310 #DAC087);
+}
+
+btnColor() {
+  themeGenerate('color', #fff #4F3A19);
+}
+
+.btn {
+  btnBgColor();
+  btnColor();
+}
