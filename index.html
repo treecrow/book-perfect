@@ -17,7 +17,7 @@
 
     <!-- 扩展 -->
     <h2 class="area-title">扩展</h2>
-    <div id="expandVessel"><!-- todo --></div>
+    <div id="workVessel"><!-- todo --></div>
 
     <!-- book 模板 -->
     <script type="text/template" id="bookTpl">
@@ -48,14 +48,14 @@
         { href: "small-book", name: "小程序" },
         { href: "electron-book", name: "electron" },
       ]);
-      // 后端技术(计算机)
-      document.getElementById("fontEndVessel").innerHTML = template("bookTpl", [
+      // 计算机技术(后端)
+      document.getElementById("computerVessel").innerHTML = template("bookTpl", [
         { href: "python-book", name: "python" },
         { href: "linux-book", name: "linux" },
         { href: "network-book", name: "网络" },
       ]);
-      // 杂项
-      document.getElementById("computerVessel").innerHTML = template(
+      // 工作
+      document.getElementById("workVessel").innerHTML = template(
         "bookTpl",
         [
           { href: "efficient-book", name: "efficient" },
