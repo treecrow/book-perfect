@@ -1,4 +1,4 @@
-# README
+# Docsify-book
 
 > This is a project that uses [docsify](https://github.com/docsifyjs/docsify) to sum things up.
 
