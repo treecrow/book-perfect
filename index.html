@@ -43,21 +43,23 @@
       document.getElementById("fontEndVessel").innerHTML = template("bookTpl", [
         { href: "css-book", name: "css" },
         { href: "js-book", name: "javascript" },
+        { href: "node-book", name: "nodeJs" },
         { href: "vue-book", name: "vue" },
         { href: "small-book", name: "小程序" },
         { href: "electron-book", name: "electron" },
-        { href: "node-book", name: "nodeJs" },
-        { href: "python-book", name: "python" }
       ]);
-      // 计算机基础
+      // 后端技术(计算机)
+      document.getElementById("fontEndVessel").innerHTML = template("bookTpl", [
+        { href: "python-book", name: "python" },
+        { href: "linux-book", name: "linux" },
+        { href: "network-book", name: "网络" },
+      ]);
+      // 杂项
       document.getElementById("computerVessel").innerHTML = template(
         "bookTpl",
         [
+          { href: "efficient-book", name: "efficient" },
           { href: "google-book", name: "google" },
-          { href: "mac-book", name: "mac" },
-          { href: "linux-book", name: "linux" },
-          { href: "windows-book", name: "windows" },
-          { href: "network-book", name: "网络" }
         ]
       );
     </script>
