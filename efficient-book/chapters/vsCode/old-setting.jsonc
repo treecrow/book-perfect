@@ -1,0 +1,22 @@
+{
+  "beautify.tabSize": 2, // Beautify css/sass/scss/less
+  "sync.gist": "907baeaf1cf56650363e82b178f83cb2", // Settings Sync
+  "sync.lastUpload": "2018-08-23T06:25:25.408Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": true,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "git.enableSmartCommit": true, // git
+  "vetur.validation.template": false, // vetur
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "terminal.integrated.rendererType": "dom"
+}

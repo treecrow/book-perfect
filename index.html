@@ -7,7 +7,6 @@
   </head>
 
   <body>
-
     <!-- 计算机技术 -->
     <h2 class="area-title">计算机技术</h2>
     <div id="computerVessel"><!-- todo --></div>
@@ -41,15 +40,18 @@
     <script src="./template-web.js"></script>
     <script>
       // 计算机技术(后端)
-      document.getElementById("computerVessel").innerHTML = template("bookTpl", [
-        { href: "python-book", name: "python" },
-        { href: "linux-book", name: "linux" },
-        { href: "network-book", name: "网络" },
-      ]);
+      document.getElementById("computerVessel").innerHTML = template(
+        "bookTpl",
+        [
+          { href: "python-book", name: "python" },
+          { href: "linux-book", name: "linux" },
+          { href: "network-book", name: "网络" }
+        ]
+      );
       // 工作
       document.getElementById("workVessel").innerHTML = template("bookTpl", [
         { href: "efficient-book", name: "efficient" },
-        { href: "google-book", name: "google" },
+        { href: "google-book", name: "google" }
       ]);
       // 前端技术
       document.getElementById("fontEndVessel").innerHTML = template("bookTpl", [
@@ -58,7 +60,7 @@
         { href: "node-book", name: "nodeJs" },
         { href: "vue-book", name: "vue" },
         { href: "small-book", name: "小程序" },
-        { href: "electron-book", name: "electron" },
+        { href: "electron-book", name: "electron" }
       ]);
     </script>
   </body>
