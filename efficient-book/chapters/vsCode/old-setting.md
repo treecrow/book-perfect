@@ -1,22 +1,7 @@
-# setting
+# old-setting
 
 ```json
 {
-  // window
-  "window.zoomLevel": 0,
-  // terminal
-  "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.shell.windows": "cmd.exe",
-  "terminal.integrated.shellArgs.windows": [
-    "/k",
-    "C:\\softwares\\cmder\\vendor\\init.bat"
-  ],
-  "editor.tabSize": 2,
-  // extensions
-  "extensions.ignoreRecommendations": true,
-  // workbench
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile",
   // Beautify css/sass/scss/less
   "beautify.tabSize": 2,
   // Settings Sync
@@ -34,11 +19,7 @@
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   // git
-  "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "git.autofetch": true,
-  // javascript
-  "javascript.updateImportsOnFileMove.enabled": "always",
   // vetur
   "vetur.validation.template": false,
   "editor.quickSuggestions": {
