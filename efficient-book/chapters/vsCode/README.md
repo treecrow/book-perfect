@@ -3,7 +3,6 @@
 ## 参考文档
 
 * [Microsoft Visual Studio Code 中文手册](https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/)
-* [VS Code extensions](https://marketplace.visualstudio.com/VSCode)
 * [mermaid](https://mermaidjs.github.io)
 
 ## vsCode 重置
@@ -13,7 +12,7 @@
 3. 安装配置扩展
 4. 安装 code
 
-# 扩展
+# [vsCode 扩展](https://marketplace.visualstudio.com/VSCode)
 
 | 扩展                                                                                                                                                    | more                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |

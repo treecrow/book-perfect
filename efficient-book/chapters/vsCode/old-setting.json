@@ -1,6 +1,3 @@
-# old-setting
-
-```json
 {
   // Beautify css/sass/scss/less
   "beautify.tabSize": 2,
@@ -33,5 +30,3 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   }
 }
-
-```
