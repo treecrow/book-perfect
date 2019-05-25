@@ -4,6 +4,7 @@
 
 - [Microsoft Visual Studio Code 中文手册](https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/)
 - [mermaid](https://mermaidjs.github.io)
+- [vscode 瞎折腾记](https://www.cnblogs.com/zwfymqz/p/10070264.html)
 
 ## vsCode 重置
 
