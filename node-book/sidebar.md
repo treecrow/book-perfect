@@ -43,15 +43,6 @@
 
 ---
 
-- [moudles](chapters/moudles/README.md)
-
-  - [docsify](chapters/moudles/docsify.md)
-  - [gitbook](chapters/moudles/gitbook.md)
-  - [koa](chapters/moudles/koa.md)
-  - [nvm](chapters/moudles/nvm.md)
-
----
-
 - [npm](chapters/npm/README.md)
 
   - [npm scripts](chapters/npm/npmScripts.md)
