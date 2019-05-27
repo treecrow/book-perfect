@@ -14,11 +14,12 @@
 | 通用工具     | [在线工具](https://tool.lu/)                  | 在线运行代码、                                                |
 | ~            | [jsbin](http://jsbin.com/?js,console,output)  | 在线运行前端代码                                              |
 | ~            | [bootcdn](http://www.bootcdn.cn/)             | cdn 库                                                        |
-| ~            | [httptest](http://www.atool.org/httptest.php) | 在线HTTP POST/GET接口测试工具                                 |
+| ~            | [httptest](http://www.atool.org/httptest.php) | 在线 HTTP POST/GET 接口测试工具                               |
+| ~            | [regex101](https://regex101.com/)             | 在线正则表达式开发                                            |
 
 ## 生活
 
-| class  | web                              | more                       |
-| ------ | -------------------------------- | -------------------------- |
-| 找资源 | [网盘搜索](http://pansou.com/)   | 一款质量很高的网盘搜索软件 |
-| ~      | [btkitty](http://btkittygo.com/) | BT种子搜索神器、下载利器。 |
+| class  | web                              | more                        |
+| ------ | -------------------------------- | --------------------------- |
+| 找资源 | [网盘搜索](http://pansou.com/)   | 一款质量很高的网盘搜索软件  |
+| ~      | [btkitty](http://btkittygo.com/) | BT 种子搜索神器、下载利器。 |
