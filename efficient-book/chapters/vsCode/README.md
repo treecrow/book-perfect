@@ -12,7 +12,7 @@
 2. 修改默认配置项目
 3. 安装配置扩展
 4. 安装 code
-5. 设置快捷键
+5. 快捷键梳理
 
 # [vsCode 扩展](https://marketplace.visualstudio.com/VSCode)
 
