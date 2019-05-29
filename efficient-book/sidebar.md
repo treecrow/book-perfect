@@ -12,11 +12,14 @@
   - [Postman](chapters/software/Postman.md)
 
 - [vsCode](chapters/vsCode/README.md)
+  - [code](chapters/vsCode/code.md)
+  - [代码片段](chapters/vsCode/代码片段.md)
   - [任务](chapters/vsCode/任务.md)
   - [命令面板](chapters/vsCode/命令面板.md)
   - [快捷键](chapters/vsCode/快捷键.md)
   - [扩展](chapters/vsCode/扩展.md)
   - [设置](chapters/vsCode/设置.md)
+  - [调试](chapters/vsCode/调试.md)
 
 - [LaTeX](chapters/LaTeX.md)
 - [markdown](chapters/markdown.md)
