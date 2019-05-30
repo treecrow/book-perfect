@@ -26,23 +26,4 @@
 | [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)                                                   | 支持 markdown 格式化 / TOC / 导出 html / Math（自动补全）                                                               |
 | [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)                                    | 导入文件 / 代码块运行 / LaTeX、幻灯片 / 导出 pdf、word、书籍、图片、html / 自定义预览样式 / TOC / 流程图、时序图 / 脚注 |
 | [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)                                                           | 在浏览器中预览当前 html 文件                                                                                            |
-
-# sync
-
-```jsonc
-{
-  "sync.gist": "907baeaf1cf56650363e82b178f83cb2", // Settings Sync
-  "sync.lastUpload": "2018-08-23T06:25:25.408Z",
-  "sync.autoDownload": false,
-  "sync.autoUpload": true,
-  "sync.lastDownload": "",
-  "sync.forceDownload": false,
-  "sync.anonymousGist": false,
-  "sync.host": "",
-  "sync.pathPrefix": "",
-  "sync.quietSync": false,
-  "sync.askGistName": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true
-}
-```
+| [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)                                                            | -                                                                                                                       |
