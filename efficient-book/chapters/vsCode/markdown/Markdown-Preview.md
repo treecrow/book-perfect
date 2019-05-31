@@ -39,7 +39,8 @@
 
 - 代码
 
-  `code`
+  - `code`
+  - `` There is a literal backtick (`) here. ``
 
 - 代码块
 
@@ -84,7 +85,6 @@
 ## 小玩意
 
 - :smile:
-- :fa-car:
 - 30^th^
 - H~2~O
 - ==marked==
@@ -95,6 +95,13 @@ _[HTML]: Hyper Text Markup Language
 _[W3C]: World Wide Web Consortium
 The HTML specification
 is maintained by the W3C.
+
+## 标注
+
+I get 10 times more traffic from [Google][1] than from [Yahoo][] or [MSN](http://search.msn.com/ "MSN Search").
+
+[1]: http://google.com/ "Google Search"
+[yahoo]: http://search.yahoo.com/ "Yahoo Search"
 
 ## 脚注
 
