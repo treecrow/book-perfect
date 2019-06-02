@@ -281,3 +281,42 @@ digraph G {
   }
 }
 ```
+
+## matplotlib
+
+```python {cmd=true matplotlib=true}
+import matplotlib.pyplot as plt
+plt.plot([1,2,3, 4])
+plt.show() # show figure
+```
+
+## plotly
+
+@import "https://cdn.plot.ly/plotly-lastest.min.js"
+
+```javascript {cmd element="<div id='tester'></div>"}
+const tester = document.getElementById("tester");
+Plotly.plot(tester, [
+  {
+    x: [1, 2, 3, 4],
+    y: [1, 2, 3, 4]
+  },
+  {
+    margin: { t: 0 }
+  }
+]);
+```
+
+## gnuplot
+
+> 需要运行
+
+```gnuplot {cmd=true output="html"}
+set terminal svg
+set title "Simple Plots" font ",20"
+set key left box
+set samples 50
+set style data points
+
+plot [-10:10] sin(x),atan(x),cos(atan(x))
+```

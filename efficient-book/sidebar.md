@@ -17,8 +17,11 @@
 
   - [markdown](chapters/vsCode/markdown/README.md)
     - [chart](chapters/vsCode/markdown/chart.md)
+    - [import](chapters/vsCode/markdown/import.md)
     - [Markdown-Preview](chapters/vsCode/markdown/Markdown-Preview.md)
     - [math](chapters/vsCode/markdown/math.md)
+    - [ppt](chapters/vsCode/markdown/ppt.md)
+    - [代码块](chapters/vsCode/markdown/代码块.md)
   - [code](chapters/vsCode/code.md)
   - [代码片段](chapters/vsCode/代码片段.md)
   - [任务](chapters/vsCode/任务.md)
