@@ -2,13 +2,10 @@
 
 - [mac 自带命令](chapters/mac自带命令/README.md)
 
-  - [node 命令](chapters/mac自带命令/node命令.md)
-  - [超级用户指令](chapters/mac自带命令/超级用户指令.md)
-  - [普通命令](chapters/mac自带命令/普通命令.md)
-  - [后期安装的超级用户指令](chapters/mac自带命令/后期安装的超级用户指令.md)
-  - [后期安装的普通命令](chapters/mac自带命令/后期安装的普通命令.md)
-  - [个人安装的超级用户指令](chapters/mac自带命令/个人安装的超级用户指令.md)
-  - [个人安装的普通命令](chapters/mac自带命令/个人安装的普通命令.md)
+  - [bin](chapters/mac自带命令/bin.md)
+  - [sbin](chapters/mac自带命令/sbin.md)
+  - [usr_bin](chapters/mac自带命令/usr_bin.md)
+  - [usr_sbin](chapters/mac自带命令/usr_sbin.md)
 
 - [shell](chapters/shell/README.md)
 

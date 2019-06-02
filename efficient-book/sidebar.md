@@ -2,10 +2,10 @@
 
 - [macbook](chapters/macbook/README.md)
 
-  - [zsh](chapters/macbook/zsh.md)
   - [安装黑苹果](chapters/macbook/安装黑苹果.md)
   - [系统快捷键](chapters/macbook/系统快捷键.md)
   - [设置系统](chapters/macbook/设置系统.md)
+  - [路径](chapters/macbook/路径.md)
 
 - [software](chapters/software/README.md)
 
