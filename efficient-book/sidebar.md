@@ -27,7 +27,9 @@
   - [任务](chapters/vsCode/任务.md)
   - [命令面板](chapters/vsCode/命令面板.md)
   - [快捷键](chapters/vsCode/快捷键.md)
-  - [扩展](chapters/vsCode/扩展.md)
+  - [扩展](chapters/vsCode/README.md)
+    - [Markdown_Preview_Enhanced](chapters/vsCode/Markdown_Preview_Enhanced.md)
+    - [Python](chapters/vsCode/Python.md)
   - [设置](chapters/vsCode/设置.md)
   - [调试](chapters/vsCode/调试.md)
 
