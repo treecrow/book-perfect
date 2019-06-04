@@ -3,7 +3,6 @@
 | class  | web                                                                                                                  | more |
 | ------ | -------------------------------------------------------------------------------------------------------------------- | ---- |
 | github | [Python-100-Days](https://github.com/jackfrued/Python-100-Days)                                                      | -    |
-| vscode | [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)                  | -    |
 | 知乎   | [Python 常用库整理](https://zhuanlan.zhihu.com/p/21563130)                                                           | -    |
 | ~      | [你们都是怎么学 Python 的？](https://www.zhihu.com/question/55493026)                                                | -    |
 | ~      | [百道 Python 面试题实现，搞定 Python 编程就靠它](https://zhuanlan.zhihu.com/p/62144304)                              | -    |
