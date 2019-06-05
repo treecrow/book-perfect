@@ -26,6 +26,7 @@
 - [cli](chapters/cli.md)
 - [print](chapters/print.md)
 - [代码块](chapters/代码块.md)
-- [内置类](chapters/内置类.md)
 - [代码语句](chapters/代码语句.md)
+- [内置方法](chapters/内置方法.md)
+- [内置类](chapters/内置类.md)
 - [内部模块](chapters/内部模块.md)
