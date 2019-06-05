@@ -220,7 +220,7 @@
 | dtruss                                                               | -                                                                                                          |
 | du                                                                   | -                                                                                                          |
 | dwarfdump                                                            | -                                                                                                          |
-| easy_install                                                         | -                                                                                                          |
+| [easy_install](https://baike.baidu.com/item/easy_install)            | easy_install 和 pip 都是用来管理、下载安装公共资源库 pypi 的相关资源包，pip 是 easy_install 的改进版       |
 | easy_install-2.7                                                     | -                                                                                                          |
 | egrep                                                                | -                                                                                                          |
 | emacs                                                                | -                                                                                                          |

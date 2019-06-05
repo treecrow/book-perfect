@@ -6,8 +6,9 @@
 
 | 命令                                         | more                                                                                                                             |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| -h                                           | print this help message and exit (also --help)                                                                                   |
-| -                                            | -                                                                                                                                |
+| -h                                           | 打印帮助信息并退出 (also --help)                                                                                                 |
+| -m mod                                       | 以脚本形式运行库模块 (terminates option list)                                                                                    |
+| =====                                        | =====                                                                                                                            |
 | -b                                           | issue warnings about str(bytes_instance), str(bytearray_instance) and comparing bytes/bytearray with str. (-bb: issue errors)    |
 | -B                                           | don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x                                                                 |
 | -c cmd                                       | program passed in as string (terminates option list)                                                                             |
@@ -15,7 +16,6 @@
 | -E                                           | ignore PYTHON\* environment variables (such as PYTHONPATH)                                                                       |
 | -i                                           | inspect interactively after running script; forces a prompt even if stdin does not appear to be a terminal; also PYTHONINSPECT=x |
 | -I                                           | isolate Python from the user's environment (implies -E and -s)                                                                   |
-| -m mod                                       | run library module as a script (terminates option list)                                                                          |
 | -O                                           | remove assert and **debug**-dependent statements; add .opt-1 before .pyc extension; also PYTHONOPTIMIZE=x                        |
 | -OO                                          | do -O changes and also discard docstrings; add .opt-2 before .pyc extension                                                      |
 | -q                                           | don't print version and copyright messages on interactive startup                                                                |
