@@ -3,6 +3,7 @@
 ---
 
 - [基础知识](chapters/基础知识/README.md)
+
   - [Number](chapters/基础知识/Number.md)
   - [元组](chapters/基础知识/元组.md)
   - [内置函数](chapters/基础知识/内置函数.md)
@@ -18,5 +19,13 @@
   - [集合](chapters/基础知识/集合.md)
 
 - [module](chapters/module/README.md)
+
   - [keyword](chapters/module/keyword.md)
   - [sys](chapters/module/sys.md)
+
+- [cli](chapters/cli.md)
+- [print](chapters/print.md)
+- [代码块](chapters/代码块.md)
+- [内置类](chapters/内置类.md)
+- [代码语句](chapters/代码语句.md)
+- [内部模块](chapters/内部模块.md)
