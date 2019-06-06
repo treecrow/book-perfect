@@ -64,3 +64,9 @@
 ## python 有效教程
 
 - [Mac 系统下设置 python3.7 默认启动版本](https://www.jianshu.com/p/c70dc84b1776)
+
+## python 生态
+
+| key | more |
+| --- | ---- |
+| pip | -    |
