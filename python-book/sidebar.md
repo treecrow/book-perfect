@@ -4,8 +4,10 @@
 
 - [基础知识](chapters/基础知识/README.md)
 
+  - [函数](chapters/基础知识/函数.md)
   - [列表](chapters/基础知识/列表.md)
   - [数据类型](chapters/基础知识/数据类型.md)
+  - [模块](chapters/基础知识/模块.md)
   - [运算符](chapters/基础知识/运算符.md)
 
 - [cli](chapters/cli.md)
