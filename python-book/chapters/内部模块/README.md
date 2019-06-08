@@ -11,6 +11,8 @@
 | ~        | [unittest](./unittest.md)                                                                                 |
 | 数学     | [math](./math.md)                                                                                         |
 | ~        | [random](./random.md)                                                                                     |
+| 时间日期 | [time](./time.md)                                                                                         |
+| ~        | [datetime](./datetime.md)                                                                                 |
 | orther   | [urllib](./urllib.md)                                                                                     |
 | ~        | [glob](./glob.md)                                                                                         |
 | ~        | [os](./os.md)                                                                                             |
@@ -19,7 +21,6 @@
 | ~        | [shutil](./shutil.md)                                                                                     |
 | ~        | [smtplib](./smtplib.md)                                                                                   |
 | ~        | [timeit](./timeit.md)                                                                                     |
-| ~        | [time](./time.md)                                                                                         |
 | ~        | [abc](https://docs.python.org/zh-cn/3/library/abc.html)                                                   |
 | ~        | [aifc](https://docs.python.org/zh-cn/3/library/aifc.html)                                                 |
 | ~        | [antigravity](https://docs.python.org/zh-cn/3/library/antigravity.html)                                   |
@@ -62,7 +63,6 @@
 | ~        | [curses](https://docs.python.org/zh-cn/3/library/curses.html)                                             |
 | ~        | [dataclasses](https://docs.python.org/zh-cn/3/library/dataclasses.html)                                   |
 | ~        | [datascience](https://docs.python.org/zh-cn/3/library/datascience.html)                                   |
-| ~        | [datetime](https://docs.python.org/zh-cn/3/library/datetime.html)                                         |
 | ~        | [dbm](https://docs.python.org/zh-cn/3/library/dbm.html)                                                   |
 | ~        | [decimal](https://docs.python.org/zh-cn/3/library/decimal.html)                                           |
 | ~        | [difflib](https://docs.python.org/zh-cn/3/library/difflib.html)                                           |
