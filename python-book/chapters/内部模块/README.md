@@ -21,7 +21,7 @@
 | ~        | [shutil](./shutil.md)                                                                                     |
 | ~        | [smtplib](./smtplib.md)                                                                                   |
 | ~        | [timeit](./timeit.md)                                                                                     |
-| ~        | [abc](https://docs.python.org/zh-cn/3/library/abc.html)                                                   |
+| ~        | [abc](./abc.md)                                                                                           |
 | ~        | [aifc](https://docs.python.org/zh-cn/3/library/aifc.html)                                                 |
 | ~        | [antigravity](https://docs.python.org/zh-cn/3/library/antigravity.html)                                   |
 | ~        | [argparse](https://docs.python.org/zh-cn/3/library/argparse.html)                                         |

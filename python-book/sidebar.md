@@ -13,6 +13,7 @@
   - [字符串](chapters/基础知识/字符串.md)
   - [数字](chapters/基础知识/数字.md)
   - [模块](chapters/基础知识/模块.md)
+  - [类](chapters/基础知识/类.md)
   - [运算符](chapters/基础知识/运算符.md)
   - [集合](chapters/基础知识/集合.md)
 
