@@ -6,7 +6,6 @@
 
 - [基础知识](chapters/基础知识/README.md)
 
-  - [print](chapters/基础知识/print.md)
   - [元组](chapters/基础知识/元组.md)
   - [函数](chapters/基础知识/函数.md)
   - [列表](chapters/基础知识/列表.md)
