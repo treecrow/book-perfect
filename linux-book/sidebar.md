@@ -2,29 +2,13 @@
 
 - [mac 自带命令](chapters/mac自带命令/README.md)
 
+  - [orther](chapters/mac自带命令/orther.md)
   - [bin](chapters/mac自带命令/bin.md)
   - [sbin](chapters/mac自带命令/sbin.md)
   - [usr_bin](chapters/mac自带命令/usr_bin.md)
   - [usr_sbin](chapters/mac自带命令/usr_sbin.md)
 
 - [命令整理](chapters/命令整理/README.md)
-
-  - [echo](chapters/命令整理/echo.md)
-  - [IO 重定向](chapters/命令整理/IO重定向.md)
-  - [shell 工具](chapters/命令整理/shell工具.md)
-  - [加密解密](chapters/命令整理/加密解密.md)
-  - [包管理](chapters/命令整理/包管理.md)
-  - [命令](chapters/命令整理/命令.md)
-  - [安全连接](chapters/命令整理/安全连接.md)
-  - [文件](chapters/命令整理/文件.md)
-  - [环境变量](chapters/命令整理/环境变量.md)
-  - [目录](chapters/命令整理/目录.md)
-  - [系统](chapters/命令整理/系统.md)
-  - [终端](chapters/命令整理/终端.md)
-  - [编辑器](chapters/命令整理/编辑器.md)
-  - [网络](chapters/命令整理/网络.md)
-  - [身份](chapters/命令整理/身份.md)
-  - [进程](chapters/命令整理/进程.md)
 
 - [命令行工具](chapters/命令行工具/README.md)
 

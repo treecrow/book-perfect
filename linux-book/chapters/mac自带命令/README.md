@@ -2,15 +2,5 @@
 
 > 系统自带的命令，不需要额外安装
 
-## 相关文档
-
-| 文档                                                                                | more               |
-| ----------------------------------------------------------------------------------- | ------------------ |
-| [Linux 命令大全](http://man.linuxde.net/)                                           | linux 自身命令查询 |
-| [ 用户命令](http://docs.oracle.com/cd/E56344_01/html/E54075/intro-1.html#scrolltoc) | -                  |
-
-## 其它
-
-| 命令                              | more                 |
-| --------------------------------- | -------------------- |
-| [rpm](http://man.linuxde.net/rpm) | RPM 软件包的管理工具 |
+- [Linux 命令大全](http://man.linuxde.net/)
+- [ 用户命令](http://docs.oracle.com/cd/E56344_01/html/E54075/intro-1.html#scrolltoc)
