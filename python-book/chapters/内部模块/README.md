@@ -6,7 +6,7 @@
 
 | class                | moudle                                                                                                    |
 | -------------------- | --------------------------------------------------------------------------------------------------------- |
-| Tk 图形用户界面(GUI) | [tkinter](https://docs.python.org/zh-cn/3/library/tkinter.html)                                           |
+| Tk 图形用户界面(GUI) | [tkinter](./tkinter.md)                                                                                   |
 | ~                    | [idlelib](https://docs.python.org/zh-cn/3/library/idlelib.html)                                           |
 | 调试和分析           | [bdb](https://docs.python.org/zh-cn/3/library/bdb.html)                                                   |
 | ~                    | [faulthandler](https://docs.python.org/zh-cn/3/library/faulthandler.html)                                 |
