@@ -8,6 +8,8 @@
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | -h                                           | 打印帮助信息并退出 (also --help)                                                                                                 |
 | -m mod                                       | 以脚本形式运行库模块 (terminates option list)                                                                                    |
+| -V                                           | 打印 python 版本号（also --version）                                                                                             |
+| -v                                           | 跟踪导入语句 also PYTHONVERBOSE=x can be supplied multiple times to increase verbosity                                           |
 | =====                                        | =====                                                                                                                            |
 | -b                                           | issue warnings about str(bytes_instance), str(bytearray_instance) and comparing bytes/bytearray with str. (-bb: issue errors)    |
 | -B                                           | don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x                                                                 |
@@ -22,8 +24,6 @@
 | -s                                           | don't add user site directory to sys.path; also PYTHONNOUSERSITE                                                                 |
 | -S                                           | don't imply 'import site' on initialization                                                                                      |
 | -u                                           | force the stdout and stderr streams to be unbuffered; this option has no effect on stdin; also PYTHONUNBUFFERED=x                |
-| -v                                           | verbose (trace import statements); also PYTHONVERBOSE=x can be supplied multiple times to increase verbosity                     |
-| -V                                           | print the Python version number and exit (also --version) when given twice, print more information about the build               |
 | -W arg                                       | warning control; arg is action:message:category:module:lineno also PYTHONWARNINGS=arg                                            |
 | -x                                           | skip first line of source, allowing use of non-Unix forms of #!cmd                                                               |
 | -X opt                                       | set implementation-specific option                                                                                               |
