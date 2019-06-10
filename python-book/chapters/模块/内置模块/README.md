@@ -137,7 +137,7 @@
 | ~                    | [signal](https://docs.python.org/zh-cn/3/library/signal.html)                   |
 | ~                    | [mmap](https://docs.python.org/zh-cn/3/library/mmap.html)                       | cpython |
 | 互联网数据处理       | [email](https://docs.python.org/zh-cn/3/library/email.html)                     |
-| ~                    | [json](https://docs.python.org/zh-cn/3/library/json.html)                       |
+| ~                    | [json](./json.md)                                                               |
 | ~                    | [mailbox](https://docs.python.org/zh-cn/3/library/mailbox.html)                 |
 | ~                    | [mailcap](https://docs.python.org/zh-cn/3/library/mailcap.html)                 |
 | ~                    | [mimetypes](https://docs.python.org/zh-cn/3/library/mimetypes.html)             |
