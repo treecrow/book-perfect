@@ -153,13 +153,13 @@
 | ~                    | [codeop](https://docs.python.org/zh-cn/3/library/codeop.html)                   |
 | 二进制数据服务       | [struct](https://docs.python.org/zh-cn/3/library/struct.html)                   |
 | ~                    | [codecs](https://docs.python.org/zh-cn/3/library/codecs.html)                   |
-| 并发执行             | [threading](https://docs.python.org/zh-cn/3/library/threading.html)             |
+| 并发执行             | [threading](./threading.md)                                                     |
+| ~                    | [`_thread`](https://docs.python.org/zh-cn/3/library/_thread.html)               | builtIn |
 | ~                    | [multiprocessing](./multiprocessing.md)                                         |
 | ~                    | [concurrent](https://docs.python.org/zh-cn/3/library/concurrent.html)           |
 | ~                    | [subprocess](https://docs.python.org/zh-cn/3/library/subprocess.html)           |
 | ~                    | [sched](https://docs.python.org/zh-cn/3/library/sched.html)                     |
 | ~                    | [queue](https://docs.python.org/zh-cn/3/library/queue.html)                     |
-| ~                    | [`_thread`](https://docs.python.org/zh-cn/3/library/_thread.html)               | builtIn |
 | ~                    | [`_dummy_thread`](https://docs.python.org/zh-cn/3/library/_dummy_thread.html)   |
 | ~                    | [dummy_threading](https://docs.python.org/zh-cn/3/library/dummy_threading.html) |
 | 文件格式             | [csv](https://docs.python.org/zh-cn/3/library/csv.html)                         |
