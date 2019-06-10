@@ -34,4 +34,4 @@
   - [调试](chapters/vsCode/调试.md)
 
 - [LaTeX](chapters/LaTeX.md)
-- [markdown](chapters/markdown.md)
+- [RegEx](chapters/RegEx.md)
