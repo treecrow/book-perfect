@@ -2,8 +2,6 @@
 
 ---
 
-- [内部模块](chapters/内部模块/README.md)
-
 - [基础知识](chapters/基础知识/README.md)
 
   - [元组](chapters/基础知识/元组.md)
@@ -16,6 +14,12 @@
   - [类](chapters/基础知识/类.md)
   - [运算符](chapters/基础知识/运算符.md)
   - [集合](chapters/基础知识/集合.md)
+
+- [模块](chapters/模块/README.md)
+
+  - [内置模块](chapters/模块/内置模块/README.md)
+  - [个人模块](chapters/模块/个人模块/README.md)
+  - [通用模块](chapters/模块/通用模块/README.md)
 
 - [cli](chapters/cli.md)
 - [print](chapters/print.md)
