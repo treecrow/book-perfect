@@ -154,7 +154,7 @@
 | 二进制数据服务       | [struct](https://docs.python.org/zh-cn/3/library/struct.html)                   |
 | ~                    | [codecs](https://docs.python.org/zh-cn/3/library/codecs.html)                   |
 | 并发执行             | [threading](https://docs.python.org/zh-cn/3/library/threading.html)             |
-| ~                    | [multiprocessing](https://docs.python.org/zh-cn/3/library/multiprocessing.html) |
+| ~                    | [multiprocessing](./multiprocessing.md)                                         |
 | ~                    | [concurrent](https://docs.python.org/zh-cn/3/library/concurrent.html)           |
 | ~                    | [subprocess](https://docs.python.org/zh-cn/3/library/subprocess.html)           |
 | ~                    | [sched](https://docs.python.org/zh-cn/3/library/sched.html)                     |
