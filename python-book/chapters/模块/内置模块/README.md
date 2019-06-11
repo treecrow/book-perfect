@@ -128,7 +128,7 @@
 | ~                    | [errno](https://docs.python.org/zh-cn/3/library/errno.html)                     | builtIn |
 | ~                    | [ctypes](https://docs.python.org/zh-cn/3/library/ctypes.html)                   |
 | 网络和进程间通信     | [asyncio](https://docs.python.org/zh-cn/3/library/asyncio.html)                 |
-| ~                    | [socket](https://docs.python.org/zh-cn/3/library/socket.html)                   |
+| ~                    | [socket](./socket.md)                                                           |
 | ~                    | [ssl](https://docs.python.org/zh-cn/3/library/ssl.html)                         |
 | ~                    | [select](https://docs.python.org/zh-cn/3/library/select.html)                   | cpython |
 | ~                    | [selectors](https://docs.python.org/zh-cn/3/library/selectors.html)             |
@@ -136,12 +136,12 @@
 | ~                    | [asynchat](https://docs.python.org/zh-cn/3/library/asynchat.html)               |
 | ~                    | [signal](https://docs.python.org/zh-cn/3/library/signal.html)                   |
 | ~                    | [mmap](https://docs.python.org/zh-cn/3/library/mmap.html)                       | cpython |
-| 互联网数据处理       | [email](https://docs.python.org/zh-cn/3/library/email.html)                     |
+| 互联网数据处理       | [email](./email.md)                                                             |
 | ~                    | [json](./json.md)                                                               |
 | ~                    | [mailbox](https://docs.python.org/zh-cn/3/library/mailbox.html)                 |
 | ~                    | [mailcap](https://docs.python.org/zh-cn/3/library/mailcap.html)                 |
 | ~                    | [mimetypes](https://docs.python.org/zh-cn/3/library/mimetypes.html)             |
-| ~                    | [base64](https://docs.python.org/zh-cn/3/library/base64.html)                   |
+| ~                    | [base64](./base64.md)                                                           |
 | ~                    | [binhex](https://docs.python.org/zh-cn/3/library/binhex.html)                   |
 | ~                    | [binascii](https://docs.python.org/zh-cn/3/library/binascii.html)               | cpython |
 | ~                    | [quopri](https://docs.python.org/zh-cn/3/library/quopri.html)                   |

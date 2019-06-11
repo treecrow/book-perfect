@@ -4,5 +4,8 @@
 
 ## api list
 
-| api | more |
-| --- | ---- |
+| api             | more                                                   |
+| --------------- | ------------------------------------------------------ |
+| smtplib.SMTP()  | An SMTP instance encapsulates an SMTP connection       |
+| SMTP.login()    | Log in on an SMTP server that requires authentication. |
+| SMTP.sendmail() | Send mail                                              |
