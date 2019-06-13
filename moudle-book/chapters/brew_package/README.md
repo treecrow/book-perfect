@@ -9,3 +9,4 @@
 | nvm     | -    |
 | zsh     | -    |
 | python3 | -    |
+| mysql   | -    |

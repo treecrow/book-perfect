@@ -5,6 +5,7 @@
 - [brew_package](chapters/brew_package/README.md)
 
   - [brew](chapters/brew_package/brew.md)
+  - [mysql](chapters/brew_package/mysql.md)
   - [nvm](chapters/brew_package/nvm.md)
   - [zsh](chapters/brew_package/zsh.md)
 

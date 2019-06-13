@@ -117,7 +117,7 @@
 | ~                    | [random](./random.md)                                                           |
 | ~                    | [statistics](https://docs.python.org/zh-cn/3/library/statistics.html)           |
 | 通用操作系统服务     | [os](./os.md)                                                                   |
-| ~                    | [io](https://docs.python.org/zh-cn/3/library/io.html)                           |
+| ~                    | [io](./io.md)                                                                   |
 | ~                    | [time](./time.md)                                                               | builtIn |
 | ~                    | [argparse](https://docs.python.org/zh-cn/3/library/argparse.html)               |
 | ~                    | [getopt](https://docs.python.org/zh-cn/3/library/getopt.html)                   |
@@ -189,7 +189,7 @@
 | ~                    | [syslog](https://docs.python.org/zh-cn/3/library/syslog.html)                   | cpython |
 | 软件打包和分发       | [distutils](https://docs.python.org/zh-cn/3/library/distutils.html)             |
 | ~                    | [ensurepip](https://docs.python.org/zh-cn/3/library/ensurepip.html)             |
-| ~                    | [venv](https://docs.python.org/zh-cn/3/library/venv.html)                       |
+| ~                    | [venv](./venv.md)                                                               |
 | ~                    | [zipapp](https://docs.python.org/zh-cn/3/library/zipapp.html)                   |
 | 杂项服务             | [formatter](https://docs.python.org/zh-cn/3/library/formatter.html)             |
 | 函数式编程模块       | [itertools](https://docs.python.org/zh-cn/3/library/itertools.html)             | builtIn |
