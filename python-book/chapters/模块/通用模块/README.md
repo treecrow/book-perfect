@@ -2,13 +2,10 @@
 
 ## moudle list
 
-| moudle                    | more   |
-| ------------------------- | ------ |
-| setuptools                | -      |
-| easy_install              | -      |
-| pkg_resources             | -      |
-| [pygame](./pygame.md)     | -      |
-| [requests](./requests.md) | 未安装 |
-| wheel                     | -      |
-| [pip](./pip.md)           | -      |
-| sitecustomize             | -      |
+| moudle                    | more                     |
+| ------------------------- | ------------------------ |
+| [bs4](./bs4.md)           | -                        |
+| [pip](./pip.md)           | -                        |
+| [pygame](./pygame.md)     | -                        |
+| [pymysql](./pymysql.md)   | Pure Python MySQL Driver |
+| [requests](./requests.md) | 未安装                   |
