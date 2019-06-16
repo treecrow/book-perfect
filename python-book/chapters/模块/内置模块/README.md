@@ -129,7 +129,7 @@
 | ~                    | [ctypes](https://docs.python.org/zh-cn/3/library/ctypes.html)                   |
 | 网络和进程间通信     | [asyncio](https://docs.python.org/zh-cn/3/library/asyncio.html)                 |
 | ~                    | [socket](./socket.md)                                                           |
-| ~                    | [ssl](https://docs.python.org/zh-cn/3/library/ssl.html)                         |
+| ~                    | [ssl](./ssl.md)                                                                 |
 | ~                    | [select](https://docs.python.org/zh-cn/3/library/select.html)                   | cpython |
 | ~                    | [selectors](https://docs.python.org/zh-cn/3/library/selectors.html)             |
 | ~                    | [asyncore](https://docs.python.org/zh-cn/3/library/asyncore.html)               |
