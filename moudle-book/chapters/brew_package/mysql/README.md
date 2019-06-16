@@ -11,17 +11,21 @@
 
 ## 个人整理文档
 
-| class      | 工具                                                                   | 描述                                 |
-| ---------- | ---------------------------------------------------------------------- | ------------------------------------ |
-| 命令行工具 | [mysql_secure_installation](./命令行工具/mysql_secure_installation.md) | 安全安装（用于生产环境设置）         |
-| ^          | [mysqladmin](./命令行工具/mysqladmin.md)                               | 运维和管理工具                       |
-| ^          | [mysqld](./命令行工具/mysqld.md)                                       | 服务执行工具                         |
-| ^          | [mysql.server 命令行工具/](./mysql_server.md)                          | -                                    |
-| ^          | [mysql](./命令行工具/mysql.md)                                         | 客户端工具,打开并执行 sql 语句的命令 |
-| orther     | [数据类型](./数据类型.md)                                              | -                                    |
-| ^          | [字段属性修饰](./字段属性修饰.md)                                      | -                                    |
-| ^          | [where](./where.md)                                                    | -                                    |
-| ^          | [事务](./事务.md)                                                      | -                                    |
+| class      | 工具                                                                   | 描述                                           |
+| ---------- | ---------------------------------------------------------------------- | ---------------------------------------------- |
+| 命令行工具 | [mysql_secure_installation](./命令行工具/mysql_secure_installation.md) | 安全安装（用于生产环境设置）                   |
+| ^          | [mysqladmin](./命令行工具/mysqladmin.md)                               | 运维和管理工具                                 |
+| ^          | [mysqld](./命令行工具/mysqld.md)                                       | 服务执行工具                                   |
+| ^          | [mysql.server 命令行工具/](./mysql_server.md)                          | -                                              |
+| ^          | [mysql](./命令行工具/mysql.md)                                         | 客户端工具,打开并执行 sql 语句的命令           |
+| ^          | [mysqldump](./命令行工具/mysqldump.md)                                 | mysql 用于转存储数据库的实用程序               |
+| ^          | [mysqlimport](./命令行工具/mysqlimport.md)                             | 提供了 LOAD DATA INFILEQL 语句的一个命令行接口 |
+| orther     | [where](./where.md)                                                    | -                                              |
+| ^          | [事务](./事务.md)                                                      | -                                              |
+| ^          | [函数](./函数.md)                                                      | -                                              |
+| ^          | [字段属性修饰](./字段属性修饰.md)                                      | -                                              |
+| ^          | [数据类型](./数据类型.md)                                              | -                                              |
+| ^          | [运算符](./运算符.md)                                                  | -                                              |
 
 ## sql 命令
 
@@ -93,5 +97,13 @@
 | ^              | select user()                                                                                 | 当前用户名                                                                                                              |
 | ^              | show status                                                                                   | 服务器状态                                                                                                              |
 | ^              | show variables                                                                                | 服务器配置变量                                                                                                          |
+| 导出数据       | `select * from <表名> into outfile <文件路径>`                                                | 导出数据到文件                                                                                                          |
+| ^              | fields terminated by <字符串>                                                                 | 字段分割字符串                                                                                                          |
+| ^              | optionally enclosed by <字符串>                                                               | 字段包裹字符串                                                                                                          |
+| ^              | lines terminated by <字符串>                                                                  | 行分割字符串                                                                                                            |
+| 导入数据       | load data local infile <文件路径> into table <数据表名>                                       | 将文件中的数据插入到指定数据表中                                                                                        |
+| ^              | mysql -u root -p <数据库名> < <文件路径>                                                      | 将备份的数据库导入到 MySQL 服务器                                                                                       |
+| ^              | mysql -u root -p < <文件路径>                                                                 | 将备份的数据库导入到 MySQL 服务器                                                                                       |
+| 执行？         | source <sql 文件路径>                                                                         | 执行 sql 文件语句？                                                                                                     |
 | 输入           | \p                                                                                            | 打印输入                                                                                                                |
 | ^              | \c                                                                                            | 取消输入                                                                                                                |
