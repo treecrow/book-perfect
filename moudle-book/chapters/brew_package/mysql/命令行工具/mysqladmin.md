@@ -8,6 +8,10 @@
 
 | class   | 命令                                           | more                                                                                                                                             |
 | ------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| example | mysqladmin -u 用户名 -p 旧密码 password 新密码 | 修改密码                                                                                                                                         |
+| ^       | mysqladmin -u root -p shutdown                 | 关闭目前运行的 MySQL 服务器                                                                                                                      |
+| ^       | mysqladmin -u root -p create RUNOOB            | 创建一个数据库                                                                                                                                   |
+| ^       | mysqladmin -u root -p drop RUNOOB              | 删除数据库                                                                                                                                       |
 | OPTIONS | -V, --version                                  | 版本号                                                                                                                                           |
 | ^       | -u, --user=name                                | User for login if not current user.                                                                                                              |
 | ^       | -p, --password[=name]                          | Password to use when connecting to server. If password is not given it's asked from the tty.                                                     |
@@ -74,5 +78,3 @@
 | ^       | status                                         | Gives a short status message from the server                                                                                                     |
 | ^       | variables                                      | Prints variables available                                                                                                                       |
 | ^       | version                                        | Get version info from server                                                                                                                     |
-| example | mysqladmin -u 用户名 -p 旧密码 password 新密码 | 修改密码                                                                                                                                         |
-| ^       | mysqladmin -u root -p shutdown                 | 关闭目前运行的 MySQL 服务器                                                                                                                      |
