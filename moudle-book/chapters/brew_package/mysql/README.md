@@ -21,6 +21,7 @@
 | ^          | [mysqldump](./命令行工具/mysqldump.md)                                 | mysql 用于转存储数据库的实用程序               |
 | ^          | [mysqlimport](./命令行工具/mysqlimport.md)                             | 提供了 LOAD DATA INFILEQL 语句的一个命令行接口 |
 | orther     | [where](./where.md)                                                    | -                                              |
+| ^          | [my_cnf](./my_cnf.md)                                                  | -                                              |
 | ^          | [事务](./事务.md)                                                      | -                                              |
 | ^          | [函数](./函数.md)                                                      | -                                              |
 | ^          | [字段属性修饰](./字段属性修饰.md)                                      | -                                              |
