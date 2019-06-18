@@ -9,3 +9,4 @@
 | io.StringIO() | -                    | An in-memory stream for text I/O                          |
 | ^             | someStrIo.write()    | -                                                         |
 | ^             | someStrIo.getvalue() | Return a str containing the entire contents of the buffer |
+| io.BytesIO()  | -                    | A stream implementation using an in-memory bytes buffer   |

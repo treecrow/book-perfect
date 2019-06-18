@@ -2,10 +2,13 @@
 
 ## moudle list
 
-| moudle                    | more                     |
-| ------------------------- | ------------------------ |
-| [bs4](./bs4.md)           | -                        |
-| [pip](./pip.md)           | -                        |
-| [pygame](./pygame.md)     | -                        |
-| [pymysql](./pymysql.md)   | Pure Python MySQL Driver |
-| [requests](./requests.md) | 未安装                   |
+| moudle                                | more                     |
+| ------------------------------------- | ------------------------ |
+| [beautifulsoup4](./beautifulsoup4.md) | -                        |
+| [lxml](./lxml.md)                     | -                        |
+| [pip](./pip.md)                       | -                        |
+| [pygame](./pygame.md)                 | -                        |
+| [pymysql](./pymysql.md)               | Pure Python MySQL Driver |
+| [requests](./requests.md)             | 未安装                   |
+| [selenium](./selenium.md)             | -                        |
+| [xlwt](./xlwt.md)                     | -                        |
