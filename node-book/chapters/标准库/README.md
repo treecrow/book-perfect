@@ -1,8 +1,8 @@
-# node 文档整理
+# node 标准库
 
 > ...
 
-## node 自身模块
+## 模块列表
 
 | moudle                                | name         | require | 稳定性 |
 | ------------------------------------- | ------------ | ------- | ------ |
@@ -22,7 +22,7 @@
 | [net](./net.md)                       | 网络         | ✅      | ✅     |
 | [os](./os.md)                         | 操作系统     | ✅      | ✅     |
 | [path](./path.md)                     | 路径         | ✅      | ✅     |
-| [process](./process.md)               | 进程         | ✅      | ✅     |
+| [process](./process.md)               | 进程         | ❌      | ✅     |
 | [querystring](./querystring.md)       | 查询字符串   | ✅      | ✅     |
 | [readline](./readline.md)             | 逐行读取     | ✅      | ✅     |
 | [repl](./repl.md)                     | 交互式解释器 | ✅      | ✅     |
@@ -41,12 +41,3 @@
 | [perf_hooks](./perf_hooks.md)         | 性能钩子     | ✅      | ⚠️     |
 | [trace_events](./trace_events.md)     | 跟踪事件     | ✅      | ⚠️     |
 | [worker_threads](./worker_threads.md) | 工作线程     | ✅      | ⚠️     |
-
-## 非模块列表
-
-| doc                       | name     |
-| ------------------------- | -------- |
-| [debugger](./debugger.md) | 调试器   |
-| [errors](./errors.md)     | 错误     |
-| [globals](./globals.md)   | 全局变量 |
-| [modules](./modules.md)   | 模块     |
