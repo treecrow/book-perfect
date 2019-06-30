@@ -6,15 +6,15 @@
 
 - child_process
 
-| api                                                         | more                                                                                                                   |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| child_process.spawn(command[, args][, options])             | 异步地衍生子进程，且不会阻塞 Node.js 事件循环                                                                          |
-| child_process.spawnSync(command[, args][, options])         | 以同步的方式提供同样的功能，但会阻塞事件循环，直到衍生的子进程退出或终止                                               |
-| child_process.fork(modulePath[, args][, options])           | 衍生一个新的 Node.js 进程，并通过建立一个 IPC 通讯通道来调用一个指定的模块，该通道允许父进程与子进程之间相互发送信息。 |
-| child_process.exec(command[, options][, callback])          | 衍生一个 shell 并在 shell 上运行命令，当完成时会传入 stdout 和 stderr 到回调函数。                                     |
-| child_process.execSync(command[, options])                  | child_process.exec() 的同步方法，会阻塞 Node.js 事件循环。                                                             |
-| child_process.execFile(file[, args][, options][, callback]) | 类似 child_process.exec()，但直接衍生命令，且无需先衍生一个 shell。                                                    |
-| child_process.execFileSync(file[, args][, options])         | child_process.execFile() 的同步方法，会阻塞 Node.js 事件循环                                                           |
+| api                                                         | more                                                                           |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| child_process.spawn(command[, args][, options])             | 启动一个子进程来执行命令                                                       |
+| child_process.spawnSync(command[, args][, options])         | ^                                                                              |
+| child_process.exec(command[, options][, callback])          | 启动一个子进程来执行命令, 带回调参数获知子进程的情况, 可指定进程运行的超时时间 |
+| child_process.execSync(command[, options])                  | ^                                                                              |
+| child_process.execFile(file[, args][, options][, callback]) | 启动一个子进程来执行一个可执行文件, 可指定进程运行的超时时间                   |
+| child_process.execFileSync(file[, args][, options])         | ^                                                                              |
+| child_process.fork(modulePath[, args][, options])           | 与 spawn()类似, 不同在于它创建的 node 子进程只需指定要执行的 js 文件模块即可   |
 
 - ChildProcess 类
 
