@@ -29,8 +29,10 @@
 | ^      | readable.pause()                      | 使流动模式的流停止触发 'data' 事件，并切换出流动模式                                              |
 | ^      | readable.pipe(destination[, options]) | 绑定可写流到可读流，将可读流自动切换到流动模式，并将可读流的所有数据推送到绑定的可写流            |
 | ^      | readable.unpipe([destination])        | 解绑之前使用 stream.pipe() 绑定的可写流。                                                         |
-| ^      | readable.read([size])                 | 从内部缓冲拉取并返回数据。 如果没有可读的数据，则返回 null                                        |
+| ^      | readable.push()                       | -                                                                                                 |
+| ^      | readable.push(null)                   | -                                                                                                 |
 | ^      | readable.unshift(chunk)               | 将数据块推回内部缓冲                                                                              |
+| ^      | readable.read([size])                 | 从内部缓冲拉取并返回数据。 如果没有可读的数据，则返回 null                                        |
 | ^      | readable.isPaused()                   | 返回可读流的当前操作状态                                                                          |
 | ^      | readable.destroy([error])             | 销毁流，并触发 'error' 事件和 'close' 事件                                                        |
 | ^      | readable.readableFlowing              | 可读流状态： null / false / true                                                                  |
