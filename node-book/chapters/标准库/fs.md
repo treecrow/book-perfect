@@ -6,87 +6,87 @@
 
 - fs
 
-| api                                                            | more                                   |
-| -------------------------------------------------------------- | -------------------------------------- |
-| fs.access(path[, mode], callback)                              | 测试用户对 path 指定的文件或目录的权限 |
-| fs.accessSync(path[, mode])                                    | -                                      |
-| fs.appendFile(path, data[, options], callback)                 | -                                      |
-| fs.appendFileSync(path, data[, options])                       | -                                      |
-| fs.chmod(path, mode, callback)                                 | -                                      |
-| fs.chmodSync(path, mode)                                       | -                                      |
-| fs.chown(path, uid, gid, callback)                             | -                                      |
-| fs.chownSync(path, uid, gid)                                   | -                                      |
-| fs.close(fd, callback)                                         | -                                      |
-| fs.closeSync(fd)                                               | -                                      |
-| fs.constants                                                   | 返回包含文件系统操作常用常量的对象     |
-| fs.copyFile(src, dest[, flags], callback)                      | -                                      |
-| fs.copyFileSync(src, dest[, flags])                            | -                                      |
-| fs.createReadStream(path[, options])                           | -                                      |
-| fs.createWriteStream(path[, options])                          | -                                      |
-| fs.existsSync(path)                                            | -                                      |
-| fs.fchmod(fd, mode, callback)                                  | -                                      |
-| fs.fchmodSync(fd, mode)                                        | -                                      |
-| fs.fchown(fd, uid, gid, callback)                              | -                                      |
-| fs.fchownSync(fd, uid, gid)                                    | -                                      |
-| fs.fdatasync(fd, callback)                                     | -                                      |
-| fs.fdatasyncSync(fd)                                           | -                                      |
-| fs.fstat(fd[, options], callback)                              | -                                      |
-| fs.fstatSync(fd[, options])                                    | -                                      |
-| fs.fsync(fd, callback)                                         | -                                      |
-| fs.fsyncSync(fd)                                               | -                                      |
-| fs.ftruncate(fd[, len], callback)                              | -                                      |
-| fs.ftruncateSync(fd[, len])                                    | -                                      |
-| fs.futimes(fd, atime, mtime, callback)                         | -                                      |
-| fs.futimesSync(fd, atime, mtime)                               | -                                      |
-| fs.lchmod(path, mode, callback)                                | -                                      |
-| fs.lchmodSync(path, mode)                                      | -                                      |
-| fs.lchown(path, uid, gid, callback)                            | -                                      |
-| fs.lchownSync(path, uid, gid)                                  | -                                      |
-| fs.link(existingPath, newPath, callback)                       | -                                      |
-| fs.linkSync(existingPath, newPath)                             | -                                      |
-| fs.lstat(path[, options], callback)                            | -                                      |
-| fs.lstatSync(path[, options])                                  | -                                      |
-| fs.mkdir(path[, options], callback)                            | -                                      |
-| fs.mkdirSync(path[, options])                                  | -                                      |
-| fs.mkdtemp(prefix[, options], callback)                        | -                                      |
-| fs.mkdtempSync(prefix[, options])                              | -                                      |
-| fs.open(path[, flags[, mode]], callback)                       | -                                      |
-| fs.openSync(path[, flags, mode])                               | -                                      |
-| fs.read(fd, buffer, offset, length, position, callback)        | -                                      |
-| fs.readdir(path[, options], callback)                          | -                                      |
-| fs.readdirSync(path[, options])                                | -                                      |
-| fs.readFile(path[, options], callback)                         | -                                      |
-| fs.readFileSync(path[, options])                               | -                                      |
-| fs.readlink(path[, options], callback)                         | -                                      |
-| fs.readlinkSync(path[, options])                               | -                                      |
-| fs.readSync(fd, buffer, offset, length, position)              | -                                      |
-| fs.realpath(path[, options], callback)                         | -                                      |
-| fs.realpath.native(path[, options], callback)                  | -                                      |
-| fs.realpathSync(path[, options])                               | 获取路径对应的真实路径                 |
-| fs.realpathSync.native(path[, options])                        | -                                      |
-| fs.rename(oldPath, newPath, callback)                          | -                                      |
-| fs.renameSync(oldPath, newPath)                                | -                                      |
-| fs.rmdir(path, callback)                                       | -                                      |
-| fs.rmdirSync(path)                                             | -                                      |
-| fs.stat(path[, options], callback)                             | -                                      |
-| fs.statSync(path[, options])                                   | -                                      |
-| fs.symlink(target, path[, type], callback)                     | -                                      |
-| fs.symlinkSync(target, path[, type])                           | -                                      |
-| fs.truncate(path[, len], callback)                             | -                                      |
-| fs.truncateSync(path[, len])                                   | -                                      |
-| fs.unlink(path, callback)                                      | -                                      |
-| fs.unlinkSync(path)                                            | -                                      |
-| fs.unwatchFile(filename[, listener])                           | -                                      |
-| fs.utimes(path, atime, mtime, callback)                        | -                                      |
-| fs.utimesSync(path, atime, mtime)                              | -                                      |
-| fs.watch(filename[, options][, listener])                      | -                                      |
-| fs.watchFile(filename[, options], listener)                    | -                                      |
-| fs.write(fd, buffer[, offset[, length[, position]]], callback) | -                                      |
-| fs.write(fd, string[, position[, encoding]], callback)         | -                                      |
-| fs.writeFile(file, data[, options], callback)                  | -                                      |
-| fs.writeFileSync(file, data[, options])                        | -                                      |
-| fs.writeSync(fd, buffer[, offset[, length[, position]]])       | -                                      |
-| fs.writeSync(fd, string[, position[, encoding]])               | -                                      |
+| api                                                            | more                                             |
+| -------------------------------------------------------------- | ------------------------------------------------ |
+| fs.access(path[, mode], callback)                              | 测试用户对 path 指定的文件或目录的权限           |
+| fs.accessSync(path[, mode])                                    | ^                                                |
+| fs.constants                                                   | 返回包含文件系统操作常用常量的对象               |
+| fs.open(path[, flags[, mode]], callback)                       | 打开文件                                         |
+| fs.openSync(path[, flags, mode])                               | ^                                                |
+| fs.read(fd, buffer, offset, length, position, callback)        | 从 fd 指定的文件中读取数据                       |
+| fs.readSync(fd, buffer, offset, length, position)              | ^                                                |
+| fs.readdir(path[, options], callback)                          | 读取目录的内容                                   |
+| fs.readdirSync(path[, options])                                | ^                                                |
+| fs.readFile(path[, options], callback)                         | 读取文件的全部内容                               |
+| fs.readFileSync(path[, options])                               | ^                                                |
+| fs.readlink(path[, options], callback)                         | 返回符号链接的字符串值                           |
+| fs.readlinkSync(path[, options])                               | ^                                                |
+| fs.write(fd, buffer[, offset[, length[, position]]], callback) | -                                                |
+| fs.writeSync(fd, buffer[, offset[, length[, position]]])       | ^                                                |
+| fs.write(fd, string[, position[, encoding]], callback)         | -                                                |
+| fs.writeSync(fd, string[, position[, encoding]])               | ^                                                |
+| fs.writeFile(file, data[, options], callback)                  | 将数据写入到一个文件，如果文件已存在则覆盖该文件 |
+| fs.writeFileSync(file, data[, options])                        | ^                                                |
+| fs.close(fd, callback)                                         | -                                                |
+| fs.closeSync(fd)                                               | ^                                                |
+| fs.realpath(path[, options], callback)                         | 获取路径对应的真实路径                           |
+| fs.realpathSync(path[, options])                               | ^                                                |
+| fs.realpath.native(path[, options], callback)                  | -                                                |
+| fs.realpathSync.native(path[, options])                        | ^                                                |
+| fs.createReadStream(path[, options])                           | 创建读取流                                       |
+| fs.createWriteStream(path[, options])                          | 创建写入流                                       |
+| fs.appendFile(path, data[, options], callback)                 | -                                                |
+| fs.appendFileSync(path, data[, options])                       | -                                                |
+| fs.chmod(path, mode, callback)                                 | -                                                |
+| fs.chmodSync(path, mode)                                       | -                                                |
+| fs.chown(path, uid, gid, callback)                             | -                                                |
+| fs.chownSync(path, uid, gid)                                   | -                                                |
+| fs.copyFile(src, dest[, flags], callback)                      | -                                                |
+| fs.copyFileSync(src, dest[, flags])                            | -                                                |
+| fs.existsSync(path)                                            | -                                                |
+| fs.fchmod(fd, mode, callback)                                  | -                                                |
+| fs.fchmodSync(fd, mode)                                        | -                                                |
+| fs.fchown(fd, uid, gid, callback)                              | -                                                |
+| fs.fchownSync(fd, uid, gid)                                    | -                                                |
+| fs.fdatasync(fd, callback)                                     | -                                                |
+| fs.fdatasyncSync(fd)                                           | -                                                |
+| fs.fstat(fd[, options], callback)                              | -                                                |
+| fs.fstatSync(fd[, options])                                    | -                                                |
+| fs.fsync(fd, callback)                                         | -                                                |
+| fs.fsyncSync(fd)                                               | -                                                |
+| fs.ftruncate(fd[, len], callback)                              | -                                                |
+| fs.ftruncateSync(fd[, len])                                    | -                                                |
+| fs.futimes(fd, atime, mtime, callback)                         | -                                                |
+| fs.futimesSync(fd, atime, mtime)                               | -                                                |
+| fs.lchmod(path, mode, callback)                                | -                                                |
+| fs.lchmodSync(path, mode)                                      | -                                                |
+| fs.lchown(path, uid, gid, callback)                            | -                                                |
+| fs.lchownSync(path, uid, gid)                                  | -                                                |
+| fs.link(existingPath, newPath, callback)                       | -                                                |
+| fs.linkSync(existingPath, newPath)                             | -                                                |
+| fs.lstat(path[, options], callback)                            | -                                                |
+| fs.lstatSync(path[, options])                                  | -                                                |
+| fs.mkdir(path[, options], callback)                            | -                                                |
+| fs.mkdirSync(path[, options])                                  | -                                                |
+| fs.mkdtemp(prefix[, options], callback)                        | -                                                |
+| fs.mkdtempSync(prefix[, options])                              | -                                                |
+| fs.rename(oldPath, newPath, callback)                          | -                                                |
+| fs.renameSync(oldPath, newPath)                                | -                                                |
+| fs.rmdir(path, callback)                                       | -                                                |
+| fs.rmdirSync(path)                                             | -                                                |
+| fs.stat(path[, options], callback)                             | -                                                |
+| fs.statSync(path[, options])                                   | -                                                |
+| fs.symlink(target, path[, type], callback)                     | -                                                |
+| fs.symlinkSync(target, path[, type])                           | -                                                |
+| fs.truncate(path[, len], callback)                             | -                                                |
+| fs.truncateSync(path[, len])                                   | -                                                |
+| fs.unlink(path, callback)                                      | -                                                |
+| fs.unlinkSync(path)                                            | -                                                |
+| fs.unwatchFile(filename[, listener])                           | -                                                |
+| fs.utimes(path, atime, mtime, callback)                        | -                                                |
+| fs.utimesSync(path, atime, mtime)                              | -                                                |
+| fs.watch(filename[, options][, listener])                      | -                                                |
+| fs.watchFile(filename[, options], listener)                    | -                                                |
 
 - fs.Dirent 类
 
