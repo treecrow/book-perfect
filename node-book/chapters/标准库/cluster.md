@@ -1,40 +1,46 @@
-# cluster集群
+# cluster
 
-## Worker类
-#### 事件
-- 'disconnect'
-- 'error'
-- 'exit'
-- 'listening'
-- 'message'
-- 'online'
-#### 方法
-- worker.disconnect()
-- worker.isConnected()
-- worker.isDead()
-- worker.kill([signal='SIGTERM'])
-- worker.send(message[, sendHandle][, callback])
-#### 属性
-- worker.exitedAfterDisconnect
-- worker.id
-- worker.process
+> 集群
 
-## 事件
-- 'disconnect'
-- 'exit'
-- 'fork'
-- 'listening'
-- 'message'
-- 'online'
-- 'setup'
-## 方法
-- cluster.disconnect([callback])
-- cluster.fork([env])
-- cluster.setupMaster([settings])
-## 属性
-- cluster.isMaster
-- cluster.isWorker
-- cluster.schedulingPolicy
-- cluster.settings
-- cluster.worker
-- cluster.workers
+## api list
+
+- cluster
+
+| class | api                             | more |
+| ----- | ------------------------------- | ---- |
+| api   | cluster.disconnect([callback])  | -    |
+| ^     | cluster.fork([env])             | -    |
+| ^     | cluster.setupMaster([settings]) | -    |
+| ^     | cluster.isMaster                | -    |
+| ^     | cluster.isWorker                | -    |
+| ^     | cluster.schedulingPolicy        | -    |
+| ^     | cluster.settings                | -    |
+| ^     | cluster.worker                  | -    |
+| ^     | cluster.workers                 | -    |
+| event | disconnect                      | -    |
+| ^     | exit                            | -    |
+| ^     | fork                            | -    |
+| ^     | listening                       | -    |
+| ^     | message                         | -    |
+| ^     | online                          | -    |
+| ^     | setup                           | -    |
+
+- Worker 类
+
+| class | api                                            | more |
+| ----- | ---------------------------------------------- | ---- |
+| api   | worker.disconnect()                            | -    |
+| ^     | worker.isConnected()                           | -    |
+| ^     | worker.isDead()                                | -    |
+| ^     | worker.kill([signal='SIGTERM'])                | -    |
+| ^     | worker.send(message[, sendHandle][, callback]) | -    |
+| ^     | worker.exitedAfterDisconnect                   | -    |
+| ^     | worker.id                                      | -    |
+| ^     | worker.process                                 | -    |
+| event | -                                              | -    |
+| ^     | disconnect                                     | -    |
+| ^     | error                                          | -    |
+| ^     | exit                                           | -    |
+| ^     | listening                                      | -    |
+| ^     | message                                        | -    |
+| ^     | online                                         | -    |
