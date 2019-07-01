@@ -2,67 +2,68 @@
 
 > `/sbin` 超级用户指令,通常只有管理员才可以运行
 
-| 命令             | more |
-| ---------------- | ---- |
-| apfs_hfs_convert | -    |
-| autodiskmount    | -    |
-| disklabel        | -    |
-| dmesg            | -    |
-| dynamic_pager    | -    |
-| emond            | -    |
-| fibreconfig      | -    |
-| fsck             | -    |
-| fsck_apfs        | -    |
-| fsck_cs          | -    |
-| fsck_exfat       | -    |
-| fsck_hfs         | -    |
-| fsck_msdos       | -    |
-| fsck_udf         | -    |
-| fstyp            | -    |
-| fstyp_hfs        | -    |
-| fstyp_msdos      | -    |
-| fstyp_ntfs       | -    |
-| fstyp_udf        | -    |
-| halt             | -    |
-| ifconfig         | -    |
-| kextload         | -    |
-| kextunload       | -    |
-| launchd          | -    |
-| md5              | -    |
-| mknod            | -    |
-| mount            | -    |
-| mount_9p         | -    |
-| mount_acfs       | -    |
-| mount_afp        | -    |
-| mount_apfs       | -    |
-| mount_cd9660     | -    |
-| mount_cddafs     | -    |
-| mount_devfs      | -    |
-| mount_exfat      | -    |
-| mount_fdesc      | -    |
-| mount_ftp        | -    |
-| mount_hfs        | -    |
-| mount_msdos      | -    |
-| mount_nfs        | -    |
-| mount_ntfs       | -    |
-| mount_smbfs      | -    |
-| mount_udf        | -    |
-| mount_webdav     | -    |
-| mpioutil         | -    |
-| newfs_apfs       | -    |
-| newfs_exfat      | -    |
-| newfs_hfs        | -    |
-| newfs_msdos      | -    |
-| newfs_udf        | -    |
-| nfsd             | -    |
-| nfsiod           | -    |
-| nologin          | -    |
-| pfctl            | -    |
-| ping             | -    |
-| ping6            | -    |
-| quotacheck       | -    |
-| reboot           | -    |
-| route            | -    |
-| rtsol            | -    |
-| shutdown         | -    |
-| umount           | -    |
+| class | 命令                                             | more                                      |
+| ----- | ------------------------------------------------ | ----------------------------------------- |
+| 系统  | [launchd](https://zhuanlan.zhihu.com/p/25049770) | 利用 Launchd 定制 Mac 启动任务            |
+| ^     | [ifconfig](http://man.linuxde.net/ifconfig)      | 配置和显示 Linux 内核中网络接口的网络参数 |
+| ^     | [dmesg](http://man.linuxde.net/dmesg)            | 用于检查和控制内核的环形缓冲区            |
+| ===   | ===                                              | ===                                       |
+| ^     | apfs_hfs_convert                                 | -                                         |
+| ^     | autodiskmount                                    | -                                         |
+| ^     | disklabel                                        | -                                         |
+| ^     | dynamic_pager                                    | -                                         |
+| ^     | emond                                            | -                                         |
+| ^     | fibreconfig                                      | -                                         |
+| ^     | fsck                                             | -                                         |
+| ^     | fsck_apfs                                        | -                                         |
+| ^     | fsck_cs                                          | -                                         |
+| ^     | fsck_exfat                                       | -                                         |
+| ^     | fsck_hfs                                         | -                                         |
+| ^     | fsck_msdos                                       | -                                         |
+| ^     | fsck_udf                                         | -                                         |
+| ^     | fstyp                                            | -                                         |
+| ^     | fstyp_hfs                                        | -                                         |
+| ^     | fstyp_msdos                                      | -                                         |
+| ^     | fstyp_ntfs                                       | -                                         |
+| ^     | fstyp_udf                                        | -                                         |
+| ^     | halt                                             | -                                         |
+| ^     | kextload                                         | -                                         |
+| ^     | kextunload                                       | -                                         |
+| ^     | md5                                              | -                                         |
+| ^     | mknod                                            | -                                         |
+| ^     | mount                                            | -                                         |
+| ^     | mount_9p                                         | -                                         |
+| ^     | mount_acfs                                       | -                                         |
+| ^     | mount_afp                                        | -                                         |
+| ^     | mount_apfs                                       | -                                         |
+| ^     | mount_cd9660                                     | -                                         |
+| ^     | mount_cddafs                                     | -                                         |
+| ^     | mount_devfs                                      | -                                         |
+| ^     | mount_exfat                                      | -                                         |
+| ^     | mount_fdesc                                      | -                                         |
+| ^     | mount_ftp                                        | -                                         |
+| ^     | mount_hfs                                        | -                                         |
+| ^     | mount_msdos                                      | -                                         |
+| ^     | mount_nfs                                        | -                                         |
+| ^     | mount_ntfs                                       | -                                         |
+| ^     | mount_smbfs                                      | -                                         |
+| ^     | mount_udf                                        | -                                         |
+| ^     | mount_webdav                                     | -                                         |
+| ^     | mpioutil                                         | -                                         |
+| ^     | newfs_apfs                                       | -                                         |
+| ^     | newfs_exfat                                      | -                                         |
+| ^     | newfs_hfs                                        | -                                         |
+| ^     | newfs_msdos                                      | -                                         |
+| ^     | newfs_udf                                        | -                                         |
+| ^     | nfsd                                             | -                                         |
+| ^     | nfsiod                                           | -                                         |
+| ^     | nologin                                          | -                                         |
+| ^     | pfctl                                            | -                                         |
+| ^     | ping                                             | -                                         |
+| ^     | ping6                                            | -                                         |
+| ^     | quotacheck                                       | -                                         |
+| ^     | reboot                                           | -                                         |
+| ^     | route                                            | -                                         |
+| ^     | rtsol                                            | -                                         |
+| ^     | shutdown                                         | -                                         |
+| ^     | umount                                           | -                                         |

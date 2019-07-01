@@ -2,242 +2,243 @@
 
 > `/usr/sbin` 后期安装的超级用户指令列表
 
-| 命令                  | more |
-| --------------------- | ---- |
-| AppleFileServer       | -    |
-| BootCacheControl      | -    |
-| DevToolsSecurity      | -    |
-| DirectoryService      | -    |
-| KernelEventAgent      | -    |
-| NetBootClientStatus   | -    |
-| PasswordService       | -    |
-| WirelessRadioManagerd | -    |
-| ab                    | -    |
-| ac                    | -    |
-| accept                | -    |
-| accton                | -    |
-| amt                   | -    |
-| apachectl             | -    |
-| appsleepd             | -    |
-| arp                   | -    |
-| aslmanager            | -    |
-| asr                   | -    |
-| audit                 | -    |
-| auditd                | -    |
-| auditreduce           | -    |
-| authserver            | -    |
-| automount             | -    |
-| avbdeviced            | -    |
-| bless                 | -    |
-| bluetoothaudiod       | -    |
-| bluetoothd            | -    |
-| bnepd                 | -    |
-| cfprefsd              | -    |
-| chat                  | -    |
-| checkgid              | -    |
-| chown                 | -    |
-| chroot                | -    |
-| ckksctl               | -    |
-| coreaudiod            | -    |
-| createhomedir         | -    |
-| cron                  | -    |
-| cupsaccept            | -    |
-| cupsaddsmb            | -    |
-| cupsctl               | -    |
-| cupsd                 | -    |
-| cupsdisable           | -    |
-| cupsenable            | -    |
-| cupsfilter            | -    |
-| cupsreject            | -    |
-| cvadmin               | -    |
-| cvdb                  | -    |
-| cvdbset               | -    |
-| cvfsck                | -    |
-| cvfsdb                | -    |
-| cvfsid                | -    |
-| cvgather              | -    |
-| cvlabel               | -    |
-| cvmkfs                | -    |
-| cvupdatefs            | -    |
-| cvversions            | -    |
-| dbmmanage             | -    |
-| ddns-confgen          | -    |
-| defragcli             | -    |
-| dev_mkdb              | -    |
-| disktool              | -    |
-| diskutil              | -    |
-| distnoted             | -    |
-| dnctl                 | -    |
-| dnsextd               | -    |
-| dot_clean             | -    |
-| dsconfigad            | -    |
-| dsconfigldap          | -    |
-| dseditgroup           | -    |
-| dsenableroot          | -    |
-| dtrace                | -    |
-| edquota               | -    |
-| envvars               | -    |
-| envvars-std           | -    |
-| fcgistarter           | -    |
-| fdisk                 | -    |
-| filecoordinationd     | -    |
-| firmwarepasswd        | -    |
-| gpt                   | -    |
-| graphicssession       | -    |
-| gssd                  | -    |
-| hdik                  | -    |
-| htcacheclean          | -    |
-| htdbm                 | -    |
-| htdigest              | -    |
-| htpasswd              | -    |
-| httpd                 | -    |
-| httpd-wrapper         | -    |
-| httxt2dbm             | -    |
-| installer             | -    |
-| ioalloccount          | -    |
-| ioclasscount          | -    |
-| ioreg                 | -    |
-| iostat                | -    |
-| ipconfig              | -    |
-| kadmin                | -    |
-| kadmin.local          | -    |
-| kdcsetup              | -    |
-| kextcache             | -    |
-| kextfind              | -    |
-| kextlibs              | -    |
-| kextstat              | -    |
-| krbservicesetup       | -    |
-| ktutil                | -    |
-| languagesetup         | -    |
-| localemanager         | -    |
-| logresolve            | -    |
-| lpadmin               | -    |
-| lpc                   | -    |
-| lpinfo                | -    |
-| lpmove                | -    |
-| lsof                  | -    |
-| mDNSResponder         | -    |
-| mDNSResponderHelper   | -    |
-| mkextunpack           | -    |
-| mkfile                | -    |
-| mkpassdb              | -    |
-| mtree                 | -    |
-| ndp                   | -    |
-| netbiosd              | -    |
-| netstat               | -    |
-| networksetup          | -    |
-| newsyslog             | -    |
-| nfs4mapid             | -    |
-| nlcontrol             | -    |
-| notifyd               | -    |
-| nvram                 | -    |
-| ocspd                 | -    |
-| pdisk                 | -    |
-| periodic              | -    |
-| php-fpm               | -    |
-| pictd                 | -    |
-| pkgutil               | -    |
-| postalias             | -    |
-| postcat               | -    |
-| postconf              | -    |
-| postdrop              | -    |
-| postfix               | -    |
-| postkick              | -    |
-| postlock              | -    |
-| postlog               | -    |
-| postmap               | -    |
-| postmulti             | -    |
-| postqueue             | -    |
-| postsuper             | -    |
-| pppd                  | -    |
-| praudit               | -    |
-| purge                 | -    |
-| pwd_mkdb              | -    |
-| quotaoff              | -    |
-| quotaon               | -    |
-| racoon                | -    |
-| raidutil              | -    |
-| rarpd                 | -    |
-| reject                | -    |
-| repairHomePermissions | -    |
-| repquota              | -    |
-| rotatelogs            | -    |
-| rpc.lockd             | -    |
-| rpc.statd             | -    |
-| rpcbind               | -    |
-| rpcinfo               | -    |
-| rtadvd                | -    |
-| rtsold                | -    |
-| sa                    | -    |
-| sc_auth               | -    |
-| screencapture         | -    |
-| scselect              | -    |
-| scutil                | -    |
-| securityd             | -    |
-| sendmail              | -    |
-| serverinfo            | -    |
-| setkey                | -    |
-| setquota              | -    |
-| sharing               | -    |
-| skywalkctl            | -    |
-| slapacl               | -    |
-| slapadd               | -    |
-| slapauth              | -    |
-| slapcat               | -    |
-| slapconfig            | -    |
-| slapdn                | -    |
-| slapindex             | -    |
-| slappasswd            | -    |
-| slapschema            | -    |
-| slaptest              | -    |
-| smbd                  | -    |
-| smbdiagnose           | -    |
-| sncfginstall          | -    |
-| sncfgquery            | -    |
-| sncfgremove           | -    |
-| sncfgtemplate         | -    |
-| sncfgvalidate         | -    |
-| sndiskmove            | -    |
-| snmpd                 | -    |
-| snmptrapd             | -    |
-| softwareupdate        | -    |
-| spctl                 | -    |
-| spindump              | -    |
-| spray                 | -    |
-| sshd                  | -    |
-| sso_util              | -    |
-| sysadminctl           | -    |
-| sysctl                | -    |
-| syslogd               | -    |
-| system_profiler       | -    |
-| systemkeychain        | -    |
-| systemsetup           | -    |
-| systemsoundserverd    | -    |
-| systemstats           | -    |
-| taskpolicy            | -    |
-| tcpdump               | -    |
-| traceroute            | -    |
-| traceroute6           | -    |
-| tsig-keygen           | -    |
-| uasysdiagnose         | -    |
-| universalaccessd      | -    |
-| unsetpassword         | -    |
-| usernoted             | -    |
-| uuchk                 | -    |
-| uucico                | -    |
-| uuconv                | -    |
-| uusched               | -    |
-| uuxqt                 | -    |
-| vifs                  | -    |
-| vipw                  | -    |
-| visudo                | -    |
-| vpnd                  | -    |
-| vsdbutil              | -    |
-| weakpass_edit         | -    |
-| wfsctl                | -    |
-| wirelessproxd         | -    |
-| xartutil              | -    |
-| xsanctl               | -    |
-| xscertadmin           | -    |
-| zdump                 | -    |
-| zic                   | -    |
+| class | 命令                                  | more                                                          |
+| ----- | ------------------------------------- | ------------------------------------------------------------- |
+| 系统  | [fdisk](http://man.linuxde.net/fdisk) | 观察硬盘实体使用情况，也可对硬盘分区                          |
+| 进程  | [lsof](http://man.linuxde.net/lsof)   | 查看你进程开打的文件,打开文件的进程，进程打开的端口(TCP、UDP) |
+| ====  | ====                                  | ====                                                          |
+| ^     | AppleFileServer                       | -                                                             |
+| ^     | BootCacheControl                      | -                                                             |
+| ^     | DevToolsSecurity                      | -                                                             |
+| ^     | DirectoryService                      | -                                                             |
+| ^     | KernelEventAgent                      | -                                                             |
+| ^     | NetBootClientStatus                   | -                                                             |
+| ^     | PasswordService                       | -                                                             |
+| ^     | WirelessRadioManagerd                 | -                                                             |
+| ^     | ab                                    | -                                                             |
+| ^     | ac                                    | -                                                             |
+| ^     | accept                                | -                                                             |
+| ^     | accton                                | -                                                             |
+| ^     | amt                                   | -                                                             |
+| ^     | apachectl                             | -                                                             |
+| ^     | appsleepd                             | -                                                             |
+| ^     | arp                                   | -                                                             |
+| ^     | aslmanager                            | -                                                             |
+| ^     | asr                                   | -                                                             |
+| ^     | audit                                 | -                                                             |
+| ^     | auditd                                | -                                                             |
+| ^     | auditreduce                           | -                                                             |
+| ^     | authserver                            | -                                                             |
+| ^     | automount                             | -                                                             |
+| ^     | avbdeviced                            | -                                                             |
+| ^     | bless                                 | -                                                             |
+| ^     | bluetoothaudiod                       | -                                                             |
+| ^     | bluetoothd                            | -                                                             |
+| ^     | bnepd                                 | -                                                             |
+| ^     | cfprefsd                              | -                                                             |
+| ^     | chat                                  | -                                                             |
+| ^     | checkgid                              | -                                                             |
+| ^     | chown                                 | -                                                             |
+| ^     | chroot                                | -                                                             |
+| ^     | ckksctl                               | -                                                             |
+| ^     | coreaudiod                            | -                                                             |
+| ^     | createhomedir                         | -                                                             |
+| ^     | cron                                  | -                                                             |
+| ^     | cupsaccept                            | -                                                             |
+| ^     | cupsaddsmb                            | -                                                             |
+| ^     | cupsctl                               | -                                                             |
+| ^     | cupsd                                 | -                                                             |
+| ^     | cupsdisable                           | -                                                             |
+| ^     | cupsenable                            | -                                                             |
+| ^     | cupsfilter                            | -                                                             |
+| ^     | cupsreject                            | -                                                             |
+| ^     | cvadmin                               | -                                                             |
+| ^     | cvdb                                  | -                                                             |
+| ^     | cvdbset                               | -                                                             |
+| ^     | cvfsck                                | -                                                             |
+| ^     | cvfsdb                                | -                                                             |
+| ^     | cvfsid                                | -                                                             |
+| ^     | cvgather                              | -                                                             |
+| ^     | cvlabel                               | -                                                             |
+| ^     | cvmkfs                                | -                                                             |
+| ^     | cvupdatefs                            | -                                                             |
+| ^     | cvversions                            | -                                                             |
+| ^     | dbmmanage                             | -                                                             |
+| ^     | ddns-confgen                          | -                                                             |
+| ^     | defragcli                             | -                                                             |
+| ^     | dev_mkdb                              | -                                                             |
+| ^     | disktool                              | -                                                             |
+| ^     | diskutil                              | -                                                             |
+| ^     | distnoted                             | -                                                             |
+| ^     | dnctl                                 | -                                                             |
+| ^     | dnsextd                               | -                                                             |
+| ^     | dot_clean                             | -                                                             |
+| ^     | dsconfigad                            | -                                                             |
+| ^     | dsconfigldap                          | -                                                             |
+| ^     | dseditgroup                           | -                                                             |
+| ^     | dsenableroot                          | -                                                             |
+| ^     | dtrace                                | -                                                             |
+| ^     | edquota                               | -                                                             |
+| ^     | envvars                               | -                                                             |
+| ^     | envvars-std                           | -                                                             |
+| ^     | fcgistarter                           | -                                                             |
+| ^     | filecoordinationd                     | -                                                             |
+| ^     | firmwarepasswd                        | -                                                             |
+| ^     | gpt                                   | -                                                             |
+| ^     | graphicssession                       | -                                                             |
+| ^     | gssd                                  | -                                                             |
+| ^     | hdik                                  | -                                                             |
+| ^     | htcacheclean                          | -                                                             |
+| ^     | htdbm                                 | -                                                             |
+| ^     | htdigest                              | -                                                             |
+| ^     | htpasswd                              | -                                                             |
+| ^     | httpd                                 | -                                                             |
+| ^     | httpd-wrapper                         | -                                                             |
+| ^     | httxt2dbm                             | -                                                             |
+| ^     | installer                             | -                                                             |
+| ^     | ioalloccount                          | -                                                             |
+| ^     | ioclasscount                          | -                                                             |
+| ^     | ioreg                                 | -                                                             |
+| ^     | iostat                                | -                                                             |
+| ^     | ipconfig                              | -                                                             |
+| ^     | kadmin                                | -                                                             |
+| ^     | kadmin.local                          | -                                                             |
+| ^     | kdcsetup                              | -                                                             |
+| ^     | kextcache                             | -                                                             |
+| ^     | kextfind                              | -                                                             |
+| ^     | kextlibs                              | -                                                             |
+| ^     | kextstat                              | -                                                             |
+| ^     | krbservicesetup                       | -                                                             |
+| ^     | ktutil                                | -                                                             |
+| ^     | languagesetup                         | -                                                             |
+| ^     | localemanager                         | -                                                             |
+| ^     | logresolve                            | -                                                             |
+| ^     | lpadmin                               | -                                                             |
+| ^     | lpc                                   | -                                                             |
+| ^     | lpinfo                                | -                                                             |
+| ^     | lpmove                                | -                                                             |
+| ^     | mDNSResponder                         | -                                                             |
+| ^     | mDNSResponderHelper                   | -                                                             |
+| ^     | mkextunpack                           | -                                                             |
+| ^     | mkfile                                | -                                                             |
+| ^     | mkpassdb                              | -                                                             |
+| ^     | mtree                                 | -                                                             |
+| ^     | ndp                                   | -                                                             |
+| ^     | netbiosd                              | -                                                             |
+| ^     | netstat                               | -                                                             |
+| ^     | networksetup                          | -                                                             |
+| ^     | newsyslog                             | -                                                             |
+| ^     | nfs4mapid                             | -                                                             |
+| ^     | nlcontrol                             | -                                                             |
+| ^     | notifyd                               | -                                                             |
+| ^     | nvram                                 | -                                                             |
+| ^     | ocspd                                 | -                                                             |
+| ^     | pdisk                                 | -                                                             |
+| ^     | periodic                              | -                                                             |
+| ^     | php-fpm                               | -                                                             |
+| ^     | pictd                                 | -                                                             |
+| ^     | pkgutil                               | -                                                             |
+| ^     | postalias                             | -                                                             |
+| ^     | postcat                               | -                                                             |
+| ^     | postconf                              | -                                                             |
+| ^     | postdrop                              | -                                                             |
+| ^     | postfix                               | -                                                             |
+| ^     | postkick                              | -                                                             |
+| ^     | postlock                              | -                                                             |
+| ^     | postlog                               | -                                                             |
+| ^     | postmap                               | -                                                             |
+| ^     | postmulti                             | -                                                             |
+| ^     | postqueue                             | -                                                             |
+| ^     | postsuper                             | -                                                             |
+| ^     | pppd                                  | -                                                             |
+| ^     | praudit                               | -                                                             |
+| ^     | purge                                 | -                                                             |
+| ^     | pwd_mkdb                              | -                                                             |
+| ^     | quotaoff                              | -                                                             |
+| ^     | quotaon                               | -                                                             |
+| ^     | racoon                                | -                                                             |
+| ^     | raidutil                              | -                                                             |
+| ^     | rarpd                                 | -                                                             |
+| ^     | reject                                | -                                                             |
+| ^     | repairHomePermissions                 | -                                                             |
+| ^     | repquota                              | -                                                             |
+| ^     | rotatelogs                            | -                                                             |
+| ^     | rpc.lockd                             | -                                                             |
+| ^     | rpc.statd                             | -                                                             |
+| ^     | rpcbind                               | -                                                             |
+| ^     | rpcinfo                               | -                                                             |
+| ^     | rtadvd                                | -                                                             |
+| ^     | rtsold                                | -                                                             |
+| ^     | sa                                    | -                                                             |
+| ^     | sc_auth                               | -                                                             |
+| ^     | screencapture                         | -                                                             |
+| ^     | scselect                              | -                                                             |
+| ^     | scutil                                | -                                                             |
+| ^     | securityd                             | -                                                             |
+| ^     | sendmail                              | -                                                             |
+| ^     | serverinfo                            | -                                                             |
+| ^     | setkey                                | -                                                             |
+| ^     | setquota                              | -                                                             |
+| ^     | sharing                               | -                                                             |
+| ^     | skywalkctl                            | -                                                             |
+| ^     | slapacl                               | -                                                             |
+| ^     | slapadd                               | -                                                             |
+| ^     | slapauth                              | -                                                             |
+| ^     | slapcat                               | -                                                             |
+| ^     | slapconfig                            | -                                                             |
+| ^     | slapdn                                | -                                                             |
+| ^     | slapindex                             | -                                                             |
+| ^     | slappasswd                            | -                                                             |
+| ^     | slapschema                            | -                                                             |
+| ^     | slaptest                              | -                                                             |
+| ^     | smbd                                  | -                                                             |
+| ^     | smbdiagnose                           | -                                                             |
+| ^     | sncfginstall                          | -                                                             |
+| ^     | sncfgquery                            | -                                                             |
+| ^     | sncfgremove                           | -                                                             |
+| ^     | sncfgtemplate                         | -                                                             |
+| ^     | sncfgvalidate                         | -                                                             |
+| ^     | sndiskmove                            | -                                                             |
+| ^     | snmpd                                 | -                                                             |
+| ^     | snmptrapd                             | -                                                             |
+| ^     | softwareupdate                        | -                                                             |
+| ^     | spctl                                 | -                                                             |
+| ^     | spindump                              | -                                                             |
+| ^     | spray                                 | -                                                             |
+| ^     | sshd                                  | -                                                             |
+| ^     | sso_util                              | -                                                             |
+| ^     | sysadminctl                           | -                                                             |
+| ^     | sysctl                                | -                                                             |
+| ^     | syslogd                               | -                                                             |
+| ^     | system_profiler                       | -                                                             |
+| ^     | systemkeychain                        | -                                                             |
+| ^     | systemsetup                           | -                                                             |
+| ^     | systemsoundserverd                    | -                                                             |
+| ^     | systemstats                           | -                                                             |
+| ^     | taskpolicy                            | -                                                             |
+| ^     | tcpdump                               | -                                                             |
+| ^     | traceroute                            | -                                                             |
+| ^     | traceroute6                           | -                                                             |
+| ^     | tsig-keygen                           | -                                                             |
+| ^     | uasysdiagnose                         | -                                                             |
+| ^     | universalaccessd                      | -                                                             |
+| ^     | unsetpassword                         | -                                                             |
+| ^     | usernoted                             | -                                                             |
+| ^     | uuchk                                 | -                                                             |
+| ^     | uucico                                | -                                                             |
+| ^     | uuconv                                | -                                                             |
+| ^     | uusched                               | -                                                             |
+| ^     | uuxqt                                 | -                                                             |
+| ^     | vifs                                  | -                                                             |
+| ^     | vipw                                  | -                                                             |
+| ^     | visudo                                | -                                                             |
+| ^     | vpnd                                  | -                                                             |
+| ^     | vsdbutil                              | -                                                             |
+| ^     | weakpass_edit                         | -                                                             |
+| ^     | wfsctl                                | -                                                             |
+| ^     | wirelessproxd                         | -                                                             |
+| ^     | xartutil                              | -                                                             |
+| ^     | xsanctl                               | -                                                             |
+| ^     | xscertadmin                           | -                                                             |
+| ^     | zdump                                 | -                                                             |
+| ^     | zic                                   | -                                                             |

@@ -2,20 +2,12 @@
 
 - [mac 自带命令](chapters/mac自带命令/README.md)
 
-  - [orther](chapters/mac自带命令/orther.md)
   - [bin](chapters/mac自带命令/bin.md)
+  - [built-in](chapters/mac自带命令/built-in.md)
+  - [orther](chapters/mac自带命令/orther.md)
   - [sbin](chapters/mac自带命令/sbin.md)
   - [usr_bin](chapters/mac自带命令/usr_bin.md)
   - [usr_sbin](chapters/mac自带命令/usr_sbin.md)
-
-- [命令整理](chapters/命令整理/README.md)
-
-- [命令行工具](chapters/命令行工具/README.md)
-
-  - [git](chapters/命令行工具/git.md)
-  - [ssh](chapters/命令行工具/ssh.md)
-  - [svn](chapters/命令行工具/svn.md)
-  - [vim](chapters/命令行工具/vim.md)
 
 - [shell](chapters/shell/README.md)
 
@@ -27,6 +19,13 @@
   - [循环表达式](chapters/shell/循环表达式.md)
   - [运行 shell 脚本](chapters/shell/运行shell脚本.md)
   - [字符串](chapters/shell/字符串.md)
+
+- [命令行工具](chapters/命令行工具/README.md)
+
+  - [git](chapters/命令行工具/git.md)
+  - [ssh](chapters/命令行工具/ssh.md)
+  - [svn](chapters/命令行工具/svn.md)
+  - [vim](chapters/命令行工具/vim.md)
 
 - [阿里云](chapters/阿里云/README.md)
   - [翻墙](chapters/阿里云/翻墙.md)
