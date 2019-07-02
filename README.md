@@ -16,6 +16,6 @@
 | 前端技术   | [css](https://treecrow.github.io/docsify-books/css-book/#/)             | css 相关知识点整理                              |
 | ~          | [js](https://treecrow.github.io/docsify-books/js-book/#/)               | js 相关知识点整理                               |
 | ~          | [node](https://treecrow.github.io/docsify-books/node-book/#/)           | ndoe 相关知识点整理                             |
-| ~          | [vue](https://treecrow.github.io/docsify-books/vue-book/#/)             | vue 相关知识点整理                              |
+| ~          | [spa](https://treecrow.github.io/docsify-books/spa-book/#/)             | spa 相关知识点整理                              |
 | ~          | [small](https://treecrow.github.io/docsify-books/small-book/#/)         | 小程序 相关知识点整理                           |
 | ~          | [electron](https://treecrow.github.io/docsify-books/electron-book/#/)   | electron 相关知识点整理                         |
