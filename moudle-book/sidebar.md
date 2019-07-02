@@ -17,6 +17,7 @@
   - [package](chapters/npm_package/npm/package.md)
   - [发布模块](chapters/npm_package/npm/发布模块.md)
   - [语义化版本](chapters/npm_package/npm/语义化版本.md)
+- [axios](chapters/npm_package/axios.md)
 - [commander](chapters/npm_package/commander.md)
 - [docsify](chapters/npm_package/docsify.md)
 - [gitbook](chapters/npm_package/gitbook.md)
