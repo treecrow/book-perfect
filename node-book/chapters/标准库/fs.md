@@ -129,33 +129,33 @@
 
 > 从 fs.stat()、fs.lstat() 和 fs.fstat() 及其同步版本返回的对象都是该类型
 
-| class | api                       | more |
-| ----- | ------------------------- | ---- |
-| api   | stats.isBlockDevice()     | -    |
-| ^     | stats.isCharacterDevice() | -    |
-| ^     | stats.isDirectory()       | -    |
-| ^     | stats.isFIFO()            | -    |
-| ^     | stats.isFile()            | -    |
-| ^     | stats.isSocket()          | -    |
-| ^     | stats.isSymbolicLink()    | -    |
-| ^     | stats.dev                 | -    |
-| ^     | stats.ino                 | -    |
-| ^     | stats.mode                | -    |
-| ^     | stats.nlink               | -    |
-| ^     | stats.uid                 | -    |
-| ^     | stats.gid                 | -    |
-| ^     | stats.rdev                | -    |
-| ^     | stats.size                | -    |
-| ^     | stats.blksize             | -    |
-| ^     | stats.blocks              | -    |
-| ^     | stats.atimeMs             | -    |
-| ^     | stats.mtimeMs             | -    |
-| ^     | stats.ctimeMs             | -    |
-| ^     | stats.birthtimeMs         | -    |
-| ^     | stats.atime               | -    |
-| ^     | stats.mtime               | -    |
-| ^     | stats.ctime               | -    |
-| ^     | stats.birthtime           | -    |
+| class | api                       | more                                                          |
+| ----- | ------------------------- | ------------------------------------------------------------- |
+| api   | stats.isBlockDevice()     | 如果 fs.Stats 对象描述块设备，则返回 true。                   |
+| ^     | stats.isCharacterDevice() | 如果 fs.Stats 对象描述字符设备，则返回 true                   |
+| ^     | stats.isDirectory()       | 如果 fs.Stats 对象描述文件系统目录，则返回 true               |
+| ^     | stats.isFIFO()            | 如果 fs.Stats 对象描述先进先出（FIFO）管道，则返回 true       |
+| ^     | stats.isFile()            | 如果 fs.Stats 对象描述常规文件，则返回 true                   |
+| ^     | stats.isSocket()          | 如果 fs.Stats 对象描述套接字，则返回 true                     |
+| ^     | stats.isSymbolicLink()    | 如果 fs.Stats 对象描述符号链接，则返回 true                   |
+| ^     | stats.dev                 | 包含该文件的设备的数字标识符。                                |
+| ^     | stats.ino                 | 文件系统特定的文件索引节点编号。                              |
+| ^     | stats.mode                | 描述文件类型和模式的位字段。                                  |
+| ^     | stats.nlink               | 文件存在的硬链接数。                                          |
+| ^     | stats.uid                 | 拥有该文件（POSIX）的用户的数字型用户标识符。                 |
+| ^     | stats.gid                 | 拥有该文件（POSIX）的群组的数字型群组标识符。                 |
+| ^     | stats.rdev                | 如果文件被视为特殊文件，则此值为数字型设备标识符。            |
+| ^     | stats.size                | 文件的大小（以字节为单位）。                                  |
+| ^     | stats.blksize             | 用于 I/O 操作的文件系统块的大小。                             |
+| ^     | stats.blocks              | 为此文件分配的块数。                                          |
+| ^     | stats.atimeMs             | 表明上次访问此文件的时间戳，以 POSIX 纪元以来的毫秒数表示。   |
+| ^     | stats.mtimeMs             | 表明上次修改此文件的时间戳，以 POSIX 纪元以来的毫秒数表示。   |
+| ^     | stats.ctimeMs             | 表明上次更改文件状态的时间戳，以 POSIX 纪元以来的毫秒数表示。 |
+| ^     | stats.birthtimeMs         | 表明此文件的创建时间的时间戳，以 POSIX 纪元以来的毫秒数表示。 |
+| ^     | stats.atime               | 表明上次访问此文件的时间戳。                                  |
+| ^     | stats.mtime               | 表明上次修改此文件的时间戳。                                  |
+| ^     | stats.ctime               | 表明上次更改文件状态的时间戳。                                |
+| ^     | stats.birthtime           | 表示此文件的创建时间的时间戳。                                |
 
 - fs.WriteStream 类
 
