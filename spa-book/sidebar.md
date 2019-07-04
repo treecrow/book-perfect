@@ -14,7 +14,7 @@
   - [loaders](chapters/webpack/docs/loaders.md)
   - [plugins](chapters/webpack/docs/plugins.md)
   - [scheme](chapters/webpack/scheme/hash.md)
-  - [scheme](chapters/webpack/scheme/splitChunks.md)
+  - [splitChunks](chapters/webpack/scheme/splitChunks.md)
   - [webpack-dev-server](chapters/webpack/webpack-dev-server.md)
 
 - [babel](chapters/babel.md)
