@@ -7,7 +7,7 @@
 | [菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)                                                                                     |
 | [记录使用 Homebrew 安装 Mysql 全过程](https://blog.csdn.net/lkxlaz/article/details/54580735)                                                     |
 | [Mysql 命令大全](https://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html)                                                               |
-| [旧文档](https://github.com/treecrow/docsify-books/blob/d375bb3ace3a30229af24383b101bd5b46cc55d9/node-book/chapters/%E6%9D%82%E9%A1%B9/mysql.md) |
+| [旧文档](https://github.com/treecrow/book-perfect/blob/d375bb3ace3a30229af24383b101bd5b46cc55d9/node-book/chapters/%E6%9D%82%E9%A1%B9/mysql.md) |
 
 ## 个人整理文档
 

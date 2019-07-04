@@ -1,4 +1,4 @@
-- [首页](README.md)
+- [首页](chapters/README.md)
 
 * [微信小程序](chapters/微信小程序/README.md)
   - [api](chapters/微信小程序/api.md)

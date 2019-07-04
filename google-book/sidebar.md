@@ -1,4 +1,4 @@
-- [首页](README.md)
+- [首页](chapters/README.md)
 
 - [google](chapters/google.md)
 - [内置页面](chapters/内置页面.md)

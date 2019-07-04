@@ -1,4 +1,4 @@
-- [首页](README.md)
+- [首页](chapters/README.md)
 
 - [mac 自带命令](chapters/mac自带命令/README.md)
 
