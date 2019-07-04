@@ -16,3 +16,5 @@
   - [scheme](chapters/webpack/scheme/hash.md)
   - [scheme](chapters/webpack/scheme/splitChunks.md)
   - [webpack-dev-server](chapters/webpack/webpack-dev-server.md)
+
+- [babel](chapters/babel.md)
