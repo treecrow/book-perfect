@@ -2,13 +2,14 @@
 
 ## 官方文档
 
+- [Babel 官方文档](https://babeljs.io/)
+- [options](https://babeljs.io/docs/en/options)
 - [Babel 中文文档](https://www.babeljs.cn/)
 
 ## 相关文档
 
 - [一口(很长的)气了解 babel](https://zhuanlan.zhihu.com/p/53313472)
-- [babel7中 corejs 和 corejs2 的区别](https://www.cnblogs.com/htoooth/p/9724609.html)
-- [关于Babel你只需要知道三个插件](https://www.jianshu.com/p/0dc3bddb6da8)
+- [babel7 中 corejs 和 corejs2 的区别](https://www.cnblogs.com/htoooth/p/9724609.html)
 
 ## 运行方式
 
@@ -30,6 +31,18 @@
 | babel-polyfill                                  | babel 默认只转换 js 语法，而不转换新的 API，比如 Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise 等全局对象，以及一些定义在全局对象上的方法(比如 Object.assign)都不会转码。 |
 | babel-plugin-transform-runtime && babel-runtime | 把帮助类方法从每次使用前定义改为统一 require，精简代码（babel-runtime 需要安装为依赖项，而不是开发依赖）                                                                                    |
 | babel-loader                                    | webpack 打包前的 babel 转译                                                                                                                                                                 |
+
+## [plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
+
+| option          | more |
+| --------------- | ---- |
+| corejs          | -    |
+| helpers         | -    |
+| polyfill        | -    |
+| regenerator     | -    |
+| useBuiltIns     | -    |
+| useESModules    | -    |
+| absoluteRuntime | -    |
 
 ## [babel-preset-env](https://www.babeljs.cn/docs/babel-preset-env)
 
