@@ -7,6 +7,8 @@
 ## 相关文档
 
 - [一口(很长的)气了解 babel](https://zhuanlan.zhihu.com/p/53313472)
+- [babel7中 corejs 和 corejs2 的区别](https://www.cnblogs.com/htoooth/p/9724609.html)
+- [关于Babel你只需要知道三个插件](https://www.jianshu.com/p/0dc3bddb6da8)
 
 ## 运行方式
 
@@ -29,7 +31,7 @@
 | babel-plugin-transform-runtime && babel-runtime | 把帮助类方法从每次使用前定义改为统一 require，精简代码（babel-runtime 需要安装为依赖项，而不是开发依赖）                                                                                    |
 | babel-loader                                    | webpack 打包前的 babel 转译                                                                                                                                                                 |
 
-## babel-preset-env option list
+## [babel-preset-env](https://www.babeljs.cn/docs/babel-preset-env)
 
 | class   | option                   | more                                                                                                         |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
