@@ -1,4 +1,4 @@
-- [首页](chapters/README.md)
+- [首页](README.md)
 
 - [vue](chapters/vue/README.md)
 
