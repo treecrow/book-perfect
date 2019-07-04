@@ -1,42 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css"> -->
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css"> -->
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css"> -->
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dolphin.css"> -->
+    <style>
+      .markdown-section {
+        max-width: none;
+      }
+      .app-name-link img {
+        max-width: 100px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <style>
-    .markdown-section {
-      max-width: none;
-    }
-  </style>
-</head>
+  <body>
+    <nav>
+      <a href="#/">EN</a>
+      <a href="#/zh-cn/">中文</a>
+    </nav>
+    <div id="app">loading......</div>
+    <script>
+      // 获取目录路径（删除最后一部分）
+      function dirnamePath(somaPath) {
+        return somaPath.substring(0, somaPath.lastIndexOf("/"));
+      }
+      // 相对路径转换为绝对路径
+      function abslutePath(basePath, relPath) {
+        let relPathInfo = relPath.split("../").reduce(
+          (pre, cur, index, arr) => {
+            if (index == arr.length - 1) {
+              pre.fileName = cur.startsWith("./")
+                ? cur.substring(2, cur.length)
+                : cur;
+            }
+            if (cur === "") {
+              pre.count += 1;
+            }
+            return pre;
+          },
+          {
+            count: 0,
+            fileName: ""
+          }
+        );
+        let basePathArr = basePath.split("/");
+        basePathArr.splice(
+          basePathArr.length - relPathInfo.count,
+          relPathInfo.count
+        );
+        return `${basePathArr.join("/")}/${relPathInfo.fileName}`;
+      }
 
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      repo: 'https://github.com/treecrow/docsify-books', // 指定 github 库，文档右上角会有 fork icon
-      loadNavbar: "navbar.md", // 加载自定义导航栏
-      loadSidebar: "sidebar.md", // 自定义侧边栏
-      subMaxLevel: 2, // 自定义侧边栏后默认不会再生成目录，想生成需手动设置
-      // basePath: '/docsify-books/vue-book/',
-      coverpage: "coverpage.md", // 设置封面
-      name: '网络知识', // 文档标题
-      nameLink: '/', // 文档标题点击链接
-      // themeColor: '#b5633f', // 修改主题色
-      mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
-      formatUpdated: '{MM}/{DD} {HH}:{mm}', // 显示文档更新日期
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <!-- 图片放大查看 -->
-  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-  <!-- 复制代码 -->
-  <script src="//unpkg.com/docsify-copy-code"></script>
-</body>
-
+      window.$docsify = {
+        // 封面
+        coverpage: "coverpage.md",
+        // 侧边栏
+        // logo: "https://cdn2.codefund.app/mVpfBjXqZNLcn9dxAETSvhun",
+        name: "Network",
+        nameLink: "/book-perfect/network-book/",
+        loadSidebar: "sidebar.md",
+        subMaxLevel: 2,
+        // 导航栏
+        mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
+        // github 库
+        repo: "https://github.com/treecrow/book-perfect",
+        // 首页文件
+        homepage: "./chapters/README.md",
+        // 链接
+        externalLinkTarget: "_self",
+        markdown: {
+          renderer: {
+            link: function(href, title, text) {
+              if (href.startsWith(".")) {
+                href = abslutePath(dirnamePath(window.location.href), href);
+              }
+              return this.origin.link.apply(this, arguments);
+            },
+            image: function(href, title, text) {
+              if (href.startsWith(".")) {
+                href = abslutePath(dirnamePath(window.location.href), href);
+              }
+              return this.origin.image.apply(this, arguments);
+            }
+          }
+        }
+      };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <!-- 图片放大查看 -->
+    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+    <!-- 复制代码 -->
+    <script src="//unpkg.com/docsify-copy-code"></script>
+  </body>
 </html>
