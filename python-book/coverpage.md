@@ -4,5 +4,5 @@
 
 > python 相关知识总结
 
-[GitHub](https://github.com/treecrow/docsify-books)
+[GitHub](https://github.com/treecrow/book-perfect)
 [开始](README.md)
