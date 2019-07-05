@@ -1,5 +1,12 @@
 # [plugins](https://webpack.js.org/plugins/)
 
+## 模块知识点整理
+
+| 模块                                                | more |
+| --------------------------------------------------- | ---- |
+| [webpack.SplitChunksPlugin](./SplitChunksPlugin.md) | -    |
+| [webpack-dev-server](./webpack-dev-server.md)       | -    |
+
 ## Internal webpack plugins list
 
 | class                      | plugin                                                                                                                     | more                                                                                     |

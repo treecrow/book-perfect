@@ -10,11 +10,9 @@
 
 - [webpack](chapters/webpack/README.md)
 
+  - [plugins](chapters/webpack/plugins/README.md)
+  - [scheme](chapters/webpack/scheme/README.md)
   - [configuration](chapters/webpack/docs/configuration.md)
   - [loaders](chapters/webpack/docs/loaders.md)
-  - [plugins](chapters/webpack/docs/plugins.md)
-  - [scheme](chapters/webpack/scheme/hash.md)
-  - [splitChunks](chapters/webpack/scheme/splitChunks.md)
-  - [webpack-dev-server](chapters/webpack/webpack-dev-server.md)
 
 - [babel](chapters/babel.md)
