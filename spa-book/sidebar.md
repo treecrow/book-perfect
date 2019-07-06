@@ -10,9 +10,9 @@
 
 - [webpack](chapters/webpack/README.md)
 
+  - [configuration](chapters/webpack/configuration/README.md)
   - [plugins](chapters/webpack/plugins/README.md)
   - [scheme](chapters/webpack/scheme/README.md)
-  - [configuration](chapters/webpack/docs/configuration.md)
-  - [loaders](chapters/webpack/docs/loaders.md)
+  - [loaders](chapters/webpack/loaders.md)
 
 - [babel](chapters/babel.md)
