@@ -4,11 +4,12 @@
 
 | item                                      | more |
 | ----------------------------------------- | ---- |
-| [Entry and Context](./EntryAndContext.md) | -    |
-| [mode](./mode.md)                         | -    |
-| [Output](./Output.md)                     | -    |
-| [Module](./Module.md)                     | -    |
-| [Resolve](./Resolve.md)                   | -    |
-| [Optimization](./Optimization.md)         | -    |
 | [DevServer](./DevServer.md)               | -    |
 | [Externals](./Externals.md)               | -    |
+| [Entry and Context](./EntryAndContext.md) | -    |
+| [mode](./mode.md)                         | -    |
+| [Module](./Module.md)                     | -    |
+| [Optimization](./Optimization.md)         | -    |
+| [Output](./Output.md)                     | -    |
+| [Resolve](./Resolve.md)                   | -    |
+| [Target](./Target.md)                     | -    |

@@ -75,21 +75,21 @@
 
 ## 官方推荐插件列表
 
-| plugin                                                                                     | more          |
-| ------------------------------------------------------------------------------------------ | ------------- |
-| [babel-minify-webpack-plugin](https://webpack.js.org/plugins/babel-minify-webpack-plugin/) | -             |
-| [closure-webpack-plugin](https://webpack.js.org/plugins/closure-webpack-plugin/)           | -             |
-| [compression-webpack-plugin](https://webpack.js.org/plugins/compression-webpack-plugin/)   | -             |
-| [copy-webpack-plugin](https://webpack.js.org/plugins/copy-webpack-plugin/)                 | 拷贝文件      |
-| [extract-text-webpack-plugin](https://webpack.js.org/plugins/extract-text-webpack-plugin/) | 抽离 css 样式 |
-| [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)                 | 生成入口页面  |
-| [i18n-webpack-plugin](https://webpack.js.org/plugins/i18n-webpack-plugin/)                 | -             |
-| [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)         | -             |
-| [npm-install-webpack-plugin](https://webpack.js.org/plugins/npm-install-webpack-plugin/)   | -             |
-| [stylelint-webpack-plugin](https://webpack.js.org/plugins/stylelint-webpack-plugin/)       | -             |
-| [terser-webpack-plugin](https://webpack.js.org/plugins/terser-webpack-plugin/)             | -             |
-| [uglifyjs-webpack-plugin](https://webpack.js.org/plugins/uglifyjs-webpack-plugin/)         | 压缩 js       |
-| [zopfli-webpack-plugin](https://webpack.js.org/plugins/zopfli-webpack-plugin/)             | -             |
+| plugin                                                                                     | more                                         |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)         | This plugin extracts CSS into separate files |
+| [babel-minify-webpack-plugin](https://webpack.js.org/plugins/babel-minify-webpack-plugin/) | -                                            |
+| [closure-webpack-plugin](https://webpack.js.org/plugins/closure-webpack-plugin/)           | -                                            |
+| [compression-webpack-plugin](https://webpack.js.org/plugins/compression-webpack-plugin/)   | -                                            |
+| [copy-webpack-plugin](https://webpack.js.org/plugins/copy-webpack-plugin/)                 | 拷贝文件                                     |
+| [extract-text-webpack-plugin](https://webpack.js.org/plugins/extract-text-webpack-plugin/) | 抽离 css 样式                                |
+| [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)                 | 生成入口页面                                 |
+| [i18n-webpack-plugin](https://webpack.js.org/plugins/i18n-webpack-plugin/)                 | -                                            |
+| [npm-install-webpack-plugin](https://webpack.js.org/plugins/npm-install-webpack-plugin/)   | -                                            |
+| [stylelint-webpack-plugin](https://webpack.js.org/plugins/stylelint-webpack-plugin/)       | -                                            |
+| [terser-webpack-plugin](https://webpack.js.org/plugins/terser-webpack-plugin/)             | -                                            |
+| [uglifyjs-webpack-plugin](https://webpack.js.org/plugins/uglifyjs-webpack-plugin/)         | 压缩 js                                      |
+| [zopfli-webpack-plugin](https://webpack.js.org/plugins/zopfli-webpack-plugin/)             | -                                            |
 
 ## 其他插件列表
 
