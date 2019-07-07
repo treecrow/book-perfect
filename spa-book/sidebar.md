@@ -1,5 +1,6 @@
 - [首页](chapters/README.md)
 
+- [npm](chapters/npm/README.md)
 - [sass](chapters/sass/README.md)
 
 - [vue](chapters/vue/README.md)
