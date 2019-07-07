@@ -16,9 +16,9 @@
 | module.someRule.use           | 是对 useEntry 的集合，并且对每一个入口指定使用一个 loader                                                |
 | module.someRule.loaders       | Rule.loaders is an alias to Rule.use                                                                     |
 | module.someRule.loader        | Rule.loader is a shortcut to Rule.use: [ { loader } ]                                                    |
+| module.someRule.sideEffects   | Indicate what parts of the module contain side effects                                                   |
 | module.someRule.enforce       | -                                                                                                        |
 | module.someRule.options       | -                                                                                                        |
 | module.someRule.parser        | -                                                                                                        |
 | module.someRule.rules         | -                                                                                                        |
-| module.someRule.sideEffects   | -                                                                                                        |
 | module.someRule.type          | -                                                                                                        |
