@@ -4,7 +4,9 @@
 
 ## 文档整理
 
-| doc                         | more          |
-| --------------------------- | ------------- |
-| [hash](./hash.md)           | hash 类型区分 |
-| [sourceMap](./sourceMap.md) | -             |
+| doc                             | more          |
+| ------------------------------- | ------------- |
+| [hash](./hash.md)               | hash 类型区分 |
+| [path](./path.md)               | -             |
+| [sideEffects](./sideEffects.md) | -             |
+| [sourceMap](./sourceMap.md)     | -             |
