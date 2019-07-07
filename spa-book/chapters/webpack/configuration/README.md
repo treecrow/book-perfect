@@ -12,4 +12,5 @@
 | [Optimization](./Optimization.md)         | -    |
 | [Output](./Output.md)                     | -    |
 | [Resolve](./Resolve.md)                   | -    |
+| [Devtool](./Devtool.md)                   | -    |
 | [Target](./Target.md)                     | -    |

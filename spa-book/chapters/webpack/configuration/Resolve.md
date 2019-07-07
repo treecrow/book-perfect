@@ -6,12 +6,12 @@
 | ------------- | ------------------------------ | --------------------------------------------------------------- |
 | resolve       | -                              | Configure how modules are resolved                              |
 | ^             | resolve.alias                  | Create aliases to import or require certain modules more easily |
+| ^             | resolve.extensions             | -                                                               |
 | ^             | resolve.aliasFields            | -                                                               |
 | ^             | resolve.cacheWithContext       | -                                                               |
 | ^             | resolve.descriptionFiles       | -                                                               |
 | ^             | resolve.enforceExtension       | -                                                               |
 | ^             | resolve.enforceModuleExtension | -                                                               |
-| ^             | resolve.extensions             | -                                                               |
 | ^             | resolve.mainFields             | -                                                               |
 | ^             | resolve.mainFiles              | -                                                               |
 | ^             | resolve.modules                | -                                                               |

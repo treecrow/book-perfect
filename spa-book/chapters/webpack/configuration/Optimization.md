@@ -6,8 +6,8 @@
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | optimization.splitChunks            | 代码分割                                                                                                                        |
 | optimization.runtimeChunk           | Setting optimization.runtimeChunk to true or "multiple" adds an additional chunk to each entrypoint containing only the runtime |
+| optimization.minimizer              | 允许您通过提供不同的一个或多个自定义 TerserPlugin 实例来覆盖默认最小化程序                                                      |
 | optimization.minimize               | -                                                                                                                               |
-| optimization.minimizer              | -                                                                                                                               |
 | optimization.noEmitOnErrors         | -                                                                                                                               |
 | optimization.namedModules           | -                                                                                                                               |
 | optimization.namedChunks            | -                                                                                                                               |
