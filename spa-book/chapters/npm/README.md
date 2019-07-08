@@ -9,4 +9,4 @@
 | doc                     | more |
 | ----------------------- | ---- |
 | [npm-cli](./npm-cli.md) | -    |
-| [package](./package.md  | -    |
+| [package](./package.md) | -    |
