@@ -1,6 +1,12 @@
 - [首页](chapters/README.md)
 
 - [npm](chapters/npm/README.md)
+
+  - [package](chapters/npm/package.md)
+  - [cli](chapters/npm/cli.md)
+  - [config](chapters/npm/config.md)
+  - [process_env](chapters/npm/process_env.md)
+
 - [sass](chapters/sass/README.md)
 
 - [vue](chapters/vue/README.md)
