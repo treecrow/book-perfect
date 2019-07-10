@@ -1,4 +1,4 @@
-# dns域名服务器
+# [dns域名服务器](http://nodejs.cn/api/dns.html)
 
 ## dns方法
 - dns.getServers()

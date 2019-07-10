@@ -1,4 +1,4 @@
-# ZLIB 压缩
+# [ZLIB 压缩](http://nodejs.cn/api/zlib.html)
 
 ## Compressing HTTP requests and responses
 ## Memory Usage Tuning

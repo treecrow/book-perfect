@@ -1,4 +1,4 @@
-# events
+# [events](http://nodejs.cn/api/events.html)
 
 > 事件
 

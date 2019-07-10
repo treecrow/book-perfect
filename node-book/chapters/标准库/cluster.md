@@ -1,4 +1,4 @@
-# cluster
+# [cluster](http://nodejs.cn/api/cluster.html)
 
 > 集群
 

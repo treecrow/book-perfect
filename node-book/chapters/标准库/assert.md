@@ -1,4 +1,4 @@
-# assert断言
+# [assert断言](http://nodejs.cn/api/assert.html)
 
 > assert 模块提供了一组简单的断言测试集合，可被用于测试不变式
 

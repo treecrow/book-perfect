@@ -1,4 +1,4 @@
-# REPL
+# [REPL](http://nodejs.cn/api/repl.html)
 
 > 交互式解释器
 

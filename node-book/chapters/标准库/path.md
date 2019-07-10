@@ -1,4 +1,4 @@
-# path
+# [path](http://nodejs.cn/api/path.html)
 
 > 路径
 

@@ -1,4 +1,4 @@
-# vm虚拟机
+# [vm虚拟机](http://nodejs.cn/api/vm.html)
 
 ## vm.Script类
 #### 创建vm.Script类

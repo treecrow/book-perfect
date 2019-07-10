@@ -1,4 +1,4 @@
-# queryStrigs查询字符串
+# [queryStrigs查询字符串](http://nodejs.cn/api/querystring.html)
 
 > querystring 模块提供了一些实用工具，用于解析与格式化 URL 查询字符串
 

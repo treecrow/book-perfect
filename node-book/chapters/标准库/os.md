@@ -1,4 +1,4 @@
-# os操作系统
+# [os操作系统](http://nodejs.cn/api/os.html)
 
 ##方法汇总
 - os.EOL

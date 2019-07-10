@@ -1,4 +1,4 @@
-# fs
+# [fs](http://nodejs.cn/api/fs.html)
 
 > fs 模块提供了一个 API，用于以模仿标准 POSIX 函数的方式与文件系统进行交互。
 
@@ -35,6 +35,7 @@
 | fs.realpathSync.native(path[, options])                        | ^                                                |
 | fs.createReadStream(path[, options])                           | 创建读取流                                       |
 | fs.createWriteStream(path[, options])                          | 创建写入流                                       |
+| fs.existsSync(path)                                            | 如果路径存在，则返回 true，否则返回 false        |
 | fs.appendFile(path, data[, options], callback)                 | -                                                |
 | fs.appendFileSync(path, data[, options])                       | -                                                |
 | fs.chmod(path, mode, callback)                                 | -                                                |
@@ -43,7 +44,6 @@
 | fs.chownSync(path, uid, gid)                                   | -                                                |
 | fs.copyFile(src, dest[, flags], callback)                      | -                                                |
 | fs.copyFileSync(src, dest[, flags])                            | -                                                |
-| fs.existsSync(path)                                            | -                                                |
 | fs.fchmod(fd, mode, callback)                                  | -                                                |
 | fs.fchmodSync(fd, mode)                                        | -                                                |
 | fs.fchown(fd, uid, gid, callback)                              | -                                                |

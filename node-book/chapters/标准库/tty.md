@@ -1,4 +1,4 @@
-# TTY
+# [TTY](http://nodejs.cn/api/tty.html)
 
 ## tty (终端)
 > 当 Node.js 检测到它正被运行在一个文本终端（TTY）的上下文中时，则 process.stdin 默认会被初始化为一个 tty.ReadStream 实例，process.stdout 和 process.stderr 默认会被初始化为一个 tty.WriteStream 实例

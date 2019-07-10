@@ -1,4 +1,4 @@
-# buffer
+# [buffer](http://nodejs.cn/api/buffer.html)
 
 ## api
 

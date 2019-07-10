@@ -1,4 +1,4 @@
-# readline逐行读取
+# [readline逐行读取](http://nodejs.cn/api/readline.html)
 
 ```js
 const readline = require('readline');

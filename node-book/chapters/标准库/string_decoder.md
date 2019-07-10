@@ -1,4 +1,4 @@
-# stringDecode字符串解码器
+# [stringDecode字符串解码器](http://nodejs.cn/api/string_decoder.html)
 
 > string_decoder 模块提供了一个 API，用于解码 Buffer 对象成字符串。它可以通过以下方式被使用：
 ```js

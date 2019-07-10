@@ -1,4 +1,4 @@
-# stream
+# [stream](http://nodejs.cn/api/stream.html)
 
 > 流
 
