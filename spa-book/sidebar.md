@@ -3,8 +3,10 @@
 - [npm](chapters/npm/README.md)
 
   - [package](chapters/npm/package.md)
+  - [版本控制](chapters/npm/版本控制.md)
   - [cli](chapters/npm/cli.md)
   - [config](chapters/npm/config.md)
+  - [license](chapters/npm/license.md)
   - [process_env](chapters/npm/process_env.md)
 
 - [sass](chapters/sass/README.md)

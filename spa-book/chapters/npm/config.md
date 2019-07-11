@@ -1,130 +1,132 @@
-# config
+# [npm-config](https://www.npmjs.cn/misc/config/)
 
-```json
-{
-  "npm_config_save_dev": "",
-  "npm_config_legacy_bundling": "",
-  "npm_config_dry_run": "",
-  "npm_config_viewer": "man",
-  "npm_config_only": "",
-  "npm_config_commit_hooks": "true",
-  "npm_config_browser": "",
-  "npm_config_also": "",
-  "npm_config_sign_git_commit": "",
-  "npm_config_rollback": "true",
-  "npm_config_usage": "",
-  "npm_config_audit": "true",
-  "npm_config_globalignorefile": "/Users/zhihui/.nvm/versions/node/v12.3.1/etc/npmignore",
-  "npm_config_shell": "/bin/zsh",
-  "npm_config_maxsockets": "50",
-  "npm_config_init_author_url": "",
-  "npm_config_shrinkwrap": "true",
-  "npm_config_parseable": "",
-  "npm_config_metrics_registry": "https://registry.npmjs.org/",
-  "npm_config_timing": "",
-  "npm_config_init_license": "ISC",
-  "npm_config_if_present": "",
-  "npm_config_sign_git_tag": "",
-  "npm_config_init_author_email": "",
-  "npm_config_cache_max": "Infinity",
-  "npm_config_preid": "",
-  "npm_config_long": "",
-  "npm_config_local_address": "",
-  "npm_config_git_tag_version": "true",
-  "npm_config_cert": "",
-  "npm_config_registry": "https://registry.npmjs.org/",
-  "npm_config_noproxy": "",
-  "npm_config_fetch_retries": "2",
-  "npm_config_versions": "",
-  "npm_config_message": "%s",
-  "npm_config_key": "",
-  "npm_config_globalconfig": "/Users/zhihui/.nvm/versions/node/v12.3.1/etc/npmrc",
-  "npm_config_prefer_online": "",
-  "npm_config_logs_max": "10",
-  "npm_config_always_auth": "",
-  "npm_config_global_style": "",
-  "npm_config_cache_lock_retries": "10",
-  "npm_config_update_notifier": "true",
-  "npm_config_cafile": "",
-  "npm_config_heading": "npm",
-  "npm_config_audit_level": "low",
-  "npm_config_searchlimit": "20",
-  "npm_config_read_only": "",
-  "npm_config_offline": "",
-  "npm_config_fetch_retry_mintimeout": "10000",
-  "npm_config_json": "",
-  "npm_config_access": "",
-  "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"serve\"],\"original\":[\"run\",\"serve\"]}",
-  "npm_config_allow_same_version": "",
-  "npm_config_https_proxy": "",
-  "npm_config_engine_strict": "",
-  "npm_config_description": "true",
-  "npm_config_userconfig": "/Users/zhihui/.npmrc",
-  "npm_config_init_module": "/Users/zhihui/.npm-init.js",
-  "npm_config_cidr": "",
-  "npm_config_user": "501",
-  "npm_config_node_version": "12.3.1",
-  "npm_config_save": "true",
-  "npm_config_ignore_prepublish": "",
-  "npm_config_editor": "vi",
-  "npm_config_auth_type": "legacy",
-  "npm_config_tag": "latest",
-  "npm_config_script_shell": "",
-  "npm_config_progress": "true",
-  "npm_config_global": "",
-  "npm_config_before": "",
-  "npm_config_searchstaleness": "900",
-  "npm_config_optional": "true",
-  "npm_config_ham_it_up": "",
-  "npm_config_save_prod": "",
-  "npm_config_force": "",
-  "npm_config_bin_links": "true",
-  "npm_config_searchopts": "",
-  "npm_config_node_gyp": "/Users/zhihui/.nvm/versions/node/v12.3.1/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
-  "npm_config_depth": "Infinity",
-  "npm_config_sso_poll_frequency": "500",
-  "npm_config_rebuild_bundle": "true",
-  "npm_config_unicode": "true",
-  "npm_config_fetch_retry_maxtimeout": "60000",
-  "npm_config_tag_version_prefix": "v",
-  "npm_config_strict_ssl": "true",
-  "npm_config_sso_type": "oauth",
-  "npm_config_scripts_prepend_node_path": "warn-only",
-  "npm_config_save_prefix": "^",
-  "npm_config_loglevel": "notice",
-  "npm_config_ca": "",
-  "npm_config_save_exact": "",
-  "npm_config_group": "20",
-  "npm_config_fetch_retry_factor": "10",
-  "npm_config_dev": "",
-  "npm_config_version": "",
-  "npm_config_prefer_offline": "",
-  "npm_config_cache_lock_stale": "60000",
-  "npm_config_otp": "",
-  "npm_config_cache_min": "10",
-  "npm_config_searchexclude": "",
-  "npm_config_cache": "/Users/zhihui/.npm",
-  "npm_config_color": "true",
-  "npm_config_proxy": "",
-  "npm_config_package_lock": "true",
-  "npm_config_package_lock_only": "",
-  "npm_config_save_optional": "",
-  "npm_config_ignore_scripts": "",
-  "npm_config_user_agent": "npm/6.9.0 node/v12.3.1 darwin x64",
-  "npm_config_cache_lock_wait": "10000",
-  "npm_config_production": "",
-  "npm_config_send_metrics": "",
-  "npm_config_save_bundle": "",
-  "npm_config_umask": "0022",
-  "npm_config_node_options": "",
-  "npm_config_init_version": "1.0.0",
-  "npm_config_init_author_name": "",
-  "npm_config_git": "git",
-  "npm_config_scope": "",
-  "npm_config_unsafe_perm": "true",
-  "npm_config_tmp": "/var/folders/xd/syh01_m50j92v4jcd7x6yrrc0000gn/T",
-  "npm_config_onload_script": "",
-  "npm_config_prefix": "/Users/zhihui/.nvm/versions/node/v12.3.1",
-  "npm_config_link": ""
-}
-```
+## config list
+
+| class    | config                                                                                   | .npmrc                                                  | 解释                                                                                                             |
+| -------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| ===      | ===                                                                                      | ===                                                     |
+| ^        | [access](https://www.npmjs.cn/misc/config/#access)                                       | null                                                    | 发布范围内的包时，访问级别默认为受限                                                                             |
+| ^        | [allow-same-version](https://www.npmjs.cn/misc/config/#allow-same-version)               | false                                                   | -                                                                                                                |
+| ^        | [always-auth](https://www.npmjs.cn/misc/config/#always-auth)                             | false                                                   | -                                                                                                                |
+| ^        | [also](https://www.npmjs.cn/misc/config/#also)                                           | null                                                    | When "dev" or "development" and running local npm shrinkwrap, npm outdated, or npm update, is an alias for --dev |
+| ^        | [audit](https://www.npmjs.cn/misc/config/#audit)                                         | true                                                    | -                                                                                                                |
+| ^        | [audit-level](https://www.npmjs.cn/misc/config/#audit-level)                             | low                                                     | -                                                                                                                |
+| ^        | [auth-type](https://www.npmjs.cn/misc/config/#auth-type)                                 | legacy                                                  | -                                                                                                                |
+| ^        | [bin-links](https://www.npmjs.cn/misc/config/#bin-links)                                 | true                                                    | -                                                                                                                |
+| ^        | [browser](https://www.npmjs.cn/misc/config/#browser)                                     | null                                                    | -                                                                                                                |
+| ^        | [ca](https://www.npmjs.cn/misc/config/#ca)                                               | null                                                    | -                                                                                                                |
+| ^        | [cafile](https://www.npmjs.cn/misc/config/#cafile)                                       | undefined                                               | -                                                                                                                |
+| ^        | [cache](https://www.npmjs.cn/misc/config/#cache)                                         | /Users/zhihui/.npm                                      | -                                                                                                                |
+| ^        | [cache-lock-stale](https://www.npmjs.cn/misc/config/#cache-lock-stale)                   | 60000                                                   | -                                                                                                                |
+| ^        | [cache-lock-retries](https://www.npmjs.cn/misc/config/#cache-lock-retries)               | 10                                                      | -                                                                                                                |
+| ^        | [cache-lock-wait](https://www.npmjs.cn/misc/config/#cache-lock-wait)                     | 10000                                                   | -                                                                                                                |
+| ^        | [cache-max](https://www.npmjs.cn/misc/config/#cache-max)                                 | null                                                    | -                                                                                                                |
+| ^        | [cache-min](https://www.npmjs.cn/misc/config/#cache-min)                                 | 10                                                      | -                                                                                                                |
+| ^        | [cert](https://www.npmjs.cn/misc/config/#cert)                                           | null                                                    | -                                                                                                                |
+| ^        | [cidr](https://www.npmjs.cn/misc/config/#cidr)                                           | null                                                    | -                                                                                                                |
+| ^        | [color](https://www.npmjs.cn/misc/config/#color)                                         | true                                                    | -                                                                                                                |
+| ^        | [depth](https://www.npmjs.cn/misc/config/#depth)                                         | null                                                    | 递归 npm ls、npm cache ls 和 npm outdated 目录时的深度。                                                         |
+| ^        | [description](https://www.npmjs.cn/misc/config/#description)                             | true                                                    | -                                                                                                                |
+| ^        | [dev](https://www.npmjs.cn/misc/config/#dev)                                             | false                                                   | -                                                                                                                |
+| ^        | [dry-run](https://www.npmjs.cn/misc/config/#dry-run)                                     | false                                                   | -                                                                                                                |
+| ^        | [editor](https://www.npmjs.cn/misc/config/#editor)                                       | vi                                                      | -                                                                                                                |
+| ^        | [engine-strict](https://www.npmjs.cn/misc/config/#engine-strict)                         | false                                                   | -                                                                                                                |
+| ^        | [force](https://www.npmjs.cn/misc/config/#force)                                         | false                                                   | -                                                                                                                |
+| ^        | [fetch-retries](https://www.npmjs.cn/misc/config/#fetch-retries)                         | 2                                                       | -                                                                                                                |
+| ^        | [fetch-retry-factor](https://www.npmjs.cn/misc/config/#fetch-retry-factor)               | 10                                                      | -                                                                                                                |
+| ^        | [fetch-retry-mintimeout](https://www.npmjs.cn/misc/config/#fetch-retry-mintimeout)       | 10000                                                   | -                                                                                                                |
+| ^        | [fetch-retry-maxtimeout](https://www.npmjs.cn/misc/config/#fetch-retry-maxtimeout)       | 60000                                                   | -                                                                                                                |
+| ^        | [git](https://www.npmjs.cn/misc/config/#git)                                             | git                                                     | -                                                                                                                |
+| ^        | [git-tag-version](https://www.npmjs.cn/misc/config/#git-tag-version)                     | true                                                    | -                                                                                                                |
+| ^        | [commit-hooks](https://www.npmjs.cn/misc/config/#commit-hooks)                           | true                                                    | -                                                                                                                |
+| ^        | [global](https://www.npmjs.cn/misc/config/#global)                                       | false                                                   | 在“全局”模式下操作，以便将包安装到全局文件夹而不是当前工作目录中                                                 |
+| ^        | [globalconfig](https://www.npmjs.cn/misc/config/#globalconfig)                           | /Users/zhihui/.nvm/versions/node/v12.3.1/etc/npmrc      | -                                                                                                                |
+| ^        | [global-style](https://www.npmjs.cn/misc/config/#global-style)                           | false                                                   | -                                                                                                                |
+| ^        | [group](https://www.npmjs.cn/misc/config/#group)                                         | 20                                                      | -                                                                                                                |
+| ^        | [heading](https://www.npmjs.cn/misc/config/#heading)                                     | npm                                                     | -                                                                                                                |
+| ^        | [https-proxy](https://www.npmjs.cn/misc/config/#https-proxy)                             | null                                                    | -                                                                                                                |
+| ^        | [if-present](https://www.npmjs.cn/misc/config/#if-present)                               | false                                                   | -                                                                                                                |
+| ^        | [ignore-prepublish](https://www.npmjs.cn/misc/config/#ignore-prepublish)                 | false                                                   | -                                                                                                                |
+| ^        | [ignore-scripts](https://www.npmjs.cn/misc/config/#ignore-scripts)                       | false                                                   | -                                                                                                                |
+| ^        | [init-module](https://www.npmjs.cn/misc/config/#init-module)                             | /Users/zhihui/.npm-init.js                              | -                                                                                                                |
+| ^        | [init-author-name](https://www.npmjs.cn/misc/config/#init-author-name)                   | -                                                       | npm 账户名                                                                                                       |
+| ^        | [init-author-email](https://www.npmjs.cn/misc/config/#init-author-email)                 | -                                                       | npm 账户邮箱                                                                                                     |
+| ^        | [init-author-url](https://www.npmjs.cn/misc/config/#init-author-url)                     | -                                                       | -                                                                                                                |
+| ^        | [init-license](https://www.npmjs.cn/misc/config/#init-license)                           | ISC                                                     | -                                                                                                                |
+| ^        | [init-version](https://www.npmjs.cn/misc/config/#init-version)                           | 1.0.0                                                   | -                                                                                                                |
+| ^        | [json](https://www.npmjs.cn/misc/config/#json)                                           | false                                                   | 是否输出 JSON 数据，还是正常输出                                                                                 |
+| ^        | [key](https://www.npmjs.cn/misc/config/#key)                                             | null                                                    | -                                                                                                                |
+| ^        | [legacy-bundling](https://www.npmjs.cn/misc/config/#legacy-bundling)                     | false                                                   | -                                                                                                                |
+| ^        | [link](https://www.npmjs.cn/misc/config/#link)                                           | false                                                   | -                                                                                                                |
+| ^        | [local-address](https://www.npmjs.cn/misc/config/#local-address)                         | undefined                                               | -                                                                                                                |
+| ^        | [loglevel](https://www.npmjs.cn/misc/config/#loglevel)                                   | notice                                                  | -                                                                                                                |
+| ^        | [logstream](https://www.npmjs.cn/misc/config/#logstream)                                 | -                                                       | -                                                                                                                |
+| ^        | [logs-max](https://www.npmjs.cn/misc/config/#logs-max)                                   | 10                                                      | -                                                                                                                |
+| ^        | [long](https://www.npmjs.cn/misc/config/#long)                                           | false                                                   | 在 npm ls 和 npm search 中显示扩展信息                                                                           |
+| ^        | [maxsockets](https://www.npmjs.cn/misc/config/#maxsockets)                               | 50                                                      | 每个源站使用的最大连接数                                                                                         |
+| ^        | [message](https://www.npmjs.cn/misc/config/#message)                                     | %s                                                      | -                                                                                                                |
+| ^        | [metrics-registry](https://www.npmjs.cn/misc/config/#metrics-registry)                   | null                                                    | -                                                                                                                |
+| ^        | [node-options](https://www.npmjs.cn/misc/config/#node-options)                           | null                                                    | -                                                                                                                |
+| ^        | [node-version](https://www.npmjs.cn/misc/config/#node-version)                           | 12.3.1                                                  | -                                                                                                                |
+| ^        | [noproxy](https://www.npmjs.cn/misc/config/#noproxy)                                     | null                                                    | -                                                                                                                |
+| ^        | [offline](https://www.npmjs.cn/misc/config/#offline)                                     | false                                                   | -                                                                                                                |
+| ^        | [onload-script](https://www.npmjs.cn/misc/config/#onload-script)                         | null                                                    | -                                                                                                                |
+| ^        | [only](https://www.npmjs.cn/misc/config/#only)                                           | null                                                    | -                                                                                                                |
+| ^        | [optional](https://www.npmjs.cn/misc/config/#optional)                                   | true                                                    | -                                                                                                                |
+| ^        | [otp](https://www.npmjs.cn/misc/config/#otp)                                             | null                                                    | -                                                                                                                |
+| ^        | [package-lock](https://www.npmjs.cn/misc/config/#package-lock)                           | true                                                    | -                                                                                                                |
+| ^        | [package-lock-only](https://www.npmjs.cn/misc/config/#package-lock-only)                 | false                                                   | -                                                                                                                |
+| ^        | [parseable](https://www.npmjs.cn/misc/config/#parseable)                                 | false                                                   | 从写入标准输出的命令中输出可分析的结果。                                                                         |
+| ^        | [prefer-offline](https://www.npmjs.cn/misc/config/#prefer-offline)                       | false                                                   | 如果为真，则将跳过对缓存数据的过时检查，但将从服务器请求丢失的数据。                                             |
+| ^        | [prefer-online](https://www.npmjs.cn/misc/config/#prefer-online)                         | false                                                   | -                                                                                                                |
+| ^        | [prefix](https://www.npmjs.cn/misc/config/#prefix)                                       | /Users/zhihui/.nvm/versions/node/v12.3.1                | 安装全局模块的位置                                                                                               |
+| ^        | [preid](https://www.npmjs.cn/misc/config/#preid)                                         | -                                                       | -                                                                                                                |
+| ^        | [production](https://www.npmjs.cn/misc/config/#production)                               | false                                                   | -                                                                                                                |
+| ^        | [progress](https://www.npmjs.cn/misc/config/#progress)                                   | true                                                    | -                                                                                                                |
+| ^        | [proxy](https://www.npmjs.cn/misc/config/#proxy)                                         | null                                                    | -                                                                                                                |
+| ^        | [read-only](https://www.npmjs.cn/misc/config/#read-only)                                 | false                                                   | -                                                                                                                |
+| ^        | [rebuild-bundle](https://www.npmjs.cn/misc/config/#rebuild-bundle)                       | true                                                    | -                                                                                                                |
+| ^        | [registry](https://www.npmjs.cn/misc/config/#registry)                                   | https://registry.npmjs.org/                             | npm 包注册表的默认网址                                                                                           |
+| ^        | [rollback](https://www.npmjs.cn/misc/config/#rollback)                                   | true                                                    | -                                                                                                                |
+| ^        | [save](https://www.npmjs.cn/misc/config/#save)                                           | true                                                    | 将已安装的包作为 dependencies 保存到 package.json 文件中。                                                       |
+| ^        | [save-bundle](https://www.npmjs.cn/misc/config/#save-bundle)                             | false                                                   | -                                                                                                                |
+| ^        | [save-prod](https://www.npmjs.cn/misc/config/#save-prod)                                 | false                                                   | -                                                                                                                |
+| ^        | [save-dev](https://www.npmjs.cn/misc/config/#save-dev)                                   | false                                                   | 将已安装的包作为 devDependencies 保存到 package.json 文件中。                                                    |
+| ^        | [save-exact](https://www.npmjs.cn/misc/config/#save-exact)                               | false                                                   | -                                                                                                                |
+| ^        | [save-optional](https://www.npmjs.cn/misc/config/#save-optional)                         | false                                                   | -                                                                                                                |
+| ^        | [save-prefix](https://www.npmjs.cn/misc/config/#save-prefix)                             | ^                                                       | -                                                                                                                |
+| ^        | [scope](https://www.npmjs.cn/misc/config/#scope)                                         | -                                                       | 将当前操作与一个作用域注册表的作用域连接起来                                                                     |
+| ^        | [script-shell](https://www.npmjs.cn/misc/config/#script-shell)                           | null                                                    | -                                                                                                                |
+| ^        | [scripts-prepend-node-path](https://www.npmjs.cn/misc/config/#scripts-prepend-node-path) | warn-only                                               | -                                                                                                                |
+| ^        | [searchexclude](https://www.npmjs.cn/misc/config/#searchexclude)                         | null                                                    | -                                                                                                                |
+| ^        | [searchopts](https://www.npmjs.cn/misc/config/#searchopts)                               | -                                                       | -                                                                                                                |
+| ^        | [searchlimit](https://www.npmjs.cn/misc/config/#searchlimit)                             | 20                                                      | -                                                                                                                |
+| ^        | [searchstaleness](https://www.npmjs.cn/misc/config/#searchstaleness)                     | 900                                                     | -                                                                                                                |
+| ^        | [send-metrics](https://www.npmjs.cn/misc/config/#send-metrics)                           | false                                                   | -                                                                                                                |
+| ^        | [shell](https://www.npmjs.cn/misc/config/#shell)                                         | /bin/zsh                                                | -                                                                                                                |
+| ^        | [shrinkwrap](https://www.npmjs.cn/misc/config/#shrinkwrap)                               | true                                                    | -                                                                                                                |
+| ^        | [sign-git-commit](https://www.npmjs.cn/misc/config/#sign-git-commit)                     | false                                                   | -                                                                                                                |
+| ^        | [sign-git-tag](https://www.npmjs.cn/misc/config/#sign-git-tag)                           | false                                                   | -                                                                                                                |
+| ^        | [sso-poll-frequency](https://www.npmjs.cn/misc/config/#sso-poll-frequency)               | 500                                                     | -                                                                                                                |
+| ^        | [sso-type](https://www.npmjs.cn/misc/config/#sso-type)                                   | oauth                                                   | -                                                                                                                |
+| ^        | [strict-ssl](https://www.npmjs.cn/misc/config/#strict-ssl)                               | true                                                    | -                                                                                                                |
+| ^        | [tag](https://www.npmjs.cn/misc/config/#tag)                                             | latest                                                  | -                                                                                                                |
+| ^        | [tag-version-prefix](https://www.npmjs.cn/misc/config/#tag-version-prefix)               | v                                                       | -                                                                                                                |
+| ^        | [timing](https://www.npmjs.cn/misc/config/#timing)                                       | false                                                   | -                                                                                                                |
+| ^        | [tmp](https://www.npmjs.cn/misc/config/#tmp)                                             | /var/folders/xd/syh01_m50j92v4jcd7x6yrrc0000gn/T        | -                                                                                                                |
+| ^        | [unicode](https://www.npmjs.cn/misc/config/#unicode)                                     | true                                                    | -                                                                                                                |
+| ^        | [unsafe-perm](https://www.npmjs.cn/misc/config/#unsafe-perm)                             | true                                                    | -                                                                                                                |
+| ^        | [update-notifier](https://www.npmjs.cn/misc/config/#update-notifier)                     | true                                                    | -                                                                                                                |
+| ^        | [usage](https://www.npmjs.cn/misc/config/#usage)                                         | false                                                   | -                                                                                                                |
+| ^        | [user](https://www.npmjs.cn/misc/config/#user)                                           | 501                                                     | -                                                                                                                |
+| ^        | [userconfig](https://www.npmjs.cn/misc/config/#userconfig)                               | /Users/zhihui/.npmrc                                    | -                                                                                                                |
+| ^        | [umask](https://www.npmjs.cn/misc/config/#umask)                                         | 18                                                      | -                                                                                                                |
+| ^        | [user-agent](https://www.npmjs.cn/misc/config/#user-agent)                               | npm/{npm-version} node/{node-version} {platform} {arch} | -                                                                                                                |
+| ^        | [version](https://www.npmjs.cn/misc/config/#version)                                     | false                                                   | -                                                                                                                |
+| ^        | [versions](https://www.npmjs.cn/misc/config/#versions)                                   | false                                                   | -                                                                                                                |
+| ^        | [viewer](https://www.npmjs.cn/misc/config/#viewer)                                       | man                                                     | -                                                                                                                |
+| notFound | -                                                                                        | -                                                       |
+| ^        | before                                                                                   | null                                                    |
+| ^        | `_exit`                                                                                  | true                                                    |
+| ^        | ham-it-up                                                                                | false                                                   |
+| ^        | globalignorefile                                                                         | /Users/zhihui/.nvm/versions/node/v12.3.1/etc/npmignore  |
