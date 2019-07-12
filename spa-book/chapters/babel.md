@@ -34,15 +34,14 @@
 
 ## [plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
 
-| option          | more |
-| --------------- | ---- |
-| corejs          | -    |
-| helpers         | -    |
-| polyfill        | -    |
-| regenerator     | -    |
-| useBuiltIns     | -    |
-| useESModules    | -    |
-| absoluteRuntime | -    |
+| option          | defaults | more                                                                                                                           |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| corejs          | -        | -                                                                                                                              |
+| helpers         | true     | oggles whether or not inlined Babel helpers (classCallCheck, extends, etc.) are replaced with calls to moduleName              |
+| regenerator     | true     | Toggles whether or not generator functions are transformed to use a regenerator runtime that does not pollute the global scope |
+| useBuiltIns     | -        | -                                                                                                                              |
+| useESModules    | -        | -                                                                                                                              |
+| absoluteRuntime | -        | -                                                                                                                              |
 
 ## [babel-preset-env](https://www.babeljs.cn/docs/babel-preset-env)
 
