@@ -71,26 +71,6 @@
 
 ---
 
-- [typeScript](chapters/typeScript/README.md)
-
-  - [tsconfig.json](chapters/typeScript/tsconfig.md)
-  - [tsc 命令行](chapters/typeScript/tsc命令行.md)
-  - [函数](chapters/typeScript/函数.md)
-  - [变量声明](chapters/typeScript/变量声明.md)
-  - [命名空间](chapters/typeScript/命名空间.md)
-  - [基础类型](chapters/typeScript/基础类型.md)
-  - [声明合并](chapters/typeScript/声明合并.md)
-  - [接口](chapters/typeScript/接口.md)
-  - [枚举](chapters/typeScript/枚举.md)
-  - [模块解析](chapters/typeScript/模块解析.md)
-  - [类](chapters/typeScript/类.md)
-  - [类型兼容性](chapters/typeScript/类型兼容性.md)
-  - [类型推论](chapters/typeScript/类型推论.md)
-  - [范型](chapters/typeScript/范型.md)
-  - [高级类型](chapters/typeScript/高级类型.md)
-
----
-
 - [面试题](chapters/面试题/README.md)
 
   - [js](chapters/面试题/js/README.md)
