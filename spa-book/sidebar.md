@@ -9,7 +9,9 @@
   - [license](chapters/npm/license.md)
   - [process_env](chapters/npm/process_env.md)
 
+- [rollup](chapters/rollup/README.md)
 - [sass](chapters/sass/README.md)
+- [typeScript](chapters/typeScript/README.md)
 
 - [vue](chapters/vue/README.md)
 

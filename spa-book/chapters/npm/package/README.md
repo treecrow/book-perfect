@@ -24,6 +24,7 @@
 | dependencies            | 指定了依赖的包名和其版本范围的映射                                                                              |
 | devDependencies         | 可选字段，开发环境下的依赖包，格式同 dependencies 属性                                                          |
 | config                  | config 字段是一个对象，可以用来配置包脚本中的跨版本参数                                                         |
+| files                   | 可选字段，项目包含的一组文件                                                                                    |
 | ===                     | ===                                                                                                             |
 | readmeFilename          | 项目文档（默认为 README.md）                                                                                    |
 | ===                     | ===                                                                                                             |
@@ -35,7 +36,6 @@
 | directories.example     | 把示例脚本放在这。也许某一天会被用到                                                                            |
 | directories.test        | -                                                                                                               |
 | contributors            | -                                                                                                               |
-| files                   | 可选字段，项目包含的一组文件                                                                                    |
 | main                    | 可选字段，建议必填。这个字段的值是你程序主入口模块的 ID                                                         |
 | man                     | 指定一个单一的文件名或一个文件名数组来让 man 程序使用                                                           |
 | peerDependencies        | 可选字段。兼容性依赖。如果你的包是插件，适合这种方式                                                            |
