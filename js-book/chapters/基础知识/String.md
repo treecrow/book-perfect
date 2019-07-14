@@ -1,91 +1,47 @@
 # [String](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-> String 类型相关知识点
+## api list
 
-## api 列表
-
-| 分类     | api                                            | more                                                                                         |
-| -------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| 转化     | -                                              | -                                                                                            |
-| ~        | otherType.toString()                           | 不能将 null 和 undefined 转换为字符串，但是可以转进制字符串                                  |
-| ~        | numType.toString(2/8/16)                       | 将数字转换为 2/8/16 进制，默认十进制                                                         |
-| ~        | buffer.toString([encoding], [start], [end])    | 转换成字符串后的字符编码，默认为 ‘utf8′(我还知道有'hex')                                     |
-| ~        | String()                                       | 可以将 null 和 undefined 转换为字符串，但是没法转进制字符串                                  |
-| 查找     | -                                              | -                                                                                            |
-| ~        | str.indexOf()                                  | 返回某个指定的字符串值在字符串中首次出现的位置                                               |
-| ~        | str.lastIndexOf()                              | 返回一个指定的字符串值最后出现的位置                                                         |
-| ~        | str.charAt()                                   | 返回字符串给定位置的字符                                                                     |
-| ~        | str.at()                                       | 返回字符串给定位置的字符,可以识别 Unicode 编号大于 0xFFFF 的字符，返回正确的字符             |
-| 操作     | -                                              | -                                                                                            |
-| ~        | str.substr(start [, length ])                  | 在字符串中抽取从 start 下标开始的指定数目的字                                                |
-| ~        | str.substring(start [,stop])                   | 用于提取字符串中介于两个指定下标之间的字符                                                   |
-| ~        | str.slice(start [,stop])                       | 用于提取字符串中介于两个指定下标之间的字符                                                   |
-| ~        | str.slice(-num)                                | 提取字符串后面 num 个字符                                                                    |
-| ~        | str.split()                                    | 用于把一个字符串分割成字符串数组                                                             |
-| ~        | str.concat()                                   | 将两个或多个字符串，并返回一个新的单字符串                                                   |
-| ~        | str.repeat(n)                                  | 返回一个新字符串，表示将原字符串重复 n 次                                                    |
-| ~        | str.padStart(len,str)                          | 如果某个字符串不够指定长度，会在头部或尾部补全                                               |
-| ~        | str.padEnd(len,str)                            | ~                                                                                            |
-| ~        | String.raw()                                   | 用来充当模板字符串的处理函数，返回一个斜杠都被转义（即斜杠前面再加一个斜杠）的字符串         |
-| 大小写   | -                                              | -                                                                                            |
-| ~        | str.toLowerCase()                              | 把字符串转换为小写                                                                           |
-| ~        | str.toLocaleLowerCase()                        | -                                                                                            |
-| ~        | str.toUpperCase()                              | 把字符串转换为大写                                                                           |
-| ~        | str.toLocaleUpperCase()                        | -                                                                                            |
-| 判断     | -                                              | -                                                                                            |
-| ~        | str.includes()                                 | 返回布尔值，表示是否找到了参数字符串                                                         |
-| ~        | str.startsWith()                               | 返回布尔值，表示参数字符串是否在源字符串的头部                                               |
-| ~        | str.endsWith()                                 | 返回布尔值，表示参数字符串是否在源字符串的尾部                                               |
-| ~        | localeCompare()                                | 用本地特定的顺序来比较两个字符串                                                             |
-| 码点     | -                                              | -                                                                                            |
-| ~        | str.charCodeAt()                               | 返回一个字符的码点                                                                           |
-| ~        | String.fromCharCode()                          | 从码点返回对应字符                                                                           |
-| ~        | str.codePointAt()                              | 能够正确处理 4 个字节储存的字符，返回一个字符的码点                                          |
-| ~        | String.fromCodePoint()                         | 从码点返回对应字符,可以识别大于 0xFFFF 的字符                                                |
-| ~        | unicode.normalize()                            | 用来将字符的不同表示方法统一为同样的形式，这称为 Unicode 正规化                              |
-| 模式匹配 | -                                              | -                                                                                            |
-| ~        | str.match(pattern(非全局模式))                 | 返回一个数组，包含所有匹配的内容，同时包含 index、input 属性（pattern 自动转换为正则表达式） |
-| ~        | str.match(pattern(全局模式))                   | 返回一个数组，包含所有匹配的内容（pattern 自动转换为正则表达式）                             |
-| ~        | str.match()                                    | 返回 [""]                                                                                    |
-| ~        | str.replace(regexp/substr, newSubstr/function) | 用另一个字符串替换匹配的部分并返回，第二个参数可以是 \$ 或者函数                             |
-| ~        | str.search(pattern)                            | 返回首次匹配成功的位置 (pattern 自动转换为正则表达式 && 不支持全局搜索）                     |
-| ~        | str.split(separator[, limit])                  | 字符串从匹配的地方拆分为数组                                                                 |
-| ~        | str.matchAll()                                 | matchAll 方法返回一个正则表达式在当前字符串的所有匹配                                        |
-
-## 字符串的遍历
-
-> 字符串的遍历就用 for...of，可以识别大于 0xFFFF 的码点
-
-## 字符的 Unicode 表示法
-
-```javascript
-"z" === "z"; // true
-"\172" === "z"; // true
-"\x7A" === "z"; // true
-"\u007A" === "z"; // true
-"\u{7A}" === "z"; // true
-```
-
-## 模板字符串
-
-```javascript
-$("#result").append(
-  "There are <b>" +
-    basket.count +
-    "</b> " +
-    "items in your basket, " +
-    "<em>" +
-    basket.onSale +
-    "</em> are on sale!"
-);
-// ==>
-$("#result").append(`
-  There are <b>${basket.count}</b> items
-   in your basket, <em>${basket.onSale}</em>
-  are on sale!
-`);
-```
-
-## 标签模板
-
-> 略
+| 分类     | api                                                                | more                                                                                                                     |
+| -------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| 转化     | String(thing)                                                      | -                                                                                                                        |
+| ^        | new String(thing)                                                  | -                                                                                                                        |
+| 判断     | String.prototype.endsWith(searchString[, length])                  | 用来判断当前字符串是否是以另外一个给定的子字符串“结尾”的，根据判断结果返回 true 或 false                                 |
+| ^        | String.prototype.startsWith(searchString[, position])              | 用来判断当前字符串是否以另外一个给定的子字符串开头，并根据判断结果返回 true 或 false。                                   |
+| ^        | String.prototype.includes(searchString[, position])                | 用于判断一个字符串是否包含在另一个字符串中，根据情况返回 true 或 false                                                   |
+| ^        | String.prototype.localeCompare(compareString[, locales[, options]) | 返回一个数字来指示一个参考字符串是否在排序顺序前面或之后或与给定字符串相同                                               |
+| 索引     | String.prototype.indexOf(searchValue[, fromIndex])                 | 返回调用 String 对象中第一次出现的指定值的索引，开始在 fromIndex 进行搜索                                                |
+| ^        | String.prototype.lastIndexOf(searchValue[, fromIndex]))            | 返回指定值在调用该方法的字符串中最后出现的位置，如果没找到则返回 -1。从该字符串的后面向前查找，从 fromIndex 处开始       |
+| 码点     | String.fromCharCode(num1, ..., numN)                               | 返回由指定的 UTF-16 代码单元序列创建的字符串                                                                             |
+| ^        | String.fromCodePoint(num1[, ...[, numN]])                          | 返回使用指定的代码点序列创建的字符串                                                                                     |
+| ^        | String.prototype.charCodeAt(index)                                 | 返回 0 到 65535 之间的整数，表示给定索引处的 UTF-16 代码单元                                                             |
+| ^        | String.prototype.codePointAt(pos)                                  | 返回 一个 Unicode 编码点值的非负整数                                                                                     |
+| ^        | String.prototype.normalize([form])                                 | 会按照指定的一种 Unicode 正规形式将当前字符串正规化                                                                      |
+| 模式匹配 | String.prototype.match(regexp)                                     | 回一个字符串匹配正则表达式的的结果                                                                                       |
+| ^        | String.prototype.matchAll(regexp)                                  | 返回一个包含所有匹配正则表达式及分组捕获结果的迭代器                                                                     |
+| ^        | String.prototype.replace(regexp                                    | substr, newSubStr                                                                                                        | function) | 返回一个由替换值（replacement）替换一些或所有匹配的模式（pattern）后的新字符串 |
+| ^        | String.prototype.search(regexp)                                    | 执行正则表达式和 String 对象之间的一个搜索匹配                                                                           |
+| 大小写   | String.prototype.toLocaleLowerCase()                               | 根据任何特定于语言环境的案例映射，返回调用字符串值转换为小写的值。                                                       |
+| ^        | String.prototype.toLocaleUpperCase()                               | 使用本地化（locale-specific）的大小写映射规则将输入的字符串转化成大写形式并返回结果字符串                                |
+| ^        | String.prototype.toLowerCase()                                     | 会将调用该方法的字符串值转为小写形式，并返回                                                                             |
+| ^        | String.prototype.toUpperCase()                                     | 将调用该方法的字符串值转换为大写形式，并返回                                                                             |
+| trim     | String.prototype.trim()                                            | 会从一个字符串的两端删除空白字符                                                                                         |
+| ^        | String.prototype.trimRight()                                       | 从一个字符串的右端移除空白字符                                                                                           |
+| ^        | String.prototype.trimLeft()                                        | 从字符串的开头删除空格                                                                                                   |
+| 提取     | String.prototype.slice(beginSlice[, endSlice])                     | 提取一个字符串的一部分，并返回一新的字符串                                                                               |
+| ^        | String.prototype.substring(indexStart[, indexEnd])                 | 返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集                                 |
+| ^        | String.prototype.charAt(index)                                     | 从一个字符串中返回指定的字符                                                                                             |
+| 补全     | String.prototype.padEnd(targetLength [, padString])                | 用一个字符串填充当前字符串（如果需要的话则重复填充），返回填充后达到指定长度的字符串。从当前字符串的末尾（右侧）开始填充 |
+| ^        | String.prototype.padStart(targetLength [, padString])              | 用另一个字符串填充当前字符串(重复，如果需要的话)，以便产生的字符串达到给定的长度。填充从当前字符串的开始(左侧)应用的。   |
+| ^        | String.prototype.repeat(count)                                     | 构造并返回一个新字符串，该字符串包含被连接在一起的指定数量的字符串的副本。                                               |
+| ^        | String.prototype.concat(string2, string3[, ..., stringN])          | 将一个或多个字符串与原字符串连接合并，形成一个新的字符串并返回                                                           |
+| 数组     | String.prototype.split([separator[, limit]])                       | 使用指定的分隔符字符串将一个 String 对象分割成字符串数组，以将字符串分隔为子字符串，以确定每个拆分的位置                 |
+| 模版     | String.raw(callSite, ...substitutions)                             | 是一个模板字符串的标签函数                                                                                               |
+| ^        | String.raw`templateString`                                         | ^                                                                                                                        |
+| 字符串化 | String.prototype.valueOf()                                         | 返回一个 String 对象的原始值                                                                                             |
+| ^        | String.prototype.toString()                                        | 返回指定对象的字符串形式                                                                                                 |
+| 其他     | [...str]                                                           | 与 `str.split("")` 表现一致                                                                                              |
+| ^        | Array.from(str)                                                    | ^                                                                                                                        |
+| ^        | for...of 循环                                                      | 可以识别大于 0xFFFF 的码点                                                                                               |
+| ^        | atr.length                                                         | -                                                                                                                        |
+| ^        | atr.[index]                                                        | -                                                                                                                        |

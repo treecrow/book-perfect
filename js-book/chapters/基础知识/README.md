@@ -2,9 +2,9 @@
 
 ## 知识点列表
 
-| 知识点                                                   | more |
+| 知识点                                                   | 翻新 |
 | -------------------------------------------------------- | ---- |
-| [Array](./Array.md)                                      | -    |
+| [Array](./Array.md)                                      | ✅   |
 | [async](./async.md)                                      | -    |
 | [Class](./Class.md)                                      | -    |
 | [Date](./Date.md)                                        | -    |
@@ -20,7 +20,7 @@
 | [Promise](./Promise.md)                                  | -    |
 | [Reflect](./Reflect.md)                                  | -    |
 | [Set](./Set.md)                                          | -    |
-| [String](./String.md)                                    | -    |
+| [String](./String.md)                                    | ✅   |
 | [Symbol](./Symbol.md)                                    | -    |
 | [严格模式](./严格模式.md)                                | -    |
 | [二进制数组](./二进制数组.md)                            | -    |
@@ -30,7 +30,7 @@
 | [对象的继承](./对象的继承.md)                            | -    |
 | [布尔值](./布尔值.md)                                    | -    |
 | [数据类型](./数据类型.md)                                | -    |
-| [RegExp](./RegExp.md)                                    | -    |
+| [RegExp](./RegExp.md)                                    | ✅   |
 | [类和模块](./类和模块.md)                                | -    |
 | [类型化数组和 ArrayBuffer](./类型化数组和ArrayBuffer.md) | -    |
 | [解构赋值](./解构赋值.md)                                | -    |
