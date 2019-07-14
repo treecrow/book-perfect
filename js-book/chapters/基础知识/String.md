@@ -1,4 +1,4 @@
-# 字符串
+# [String](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 > String 类型相关知识点
 
@@ -47,7 +47,7 @@
 | ~        | str.match(pattern(非全局模式))                 | 返回一个数组，包含所有匹配的内容，同时包含 index、input 属性（pattern 自动转换为正则表达式） |
 | ~        | str.match(pattern(全局模式))                   | 返回一个数组，包含所有匹配的内容（pattern 自动转换为正则表达式）                             |
 | ~        | str.match()                                    | 返回 [""]                                                                                    |
-| ~        | str.replace(regexp/substr, newSubstr/function) | 用另一个字符串替换匹配的部分并返回，第二个参数可以是 $ 或者函数                              |
+| ~        | str.replace(regexp/substr, newSubstr/function) | 用另一个字符串替换匹配的部分并返回，第二个参数可以是 \$ 或者函数                             |
 | ~        | str.search(pattern)                            | 返回首次匹配成功的位置 (pattern 自动转换为正则表达式 && 不支持全局搜索）                     |
 | ~        | str.split(separator[, limit])                  | 字符串从匹配的地方拆分为数组                                                                 |
 | ~        | str.matchAll()                                 | matchAll 方法返回一个正则表达式在当前字符串的所有匹配                                        |
