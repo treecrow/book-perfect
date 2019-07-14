@@ -30,7 +30,7 @@
   - [对象的继承](chapters/基础知识/对象的继承.md)
   - [布尔值](chapters/基础知识/布尔值.md)
   - [数据类型](chapters/基础知识/数据类型.md)
-  - [正则表达式](chapters/基础知识/正则表达式.md)
+  - [RegExp](chapters/基础知识/RegExp.md)
   - [类和模块](chapters/基础知识/类和模块.md)
   - [类型化数组和 ArrayBuffer](chapters/基础知识/类型化数组和ArrayBuffer.md)
   - [解构赋值](chapters/基础知识/解构赋值.md)
