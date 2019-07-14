@@ -1,4 +1,4 @@
-# Array
+# [Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## api list
 
@@ -39,9 +39,9 @@
 | ^                                    | Array.prototype.toString()                                                                         | 返回一个字符串，表示指定的数组及其元素                                                                                                                     |
 | ^                                    | Array.prototype.toLocaleString([locales[,options]]))                                               | 返回一个字符串表示数组中的元素。数组中的元素将使用各自的 toLocaleString 方法转成字符串，这些字符串将使用一个特定语言环境的字符串（例如一个逗号 ","）隔开。 |
 | 新数组(不改变原来数组)               | Array.prototype.concat(value1[, value2[, ...[, valueN]]]))                                         | 用于合并两个或多个数组或元素。此方法不会更改现有数组，而是返回一个新数组                                                                                   |
-| ^                                    | Array.prototype.flat(depth)                                                                        | 按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。                                                               |
+| ^                                    | Array.prototype.flat(depth)                                                                        | 按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。(`移除 empty`)                                                 |
 | ^                                    | Array.prototype.slice([begin[,end]])                                                               | 返回一个新的数组对象，这一对象是一个由 begin 和 end（不包括 end）决定的原数组的浅拷贝。原始数组不会被改变                                                  |
 | 其他                                 | Array.prototype.length                                                                             | 刻意的设置 length 小于数组元素的数量会删除多余的元素，刻意的设置 length 大于数组元素的数量会使数组变为稀疏数组                                             |
-| ^                                    | delete arr[index]                                                                                  | 删除数组某个索引处等元素(`会让相应元素变成稀疏元素 empty`)                                                                                                 |
+| ^                                    | delete arr[index]                                                                                  | 删除数组某个索引处等元素 (`会让相应元素变成稀疏元素 empty`)                                                                                                |
 | ^                                    | for...of 循环                                                                                      | `将 empty 转为 undefined`                                                                                                                                  |
 | ^                                    | 扩展运算符（...）                                                                                  | ^                                                                                                                                                          |
