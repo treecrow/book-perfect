@@ -1,5 +1,9 @@
 # [Number](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
+## 继承链
+
+> Number->Function->Object
+
 ## api list
 
 | class     | api                                                    | more                                                                                                                     |

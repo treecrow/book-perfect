@@ -1,5 +1,9 @@
 # [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
+## 继承链
+
+> Function->Object
+
 ## api list
 
 | class | api                                                    | more                                                                                                                      |

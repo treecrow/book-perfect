@@ -1,5 +1,9 @@
 # [String](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String)
 
+## 继承链
+
+> String->Function->Object
+
 ## api list
 
 | 分类     | api                                                                | more                                                                                                                     |
