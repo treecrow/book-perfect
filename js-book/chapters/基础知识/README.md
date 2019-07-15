@@ -12,8 +12,9 @@
 | [Math](./Math.md)               | -                           |
 | [Object](./Object.md)           | -                           |
 | [Number](./Number.md)           | -                           |
-| [String](./String.md)           | -                           |
 | [RegExp](./RegExp.md)           | -                           |
+| [String](./String.md)           | -                           |
+| [TypedArray](./TypedArray.md)   | -                           |
 
 | 知识点                                                   | more |
 | -------------------------------------------------------- | ---- |
@@ -51,12 +52,13 @@
 | ----------- | ----------------------------- |
 | Array       | Array->Function->Object       |
 | ArrayBuffer | ArrayBuffer->Function->Object |
-| Function    | Function->Object              |
-| Math        | Math->Object                  |
+| TypedArray  | TypedArray->Function->Object  |
 | Number      | Number->Function->Object      |
-| Object      | Object->Function              |
-| RegExp      | RegExp->Function->Object      |
 | String      | String->Function->Object      |
+| RegExp      | RegExp->Function->Object      |
+| Math        | Math->Object                  |
+| Function    | Function->Object              |
+| Object      | Object->Function              |
 
 ## todo
 
