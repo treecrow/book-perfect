@@ -1,5 +1,7 @@
 # 基础知识
 
+- [JavaScript 标准库](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
+
 ## 知识点列表
 
 | 知识点                                                   | 翻新                           |
