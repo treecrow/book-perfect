@@ -1,5 +1,11 @@
 # [RegExp](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
+> RegExp 构造函数创建了一个正则表达式对象，用于将文本与一个模式匹配
+
+## 继承链
+
+> RegExp->Function->Object
+
 ## 相关文档
 
 - [javascript 指南-正则表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
