@@ -12,6 +12,7 @@
 | [Function](./Function.md)                                | ✅ Function + Arguments + this |
 | [Iterator](./Iterator.md)                                | -                              |
 | [Map](./Map.md)                                          | -                              |
+| [Math](./Math.md)                                        | ✅                             |
 | [Module](./Module.md)                                    | -                              |
 | [Object](./Object.md)                                    | -                              |
 | [new 操作符](./new操作符.md)                             | -                              |
