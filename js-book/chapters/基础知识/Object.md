@@ -2,8 +2,6 @@
 
 > Object 构造函数创建一个对象包装器
 
-- 继承链: `Object->Function`
-
 ## api list
 
 | class | api                                           | more                                                                                                                                         |

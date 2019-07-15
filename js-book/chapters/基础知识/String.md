@@ -2,8 +2,6 @@
 
 > String 全局对象是一个用于字符串或一个字符序列的构造函数。
 
-- 继承链: `String->Function->Object`
-
 ## api list
 
 | 分类     | api                                                                | more                                                                                                                     |

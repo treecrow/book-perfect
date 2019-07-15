@@ -2,8 +2,6 @@
 
 > Function 构造函数 创建一个新的Function对象。 在 JavaScript 中, 每个函数实际上都是一个Function对象。
 
-- 继承链: `Function->Object`
-
 ## api list
 
 | class | api                                                    | more                                                                                                                      |

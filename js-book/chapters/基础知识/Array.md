@@ -2,8 +2,6 @@
 
 > JavaScript 的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象
 
-- 继承链: `Array->Function->Object`
-
 ## api list
 
 | class                                | api                                                                                                | more                                                                                                                                                       |
