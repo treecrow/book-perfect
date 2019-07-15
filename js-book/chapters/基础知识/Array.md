@@ -1,10 +1,8 @@
 # [Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-> JavaScript的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象
+> JavaScript 的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象
 
-## 继承链
-
-> Array->Function->Object
+- 继承链: `Array->Function->Object`
 
 ## api list
 

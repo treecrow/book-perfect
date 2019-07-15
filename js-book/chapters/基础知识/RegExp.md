@@ -2,9 +2,7 @@
 
 > RegExp 构造函数创建了一个正则表达式对象，用于将文本与一个模式匹配
 
-## 继承链
-
-> RegExp->Function->Object
+- 继承链: `RegExp->Function->Object`
 
 ## 相关文档
 
