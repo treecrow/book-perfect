@@ -8,15 +8,17 @@
 | --------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | 创建/转化 | new Number(value)                                      | -                                                                                                                        |
 | ^         | Number(obj)                                            | 可以用于任何数据类型转换成数值                                                                                           |
-| 属性      | Number.EPSILON                                         | 表示 1 与 Number 可表示的大于 1 的最小的浮点数之间的差值                                                                 |
+| 属性      | Number.prototype                                       | 表示 Number 构造函数的原型                                                                                               |
+| ^         | Number.EPSILON                                         | 表示 1 与 Number 可表示的大于 1 的最小的浮点数之间的差值                                                                 |
 | ^         | Number.MAX_SAFE_INTEGER                                | 常量表示在 JavaScript 中最大的安全整数 （maxinum safe integer)（253 - 1）                                                |
 | ^         | Number.MAX_VALUE                                       | 表示在 JavaScript 里所能表示的最大数值                                                                                   |
 | ^         | Number.MIN_SAFE_INTEGER                                | 代表在 JavaScript 中最小的安全的 integer 型数字 (-(253 - 1)).                                                            |
 | ^         | Number.MIN_VALUE                                       | 表示在 JavaScript 中所能表示的最小的正值                                                                                 |
 | ^         | Number.NEGATIVE_INFINITY                               | 表示负无穷大                                                                                                             |
-| ^         | Number.NaN                                             | 表示“非数字”（Not-A-Number）。和 NaN 相同                                                                                |
 | ^         | Number.POSITIVE_INFINITY                               | 表示正无穷大                                                                                                             |
-| ^         | Number.prototype                                       | 表示 Number 构造函数的原型                                                                                               |
+| ^         | Infinity                                               | [Infinity](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Infinity)                    |
+| ^         | Number.NaN                                             | 表示“非数字”（Not-A-Number）。和 NaN 相同                                                                                |
+| ^         | NaN                                                    | [NaN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN)                              |
 | 方法      | Number.isFinite(value)                                 | 用来检测传入的参数是否是一个有穷数（finite number）                                                                      |
 | ^         | Number.isInteger(value)                                | 用来判断给定的参数是否为整数                                                                                             |
 | ^         | Number.isNaN(value)                                    | 确定传递的值是否为 NaN 和其类型是 Number。它是原始的全局 isNaN()的更强大的版本                                           |

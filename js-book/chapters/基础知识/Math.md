@@ -18,7 +18,6 @@
 | ^     | Math.PI                            | 表示一个圆的周长与直径的比例，约为 3.14159                                                                           |
 | ^     | Math.SQRT1_2                       | 表示 1/2 的平方根，约为 0.707                                                                                        |
 | ^     | Math.SQRT2                         | 表示 2 的平方根，约为 1.414                                                                                          |
-| ^     | Infinity                           | [Infinity](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Infinity)                |
 | 方法  | `三角函数`                         | -                                                                                                                    |
 | ^     | Math.atan(x)                       | 返回一个数值的反正切（以弧度为单位）                                                                                 |
 | ^     | Math.atan2(y, x)                   | 返回其参数比值的反正切值                                                                                             |
