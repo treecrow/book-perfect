@@ -20,6 +20,8 @@
 | [Map](./Map.md)                 | Map->Function->Object         | Map + WeakMap                                                                                                                               |
 | [Number](./Number.md)           | Number->Function->Object      | Number + NaN(`没有继承关系`) + Infinity(`没有继承关系`)                                                                                     |
 | [Object](./Object.md)           | Object->Function              | -                                                                                                                                           |
+| [Promise](./Promise.md)         | Promise->Function->Object     | -                                                                                                                                           |
+| [Proxy](./Promise.md)           | -                             | -                                                                                                                                           |
 | ===                             | ===                           | -                                                                                                                                           |
 | [String](./String.md)           | String->Function->Object      | -                                                                                                                                           |
 | [RegExp](./RegExp.md)           | RegExp->Function->Object      | -                                                                                                                                           |
