@@ -11,8 +11,8 @@
 | ^     | Function.prototype                                     | 存储了 Function 的原型对象                                                                                                |
 | ^     | Function.name                                          | 返回函数实例的名称                                                                                                        |
 | 方法  | Function.prototype.apply()                             | 调用一个具有给定 this 值的函数，以及作为一个数组（或类似数组对象）提供的参数。                                            |
-| ^     | Function.prototype.bind()                              | 创建一个新的函数，在 bind()被调用时，这个新函数的 this 被 bind 的第一个参数指定，其余的参数将作为新函数的参数供调用时使用 |
 | ^     | Function.prototype.call()                              | 使用一个指定的 this 值和单独给出的一个或多个参数来调用一个函数                                                            |
+| ^     | Function.prototype.bind()                              | 创建一个新的函数，在 bind()被调用时，这个新函数的 this 被 bind 的第一个参数指定，其余的参数将作为新函数的参数供调用时使用 |
 | ^     | Function.prototype.toString()                          | 返回一个表示当前函数源代码的字符串                                                                                        |
 
 ## [Arguments 对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments)
