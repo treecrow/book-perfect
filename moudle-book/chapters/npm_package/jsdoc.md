@@ -1,8 +1,8 @@
-# JSDoc
+# [jsdoc](https://github.com/jsdoc/jsdoc)
 
 ## 相关文档
 
-* [JSDoc](http://www.css88.com/doc/jsdoc/index.html)
+- [JSDoc](http://www.css88.com/doc/jsdoc/index.html)
 
 ## 块标签
 
