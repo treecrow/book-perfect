@@ -4,28 +4,32 @@
 
 ## 知识点列表
 
-| 知识点                          | 继承链                        | 包含                                                                                                                                        |
-| ------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Array](./Array.md)             | Array->Function->Object       | -                                                                                                                                           |
-| [ArrayBuffer](./ArrayBuffer.md) | ArrayBuffer->Function->Object | -                                                                                                                                           |
-| [DataView](./DataView.md)       | DataView->Function->Object    | -                                                                                                                                           |
-| [Date](./Date.md)               | Date->Function->Object        | -                                                                                                                                           |
-| [Error](./Error.md)             | Error->Function->Object       | Error + EvalError + RangeError + ReferenceError + SyntaxError + TypeError + URIError                                                        |
-| [TypedArray](./TypedArray.md)   | TypedArray->Function->Object  | TypedArray + Int8Array + Uint8Array + Uint8ClampedArray + Int16Array + Uint16Array + Int32Array + Uint32Array + Float32Array + Float64Array |
-| [Function](./Function.md)       | Function->Object              | Function + Arguments + this                                                                                                                 |
-| [Generator](./Generator.md)     | Generator->Function->Object   | Generator + GeneratorFunction                                                                                                               |
-| [Math](./Math.md)               | Math->Object                  |                                                                                                                                             |
-| [Intl](./Intl.md)               | Intl->Object                  | Intl + Collator + DateTimeFormat + ListFormat + NumberFormat + PluralRules + RelativeTimeFormat                                             |
-| [JSON](./JSON.md)               | JSON->Object                  | -                                                                                                                                           |
-| [Map](./Map.md)                 | Map->Function->Object         | Map + WeakMap                                                                                                                               |
-| [Number](./Number.md)           | Number->Function->Object      | Number + NaN(`没有继承关系`) + Infinity(`没有继承关系`)                                                                                     |
-| [Object](./Object.md)           | Object->Function              | -                                                                                                                                           |
-| [Promise](./Promise.md)         | Promise->Function->Object     | -                                                                                                                                           |
-| [Proxy](./Promise.md)           | -                             | -                                                                                                                                           |
-| ===                             | ===                           | -                                                                                                                                           |
-| [String](./String.md)           | String->Function->Object      | -                                                                                                                                           |
-| [RegExp](./RegExp.md)           | RegExp->Function->Object      | -                                                                                                                                           |
-| [Boolean](./Boolean.md)         | Boolean->Function->Object     | -                                                                                                                                           |
+| class     | 知识点                          | 继承链                        | 包含                                                                                                                                        |
+| --------- | ------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Function  | [Array](./Array.md)             | Array->Function->Object       | -                                                                                                                                           |
+| ^         | [ArrayBuffer](./ArrayBuffer.md) | ArrayBuffer->Function->Object | -                                                                                                                                           |
+| ^         | [Boolean](./Boolean.md)         | Boolean->Function->Object     | -                                                                                                                                           |
+| ^         | [DataView](./DataView.md)       | DataView->Function->Object    | -                                                                                                                                           |
+| ^         | [Date](./Date.md)               | Date->Function->Object        | -                                                                                                                                           |
+| ^         | [Error](./Error.md)             | Error->Function->Object       | Error + EvalError + RangeError + ReferenceError + SyntaxError + TypeError + URIError                                                        |
+| ^         | [TypedArray](./TypedArray.md)   | TypedArray->Function->Object  | TypedArray + Int8Array + Uint8Array + Uint8ClampedArray + Int16Array + Uint16Array + Int32Array + Uint32Array + Float32Array + Float64Array |
+| ^         | [Generator](./Generator.md)     | Generator->Function->Object   | Generator + GeneratorFunction                                                                                                               |
+| ^         | [Map](./Map.md)                 | Map->Function->Object         | Map + WeakMap                                                                                                                               |
+| ^         | [Number](./Number.md)           | Number->Function->Object      | Number                                                                                                                                      |
+| ^         | [RegExp](./RegExp.md)           | RegExp->Function->Object      | -                                                                                                                                           |
+| ^         | [Set](./Set.md)                 | Set->Function->Object         | Set + WeakSet                                                                                                                               |
+| ^         | [String](./String.md)           | String->Function->Object      | -                                                                                                                                           |
+| ^         | [Symbol](./Symbol.md)           | Symbol->Function->Object      | -                                                                                                                                           |
+| ^         | [Object](./Object.md)           | Object->Function              | -                                                                                                                                           |
+| ^         | [Promise](./Promise.md)         | Promise->Function->Object     | -                                                                                                                                           |
+| ^         | [Function](./Function.md)       | Function->Object              | Function + Arguments + this                                                                                                                 |
+| Global    | [Math](./Math.md)               | Math->Object                  |                                                                                                                                             |
+| ^         | [Intl](./Intl.md)               | Intl->Object                  | Intl + Collator + DateTimeFormat + ListFormat + NumberFormat + PluralRules + RelativeTimeFormat                                             |
+| ^         | [JSON](./JSON.md)               | JSON->Object                  | -                                                                                                                                           |
+| ^         | [Reflect](./Reflect.md)         | Reflect->Object               | -                                                                                                                                           |
+| ^         | [WebAssembly](./WebAssembly.md) | WebAssembly->Object           | -                                                                                                                                           |
+| orther    | [Proxy](./Proxy.md)             | -                             | -                                                                                                                                           |
+| `_direct` | [`_direct`](./_direct.md)       | -                             | 全局变量/方法，直接使用                                                                                                                     |
 
 ## todo
 
