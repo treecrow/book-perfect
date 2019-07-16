@@ -4,18 +4,24 @@
 
 ## 知识点列表
 
-| 知识点                          | more                        |
-| ------------------------------- | --------------------------- |
-| [Array](./Array.md)             | -                           |
-| [ArrayBuffer](./ArrayBuffer.md) | -                           |
-| [DataView](./DataView.md)       | -                           |
-| [Function](./Function.md)       | Function + Arguments + this |
-| [Math](./Math.md)               | -                           |
-| [Object](./Object.md)           | -                           |
-| [Number](./Number.md)           | -                           |
-| [RegExp](./RegExp.md)           | -                           |
-| [String](./String.md)           | -                           |
-| [TypedArray](./TypedArray.md)   | -                           |
+| 知识点                          | 继承链                        | 包含                                                                                                                                        |
+| ------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Array](./Array.md)             | Array->Function->Object       | -                                                                                                                                           |
+| [ArrayBuffer](./ArrayBuffer.md) | ArrayBuffer->Function->Object | -                                                                                                                                           |
+| [DataView](./DataView.md)       | DataView->Function->Object    | -                                                                                                                                           |
+| [Date](./Date.md)               | Date->Function->Object        | -                                                                                                                                           |
+| [Error](./Error.md)             | Error->Function->Object       | Error + EvalError + RangeError + ReferenceError + SyntaxError + TypeError + URIError                                                        |
+| [TypedArray](./TypedArray.md)   | TypedArray->Function->Object  | TypedArray + Int8Array + Uint8Array + Uint8ClampedArray + Int16Array + Uint16Array + Int32Array + Uint32Array + Float32Array + Float64Array |
+| [Function](./Function.md)       | Function->Object              | Function + Arguments + this                                                                                                                 |
+| [Generator](./Generator.md)     | Generator->Function->Object   | Generator + GeneratorFunction                                                                                                               |
+| [Math](./Math.md)               | Math->Object                  | Math + Infinity(`没有继承关系`)                                                                                                             |
+| [Intl](./Intl.md)               | Intl->Object                  | Intl + Collator + DateTimeFormat + ListFormat + NumberFormat + PluralRules + RelativeTimeFormat                                             |
+| ===                             | ===                           | -                                                                                                                                           |
+| [Number](./Number.md)           | Number->Function->Object      | -                                                                                                                                           |
+| [String](./String.md)           | String->Function->Object      | -                                                                                                                                           |
+| [RegExp](./RegExp.md)           | RegExp->Function->Object      | -                                                                                                                                           |
+| [Boolean](./Boolean.md)         | Boolean->Function->Object     | -                                                                                                                                           |
+| [Object](./Object.md)           | Object->Function              | -                                                                                                                                           |
 
 | 知识点                                | more |
 | ------------------------------------- | ---- |
@@ -46,23 +52,9 @@
 | [运算符](./运算符.md)                 | -    |
 | [遍历总结](./遍历总结.md)             | -    |
 
-## 继承关系汇总
-
-| 类型        | 继承链                        |
-| ----------- | ----------------------------- |
-| Array       | Array->Function->Object       |
-| ArrayBuffer | ArrayBuffer->Function->Object |
-| TypedArray  | TypedArray->Function->Object  |
-| DataView    | DataView->Function->Object    |
-| Number      | Number->Function->Object      |
-| String      | String->Function->Object      |
-| RegExp      | RegExp->Function->Object      |
-| Math        | Math->Object                  |
-| Function    | Function->Object              |
-| Object      | Object->Function              |
-
 ## todo
 
 - 梳理对象继承关系
 - 对象属性相关性质
 - 对象属性的遍历
+- toLocaleString、toString 比较整理

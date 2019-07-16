@@ -4,7 +4,7 @@
 
 ## TypedArray()指的是以下的其中之一
 
-| api                                                                                                                       | more               |
+| type                                                                                                                       | more               |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [Int8Array()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Int8Array)                 | 有符号字节         |
 | [Uint8Array()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)               | 无符号字节         |
