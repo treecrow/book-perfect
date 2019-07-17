@@ -42,7 +42,8 @@
 | ^        | String.raw`templateString`                                         | ^                                                                                                                        |
 | 字符串化 | String.prototype.valueOf()                                         | 返回一个 String 对象的原始值                                                                                             |
 | ^        | String.prototype.toString()                                        | 返回指定对象的字符串形式                                                                                                 |
-| 其他     | [...str]                                                           | 与 `str.split("")` 表现一致                                                                                              |
+| 其他     | String.prototype[Symbol.iterator]()                                | [@@iterator]() 方法返回一个新的 Iterator 对象，它遍历字符串的代码点，返回每一个代码点的字符串值。                        |
+| ^        | [...str]                                                           | 与 `str.split("")` 表现一致                                                                                              |
 | ^        | Array.from(str)                                                    | ^                                                                                                                        |
 | ^        | for...of 循环                                                      | 可以识别大于 0xFFFF 的码点                                                                                               |
 | ^        | atr.length                                                         | -                                                                                                                        |

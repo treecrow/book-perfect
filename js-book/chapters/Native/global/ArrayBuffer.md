@@ -11,3 +11,5 @@
 | ^     | ArrayBuffer.prototype.byteLength          | 表示一个 ArrayBuffer 对象的字节长度                                                                                                |
 | 方法  | ArrayBuffer.isView(arg)                   | 当 arg 是一个 ArrayBuffer 的视图就返回 true, 例如类型化数组对象(typed array objects )或者 一个数据视图(a DataView); 否则返回 false |
 | ^     | ArrayBuffer.prototype.slice(begin[, end]) | 返回一个新的 ArrayBuffer ，它的内容是这个 ArrayBuffer 的字节副本，从 begin（包括），到 end（不包括）                               |
+
+## [类型化数组](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Typed_arrays)

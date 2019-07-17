@@ -4,7 +4,7 @@
 
 ## TypedArray()指的是以下的其中之一
 
-| type                                                                                                                       | more               |
+| type                                                                                                                      | more               |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [Int8Array()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Int8Array)                 | 有符号字节         |
 | [Uint8Array()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)               | 无符号字节         |
@@ -58,6 +58,7 @@
 | ^     | TypedArray.prototype.subarray([begin [,end]])                                    | 返回一个新的、基于相同 ArrayBuffer、元素类型也相同的的 TypedArray                                                                                 |
 | ^     | TypedArray.prototype.toLocaleString([locales [, options]])                       | 返回一个字符串，表明该类型化数组的元素                                                                                                            |
 | ^     | TypedArray.prototype.toString()                                                  | 返回一个表示指定数组及其元素的字符串                                                                                                              |
+| ^     | TypedArray.prototype[Symbol.iterator]()                                          | @@iterator 的初始值是和 values 属性的初始值相同的对象                                                                                             |
 | ^     | TypedArray.prototype.values()                                                    | 返回新的 Array Iterator 对象，包含数组中每个下标处的值                                                                                            |
 
 ## 类型化数组与常规数组的区别

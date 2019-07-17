@@ -18,7 +18,7 @@
 | ^     | Map.prototype.keys()                       | 返回一个新的 Iterator 对象。它包含按照顺序插入 Map 对象中每个元素的 key 值                          |
 | ^     | Map.prototype.set(key,value)               | 为 Map 对象添加或更新一个指定了键（key）和值（value）的（新）键值对                                 |
 | ^     | Map.prototype.values()                     | 返回一个新的 Iterator 对象。它包含按顺序插入 Map 对象中每个元素的 value 值                          |
-| ^     | Map.prototype[@@iterator]()                | @@iterator 属性的初始值与 entries 属性的初始值是同一个函数对象                                      |
+| ^     | Map.prototype[Symbol.iterator]()           | @@iterator 属性的初始值与 entries 属性的初始值是同一个函数对象                                      |
 
 ## [WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
 

@@ -17,7 +17,7 @@
 | ^     | Set.prototype.forEach(callback[, thisArg]) | 方法会根据集合中元素的插入顺序，依次执行提供的回调函数                                                                                                |
 | ^     | Set.prototype.has(value)                   | 返回一个布尔值来指示对应的值 value 是否存在 Set 对象中                                                                                                |
 | ^     | Set.prototype.values()                     | 返回一个 Iterator 对象，该对象按照原 Set 对象元素的插入顺序返回其所有元素。                                                                           |
-| ^     | Set.prototype[@@iterator]()                | The initial value of the @@iterator property is the same function object as the initial value of the values property.                                 |
+| ^     | Set.prototype[Symbol.iterator]()           | The initial value of the @@iterator property is the same function object as the initial value of the values property.                                 |
 
 ## [WeakSet](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 
