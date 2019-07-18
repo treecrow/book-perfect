@@ -1,5 +1,7 @@
 # 面试题
 
+- [MVC，MVP 和 MVVM 的图示](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
+
 ## 面试问题
 
 - 设计模式及其应用
