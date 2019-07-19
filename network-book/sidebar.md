@@ -17,3 +17,4 @@
   - [缓存](chapters/HTTP/缓存.md)
 
 - [nginx](chapters/nginx.md)
+- [web优化](chapters/web优化.md)

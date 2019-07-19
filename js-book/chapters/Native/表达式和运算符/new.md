@@ -18,7 +18,7 @@
 - 模拟过程:
 
 ```javascript
-function newObj(Fun, arguments) {
+function newObj(Fun, ...arguments) {
   var o = {};
   if (Fun && typeof Fun === "function") {
     Object.setPrototypeOf(o, Fun.prototype);
