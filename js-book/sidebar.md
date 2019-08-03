@@ -14,5 +14,3 @@
   - [相等性判断](chapters/Native/相等性判断.md)
   - [严格模式](chapters/Native/严格模式.md)
   - [Classes](chapters/Native/Classes.md)
-
-- [面试题](chapters/面试题.md)

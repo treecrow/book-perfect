@@ -5,6 +5,8 @@
   - [加密](chapters/安全/加密.md)
   - [XSS 与 CSRF](chapters/安全/XSS与CSRF.md)
 
+- [面试题](chapters/面试题/README.md)
+
 - [HTTP](chapters/HTTP/README.md)
 
   - [Cookies](chapters/HTTP/Cookies.md)
@@ -17,4 +19,3 @@
   - [缓存](chapters/HTTP/缓存.md)
 
 - [nginx](chapters/nginx.md)
-- [web优化](chapters/web优化.md)
