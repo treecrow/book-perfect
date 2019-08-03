@@ -1,9 +1,9 @@
-# inlineBlock布局
+# inlineBlock 布局
 
 ## inline-block 元素
 
 ```css
-.inline-list{
+.inline-list {
   margin: 0;
   padding: 0;
   list-style: none;

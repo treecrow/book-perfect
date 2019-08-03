@@ -1,20 +1,20 @@
 - [首页](chapters/README.md)
 
-- [layout](chapters/layout/README.md)
+- [reset](chapters/reset.md)
+
+* layout
 
   - [bfc](chapters/layout/bfc.md)
   - [flex](chapters/layout/flex.md)
   - [inlineBlock](chapters/layout/inlineBlock.md)
   - [水平垂直居中](chapters/layout/水平垂直居中.md)
 
-- [组件](chapters/组件/README.md)
+* assembly
 
-  - [imgBox](chapters/组件/imgBox.md)
-  - [paper](chapters/组件/paper.md)
-  - [step](chapters/组件/step.md)
+  - [imgBox](chapters/assembly/imgBox.md)
+  - [paper](chapters/assembly/paper.md)
+  - [step](chapters/assembly/step.md)
 
-- [display](chapters/display.md)
-- [reset](chapters/reset.md)
-- [tool](chapters/tool.md)
-- [级别](chapters/级别.md)
-- [选择器](chapters/选择器.md)
+* orther
+
+  - [选择器](chapters/orther/选择器.md)
