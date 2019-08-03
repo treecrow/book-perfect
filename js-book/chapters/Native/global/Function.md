@@ -34,11 +34,8 @@
 - [箭头函数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
   - 更短的函数
-  - 不绑定 this
-  - 通过 call 或 apply 调用无效
-  - 不绑定 arguments
-  - 箭头函数不能用作构造器，和 new 一起用会抛出错误
-  - 箭头函数没有 prototype 属性
+  - 不绑定 this,通过 call 或 apply 调用无效, 不绑定 arguments
+  - 箭头函数不能用作构造器，和 new 一起用会抛出错误, 箭头函数没有 prototype 属性
   - yield 关键字通常不能在箭头函数中使用（除非是嵌套在允许使用的函数内）。因此，箭头函数不能用作生成器。
 
 - [默认参数值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Default_parameters)
