@@ -136,8 +136,11 @@
 | ^              | .capture      | 添加事件监听器时使用事件捕获模式                                                                                                                               |
 | ^              | .self         | 只当在 event.target 是当前元素自身时触发处理函数                                                                                                               |
 | ^              | .once         | 事件将只会触发一次                                                                                                                                             |
-| ^              | .passive      | -                                                                                                                                                              |
-| ^              | .native       | -                                                                                                                                                              |
+| ^              | .passive      | 滚动事件的默认行为 (即滚动行为) 将会立即触发 而不会等待 `onScroll` 完成                                                                                        |
+| ^              | .native       | 监听组件根元素的原生事件                                                                                                                                       |
+| v-model 修饰符 | .lazy         | 在默认情况下，v-model 在每次 input 事件触发后将输入框的值与数据进行同步 (除了上述输入法组合文字时)。你可以添加 lazy 修饰符，从而转变为使用 change 事件进行同步 |
+| ^              | .number       | 如果想自动将用户的输入值转为数值类型，可以给 v-model 添加 number 修饰符                                                                                        |
+| ^              | .trim         | 如果要自动过滤用户输入的首尾空白字符，可以给 v-model 添加 trim 修饰符                                                                                          |
 | 按键修饰符     | @keyup.enter  | -                                                                                                                                                              |
 | ^              | @keyup.tab    | -                                                                                                                                                              |
 | ^              | @keyup.delete | -                                                                                                                                                              |
@@ -155,6 +158,3 @@
 | 标按钮修饰符   | .left         | -                                                                                                                                                              |
 | ^              | .right        | -                                                                                                                                                              |
 | ^              | .middle       | -                                                                                                                                                              |
-| v-model 修饰符 | .lazy         | 在默认情况下，v-model 在每次 input 事件触发后将输入框的值与数据进行同步 (除了上述输入法组合文字时)。你可以添加 lazy 修饰符，从而转变为使用 change 事件进行同步 |
-| ^              | .number       | 如果想自动将用户的输入值转为数值类型，可以给 v-model 添加 number 修饰符                                                                                        |
-| ^              | .trim         | 如果要自动过滤用户输入的首尾空白字符，可以给 v-model 添加 trim 修饰符                                                                                          |
