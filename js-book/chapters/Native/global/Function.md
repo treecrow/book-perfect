@@ -56,3 +56,21 @@
 ## [闭包](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
 
 > 闭包是函数和声明该函数的词法环境的组合,这个环境包含了这个闭包创建时所能访问的所有局部变量
+
+## call、apply、bind 模拟实现
+
+```js
+// call、apply
+function myCall(obj, fn, ...arg) {
+  obj.fn = fn;
+  obj.fn(...arg);
+  delete obj.fn;
+}
+// bind
+Function.prototype.myBind = function(obj, ...arg) {
+  const self = this;
+  return function(params) {
+    self.apply(obj, Array.prototype.slice.call(arg, 0));
+  };
+};
+```
