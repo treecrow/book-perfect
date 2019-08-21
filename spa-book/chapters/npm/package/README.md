@@ -25,8 +25,9 @@
 | devDependencies         | 可选字段，开发环境下的依赖包，格式同 dependencies 属性                                                          |
 | config                  | config 字段是一个对象，可以用来配置包脚本中的跨版本参数                                                         |
 | files                   | 可选字段，项目包含的一组文件                                                                                    |
-| ===                     | ===                                                                                                             |
 | readmeFilename          | 项目文档（默认为 README.md）                                                                                    |
+| main                    | 可选字段，建议必填。这个字段的值是你程序主入口模块的 ID                                                         |
+| browserslist            | 浏览器兼容情况                                                                                                  |
 | ===                     | ===                                                                                                             |
 | directories             | CommonJS Packages 规范说明了几种你可以用 directories 对象来标示你的包结构的方法                                 |
 | directories.lib         | 告诉你库文件夹的位置，目前没有什么地方需要用到 lib 文件夹，但是这是重要的元信息                                 |
@@ -36,7 +37,6 @@
 | directories.example     | 把示例脚本放在这。也许某一天会被用到                                                                            |
 | directories.test        | -                                                                                                               |
 | contributors            | -                                                                                                               |
-| main                    | 可选字段，建议必填。这个字段的值是你程序主入口模块的 ID                                                         |
 | man                     | 指定一个单一的文件名或一个文件名数组来让 man 程序使用                                                           |
 | peerDependencies        | 可选字段。兼容性依赖。如果你的包是插件，适合这种方式                                                            |
 | bundledDependencies     | 可选字段。发布包时同时打包的其他依赖                                                                            |
