@@ -9,6 +9,6 @@
 | [mysql](./mysql.md) | -                       |
 | [brew](./brew.md)   | -                       |
 | [nvm](./nvm.md)     | -                       |
-| [zsh](./nvm.md)     | -                       |
+| [zsh](./zsh.md)     | -                       |
 | python3             | -                       |
 | shfmt               | VCode shell format 插件 |
