@@ -14,4 +14,5 @@
 -   [mysql](chapter/mysql/README.md)
 -   [nrm](chapter/nrm.md)
 -   [nvm](chapter/nvm.md)
+-   [pm2](chapter/pm2.md)
 -   [zsh](chapter/zsh.md)
