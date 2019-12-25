@@ -1,6 +1,17 @@
-- [首页](chapters/README.md)
+-   [首页](chapters/README.md)
 
 ---
 
-- [brew_package](chapters/brew_package/README.md)
-- [npm_package](chapters/npm_package/README.md)
+-   [InquirerJs](chapter/InquirerJs.md)
+-   [README](chapter/README.md)
+-   [axios](chapter/axios.md)
+-   [brew](chapter/brew.md)
+-   [commander](chapter/commander.md)
+-   [gulp](chapter/gulp.md)
+-   [jsdoc](chapter/jsdoc.md)
+-   [koa](chapter/koa.md)
+-   [metalsmith](chapter/metalsmith.md)
+-   [mysql](chapter/mysql/README.md)
+-   [nrm](chapter/nrm.md)
+-   [nvm](chapter/nvm.md)
+-   [zsh](chapter/zsh.md)
