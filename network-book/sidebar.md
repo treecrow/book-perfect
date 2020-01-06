@@ -17,5 +17,3 @@
   - [Status](chapters/HTTP/Status.md)
   - [TCP-IP](chapters/HTTP/TCP-IP.md)
   - [缓存](chapters/HTTP/缓存.md)
-
-- [nginx](chapters/nginx.md)
