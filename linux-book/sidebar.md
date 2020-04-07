@@ -20,13 +20,6 @@
   - [运行 shell 脚本](chapters/shell/运行shell脚本.md)
   - [字符串](chapters/shell/字符串.md)
 
-- [命令行工具](chapters/命令行工具/README.md)
-
-  - [git](chapters/命令行工具/git.md)
-  - [ssh](chapters/命令行工具/ssh.md)
-  - [svn](chapters/命令行工具/svn.md)
-  - [vim](chapters/命令行工具/vim.md)
-
 - [阿里云](chapters/阿里云/README.md)
   - [翻墙](chapters/阿里云/翻墙.md)
   - [远程连接](chapters/阿里云/远程连接.md)
