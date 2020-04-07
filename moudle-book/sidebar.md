@@ -42,13 +42,13 @@
 -   M
 
     -   [metalsmith](chapters/metalsmith.md)
-    -   [mysql](chapters/mysql)
+    -   [mysql](chapters/mysql/README.md)
 
 -   N
 
     -   [nrm](chapters/nrm.md)
     -   [nvm](chapters/nvm.md)
-    -   [nginx](chapters/nginx)
+    -   [nginx](chapters/nginx/README.md)
 
 -   O
 
