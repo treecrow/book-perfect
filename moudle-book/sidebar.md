@@ -75,18 +75,18 @@
 
 -   T
 
-    -   [typeScript](chapters/typeScript.md)
+    -   [typeScript](chapters/typeScript/README.md)
 
 -   U
 
 -   V
 
-    -   [vue](chapters/vue.md)
+    -   [vue](chapters/vue/README.md)
     -   [vim](chapters/vim.md)
 
 -   W
 
-    -   [webpack](chapters/webpack.md)
+    -   [webpack](chapters/webpack/README.md)
 
 -   X
 
