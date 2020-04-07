@@ -6,6 +6,7 @@
 
 -   B
 
+    -   [babel](chapters/babel.md)
     -   [brew](chapters/brew.md)
 
 -   C
@@ -15,6 +16,8 @@
 -   D
 
 -   E
+
+    -   [eslint](chapters/eslint.md)
 
 -   F
 
@@ -46,9 +49,11 @@
 
 -   N
 
-    -   [nrm](chapters/nrm.md)
-    -   [nvm](chapters/nvm.md)
     -   [nginx](chapters/nginx/README.md)
+    -   [npm](chapters/npm/README.md)
+    -   [nrm](chapters/nrm.md)
+    -   [nuxt](chapters/nuxt.md)
+    -   [nvm](chapters/nvm.md)
 
 -   O
 
@@ -60,24 +65,34 @@
 
 -   R
 
+    -   [rollup](chapters/rollup.md)
+
 -   S
 
+    -   [sass](chapters/sass.md)
     -   [ssh](chapters/ssh.md)
     -   [svn](chapters/svn.md)
 
 -   T
 
+    -   [typeScript](chapters/typeScript.md)
+
 -   U
 
 -   V
 
+    -   [vue](chapters/vue.md)
     -   [vim](chapters/vim.md)
 
 -   W
 
+    -   [webpack](chapters/webpack.md)
+
 -   X
 
 -   Y
+
+    -   [yarn](chapters/yarn.md)
 
 -   Z
     -   [zsh](chapters/zsh.md)
