@@ -2,8 +2,8 @@
 
 ## 相关文档
 
-- [Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-- [Git 教程](https://www.yiibai.com/git/)
+-   [Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+-   [Git 教程](https://www.yiibai.com/git/)
 
 ## git 命令(已熟悉)
 
@@ -57,6 +57,8 @@
 | ^                    | git remote -v                                            | 查看远程库的更详细的信息                                                                                         |
 | ^                    | git remote add iview url                                 | 添加到远程库（关联一个远程库）并命名远程库为 iview                                                               |
 | ^                    | git remote remove iview                                  | 解除绑定某个远程仓库                                                                                             |
+| ^                    | git remote show origin                                   | 查看远程分支情况                                                                                                 |
+| ^                    | git remote prune origin                                  | 同步远程分支（删除本地分支）                                                                                     |
 | git 配置             | git config --global user.name xxx                        | 全局中设置名字和邮箱                                                                                             |
 | ^                    | git config --global user.email xxx                       | ~                                                                                                                |
 | ^                    | git config user.name xxx                                 | 项目中设置名字和邮箱                                                                                             |
