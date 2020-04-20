@@ -11,7 +11,7 @@
 
 ## 文档
 
--   [api](./api.md)
+-   [vue](./vue.md)
 -   [vue-loader](./vue-loader.md)
 -   [vue-router](./vue-router.md)
 -   [vueCli](./vueCli.md)
