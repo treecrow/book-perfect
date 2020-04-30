@@ -1,6 +1,5 @@
-# typeScript
+# [typeScript](https://www.typescriptlang.org/)
 
-- [官方文档](https://www.typescriptlang.org/)
 - [typeScript 中文网](https://www.tslang.cn/docs/home.html)
 - [在线练习](http://www.typescriptlang.org/play/index.html)
 
