@@ -1,6 +1,5 @@
 # react
 
-- [react-dom](./react-dom.md)
 - [react-intl-universal](./react-intl-universal.md)
 - [react-router-config](./react-router-config.md)
 - [react-router-dom](./react-router-dom.md)
