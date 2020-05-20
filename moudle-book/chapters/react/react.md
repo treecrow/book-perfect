@@ -11,32 +11,32 @@
 
 ## React
 
-| class                                     | api                                                   | more                                                                                                                                                 |
-| ----------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 组件                                      | React.Component{}                                     | -                                                                                                                                                    |
-| ^                                         | React.PureComponent{}                                 | 创建进行浅比较的 shouldComponentUpdate 组件                                                                                                          |
-| ^                                         | React.memo()                                          | 与 React.PureComponent 非常相似，但只适用于函数组件，而不适用 class 组件                                                                             |
-| 创建 React 元素                           | React.createElement()                                 | 创建并返回指定类型的新 React 元素                                                                                                                    |
-| 转换元素                                  | React.cloneElement()                                  | 以 element 元素为样板克隆并返回新的 React 元素                                                                                                       |
-| ^                                         | React.isValidElement(object)                          | 验证对象是否为 React 元素，返回值为 true 或 false。                                                                                                  |
-| ^                                         | React.Children                                        | React.Children 提供了用于处理 this.props.children 不透明数据结构的实用方法                                                                           |
-| ^                                         | React.Children.map(children, function[(thisArg)])     | 在 children 里的每个直接子节点上调用一个函数，并将 this 设置为 thisArg。如果 children 是一个数组，它将被遍历并为数组中的每个子节点调用该函数         |
-| ^                                         | React.Children.forEach(children, function[(thisArg)]) | 与 React.Children.map() 类似，但它不会返回一个数组                                                                                                   |
-| ^                                         | React.Children.count(children)                        | 返回 children 中的组件总数量，等同于通过 map 或 forEach 调用回调函数的次数。                                                                         |
-| ^                                         | React.Children.only(children)                         | 验证 children 是否只有一个子节点（一个 React 元素），如果有则返回它，否则此方法会抛出错误。                                                          |
-| ^                                         | React.Children.toArray(children)                      | 将 children 这个复杂的数据结构以数组的方式扁平展开并返回，并为每个子节点分配一个 key                                                                 |
-| Fragments                                 | <React.Fragment> / <></>                              | React.Fragment 组件能够在不额外创建 DOM 元素的情况下，让 render() 方法中返回多个元素。                                                               |
-| Refs                                      | React.createRef()                                     | React.createRef 创建一个能够通过 ref 属性附加到 React 元素的 ref                                                                                     |
-| ^                                         | React.forwardRef((props, ref)=>())                    | React.forwardRef 会创建一个 React 组件，这个组件能够将其接受的 ref 属性转发到其组件树下的另一个组件中                                                |
-| Suspense                                  | React.lazy()                                          | React.lazy() 允许你定义一个动态加载的组件。这有助于缩减 bundle 的体积，并延迟加载在初次渲染时未用到的组件                                            |
-| ^                                         | <React.Suspense>                                      | React.Suspense 可以指定加载指示器（loading indicator），以防其组件树中的某些子组件尚未具备渲染条件                                                   |
-| ===                                       | ===                                                   | ===                                                                                                                                                  |
-| const SomeContext = React.createContext() | -                                                     | 创建一个 Context 对象。当 React 渲染一个订阅了这个 Context 对象的组件，这个组件会从组件树中离自身最近的那个匹配的 Provider 中读取到当前的 context 值 |
-| ^                                         | SomeContext.Provider                                  | 每个 Context 对象都会返回一个 Provider React 组件，它允许消费组件订阅 context 的变化                                                                 |
-| ^                                         | SomeContext.Consumer                                  | 可以订阅到 context 变更。这能让你在函数式组件中完成订阅 context                                                                                      |
-| ^                                         | SomeContext.displayName                               | context 对象接受一个名为 displayName 的 property，类型为字符串。React DevTools 使用该字符串来确定 context 要显示的内容                               |
-| ^                                         | Class.contextType                                     | this.context                                                                                                                                         |
-| Profiler                                  | -                                                     | 能添加在 React 树中的任何地方来测量树中这部分渲染所带来的开销                                                                                        |
+| class           | api                                                   | more                                                                                                                                                 |
+| --------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 组件            | React.Component{}                                     | -                                                                                                                                                    |
+| ^               | React.PureComponent{}                                 | 创建进行浅比较的 shouldComponentUpdate 组件                                                                                                          |
+| ^               | React.memo()                                          | 与 React.PureComponent 非常相似，但只适用于函数组件，而不适用 class 组件                                                                             |
+| 创建 React 元素 | React.createElement()                                 | 创建并返回指定类型的新 React 元素                                                                                                                    |
+| 转换元素        | React.cloneElement()                                  | 以 element 元素为样板克隆并返回新的 React 元素                                                                                                       |
+| ^               | React.isValidElement(object)                          | 验证对象是否为 React 元素，返回值为 true 或 false。                                                                                                  |
+| ^               | React.Children                                        | React.Children 提供了用于处理 this.props.children 不透明数据结构的实用方法                                                                           |
+| ^               | React.Children.map(children, function[(thisArg)])     | 在 children 里的每个直接子节点上调用一个函数，并将 this 设置为 thisArg。如果 children 是一个数组，它将被遍历并为数组中的每个子节点调用该函数         |
+| ^               | React.Children.forEach(children, function[(thisArg)]) | 与 React.Children.map() 类似，但它不会返回一个数组                                                                                                   |
+| ^               | React.Children.count(children)                        | 返回 children 中的组件总数量，等同于通过 map 或 forEach 调用回调函数的次数。                                                                         |
+| ^               | React.Children.only(children)                         | 验证 children 是否只有一个子节点（一个 React 元素），如果有则返回它，否则此方法会抛出错误。                                                          |
+| ^               | React.Children.toArray(children)                      | 将 children 这个复杂的数据结构以数组的方式扁平展开并返回，并为每个子节点分配一个 key                                                                 |
+| Fragments       | <React.Fragment> / <></>                              | React.Fragment 组件能够在不额外创建 DOM 元素的情况下，让 render() 方法中返回多个元素。                                                               |
+| Refs            | React.createRef()                                     | React.createRef 创建一个能够通过 ref 属性附加到 React 元素的 ref                                                                                     |
+| ^               | React.forwardRef((props, ref)=>())                    | React.forwardRef 会创建一个 React 组件，这个组件能够将其接受的 ref 属性转发到其组件树下的另一个组件中                                                |
+| Suspense        | React.lazy()                                          | React.lazy() 允许你定义一个动态加载的组件。这有助于缩减 bundle 的体积，并延迟加载在初次渲染时未用到的组件                                            |
+| ^               | <React.Suspense>                                      | React.Suspense 可以指定加载指示器（loading indicator），以防其组件树中的某些子组件尚未具备渲染条件                                                   |
+| Context         | React.createContext(defaultValue)                     | 创建一个 Context 对象。当 React 渲染一个订阅了这个 Context 对象的组件，这个组件会从组件树中离自身最近的那个匹配的 Provider 中读取到当前的 context 值 |
+| ===             | ===                                                   | ===                                                                                                                                                  |
+| ^               | SomeContext.Provider                                  | 每个 Context 对象都会返回一个 Provider React 组件，它允许消费组件订阅 context 的变化                                                                 |
+| ^               | SomeContext.Consumer                                  | 可以订阅到 context 变更。这能让你在函数式组件中完成订阅 context                                                                                      |
+| ^               | SomeContext.displayName                               | context 对象接受一个名为 displayName 的 property，类型为字符串。React DevTools 使用该字符串来确定 context 要显示的内容                               |
+| ^               | Class.contextType                                     | this.context                                                                                                                                         |
+| Profiler        | -                                                     | 能添加在 React 树中的任何地方来测量树中这部分渲染所带来的开销                                                                                        |
 
 ## React.Component{}
 

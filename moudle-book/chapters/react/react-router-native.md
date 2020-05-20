@@ -1,1 +1,0 @@
-# [react-router-native](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-native)
