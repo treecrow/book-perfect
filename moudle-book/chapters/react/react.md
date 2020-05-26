@@ -31,6 +31,7 @@
 | Suspense        | React.lazy()                                          | React.lazy() 允许你定义一个动态加载的组件。这有助于缩减 bundle 的体积，并延迟加载在初次渲染时未用到的组件                                            |
 | ^               | <React.Suspense>                                      | React.Suspense 可以指定加载指示器（loading indicator），以防其组件树中的某些子组件尚未具备渲染条件                                                   |
 | Context         | React.createContext(defaultValue)                     | 创建一个 Context 对象。当 React 渲染一个订阅了这个 Context 对象的组件，这个组件会从组件树中离自身最近的那个匹配的 Provider 中读取到当前的 context 值 |
+| 严格模式        | <React.StrictMode>                                    | -                                                                                                                                                    |
 | ===             | ===                                                   | ===                                                                                                                                                  |
 | ^               | SomeContext.Provider                                  | 每个 Context 对象都会返回一个 Provider React 组件，它允许消费组件订阅 context 的变化                                                                 |
 | ^               | SomeContext.Consumer                                  | 可以订阅到 context 变更。这能让你在函数式组件中完成订阅 context                                                                                      |
