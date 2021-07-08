@@ -1,63 +1,68 @@
--   [HOME](chapters/README.md)
+- [HOME](chapters/README.md)
 
--   A
+- A
 
-    -   [Aliyun](chapters/Aliyun/README.md)
+  - [Aliyun](chapters/Aliyun/README.md)
 
--   B
+- B
 
--   C
+- C
 
--   D
+- D
 
--   F
+- F
 
--   E
+- E
 
--   G
+- G
 
-    -   [Google](chapters/Google/README.md)
+  - [Google](chapters/Google/README.md)
 
--   H
+- H
 
--   I
+- I
 
--   J
+- J
 
--   K
+- K
 
--   L
+- L
 
--   M
+- M
 
--   N
+- N
 
--   O
+- O
 
--   P
+- P
 
-    -   [Path](chapters/Path.md)
+  - [Path](chapters/Path.md)
+  - [PR](chapters/PR/README.md)
 
--   Q
+- Q
 
--   R
+- R
 
--   S
+- S
 
-    -   [Setting](chapters/Setting.md)
-    -   [ShortcutKey](chapters/ShortcutKey.md)
-    -   [Software](chapters/Software.md)
+  - [Setting](chapters/Setting.md)
+  - [ShortcutKey](chapters/ShortcutKey.md)
+  - [Software](chapters/Software.md)
 
--   T
+- T
 
--   U
+- U
 
--   V
+- V
 
-    -   [VsCode](chapters/VsCode/README.md)
+  - [VsCode](chapters/VsCode/README.md)
 
--   X
+- W
 
--   Y
+  - [WebSite](chapters/WebSite/README.md)
 
--   Z
+- X
+
+- Y
+
+- Z
