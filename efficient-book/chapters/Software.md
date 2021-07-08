@@ -13,40 +13,20 @@
 
 ## 已安装使用
 
-| 软件                                                                         | 功能                                                   |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------ |
-| chrome                                                                       | -                                                      |
-| Firefox                                                                      | -                                                      |
-| Starry                                                                       | 整理 github start                                      |
-| Dash                                                                         | 技术文档浏览，和编辑器整合                             |
-| lantern                                                                      | 科学上网                                               |
-| qq                                                                           | -                                                      |
-| wechat                                                                       | -                                                      |
-| 小米云服务                                                                   | -                                                      |
-| 网易云音乐                                                                   | -                                                      |
-| vsCode                                                                       | -                                                      |
-| Pap.er                                                                       | 修改桌面壁纸                                           |
-| AppCleaner                                                                   | -                                                      |
-| Dr.Cleaner                                                                   | 卸载软件                                               |
-| iHosts                                                                       | 修改 hosts                                             |
-| 迅雷                                                                         | -                                                      |
-| tickets                                                                      | 打字出声音                                             |
-| Spectacle                                                                    | 窗口规范化放置                                         |
-| cheetsheet                                                                   | 显示应用快捷键                                         |
-| 搜狗输入法                                                                   | 设置->按键->状态切换                                   |
-| Dr.Unarchiver                                                                | 压缩解压                                               |
-| pages                                                                        | -                                                      |
-| shadowsockets                                                                | [免费账号密码](http://free-ss.cf/)                     |
-| [hammerspoon](https://github.com/Hammerspoon/hammerspoon)                    | Staggeringly powerful OS X desktop automation with Lua |
-| Charles                                                                      | 用来抓包的                                             |
-| [fiddler](https://wiki.dingyuegroup.cn/pages/viewpage.action?pageId=3740066) | 抓包工具                                               |
-| [irreader](http://irreader.netqon.com/)                                      | 后RSS时代阅读器                                        |
-| [shadowsocks](https://sourceforge.net/projects/shadowsocksgui/)              | -                                                      |
-
-
-## 待了解
-
-| 软件        | 功能                                     |
-| ----------- | ---------------------------------------- |
-| Tunnelblick | VPN(没用到)                              |
-| Kap         | 截屏软件，支持输出视频、gif、webm 等格式 |
+| 软件                                                            | 功能              |
+| --------------------------------------------------------------- | ----------------- |
+| [chrome](https://www.google.cn/chrome/)                         | -                 |
+| [Firefox](http://www.firefox.com.cn/)                           | -                 |
+| [微信](https://mac.weixin.qq.com/)                              | -                 |
+| [网易云音乐](https://music.163.com/#/download)                  | -                 |
+| [vsCode](https://code.visualstudio.com/)                        | -                 |
+| [SwitchHosts](https://github.com/oldj/SwitchHosts/releases)     | 修改 hosts        |
+| [迅雷](https://www.xunlei.com/)                                 | -                 |
+| [喜马拉雅](https://www.ximalaya.com/download/)                  | -                 |
+| [irreader](http://irreader.netqon.com/)                         | 后 RSS 时代阅读器 |
+| [shadowsocks](https://sourceforge.net/projects/shadowsocksgui/) | -                 |
+| [appcleaner](http://freemacsoft.net/appcleaner/)                | 卸载软件          |
+| tickets                                                         | 打字出声音        |
+| Spectacle                                                       | 窗口规范化放置    |
+| cheetsheet                                                      | 显示应用快捷键    |
+| Charles                                                         | 用来抓包的        |
