@@ -48,6 +48,7 @@
   - [Setting](chapters/Setting.md)
   - [ShortcutKey](chapters/ShortcutKey.md)
   - [Software](chapters/Software.md)
+  - [Spotlight](chapters/Spotlight.md)
 
 - T
 
